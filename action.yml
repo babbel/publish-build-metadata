@@ -1,0 +1,6 @@
+name: 'Publish build metadata'
+description: 'Collects build artifacts metadata and publishes them to DynamoDB'
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
