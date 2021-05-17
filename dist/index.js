@@ -5,7 +5,7 @@ require('./sourcemap-register.js');/******/ (() => { // webpackBootstrap
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-dynamodb","description":"AWS SDK for JavaScript Dynamodb Client for Node.js, Browser and React Native","version":"3.14.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","prepublishOnly":"yarn build && downlevel-dts dist/types dist/types/ts3.4","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/client-sts":"3.14.0","@aws-sdk/config-resolver":"3.14.0","@aws-sdk/credential-provider-node":"3.14.0","@aws-sdk/fetch-http-handler":"3.13.1","@aws-sdk/hash-node":"3.13.1","@aws-sdk/invalid-dependency":"3.13.1","@aws-sdk/middleware-content-length":"3.13.1","@aws-sdk/middleware-host-header":"3.13.1","@aws-sdk/middleware-logger":"3.13.1","@aws-sdk/middleware-retry":"3.13.1","@aws-sdk/middleware-serde":"3.13.1","@aws-sdk/middleware-signing":"3.13.1","@aws-sdk/middleware-stack":"3.13.1","@aws-sdk/middleware-user-agent":"3.14.0","@aws-sdk/node-config-provider":"3.13.1","@aws-sdk/node-http-handler":"3.13.1","@aws-sdk/protocol-http":"3.13.1","@aws-sdk/smithy-client":"3.13.1","@aws-sdk/types":"3.13.1","@aws-sdk/url-parser":"3.13.1","@aws-sdk/util-base64-browser":"3.13.1","@aws-sdk/util-base64-node":"3.13.1","@aws-sdk/util-body-length-browser":"3.13.1","@aws-sdk/util-body-length-node":"3.13.1","@aws-sdk/util-user-agent-browser":"3.13.1","@aws-sdk/util-user-agent-node":"3.13.1","@aws-sdk/util-utf8-browser":"3.13.1","@aws-sdk/util-utf8-node":"3.13.1","@aws-sdk/util-waiter":"3.13.1","tslib":"^2.0.0","uuid":"^8.3.2"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.14.0","@types/node":"^12.7.5","@types/uuid":"^8.3.0","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.2.4"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"types/*":["types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-dynamodb","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-dynamodb"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-dynamodb","description":"AWS SDK for JavaScript Dynamodb Client for Node.js, Browser and React Native","version":"3.16.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","prepublishOnly":"yarn build && downlevel-dts dist/types dist/types/ts3.4","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/client-sts":"3.16.0","@aws-sdk/config-resolver":"3.16.0","@aws-sdk/credential-provider-node":"3.16.0","@aws-sdk/fetch-http-handler":"3.15.0","@aws-sdk/hash-node":"3.15.0","@aws-sdk/invalid-dependency":"3.15.0","@aws-sdk/middleware-content-length":"3.15.0","@aws-sdk/middleware-endpoint-discovery":"3.16.0","@aws-sdk/middleware-host-header":"3.16.0","@aws-sdk/middleware-logger":"3.15.0","@aws-sdk/middleware-retry":"3.16.0","@aws-sdk/middleware-serde":"3.15.0","@aws-sdk/middleware-signing":"3.16.0","@aws-sdk/middleware-stack":"3.15.0","@aws-sdk/middleware-user-agent":"3.16.0","@aws-sdk/node-config-provider":"3.15.0","@aws-sdk/node-http-handler":"3.15.0","@aws-sdk/protocol-http":"3.15.0","@aws-sdk/smithy-client":"3.15.0","@aws-sdk/types":"3.15.0","@aws-sdk/url-parser":"3.15.0","@aws-sdk/util-base64-browser":"3.13.1","@aws-sdk/util-base64-node":"3.13.1","@aws-sdk/util-body-length-browser":"3.13.1","@aws-sdk/util-body-length-node":"3.13.1","@aws-sdk/util-user-agent-browser":"3.15.0","@aws-sdk/util-user-agent-node":"3.15.0","@aws-sdk/util-utf8-browser":"3.13.1","@aws-sdk/util-utf8-node":"3.13.1","@aws-sdk/util-waiter":"3.15.0","tslib":"^2.0.0","uuid":"^8.3.2"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.16.0","@types/node":"^12.7.5","@types/uuid":"^8.3.0","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.2.4"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"types/*":["types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-dynamodb","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-dynamodb"}}');
 
 /***/ }),
 
@@ -13,7 +13,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-dynamodb","description":"A
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.14.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","prepublishOnly":"yarn build && downlevel-dts dist/types dist/types/ts3.4","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.14.0","@aws-sdk/fetch-http-handler":"3.13.1","@aws-sdk/hash-node":"3.13.1","@aws-sdk/invalid-dependency":"3.13.1","@aws-sdk/middleware-content-length":"3.13.1","@aws-sdk/middleware-host-header":"3.13.1","@aws-sdk/middleware-logger":"3.13.1","@aws-sdk/middleware-retry":"3.13.1","@aws-sdk/middleware-serde":"3.13.1","@aws-sdk/middleware-stack":"3.13.1","@aws-sdk/middleware-user-agent":"3.14.0","@aws-sdk/node-config-provider":"3.13.1","@aws-sdk/node-http-handler":"3.13.1","@aws-sdk/protocol-http":"3.13.1","@aws-sdk/smithy-client":"3.13.1","@aws-sdk/types":"3.13.1","@aws-sdk/url-parser":"3.13.1","@aws-sdk/util-base64-browser":"3.13.1","@aws-sdk/util-base64-node":"3.13.1","@aws-sdk/util-body-length-browser":"3.13.1","@aws-sdk/util-body-length-node":"3.13.1","@aws-sdk/util-user-agent-browser":"3.13.1","@aws-sdk/util-user-agent-node":"3.13.1","@aws-sdk/util-utf8-browser":"3.13.1","@aws-sdk/util-utf8-node":"3.13.1","tslib":"^2.0.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.14.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.2.4"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"types/*":["types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.16.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","prepublishOnly":"yarn build && downlevel-dts dist/types dist/types/ts3.4","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.16.0","@aws-sdk/fetch-http-handler":"3.15.0","@aws-sdk/hash-node":"3.15.0","@aws-sdk/invalid-dependency":"3.15.0","@aws-sdk/middleware-content-length":"3.15.0","@aws-sdk/middleware-host-header":"3.16.0","@aws-sdk/middleware-logger":"3.15.0","@aws-sdk/middleware-retry":"3.16.0","@aws-sdk/middleware-serde":"3.15.0","@aws-sdk/middleware-stack":"3.15.0","@aws-sdk/middleware-user-agent":"3.16.0","@aws-sdk/node-config-provider":"3.15.0","@aws-sdk/node-http-handler":"3.15.0","@aws-sdk/protocol-http":"3.15.0","@aws-sdk/smithy-client":"3.15.0","@aws-sdk/types":"3.15.0","@aws-sdk/url-parser":"3.15.0","@aws-sdk/util-base64-browser":"3.13.1","@aws-sdk/util-base64-node":"3.13.1","@aws-sdk/util-body-length-browser":"3.13.1","@aws-sdk/util-body-length-node":"3.13.1","@aws-sdk/util-user-agent-browser":"3.15.0","@aws-sdk/util-user-agent-node":"3.15.0","@aws-sdk/util-utf8-browser":"3.13.1","@aws-sdk/util-utf8-node":"3.13.1","tslib":"^2.0.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.16.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.2.4"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"types/*":["types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
 
 /***/ }),
 
@@ -21,7 +21,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SD
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.14.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","prepublishOnly":"yarn build && downlevel-dts dist/types dist/types/ts3.4","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.14.0","@aws-sdk/credential-provider-node":"3.14.0","@aws-sdk/fetch-http-handler":"3.13.1","@aws-sdk/hash-node":"3.13.1","@aws-sdk/invalid-dependency":"3.13.1","@aws-sdk/middleware-content-length":"3.13.1","@aws-sdk/middleware-host-header":"3.13.1","@aws-sdk/middleware-logger":"3.13.1","@aws-sdk/middleware-retry":"3.13.1","@aws-sdk/middleware-sdk-sts":"3.13.1","@aws-sdk/middleware-serde":"3.13.1","@aws-sdk/middleware-signing":"3.13.1","@aws-sdk/middleware-stack":"3.13.1","@aws-sdk/middleware-user-agent":"3.14.0","@aws-sdk/node-config-provider":"3.13.1","@aws-sdk/node-http-handler":"3.13.1","@aws-sdk/protocol-http":"3.13.1","@aws-sdk/smithy-client":"3.13.1","@aws-sdk/types":"3.13.1","@aws-sdk/url-parser":"3.13.1","@aws-sdk/util-base64-browser":"3.13.1","@aws-sdk/util-base64-node":"3.13.1","@aws-sdk/util-body-length-browser":"3.13.1","@aws-sdk/util-body-length-node":"3.13.1","@aws-sdk/util-user-agent-browser":"3.13.1","@aws-sdk/util-user-agent-node":"3.13.1","@aws-sdk/util-utf8-browser":"3.13.1","@aws-sdk/util-utf8-node":"3.13.1","fast-xml-parser":"3.19.0","tslib":"^2.0.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.14.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.2.4"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"types/*":["types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.16.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","prepublishOnly":"yarn build && downlevel-dts dist/types dist/types/ts3.4","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.16.0","@aws-sdk/credential-provider-node":"3.16.0","@aws-sdk/fetch-http-handler":"3.15.0","@aws-sdk/hash-node":"3.15.0","@aws-sdk/invalid-dependency":"3.15.0","@aws-sdk/middleware-content-length":"3.15.0","@aws-sdk/middleware-host-header":"3.16.0","@aws-sdk/middleware-logger":"3.15.0","@aws-sdk/middleware-retry":"3.16.0","@aws-sdk/middleware-sdk-sts":"3.16.0","@aws-sdk/middleware-serde":"3.15.0","@aws-sdk/middleware-signing":"3.16.0","@aws-sdk/middleware-stack":"3.15.0","@aws-sdk/middleware-user-agent":"3.16.0","@aws-sdk/node-config-provider":"3.15.0","@aws-sdk/node-http-handler":"3.15.0","@aws-sdk/protocol-http":"3.15.0","@aws-sdk/smithy-client":"3.15.0","@aws-sdk/types":"3.15.0","@aws-sdk/url-parser":"3.15.0","@aws-sdk/util-base64-browser":"3.13.1","@aws-sdk/util-base64-node":"3.13.1","@aws-sdk/util-body-length-browser":"3.13.1","@aws-sdk/util-body-length-node":"3.13.1","@aws-sdk/util-user-agent-browser":"3.15.0","@aws-sdk/util-user-agent-node":"3.15.0","@aws-sdk/util-utf8-browser":"3.13.1","@aws-sdk/util-utf8-node":"3.13.1","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.0.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.16.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.2.4"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"types/*":["types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
 
 /***/ }),
 
@@ -1129,6 +1129,7 @@ class Context {
      * Hydrate the context from the environment
      */
     constructor() {
+        var _a, _b, _c;
         this.payload = {};
         if (process.env.GITHUB_EVENT_PATH) {
             if (fs_1.existsSync(process.env.GITHUB_EVENT_PATH)) {
@@ -1148,6 +1149,9 @@ class Context {
         this.job = process.env.GITHUB_JOB;
         this.runNumber = parseInt(process.env.GITHUB_RUN_NUMBER, 10);
         this.runId = parseInt(process.env.GITHUB_RUN_ID, 10);
+        this.apiUrl = (_a = process.env.GITHUB_API_URL) !== null && _a !== void 0 ? _a : `https://api.github.com`;
+        this.serverUrl = (_b = process.env.GITHUB_SERVER_URL) !== null && _b !== void 0 ? _b : `https://github.com`;
+        this.graphqlUrl = (_c = process.env.GITHUB_GRAPHQL_URL) !== null && _c !== void 0 ? _c : `https://api.github.com/graphql`;
     }
     get issue() {
         const payload = this.payload;
@@ -1192,7 +1196,7 @@ var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
     __setModuleDefault(result, mod);
     return result;
 };
@@ -1235,13 +1239,13 @@ var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
     __setModuleDefault(result, mod);
     return result;
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getApiBaseUrl = exports.getProxyAgent = exports.getAuthString = void 0;
-const httpClient = __importStar(__nccwpck_require__(9925));
+const httpClient = __importStar(__nccwpck_require__(6936));
 function getAuthString(token, options) {
     if (!token && !options.auth) {
         throw new Error('Parameter token or opts.auth is required');
@@ -1285,7 +1289,7 @@ var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
     __setModuleDefault(result, mod);
     return result;
 };
@@ -1326,7 +1330,7 @@ exports.getOctokitOptions = getOctokitOptions;
 
 /***/ }),
 
-/***/ 9925:
+/***/ 6936:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
@@ -3257,9 +3261,11 @@ exports.DynamoDB = DynamoDB;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.DynamoDBClient = void 0;
+const DescribeEndpointsCommand_1 = __nccwpck_require__(7319);
 const runtimeConfig_1 = __nccwpck_require__(9671);
 const config_resolver_1 = __nccwpck_require__(7229);
 const middleware_content_length_1 = __nccwpck_require__(9323);
+const middleware_endpoint_discovery_1 = __nccwpck_require__(8472);
 const middleware_host_header_1 = __nccwpck_require__(8645);
 const middleware_logger_1 = __nccwpck_require__(8685);
 const middleware_retry_1 = __nccwpck_require__(7000);
@@ -3299,8 +3305,9 @@ class DynamoDBClient extends smithy_client_1.Client {
         let _config_4 = middleware_host_header_1.resolveHostHeaderConfig(_config_3);
         let _config_5 = middleware_signing_1.resolveAwsAuthConfig(_config_4);
         let _config_6 = middleware_user_agent_1.resolveUserAgentConfig(_config_5);
-        super(_config_6);
-        this.config = _config_6;
+        let _config_7 = middleware_endpoint_discovery_1.resolveEndpointDiscoveryConfig(_config_6, DescribeEndpointsCommand_1.DescribeEndpointsCommand);
+        super(_config_7);
+        this.config = _config_7;
         this.middlewareStack.use(middleware_retry_1.getRetryPlugin(this.config));
         this.middlewareStack.use(middleware_content_length_1.getContentLengthPlugin(this.config));
         this.middlewareStack.use(middleware_host_header_1.getHostHeaderPlugin(this.config));
@@ -3337,6 +3344,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  * <p>
  * This operation allows you to perform batch reads and writes on data stored in DynamoDB, using PartiQL.
  * </p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, BatchExecuteStatementCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, BatchExecuteStatementCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new BatchExecuteStatementCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link BatchExecuteStatementCommandInput} for command's `input` shape.
+ * @see {@link BatchExecuteStatementCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class BatchExecuteStatementCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -3436,6 +3457,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             nonexistent items consume the minimum read capacity units according to the type of read.
  *             For more information, see <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.html#CapacityUnitCalculations">Working with Tables</a> in the <i>Amazon DynamoDB Developer
  *                 Guide</i>.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, BatchGetItemCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, BatchGetItemCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new BatchGetItemCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link BatchGetItemCommandInput} for command's `input` shape.
+ * @see {@link BatchGetItemCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class BatchGetItemCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -3564,6 +3599,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                <p>The total request size exceeds 16 MB.</p>
  *             </li>
  *          </ul>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, BatchWriteItemCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, BatchWriteItemCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new BatchWriteItemCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link BatchWriteItemCommandInput} for command's `input` shape.
+ * @see {@link BatchWriteItemCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class BatchWriteItemCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -3647,6 +3696,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                   <p>Provisioned read and write capacity</p>
  *               </li>
  *          </ul>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, CreateBackupCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, CreateBackupCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new CreateBackupCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link CreateBackupCommandInput} for command's `input` shape.
+ * @see {@link CreateBackupCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class CreateBackupCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -3768,6 +3831,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *        your global table.
  *     </p>
  *          </important>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, CreateGlobalTableCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, CreateGlobalTableCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new CreateGlobalTableCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link CreateGlobalTableCommandInput} for command's `input` shape.
+ * @see {@link CreateGlobalTableCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class CreateGlobalTableCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -3834,6 +3911,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *       tables sequentially. Only one table with secondary indexes can be in the <code>CREATING</code> state at
  *       any given time.</p>
  *          <p>You can use the <code>DescribeTable</code> action to check the table status.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, CreateTableCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, CreateTableCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new CreateTableCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link CreateTableCommandInput} for command's `input` shape.
+ * @see {@link CreateTableCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class CreateTableCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -3889,6 +3980,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Deletes an existing backup of a table.</p>
  *          <p>You can call <code>DeleteBackup</code> at a maximum rate of 10 times per second.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, DeleteBackupCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, DeleteBackupCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new DeleteBackupCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DeleteBackupCommandInput} for command's `input` shape.
+ * @see {@link DeleteBackupCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DeleteBackupCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -3948,6 +4053,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          <p>Unless you specify conditions, the <code>DeleteItem</code> is an idempotent operation; running it
  *       multiple times on the same item or attribute does <i>not</i> result in an error response.</p>
  *          <p>Conditional deletes are useful for deleting items only if specific conditions are met. If those conditions are met, DynamoDB performs the delete. Otherwise, the item is not deleted.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, DeleteItemCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, DeleteItemCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new DeleteItemCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DeleteItemCommandInput} for command's `input` shape.
+ * @see {@link DeleteItemCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DeleteItemCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4018,6 +4137,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *       into the <code>DISABLED</code> state, and the stream is automatically deleted after 24 hours.</p>
  *
  *          <p>Use the <code>DescribeTable</code> action to check the status of the table. </p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, DeleteTableCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, DeleteTableCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new DeleteTableCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DeleteTableCommandInput} for command's `input` shape.
+ * @see {@link DeleteTableCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DeleteTableCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4073,6 +4206,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Describes an existing backup of a table.</p>
  *          <p>You can call <code>DescribeBackup</code> at a maximum rate of 10 times per second.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, DescribeBackupCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, DescribeBackupCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new DescribeBackupCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DescribeBackupCommandInput} for command's `input` shape.
+ * @see {@link DescribeBackupCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DescribeBackupCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4137,6 +4284,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *        in time during the last 35 days.
  *      </p>
  *          <p>You can call <code>DescribeContinuousBackups</code> at a maximum rate of 10 times per second.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, DescribeContinuousBackupsCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, DescribeContinuousBackupsCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new DescribeContinuousBackupsCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DescribeContinuousBackupsCommandInput} for command's `input` shape.
+ * @see {@link DescribeContinuousBackupsCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DescribeContinuousBackupsCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4191,6 +4352,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Returns information about contributor insights, for a given table or global secondary index.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, DescribeContributorInsightsCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, DescribeContributorInsightsCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new DescribeContributorInsightsCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DescribeContributorInsightsCommandInput} for command's `input` shape.
+ * @see {@link DescribeContributorInsightsCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DescribeContributorInsightsCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4245,6 +4420,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Returns the regional endpoint information.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, DescribeEndpointsCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, DescribeEndpointsCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new DescribeEndpointsCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DescribeEndpointsCommandInput} for command's `input` shape.
+ * @see {@link DescribeEndpointsCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DescribeEndpointsCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4299,6 +4488,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Describes an existing table export.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, DescribeExportCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, DescribeExportCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new DescribeExportCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DescribeExportCommandInput} for command's `input` shape.
+ * @see {@link DescribeExportCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DescribeExportCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4357,6 +4560,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             <p>This operation only applies to <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V1.html">Version 2017.11.29</a> of global tables.
  *                    If you are using global tables <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V2.html">Version 2019.11.21</a> you can use <a href="https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_DescribeTable.html">DescribeTable</a> instead.</p>
  *          </note>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, DescribeGlobalTableCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, DescribeGlobalTableCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new DescribeGlobalTableCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DescribeGlobalTableCommandInput} for command's `input` shape.
+ * @see {@link DescribeGlobalTableCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DescribeGlobalTableCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4414,6 +4631,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *           <note>
  *             <p>This operation only applies to <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V1.html">Version 2017.11.29</a> of global tables.</p>
  *          </note>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, DescribeGlobalTableSettingsCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, DescribeGlobalTableSettingsCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new DescribeGlobalTableSettingsCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DescribeGlobalTableSettingsCommandInput} for command's `input` shape.
+ * @see {@link DescribeGlobalTableSettingsCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DescribeGlobalTableSettingsCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4468,6 +4699,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Returns information about the status of Kinesis streaming.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, DescribeKinesisStreamingDestinationCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, DescribeKinesisStreamingDestinationCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new DescribeKinesisStreamingDestinationCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DescribeKinesisStreamingDestinationCommandInput} for command's `input` shape.
+ * @see {@link DescribeKinesisStreamingDestinationCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DescribeKinesisStreamingDestinationCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4585,6 +4830,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *         errors if you call it more than once in a minute.</p>
  *          </note>
  *          <p>The <code>DescribeLimits</code> Request element has no content.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, DescribeLimitsCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, DescribeLimitsCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new DescribeLimitsCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DescribeLimitsCommandInput} for command's `input` shape.
+ * @see {@link DescribeLimitsCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DescribeLimitsCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4645,6 +4904,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *         consistent query, and the metadata for your table might not be available at that moment.
  *         Wait for a few seconds, and then try the <code>DescribeTable</code> request again.</p>
  *          </note>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, DescribeTableCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, DescribeTableCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new DescribeTableCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DescribeTableCommandInput} for command's `input` shape.
+ * @see {@link DescribeTableCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DescribeTableCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4702,6 +4975,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          <note>
  *             <p>This operation only applies to <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V2.html">Version 2019.11.21</a> of global tables.</p>
  *          </note>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, DescribeTableReplicaAutoScalingCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, DescribeTableReplicaAutoScalingCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new DescribeTableReplicaAutoScalingCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DescribeTableReplicaAutoScalingCommandInput} for command's `input` shape.
+ * @see {@link DescribeTableReplicaAutoScalingCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DescribeTableReplicaAutoScalingCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4756,6 +5043,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Gives a description of the Time to Live (TTL) status on the specified table. </p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, DescribeTimeToLiveCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, DescribeTimeToLiveCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new DescribeTimeToLiveCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DescribeTimeToLiveCommandInput} for command's `input` shape.
+ * @see {@link DescribeTimeToLiveCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DescribeTimeToLiveCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4811,6 +5112,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Stops replication from the DynamoDB table to the Kinesis data stream. This is done
  *             without deleting either of the resources.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, DisableKinesisStreamingDestinationCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, DisableKinesisStreamingDestinationCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new DisableKinesisStreamingDestinationCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DisableKinesisStreamingDestinationCommandInput} for command's `input` shape.
+ * @see {@link DisableKinesisStreamingDestinationCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DisableKinesisStreamingDestinationCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4868,6 +5183,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             during the enable workflow. If this operation doesn't return results immediately, use
  *             DescribeKinesisStreamingDestination to check if streaming to the Kinesis data stream is
  *             ACTIVE.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, EnableKinesisStreamingDestinationCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, EnableKinesisStreamingDestinationCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new EnableKinesisStreamingDestinationCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link EnableKinesisStreamingDestinationCommandInput} for command's `input` shape.
+ * @see {@link EnableKinesisStreamingDestinationCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class EnableKinesisStreamingDestinationCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4924,6 +5253,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  * <p>
  * This operation allows you to perform reads and singleton writes on data stored in DynamoDB, using PartiQL.
  * </p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, ExecuteStatementCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, ExecuteStatementCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new ExecuteStatementCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link ExecuteStatementCommandInput} for command's `input` shape.
+ * @see {@link ExecuteStatementCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class ExecuteStatementCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -4980,6 +5323,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  * <p>
  * This operation allows you to perform transactional reads or writes on data stored in DynamoDB, using PartiQL.
  * </p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, ExecuteTransactionCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, ExecuteTransactionCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new ExecuteTransactionCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link ExecuteTransactionCommandInput} for command's `input` shape.
+ * @see {@link ExecuteTransactionCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class ExecuteTransactionCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -5036,6 +5393,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  * <p>Exports table data to an S3 bucket. The table must have point in time recovery
  *             enabled, and you can export data from any time within the point in time recovery
  *             window.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, ExportTableToPointInTimeCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, ExportTableToPointInTimeCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new ExportTableToPointInTimeCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link ExportTableToPointInTimeCommandInput} for command's `input` shape.
+ * @see {@link ExportTableToPointInTimeCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class ExportTableToPointInTimeCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -5096,6 +5467,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *       requires a strongly consistent read, set <code>ConsistentRead</code> to <code>true</code>. Although
  *       a strongly consistent read might take more time than an eventually consistent read, it always
  *       returns the last updated value.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, GetItemCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, GetItemCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new GetItemCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link GetItemCommandInput} for command's `input` shape.
+ * @see {@link GetItemCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class GetItemCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -5156,6 +5541,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          <p>In the request, start time is inclusive, but end time is exclusive. Note that these
  *             boundaries are for the time at which the original backup was requested.</p>
  *          <p>You can call <code>ListBackups</code> a maximum of five times per second.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, ListBackupsCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, ListBackupsCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new ListBackupsCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link ListBackupsCommandInput} for command's `input` shape.
+ * @see {@link ListBackupsCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class ListBackupsCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -5210,6 +5609,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Returns a list of ContributorInsightsSummary for a table and all its global secondary indexes.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, ListContributorInsightsCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, ListContributorInsightsCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new ListContributorInsightsCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link ListContributorInsightsCommandInput} for command's `input` shape.
+ * @see {@link ListContributorInsightsCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class ListContributorInsightsCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -5264,6 +5677,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Lists completed exports within the past 90 days.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, ListExportsCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, ListExportsCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new ListExportsCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link ListExportsCommandInput} for command's `input` shape.
+ * @see {@link ListExportsCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class ListExportsCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -5321,6 +5748,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *           <note>
  *             <p>This operation only applies to <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V1.html">Version 2017.11.29</a> of global tables.</p>
  *          </note>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, ListGlobalTablesCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, ListGlobalTablesCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new ListGlobalTablesCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link ListGlobalTablesCommandInput} for command's `input` shape.
+ * @see {@link ListGlobalTablesCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class ListGlobalTablesCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -5377,6 +5818,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  * <p>Returns an array of table names associated with the current account and endpoint. The output
  *       from <code>ListTables</code> is paginated, with each page returning a maximum of 100 table
  *       names.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, ListTablesCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, ListTablesCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new ListTablesCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link ListTablesCommandInput} for command's `input` shape.
+ * @see {@link ListTablesCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class ListTablesCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -5434,6 +5889,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          <p>For an overview on tagging DynamoDB resources, see
  *       <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tagging.html">Tagging for DynamoDB</a>
  *       in the <i>Amazon DynamoDB Developer Guide</i>.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, ListTagsOfResourceCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, ListTagsOfResourceCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new ListTagsOfResourceCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link ListTagsOfResourceCommandInput} for command's `input` shape.
+ * @see {@link ListTagsOfResourceCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class ListTagsOfResourceCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -5555,6 +6024,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          no matching item exists.</p>
  *          </note>
  *          <p>For more information about <code>PutItem</code>, see <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html">Working with Items</a> in the <i>Amazon DynamoDB Developer Guide</i>.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, PutItemCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, PutItemCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new PutItemCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link PutItemCommandInput} for command's `input` shape.
+ * @see {@link PutItemCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class PutItemCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -5664,6 +6147,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             strongly consistent result. Global secondary indexes support eventually consistent reads
  *             only, so do not specify <code>ConsistentRead</code> when querying a global
  *             secondary index.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, QueryCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, QueryCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new QueryCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link QueryCommandInput} for command's `input` shape.
+ * @see {@link QueryCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class QueryCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -5742,6 +6239,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                  <p>Time to Live (TTL) settings</p>
  *              </li>
  *          </ul>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, RestoreTableFromBackupCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, RestoreTableFromBackupCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new RestoreTableFromBackupCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link RestoreTableFromBackupCommandInput} for command's `input` shape.
+ * @see {@link RestoreTableFromBackupCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class RestoreTableFromBackupCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -5851,6 +6362,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                  <p>Point in time recovery settings</p>
  *              </li>
  *          </ul>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, RestoreTableToPointInTimeCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, RestoreTableToPointInTimeCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new RestoreTableToPointInTimeCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link RestoreTableToPointInTimeCommandInput} for command's `input` shape.
+ * @see {@link RestoreTableToPointInTimeCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class RestoreTableToPointInTimeCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -5929,6 +6454,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             immediately before the operation began. If you need a consistent copy of the data, as of
  *             the time that the <code>Scan</code> begins, you can set the <code>ConsistentRead</code>
  *             parameter to <code>true</code>.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, ScanCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, ScanCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new ScanCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link ScanCommandInput} for command's `input` shape.
+ * @see {@link ScanCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class ScanCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -5989,6 +6528,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          <p>For an overview on tagging DynamoDB resources, see
  *       <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tagging.html">Tagging for DynamoDB</a>
  *       in the <i>Amazon DynamoDB Developer Guide</i>.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, TagResourceCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, TagResourceCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new TagResourceCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link TagResourceCommandInput} for command's `input` shape.
+ * @see {@link TagResourceCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class TagResourceCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -6068,6 +6621,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                <p>The aggregate size of the items in the transaction cannot exceed 4 MB.</p>
  *             </li>
  *          </ul>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, TransactGetItemsCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, TransactGetItemsCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new TransactGetItemsCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link TransactGetItemsCommandInput} for command's `input` shape.
+ * @see {@link TransactGetItemsCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class TransactGetItemsCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -6195,6 +6762,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                <p>There  is a user error, such as an invalid data format.</p>
  *             </li>
  *          </ul>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, TransactWriteItemsCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, TransactWriteItemsCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new TransactWriteItemsCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link TransactWriteItemsCommandInput} for command's `input` shape.
+ * @see {@link TransactWriteItemsCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class TransactWriteItemsCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -6253,6 +6834,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          <p>For an overview on tagging DynamoDB resources, see
  *       <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tagging.html">Tagging for DynamoDB</a>
  *       in the <i>Amazon DynamoDB Developer Guide</i>.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, UntagResourceCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, UntagResourceCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new UntagResourceCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link UntagResourceCommandInput} for command's `input` shape.
+ * @see {@link UntagResourceCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class UntagResourceCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -6318,6 +6913,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          <p>
  *             <code>LatestRestorableDateTime</code> is typically 5 minutes before the current time.
  *             You can restore your table to any point in time during the last 35 days. </p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, UpdateContinuousBackupsCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, UpdateContinuousBackupsCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new UpdateContinuousBackupsCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link UpdateContinuousBackupsCommandInput} for command's `input` shape.
+ * @see {@link UpdateContinuousBackupsCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class UpdateContinuousBackupsCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -6372,6 +6981,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Updates the status for contributor insights for a specific table or index.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, UpdateContributorInsightsCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, UpdateContributorInsightsCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new UpdateContributorInsightsCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link UpdateContributorInsightsCommandInput} for command's `input` shape.
+ * @see {@link UpdateContributorInsightsCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class UpdateContributorInsightsCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -6454,6 +7077,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             </p>
  *             </li>
  *          </ul>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, UpdateGlobalTableCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, UpdateGlobalTableCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new UpdateGlobalTableCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link UpdateGlobalTableCommandInput} for command's `input` shape.
+ * @see {@link UpdateGlobalTableCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class UpdateGlobalTableCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -6508,6 +7145,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Updates settings for a global table.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, UpdateGlobalTableSettingsCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, UpdateGlobalTableSettingsCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new UpdateGlobalTableSettingsCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link UpdateGlobalTableSettingsCommandInput} for command's `input` shape.
+ * @see {@link UpdateGlobalTableSettingsCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class UpdateGlobalTableSettingsCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -6564,6 +7215,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  * <p>Edits an existing item's attributes, or adds a new item to the table if it does not already exist. You can put, delete, or add attribute values. You can also perform a conditional update on an existing item (insert a new attribute name-value pair if it doesn't exist, or replace an existing name-value pair if it has certain expected attribute values).</p>
  *          <p>You can also return the item's attribute values in the same <code>UpdateItem</code>
  *       operation using the <code>ReturnValues</code> parameter.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, UpdateItemCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, UpdateItemCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new UpdateItemCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link UpdateItemCommandInput} for command's `input` shape.
+ * @see {@link UpdateItemCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class UpdateItemCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -6640,6 +7305,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *       changes from <code>ACTIVE</code> to <code>UPDATING</code>. While it is <code>UPDATING</code>,
  *       you cannot issue another <code>UpdateTable</code> request. When the table returns to the
  *         <code>ACTIVE</code> state, the <code>UpdateTable</code> operation is complete.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, UpdateTableCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, UpdateTableCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new UpdateTableCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link UpdateTableCommandInput} for command's `input` shape.
+ * @see {@link UpdateTableCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class UpdateTableCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -6697,6 +7376,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          <note>
  *             <p>This operation only applies to <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V2.html">Version 2019.11.21</a> of global tables.</p>
  *          </note>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, UpdateTableReplicaAutoScalingCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, UpdateTableReplicaAutoScalingCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new UpdateTableReplicaAutoScalingCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link UpdateTableReplicaAutoScalingCommandInput} for command's `input` shape.
+ * @see {@link UpdateTableReplicaAutoScalingCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class UpdateTableReplicaAutoScalingCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -6775,6 +7468,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             secondary index immediately in the same eventually consistent way as a standard delete
  *             operation.</p>
  *         <p>For more information, see <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TTL.html">Time To Live</a> in the Amazon DynamoDB Developer Guide. </p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { DynamoDBClient, UpdateTimeToLiveCommand } from "@aws-sdk/client-dynamodb"; // ES Modules import
+ * // const { DynamoDBClient, UpdateTimeToLiveCommand } = require("@aws-sdk/client-dynamodb"); // CommonJS import
+ * const client = new DynamoDBClient(config);
+ * const command = new UpdateTimeToLiveCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link UpdateTimeToLiveCommandInput} for command's `input` shape.
+ * @see {@link UpdateTimeToLiveCommandOutput} for command's `response` shape.
+ * @see {@link DynamoDBClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class UpdateTimeToLiveCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -7216,48 +7923,72 @@ exports.TransactGetItemsOutput = exports.ExecuteTransactionOutput = exports.Exec
 exports.TransactWriteItemsInput = exports.TransactWriteItem = exports.UpdateItemInput = exports.BatchWriteItemOutput = exports.QueryInput = exports.PutItemInput = exports.DeleteItemInput = exports.BatchWriteItemInput = exports.ScanInput = exports.BatchGetItemOutput = exports.WriteRequest = exports.UpdateItemOutput = exports.ScanOutput = exports.QueryOutput = exports.PutItemOutput = exports.DeleteItemOutput = exports.Update = exports.Put = exports.Delete = exports.ConditionCheck = exports.TransactWriteItemsOutput = exports.TransactGetItemsInput = exports.ExpectedAttributeValue = exports.BatchGetItemInput = exports.TransactionCanceledException = void 0;
 var ArchivalSummary;
 (function (ArchivalSummary) {
+    /**
+     * @internal
+     */
     ArchivalSummary.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ArchivalSummary = exports.ArchivalSummary || (exports.ArchivalSummary = {}));
 var AttributeDefinition;
 (function (AttributeDefinition) {
+    /**
+     * @internal
+     */
     AttributeDefinition.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AttributeDefinition = exports.AttributeDefinition || (exports.AttributeDefinition = {}));
 var AutoScalingTargetTrackingScalingPolicyConfigurationDescription;
 (function (AutoScalingTargetTrackingScalingPolicyConfigurationDescription) {
+    /**
+     * @internal
+     */
     AutoScalingTargetTrackingScalingPolicyConfigurationDescription.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AutoScalingTargetTrackingScalingPolicyConfigurationDescription = exports.AutoScalingTargetTrackingScalingPolicyConfigurationDescription || (exports.AutoScalingTargetTrackingScalingPolicyConfigurationDescription = {}));
 var AutoScalingPolicyDescription;
 (function (AutoScalingPolicyDescription) {
+    /**
+     * @internal
+     */
     AutoScalingPolicyDescription.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AutoScalingPolicyDescription = exports.AutoScalingPolicyDescription || (exports.AutoScalingPolicyDescription = {}));
 var AutoScalingTargetTrackingScalingPolicyConfigurationUpdate;
 (function (AutoScalingTargetTrackingScalingPolicyConfigurationUpdate) {
+    /**
+     * @internal
+     */
     AutoScalingTargetTrackingScalingPolicyConfigurationUpdate.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AutoScalingTargetTrackingScalingPolicyConfigurationUpdate = exports.AutoScalingTargetTrackingScalingPolicyConfigurationUpdate || (exports.AutoScalingTargetTrackingScalingPolicyConfigurationUpdate = {}));
 var AutoScalingPolicyUpdate;
 (function (AutoScalingPolicyUpdate) {
+    /**
+     * @internal
+     */
     AutoScalingPolicyUpdate.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AutoScalingPolicyUpdate = exports.AutoScalingPolicyUpdate || (exports.AutoScalingPolicyUpdate = {}));
 var AutoScalingSettingsDescription;
 (function (AutoScalingSettingsDescription) {
+    /**
+     * @internal
+     */
     AutoScalingSettingsDescription.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AutoScalingSettingsDescription = exports.AutoScalingSettingsDescription || (exports.AutoScalingSettingsDescription = {}));
 var AutoScalingSettingsUpdate;
 (function (AutoScalingSettingsUpdate) {
+    /**
+     * @internal
+     */
     AutoScalingSettingsUpdate.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -7270,90 +8001,135 @@ var BackupType;
 })(BackupType = exports.BackupType || (exports.BackupType = {}));
 var BackupDetails;
 (function (BackupDetails) {
+    /**
+     * @internal
+     */
     BackupDetails.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(BackupDetails = exports.BackupDetails || (exports.BackupDetails = {}));
 var KeySchemaElement;
 (function (KeySchemaElement) {
+    /**
+     * @internal
+     */
     KeySchemaElement.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(KeySchemaElement = exports.KeySchemaElement || (exports.KeySchemaElement = {}));
 var ProvisionedThroughput;
 (function (ProvisionedThroughput) {
+    /**
+     * @internal
+     */
     ProvisionedThroughput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ProvisionedThroughput = exports.ProvisionedThroughput || (exports.ProvisionedThroughput = {}));
 var SourceTableDetails;
 (function (SourceTableDetails) {
+    /**
+     * @internal
+     */
     SourceTableDetails.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(SourceTableDetails = exports.SourceTableDetails || (exports.SourceTableDetails = {}));
 var Projection;
 (function (Projection) {
+    /**
+     * @internal
+     */
     Projection.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(Projection = exports.Projection || (exports.Projection = {}));
 var GlobalSecondaryIndexInfo;
 (function (GlobalSecondaryIndexInfo) {
+    /**
+     * @internal
+     */
     GlobalSecondaryIndexInfo.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GlobalSecondaryIndexInfo = exports.GlobalSecondaryIndexInfo || (exports.GlobalSecondaryIndexInfo = {}));
 var LocalSecondaryIndexInfo;
 (function (LocalSecondaryIndexInfo) {
+    /**
+     * @internal
+     */
     LocalSecondaryIndexInfo.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(LocalSecondaryIndexInfo = exports.LocalSecondaryIndexInfo || (exports.LocalSecondaryIndexInfo = {}));
 var SSEDescription;
 (function (SSEDescription) {
+    /**
+     * @internal
+     */
     SSEDescription.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(SSEDescription = exports.SSEDescription || (exports.SSEDescription = {}));
 var StreamSpecification;
 (function (StreamSpecification) {
+    /**
+     * @internal
+     */
     StreamSpecification.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(StreamSpecification = exports.StreamSpecification || (exports.StreamSpecification = {}));
 var TimeToLiveDescription;
 (function (TimeToLiveDescription) {
+    /**
+     * @internal
+     */
     TimeToLiveDescription.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(TimeToLiveDescription = exports.TimeToLiveDescription || (exports.TimeToLiveDescription = {}));
 var SourceTableFeatureDetails;
 (function (SourceTableFeatureDetails) {
+    /**
+     * @internal
+     */
     SourceTableFeatureDetails.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(SourceTableFeatureDetails = exports.SourceTableFeatureDetails || (exports.SourceTableFeatureDetails = {}));
 var BackupDescription;
 (function (BackupDescription) {
+    /**
+     * @internal
+     */
     BackupDescription.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(BackupDescription = exports.BackupDescription || (exports.BackupDescription = {}));
 var BackupInUseException;
 (function (BackupInUseException) {
+    /**
+     * @internal
+     */
     BackupInUseException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(BackupInUseException = exports.BackupInUseException || (exports.BackupInUseException = {}));
 var BackupNotFoundException;
 (function (BackupNotFoundException) {
+    /**
+     * @internal
+     */
     BackupNotFoundException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(BackupNotFoundException = exports.BackupNotFoundException || (exports.BackupNotFoundException = {}));
 var BackupSummary;
 (function (BackupSummary) {
+    /**
+     * @internal
+     */
     BackupSummary.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -7381,378 +8157,567 @@ var BatchStatementErrorCodeEnum;
 })(BatchStatementErrorCodeEnum = exports.BatchStatementErrorCodeEnum || (exports.BatchStatementErrorCodeEnum = {}));
 var BatchStatementError;
 (function (BatchStatementError) {
+    /**
+     * @internal
+     */
     BatchStatementError.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(BatchStatementError = exports.BatchStatementError || (exports.BatchStatementError = {}));
 var InternalServerError;
 (function (InternalServerError) {
+    /**
+     * @internal
+     */
     InternalServerError.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(InternalServerError = exports.InternalServerError || (exports.InternalServerError = {}));
 var RequestLimitExceeded;
 (function (RequestLimitExceeded) {
+    /**
+     * @internal
+     */
     RequestLimitExceeded.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(RequestLimitExceeded = exports.RequestLimitExceeded || (exports.RequestLimitExceeded = {}));
 var Capacity;
 (function (Capacity) {
+    /**
+     * @internal
+     */
     Capacity.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(Capacity = exports.Capacity || (exports.Capacity = {}));
 var ConsumedCapacity;
 (function (ConsumedCapacity) {
+    /**
+     * @internal
+     */
     ConsumedCapacity.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ConsumedCapacity = exports.ConsumedCapacity || (exports.ConsumedCapacity = {}));
 var InvalidEndpointException;
 (function (InvalidEndpointException) {
+    /**
+     * @internal
+     */
     InvalidEndpointException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(InvalidEndpointException = exports.InvalidEndpointException || (exports.InvalidEndpointException = {}));
 var ProvisionedThroughputExceededException;
 (function (ProvisionedThroughputExceededException) {
+    /**
+     * @internal
+     */
     ProvisionedThroughputExceededException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ProvisionedThroughputExceededException = exports.ProvisionedThroughputExceededException || (exports.ProvisionedThroughputExceededException = {}));
 var ResourceNotFoundException;
 (function (ResourceNotFoundException) {
+    /**
+     * @internal
+     */
     ResourceNotFoundException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ResourceNotFoundException = exports.ResourceNotFoundException || (exports.ResourceNotFoundException = {}));
 var ItemCollectionSizeLimitExceededException;
 (function (ItemCollectionSizeLimitExceededException) {
+    /**
+     * @internal
+     */
     ItemCollectionSizeLimitExceededException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ItemCollectionSizeLimitExceededException = exports.ItemCollectionSizeLimitExceededException || (exports.ItemCollectionSizeLimitExceededException = {}));
 var BillingModeSummary;
 (function (BillingModeSummary) {
+    /**
+     * @internal
+     */
     BillingModeSummary.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(BillingModeSummary = exports.BillingModeSummary || (exports.BillingModeSummary = {}));
 var ConditionalCheckFailedException;
 (function (ConditionalCheckFailedException) {
+    /**
+     * @internal
+     */
     ConditionalCheckFailedException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ConditionalCheckFailedException = exports.ConditionalCheckFailedException || (exports.ConditionalCheckFailedException = {}));
 var PointInTimeRecoveryDescription;
 (function (PointInTimeRecoveryDescription) {
+    /**
+     * @internal
+     */
     PointInTimeRecoveryDescription.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PointInTimeRecoveryDescription = exports.PointInTimeRecoveryDescription || (exports.PointInTimeRecoveryDescription = {}));
 var ContinuousBackupsDescription;
 (function (ContinuousBackupsDescription) {
+    /**
+     * @internal
+     */
     ContinuousBackupsDescription.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ContinuousBackupsDescription = exports.ContinuousBackupsDescription || (exports.ContinuousBackupsDescription = {}));
 var ContinuousBackupsUnavailableException;
 (function (ContinuousBackupsUnavailableException) {
+    /**
+     * @internal
+     */
     ContinuousBackupsUnavailableException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ContinuousBackupsUnavailableException = exports.ContinuousBackupsUnavailableException || (exports.ContinuousBackupsUnavailableException = {}));
 var ContributorInsightsSummary;
 (function (ContributorInsightsSummary) {
+    /**
+     * @internal
+     */
     ContributorInsightsSummary.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ContributorInsightsSummary = exports.ContributorInsightsSummary || (exports.ContributorInsightsSummary = {}));
 var CreateBackupInput;
 (function (CreateBackupInput) {
+    /**
+     * @internal
+     */
     CreateBackupInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(CreateBackupInput = exports.CreateBackupInput || (exports.CreateBackupInput = {}));
 var CreateBackupOutput;
 (function (CreateBackupOutput) {
+    /**
+     * @internal
+     */
     CreateBackupOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(CreateBackupOutput = exports.CreateBackupOutput || (exports.CreateBackupOutput = {}));
 var LimitExceededException;
 (function (LimitExceededException) {
+    /**
+     * @internal
+     */
     LimitExceededException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(LimitExceededException = exports.LimitExceededException || (exports.LimitExceededException = {}));
 var TableInUseException;
 (function (TableInUseException) {
+    /**
+     * @internal
+     */
     TableInUseException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(TableInUseException = exports.TableInUseException || (exports.TableInUseException = {}));
 var TableNotFoundException;
 (function (TableNotFoundException) {
+    /**
+     * @internal
+     */
     TableNotFoundException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(TableNotFoundException = exports.TableNotFoundException || (exports.TableNotFoundException = {}));
 var CreateGlobalSecondaryIndexAction;
 (function (CreateGlobalSecondaryIndexAction) {
+    /**
+     * @internal
+     */
     CreateGlobalSecondaryIndexAction.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(CreateGlobalSecondaryIndexAction = exports.CreateGlobalSecondaryIndexAction || (exports.CreateGlobalSecondaryIndexAction = {}));
 var Replica;
 (function (Replica) {
+    /**
+     * @internal
+     */
     Replica.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(Replica = exports.Replica || (exports.Replica = {}));
 var CreateGlobalTableInput;
 (function (CreateGlobalTableInput) {
+    /**
+     * @internal
+     */
     CreateGlobalTableInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(CreateGlobalTableInput = exports.CreateGlobalTableInput || (exports.CreateGlobalTableInput = {}));
 var ProvisionedThroughputOverride;
 (function (ProvisionedThroughputOverride) {
+    /**
+     * @internal
+     */
     ProvisionedThroughputOverride.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ProvisionedThroughputOverride = exports.ProvisionedThroughputOverride || (exports.ProvisionedThroughputOverride = {}));
 var ReplicaGlobalSecondaryIndexDescription;
 (function (ReplicaGlobalSecondaryIndexDescription) {
+    /**
+     * @internal
+     */
     ReplicaGlobalSecondaryIndexDescription.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ReplicaGlobalSecondaryIndexDescription = exports.ReplicaGlobalSecondaryIndexDescription || (exports.ReplicaGlobalSecondaryIndexDescription = {}));
 var ReplicaDescription;
 (function (ReplicaDescription) {
+    /**
+     * @internal
+     */
     ReplicaDescription.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ReplicaDescription = exports.ReplicaDescription || (exports.ReplicaDescription = {}));
 var GlobalTableDescription;
 (function (GlobalTableDescription) {
+    /**
+     * @internal
+     */
     GlobalTableDescription.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GlobalTableDescription = exports.GlobalTableDescription || (exports.GlobalTableDescription = {}));
 var CreateGlobalTableOutput;
 (function (CreateGlobalTableOutput) {
+    /**
+     * @internal
+     */
     CreateGlobalTableOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(CreateGlobalTableOutput = exports.CreateGlobalTableOutput || (exports.CreateGlobalTableOutput = {}));
 var GlobalTableAlreadyExistsException;
 (function (GlobalTableAlreadyExistsException) {
+    /**
+     * @internal
+     */
     GlobalTableAlreadyExistsException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GlobalTableAlreadyExistsException = exports.GlobalTableAlreadyExistsException || (exports.GlobalTableAlreadyExistsException = {}));
 var CreateReplicaAction;
 (function (CreateReplicaAction) {
+    /**
+     * @internal
+     */
     CreateReplicaAction.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(CreateReplicaAction = exports.CreateReplicaAction || (exports.CreateReplicaAction = {}));
 var ReplicaGlobalSecondaryIndex;
 (function (ReplicaGlobalSecondaryIndex) {
+    /**
+     * @internal
+     */
     ReplicaGlobalSecondaryIndex.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ReplicaGlobalSecondaryIndex = exports.ReplicaGlobalSecondaryIndex || (exports.ReplicaGlobalSecondaryIndex = {}));
 var CreateReplicationGroupMemberAction;
 (function (CreateReplicationGroupMemberAction) {
+    /**
+     * @internal
+     */
     CreateReplicationGroupMemberAction.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(CreateReplicationGroupMemberAction = exports.CreateReplicationGroupMemberAction || (exports.CreateReplicationGroupMemberAction = {}));
 var GlobalSecondaryIndex;
 (function (GlobalSecondaryIndex) {
+    /**
+     * @internal
+     */
     GlobalSecondaryIndex.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GlobalSecondaryIndex = exports.GlobalSecondaryIndex || (exports.GlobalSecondaryIndex = {}));
 var LocalSecondaryIndex;
 (function (LocalSecondaryIndex) {
+    /**
+     * @internal
+     */
     LocalSecondaryIndex.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(LocalSecondaryIndex = exports.LocalSecondaryIndex || (exports.LocalSecondaryIndex = {}));
 var SSESpecification;
 (function (SSESpecification) {
+    /**
+     * @internal
+     */
     SSESpecification.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(SSESpecification = exports.SSESpecification || (exports.SSESpecification = {}));
 var Tag;
 (function (Tag) {
+    /**
+     * @internal
+     */
     Tag.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(Tag = exports.Tag || (exports.Tag = {}));
 var CreateTableInput;
 (function (CreateTableInput) {
+    /**
+     * @internal
+     */
     CreateTableInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(CreateTableInput = exports.CreateTableInput || (exports.CreateTableInput = {}));
 var ProvisionedThroughputDescription;
 (function (ProvisionedThroughputDescription) {
+    /**
+     * @internal
+     */
     ProvisionedThroughputDescription.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ProvisionedThroughputDescription = exports.ProvisionedThroughputDescription || (exports.ProvisionedThroughputDescription = {}));
 var GlobalSecondaryIndexDescription;
 (function (GlobalSecondaryIndexDescription) {
+    /**
+     * @internal
+     */
     GlobalSecondaryIndexDescription.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GlobalSecondaryIndexDescription = exports.GlobalSecondaryIndexDescription || (exports.GlobalSecondaryIndexDescription = {}));
 var LocalSecondaryIndexDescription;
 (function (LocalSecondaryIndexDescription) {
+    /**
+     * @internal
+     */
     LocalSecondaryIndexDescription.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(LocalSecondaryIndexDescription = exports.LocalSecondaryIndexDescription || (exports.LocalSecondaryIndexDescription = {}));
 var RestoreSummary;
 (function (RestoreSummary) {
+    /**
+     * @internal
+     */
     RestoreSummary.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(RestoreSummary = exports.RestoreSummary || (exports.RestoreSummary = {}));
 var TableDescription;
 (function (TableDescription) {
+    /**
+     * @internal
+     */
     TableDescription.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(TableDescription = exports.TableDescription || (exports.TableDescription = {}));
 var CreateTableOutput;
 (function (CreateTableOutput) {
+    /**
+     * @internal
+     */
     CreateTableOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(CreateTableOutput = exports.CreateTableOutput || (exports.CreateTableOutput = {}));
 var ResourceInUseException;
 (function (ResourceInUseException) {
+    /**
+     * @internal
+     */
     ResourceInUseException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ResourceInUseException = exports.ResourceInUseException || (exports.ResourceInUseException = {}));
 var DeleteBackupInput;
 (function (DeleteBackupInput) {
+    /**
+     * @internal
+     */
     DeleteBackupInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DeleteBackupInput = exports.DeleteBackupInput || (exports.DeleteBackupInput = {}));
 var DeleteBackupOutput;
 (function (DeleteBackupOutput) {
+    /**
+     * @internal
+     */
     DeleteBackupOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DeleteBackupOutput = exports.DeleteBackupOutput || (exports.DeleteBackupOutput = {}));
 var DeleteGlobalSecondaryIndexAction;
 (function (DeleteGlobalSecondaryIndexAction) {
+    /**
+     * @internal
+     */
     DeleteGlobalSecondaryIndexAction.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DeleteGlobalSecondaryIndexAction = exports.DeleteGlobalSecondaryIndexAction || (exports.DeleteGlobalSecondaryIndexAction = {}));
 var TransactionConflictException;
 (function (TransactionConflictException) {
+    /**
+     * @internal
+     */
     TransactionConflictException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(TransactionConflictException = exports.TransactionConflictException || (exports.TransactionConflictException = {}));
 var DeleteReplicaAction;
 (function (DeleteReplicaAction) {
+    /**
+     * @internal
+     */
     DeleteReplicaAction.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DeleteReplicaAction = exports.DeleteReplicaAction || (exports.DeleteReplicaAction = {}));
 var DeleteReplicationGroupMemberAction;
 (function (DeleteReplicationGroupMemberAction) {
+    /**
+     * @internal
+     */
     DeleteReplicationGroupMemberAction.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DeleteReplicationGroupMemberAction = exports.DeleteReplicationGroupMemberAction || (exports.DeleteReplicationGroupMemberAction = {}));
 var DeleteTableInput;
 (function (DeleteTableInput) {
+    /**
+     * @internal
+     */
     DeleteTableInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DeleteTableInput = exports.DeleteTableInput || (exports.DeleteTableInput = {}));
 var DeleteTableOutput;
 (function (DeleteTableOutput) {
+    /**
+     * @internal
+     */
     DeleteTableOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DeleteTableOutput = exports.DeleteTableOutput || (exports.DeleteTableOutput = {}));
 var DescribeBackupInput;
 (function (DescribeBackupInput) {
+    /**
+     * @internal
+     */
     DescribeBackupInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DescribeBackupInput = exports.DescribeBackupInput || (exports.DescribeBackupInput = {}));
 var DescribeBackupOutput;
 (function (DescribeBackupOutput) {
+    /**
+     * @internal
+     */
     DescribeBackupOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DescribeBackupOutput = exports.DescribeBackupOutput || (exports.DescribeBackupOutput = {}));
 var DescribeContinuousBackupsInput;
 (function (DescribeContinuousBackupsInput) {
+    /**
+     * @internal
+     */
     DescribeContinuousBackupsInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DescribeContinuousBackupsInput = exports.DescribeContinuousBackupsInput || (exports.DescribeContinuousBackupsInput = {}));
 var DescribeContinuousBackupsOutput;
 (function (DescribeContinuousBackupsOutput) {
+    /**
+     * @internal
+     */
     DescribeContinuousBackupsOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DescribeContinuousBackupsOutput = exports.DescribeContinuousBackupsOutput || (exports.DescribeContinuousBackupsOutput = {}));
 var DescribeContributorInsightsInput;
 (function (DescribeContributorInsightsInput) {
+    /**
+     * @internal
+     */
     DescribeContributorInsightsInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DescribeContributorInsightsInput = exports.DescribeContributorInsightsInput || (exports.DescribeContributorInsightsInput = {}));
 var FailureException;
 (function (FailureException) {
+    /**
+     * @internal
+     */
     FailureException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(FailureException = exports.FailureException || (exports.FailureException = {}));
 var DescribeContributorInsightsOutput;
 (function (DescribeContributorInsightsOutput) {
+    /**
+     * @internal
+     */
     DescribeContributorInsightsOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DescribeContributorInsightsOutput = exports.DescribeContributorInsightsOutput || (exports.DescribeContributorInsightsOutput = {}));
 var DescribeEndpointsRequest;
 (function (DescribeEndpointsRequest) {
+    /**
+     * @internal
+     */
     DescribeEndpointsRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DescribeEndpointsRequest = exports.DescribeEndpointsRequest || (exports.DescribeEndpointsRequest = {}));
 var Endpoint;
 (function (Endpoint) {
+    /**
+     * @internal
+     */
     Endpoint.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(Endpoint = exports.Endpoint || (exports.Endpoint = {}));
 var DescribeEndpointsResponse;
 (function (DescribeEndpointsResponse) {
+    /**
+     * @internal
+     */
     DescribeEndpointsResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DescribeEndpointsResponse = exports.DescribeEndpointsResponse || (exports.DescribeEndpointsResponse = {}));
 var DescribeExportInput;
 (function (DescribeExportInput) {
+    /**
+     * @internal
+     */
     DescribeExportInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -7770,516 +8735,774 @@ var ExportStatus;
 })(ExportStatus = exports.ExportStatus || (exports.ExportStatus = {}));
 var ExportDescription;
 (function (ExportDescription) {
+    /**
+     * @internal
+     */
     ExportDescription.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ExportDescription = exports.ExportDescription || (exports.ExportDescription = {}));
 var DescribeExportOutput;
 (function (DescribeExportOutput) {
+    /**
+     * @internal
+     */
     DescribeExportOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DescribeExportOutput = exports.DescribeExportOutput || (exports.DescribeExportOutput = {}));
 var ExportNotFoundException;
 (function (ExportNotFoundException) {
+    /**
+     * @internal
+     */
     ExportNotFoundException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ExportNotFoundException = exports.ExportNotFoundException || (exports.ExportNotFoundException = {}));
 var DescribeGlobalTableInput;
 (function (DescribeGlobalTableInput) {
+    /**
+     * @internal
+     */
     DescribeGlobalTableInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DescribeGlobalTableInput = exports.DescribeGlobalTableInput || (exports.DescribeGlobalTableInput = {}));
 var DescribeGlobalTableOutput;
 (function (DescribeGlobalTableOutput) {
+    /**
+     * @internal
+     */
     DescribeGlobalTableOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DescribeGlobalTableOutput = exports.DescribeGlobalTableOutput || (exports.DescribeGlobalTableOutput = {}));
 var GlobalTableNotFoundException;
 (function (GlobalTableNotFoundException) {
+    /**
+     * @internal
+     */
     GlobalTableNotFoundException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GlobalTableNotFoundException = exports.GlobalTableNotFoundException || (exports.GlobalTableNotFoundException = {}));
 var DescribeGlobalTableSettingsInput;
 (function (DescribeGlobalTableSettingsInput) {
+    /**
+     * @internal
+     */
     DescribeGlobalTableSettingsInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DescribeGlobalTableSettingsInput = exports.DescribeGlobalTableSettingsInput || (exports.DescribeGlobalTableSettingsInput = {}));
 var ReplicaGlobalSecondaryIndexSettingsDescription;
 (function (ReplicaGlobalSecondaryIndexSettingsDescription) {
+    /**
+     * @internal
+     */
     ReplicaGlobalSecondaryIndexSettingsDescription.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ReplicaGlobalSecondaryIndexSettingsDescription = exports.ReplicaGlobalSecondaryIndexSettingsDescription || (exports.ReplicaGlobalSecondaryIndexSettingsDescription = {}));
 var ReplicaSettingsDescription;
 (function (ReplicaSettingsDescription) {
+    /**
+     * @internal
+     */
     ReplicaSettingsDescription.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ReplicaSettingsDescription = exports.ReplicaSettingsDescription || (exports.ReplicaSettingsDescription = {}));
 var DescribeGlobalTableSettingsOutput;
 (function (DescribeGlobalTableSettingsOutput) {
+    /**
+     * @internal
+     */
     DescribeGlobalTableSettingsOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DescribeGlobalTableSettingsOutput = exports.DescribeGlobalTableSettingsOutput || (exports.DescribeGlobalTableSettingsOutput = {}));
 var DescribeKinesisStreamingDestinationInput;
 (function (DescribeKinesisStreamingDestinationInput) {
+    /**
+     * @internal
+     */
     DescribeKinesisStreamingDestinationInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DescribeKinesisStreamingDestinationInput = exports.DescribeKinesisStreamingDestinationInput || (exports.DescribeKinesisStreamingDestinationInput = {}));
 var KinesisDataStreamDestination;
 (function (KinesisDataStreamDestination) {
+    /**
+     * @internal
+     */
     KinesisDataStreamDestination.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(KinesisDataStreamDestination = exports.KinesisDataStreamDestination || (exports.KinesisDataStreamDestination = {}));
 var DescribeKinesisStreamingDestinationOutput;
 (function (DescribeKinesisStreamingDestinationOutput) {
+    /**
+     * @internal
+     */
     DescribeKinesisStreamingDestinationOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DescribeKinesisStreamingDestinationOutput = exports.DescribeKinesisStreamingDestinationOutput || (exports.DescribeKinesisStreamingDestinationOutput = {}));
 var DescribeLimitsInput;
 (function (DescribeLimitsInput) {
+    /**
+     * @internal
+     */
     DescribeLimitsInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DescribeLimitsInput = exports.DescribeLimitsInput || (exports.DescribeLimitsInput = {}));
 var DescribeLimitsOutput;
 (function (DescribeLimitsOutput) {
+    /**
+     * @internal
+     */
     DescribeLimitsOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DescribeLimitsOutput = exports.DescribeLimitsOutput || (exports.DescribeLimitsOutput = {}));
 var DescribeTableInput;
 (function (DescribeTableInput) {
+    /**
+     * @internal
+     */
     DescribeTableInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DescribeTableInput = exports.DescribeTableInput || (exports.DescribeTableInput = {}));
 var DescribeTableOutput;
 (function (DescribeTableOutput) {
+    /**
+     * @internal
+     */
     DescribeTableOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DescribeTableOutput = exports.DescribeTableOutput || (exports.DescribeTableOutput = {}));
 var DescribeTableReplicaAutoScalingInput;
 (function (DescribeTableReplicaAutoScalingInput) {
+    /**
+     * @internal
+     */
     DescribeTableReplicaAutoScalingInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DescribeTableReplicaAutoScalingInput = exports.DescribeTableReplicaAutoScalingInput || (exports.DescribeTableReplicaAutoScalingInput = {}));
 var ReplicaGlobalSecondaryIndexAutoScalingDescription;
 (function (ReplicaGlobalSecondaryIndexAutoScalingDescription) {
+    /**
+     * @internal
+     */
     ReplicaGlobalSecondaryIndexAutoScalingDescription.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ReplicaGlobalSecondaryIndexAutoScalingDescription = exports.ReplicaGlobalSecondaryIndexAutoScalingDescription || (exports.ReplicaGlobalSecondaryIndexAutoScalingDescription = {}));
 var ReplicaAutoScalingDescription;
 (function (ReplicaAutoScalingDescription) {
+    /**
+     * @internal
+     */
     ReplicaAutoScalingDescription.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ReplicaAutoScalingDescription = exports.ReplicaAutoScalingDescription || (exports.ReplicaAutoScalingDescription = {}));
 var TableAutoScalingDescription;
 (function (TableAutoScalingDescription) {
+    /**
+     * @internal
+     */
     TableAutoScalingDescription.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(TableAutoScalingDescription = exports.TableAutoScalingDescription || (exports.TableAutoScalingDescription = {}));
 var DescribeTableReplicaAutoScalingOutput;
 (function (DescribeTableReplicaAutoScalingOutput) {
+    /**
+     * @internal
+     */
     DescribeTableReplicaAutoScalingOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DescribeTableReplicaAutoScalingOutput = exports.DescribeTableReplicaAutoScalingOutput || (exports.DescribeTableReplicaAutoScalingOutput = {}));
 var DescribeTimeToLiveInput;
 (function (DescribeTimeToLiveInput) {
+    /**
+     * @internal
+     */
     DescribeTimeToLiveInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DescribeTimeToLiveInput = exports.DescribeTimeToLiveInput || (exports.DescribeTimeToLiveInput = {}));
 var DescribeTimeToLiveOutput;
 (function (DescribeTimeToLiveOutput) {
+    /**
+     * @internal
+     */
     DescribeTimeToLiveOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DescribeTimeToLiveOutput = exports.DescribeTimeToLiveOutput || (exports.DescribeTimeToLiveOutput = {}));
 var KinesisStreamingDestinationInput;
 (function (KinesisStreamingDestinationInput) {
+    /**
+     * @internal
+     */
     KinesisStreamingDestinationInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(KinesisStreamingDestinationInput = exports.KinesisStreamingDestinationInput || (exports.KinesisStreamingDestinationInput = {}));
 var KinesisStreamingDestinationOutput;
 (function (KinesisStreamingDestinationOutput) {
+    /**
+     * @internal
+     */
     KinesisStreamingDestinationOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(KinesisStreamingDestinationOutput = exports.KinesisStreamingDestinationOutput || (exports.KinesisStreamingDestinationOutput = {}));
 var DuplicateItemException;
 (function (DuplicateItemException) {
+    /**
+     * @internal
+     */
     DuplicateItemException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DuplicateItemException = exports.DuplicateItemException || (exports.DuplicateItemException = {}));
 var IdempotentParameterMismatchException;
 (function (IdempotentParameterMismatchException) {
+    /**
+     * @internal
+     */
     IdempotentParameterMismatchException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(IdempotentParameterMismatchException = exports.IdempotentParameterMismatchException || (exports.IdempotentParameterMismatchException = {}));
 var TransactionInProgressException;
 (function (TransactionInProgressException) {
+    /**
+     * @internal
+     */
     TransactionInProgressException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(TransactionInProgressException = exports.TransactionInProgressException || (exports.TransactionInProgressException = {}));
 var ExportConflictException;
 (function (ExportConflictException) {
+    /**
+     * @internal
+     */
     ExportConflictException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ExportConflictException = exports.ExportConflictException || (exports.ExportConflictException = {}));
 var ExportTableToPointInTimeInput;
 (function (ExportTableToPointInTimeInput) {
+    /**
+     * @internal
+     */
     ExportTableToPointInTimeInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ExportTableToPointInTimeInput = exports.ExportTableToPointInTimeInput || (exports.ExportTableToPointInTimeInput = {}));
 var ExportTableToPointInTimeOutput;
 (function (ExportTableToPointInTimeOutput) {
+    /**
+     * @internal
+     */
     ExportTableToPointInTimeOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ExportTableToPointInTimeOutput = exports.ExportTableToPointInTimeOutput || (exports.ExportTableToPointInTimeOutput = {}));
 var InvalidExportTimeException;
 (function (InvalidExportTimeException) {
+    /**
+     * @internal
+     */
     InvalidExportTimeException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(InvalidExportTimeException = exports.InvalidExportTimeException || (exports.InvalidExportTimeException = {}));
 var PointInTimeRecoveryUnavailableException;
 (function (PointInTimeRecoveryUnavailableException) {
+    /**
+     * @internal
+     */
     PointInTimeRecoveryUnavailableException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PointInTimeRecoveryUnavailableException = exports.PointInTimeRecoveryUnavailableException || (exports.PointInTimeRecoveryUnavailableException = {}));
 var ListBackupsInput;
 (function (ListBackupsInput) {
+    /**
+     * @internal
+     */
     ListBackupsInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListBackupsInput = exports.ListBackupsInput || (exports.ListBackupsInput = {}));
 var ListBackupsOutput;
 (function (ListBackupsOutput) {
+    /**
+     * @internal
+     */
     ListBackupsOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListBackupsOutput = exports.ListBackupsOutput || (exports.ListBackupsOutput = {}));
 var ListContributorInsightsInput;
 (function (ListContributorInsightsInput) {
+    /**
+     * @internal
+     */
     ListContributorInsightsInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListContributorInsightsInput = exports.ListContributorInsightsInput || (exports.ListContributorInsightsInput = {}));
 var ListContributorInsightsOutput;
 (function (ListContributorInsightsOutput) {
+    /**
+     * @internal
+     */
     ListContributorInsightsOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListContributorInsightsOutput = exports.ListContributorInsightsOutput || (exports.ListContributorInsightsOutput = {}));
 var ListExportsInput;
 (function (ListExportsInput) {
+    /**
+     * @internal
+     */
     ListExportsInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListExportsInput = exports.ListExportsInput || (exports.ListExportsInput = {}));
 var ExportSummary;
 (function (ExportSummary) {
+    /**
+     * @internal
+     */
     ExportSummary.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ExportSummary = exports.ExportSummary || (exports.ExportSummary = {}));
 var ListExportsOutput;
 (function (ListExportsOutput) {
+    /**
+     * @internal
+     */
     ListExportsOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListExportsOutput = exports.ListExportsOutput || (exports.ListExportsOutput = {}));
 var ListGlobalTablesInput;
 (function (ListGlobalTablesInput) {
+    /**
+     * @internal
+     */
     ListGlobalTablesInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListGlobalTablesInput = exports.ListGlobalTablesInput || (exports.ListGlobalTablesInput = {}));
 var GlobalTable;
 (function (GlobalTable) {
+    /**
+     * @internal
+     */
     GlobalTable.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GlobalTable = exports.GlobalTable || (exports.GlobalTable = {}));
 var ListGlobalTablesOutput;
 (function (ListGlobalTablesOutput) {
+    /**
+     * @internal
+     */
     ListGlobalTablesOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListGlobalTablesOutput = exports.ListGlobalTablesOutput || (exports.ListGlobalTablesOutput = {}));
 var ListTablesInput;
 (function (ListTablesInput) {
+    /**
+     * @internal
+     */
     ListTablesInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListTablesInput = exports.ListTablesInput || (exports.ListTablesInput = {}));
 var ListTablesOutput;
 (function (ListTablesOutput) {
+    /**
+     * @internal
+     */
     ListTablesOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListTablesOutput = exports.ListTablesOutput || (exports.ListTablesOutput = {}));
 var ListTagsOfResourceInput;
 (function (ListTagsOfResourceInput) {
+    /**
+     * @internal
+     */
     ListTagsOfResourceInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListTagsOfResourceInput = exports.ListTagsOfResourceInput || (exports.ListTagsOfResourceInput = {}));
 var ListTagsOfResourceOutput;
 (function (ListTagsOfResourceOutput) {
+    /**
+     * @internal
+     */
     ListTagsOfResourceOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListTagsOfResourceOutput = exports.ListTagsOfResourceOutput || (exports.ListTagsOfResourceOutput = {}));
 var RestoreTableFromBackupInput;
 (function (RestoreTableFromBackupInput) {
+    /**
+     * @internal
+     */
     RestoreTableFromBackupInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(RestoreTableFromBackupInput = exports.RestoreTableFromBackupInput || (exports.RestoreTableFromBackupInput = {}));
 var RestoreTableFromBackupOutput;
 (function (RestoreTableFromBackupOutput) {
+    /**
+     * @internal
+     */
     RestoreTableFromBackupOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(RestoreTableFromBackupOutput = exports.RestoreTableFromBackupOutput || (exports.RestoreTableFromBackupOutput = {}));
 var TableAlreadyExistsException;
 (function (TableAlreadyExistsException) {
+    /**
+     * @internal
+     */
     TableAlreadyExistsException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(TableAlreadyExistsException = exports.TableAlreadyExistsException || (exports.TableAlreadyExistsException = {}));
 var InvalidRestoreTimeException;
 (function (InvalidRestoreTimeException) {
+    /**
+     * @internal
+     */
     InvalidRestoreTimeException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(InvalidRestoreTimeException = exports.InvalidRestoreTimeException || (exports.InvalidRestoreTimeException = {}));
 var RestoreTableToPointInTimeInput;
 (function (RestoreTableToPointInTimeInput) {
+    /**
+     * @internal
+     */
     RestoreTableToPointInTimeInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(RestoreTableToPointInTimeInput = exports.RestoreTableToPointInTimeInput || (exports.RestoreTableToPointInTimeInput = {}));
 var RestoreTableToPointInTimeOutput;
 (function (RestoreTableToPointInTimeOutput) {
+    /**
+     * @internal
+     */
     RestoreTableToPointInTimeOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(RestoreTableToPointInTimeOutput = exports.RestoreTableToPointInTimeOutput || (exports.RestoreTableToPointInTimeOutput = {}));
 var TagResourceInput;
 (function (TagResourceInput) {
+    /**
+     * @internal
+     */
     TagResourceInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(TagResourceInput = exports.TagResourceInput || (exports.TagResourceInput = {}));
 var UntagResourceInput;
 (function (UntagResourceInput) {
+    /**
+     * @internal
+     */
     UntagResourceInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UntagResourceInput = exports.UntagResourceInput || (exports.UntagResourceInput = {}));
 var PointInTimeRecoverySpecification;
 (function (PointInTimeRecoverySpecification) {
+    /**
+     * @internal
+     */
     PointInTimeRecoverySpecification.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PointInTimeRecoverySpecification = exports.PointInTimeRecoverySpecification || (exports.PointInTimeRecoverySpecification = {}));
 var UpdateContinuousBackupsInput;
 (function (UpdateContinuousBackupsInput) {
+    /**
+     * @internal
+     */
     UpdateContinuousBackupsInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdateContinuousBackupsInput = exports.UpdateContinuousBackupsInput || (exports.UpdateContinuousBackupsInput = {}));
 var UpdateContinuousBackupsOutput;
 (function (UpdateContinuousBackupsOutput) {
+    /**
+     * @internal
+     */
     UpdateContinuousBackupsOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdateContinuousBackupsOutput = exports.UpdateContinuousBackupsOutput || (exports.UpdateContinuousBackupsOutput = {}));
 var UpdateContributorInsightsInput;
 (function (UpdateContributorInsightsInput) {
+    /**
+     * @internal
+     */
     UpdateContributorInsightsInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdateContributorInsightsInput = exports.UpdateContributorInsightsInput || (exports.UpdateContributorInsightsInput = {}));
 var UpdateContributorInsightsOutput;
 (function (UpdateContributorInsightsOutput) {
+    /**
+     * @internal
+     */
     UpdateContributorInsightsOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdateContributorInsightsOutput = exports.UpdateContributorInsightsOutput || (exports.UpdateContributorInsightsOutput = {}));
 var ReplicaAlreadyExistsException;
 (function (ReplicaAlreadyExistsException) {
+    /**
+     * @internal
+     */
     ReplicaAlreadyExistsException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ReplicaAlreadyExistsException = exports.ReplicaAlreadyExistsException || (exports.ReplicaAlreadyExistsException = {}));
 var ReplicaNotFoundException;
 (function (ReplicaNotFoundException) {
+    /**
+     * @internal
+     */
     ReplicaNotFoundException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ReplicaNotFoundException = exports.ReplicaNotFoundException || (exports.ReplicaNotFoundException = {}));
 var ReplicaUpdate;
 (function (ReplicaUpdate) {
+    /**
+     * @internal
+     */
     ReplicaUpdate.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ReplicaUpdate = exports.ReplicaUpdate || (exports.ReplicaUpdate = {}));
 var UpdateGlobalTableInput;
 (function (UpdateGlobalTableInput) {
+    /**
+     * @internal
+     */
     UpdateGlobalTableInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdateGlobalTableInput = exports.UpdateGlobalTableInput || (exports.UpdateGlobalTableInput = {}));
 var UpdateGlobalTableOutput;
 (function (UpdateGlobalTableOutput) {
+    /**
+     * @internal
+     */
     UpdateGlobalTableOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdateGlobalTableOutput = exports.UpdateGlobalTableOutput || (exports.UpdateGlobalTableOutput = {}));
 var IndexNotFoundException;
 (function (IndexNotFoundException) {
+    /**
+     * @internal
+     */
     IndexNotFoundException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(IndexNotFoundException = exports.IndexNotFoundException || (exports.IndexNotFoundException = {}));
 var GlobalTableGlobalSecondaryIndexSettingsUpdate;
 (function (GlobalTableGlobalSecondaryIndexSettingsUpdate) {
+    /**
+     * @internal
+     */
     GlobalTableGlobalSecondaryIndexSettingsUpdate.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GlobalTableGlobalSecondaryIndexSettingsUpdate = exports.GlobalTableGlobalSecondaryIndexSettingsUpdate || (exports.GlobalTableGlobalSecondaryIndexSettingsUpdate = {}));
 var ReplicaGlobalSecondaryIndexSettingsUpdate;
 (function (ReplicaGlobalSecondaryIndexSettingsUpdate) {
+    /**
+     * @internal
+     */
     ReplicaGlobalSecondaryIndexSettingsUpdate.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ReplicaGlobalSecondaryIndexSettingsUpdate = exports.ReplicaGlobalSecondaryIndexSettingsUpdate || (exports.ReplicaGlobalSecondaryIndexSettingsUpdate = {}));
 var ReplicaSettingsUpdate;
 (function (ReplicaSettingsUpdate) {
+    /**
+     * @internal
+     */
     ReplicaSettingsUpdate.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ReplicaSettingsUpdate = exports.ReplicaSettingsUpdate || (exports.ReplicaSettingsUpdate = {}));
 var UpdateGlobalTableSettingsInput;
 (function (UpdateGlobalTableSettingsInput) {
+    /**
+     * @internal
+     */
     UpdateGlobalTableSettingsInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdateGlobalTableSettingsInput = exports.UpdateGlobalTableSettingsInput || (exports.UpdateGlobalTableSettingsInput = {}));
 var UpdateGlobalTableSettingsOutput;
 (function (UpdateGlobalTableSettingsOutput) {
+    /**
+     * @internal
+     */
     UpdateGlobalTableSettingsOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdateGlobalTableSettingsOutput = exports.UpdateGlobalTableSettingsOutput || (exports.UpdateGlobalTableSettingsOutput = {}));
 var UpdateGlobalSecondaryIndexAction;
 (function (UpdateGlobalSecondaryIndexAction) {
+    /**
+     * @internal
+     */
     UpdateGlobalSecondaryIndexAction.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdateGlobalSecondaryIndexAction = exports.UpdateGlobalSecondaryIndexAction || (exports.UpdateGlobalSecondaryIndexAction = {}));
 var GlobalSecondaryIndexUpdate;
 (function (GlobalSecondaryIndexUpdate) {
+    /**
+     * @internal
+     */
     GlobalSecondaryIndexUpdate.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GlobalSecondaryIndexUpdate = exports.GlobalSecondaryIndexUpdate || (exports.GlobalSecondaryIndexUpdate = {}));
 var UpdateReplicationGroupMemberAction;
 (function (UpdateReplicationGroupMemberAction) {
+    /**
+     * @internal
+     */
     UpdateReplicationGroupMemberAction.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdateReplicationGroupMemberAction = exports.UpdateReplicationGroupMemberAction || (exports.UpdateReplicationGroupMemberAction = {}));
 var ReplicationGroupUpdate;
 (function (ReplicationGroupUpdate) {
+    /**
+     * @internal
+     */
     ReplicationGroupUpdate.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ReplicationGroupUpdate = exports.ReplicationGroupUpdate || (exports.ReplicationGroupUpdate = {}));
 var UpdateTableInput;
 (function (UpdateTableInput) {
+    /**
+     * @internal
+     */
     UpdateTableInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdateTableInput = exports.UpdateTableInput || (exports.UpdateTableInput = {}));
 var UpdateTableOutput;
 (function (UpdateTableOutput) {
+    /**
+     * @internal
+     */
     UpdateTableOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdateTableOutput = exports.UpdateTableOutput || (exports.UpdateTableOutput = {}));
 var GlobalSecondaryIndexAutoScalingUpdate;
 (function (GlobalSecondaryIndexAutoScalingUpdate) {
+    /**
+     * @internal
+     */
     GlobalSecondaryIndexAutoScalingUpdate.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GlobalSecondaryIndexAutoScalingUpdate = exports.GlobalSecondaryIndexAutoScalingUpdate || (exports.GlobalSecondaryIndexAutoScalingUpdate = {}));
 var ReplicaGlobalSecondaryIndexAutoScalingUpdate;
 (function (ReplicaGlobalSecondaryIndexAutoScalingUpdate) {
+    /**
+     * @internal
+     */
     ReplicaGlobalSecondaryIndexAutoScalingUpdate.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ReplicaGlobalSecondaryIndexAutoScalingUpdate = exports.ReplicaGlobalSecondaryIndexAutoScalingUpdate || (exports.ReplicaGlobalSecondaryIndexAutoScalingUpdate = {}));
 var ReplicaAutoScalingUpdate;
 (function (ReplicaAutoScalingUpdate) {
+    /**
+     * @internal
+     */
     ReplicaAutoScalingUpdate.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ReplicaAutoScalingUpdate = exports.ReplicaAutoScalingUpdate || (exports.ReplicaAutoScalingUpdate = {}));
 var UpdateTableReplicaAutoScalingInput;
 (function (UpdateTableReplicaAutoScalingInput) {
+    /**
+     * @internal
+     */
     UpdateTableReplicaAutoScalingInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdateTableReplicaAutoScalingInput = exports.UpdateTableReplicaAutoScalingInput || (exports.UpdateTableReplicaAutoScalingInput = {}));
 var UpdateTableReplicaAutoScalingOutput;
 (function (UpdateTableReplicaAutoScalingOutput) {
+    /**
+     * @internal
+     */
     UpdateTableReplicaAutoScalingOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdateTableReplicaAutoScalingOutput = exports.UpdateTableReplicaAutoScalingOutput || (exports.UpdateTableReplicaAutoScalingOutput = {}));
 var TimeToLiveSpecification;
 (function (TimeToLiveSpecification) {
+    /**
+     * @internal
+     */
     TimeToLiveSpecification.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(TimeToLiveSpecification = exports.TimeToLiveSpecification || (exports.TimeToLiveSpecification = {}));
 var UpdateTimeToLiveInput;
 (function (UpdateTimeToLiveInput) {
+    /**
+     * @internal
+     */
     UpdateTimeToLiveInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdateTimeToLiveInput = exports.UpdateTimeToLiveInput || (exports.UpdateTimeToLiveInput = {}));
 var UpdateTimeToLiveOutput;
 (function (UpdateTimeToLiveOutput) {
+    /**
+     * @internal
+     */
     UpdateTimeToLiveOutput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -8309,6 +9532,9 @@ var AttributeValue;
             return visitor.BOOL(value.BOOL);
         return visitor._(value.$unknown[0], value.$unknown[1]);
     };
+    /**
+     * @internal
+     */
     AttributeValue.filterSensitiveLog = (obj) => {
         if (obj.S !== undefined)
             return { S: obj.S };
@@ -8341,6 +9567,9 @@ var AttributeValue;
 })(AttributeValue = exports.AttributeValue || (exports.AttributeValue = {}));
 var AttributeValueUpdate;
 (function (AttributeValueUpdate) {
+    /**
+     * @internal
+     */
     AttributeValueUpdate.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Value && { Value: AttributeValue.filterSensitiveLog(obj.Value) }),
@@ -8348,6 +9577,9 @@ var AttributeValueUpdate;
 })(AttributeValueUpdate = exports.AttributeValueUpdate || (exports.AttributeValueUpdate = {}));
 var BatchStatementRequest;
 (function (BatchStatementRequest) {
+    /**
+     * @internal
+     */
     BatchStatementRequest.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Parameters && { Parameters: obj.Parameters.map((item) => AttributeValue.filterSensitiveLog(item)) }),
@@ -8355,6 +9587,9 @@ var BatchStatementRequest;
 })(BatchStatementRequest = exports.BatchStatementRequest || (exports.BatchStatementRequest = {}));
 var BatchStatementResponse;
 (function (BatchStatementResponse) {
+    /**
+     * @internal
+     */
     BatchStatementResponse.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Item && {
@@ -8367,6 +9602,9 @@ var BatchStatementResponse;
 })(BatchStatementResponse = exports.BatchStatementResponse || (exports.BatchStatementResponse = {}));
 var CancellationReason;
 (function (CancellationReason) {
+    /**
+     * @internal
+     */
     CancellationReason.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Item && {
@@ -8379,6 +9617,9 @@ var CancellationReason;
 })(CancellationReason = exports.CancellationReason || (exports.CancellationReason = {}));
 var Condition;
 (function (Condition) {
+    /**
+     * @internal
+     */
     Condition.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.AttributeValueList && {
@@ -8388,6 +9629,9 @@ var Condition;
 })(Condition = exports.Condition || (exports.Condition = {}));
 var DeleteRequest;
 (function (DeleteRequest) {
+    /**
+     * @internal
+     */
     DeleteRequest.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Key && {
@@ -8400,6 +9644,9 @@ var DeleteRequest;
 })(DeleteRequest = exports.DeleteRequest || (exports.DeleteRequest = {}));
 var ExecuteStatementInput;
 (function (ExecuteStatementInput) {
+    /**
+     * @internal
+     */
     ExecuteStatementInput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Parameters && { Parameters: obj.Parameters.map((item) => AttributeValue.filterSensitiveLog(item)) }),
@@ -8407,6 +9654,9 @@ var ExecuteStatementInput;
 })(ExecuteStatementInput = exports.ExecuteStatementInput || (exports.ExecuteStatementInput = {}));
 var Get;
 (function (Get) {
+    /**
+     * @internal
+     */
     Get.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Key && {
@@ -8419,6 +9669,9 @@ var Get;
 })(Get = exports.Get || (exports.Get = {}));
 var GetItemInput;
 (function (GetItemInput) {
+    /**
+     * @internal
+     */
     GetItemInput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Key && {
@@ -8431,6 +9684,9 @@ var GetItemInput;
 })(GetItemInput = exports.GetItemInput || (exports.GetItemInput = {}));
 var GetItemOutput;
 (function (GetItemOutput) {
+    /**
+     * @internal
+     */
     GetItemOutput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Item && {
@@ -8443,6 +9699,9 @@ var GetItemOutput;
 })(GetItemOutput = exports.GetItemOutput || (exports.GetItemOutput = {}));
 var ItemCollectionMetrics;
 (function (ItemCollectionMetrics) {
+    /**
+     * @internal
+     */
     ItemCollectionMetrics.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.ItemCollectionKey && {
@@ -8455,6 +9714,9 @@ var ItemCollectionMetrics;
 })(ItemCollectionMetrics = exports.ItemCollectionMetrics || (exports.ItemCollectionMetrics = {}));
 var ItemResponse;
 (function (ItemResponse) {
+    /**
+     * @internal
+     */
     ItemResponse.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Item && {
@@ -8467,6 +9729,9 @@ var ItemResponse;
 })(ItemResponse = exports.ItemResponse || (exports.ItemResponse = {}));
 var ParameterizedStatement;
 (function (ParameterizedStatement) {
+    /**
+     * @internal
+     */
     ParameterizedStatement.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Parameters && { Parameters: obj.Parameters.map((item) => AttributeValue.filterSensitiveLog(item)) }),
@@ -8474,6 +9739,9 @@ var ParameterizedStatement;
 })(ParameterizedStatement = exports.ParameterizedStatement || (exports.ParameterizedStatement = {}));
 var PutRequest;
 (function (PutRequest) {
+    /**
+     * @internal
+     */
     PutRequest.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Item && {
@@ -8486,6 +9754,9 @@ var PutRequest;
 })(PutRequest = exports.PutRequest || (exports.PutRequest = {}));
 var ExecuteStatementOutput;
 (function (ExecuteStatementOutput) {
+    /**
+     * @internal
+     */
     ExecuteStatementOutput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Items && {
@@ -8498,6 +9769,9 @@ var ExecuteStatementOutput;
 })(ExecuteStatementOutput = exports.ExecuteStatementOutput || (exports.ExecuteStatementOutput = {}));
 var KeysAndAttributes;
 (function (KeysAndAttributes) {
+    /**
+     * @internal
+     */
     KeysAndAttributes.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Keys && {
@@ -8510,6 +9784,9 @@ var KeysAndAttributes;
 })(KeysAndAttributes = exports.KeysAndAttributes || (exports.KeysAndAttributes = {}));
 var TransactGetItem;
 (function (TransactGetItem) {
+    /**
+     * @internal
+     */
     TransactGetItem.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Get && { Get: Get.filterSensitiveLog(obj.Get) }),
@@ -8517,6 +9794,9 @@ var TransactGetItem;
 })(TransactGetItem = exports.TransactGetItem || (exports.TransactGetItem = {}));
 var BatchExecuteStatementInput;
 (function (BatchExecuteStatementInput) {
+    /**
+     * @internal
+     */
     BatchExecuteStatementInput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Statements && { Statements: obj.Statements.map((item) => BatchStatementRequest.filterSensitiveLog(item)) }),
@@ -8524,6 +9804,9 @@ var BatchExecuteStatementInput;
 })(BatchExecuteStatementInput = exports.BatchExecuteStatementInput || (exports.BatchExecuteStatementInput = {}));
 var BatchExecuteStatementOutput;
 (function (BatchExecuteStatementOutput) {
+    /**
+     * @internal
+     */
     BatchExecuteStatementOutput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Responses && { Responses: obj.Responses.map((item) => BatchStatementResponse.filterSensitiveLog(item)) }),
@@ -8531,6 +9814,9 @@ var BatchExecuteStatementOutput;
 })(BatchExecuteStatementOutput = exports.BatchExecuteStatementOutput || (exports.BatchExecuteStatementOutput = {}));
 var ExecuteTransactionInput;
 (function (ExecuteTransactionInput) {
+    /**
+     * @internal
+     */
     ExecuteTransactionInput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.TransactStatements && {
@@ -8540,6 +9826,9 @@ var ExecuteTransactionInput;
 })(ExecuteTransactionInput = exports.ExecuteTransactionInput || (exports.ExecuteTransactionInput = {}));
 var ExecuteTransactionOutput;
 (function (ExecuteTransactionOutput) {
+    /**
+     * @internal
+     */
     ExecuteTransactionOutput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Responses && { Responses: obj.Responses.map((item) => ItemResponse.filterSensitiveLog(item)) }),
@@ -8547,6 +9836,9 @@ var ExecuteTransactionOutput;
 })(ExecuteTransactionOutput = exports.ExecuteTransactionOutput || (exports.ExecuteTransactionOutput = {}));
 var TransactGetItemsOutput;
 (function (TransactGetItemsOutput) {
+    /**
+     * @internal
+     */
     TransactGetItemsOutput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Responses && { Responses: obj.Responses.map((item) => ItemResponse.filterSensitiveLog(item)) }),
@@ -8554,6 +9846,9 @@ var TransactGetItemsOutput;
 })(TransactGetItemsOutput = exports.TransactGetItemsOutput || (exports.TransactGetItemsOutput = {}));
 var TransactionCanceledException;
 (function (TransactionCanceledException) {
+    /**
+     * @internal
+     */
     TransactionCanceledException.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.CancellationReasons && {
@@ -8563,6 +9858,9 @@ var TransactionCanceledException;
 })(TransactionCanceledException = exports.TransactionCanceledException || (exports.TransactionCanceledException = {}));
 var BatchGetItemInput;
 (function (BatchGetItemInput) {
+    /**
+     * @internal
+     */
     BatchGetItemInput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.RequestItems && {
@@ -8575,6 +9873,9 @@ var BatchGetItemInput;
 })(BatchGetItemInput = exports.BatchGetItemInput || (exports.BatchGetItemInput = {}));
 var ExpectedAttributeValue;
 (function (ExpectedAttributeValue) {
+    /**
+     * @internal
+     */
     ExpectedAttributeValue.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Value && { Value: AttributeValue.filterSensitiveLog(obj.Value) }),
@@ -8585,6 +9886,9 @@ var ExpectedAttributeValue;
 })(ExpectedAttributeValue = exports.ExpectedAttributeValue || (exports.ExpectedAttributeValue = {}));
 var TransactGetItemsInput;
 (function (TransactGetItemsInput) {
+    /**
+     * @internal
+     */
     TransactGetItemsInput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.TransactItems && {
@@ -8594,6 +9898,9 @@ var TransactGetItemsInput;
 })(TransactGetItemsInput = exports.TransactGetItemsInput || (exports.TransactGetItemsInput = {}));
 var TransactWriteItemsOutput;
 (function (TransactWriteItemsOutput) {
+    /**
+     * @internal
+     */
     TransactWriteItemsOutput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.ItemCollectionMetrics && {
@@ -8606,6 +9913,9 @@ var TransactWriteItemsOutput;
 })(TransactWriteItemsOutput = exports.TransactWriteItemsOutput || (exports.TransactWriteItemsOutput = {}));
 var ConditionCheck;
 (function (ConditionCheck) {
+    /**
+     * @internal
+     */
     ConditionCheck.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Key && {
@@ -8624,6 +9934,9 @@ var ConditionCheck;
 })(ConditionCheck = exports.ConditionCheck || (exports.ConditionCheck = {}));
 var Delete;
 (function (Delete) {
+    /**
+     * @internal
+     */
     Delete.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Key && {
@@ -8642,6 +9955,9 @@ var Delete;
 })(Delete = exports.Delete || (exports.Delete = {}));
 var Put;
 (function (Put) {
+    /**
+     * @internal
+     */
     Put.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Item && {
@@ -8660,6 +9976,9 @@ var Put;
 })(Put = exports.Put || (exports.Put = {}));
 var Update;
 (function (Update) {
+    /**
+     * @internal
+     */
     Update.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Key && {
@@ -8678,6 +9997,9 @@ var Update;
 })(Update = exports.Update || (exports.Update = {}));
 var DeleteItemOutput;
 (function (DeleteItemOutput) {
+    /**
+     * @internal
+     */
     DeleteItemOutput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Attributes && {
@@ -8693,6 +10015,9 @@ var DeleteItemOutput;
 })(DeleteItemOutput = exports.DeleteItemOutput || (exports.DeleteItemOutput = {}));
 var PutItemOutput;
 (function (PutItemOutput) {
+    /**
+     * @internal
+     */
     PutItemOutput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Attributes && {
@@ -8708,6 +10033,9 @@ var PutItemOutput;
 })(PutItemOutput = exports.PutItemOutput || (exports.PutItemOutput = {}));
 var QueryOutput;
 (function (QueryOutput) {
+    /**
+     * @internal
+     */
     QueryOutput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Items && {
@@ -8726,6 +10054,9 @@ var QueryOutput;
 })(QueryOutput = exports.QueryOutput || (exports.QueryOutput = {}));
 var ScanOutput;
 (function (ScanOutput) {
+    /**
+     * @internal
+     */
     ScanOutput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Items && {
@@ -8744,6 +10075,9 @@ var ScanOutput;
 })(ScanOutput = exports.ScanOutput || (exports.ScanOutput = {}));
 var UpdateItemOutput;
 (function (UpdateItemOutput) {
+    /**
+     * @internal
+     */
     UpdateItemOutput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Attributes && {
@@ -8759,6 +10093,9 @@ var UpdateItemOutput;
 })(UpdateItemOutput = exports.UpdateItemOutput || (exports.UpdateItemOutput = {}));
 var WriteRequest;
 (function (WriteRequest) {
+    /**
+     * @internal
+     */
     WriteRequest.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.PutRequest && { PutRequest: PutRequest.filterSensitiveLog(obj.PutRequest) }),
@@ -8767,6 +10104,9 @@ var WriteRequest;
 })(WriteRequest = exports.WriteRequest || (exports.WriteRequest = {}));
 var BatchGetItemOutput;
 (function (BatchGetItemOutput) {
+    /**
+     * @internal
+     */
     BatchGetItemOutput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Responses && {
@@ -8788,6 +10128,9 @@ var BatchGetItemOutput;
 })(BatchGetItemOutput = exports.BatchGetItemOutput || (exports.BatchGetItemOutput = {}));
 var ScanInput;
 (function (ScanInput) {
+    /**
+     * @internal
+     */
     ScanInput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.ScanFilter && {
@@ -8812,6 +10155,9 @@ var ScanInput;
 })(ScanInput = exports.ScanInput || (exports.ScanInput = {}));
 var BatchWriteItemInput;
 (function (BatchWriteItemInput) {
+    /**
+     * @internal
+     */
     BatchWriteItemInput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.RequestItems && {
@@ -8824,6 +10170,9 @@ var BatchWriteItemInput;
 })(BatchWriteItemInput = exports.BatchWriteItemInput || (exports.BatchWriteItemInput = {}));
 var DeleteItemInput;
 (function (DeleteItemInput) {
+    /**
+     * @internal
+     */
     DeleteItemInput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Key && {
@@ -8848,6 +10197,9 @@ var DeleteItemInput;
 })(DeleteItemInput = exports.DeleteItemInput || (exports.DeleteItemInput = {}));
 var PutItemInput;
 (function (PutItemInput) {
+    /**
+     * @internal
+     */
     PutItemInput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Item && {
@@ -8872,6 +10224,9 @@ var PutItemInput;
 })(PutItemInput = exports.PutItemInput || (exports.PutItemInput = {}));
 var QueryInput;
 (function (QueryInput) {
+    /**
+     * @internal
+     */
     QueryInput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.KeyConditions && {
@@ -8902,6 +10257,9 @@ var QueryInput;
 })(QueryInput = exports.QueryInput || (exports.QueryInput = {}));
 var BatchWriteItemOutput;
 (function (BatchWriteItemOutput) {
+    /**
+     * @internal
+     */
     BatchWriteItemOutput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.UnprocessedItems && {
@@ -8920,6 +10278,9 @@ var BatchWriteItemOutput;
 })(BatchWriteItemOutput = exports.BatchWriteItemOutput || (exports.BatchWriteItemOutput = {}));
 var UpdateItemInput;
 (function (UpdateItemInput) {
+    /**
+     * @internal
+     */
     UpdateItemInput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.Key && {
@@ -8950,6 +10311,9 @@ var UpdateItemInput;
 })(UpdateItemInput = exports.UpdateItemInput || (exports.UpdateItemInput = {}));
 var TransactWriteItem;
 (function (TransactWriteItem) {
+    /**
+     * @internal
+     */
     TransactWriteItem.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.ConditionCheck && { ConditionCheck: ConditionCheck.filterSensitiveLog(obj.ConditionCheck) }),
@@ -8960,6 +10324,9 @@ var TransactWriteItem;
 })(TransactWriteItem = exports.TransactWriteItem || (exports.TransactWriteItem = {}));
 var TransactWriteItemsInput;
 (function (TransactWriteItemsInput) {
+    /**
+     * @internal
+     */
     TransactWriteItemsInput.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.TransactItems && {
@@ -17335,6 +18702,7 @@ const client_sts_1 = __nccwpck_require__(3285);
 const config_resolver_1 = __nccwpck_require__(7229);
 const credential_provider_node_1 = __nccwpck_require__(8030);
 const hash_node_1 = __nccwpck_require__(408);
+const middleware_endpoint_discovery_1 = __nccwpck_require__(8472);
 const middleware_retry_1 = __nccwpck_require__(7000);
 const node_config_provider_1 = __nccwpck_require__(1124);
 const node_http_handler_1 = __nccwpck_require__(5168);
@@ -17357,6 +18725,7 @@ exports.ClientDefaultValues = {
         serviceId: runtimeConfig_shared_1.ClientSharedValues.serviceId,
         clientVersion: package_json_1.default.version,
     }),
+    endpointDiscoveryEnabledProvider: node_config_provider_1.loadConfig(middleware_endpoint_discovery_1.NODE_ENDPOINT_DISCOVERY_CONFIG_OPTIONS),
     maxAttempts: node_config_provider_1.loadConfig(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
     region: node_config_provider_1.loadConfig(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
     requestHandler: new node_http_handler_1.NodeHttpHandler(),
@@ -17399,39 +18768,52 @@ exports.ClientSharedValues = {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.waitForTableExists = void 0;
+exports.waitUntilTableExists = exports.waitForTableExists = void 0;
 const DescribeTableCommand_1 = __nccwpck_require__(633);
 const util_waiter_1 = __nccwpck_require__(6243);
 const checkState = async (client, input) => {
+    let reason;
     try {
         let result = await client.send(new DescribeTableCommand_1.DescribeTableCommand(input));
+        reason = result;
         try {
             let returnComparator = () => {
                 return result.Table.TableStatus;
             };
             if (returnComparator() === "ACTIVE") {
-                return { state: util_waiter_1.WaiterState.SUCCESS };
+                return { state: util_waiter_1.WaiterState.SUCCESS, reason };
             }
         }
         catch (e) { }
     }
     catch (exception) {
+        reason = exception;
         if (exception.name && exception.name == "ResourceNotFoundException") {
-            return { state: util_waiter_1.WaiterState.RETRY };
+            return { state: util_waiter_1.WaiterState.RETRY, reason };
         }
     }
-    return { state: util_waiter_1.WaiterState.RETRY };
+    return { state: util_waiter_1.WaiterState.RETRY, reason };
 };
 /**
  *
- *  @param params : Waiter configuration options.
- *  @param input : the input to DescribeTableCommand for polling.
+ *  @deprecated Use waitUntilTableExists instead. waitForTableExists does not throw error in non-success cases.
  */
 const waitForTableExists = async (params, input) => {
     const serviceDefaults = { minDelay: 20, maxDelay: 120 };
     return util_waiter_1.createWaiter({ ...serviceDefaults, ...params }, input, checkState);
 };
 exports.waitForTableExists = waitForTableExists;
+/**
+ *
+ *  @param params - Waiter configuration options.
+ *  @param input - The input to DescribeTableCommand for polling.
+ */
+const waitUntilTableExists = async (params, input) => {
+    const serviceDefaults = { minDelay: 20, maxDelay: 120 };
+    const result = await util_waiter_1.createWaiter({ ...serviceDefaults, ...params }, input, checkState);
+    return util_waiter_1.checkExceptions(result);
+};
+exports.waitUntilTableExists = waitUntilTableExists;
 //# sourceMappingURL=waitForTableExists.js.map
 
 /***/ }),
@@ -17442,30 +18824,43 @@ exports.waitForTableExists = waitForTableExists;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.waitForTableNotExists = void 0;
+exports.waitUntilTableNotExists = exports.waitForTableNotExists = void 0;
 const DescribeTableCommand_1 = __nccwpck_require__(633);
 const util_waiter_1 = __nccwpck_require__(6243);
 const checkState = async (client, input) => {
+    let reason;
     try {
         let result = await client.send(new DescribeTableCommand_1.DescribeTableCommand(input));
+        reason = result;
     }
     catch (exception) {
+        reason = exception;
         if (exception.name && exception.name == "ResourceNotFoundException") {
-            return { state: util_waiter_1.WaiterState.SUCCESS };
+            return { state: util_waiter_1.WaiterState.SUCCESS, reason };
         }
     }
-    return { state: util_waiter_1.WaiterState.RETRY };
+    return { state: util_waiter_1.WaiterState.RETRY, reason };
 };
 /**
  *
- *  @param params : Waiter configuration options.
- *  @param input : the input to DescribeTableCommand for polling.
+ *  @deprecated Use waitUntilTableNotExists instead. waitForTableNotExists does not throw error in non-success cases.
  */
 const waitForTableNotExists = async (params, input) => {
     const serviceDefaults = { minDelay: 20, maxDelay: 120 };
     return util_waiter_1.createWaiter({ ...serviceDefaults, ...params }, input, checkState);
 };
 exports.waitForTableNotExists = waitForTableNotExists;
+/**
+ *
+ *  @param params - Waiter configuration options.
+ *  @param input - The input to DescribeTableCommand for polling.
+ */
+const waitUntilTableNotExists = async (params, input) => {
+    const serviceDefaults = { minDelay: 20, maxDelay: 120 };
+    const result = await util_waiter_1.createWaiter({ ...serviceDefaults, ...params }, input, checkState);
+    return util_waiter_1.checkExceptions(result);
+};
+exports.waitUntilTableNotExists = waitUntilTableNotExists;
 //# sourceMappingURL=waitForTableNotExists.js.map
 
 /***/ }),
@@ -17643,6 +19038,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Returns the STS short-term credentials for a given role name that is assigned to the
  *       user.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { SSOClient, GetRoleCredentialsCommand } from "@aws-sdk/client-sso"; // ES Modules import
+ * // const { SSOClient, GetRoleCredentialsCommand } = require("@aws-sdk/client-sso"); // CommonJS import
+ * const client = new SSOClient(config);
+ * const command = new GetRoleCredentialsCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link GetRoleCredentialsCommandInput} for command's `input` shape.
+ * @see {@link GetRoleCredentialsCommandOutput} for command's `response` shape.
+ * @see {@link SSOClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class GetRoleCredentialsCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -17697,6 +19106,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Lists all roles that are assigned to the user for a given AWS account.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { SSOClient, ListAccountRolesCommand } from "@aws-sdk/client-sso"; // ES Modules import
+ * // const { SSOClient, ListAccountRolesCommand } = require("@aws-sdk/client-sso"); // CommonJS import
+ * const client = new SSOClient(config);
+ * const command = new ListAccountRolesCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link ListAccountRolesCommandInput} for command's `input` shape.
+ * @see {@link ListAccountRolesCommandOutput} for command's `response` shape.
+ * @see {@link SSOClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class ListAccountRolesCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -17753,6 +19176,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  * <p>Lists all AWS accounts assigned to the user. These AWS accounts are assigned by the
  *       administrator of the account. For more information, see <a href="https://docs.aws.amazon.com/singlesignon/latest/userguide/useraccess.html#assignusers">Assign User Access</a> in the <i>AWS SSO User Guide</i>. This operation
  *       returns a paginated response.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { SSOClient, ListAccountsCommand } from "@aws-sdk/client-sso"; // ES Modules import
+ * // const { SSOClient, ListAccountsCommand } = require("@aws-sdk/client-sso"); // CommonJS import
+ * const client = new SSOClient(config);
+ * const command = new ListAccountsCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link ListAccountsCommandInput} for command's `input` shape.
+ * @see {@link ListAccountsCommandOutput} for command's `response` shape.
+ * @see {@link SSOClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class ListAccountsCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -17807,6 +19244,20 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Removes the client- and server-side session that is associated with the user.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { SSOClient, LogoutCommand } from "@aws-sdk/client-sso"; // ES Modules import
+ * // const { SSOClient, LogoutCommand } = require("@aws-sdk/client-sso"); // CommonJS import
+ * const client = new SSOClient(config);
+ * const command = new LogoutCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link LogoutCommandInput} for command's `input` shape.
+ * @see {@link LogoutCommandOutput} for command's `response` shape.
+ * @see {@link SSOClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class LogoutCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -18045,12 +19496,18 @@ exports.LogoutRequest = exports.ListAccountsResponse = exports.ListAccountsReque
 const smithy_client_1 = __nccwpck_require__(2223);
 var AccountInfo;
 (function (AccountInfo) {
+    /**
+     * @internal
+     */
     AccountInfo.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AccountInfo = exports.AccountInfo || (exports.AccountInfo = {}));
 var GetRoleCredentialsRequest;
 (function (GetRoleCredentialsRequest) {
+    /**
+     * @internal
+     */
     GetRoleCredentialsRequest.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.accessToken && { accessToken: smithy_client_1.SENSITIVE_STRING }),
@@ -18058,6 +19515,9 @@ var GetRoleCredentialsRequest;
 })(GetRoleCredentialsRequest = exports.GetRoleCredentialsRequest || (exports.GetRoleCredentialsRequest = {}));
 var RoleCredentials;
 (function (RoleCredentials) {
+    /**
+     * @internal
+     */
     RoleCredentials.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.secretAccessKey && { secretAccessKey: smithy_client_1.SENSITIVE_STRING }),
@@ -18066,6 +19526,9 @@ var RoleCredentials;
 })(RoleCredentials = exports.RoleCredentials || (exports.RoleCredentials = {}));
 var GetRoleCredentialsResponse;
 (function (GetRoleCredentialsResponse) {
+    /**
+     * @internal
+     */
     GetRoleCredentialsResponse.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.roleCredentials && { roleCredentials: RoleCredentials.filterSensitiveLog(obj.roleCredentials) }),
@@ -18073,30 +19536,45 @@ var GetRoleCredentialsResponse;
 })(GetRoleCredentialsResponse = exports.GetRoleCredentialsResponse || (exports.GetRoleCredentialsResponse = {}));
 var InvalidRequestException;
 (function (InvalidRequestException) {
+    /**
+     * @internal
+     */
     InvalidRequestException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(InvalidRequestException = exports.InvalidRequestException || (exports.InvalidRequestException = {}));
 var ResourceNotFoundException;
 (function (ResourceNotFoundException) {
+    /**
+     * @internal
+     */
     ResourceNotFoundException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ResourceNotFoundException = exports.ResourceNotFoundException || (exports.ResourceNotFoundException = {}));
 var TooManyRequestsException;
 (function (TooManyRequestsException) {
+    /**
+     * @internal
+     */
     TooManyRequestsException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(TooManyRequestsException = exports.TooManyRequestsException || (exports.TooManyRequestsException = {}));
 var UnauthorizedException;
 (function (UnauthorizedException) {
+    /**
+     * @internal
+     */
     UnauthorizedException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UnauthorizedException = exports.UnauthorizedException || (exports.UnauthorizedException = {}));
 var ListAccountRolesRequest;
 (function (ListAccountRolesRequest) {
+    /**
+     * @internal
+     */
     ListAccountRolesRequest.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.accessToken && { accessToken: smithy_client_1.SENSITIVE_STRING }),
@@ -18104,18 +19582,27 @@ var ListAccountRolesRequest;
 })(ListAccountRolesRequest = exports.ListAccountRolesRequest || (exports.ListAccountRolesRequest = {}));
 var RoleInfo;
 (function (RoleInfo) {
+    /**
+     * @internal
+     */
     RoleInfo.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(RoleInfo = exports.RoleInfo || (exports.RoleInfo = {}));
 var ListAccountRolesResponse;
 (function (ListAccountRolesResponse) {
+    /**
+     * @internal
+     */
     ListAccountRolesResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListAccountRolesResponse = exports.ListAccountRolesResponse || (exports.ListAccountRolesResponse = {}));
 var ListAccountsRequest;
 (function (ListAccountsRequest) {
+    /**
+     * @internal
+     */
     ListAccountsRequest.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.accessToken && { accessToken: smithy_client_1.SENSITIVE_STRING }),
@@ -18123,12 +19610,18 @@ var ListAccountsRequest;
 })(ListAccountsRequest = exports.ListAccountsRequest || (exports.ListAccountsRequest = {}));
 var ListAccountsResponse;
 (function (ListAccountsResponse) {
+    /**
+     * @internal
+     */
     ListAccountsResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListAccountsResponse = exports.ListAccountsResponse || (exports.ListAccountsResponse = {}));
 var LogoutRequest;
 (function (LogoutRequest) {
+    /**
+     * @internal
+     */
     LogoutRequest.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.accessToken && { accessToken: smithy_client_1.SENSITIVE_STRING }),
@@ -19151,6 +20644,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             <code>SerialNumber</code> value identifies the user's hardware or virtual MFA device.
  *          The <code>TokenCode</code> is the time-based one-time password (TOTP) that the MFA device
  *          produces. </p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { STSClient, AssumeRoleCommand } from "@aws-sdk/client-sts"; // ES Modules import
+ * // const { STSClient, AssumeRoleCommand } = require("@aws-sdk/client-sts"); // CommonJS import
+ * const client = new STSClient(config);
+ * const command = new AssumeRoleCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link AssumeRoleCommandInput} for command's `input` shape.
+ * @see {@link AssumeRoleCommandOutput} for command's `response` shape.
+ * @see {@link STSClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class AssumeRoleCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -19337,6 +20844,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                   <i>IAM User Guide</i>. </p>
  *             </li>
  *          </ul>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { STSClient, AssumeRoleWithSAMLCommand } from "@aws-sdk/client-sts"; // ES Modules import
+ * // const { STSClient, AssumeRoleWithSAMLCommand } = require("@aws-sdk/client-sts"); // CommonJS import
+ * const client = new STSClient(config);
+ * const command = new AssumeRoleWithSAMLCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link AssumeRoleWithSAMLCommandInput} for command's `input` shape.
+ * @see {@link AssumeRoleWithSAMLCommandOutput} for command's `response` shape.
+ * @see {@link STSClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class AssumeRoleWithSAMLCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -19526,6 +21047,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                to content in Amazon S3. </p>
  *             </li>
  *          </ul>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { STSClient, AssumeRoleWithWebIdentityCommand } from "@aws-sdk/client-sts"; // ES Modules import
+ * // const { STSClient, AssumeRoleWithWebIdentityCommand } = require("@aws-sdk/client-sts"); // CommonJS import
+ * const client = new STSClient(config);
+ * const command = new AssumeRoleWithWebIdentityCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link AssumeRoleWithWebIdentityCommandInput} for command's `input` shape.
+ * @see {@link AssumeRoleWithWebIdentityCommandOutput} for command's `response` shape.
+ * @see {@link STSClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class AssumeRoleWithWebIdentityCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -19616,6 +21151,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                <p>The values of condition keys in the context of the user's request.</p>
  *             </li>
  *          </ul>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { STSClient, DecodeAuthorizationMessageCommand } from "@aws-sdk/client-sts"; // ES Modules import
+ * // const { STSClient, DecodeAuthorizationMessageCommand } = require("@aws-sdk/client-sts"); // CommonJS import
+ * const client = new STSClient(config);
+ * const command = new DecodeAuthorizationMessageCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link DecodeAuthorizationMessageCommandInput} for command's `input` shape.
+ * @see {@link DecodeAuthorizationMessageCommandOutput} for command's `response` shape.
+ * @see {@link STSClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class DecodeAuthorizationMessageCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -19689,6 +21238,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *         <p>This operation does not indicate the state of the access key. The key might be active,
  *             inactive, or deleted. Active keys might not have permissions to perform an operation.
  *             Providing a deleted access key might return an error that the key doesn't exist.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { STSClient, GetAccessKeyInfoCommand } from "@aws-sdk/client-sts"; // ES Modules import
+ * // const { STSClient, GetAccessKeyInfoCommand } = require("@aws-sdk/client-sts"); // CommonJS import
+ * const client = new STSClient(config);
+ * const command = new GetAccessKeyInfoCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link GetAccessKeyInfoCommandInput} for command's `input` shape.
+ * @see {@link GetAccessKeyInfoCommandOutput} for command's `response` shape.
+ * @see {@link STSClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class GetAccessKeyInfoCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -19754,6 +21317,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                 user or role is denied access. To view an example response, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_general.html#troubleshoot_general_access-denied-delete-mfa">I Am Not Authorized to Perform: iam:DeleteVirtualMFADevice</a> in the
  *                     <i>IAM User Guide</i>.</p>
  *         </note>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { STSClient, GetCallerIdentityCommand } from "@aws-sdk/client-sts"; // ES Modules import
+ * // const { STSClient, GetCallerIdentityCommand } = require("@aws-sdk/client-sts"); // CommonJS import
+ * const client = new STSClient(config);
+ * const command = new GetCallerIdentityCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link GetCallerIdentityCommandInput} for command's `input` shape.
+ * @see {@link GetCallerIdentityCommandOutput} for command's `response` shape.
+ * @see {@link STSClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class GetCallerIdentityCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -19948,6 +21525,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                 <code>department</code>=<code>engineering</code> session tag.
  *                 <code>Department</code> and <code>department</code> are not saved as separate tags,
  *             and the session tag passed in the request takes precedence over the user tag.</p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { STSClient, GetFederationTokenCommand } from "@aws-sdk/client-sts"; // ES Modules import
+ * // const { STSClient, GetFederationTokenCommand } = require("@aws-sdk/client-sts"); // CommonJS import
+ * const client = new STSClient(config);
+ * const command = new GetFederationTokenCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link GetFederationTokenCommandInput} for command's `input` shape.
+ * @see {@link GetFederationTokenCommandOutput} for command's `response` shape.
+ * @see {@link STSClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class GetFederationTokenCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -20055,6 +21646,20 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          credentials, go to <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#api_getsessiontoken">Temporary
  *             Credentials for Users in Untrusted Environments</a> in the
  *             <i>IAM User Guide</i>. </p>
+ * @example
+ * Use a bare-bones client and the command you need to make an API call.
+ * ```javascript
+ * import { STSClient, GetSessionTokenCommand } from "@aws-sdk/client-sts"; // ES Modules import
+ * // const { STSClient, GetSessionTokenCommand } = require("@aws-sdk/client-sts"); // CommonJS import
+ * const client = new STSClient(config);
+ * const command = new GetSessionTokenCommand(input);
+ * const response = await client.send(command);
+ * ```
+ *
+ * @see {@link GetSessionTokenCommandInput} for command's `input` shape.
+ * @see {@link GetSessionTokenCommandOutput} for command's `response` shape.
+ * @see {@link STSClientResolvedConfig | config} for command's `input` shape.
+ *
  */
 class GetSessionTokenCommand extends smithy_client_1.Command {
     // Start section: command_properties
@@ -20104,6 +21709,8 @@ exports.GetSessionTokenCommand = GetSessionTokenCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.decorateDefaultCredentialProvider = exports.getDefaultRoleAssumerWithWebIdentity = exports.getDefaultRoleAssumer = void 0;
+// Please do not touch this file. It's generated from template in:
+// https://github.com/aws/aws-sdk-js-v3/blob/main/codegen/smithy-aws-typescript-codegen/src/main/resources/software/amazon/smithy/aws/typescript/codegen/sts-client-defaultRoleAssumers.ts
 const defaultStsRoleAssumers_1 = __nccwpck_require__(2418);
 const STSClient_1 = __nccwpck_require__(2316);
 /**
@@ -20166,12 +21773,15 @@ const decorateDefaultRegion = (region) => {
  */
 const getDefaultRoleAssumer = (stsOptions, stsClientCtor) => {
     let stsClient;
+    let closureSourceCreds;
     return async (sourceCreds, params) => {
+        closureSourceCreds = sourceCreds;
         if (!stsClient) {
             const { logger, region } = stsOptions;
             stsClient = new stsClientCtor({
                 logger,
-                credentials: sourceCreds,
+                // A hack to make sts client uses the credential in current closure.
+                credentialDefaultProvider: () => async () => closureSourceCreds,
                 region: decorateDefaultRegion(region),
             });
         }
@@ -20573,174 +22183,261 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.GetSessionTokenResponse = exports.GetSessionTokenRequest = exports.GetFederationTokenResponse = exports.FederatedUser = exports.GetFederationTokenRequest = exports.GetCallerIdentityResponse = exports.GetCallerIdentityRequest = exports.GetAccessKeyInfoResponse = exports.GetAccessKeyInfoRequest = exports.InvalidAuthorizationMessageException = exports.DecodeAuthorizationMessageResponse = exports.DecodeAuthorizationMessageRequest = exports.IDPCommunicationErrorException = exports.AssumeRoleWithWebIdentityResponse = exports.AssumeRoleWithWebIdentityRequest = exports.InvalidIdentityTokenException = exports.IDPRejectedClaimException = exports.AssumeRoleWithSAMLResponse = exports.AssumeRoleWithSAMLRequest = exports.RegionDisabledException = exports.PackedPolicyTooLargeException = exports.MalformedPolicyDocumentException = exports.ExpiredTokenException = exports.AssumeRoleResponse = exports.Credentials = exports.AssumeRoleRequest = exports.Tag = exports.PolicyDescriptorType = exports.AssumedRoleUser = void 0;
 var AssumedRoleUser;
 (function (AssumedRoleUser) {
+    /**
+     * @internal
+     */
     AssumedRoleUser.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AssumedRoleUser = exports.AssumedRoleUser || (exports.AssumedRoleUser = {}));
 var PolicyDescriptorType;
 (function (PolicyDescriptorType) {
+    /**
+     * @internal
+     */
     PolicyDescriptorType.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PolicyDescriptorType = exports.PolicyDescriptorType || (exports.PolicyDescriptorType = {}));
 var Tag;
 (function (Tag) {
+    /**
+     * @internal
+     */
     Tag.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(Tag = exports.Tag || (exports.Tag = {}));
 var AssumeRoleRequest;
 (function (AssumeRoleRequest) {
+    /**
+     * @internal
+     */
     AssumeRoleRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AssumeRoleRequest = exports.AssumeRoleRequest || (exports.AssumeRoleRequest = {}));
 var Credentials;
 (function (Credentials) {
+    /**
+     * @internal
+     */
     Credentials.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(Credentials = exports.Credentials || (exports.Credentials = {}));
 var AssumeRoleResponse;
 (function (AssumeRoleResponse) {
+    /**
+     * @internal
+     */
     AssumeRoleResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AssumeRoleResponse = exports.AssumeRoleResponse || (exports.AssumeRoleResponse = {}));
 var ExpiredTokenException;
 (function (ExpiredTokenException) {
+    /**
+     * @internal
+     */
     ExpiredTokenException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ExpiredTokenException = exports.ExpiredTokenException || (exports.ExpiredTokenException = {}));
 var MalformedPolicyDocumentException;
 (function (MalformedPolicyDocumentException) {
+    /**
+     * @internal
+     */
     MalformedPolicyDocumentException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(MalformedPolicyDocumentException = exports.MalformedPolicyDocumentException || (exports.MalformedPolicyDocumentException = {}));
 var PackedPolicyTooLargeException;
 (function (PackedPolicyTooLargeException) {
+    /**
+     * @internal
+     */
     PackedPolicyTooLargeException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PackedPolicyTooLargeException = exports.PackedPolicyTooLargeException || (exports.PackedPolicyTooLargeException = {}));
 var RegionDisabledException;
 (function (RegionDisabledException) {
+    /**
+     * @internal
+     */
     RegionDisabledException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(RegionDisabledException = exports.RegionDisabledException || (exports.RegionDisabledException = {}));
 var AssumeRoleWithSAMLRequest;
 (function (AssumeRoleWithSAMLRequest) {
+    /**
+     * @internal
+     */
     AssumeRoleWithSAMLRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AssumeRoleWithSAMLRequest = exports.AssumeRoleWithSAMLRequest || (exports.AssumeRoleWithSAMLRequest = {}));
 var AssumeRoleWithSAMLResponse;
 (function (AssumeRoleWithSAMLResponse) {
+    /**
+     * @internal
+     */
     AssumeRoleWithSAMLResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AssumeRoleWithSAMLResponse = exports.AssumeRoleWithSAMLResponse || (exports.AssumeRoleWithSAMLResponse = {}));
 var IDPRejectedClaimException;
 (function (IDPRejectedClaimException) {
+    /**
+     * @internal
+     */
     IDPRejectedClaimException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(IDPRejectedClaimException = exports.IDPRejectedClaimException || (exports.IDPRejectedClaimException = {}));
 var InvalidIdentityTokenException;
 (function (InvalidIdentityTokenException) {
+    /**
+     * @internal
+     */
     InvalidIdentityTokenException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(InvalidIdentityTokenException = exports.InvalidIdentityTokenException || (exports.InvalidIdentityTokenException = {}));
 var AssumeRoleWithWebIdentityRequest;
 (function (AssumeRoleWithWebIdentityRequest) {
+    /**
+     * @internal
+     */
     AssumeRoleWithWebIdentityRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AssumeRoleWithWebIdentityRequest = exports.AssumeRoleWithWebIdentityRequest || (exports.AssumeRoleWithWebIdentityRequest = {}));
 var AssumeRoleWithWebIdentityResponse;
 (function (AssumeRoleWithWebIdentityResponse) {
+    /**
+     * @internal
+     */
     AssumeRoleWithWebIdentityResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AssumeRoleWithWebIdentityResponse = exports.AssumeRoleWithWebIdentityResponse || (exports.AssumeRoleWithWebIdentityResponse = {}));
 var IDPCommunicationErrorException;
 (function (IDPCommunicationErrorException) {
+    /**
+     * @internal
+     */
     IDPCommunicationErrorException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(IDPCommunicationErrorException = exports.IDPCommunicationErrorException || (exports.IDPCommunicationErrorException = {}));
 var DecodeAuthorizationMessageRequest;
 (function (DecodeAuthorizationMessageRequest) {
+    /**
+     * @internal
+     */
     DecodeAuthorizationMessageRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DecodeAuthorizationMessageRequest = exports.DecodeAuthorizationMessageRequest || (exports.DecodeAuthorizationMessageRequest = {}));
 var DecodeAuthorizationMessageResponse;
 (function (DecodeAuthorizationMessageResponse) {
+    /**
+     * @internal
+     */
     DecodeAuthorizationMessageResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DecodeAuthorizationMessageResponse = exports.DecodeAuthorizationMessageResponse || (exports.DecodeAuthorizationMessageResponse = {}));
 var InvalidAuthorizationMessageException;
 (function (InvalidAuthorizationMessageException) {
+    /**
+     * @internal
+     */
     InvalidAuthorizationMessageException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(InvalidAuthorizationMessageException = exports.InvalidAuthorizationMessageException || (exports.InvalidAuthorizationMessageException = {}));
 var GetAccessKeyInfoRequest;
 (function (GetAccessKeyInfoRequest) {
+    /**
+     * @internal
+     */
     GetAccessKeyInfoRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetAccessKeyInfoRequest = exports.GetAccessKeyInfoRequest || (exports.GetAccessKeyInfoRequest = {}));
 var GetAccessKeyInfoResponse;
 (function (GetAccessKeyInfoResponse) {
+    /**
+     * @internal
+     */
     GetAccessKeyInfoResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetAccessKeyInfoResponse = exports.GetAccessKeyInfoResponse || (exports.GetAccessKeyInfoResponse = {}));
 var GetCallerIdentityRequest;
 (function (GetCallerIdentityRequest) {
+    /**
+     * @internal
+     */
     GetCallerIdentityRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetCallerIdentityRequest = exports.GetCallerIdentityRequest || (exports.GetCallerIdentityRequest = {}));
 var GetCallerIdentityResponse;
 (function (GetCallerIdentityResponse) {
+    /**
+     * @internal
+     */
     GetCallerIdentityResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetCallerIdentityResponse = exports.GetCallerIdentityResponse || (exports.GetCallerIdentityResponse = {}));
 var GetFederationTokenRequest;
 (function (GetFederationTokenRequest) {
+    /**
+     * @internal
+     */
     GetFederationTokenRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetFederationTokenRequest = exports.GetFederationTokenRequest || (exports.GetFederationTokenRequest = {}));
 var FederatedUser;
 (function (FederatedUser) {
+    /**
+     * @internal
+     */
     FederatedUser.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(FederatedUser = exports.FederatedUser || (exports.FederatedUser = {}));
 var GetFederationTokenResponse;
 (function (GetFederationTokenResponse) {
+    /**
+     * @internal
+     */
     GetFederationTokenResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetFederationTokenResponse = exports.GetFederationTokenResponse || (exports.GetFederationTokenResponse = {}));
 var GetSessionTokenRequest;
 (function (GetSessionTokenRequest) {
+    /**
+     * @internal
+     */
     GetSessionTokenRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetSessionTokenRequest = exports.GetSessionTokenRequest || (exports.GetSessionTokenRequest = {}));
 var GetSessionTokenResponse;
 (function (GetSessionTokenResponse) {
+    /**
+     * @internal
+     */
     GetSessionTokenResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -20758,6 +22455,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.deserializeAws_queryGetSessionTokenCommand = exports.deserializeAws_queryGetFederationTokenCommand = exports.deserializeAws_queryGetCallerIdentityCommand = exports.deserializeAws_queryGetAccessKeyInfoCommand = exports.deserializeAws_queryDecodeAuthorizationMessageCommand = exports.deserializeAws_queryAssumeRoleWithWebIdentityCommand = exports.deserializeAws_queryAssumeRoleWithSAMLCommand = exports.deserializeAws_queryAssumeRoleCommand = exports.serializeAws_queryGetSessionTokenCommand = exports.serializeAws_queryGetFederationTokenCommand = exports.serializeAws_queryGetCallerIdentityCommand = exports.serializeAws_queryGetAccessKeyInfoCommand = exports.serializeAws_queryDecodeAuthorizationMessageCommand = exports.serializeAws_queryAssumeRoleWithWebIdentityCommand = exports.serializeAws_queryAssumeRoleWithSAMLCommand = exports.serializeAws_queryAssumeRoleCommand = void 0;
 const protocol_http_1 = __nccwpck_require__(7498);
 const smithy_client_1 = __nccwpck_require__(2223);
+const entities_1 = __nccwpck_require__(3000);
 const fast_xml_parser_1 = __nccwpck_require__(7448);
 const serializeAws_queryAssumeRoleCommand = async (input, context) => {
     const headers = {
@@ -21971,12 +23669,6 @@ const buildHttpRpcRequest = async (context, headers, path, resolvedHostname, bod
     }
     return new protocol_http_1.HttpRequest(contents);
 };
-const decodeEscapedXML = (str) => str
-    .replace(/&amp;/g, "&")
-    .replace(/&apos;/g, "'")
-    .replace(/&quot;/g, '"')
-    .replace(/&gt;/g, ">")
-    .replace(/&lt;/g, "<");
 const parseBody = (streamBody, context) => collectBodyString(streamBody, context).then((encoded) => {
     if (encoded.length) {
         const parsedObj = fast_xml_parser_1.parse(encoded, {
@@ -21984,7 +23676,7 @@ const parseBody = (streamBody, context) => collectBodyString(streamBody, context
             ignoreAttributes: false,
             parseNodeValue: false,
             trimValues: false,
-            tagValueProcessor: (val, tagName) => (val.trim() === "" ? "" : decodeEscapedXML(val)),
+            tagValueProcessor: (val, tagName) => (val.trim() === "" ? "" : entities_1.decodeHTML(val)),
         });
         const textNodeName = "#text";
         const key = Object.keys(parsedObj)[0];
@@ -22113,7 +23805,7 @@ const normalizeEndpoint = (input) => {
     }
     return endpoint;
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ3VzdG9tRW5kcG9pbnRzQ29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL0N1c3RvbUVuZHBvaW50c0NvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUF1Qk8sTUFBTSw0QkFBNEIsR0FBRyxDQUMxQyxLQUEwRCxFQUN2QixFQUFFOztJQUFDLE9BQUEsQ0FBQztRQUN2QyxHQUFHLEtBQUs7UUFDUixHQUFHLEVBQUUsTUFBQSxLQUFLLENBQUMsR0FBRyxtQ0FBSSxJQUFJO1FBQ3RCLFFBQVEsRUFBRSxpQkFBaUIsQ0FBQyxLQUFLLENBQUM7UUFDbEMsZ0JBQWdCLEVBQUUsSUFBSTtLQUN2QixDQUFDLENBQUE7Q0FBQSxDQUFDO0FBUFUsUUFBQSw0QkFBNEIsZ0NBT3RDO0FBRUgsTUFBTSxpQkFBaUIsR0FBRyxDQUFDLEtBQXNELEVBQXNCLEVBQUU7SUFDdkcsTUFBTSxFQUFFLFFBQVEsRUFBRSxTQUFTLEVBQUUsR0FBRyxLQUFLLENBQUM7SUFDdEMsSUFBSSxPQUFPLFFBQVEsS0FBSyxRQUFRLEVBQUU7UUFDaEMsTUFBTSxXQUFXLEdBQUcsT0FBTyxDQUFDLE9BQU8sQ0FBQyxTQUFTLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQztRQUN6RCxPQUFPLEdBQUcsRUFBRSxDQUFDLFdBQVcsQ0FBQztLQUMxQjtTQUFNLElBQUksT0FBTyxRQUFRLEtBQUssUUFBUSxFQUFFO1FBQ3ZDLE1BQU0sV0FBVyxHQUFHLE9BQU8sQ0FBQyxPQUFPLENBQUMsUUFBUSxDQUFDLENBQUM7UUFDOUMsT0FBTyxHQUFHLEVBQUUsQ0FBQyxXQUFXLENBQUM7S0FDMUI7SUFDRCxPQUFPLFFBQVEsQ0FBQztBQUNsQixDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBFbmRwb2ludCwgUHJvdmlkZXIsIFVybFBhcnNlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5leHBvcnQgaW50ZXJmYWNlIEN1c3RvbUVuZHBvaW50c0lucHV0Q29uZmlnIHtcbiAgLyoqXG4gICAqIFRoZSBmdWxseSBxdWFsaWZpZWQgZW5kcG9pbnQgb2YgdGhlIHdlYnNlcnZpY2UuXG4gICAqL1xuICBlbmRwb2ludDogc3RyaW5nIHwgRW5kcG9pbnQgfCBQcm92aWRlcjxFbmRwb2ludD47XG5cbiAgLyoqXG4gICAqIFdoZXRoZXIgVExTIGlzIGVuYWJsZWQgZm9yIHJlcXVlc3RzLlxuICAgKi9cbiAgdGxzPzogYm9vbGVhbjtcbn1cblxuaW50ZXJmYWNlIFByZXZpb3VzbHlSZXNvbHZlZCB7XG4gIHVybFBhcnNlcjogVXJsUGFyc2VyO1xufVxuXG5leHBvcnQgaW50ZXJmYWNlIEN1c3RvbUVuZHBvaW50c1Jlc29sdmVkQ29uZmlnIGV4dGVuZHMgUmVxdWlyZWQ8Q3VzdG9tRW5kcG9pbnRzSW5wdXRDb25maWc+IHtcbiAgZW5kcG9pbnQ6IFByb3ZpZGVyPEVuZHBvaW50PjtcbiAgaXNDdXN0b21FbmRwb2ludDogdHJ1ZTtcbn1cblxuZXhwb3J0IGNvbnN0IHJlc29sdmVDdXN0b21FbmRwb2ludHNDb25maWcgPSA8VD4oXG4gIGlucHV0OiBUICYgQ3VzdG9tRW5kcG9pbnRzSW5wdXRDb25maWcgJiBQcmV2aW91c2x5UmVzb2x2ZWRcbik6IFQgJiBDdXN0b21FbmRwb2ludHNSZXNvbHZlZENvbmZpZyA9PiAoe1xuICAuLi5pbnB1dCxcbiAgdGxzOiBpbnB1dC50bHMgPz8gdHJ1ZSxcbiAgZW5kcG9pbnQ6IG5vcm1hbGl6ZUVuZHBvaW50KGlucHV0KSxcbiAgaXNDdXN0b21FbmRwb2ludDogdHJ1ZSxcbn0pO1xuXG5jb25zdCBub3JtYWxpemVFbmRwb2ludCA9IChpbnB1dDogQ3VzdG9tRW5kcG9pbnRzSW5wdXRDb25maWcgJiBQcmV2aW91c2x5UmVzb2x2ZWQpOiBQcm92aWRlcjxFbmRwb2ludD4gPT4ge1xuICBjb25zdCB7IGVuZHBvaW50LCB1cmxQYXJzZXIgfSA9IGlucHV0O1xuICBpZiAodHlwZW9mIGVuZHBvaW50ID09PSBcInN0cmluZ1wiKSB7XG4gICAgY29uc3QgcHJvbWlzaWZpZWQgPSBQcm9taXNlLnJlc29sdmUodXJsUGFyc2VyKGVuZHBvaW50KSk7XG4gICAgcmV0dXJuICgpID0+IHByb21pc2lmaWVkO1xuICB9IGVsc2UgaWYgKHR5cGVvZiBlbmRwb2ludCA9PT0gXCJvYmplY3RcIikge1xuICAgIGNvbnN0IHByb21pc2lmaWVkID0gUHJvbWlzZS5yZXNvbHZlKGVuZHBvaW50KTtcbiAgICByZXR1cm4gKCkgPT4gcHJvbWlzaWZpZWQ7XG4gIH1cbiAgcmV0dXJuIGVuZHBvaW50O1xufTtcbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ3VzdG9tRW5kcG9pbnRzQ29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL0N1c3RvbUVuZHBvaW50c0NvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUE4Qk8sTUFBTSw0QkFBNEIsR0FBRyxDQUMxQyxLQUEwRCxFQUN2QixFQUFFOztJQUFDLE9BQUEsQ0FBQztRQUN2QyxHQUFHLEtBQUs7UUFDUixHQUFHLEVBQUUsTUFBQSxLQUFLLENBQUMsR0FBRyxtQ0FBSSxJQUFJO1FBQ3RCLFFBQVEsRUFBRSxpQkFBaUIsQ0FBQyxLQUFLLENBQUM7UUFDbEMsZ0JBQWdCLEVBQUUsSUFBSTtLQUN2QixDQUFDLENBQUE7Q0FBQSxDQUFDO0FBUFUsUUFBQSw0QkFBNEIsZ0NBT3RDO0FBRUgsTUFBTSxpQkFBaUIsR0FBRyxDQUFDLEtBQXNELEVBQXNCLEVBQUU7SUFDdkcsTUFBTSxFQUFFLFFBQVEsRUFBRSxTQUFTLEVBQUUsR0FBRyxLQUFLLENBQUM7SUFDdEMsSUFBSSxPQUFPLFFBQVEsS0FBSyxRQUFRLEVBQUU7UUFDaEMsTUFBTSxXQUFXLEdBQUcsT0FBTyxDQUFDLE9BQU8sQ0FBQyxTQUFTLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQztRQUN6RCxPQUFPLEdBQUcsRUFBRSxDQUFDLFdBQVcsQ0FBQztLQUMxQjtTQUFNLElBQUksT0FBTyxRQUFRLEtBQUssUUFBUSxFQUFFO1FBQ3ZDLE1BQU0sV0FBVyxHQUFHLE9BQU8sQ0FBQyxPQUFPLENBQUMsUUFBUSxDQUFDLENBQUM7UUFDOUMsT0FBTyxHQUFHLEVBQUUsQ0FBQyxXQUFXLENBQUM7S0FDMUI7SUFDRCxPQUFPLFFBQVEsQ0FBQztBQUNsQixDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBFbmRwb2ludCwgUHJvdmlkZXIsIFVybFBhcnNlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5leHBvcnQgaW50ZXJmYWNlIEN1c3RvbUVuZHBvaW50c0lucHV0Q29uZmlnIHtcbiAgLyoqXG4gICAqIFRoZSBmdWxseSBxdWFsaWZpZWQgZW5kcG9pbnQgb2YgdGhlIHdlYnNlcnZpY2UuXG4gICAqL1xuICBlbmRwb2ludDogc3RyaW5nIHwgRW5kcG9pbnQgfCBQcm92aWRlcjxFbmRwb2ludD47XG5cbiAgLyoqXG4gICAqIFdoZXRoZXIgVExTIGlzIGVuYWJsZWQgZm9yIHJlcXVlc3RzLlxuICAgKi9cbiAgdGxzPzogYm9vbGVhbjtcbn1cblxuaW50ZXJmYWNlIFByZXZpb3VzbHlSZXNvbHZlZCB7XG4gIHVybFBhcnNlcjogVXJsUGFyc2VyO1xufVxuXG5leHBvcnQgaW50ZXJmYWNlIEN1c3RvbUVuZHBvaW50c1Jlc29sdmVkQ29uZmlnIGV4dGVuZHMgUmVxdWlyZWQ8Q3VzdG9tRW5kcG9pbnRzSW5wdXRDb25maWc+IHtcbiAgLyoqXG4gICAqIFJlc29sdmVkIHZhbHVlIGZvciBpbnB1dCB7QGxpbmsgQ3VzdG9tRW5kcG9pbnRzSW5wdXRDb25maWcuZW5kcG9pbnR9XG4gICAqL1xuICBlbmRwb2ludDogUHJvdmlkZXI8RW5kcG9pbnQ+O1xuICAvKipcbiAgICogV2hldGhlciB0aGUgZW5kcG9pbnQgaXMgc3BlY2lmaWVkIGJ5IGNhbGxlci5cbiAgICogQGludGVybmFsXG4gICAqL1xuICBpc0N1c3RvbUVuZHBvaW50OiB0cnVlO1xufVxuXG5leHBvcnQgY29uc3QgcmVzb2x2ZUN1c3RvbUVuZHBvaW50c0NvbmZpZyA9IDxUPihcbiAgaW5wdXQ6IFQgJiBDdXN0b21FbmRwb2ludHNJbnB1dENvbmZpZyAmIFByZXZpb3VzbHlSZXNvbHZlZFxuKTogVCAmIEN1c3RvbUVuZHBvaW50c1Jlc29sdmVkQ29uZmlnID0+ICh7XG4gIC4uLmlucHV0LFxuICB0bHM6IGlucHV0LnRscyA/PyB0cnVlLFxuICBlbmRwb2ludDogbm9ybWFsaXplRW5kcG9pbnQoaW5wdXQpLFxuICBpc0N1c3RvbUVuZHBvaW50OiB0cnVlLFxufSk7XG5cbmNvbnN0IG5vcm1hbGl6ZUVuZHBvaW50ID0gKGlucHV0OiBDdXN0b21FbmRwb2ludHNJbnB1dENvbmZpZyAmIFByZXZpb3VzbHlSZXNvbHZlZCk6IFByb3ZpZGVyPEVuZHBvaW50PiA9PiB7XG4gIGNvbnN0IHsgZW5kcG9pbnQsIHVybFBhcnNlciB9ID0gaW5wdXQ7XG4gIGlmICh0eXBlb2YgZW5kcG9pbnQgPT09IFwic3RyaW5nXCIpIHtcbiAgICBjb25zdCBwcm9taXNpZmllZCA9IFByb21pc2UucmVzb2x2ZSh1cmxQYXJzZXIoZW5kcG9pbnQpKTtcbiAgICByZXR1cm4gKCkgPT4gcHJvbWlzaWZpZWQ7XG4gIH0gZWxzZSBpZiAodHlwZW9mIGVuZHBvaW50ID09PSBcIm9iamVjdFwiKSB7XG4gICAgY29uc3QgcHJvbWlzaWZpZWQgPSBQcm9taXNlLnJlc29sdmUoZW5kcG9pbnQpO1xuICAgIHJldHVybiAoKSA9PiBwcm9taXNpZmllZDtcbiAgfVxuICByZXR1cm4gZW5kcG9pbnQ7XG59O1xuIl19
 
 /***/ }),
 
@@ -22160,7 +23852,7 @@ const getEndPointFromRegion = async (input) => {
     }
     return input.urlParser(`${tls ? "https:" : "http:"}//${hostname}`);
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRW5kcG9pbnRzQ29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL0VuZHBvaW50c0NvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUF5Qk8sTUFBTSxzQkFBc0IsR0FBRyxDQUNwQyxLQUFvRCxFQUN2QixFQUFFOztJQUFDLE9BQUEsQ0FBQztRQUNqQyxHQUFHLEtBQUs7UUFDUixHQUFHLEVBQUUsTUFBQSxLQUFLLENBQUMsR0FBRyxtQ0FBSSxJQUFJO1FBQ3RCLFFBQVEsRUFBRSxLQUFLLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQyxpQkFBaUIsQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxFQUFFLENBQUMscUJBQXFCLENBQUMsS0FBSyxDQUFDO1FBQ3hGLGdCQUFnQixFQUFFLEtBQUssQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUFDLENBQUMsS0FBSztLQUNoRCxDQUFDLENBQUE7Q0FBQSxDQUFDO0FBUFUsUUFBQSxzQkFBc0IsMEJBT2hDO0FBRUgsTUFBTSxpQkFBaUIsR0FBRyxDQUFDLEtBQWdELEVBQXNCLEVBQUU7SUFDakcsTUFBTSxFQUFFLFFBQVEsRUFBRSxTQUFTLEVBQUUsR0FBRyxLQUFLLENBQUM7SUFDdEMsSUFBSSxPQUFPLFFBQVEsS0FBSyxRQUFRLEVBQUU7UUFDaEMsTUFBTSxXQUFXLEdBQUcsT0FBTyxDQUFDLE9BQU8sQ0FBQyxTQUFTLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQztRQUN6RCxPQUFPLEdBQUcsRUFBRSxDQUFDLFdBQVcsQ0FBQztLQUMxQjtTQUFNLElBQUksT0FBTyxRQUFRLEtBQUssUUFBUSxFQUFFO1FBQ3ZDLE1BQU0sV0FBVyxHQUFHLE9BQU8sQ0FBQyxPQUFPLENBQUMsUUFBUSxDQUFDLENBQUM7UUFDOUMsT0FBTyxHQUFHLEVBQUUsQ0FBQyxXQUFXLENBQUM7S0FDMUI7SUFDRCxPQUFPLFFBQVMsQ0FBQztBQUNuQixDQUFDLENBQUM7QUFFRixNQUFNLHFCQUFxQixHQUFHLEtBQUssRUFBRSxLQUFnRCxFQUFFLEVBQUU7O0lBQ3ZGLE1BQU0sRUFBRSxHQUFHLEdBQUcsSUFBSSxFQUFFLEdBQUcsS0FBSyxDQUFDO0lBQzdCLE1BQU0sTUFBTSxHQUFHLE1BQU0sS0FBSyxDQUFDLE1BQU0sRUFBRSxDQUFDO0lBRXBDLE1BQU0sWUFBWSxHQUFHLElBQUksTUFBTSxDQUFDLDBEQUEwRCxDQUFDLENBQUM7SUFDNUYsSUFBSSxDQUFDLFlBQVksQ0FBQyxJQUFJLENBQUMsTUFBTSxDQUFDLEVBQUU7UUFDOUIsTUFBTSxJQUFJLEtBQUssQ0FBQyxpQ0FBaUMsQ0FBQyxDQUFDO0tBQ3BEO0lBRUQsTUFBTSxFQUFFLFFBQVEsRUFBRSxHQUFHLE1BQUEsQ0FBQyxNQUFNLEtBQUssQ0FBQyxrQkFBa0IsQ0FBQyxNQUFNLENBQUMsQ0FBQyxtQ0FBSSxFQUFFLENBQUM7SUFDcEUsSUFBSSxDQUFDLFFBQVEsRUFBRTtRQUNiLE1BQU0sSUFBSSxLQUFLLENBQUMsNENBQTRDLENBQUMsQ0FBQztLQUMvRDtJQUVELE9BQU8sS0FBSyxDQUFDLFNBQVMsQ0FBQyxHQUFHLEdBQUcsQ0FBQyxDQUFDLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQyxPQUFPLEtBQUssUUFBUSxFQUFFLENBQUMsQ0FBQztBQUNyRSxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBFbmRwb2ludCwgUHJvdmlkZXIsIFJlZ2lvbkluZm9Qcm92aWRlciwgVXJsUGFyc2VyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmV4cG9ydCBpbnRlcmZhY2UgRW5kcG9pbnRzSW5wdXRDb25maWcge1xuICAvKipcbiAgICogVGhlIGZ1bGx5IHF1YWxpZmllZCBlbmRwb2ludCBvZiB0aGUgd2Vic2VydmljZS4gVGhpcyBpcyBvbmx5IHJlcXVpcmVkIHdoZW4gdXNpbmcgYSBjdXN0b20gZW5kcG9pbnQgKGZvciBleGFtcGxlLCB3aGVuIHVzaW5nIGEgbG9jYWwgdmVyc2lvbiBvZiBTMykuXG4gICAqL1xuICBlbmRwb2ludD86IHN0cmluZyB8IEVuZHBvaW50IHwgUHJvdmlkZXI8RW5kcG9pbnQ+O1xuXG4gIC8qKlxuICAgKiBXaGV0aGVyIFRMUyBpcyBlbmFibGVkIGZvciByZXF1ZXN0cy5cbiAgICovXG4gIHRscz86IGJvb2xlYW47XG59XG5cbmludGVyZmFjZSBQcmV2aW91c2x5UmVzb2x2ZWQge1xuICByZWdpb25JbmZvUHJvdmlkZXI6IFJlZ2lvbkluZm9Qcm92aWRlcjtcbiAgdXJsUGFyc2VyOiBVcmxQYXJzZXI7XG4gIHJlZ2lvbjogUHJvdmlkZXI8c3RyaW5nPjtcbn1cblxuZXhwb3J0IGludGVyZmFjZSBFbmRwb2ludHNSZXNvbHZlZENvbmZpZyBleHRlbmRzIFJlcXVpcmVkPEVuZHBvaW50c0lucHV0Q29uZmlnPiB7XG4gIGVuZHBvaW50OiBQcm92aWRlcjxFbmRwb2ludD47XG4gIGlzQ3VzdG9tRW5kcG9pbnQ6IGJvb2xlYW47XG59XG5cbmV4cG9ydCBjb25zdCByZXNvbHZlRW5kcG9pbnRzQ29uZmlnID0gPFQ+KFxuICBpbnB1dDogVCAmIEVuZHBvaW50c0lucHV0Q29uZmlnICYgUHJldmlvdXNseVJlc29sdmVkXG4pOiBUICYgRW5kcG9pbnRzUmVzb2x2ZWRDb25maWcgPT4gKHtcbiAgLi4uaW5wdXQsXG4gIHRsczogaW5wdXQudGxzID8/IHRydWUsXG4gIGVuZHBvaW50OiBpbnB1dC5lbmRwb2ludCA/IG5vcm1hbGl6ZUVuZHBvaW50KGlucHV0KSA6ICgpID0+IGdldEVuZFBvaW50RnJvbVJlZ2lvbihpbnB1dCksXG4gIGlzQ3VzdG9tRW5kcG9pbnQ6IGlucHV0LmVuZHBvaW50ID8gdHJ1ZSA6IGZhbHNlLFxufSk7XG5cbmNvbnN0IG5vcm1hbGl6ZUVuZHBvaW50ID0gKGlucHV0OiBFbmRwb2ludHNJbnB1dENvbmZpZyAmIFByZXZpb3VzbHlSZXNvbHZlZCk6IFByb3ZpZGVyPEVuZHBvaW50PiA9PiB7XG4gIGNvbnN0IHsgZW5kcG9pbnQsIHVybFBhcnNlciB9ID0gaW5wdXQ7XG4gIGlmICh0eXBlb2YgZW5kcG9pbnQgPT09IFwic3RyaW5nXCIpIHtcbiAgICBjb25zdCBwcm9taXNpZmllZCA9IFByb21pc2UucmVzb2x2ZSh1cmxQYXJzZXIoZW5kcG9pbnQpKTtcbiAgICByZXR1cm4gKCkgPT4gcHJvbWlzaWZpZWQ7XG4gIH0gZWxzZSBpZiAodHlwZW9mIGVuZHBvaW50ID09PSBcIm9iamVjdFwiKSB7XG4gICAgY29uc3QgcHJvbWlzaWZpZWQgPSBQcm9taXNlLnJlc29sdmUoZW5kcG9pbnQpO1xuICAgIHJldHVybiAoKSA9PiBwcm9taXNpZmllZDtcbiAgfVxuICByZXR1cm4gZW5kcG9pbnQhO1xufTtcblxuY29uc3QgZ2V0RW5kUG9pbnRGcm9tUmVnaW9uID0gYXN5bmMgKGlucHV0OiBFbmRwb2ludHNJbnB1dENvbmZpZyAmIFByZXZpb3VzbHlSZXNvbHZlZCkgPT4ge1xuICBjb25zdCB7IHRscyA9IHRydWUgfSA9IGlucHV0O1xuICBjb25zdCByZWdpb24gPSBhd2FpdCBpbnB1dC5yZWdpb24oKTtcblxuICBjb25zdCBkbnNIb3N0UmVnZXggPSBuZXcgUmVnRXhwKC9eKFthLXpBLVowLTldfFthLXpBLVowLTldW2EtekEtWjAtOS1dezAsNjF9W2EtekEtWjAtOV0pJC8pO1xuICBpZiAoIWRuc0hvc3RSZWdleC50ZXN0KHJlZ2lvbikpIHtcbiAgICB0aHJvdyBuZXcgRXJyb3IoXCJJbnZhbGlkIHJlZ2lvbiBpbiBjbGllbnQgY29uZmlnXCIpO1xuICB9XG5cbiAgY29uc3QgeyBob3N0bmFtZSB9ID0gKGF3YWl0IGlucHV0LnJlZ2lvbkluZm9Qcm92aWRlcihyZWdpb24pKSA/PyB7fTtcbiAgaWYgKCFob3N0bmFtZSkge1xuICAgIHRocm93IG5ldyBFcnJvcihcIkNhbm5vdCByZXNvbHZlIGhvc3RuYW1lIGZyb20gY2xpZW50IGNvbmZpZ1wiKTtcbiAgfVxuXG4gIHJldHVybiBpbnB1dC51cmxQYXJzZXIoYCR7dGxzID8gXCJodHRwczpcIiA6IFwiaHR0cDpcIn0vLyR7aG9zdG5hbWV9YCk7XG59O1xuIl19
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRW5kcG9pbnRzQ29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL0VuZHBvaW50c0NvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFnQ08sTUFBTSxzQkFBc0IsR0FBRyxDQUNwQyxLQUFvRCxFQUN2QixFQUFFOztJQUFDLE9BQUEsQ0FBQztRQUNqQyxHQUFHLEtBQUs7UUFDUixHQUFHLEVBQUUsTUFBQSxLQUFLLENBQUMsR0FBRyxtQ0FBSSxJQUFJO1FBQ3RCLFFBQVEsRUFBRSxLQUFLLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQyxpQkFBaUIsQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxFQUFFLENBQUMscUJBQXFCLENBQUMsS0FBSyxDQUFDO1FBQ3hGLGdCQUFnQixFQUFFLEtBQUssQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUFDLENBQUMsS0FBSztLQUNoRCxDQUFDLENBQUE7Q0FBQSxDQUFDO0FBUFUsUUFBQSxzQkFBc0IsMEJBT2hDO0FBRUgsTUFBTSxpQkFBaUIsR0FBRyxDQUFDLEtBQWdELEVBQXNCLEVBQUU7SUFDakcsTUFBTSxFQUFFLFFBQVEsRUFBRSxTQUFTLEVBQUUsR0FBRyxLQUFLLENBQUM7SUFDdEMsSUFBSSxPQUFPLFFBQVEsS0FBSyxRQUFRLEVBQUU7UUFDaEMsTUFBTSxXQUFXLEdBQUcsT0FBTyxDQUFDLE9BQU8sQ0FBQyxTQUFTLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQztRQUN6RCxPQUFPLEdBQUcsRUFBRSxDQUFDLFdBQVcsQ0FBQztLQUMxQjtTQUFNLElBQUksT0FBTyxRQUFRLEtBQUssUUFBUSxFQUFFO1FBQ3ZDLE1BQU0sV0FBVyxHQUFHLE9BQU8sQ0FBQyxPQUFPLENBQUMsUUFBUSxDQUFDLENBQUM7UUFDOUMsT0FBTyxHQUFHLEVBQUUsQ0FBQyxXQUFXLENBQUM7S0FDMUI7SUFDRCxPQUFPLFFBQVMsQ0FBQztBQUNuQixDQUFDLENBQUM7QUFFRixNQUFNLHFCQUFxQixHQUFHLEtBQUssRUFBRSxLQUFnRCxFQUFFLEVBQUU7O0lBQ3ZGLE1BQU0sRUFBRSxHQUFHLEdBQUcsSUFBSSxFQUFFLEdBQUcsS0FBSyxDQUFDO0lBQzdCLE1BQU0sTUFBTSxHQUFHLE1BQU0sS0FBSyxDQUFDLE1BQU0sRUFBRSxDQUFDO0lBRXBDLE1BQU0sWUFBWSxHQUFHLElBQUksTUFBTSxDQUFDLDBEQUEwRCxDQUFDLENBQUM7SUFDNUYsSUFBSSxDQUFDLFlBQVksQ0FBQyxJQUFJLENBQUMsTUFBTSxDQUFDLEVBQUU7UUFDOUIsTUFBTSxJQUFJLEtBQUssQ0FBQyxpQ0FBaUMsQ0FBQyxDQUFDO0tBQ3BEO0lBRUQsTUFBTSxFQUFFLFFBQVEsRUFBRSxHQUFHLE1BQUEsQ0FBQyxNQUFNLEtBQUssQ0FBQyxrQkFBa0IsQ0FBQyxNQUFNLENBQUMsQ0FBQyxtQ0FBSSxFQUFFLENBQUM7SUFDcEUsSUFBSSxDQUFDLFFBQVEsRUFBRTtRQUNiLE1BQU0sSUFBSSxLQUFLLENBQUMsNENBQTRDLENBQUMsQ0FBQztLQUMvRDtJQUVELE9BQU8sS0FBSyxDQUFDLFNBQVMsQ0FBQyxHQUFHLEdBQUcsQ0FBQyxDQUFDLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQyxPQUFPLEtBQUssUUFBUSxFQUFFLENBQUMsQ0FBQztBQUNyRSxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBFbmRwb2ludCwgUHJvdmlkZXIsIFJlZ2lvbkluZm9Qcm92aWRlciwgVXJsUGFyc2VyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmV4cG9ydCBpbnRlcmZhY2UgRW5kcG9pbnRzSW5wdXRDb25maWcge1xuICAvKipcbiAgICogVGhlIGZ1bGx5IHF1YWxpZmllZCBlbmRwb2ludCBvZiB0aGUgd2Vic2VydmljZS4gVGhpcyBpcyBvbmx5IHJlcXVpcmVkIHdoZW4gdXNpbmcgYSBjdXN0b20gZW5kcG9pbnQgKGZvciBleGFtcGxlLCB3aGVuIHVzaW5nIGEgbG9jYWwgdmVyc2lvbiBvZiBTMykuXG4gICAqL1xuICBlbmRwb2ludD86IHN0cmluZyB8IEVuZHBvaW50IHwgUHJvdmlkZXI8RW5kcG9pbnQ+O1xuXG4gIC8qKlxuICAgKiBXaGV0aGVyIFRMUyBpcyBlbmFibGVkIGZvciByZXF1ZXN0cy5cbiAgICovXG4gIHRscz86IGJvb2xlYW47XG59XG5cbmludGVyZmFjZSBQcmV2aW91c2x5UmVzb2x2ZWQge1xuICByZWdpb25JbmZvUHJvdmlkZXI6IFJlZ2lvbkluZm9Qcm92aWRlcjtcbiAgdXJsUGFyc2VyOiBVcmxQYXJzZXI7XG4gIHJlZ2lvbjogUHJvdmlkZXI8c3RyaW5nPjtcbn1cblxuZXhwb3J0IGludGVyZmFjZSBFbmRwb2ludHNSZXNvbHZlZENvbmZpZyBleHRlbmRzIFJlcXVpcmVkPEVuZHBvaW50c0lucHV0Q29uZmlnPiB7XG4gIC8qKlxuICAgKiBSZXNvbHZlZCB2YWx1ZSBmb3IgaW5wdXQge0BsaW5rIEVuZHBvaW50c1Jlc29sdmVkQ29uZmlnLmVuZHBvaW50fVxuICAgKi9cbiAgZW5kcG9pbnQ6IFByb3ZpZGVyPEVuZHBvaW50PjtcbiAgLyoqXG4gICAqIFdoZXRoZXIgdGhlIGVuZHBvaW50IGlzIHNwZWNpZmllZCBieSBjYWxsZXIuXG4gICAqIEBpbnRlcm5hbFxuICAgKi9cbiAgaXNDdXN0b21FbmRwb2ludDogYm9vbGVhbjtcbn1cblxuZXhwb3J0IGNvbnN0IHJlc29sdmVFbmRwb2ludHNDb25maWcgPSA8VD4oXG4gIGlucHV0OiBUICYgRW5kcG9pbnRzSW5wdXRDb25maWcgJiBQcmV2aW91c2x5UmVzb2x2ZWRcbik6IFQgJiBFbmRwb2ludHNSZXNvbHZlZENvbmZpZyA9PiAoe1xuICAuLi5pbnB1dCxcbiAgdGxzOiBpbnB1dC50bHMgPz8gdHJ1ZSxcbiAgZW5kcG9pbnQ6IGlucHV0LmVuZHBvaW50ID8gbm9ybWFsaXplRW5kcG9pbnQoaW5wdXQpIDogKCkgPT4gZ2V0RW5kUG9pbnRGcm9tUmVnaW9uKGlucHV0KSxcbiAgaXNDdXN0b21FbmRwb2ludDogaW5wdXQuZW5kcG9pbnQgPyB0cnVlIDogZmFsc2UsXG59KTtcblxuY29uc3Qgbm9ybWFsaXplRW5kcG9pbnQgPSAoaW5wdXQ6IEVuZHBvaW50c0lucHV0Q29uZmlnICYgUHJldmlvdXNseVJlc29sdmVkKTogUHJvdmlkZXI8RW5kcG9pbnQ+ID0+IHtcbiAgY29uc3QgeyBlbmRwb2ludCwgdXJsUGFyc2VyIH0gPSBpbnB1dDtcbiAgaWYgKHR5cGVvZiBlbmRwb2ludCA9PT0gXCJzdHJpbmdcIikge1xuICAgIGNvbnN0IHByb21pc2lmaWVkID0gUHJvbWlzZS5yZXNvbHZlKHVybFBhcnNlcihlbmRwb2ludCkpO1xuICAgIHJldHVybiAoKSA9PiBwcm9taXNpZmllZDtcbiAgfSBlbHNlIGlmICh0eXBlb2YgZW5kcG9pbnQgPT09IFwib2JqZWN0XCIpIHtcbiAgICBjb25zdCBwcm9taXNpZmllZCA9IFByb21pc2UucmVzb2x2ZShlbmRwb2ludCk7XG4gICAgcmV0dXJuICgpID0+IHByb21pc2lmaWVkO1xuICB9XG4gIHJldHVybiBlbmRwb2ludCE7XG59O1xuXG5jb25zdCBnZXRFbmRQb2ludEZyb21SZWdpb24gPSBhc3luYyAoaW5wdXQ6IEVuZHBvaW50c0lucHV0Q29uZmlnICYgUHJldmlvdXNseVJlc29sdmVkKSA9PiB7XG4gIGNvbnN0IHsgdGxzID0gdHJ1ZSB9ID0gaW5wdXQ7XG4gIGNvbnN0IHJlZ2lvbiA9IGF3YWl0IGlucHV0LnJlZ2lvbigpO1xuXG4gIGNvbnN0IGRuc0hvc3RSZWdleCA9IG5ldyBSZWdFeHAoL14oW2EtekEtWjAtOV18W2EtekEtWjAtOV1bYS16QS1aMC05LV17MCw2MX1bYS16QS1aMC05XSkkLyk7XG4gIGlmICghZG5zSG9zdFJlZ2V4LnRlc3QocmVnaW9uKSkge1xuICAgIHRocm93IG5ldyBFcnJvcihcIkludmFsaWQgcmVnaW9uIGluIGNsaWVudCBjb25maWdcIik7XG4gIH1cblxuICBjb25zdCB7IGhvc3RuYW1lIH0gPSAoYXdhaXQgaW5wdXQucmVnaW9uSW5mb1Byb3ZpZGVyKHJlZ2lvbikpID8/IHt9O1xuICBpZiAoIWhvc3RuYW1lKSB7XG4gICAgdGhyb3cgbmV3IEVycm9yKFwiQ2Fubm90IHJlc29sdmUgaG9zdG5hbWUgZnJvbSBjbGllbnQgY29uZmlnXCIpO1xuICB9XG5cbiAgcmV0dXJuIGlucHV0LnVybFBhcnNlcihgJHt0bHMgPyBcImh0dHBzOlwiIDogXCJodHRwOlwifS8vJHtob3N0bmFtZX1gKTtcbn07XG4iXX0=
 
 /***/ }),
 
@@ -22200,7 +23892,7 @@ const normalizeRegion = (region) => {
     }
     return region;
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmVnaW9uQ29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL1JlZ2lvbkNvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFHYSxRQUFBLGVBQWUsR0FBRyxZQUFZLENBQUM7QUFDL0IsUUFBQSxlQUFlLEdBQUcsUUFBUSxDQUFDO0FBRTNCLFFBQUEsMEJBQTBCLEdBQWtDO0lBQ3ZFLDJCQUEyQixFQUFFLENBQUMsR0FBRyxFQUFFLEVBQUUsQ0FBQyxHQUFHLENBQUMsdUJBQWUsQ0FBQztJQUMxRCxrQkFBa0IsRUFBRSxDQUFDLE9BQU8sRUFBRSxFQUFFLENBQUMsT0FBTyxDQUFDLHVCQUFlLENBQUM7SUFDekQsT0FBTyxFQUFFLEdBQUcsRUFBRTtRQUNaLE1BQU0sSUFBSSxLQUFLLENBQUMsbUJBQW1CLENBQUMsQ0FBQztJQUN2QyxDQUFDO0NBQ0YsQ0FBQztBQUVXLFFBQUEsK0JBQStCLEdBQXVCO0lBQ2pFLGFBQWEsRUFBRSxhQUFhO0NBQzdCLENBQUM7QUFlSyxNQUFNLG1CQUFtQixHQUFHLENBQUksS0FBaUQsRUFBNEIsRUFBRTtJQUNwSCxJQUFJLENBQUMsS0FBSyxDQUFDLE1BQU0sRUFBRTtRQUNqQixNQUFNLElBQUksS0FBSyxDQUFDLG1CQUFtQixDQUFDLENBQUM7S0FDdEM7SUFDRCxPQUFPO1FBQ0wsR0FBRyxLQUFLO1FBQ1IsTUFBTSxFQUFFLGVBQWUsQ0FBQyxLQUFLLENBQUMsTUFBTyxDQUFDO0tBQ3ZDLENBQUM7QUFDSixDQUFDLENBQUM7QUFSVyxRQUFBLG1CQUFtQix1QkFROUI7QUFFRixNQUFNLGVBQWUsR0FBRyxDQUFDLE1BQWlDLEVBQW9CLEVBQUU7SUFDOUUsSUFBSSxPQUFPLE1BQU0sS0FBSyxRQUFRLEVBQUU7UUFDOUIsTUFBTSxXQUFXLEdBQUcsT0FBTyxDQUFDLE9BQU8sQ0FBQyxNQUFNLENBQUMsQ0FBQztRQUM1QyxPQUFPLEdBQUcsRUFBRSxDQUFDLFdBQVcsQ0FBQztLQUMxQjtJQUNELE9BQU8sTUFBMEIsQ0FBQztBQUNwQyxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBMb2FkZWRDb25maWdTZWxlY3RvcnMsIExvY2FsQ29uZmlnT3B0aW9ucyB9IGZyb20gXCJAYXdzLXNkay9ub2RlLWNvbmZpZy1wcm92aWRlclwiO1xuaW1wb3J0IHsgUHJvdmlkZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuZXhwb3J0IGNvbnN0IFJFR0lPTl9FTlZfTkFNRSA9IFwiQVdTX1JFR0lPTlwiO1xuZXhwb3J0IGNvbnN0IFJFR0lPTl9JTklfTkFNRSA9IFwicmVnaW9uXCI7XG5cbmV4cG9ydCBjb25zdCBOT0RFX1JFR0lPTl9DT05GSUdfT1BUSU9OUzogTG9hZGVkQ29uZmlnU2VsZWN0b3JzPHN0cmluZz4gPSB7XG4gIGVudmlyb25tZW50VmFyaWFibGVTZWxlY3RvcjogKGVudikgPT4gZW52W1JFR0lPTl9FTlZfTkFNRV0sXG4gIGNvbmZpZ0ZpbGVTZWxlY3RvcjogKHByb2ZpbGUpID0+IHByb2ZpbGVbUkVHSU9OX0lOSV9OQU1FXSxcbiAgZGVmYXVsdDogKCkgPT4ge1xuICAgIHRocm93IG5ldyBFcnJvcihcIlJlZ2lvbiBpcyBtaXNzaW5nXCIpO1xuICB9LFxufTtcblxuZXhwb3J0IGNvbnN0IE5PREVfUkVHSU9OX0NPTkZJR19GSUxFX09QVElPTlM6IExvY2FsQ29uZmlnT3B0aW9ucyA9IHtcbiAgcHJlZmVycmVkRmlsZTogXCJjcmVkZW50aWFsc1wiLFxufTtcblxuZXhwb3J0IGludGVyZmFjZSBSZWdpb25JbnB1dENvbmZpZyB7XG4gIC8qKlxuICAgKiBUaGUgQVdTIHJlZ2lvbiB0byB3aGljaCB0aGlzIGNsaWVudCB3aWxsIHNlbmQgcmVxdWVzdHNcbiAgICovXG4gIHJlZ2lvbj86IHN0cmluZyB8IFByb3ZpZGVyPHN0cmluZz47XG59XG5cbmludGVyZmFjZSBQcmV2aW91c2x5UmVzb2x2ZWQge31cblxuZXhwb3J0IGludGVyZmFjZSBSZWdpb25SZXNvbHZlZENvbmZpZyB7XG4gIHJlZ2lvbjogUHJvdmlkZXI8c3RyaW5nPjtcbn1cblxuZXhwb3J0IGNvbnN0IHJlc29sdmVSZWdpb25Db25maWcgPSA8VD4oaW5wdXQ6IFQgJiBSZWdpb25JbnB1dENvbmZpZyAmIFByZXZpb3VzbHlSZXNvbHZlZCk6IFQgJiBSZWdpb25SZXNvbHZlZENvbmZpZyA9PiB7XG4gIGlmICghaW5wdXQucmVnaW9uKSB7XG4gICAgdGhyb3cgbmV3IEVycm9yKFwiUmVnaW9uIGlzIG1pc3NpbmdcIik7XG4gIH1cbiAgcmV0dXJuIHtcbiAgICAuLi5pbnB1dCxcbiAgICByZWdpb246IG5vcm1hbGl6ZVJlZ2lvbihpbnB1dC5yZWdpb24hKSxcbiAgfTtcbn07XG5cbmNvbnN0IG5vcm1hbGl6ZVJlZ2lvbiA9IChyZWdpb246IHN0cmluZyB8IFByb3ZpZGVyPHN0cmluZz4pOiBQcm92aWRlcjxzdHJpbmc+ID0+IHtcbiAgaWYgKHR5cGVvZiByZWdpb24gPT09IFwic3RyaW5nXCIpIHtcbiAgICBjb25zdCBwcm9taXNpZmllZCA9IFByb21pc2UucmVzb2x2ZShyZWdpb24pO1xuICAgIHJldHVybiAoKSA9PiBwcm9taXNpZmllZDtcbiAgfVxuICByZXR1cm4gcmVnaW9uIGFzIFByb3ZpZGVyPHN0cmluZz47XG59O1xuIl19
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmVnaW9uQ29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL1JlZ2lvbkNvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFHYSxRQUFBLGVBQWUsR0FBRyxZQUFZLENBQUM7QUFDL0IsUUFBQSxlQUFlLEdBQUcsUUFBUSxDQUFDO0FBRTNCLFFBQUEsMEJBQTBCLEdBQWtDO0lBQ3ZFLDJCQUEyQixFQUFFLENBQUMsR0FBRyxFQUFFLEVBQUUsQ0FBQyxHQUFHLENBQUMsdUJBQWUsQ0FBQztJQUMxRCxrQkFBa0IsRUFBRSxDQUFDLE9BQU8sRUFBRSxFQUFFLENBQUMsT0FBTyxDQUFDLHVCQUFlLENBQUM7SUFDekQsT0FBTyxFQUFFLEdBQUcsRUFBRTtRQUNaLE1BQU0sSUFBSSxLQUFLLENBQUMsbUJBQW1CLENBQUMsQ0FBQztJQUN2QyxDQUFDO0NBQ0YsQ0FBQztBQUVXLFFBQUEsK0JBQStCLEdBQXVCO0lBQ2pFLGFBQWEsRUFBRSxhQUFhO0NBQzdCLENBQUM7QUFrQkssTUFBTSxtQkFBbUIsR0FBRyxDQUFJLEtBQWlELEVBQTRCLEVBQUU7SUFDcEgsSUFBSSxDQUFDLEtBQUssQ0FBQyxNQUFNLEVBQUU7UUFDakIsTUFBTSxJQUFJLEtBQUssQ0FBQyxtQkFBbUIsQ0FBQyxDQUFDO0tBQ3RDO0lBQ0QsT0FBTztRQUNMLEdBQUcsS0FBSztRQUNSLE1BQU0sRUFBRSxlQUFlLENBQUMsS0FBSyxDQUFDLE1BQU8sQ0FBQztLQUN2QyxDQUFDO0FBQ0osQ0FBQyxDQUFDO0FBUlcsUUFBQSxtQkFBbUIsdUJBUTlCO0FBRUYsTUFBTSxlQUFlLEdBQUcsQ0FBQyxNQUFpQyxFQUFvQixFQUFFO0lBQzlFLElBQUksT0FBTyxNQUFNLEtBQUssUUFBUSxFQUFFO1FBQzlCLE1BQU0sV0FBVyxHQUFHLE9BQU8sQ0FBQyxPQUFPLENBQUMsTUFBTSxDQUFDLENBQUM7UUFDNUMsT0FBTyxHQUFHLEVBQUUsQ0FBQyxXQUFXLENBQUM7S0FDMUI7SUFDRCxPQUFPLE1BQTBCLENBQUM7QUFDcEMsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTG9hZGVkQ29uZmlnU2VsZWN0b3JzLCBMb2NhbENvbmZpZ09wdGlvbnMgfSBmcm9tIFwiQGF3cy1zZGsvbm9kZS1jb25maWctcHJvdmlkZXJcIjtcbmltcG9ydCB7IFByb3ZpZGVyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmV4cG9ydCBjb25zdCBSRUdJT05fRU5WX05BTUUgPSBcIkFXU19SRUdJT05cIjtcbmV4cG9ydCBjb25zdCBSRUdJT05fSU5JX05BTUUgPSBcInJlZ2lvblwiO1xuXG5leHBvcnQgY29uc3QgTk9ERV9SRUdJT05fQ09ORklHX09QVElPTlM6IExvYWRlZENvbmZpZ1NlbGVjdG9yczxzdHJpbmc+ID0ge1xuICBlbnZpcm9ubWVudFZhcmlhYmxlU2VsZWN0b3I6IChlbnYpID0+IGVudltSRUdJT05fRU5WX05BTUVdLFxuICBjb25maWdGaWxlU2VsZWN0b3I6IChwcm9maWxlKSA9PiBwcm9maWxlW1JFR0lPTl9JTklfTkFNRV0sXG4gIGRlZmF1bHQ6ICgpID0+IHtcbiAgICB0aHJvdyBuZXcgRXJyb3IoXCJSZWdpb24gaXMgbWlzc2luZ1wiKTtcbiAgfSxcbn07XG5cbmV4cG9ydCBjb25zdCBOT0RFX1JFR0lPTl9DT05GSUdfRklMRV9PUFRJT05TOiBMb2NhbENvbmZpZ09wdGlvbnMgPSB7XG4gIHByZWZlcnJlZEZpbGU6IFwiY3JlZGVudGlhbHNcIixcbn07XG5cbmV4cG9ydCBpbnRlcmZhY2UgUmVnaW9uSW5wdXRDb25maWcge1xuICAvKipcbiAgICogVGhlIEFXUyByZWdpb24gdG8gd2hpY2ggdGhpcyBjbGllbnQgd2lsbCBzZW5kIHJlcXVlc3RzXG4gICAqL1xuICByZWdpb24/OiBzdHJpbmcgfCBQcm92aWRlcjxzdHJpbmc+O1xufVxuXG5pbnRlcmZhY2UgUHJldmlvdXNseVJlc29sdmVkIHt9XG5cbmV4cG9ydCBpbnRlcmZhY2UgUmVnaW9uUmVzb2x2ZWRDb25maWcge1xuICAvKipcbiAgICogUmVzb2x2ZWQgdmFsdWUgZm9yIGlucHV0IGNvbmZpZyB7QGxpbmsgUmVnaW9uSW5wdXRDb25maWcucmVnaW9ufVxuICAgKi9cbiAgcmVnaW9uOiBQcm92aWRlcjxzdHJpbmc+O1xufVxuXG5leHBvcnQgY29uc3QgcmVzb2x2ZVJlZ2lvbkNvbmZpZyA9IDxUPihpbnB1dDogVCAmIFJlZ2lvbklucHV0Q29uZmlnICYgUHJldmlvdXNseVJlc29sdmVkKTogVCAmIFJlZ2lvblJlc29sdmVkQ29uZmlnID0+IHtcbiAgaWYgKCFpbnB1dC5yZWdpb24pIHtcbiAgICB0aHJvdyBuZXcgRXJyb3IoXCJSZWdpb24gaXMgbWlzc2luZ1wiKTtcbiAgfVxuICByZXR1cm4ge1xuICAgIC4uLmlucHV0LFxuICAgIHJlZ2lvbjogbm9ybWFsaXplUmVnaW9uKGlucHV0LnJlZ2lvbiEpLFxuICB9O1xufTtcblxuY29uc3Qgbm9ybWFsaXplUmVnaW9uID0gKHJlZ2lvbjogc3RyaW5nIHwgUHJvdmlkZXI8c3RyaW5nPik6IFByb3ZpZGVyPHN0cmluZz4gPT4ge1xuICBpZiAodHlwZW9mIHJlZ2lvbiA9PT0gXCJzdHJpbmdcIikge1xuICAgIGNvbnN0IHByb21pc2lmaWVkID0gUHJvbWlzZS5yZXNvbHZlKHJlZ2lvbik7XG4gICAgcmV0dXJuICgpID0+IHByb21pc2lmaWVkO1xuICB9XG4gIHJldHVybiByZWdpb24gYXMgUHJvdmlkZXI8c3RyaW5nPjtcbn07XG4iXX0=
 
 /***/ }),
 
@@ -22727,6 +24419,7 @@ const credential_provider_imds_1 = __nccwpck_require__(1732);
 const credential_provider_ini_1 = __nccwpck_require__(2975);
 const credential_provider_process_1 = __nccwpck_require__(693);
 const credential_provider_sso_1 = __nccwpck_require__(676);
+const credential_provider_web_identity_1 = __nccwpck_require__(1961);
 const property_provider_1 = __nccwpck_require__(977);
 const shared_ini_file_loader_1 = __nccwpck_require__(4847);
 exports.ENV_IMDS_DISABLED = "AWS_EC2_METADATA_DISABLED";
@@ -22734,6 +24427,8 @@ exports.ENV_IMDS_DISABLED = "AWS_EC2_METADATA_DISABLED";
  * Creates a credential provider that will attempt to find credentials from the
  * following sources (listed in order of precedence):
  *   * Environment variables exposed via `process.env`
+ *   * SSO credentials from token cache
+ *   * Web identity token credentials
  *   * Shared credentials and config ini files
  *   * The EC2/ECS Instance Metadata Service
  *
@@ -22751,6 +24446,8 @@ exports.ENV_IMDS_DISABLED = "AWS_EC2_METADATA_DISABLED";
  *                              environment variables
  * @see fromSSO                 The function used to source credentials from
  *                              resolved SSO token cache
+ * @see fromTokenFile           The function used to source credentials from
+ *                              token file
  * @see fromIni                 The function used to source credentials from INI
  *                              files
  * @see fromProcess             The function used to sources credentials from
@@ -22764,7 +24461,13 @@ const defaultProvider = (init = {}) => {
     const options = { profile: process.env[credential_provider_ini_1.ENV_PROFILE], ...init };
     if (!options.loadedConfig)
         options.loadedConfig = shared_ini_file_loader_1.loadSharedConfigFiles(init);
-    const providers = [credential_provider_sso_1.fromSSO(options), credential_provider_ini_1.fromIni(options), credential_provider_process_1.fromProcess(options), remoteProvider(options)];
+    const providers = [
+        credential_provider_sso_1.fromSSO(options),
+        credential_provider_ini_1.fromIni(options),
+        credential_provider_process_1.fromProcess(options),
+        credential_provider_web_identity_1.fromTokenFile(options),
+        remoteProvider(options),
+    ];
     if (!options.profile)
         providers.unshift(credential_provider_env_1.fromEnv());
     const providerChain = property_provider_1.chain(...providers);
@@ -22780,7 +24483,7 @@ const remoteProvider = (init) => {
     }
     return credential_provider_imds_1.fromInstanceMetadata(init);
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsOEVBQTJEO0FBQzNELGdGQU0yQztBQUMzQyw4RUFBcUY7QUFDckYsc0ZBQW9GO0FBQ3BGLDhFQUF3RTtBQUN4RSxrRUFBMkU7QUFDM0UsNEVBQXdFO0FBRzNELFFBQUEsaUJBQWlCLEdBQUcsMkJBQTJCLENBQUM7QUFFN0Q7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0dBNkJHO0FBQ0ksTUFBTSxlQUFlLEdBQUcsQ0FDN0IsT0FBeUUsRUFBRSxFQUN2RCxFQUFFO0lBQ3RCLE1BQU0sT0FBTyxHQUFHLEVBQUUsT0FBTyxFQUFFLE9BQU8sQ0FBQyxHQUFHLENBQUMscUNBQVcsQ0FBQyxFQUFFLEdBQUcsSUFBSSxFQUFFLENBQUM7SUFDL0QsSUFBSSxDQUFDLE9BQU8sQ0FBQyxZQUFZO1FBQUUsT0FBTyxDQUFDLFlBQVksR0FBRyw4Q0FBcUIsQ0FBQyxJQUFJLENBQUMsQ0FBQztJQUM5RSxNQUFNLFNBQVMsR0FBRyxDQUFDLGlDQUFPLENBQUMsT0FBTyxDQUFDLEVBQUUsaUNBQU8sQ0FBQyxPQUFPLENBQUMsRUFBRSx5Q0FBVyxDQUFDLE9BQU8sQ0FBQyxFQUFFLGNBQWMsQ0FBQyxPQUFPLENBQUMsQ0FBQyxDQUFDO0lBQ3RHLElBQUksQ0FBQyxPQUFPLENBQUMsT0FBTztRQUFFLFNBQVMsQ0FBQyxPQUFPLENBQUMsaUNBQU8sRUFBRSxDQUFDLENBQUM7SUFDbkQsTUFBTSxhQUFhLEdBQUcseUJBQUssQ0FBQyxHQUFHLFNBQVMsQ0FBQyxDQUFDO0lBRTFDLE9BQU8sMkJBQU8sQ0FDWixhQUFhLEVBQ2IsQ0FBQyxXQUFXLEVBQUUsRUFBRSxDQUFDLFdBQVcsQ0FBQyxVQUFVLEtBQUssU0FBUyxJQUFJLFdBQVcsQ0FBQyxVQUFVLENBQUMsT0FBTyxFQUFFLEdBQUcsSUFBSSxDQUFDLEdBQUcsRUFBRSxHQUFHLE1BQU0sRUFDL0csQ0FBQyxXQUFXLEVBQUUsRUFBRSxDQUFDLFdBQVcsQ0FBQyxVQUFVLEtBQUssU0FBUyxDQUN0RCxDQUFDO0FBQ0osQ0FBQyxDQUFDO0FBZFcsUUFBQSxlQUFlLG1CQWMxQjtBQUVGLE1BQU0sY0FBYyxHQUFHLENBQUMsSUFBd0IsRUFBc0IsRUFBRTtJQUN0RSxJQUFJLE9BQU8sQ0FBQyxHQUFHLENBQUMsZ0RBQXFCLENBQUMsSUFBSSxPQUFPLENBQUMsR0FBRyxDQUFDLDRDQUFpQixDQUFDLEVBQUU7UUFDeEUsT0FBTyxnREFBcUIsQ0FBQyxJQUFJLENBQUMsQ0FBQztLQUNwQztJQUVELElBQUksT0FBTyxDQUFDLEdBQUcsQ0FBQyx5QkFBaUIsQ0FBQyxFQUFFO1FBQ2xDLE9BQU8sR0FBRyxFQUFFLENBQUMsT0FBTyxDQUFDLE1BQU0sQ0FBQyxJQUFJLGlDQUFhLENBQUMsK0NBQStDLENBQUMsQ0FBQyxDQUFDO0tBQ2pHO0lBRUQsT0FBTywrQ0FBb0IsQ0FBQyxJQUFJLENBQUMsQ0FBQztBQUNwQyxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBmcm9tRW52IH0gZnJvbSBcIkBhd3Mtc2RrL2NyZWRlbnRpYWwtcHJvdmlkZXItZW52XCI7XG5pbXBvcnQge1xuICBFTlZfQ01EU19GVUxMX1VSSSxcbiAgRU5WX0NNRFNfUkVMQVRJVkVfVVJJLFxuICBmcm9tQ29udGFpbmVyTWV0YWRhdGEsXG4gIGZyb21JbnN0YW5jZU1ldGFkYXRhLFxuICBSZW1vdGVQcm92aWRlckluaXQsXG59IGZyb20gXCJAYXdzLXNkay9jcmVkZW50aWFsLXByb3ZpZGVyLWltZHNcIjtcbmltcG9ydCB7IEVOVl9QUk9GSUxFLCBmcm9tSW5pLCBGcm9tSW5pSW5pdCB9IGZyb20gXCJAYXdzLXNkay9jcmVkZW50aWFsLXByb3ZpZGVyLWluaVwiO1xuaW1wb3J0IHsgZnJvbVByb2Nlc3MsIEZyb21Qcm9jZXNzSW5pdCB9IGZyb20gXCJAYXdzLXNkay9jcmVkZW50aWFsLXByb3ZpZGVyLXByb2Nlc3NcIjtcbmltcG9ydCB7IGZyb21TU08sIEZyb21TU09Jbml0IH0gZnJvbSBcIkBhd3Mtc2RrL2NyZWRlbnRpYWwtcHJvdmlkZXItc3NvXCI7XG5pbXBvcnQgeyBjaGFpbiwgbWVtb2l6ZSwgUHJvdmlkZXJFcnJvciB9IGZyb20gXCJAYXdzLXNkay9wcm9wZXJ0eS1wcm92aWRlclwiO1xuaW1wb3J0IHsgbG9hZFNoYXJlZENvbmZpZ0ZpbGVzIH0gZnJvbSBcIkBhd3Mtc2RrL3NoYXJlZC1pbmktZmlsZS1sb2FkZXJcIjtcbmltcG9ydCB7IENyZWRlbnRpYWxQcm92aWRlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5leHBvcnQgY29uc3QgRU5WX0lNRFNfRElTQUJMRUQgPSBcIkFXU19FQzJfTUVUQURBVEFfRElTQUJMRURcIjtcblxuLyoqXG4gKiBDcmVhdGVzIGEgY3JlZGVudGlhbCBwcm92aWRlciB0aGF0IHdpbGwgYXR0ZW1wdCB0byBmaW5kIGNyZWRlbnRpYWxzIGZyb20gdGhlXG4gKiBmb2xsb3dpbmcgc291cmNlcyAobGlzdGVkIGluIG9yZGVyIG9mIHByZWNlZGVuY2UpOlxuICogICAqIEVudmlyb25tZW50IHZhcmlhYmxlcyBleHBvc2VkIHZpYSBgcHJvY2Vzcy5lbnZgXG4gKiAgICogU2hhcmVkIGNyZWRlbnRpYWxzIGFuZCBjb25maWcgaW5pIGZpbGVzXG4gKiAgICogVGhlIEVDMi9FQ1MgSW5zdGFuY2UgTWV0YWRhdGEgU2VydmljZVxuICpcbiAqIFRoZSBkZWZhdWx0IGNyZWRlbnRpYWwgcHJvdmlkZXIgd2lsbCBpbnZva2Ugb25lIHByb3ZpZGVyIGF0IGEgdGltZSBhbmQgb25seVxuICogY29udGludWUgdG8gdGhlIG5leHQgaWYgbm8gY3JlZGVudGlhbHMgaGF2ZSBiZWVuIGxvY2F0ZWQuIEZvciBleGFtcGxlLCBpZlxuICogdGhlIHByb2Nlc3MgZmluZHMgdmFsdWVzIGRlZmluZWQgdmlhIHRoZSBgQVdTX0FDQ0VTU19LRVlfSURgIGFuZFxuICogYEFXU19TRUNSRVRfQUNDRVNTX0tFWWAgZW52aXJvbm1lbnQgdmFyaWFibGVzLCB0aGUgZmlsZXMgYXRcbiAqIGB+Ly5hd3MvY3JlZGVudGlhbHNgIGFuZCBgfi8uYXdzL2NvbmZpZ2Agd2lsbCBub3QgYmUgcmVhZCwgbm9yIHdpbGwgYW55XG4gKiBtZXNzYWdlcyBiZSBzZW50IHRvIHRoZSBJbnN0YW5jZSBNZXRhZGF0YSBTZXJ2aWNlLlxuICpcbiAqIEBwYXJhbSBpbml0ICAgICAgICAgICAgICAgICAgQ29uZmlndXJhdGlvbiB0aGF0IGlzIHBhc3NlZCB0byBlYWNoIGluZGl2aWR1YWxcbiAqICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJvdmlkZXJcbiAqXG4gKiBAc2VlIGZyb21FbnYgICAgICAgICAgICAgICAgIFRoZSBmdW5jdGlvbiB1c2VkIHRvIHNvdXJjZSBjcmVkZW50aWFscyBmcm9tXG4gKiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGVudmlyb25tZW50IHZhcmlhYmxlc1xuICogQHNlZSBmcm9tU1NPICAgICAgICAgICAgICAgICBUaGUgZnVuY3Rpb24gdXNlZCB0byBzb3VyY2UgY3JlZGVudGlhbHMgZnJvbVxuICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICByZXNvbHZlZCBTU08gdG9rZW4gY2FjaGVcbiAqIEBzZWUgZnJvbUluaSAgICAgICAgICAgICAgICAgVGhlIGZ1bmN0aW9uIHVzZWQgdG8gc291cmNlIGNyZWRlbnRpYWxzIGZyb20gSU5JXG4gKiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZpbGVzXG4gKiBAc2VlIGZyb21Qcm9jZXNzICAgICAgICAgICAgIFRoZSBmdW5jdGlvbiB1c2VkIHRvIHNvdXJjZXMgY3JlZGVudGlhbHMgZnJvbVxuICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjcmVkZW50aWFsX3Byb2Nlc3MgaW4gSU5JIGZpbGVzXG4gKiBAc2VlIGZyb21JbnN0YW5jZU1ldGFkYXRhICAgIFRoZSBmdW5jdGlvbiB1c2VkIHRvIHNvdXJjZSBjcmVkZW50aWFscyBmcm9tIHRoZVxuICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBFQzIgSW5zdGFuY2UgTWV0YWRhdGEgU2VydmljZVxuICogQHNlZSBmcm9tQ29udGFpbmVyTWV0YWRhdGEgICBUaGUgZnVuY3Rpb24gdXNlZCB0byBzb3VyY2UgY3JlZGVudGlhbHMgZnJvbSB0aGVcbiAqICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgRUNTIENvbnRhaW5lciBNZXRhZGF0YSBTZXJ2aWNlXG4gKi9cbmV4cG9ydCBjb25zdCBkZWZhdWx0UHJvdmlkZXIgPSAoXG4gIGluaXQ6IEZyb21JbmlJbml0ICYgUmVtb3RlUHJvdmlkZXJJbml0ICYgRnJvbVByb2Nlc3NJbml0ICYgRnJvbVNTT0luaXQgPSB7fVxuKTogQ3JlZGVudGlhbFByb3ZpZGVyID0+IHtcbiAgY29uc3Qgb3B0aW9ucyA9IHsgcHJvZmlsZTogcHJvY2Vzcy5lbnZbRU5WX1BST0ZJTEVdLCAuLi5pbml0IH07XG4gIGlmICghb3B0aW9ucy5sb2FkZWRDb25maWcpIG9wdGlvbnMubG9hZGVkQ29uZmlnID0gbG9hZFNoYXJlZENvbmZpZ0ZpbGVzKGluaXQpO1xuICBjb25zdCBwcm92aWRlcnMgPSBbZnJvbVNTTyhvcHRpb25zKSwgZnJvbUluaShvcHRpb25zKSwgZnJvbVByb2Nlc3Mob3B0aW9ucyksIHJlbW90ZVByb3ZpZGVyKG9wdGlvbnMpXTtcbiAgaWYgKCFvcHRpb25zLnByb2ZpbGUpIHByb3ZpZGVycy51bnNoaWZ0KGZyb21FbnYoKSk7XG4gIGNvbnN0IHByb3ZpZGVyQ2hhaW4gPSBjaGFpbiguLi5wcm92aWRlcnMpO1xuXG4gIHJldHVybiBtZW1vaXplKFxuICAgIHByb3ZpZGVyQ2hhaW4sXG4gICAgKGNyZWRlbnRpYWxzKSA9PiBjcmVkZW50aWFscy5leHBpcmF0aW9uICE9PSB1bmRlZmluZWQgJiYgY3JlZGVudGlhbHMuZXhwaXJhdGlvbi5nZXRUaW1lKCkgLSBEYXRlLm5vdygpIDwgMzAwMDAwLFxuICAgIChjcmVkZW50aWFscykgPT4gY3JlZGVudGlhbHMuZXhwaXJhdGlvbiAhPT0gdW5kZWZpbmVkXG4gICk7XG59O1xuXG5jb25zdCByZW1vdGVQcm92aWRlciA9IChpbml0OiBSZW1vdGVQcm92aWRlckluaXQpOiBDcmVkZW50aWFsUHJvdmlkZXIgPT4ge1xuICBpZiAocHJvY2Vzcy5lbnZbRU5WX0NNRFNfUkVMQVRJVkVfVVJJXSB8fCBwcm9jZXNzLmVudltFTlZfQ01EU19GVUxMX1VSSV0pIHtcbiAgICByZXR1cm4gZnJvbUNvbnRhaW5lck1ldGFkYXRhKGluaXQpO1xuICB9XG5cbiAgaWYgKHByb2Nlc3MuZW52W0VOVl9JTURTX0RJU0FCTEVEXSkge1xuICAgIHJldHVybiAoKSA9PiBQcm9taXNlLnJlamVjdChuZXcgUHJvdmlkZXJFcnJvcihcIkVDMiBJbnN0YW5jZSBNZXRhZGF0YSBTZXJ2aWNlIGFjY2VzcyBkaXNhYmxlZFwiKSk7XG4gIH1cblxuICByZXR1cm4gZnJvbUluc3RhbmNlTWV0YWRhdGEoaW5pdCk7XG59O1xuIl19
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsOEVBQTJEO0FBQzNELGdGQU0yQztBQUMzQyw4RUFBcUY7QUFDckYsc0ZBQW9GO0FBQ3BGLDhFQUF3RTtBQUN4RSxnR0FBNkY7QUFDN0Ysa0VBQTJFO0FBQzNFLDRFQUF3RTtBQUczRCxRQUFBLGlCQUFpQixHQUFHLDJCQUEyQixDQUFDO0FBRTdEOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7R0FpQ0c7QUFDSSxNQUFNLGVBQWUsR0FBRyxDQUM3QixPQUE2RixFQUFFLEVBQzNFLEVBQUU7SUFDdEIsTUFBTSxPQUFPLEdBQUcsRUFBRSxPQUFPLEVBQUUsT0FBTyxDQUFDLEdBQUcsQ0FBQyxxQ0FBVyxDQUFDLEVBQUUsR0FBRyxJQUFJLEVBQUUsQ0FBQztJQUMvRCxJQUFJLENBQUMsT0FBTyxDQUFDLFlBQVk7UUFBRSxPQUFPLENBQUMsWUFBWSxHQUFHLDhDQUFxQixDQUFDLElBQUksQ0FBQyxDQUFDO0lBQzlFLE1BQU0sU0FBUyxHQUFHO1FBQ2hCLGlDQUFPLENBQUMsT0FBTyxDQUFDO1FBQ2hCLGlDQUFPLENBQUMsT0FBTyxDQUFDO1FBQ2hCLHlDQUFXLENBQUMsT0FBTyxDQUFDO1FBQ3BCLGdEQUFhLENBQUMsT0FBTyxDQUFDO1FBQ3RCLGNBQWMsQ0FBQyxPQUFPLENBQUM7S0FDeEIsQ0FBQztJQUNGLElBQUksQ0FBQyxPQUFPLENBQUMsT0FBTztRQUFFLFNBQVMsQ0FBQyxPQUFPLENBQUMsaUNBQU8sRUFBRSxDQUFDLENBQUM7SUFDbkQsTUFBTSxhQUFhLEdBQUcseUJBQUssQ0FBQyxHQUFHLFNBQVMsQ0FBQyxDQUFDO0lBRTFDLE9BQU8sMkJBQU8sQ0FDWixhQUFhLEVBQ2IsQ0FBQyxXQUFXLEVBQUUsRUFBRSxDQUFDLFdBQVcsQ0FBQyxVQUFVLEtBQUssU0FBUyxJQUFJLFdBQVcsQ0FBQyxVQUFVLENBQUMsT0FBTyxFQUFFLEdBQUcsSUFBSSxDQUFDLEdBQUcsRUFBRSxHQUFHLE1BQU0sRUFDL0csQ0FBQyxXQUFXLEVBQUUsRUFBRSxDQUFDLFdBQVcsQ0FBQyxVQUFVLEtBQUssU0FBUyxDQUN0RCxDQUFDO0FBQ0osQ0FBQyxDQUFDO0FBcEJXLFFBQUEsZUFBZSxtQkFvQjFCO0FBRUYsTUFBTSxjQUFjLEdBQUcsQ0FBQyxJQUF3QixFQUFzQixFQUFFO0lBQ3RFLElBQUksT0FBTyxDQUFDLEdBQUcsQ0FBQyxnREFBcUIsQ0FBQyxJQUFJLE9BQU8sQ0FBQyxHQUFHLENBQUMsNENBQWlCLENBQUMsRUFBRTtRQUN4RSxPQUFPLGdEQUFxQixDQUFDLElBQUksQ0FBQyxDQUFDO0tBQ3BDO0lBRUQsSUFBSSxPQUFPLENBQUMsR0FBRyxDQUFDLHlCQUFpQixDQUFDLEVBQUU7UUFDbEMsT0FBTyxHQUFHLEVBQUUsQ0FBQyxPQUFPLENBQUMsTUFBTSxDQUFDLElBQUksaUNBQWEsQ0FBQywrQ0FBK0MsQ0FBQyxDQUFDLENBQUM7S0FDakc7SUFFRCxPQUFPLCtDQUFvQixDQUFDLElBQUksQ0FBQyxDQUFDO0FBQ3BDLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGZyb21FbnYgfSBmcm9tIFwiQGF3cy1zZGsvY3JlZGVudGlhbC1wcm92aWRlci1lbnZcIjtcbmltcG9ydCB7XG4gIEVOVl9DTURTX0ZVTExfVVJJLFxuICBFTlZfQ01EU19SRUxBVElWRV9VUkksXG4gIGZyb21Db250YWluZXJNZXRhZGF0YSxcbiAgZnJvbUluc3RhbmNlTWV0YWRhdGEsXG4gIFJlbW90ZVByb3ZpZGVySW5pdCxcbn0gZnJvbSBcIkBhd3Mtc2RrL2NyZWRlbnRpYWwtcHJvdmlkZXItaW1kc1wiO1xuaW1wb3J0IHsgRU5WX1BST0ZJTEUsIGZyb21JbmksIEZyb21JbmlJbml0IH0gZnJvbSBcIkBhd3Mtc2RrL2NyZWRlbnRpYWwtcHJvdmlkZXItaW5pXCI7XG5pbXBvcnQgeyBmcm9tUHJvY2VzcywgRnJvbVByb2Nlc3NJbml0IH0gZnJvbSBcIkBhd3Mtc2RrL2NyZWRlbnRpYWwtcHJvdmlkZXItcHJvY2Vzc1wiO1xuaW1wb3J0IHsgZnJvbVNTTywgRnJvbVNTT0luaXQgfSBmcm9tIFwiQGF3cy1zZGsvY3JlZGVudGlhbC1wcm92aWRlci1zc29cIjtcbmltcG9ydCB7IGZyb21Ub2tlbkZpbGUsIEZyb21Ub2tlbkZpbGVJbml0IH0gZnJvbSBcIkBhd3Mtc2RrL2NyZWRlbnRpYWwtcHJvdmlkZXItd2ViLWlkZW50aXR5XCI7XG5pbXBvcnQgeyBjaGFpbiwgbWVtb2l6ZSwgUHJvdmlkZXJFcnJvciB9IGZyb20gXCJAYXdzLXNkay9wcm9wZXJ0eS1wcm92aWRlclwiO1xuaW1wb3J0IHsgbG9hZFNoYXJlZENvbmZpZ0ZpbGVzIH0gZnJvbSBcIkBhd3Mtc2RrL3NoYXJlZC1pbmktZmlsZS1sb2FkZXJcIjtcbmltcG9ydCB7IENyZWRlbnRpYWxQcm92aWRlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5leHBvcnQgY29uc3QgRU5WX0lNRFNfRElTQUJMRUQgPSBcIkFXU19FQzJfTUVUQURBVEFfRElTQUJMRURcIjtcblxuLyoqXG4gKiBDcmVhdGVzIGEgY3JlZGVudGlhbCBwcm92aWRlciB0aGF0IHdpbGwgYXR0ZW1wdCB0byBmaW5kIGNyZWRlbnRpYWxzIGZyb20gdGhlXG4gKiBmb2xsb3dpbmcgc291cmNlcyAobGlzdGVkIGluIG9yZGVyIG9mIHByZWNlZGVuY2UpOlxuICogICAqIEVudmlyb25tZW50IHZhcmlhYmxlcyBleHBvc2VkIHZpYSBgcHJvY2Vzcy5lbnZgXG4gKiAgICogU1NPIGNyZWRlbnRpYWxzIGZyb20gdG9rZW4gY2FjaGVcbiAqICAgKiBXZWIgaWRlbnRpdHkgdG9rZW4gY3JlZGVudGlhbHNcbiAqICAgKiBTaGFyZWQgY3JlZGVudGlhbHMgYW5kIGNvbmZpZyBpbmkgZmlsZXNcbiAqICAgKiBUaGUgRUMyL0VDUyBJbnN0YW5jZSBNZXRhZGF0YSBTZXJ2aWNlXG4gKlxuICogVGhlIGRlZmF1bHQgY3JlZGVudGlhbCBwcm92aWRlciB3aWxsIGludm9rZSBvbmUgcHJvdmlkZXIgYXQgYSB0aW1lIGFuZCBvbmx5XG4gKiBjb250aW51ZSB0byB0aGUgbmV4dCBpZiBubyBjcmVkZW50aWFscyBoYXZlIGJlZW4gbG9jYXRlZC4gRm9yIGV4YW1wbGUsIGlmXG4gKiB0aGUgcHJvY2VzcyBmaW5kcyB2YWx1ZXMgZGVmaW5lZCB2aWEgdGhlIGBBV1NfQUNDRVNTX0tFWV9JRGAgYW5kXG4gKiBgQVdTX1NFQ1JFVF9BQ0NFU1NfS0VZYCBlbnZpcm9ubWVudCB2YXJpYWJsZXMsIHRoZSBmaWxlcyBhdFxuICogYH4vLmF3cy9jcmVkZW50aWFsc2AgYW5kIGB+Ly5hd3MvY29uZmlnYCB3aWxsIG5vdCBiZSByZWFkLCBub3Igd2lsbCBhbnlcbiAqIG1lc3NhZ2VzIGJlIHNlbnQgdG8gdGhlIEluc3RhbmNlIE1ldGFkYXRhIFNlcnZpY2UuXG4gKlxuICogQHBhcmFtIGluaXQgICAgICAgICAgICAgICAgICBDb25maWd1cmF0aW9uIHRoYXQgaXMgcGFzc2VkIHRvIGVhY2ggaW5kaXZpZHVhbFxuICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBwcm92aWRlclxuICpcbiAqIEBzZWUgZnJvbUVudiAgICAgICAgICAgICAgICAgVGhlIGZ1bmN0aW9uIHVzZWQgdG8gc291cmNlIGNyZWRlbnRpYWxzIGZyb21cbiAqICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZW52aXJvbm1lbnQgdmFyaWFibGVzXG4gKiBAc2VlIGZyb21TU08gICAgICAgICAgICAgICAgIFRoZSBmdW5jdGlvbiB1c2VkIHRvIHNvdXJjZSBjcmVkZW50aWFscyBmcm9tXG4gKiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHJlc29sdmVkIFNTTyB0b2tlbiBjYWNoZVxuICogQHNlZSBmcm9tVG9rZW5GaWxlICAgICAgICAgICBUaGUgZnVuY3Rpb24gdXNlZCB0byBzb3VyY2UgY3JlZGVudGlhbHMgZnJvbVxuICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICB0b2tlbiBmaWxlXG4gKiBAc2VlIGZyb21JbmkgICAgICAgICAgICAgICAgIFRoZSBmdW5jdGlvbiB1c2VkIHRvIHNvdXJjZSBjcmVkZW50aWFscyBmcm9tIElOSVxuICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBmaWxlc1xuICogQHNlZSBmcm9tUHJvY2VzcyAgICAgICAgICAgICBUaGUgZnVuY3Rpb24gdXNlZCB0byBzb3VyY2VzIGNyZWRlbnRpYWxzIGZyb21cbiAqICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY3JlZGVudGlhbF9wcm9jZXNzIGluIElOSSBmaWxlc1xuICogQHNlZSBmcm9tSW5zdGFuY2VNZXRhZGF0YSAgICBUaGUgZnVuY3Rpb24gdXNlZCB0byBzb3VyY2UgY3JlZGVudGlhbHMgZnJvbSB0aGVcbiAqICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgRUMyIEluc3RhbmNlIE1ldGFkYXRhIFNlcnZpY2VcbiAqIEBzZWUgZnJvbUNvbnRhaW5lck1ldGFkYXRhICAgVGhlIGZ1bmN0aW9uIHVzZWQgdG8gc291cmNlIGNyZWRlbnRpYWxzIGZyb20gdGhlXG4gKiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEVDUyBDb250YWluZXIgTWV0YWRhdGEgU2VydmljZVxuICovXG5leHBvcnQgY29uc3QgZGVmYXVsdFByb3ZpZGVyID0gKFxuICBpbml0OiBGcm9tSW5pSW5pdCAmIFJlbW90ZVByb3ZpZGVySW5pdCAmIEZyb21Qcm9jZXNzSW5pdCAmIEZyb21TU09Jbml0ICYgRnJvbVRva2VuRmlsZUluaXQgPSB7fVxuKTogQ3JlZGVudGlhbFByb3ZpZGVyID0+IHtcbiAgY29uc3Qgb3B0aW9ucyA9IHsgcHJvZmlsZTogcHJvY2Vzcy5lbnZbRU5WX1BST0ZJTEVdLCAuLi5pbml0IH07XG4gIGlmICghb3B0aW9ucy5sb2FkZWRDb25maWcpIG9wdGlvbnMubG9hZGVkQ29uZmlnID0gbG9hZFNoYXJlZENvbmZpZ0ZpbGVzKGluaXQpO1xuICBjb25zdCBwcm92aWRlcnMgPSBbXG4gICAgZnJvbVNTTyhvcHRpb25zKSxcbiAgICBmcm9tSW5pKG9wdGlvbnMpLFxuICAgIGZyb21Qcm9jZXNzKG9wdGlvbnMpLFxuICAgIGZyb21Ub2tlbkZpbGUob3B0aW9ucyksXG4gICAgcmVtb3RlUHJvdmlkZXIob3B0aW9ucyksXG4gIF07XG4gIGlmICghb3B0aW9ucy5wcm9maWxlKSBwcm92aWRlcnMudW5zaGlmdChmcm9tRW52KCkpO1xuICBjb25zdCBwcm92aWRlckNoYWluID0gY2hhaW4oLi4ucHJvdmlkZXJzKTtcblxuICByZXR1cm4gbWVtb2l6ZShcbiAgICBwcm92aWRlckNoYWluLFxuICAgIChjcmVkZW50aWFscykgPT4gY3JlZGVudGlhbHMuZXhwaXJhdGlvbiAhPT0gdW5kZWZpbmVkICYmIGNyZWRlbnRpYWxzLmV4cGlyYXRpb24uZ2V0VGltZSgpIC0gRGF0ZS5ub3coKSA8IDMwMDAwMCxcbiAgICAoY3JlZGVudGlhbHMpID0+IGNyZWRlbnRpYWxzLmV4cGlyYXRpb24gIT09IHVuZGVmaW5lZFxuICApO1xufTtcblxuY29uc3QgcmVtb3RlUHJvdmlkZXIgPSAoaW5pdDogUmVtb3RlUHJvdmlkZXJJbml0KTogQ3JlZGVudGlhbFByb3ZpZGVyID0+IHtcbiAgaWYgKHByb2Nlc3MuZW52W0VOVl9DTURTX1JFTEFUSVZFX1VSSV0gfHwgcHJvY2Vzcy5lbnZbRU5WX0NNRFNfRlVMTF9VUkldKSB7XG4gICAgcmV0dXJuIGZyb21Db250YWluZXJNZXRhZGF0YShpbml0KTtcbiAgfVxuXG4gIGlmIChwcm9jZXNzLmVudltFTlZfSU1EU19ESVNBQkxFRF0pIHtcbiAgICByZXR1cm4gKCkgPT4gUHJvbWlzZS5yZWplY3QobmV3IFByb3ZpZGVyRXJyb3IoXCJFQzIgSW5zdGFuY2UgTWV0YWRhdGEgU2VydmljZSBhY2Nlc3MgZGlzYWJsZWRcIikpO1xuICB9XG5cbiAgcmV0dXJuIGZyb21JbnN0YW5jZU1ldGFkYXRhKGluaXQpO1xufTtcbiJdfQ==
 
 /***/ }),
 
@@ -22961,6 +24664,7 @@ const resolveSSOCredentials = async (profileName, profiles, options) => {
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.fromTokenFile = void 0;
+const property_provider_1 = __nccwpck_require__(977);
 const fs_1 = __nccwpck_require__(5747);
 const fromWebToken_1 = __nccwpck_require__(7112);
 const ENV_TOKEN_FILE = "AWS_WEB_IDENTITY_TOKEN_FILE";
@@ -22969,17 +24673,26 @@ const ENV_ROLE_SESSION_NAME = "AWS_ROLE_SESSION_NAME";
 /**
  * Represents OIDC credentials from a file on disk.
  */
-const fromTokenFile = (init) => {
-    const { webIdentityTokenFile, roleArn, roleSessionName } = init;
-    return fromWebToken_1.fromWebToken({
-        ...init,
-        webIdentityToken: fs_1.readFileSync(webIdentityTokenFile !== null && webIdentityTokenFile !== void 0 ? webIdentityTokenFile : process.env[ENV_TOKEN_FILE], { encoding: "ascii" }),
-        roleArn: roleArn !== null && roleArn !== void 0 ? roleArn : process.env[ENV_ROLE_ARN],
-        roleSessionName: roleSessionName !== null && roleSessionName !== void 0 ? roleSessionName : process.env[ENV_ROLE_SESSION_NAME],
-    });
+const fromTokenFile = (init = {}) => async () => {
+    return resolveTokenFile(init);
 };
 exports.fromTokenFile = fromTokenFile;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbVRva2VuRmlsZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9mcm9tVG9rZW5GaWxlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUNBLDJCQUFrQztBQUVsQyxpREFBZ0U7QUFFaEUsTUFBTSxjQUFjLEdBQUcsNkJBQTZCLENBQUM7QUFDckQsTUFBTSxZQUFZLEdBQUcsY0FBYyxDQUFDO0FBQ3BDLE1BQU0scUJBQXFCLEdBQUcsdUJBQXVCLENBQUM7QUFTdEQ7O0dBRUc7QUFDSSxNQUFNLGFBQWEsR0FBRyxDQUFDLElBQXVCLEVBQXNCLEVBQUU7SUFDM0UsTUFBTSxFQUFFLG9CQUFvQixFQUFFLE9BQU8sRUFBRSxlQUFlLEVBQUUsR0FBRyxJQUFJLENBQUM7SUFFaEUsT0FBTywyQkFBWSxDQUFDO1FBQ2xCLEdBQUcsSUFBSTtRQUNQLGdCQUFnQixFQUFFLGlCQUFZLENBQUMsb0JBQW9CLGFBQXBCLG9CQUFvQixjQUFwQixvQkFBb0IsR0FBSSxPQUFPLENBQUMsR0FBRyxDQUFDLGNBQWMsQ0FBRSxFQUFFLEVBQUUsUUFBUSxFQUFFLE9BQU8sRUFBRSxDQUFDO1FBQzNHLE9BQU8sRUFBRSxPQUFPLGFBQVAsT0FBTyxjQUFQLE9BQU8sR0FBSSxPQUFPLENBQUMsR0FBRyxDQUFDLFlBQVksQ0FBRTtRQUM5QyxlQUFlLEVBQUUsZUFBZSxhQUFmLGVBQWUsY0FBZixlQUFlLEdBQUksT0FBTyxDQUFDLEdBQUcsQ0FBQyxxQkFBcUIsQ0FBQztLQUN2RSxDQUFDLENBQUM7QUFDTCxDQUFDLENBQUM7QUFUVyxRQUFBLGFBQWEsaUJBU3hCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ3JlZGVudGlhbFByb3ZpZGVyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5pbXBvcnQgeyByZWFkRmlsZVN5bmMgfSBmcm9tIFwiZnNcIjtcblxuaW1wb3J0IHsgZnJvbVdlYlRva2VuLCBGcm9tV2ViVG9rZW5Jbml0IH0gZnJvbSBcIi4vZnJvbVdlYlRva2VuXCI7XG5cbmNvbnN0IEVOVl9UT0tFTl9GSUxFID0gXCJBV1NfV0VCX0lERU5USVRZX1RPS0VOX0ZJTEVcIjtcbmNvbnN0IEVOVl9ST0xFX0FSTiA9IFwiQVdTX1JPTEVfQVJOXCI7XG5jb25zdCBFTlZfUk9MRV9TRVNTSU9OX05BTUUgPSBcIkFXU19ST0xFX1NFU1NJT05fTkFNRVwiO1xuXG5leHBvcnQgaW50ZXJmYWNlIEZyb21Ub2tlbkZpbGVJbml0IGV4dGVuZHMgUGFydGlhbDxPbWl0PEZyb21XZWJUb2tlbkluaXQsIFwid2ViSWRlbnRpdHlUb2tlblwiPj4ge1xuICAvKipcbiAgICogRmlsZSBsb2NhdGlvbiBvZiB3aGVyZSB0aGUgYE9JRENgIHRva2VuIGlzIHN0b3JlZC5cbiAgICovXG4gIHdlYklkZW50aXR5VG9rZW5GaWxlPzogc3RyaW5nO1xufVxuXG4vKipcbiAqIFJlcHJlc2VudHMgT0lEQyBjcmVkZW50aWFscyBmcm9tIGEgZmlsZSBvbiBkaXNrLlxuICovXG5leHBvcnQgY29uc3QgZnJvbVRva2VuRmlsZSA9IChpbml0OiBGcm9tVG9rZW5GaWxlSW5pdCk6IENyZWRlbnRpYWxQcm92aWRlciA9PiB7XG4gIGNvbnN0IHsgd2ViSWRlbnRpdHlUb2tlbkZpbGUsIHJvbGVBcm4sIHJvbGVTZXNzaW9uTmFtZSB9ID0gaW5pdDtcblxuICByZXR1cm4gZnJvbVdlYlRva2VuKHtcbiAgICAuLi5pbml0LFxuICAgIHdlYklkZW50aXR5VG9rZW46IHJlYWRGaWxlU3luYyh3ZWJJZGVudGl0eVRva2VuRmlsZSA/PyBwcm9jZXNzLmVudltFTlZfVE9LRU5fRklMRV0hLCB7IGVuY29kaW5nOiBcImFzY2lpXCIgfSksXG4gICAgcm9sZUFybjogcm9sZUFybiA/PyBwcm9jZXNzLmVudltFTlZfUk9MRV9BUk5dISxcbiAgICByb2xlU2Vzc2lvbk5hbWU6IHJvbGVTZXNzaW9uTmFtZSA/PyBwcm9jZXNzLmVudltFTlZfUk9MRV9TRVNTSU9OX05BTUVdLFxuICB9KTtcbn07XG4iXX0=
+const resolveTokenFile = (init) => {
+    var _a, _b, _c;
+    const webIdentityTokenFile = (_a = init === null || init === void 0 ? void 0 : init.webIdentityTokenFile) !== null && _a !== void 0 ? _a : process.env[ENV_TOKEN_FILE];
+    const roleArn = (_b = init === null || init === void 0 ? void 0 : init.roleArn) !== null && _b !== void 0 ? _b : process.env[ENV_ROLE_ARN];
+    const roleSessionName = (_c = init === null || init === void 0 ? void 0 : init.roleSessionName) !== null && _c !== void 0 ? _c : process.env[ENV_ROLE_SESSION_NAME];
+    if (!webIdentityTokenFile || !roleArn) {
+        throw new property_provider_1.ProviderError("Web identity configuration not specified");
+    }
+    return fromWebToken_1.fromWebToken({
+        ...init,
+        webIdentityToken: fs_1.readFileSync(webIdentityTokenFile, { encoding: "ascii" }),
+        roleArn,
+        roleSessionName
+    })();
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbVRva2VuRmlsZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9mcm9tVG9rZW5GaWxlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLGtFQUEyRDtBQUUzRCwyQkFBa0M7QUFFbEMsaURBQWdFO0FBRWhFLE1BQU0sY0FBYyxHQUFHLDZCQUE2QixDQUFDO0FBQ3JELE1BQU0sWUFBWSxHQUFHLGNBQWMsQ0FBQztBQUNwQyxNQUFNLHFCQUFxQixHQUFHLHVCQUF1QixDQUFDO0FBU3REOztHQUVHO0FBQ0ksTUFBTSxhQUFhLEdBQUcsQ0FBQyxPQUEwQixFQUFFLEVBQXNCLEVBQUUsQ0FBQyxLQUFLLElBQUksRUFBRTtJQUM1RixPQUFPLGdCQUFnQixDQUFDLElBQUksQ0FBQyxDQUFDO0FBQ2hDLENBQUMsQ0FBQztBQUZXLFFBQUEsYUFBYSxpQkFFeEI7QUFFRixNQUFNLGdCQUFnQixHQUFHLENBQUMsSUFBd0IsRUFBd0IsRUFBRTs7SUFDMUUsTUFBTSxvQkFBb0IsR0FBRyxNQUFBLElBQUksYUFBSixJQUFJLHVCQUFKLElBQUksQ0FBRSxvQkFBb0IsbUNBQUksT0FBTyxDQUFDLEdBQUcsQ0FBQyxjQUFjLENBQUMsQ0FBQztJQUN2RixNQUFNLE9BQU8sR0FBRyxNQUFBLElBQUksYUFBSixJQUFJLHVCQUFKLElBQUksQ0FBRSxPQUFPLG1DQUFJLE9BQU8sQ0FBQyxHQUFHLENBQUMsWUFBWSxDQUFDLENBQUM7SUFDM0QsTUFBTSxlQUFlLEdBQUcsTUFBQSxJQUFJLGFBQUosSUFBSSx1QkFBSixJQUFJLENBQUUsZUFBZSxtQ0FBSSxPQUFPLENBQUMsR0FBRyxDQUFDLHFCQUFxQixDQUFDLENBQUM7SUFFcEYsSUFBSSxDQUFDLG9CQUFvQixJQUFJLENBQUMsT0FBTyxFQUFFO1FBQ3JDLE1BQU0sSUFBSSxpQ0FBYSxDQUFDLDBDQUEwQyxDQUFDLENBQUM7S0FDckU7SUFFRCxPQUFPLDJCQUFZLENBQUM7UUFDbEIsR0FBRyxJQUFJO1FBQ1AsZ0JBQWdCLEVBQUUsaUJBQVksQ0FBQyxvQkFBb0IsRUFBRSxFQUFFLFFBQVEsRUFBRSxPQUFPLEVBQUUsQ0FBQztRQUMzRSxPQUFPO1FBQ1AsZUFBZTtLQUNoQixDQUFDLEVBQUUsQ0FBQztBQUNQLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFByb3ZpZGVyRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvcHJvcGVydHktcHJvdmlkZXJcIjtcbmltcG9ydCB7IENyZWRlbnRpYWxQcm92aWRlciwgQ3JlZGVudGlhbHMgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcbmltcG9ydCB7IHJlYWRGaWxlU3luYyB9IGZyb20gXCJmc1wiO1xuXG5pbXBvcnQgeyBmcm9tV2ViVG9rZW4sIEZyb21XZWJUb2tlbkluaXQgfSBmcm9tIFwiLi9mcm9tV2ViVG9rZW5cIjtcblxuY29uc3QgRU5WX1RPS0VOX0ZJTEUgPSBcIkFXU19XRUJfSURFTlRJVFlfVE9LRU5fRklMRVwiO1xuY29uc3QgRU5WX1JPTEVfQVJOID0gXCJBV1NfUk9MRV9BUk5cIjtcbmNvbnN0IEVOVl9ST0xFX1NFU1NJT05fTkFNRSA9IFwiQVdTX1JPTEVfU0VTU0lPTl9OQU1FXCI7XG5cbmV4cG9ydCBpbnRlcmZhY2UgRnJvbVRva2VuRmlsZUluaXQgZXh0ZW5kcyBQYXJ0aWFsPE9taXQ8RnJvbVdlYlRva2VuSW5pdCwgXCJ3ZWJJZGVudGl0eVRva2VuXCI+PiB7XG4gIC8qKlxuICAgKiBGaWxlIGxvY2F0aW9uIG9mIHdoZXJlIHRoZSBgT0lEQ2AgdG9rZW4gaXMgc3RvcmVkLlxuICAgKi9cbiAgd2ViSWRlbnRpdHlUb2tlbkZpbGU/OiBzdHJpbmc7XG59XG5cbi8qKlxuICogUmVwcmVzZW50cyBPSURDIGNyZWRlbnRpYWxzIGZyb20gYSBmaWxlIG9uIGRpc2suXG4gKi9cbmV4cG9ydCBjb25zdCBmcm9tVG9rZW5GaWxlID0gKGluaXQ6IEZyb21Ub2tlbkZpbGVJbml0ID0ge30pOiBDcmVkZW50aWFsUHJvdmlkZXIgPT4gYXN5bmMgKCkgPT4ge1xuICByZXR1cm4gcmVzb2x2ZVRva2VuRmlsZShpbml0KTtcbn07XG5cbmNvbnN0IHJlc29sdmVUb2tlbkZpbGUgPSAoaW5pdD86IEZyb21Ub2tlbkZpbGVJbml0KTogUHJvbWlzZTxDcmVkZW50aWFscz4gPT4ge1xuICBjb25zdCB3ZWJJZGVudGl0eVRva2VuRmlsZSA9IGluaXQ/LndlYklkZW50aXR5VG9rZW5GaWxlID8/IHByb2Nlc3MuZW52W0VOVl9UT0tFTl9GSUxFXTtcbiAgY29uc3Qgcm9sZUFybiA9IGluaXQ/LnJvbGVBcm4gPz8gcHJvY2Vzcy5lbnZbRU5WX1JPTEVfQVJOXTtcbiAgY29uc3Qgcm9sZVNlc3Npb25OYW1lID0gaW5pdD8ucm9sZVNlc3Npb25OYW1lID8/IHByb2Nlc3MuZW52W0VOVl9ST0xFX1NFU1NJT05fTkFNRV07XG5cbiAgaWYgKCF3ZWJJZGVudGl0eVRva2VuRmlsZSB8fCAhcm9sZUFybikge1xuICAgIHRocm93IG5ldyBQcm92aWRlckVycm9yKFwiV2ViIGlkZW50aXR5IGNvbmZpZ3VyYXRpb24gbm90IHNwZWNpZmllZFwiKTtcbiAgfVxuXG4gIHJldHVybiBmcm9tV2ViVG9rZW4oe1xuICAgIC4uLmluaXQsXG4gICAgd2ViSWRlbnRpdHlUb2tlbjogcmVhZEZpbGVTeW5jKHdlYklkZW50aXR5VG9rZW5GaWxlLCB7IGVuY29kaW5nOiBcImFzY2lpXCIgfSksXG4gICAgcm9sZUFybixcbiAgICByb2xlU2Vzc2lvbk5hbWVcbiAgfSkoKTtcbn07XG4iXX0=
 
 /***/ }),
 
@@ -23021,6 +24734,134 @@ const tslib_1 = __nccwpck_require__(4351);
 tslib_1.__exportStar(__nccwpck_require__(8299), exports);
 tslib_1.__exportStar(__nccwpck_require__(7112), exports);
 //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsMERBQWdDO0FBQ2hDLHlEQUErQiIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCAqIGZyb20gXCIuL2Zyb21Ub2tlbkZpbGVcIjtcbmV4cG9ydCAqIGZyb20gXCIuL2Zyb21XZWJUb2tlblwiO1xuIl19
+
+/***/ }),
+
+/***/ 7588:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRW5kcG9pbnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvRW5kcG9pbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBpbnRlcmZhY2UgRW5kcG9pbnQge1xuICAvKipcbiAgICogPHA+QW4gZW5kcG9pbnQgYWRkcmVzcy48L3A+XG4gICAqL1xuICBBZGRyZXNzOiBzdHJpbmc7XG5cbiAgLyoqXG4gICAqIDxwPlRoZSBUVEwgZm9yIHRoZSBlbmRwb2ludCwgaW4gbWludXRlcy48L3A+XG4gICAqL1xuICBDYWNoZVBlcmlvZEluTWludXRlczogbnVtYmVyO1xufVxuIl19
+
+/***/ }),
+
+/***/ 2369:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.EndpointCache = void 0;
+const mnemonist_1 = __nccwpck_require__(2868);
+class EndpointCache {
+    constructor(capacity) {
+        this.cache = new mnemonist_1.LRUCache(capacity);
+    }
+    /**
+     * Returns an un-expired endpoint for the given key.
+     *
+     * @param endpointsWithExpiry
+     * @returns
+     */
+    getEndpoint(key) {
+        const endpointsWithExpiry = this.get(key);
+        if (!endpointsWithExpiry || endpointsWithExpiry.length === 0) {
+            return undefined;
+        }
+        const endpoints = endpointsWithExpiry.map((endpoint) => endpoint.Address);
+        return endpoints[Math.floor(Math.random() * endpoints.length)];
+    }
+    /**
+     * Returns un-expired endpoints for the given key.
+     *
+     * @param key
+     * @returns
+     */
+    get(key) {
+        if (!this.has(key)) {
+            return;
+        }
+        const value = this.cache.get(key);
+        if (!value) {
+            return;
+        }
+        const now = Date.now();
+        const endpointsWithExpiry = value.filter((endpoint) => now < endpoint.Expires);
+        if (endpointsWithExpiry.length === 0) {
+            this.delete(key);
+            return undefined;
+        }
+        return endpointsWithExpiry;
+    }
+    /**
+     * Stores the endpoints passed for the key in cache.
+     * If not defined, uses empty string for the Address in endpoint.
+     * If not defined, uses one minute for CachePeriodInMinutes in endpoint.
+     * Stores milliseconds elapsed since the UNIX epoch in Expires param based
+     * on value provided in CachePeriodInMinutes.
+     *
+     * @param key
+     * @param endpoints
+     */
+    set(key, endpoints) {
+        const now = Date.now();
+        this.cache.set(key, endpoints.map(({ Address, CachePeriodInMinutes }) => ({
+            Address,
+            Expires: now + CachePeriodInMinutes * 60 * 1000,
+        })));
+    }
+    /**
+     * Deletes the value for the given key in the cache.
+     *
+     * @param {string} key
+     */
+    delete(key) {
+        // Replace with remove/delete call once support is added upstream
+        // Refs: https://github.com/Yomguithereal/mnemonist/issues/143
+        this.cache.set(key, []);
+    }
+    /**
+     * Checks whether the key exists in cache.
+     *
+     * @param {string} key
+     * @returns {boolean}
+     */
+    has(key) {
+        if (!this.cache.has(key)) {
+            return false;
+        }
+        // Remove call for peek, once remove/delete support is added upstream
+        // Refs: https://github.com/Yomguithereal/mnemonist/issues/143
+        const endpoints = this.cache.peek(key);
+        if (!endpoints) {
+            return false;
+        }
+        return endpoints.length > 0;
+    }
+    /**
+     * Clears the cache.
+     */
+    clear() {
+        this.cache.clear();
+    }
+}
+exports.EndpointCache = EndpointCache;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRW5kcG9pbnRDYWNoZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9FbmRwb2ludENhY2hlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLHlDQUFxQztBQVFyQyxNQUFhLGFBQWE7SUFHeEIsWUFBWSxRQUFnQjtRQUMxQixJQUFJLENBQUMsS0FBSyxHQUFHLElBQUksb0JBQVEsQ0FBQyxRQUFRLENBQUMsQ0FBQztJQUN0QyxDQUFDO0lBRUQ7Ozs7O09BS0c7SUFDSCxXQUFXLENBQUMsR0FBVztRQUNyQixNQUFNLG1CQUFtQixHQUFHLElBQUksQ0FBQyxHQUFHLENBQUMsR0FBRyxDQUFDLENBQUM7UUFDMUMsSUFBSSxDQUFDLG1CQUFtQixJQUFJLG1CQUFtQixDQUFDLE1BQU0sS0FBSyxDQUFDLEVBQUU7WUFDNUQsT0FBTyxTQUFTLENBQUM7U0FDbEI7UUFDRCxNQUFNLFNBQVMsR0FBRyxtQkFBbUIsQ0FBQyxHQUFHLENBQUMsQ0FBQyxRQUFRLEVBQUUsRUFBRSxDQUFDLFFBQVEsQ0FBQyxPQUFPLENBQUMsQ0FBQztRQUMxRSxPQUFPLFNBQVMsQ0FBQyxJQUFJLENBQUMsS0FBSyxDQUFDLElBQUksQ0FBQyxNQUFNLEVBQUUsR0FBRyxTQUFTLENBQUMsTUFBTSxDQUFDLENBQUMsQ0FBQztJQUNqRSxDQUFDO0lBRUQ7Ozs7O09BS0c7SUFDSCxHQUFHLENBQUMsR0FBVztRQUNiLElBQUksQ0FBQyxJQUFJLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FBQyxFQUFFO1lBQ2xCLE9BQU87U0FDUjtRQUVELE1BQU0sS0FBSyxHQUFHLElBQUksQ0FBQyxLQUFLLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FBQyxDQUFDO1FBQ2xDLElBQUksQ0FBQyxLQUFLLEVBQUU7WUFDVixPQUFPO1NBQ1I7UUFFRCxNQUFNLEdBQUcsR0FBRyxJQUFJLENBQUMsR0FBRyxFQUFFLENBQUM7UUFDdkIsTUFBTSxtQkFBbUIsR0FBRyxLQUFLLENBQUMsTUFBTSxDQUFDLENBQUMsUUFBUSxFQUFFLEVBQUUsQ0FBQyxHQUFHLEdBQUcsUUFBUSxDQUFDLE9BQU8sQ0FBQyxDQUFDO1FBQy9FLElBQUksbUJBQW1CLENBQUMsTUFBTSxLQUFLLENBQUMsRUFBRTtZQUNwQyxJQUFJLENBQUMsTUFBTSxDQUFDLEdBQUcsQ0FBQyxDQUFDO1lBQ2pCLE9BQU8sU0FBUyxDQUFDO1NBQ2xCO1FBRUQsT0FBTyxtQkFBbUIsQ0FBQztJQUM3QixDQUFDO0lBRUQ7Ozs7Ozs7OztPQVNHO0lBQ0gsR0FBRyxDQUFDLEdBQVcsRUFBRSxTQUFxQjtRQUNwQyxNQUFNLEdBQUcsR0FBRyxJQUFJLENBQUMsR0FBRyxFQUFFLENBQUM7UUFDdkIsSUFBSSxDQUFDLEtBQUssQ0FBQyxHQUFHLENBQ1osR0FBRyxFQUNILFNBQVMsQ0FBQyxHQUFHLENBQUMsQ0FBQyxFQUFFLE9BQU8sRUFBRSxvQkFBb0IsRUFBRSxFQUFFLEVBQUUsQ0FBQyxDQUFDO1lBQ3BELE9BQU87WUFDUCxPQUFPLEVBQUUsR0FBRyxHQUFHLG9CQUFvQixHQUFHLEVBQUUsR0FBRyxJQUFJO1NBQ2hELENBQUMsQ0FBQyxDQUNKLENBQUM7SUFDSixDQUFDO0lBRUQ7Ozs7T0FJRztJQUNILE1BQU0sQ0FBQyxHQUFXO1FBQ2hCLGlFQUFpRTtRQUNqRSw4REFBOEQ7UUFDOUQsSUFBSSxDQUFDLEtBQUssQ0FBQyxHQUFHLENBQUMsR0FBRyxFQUFFLEVBQUUsQ0FBQyxDQUFDO0lBQzFCLENBQUM7SUFFRDs7Ozs7T0FLRztJQUNILEdBQUcsQ0FBQyxHQUFXO1FBQ2IsSUFBSSxDQUFDLElBQUksQ0FBQyxLQUFLLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FBQyxFQUFFO1lBQ3hCLE9BQU8sS0FBSyxDQUFDO1NBQ2Q7UUFFRCxxRUFBcUU7UUFDckUsOERBQThEO1FBQzlELE1BQU0sU0FBUyxHQUFHLElBQUksQ0FBQyxLQUFLLENBQUMsSUFBSSxDQUFDLEdBQUcsQ0FBQyxDQUFDO1FBQ3ZDLElBQUksQ0FBQyxTQUFTLEVBQUU7WUFDZCxPQUFPLEtBQUssQ0FBQztTQUNkO1FBQ0QsT0FBTyxTQUFTLENBQUMsTUFBTSxHQUFHLENBQUMsQ0FBQztJQUM5QixDQUFDO0lBRUQ7O09BRUc7SUFDSCxLQUFLO1FBQ0gsSUFBSSxDQUFDLEtBQUssQ0FBQyxLQUFLLEVBQUUsQ0FBQztJQUNyQixDQUFDO0NBQ0Y7QUExR0Qsc0NBMEdDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTFJVQ2FjaGUgfSBmcm9tIFwibW5lbW9uaXN0XCI7XG5cbmltcG9ydCB7IEVuZHBvaW50IH0gZnJvbSBcIi4vRW5kcG9pbnRcIjtcblxuZXhwb3J0IGludGVyZmFjZSBFbmRwb2ludFdpdGhFeHBpcnkgZXh0ZW5kcyBQaWNrPEVuZHBvaW50LCBcIkFkZHJlc3NcIj4ge1xuICBFeHBpcmVzOiBudW1iZXI7XG59XG5cbmV4cG9ydCBjbGFzcyBFbmRwb2ludENhY2hlIHtcbiAgcHJpdmF0ZSByZWFkb25seSBjYWNoZTogTFJVQ2FjaGU8c3RyaW5nLCBFbmRwb2ludFdpdGhFeHBpcnlbXT47XG5cbiAgY29uc3RydWN0b3IoY2FwYWNpdHk6IG51bWJlcikge1xuICAgIHRoaXMuY2FjaGUgPSBuZXcgTFJVQ2FjaGUoY2FwYWNpdHkpO1xuICB9XG5cbiAgLyoqXG4gICAqIFJldHVybnMgYW4gdW4tZXhwaXJlZCBlbmRwb2ludCBmb3IgdGhlIGdpdmVuIGtleS5cbiAgICpcbiAgICogQHBhcmFtIGVuZHBvaW50c1dpdGhFeHBpcnlcbiAgICogQHJldHVybnNcbiAgICovXG4gIGdldEVuZHBvaW50KGtleTogc3RyaW5nKSB7XG4gICAgY29uc3QgZW5kcG9pbnRzV2l0aEV4cGlyeSA9IHRoaXMuZ2V0KGtleSk7XG4gICAgaWYgKCFlbmRwb2ludHNXaXRoRXhwaXJ5IHx8IGVuZHBvaW50c1dpdGhFeHBpcnkubGVuZ3RoID09PSAwKSB7XG4gICAgICByZXR1cm4gdW5kZWZpbmVkO1xuICAgIH1cbiAgICBjb25zdCBlbmRwb2ludHMgPSBlbmRwb2ludHNXaXRoRXhwaXJ5Lm1hcCgoZW5kcG9pbnQpID0+IGVuZHBvaW50LkFkZHJlc3MpO1xuICAgIHJldHVybiBlbmRwb2ludHNbTWF0aC5mbG9vcihNYXRoLnJhbmRvbSgpICogZW5kcG9pbnRzLmxlbmd0aCldO1xuICB9XG5cbiAgLyoqXG4gICAqIFJldHVybnMgdW4tZXhwaXJlZCBlbmRwb2ludHMgZm9yIHRoZSBnaXZlbiBrZXkuXG4gICAqXG4gICAqIEBwYXJhbSBrZXlcbiAgICogQHJldHVybnNcbiAgICovXG4gIGdldChrZXk6IHN0cmluZykge1xuICAgIGlmICghdGhpcy5oYXMoa2V5KSkge1xuICAgICAgcmV0dXJuO1xuICAgIH1cblxuICAgIGNvbnN0IHZhbHVlID0gdGhpcy5jYWNoZS5nZXQoa2V5KTtcbiAgICBpZiAoIXZhbHVlKSB7XG4gICAgICByZXR1cm47XG4gICAgfVxuXG4gICAgY29uc3Qgbm93ID0gRGF0ZS5ub3coKTtcbiAgICBjb25zdCBlbmRwb2ludHNXaXRoRXhwaXJ5ID0gdmFsdWUuZmlsdGVyKChlbmRwb2ludCkgPT4gbm93IDwgZW5kcG9pbnQuRXhwaXJlcyk7XG4gICAgaWYgKGVuZHBvaW50c1dpdGhFeHBpcnkubGVuZ3RoID09PSAwKSB7XG4gICAgICB0aGlzLmRlbGV0ZShrZXkpO1xuICAgICAgcmV0dXJuIHVuZGVmaW5lZDtcbiAgICB9XG5cbiAgICByZXR1cm4gZW5kcG9pbnRzV2l0aEV4cGlyeTtcbiAgfVxuXG4gIC8qKlxuICAgKiBTdG9yZXMgdGhlIGVuZHBvaW50cyBwYXNzZWQgZm9yIHRoZSBrZXkgaW4gY2FjaGUuXG4gICAqIElmIG5vdCBkZWZpbmVkLCB1c2VzIGVtcHR5IHN0cmluZyBmb3IgdGhlIEFkZHJlc3MgaW4gZW5kcG9pbnQuXG4gICAqIElmIG5vdCBkZWZpbmVkLCB1c2VzIG9uZSBtaW51dGUgZm9yIENhY2hlUGVyaW9kSW5NaW51dGVzIGluIGVuZHBvaW50LlxuICAgKiBTdG9yZXMgbWlsbGlzZWNvbmRzIGVsYXBzZWQgc2luY2UgdGhlIFVOSVggZXBvY2ggaW4gRXhwaXJlcyBwYXJhbSBiYXNlZFxuICAgKiBvbiB2YWx1ZSBwcm92aWRlZCBpbiBDYWNoZVBlcmlvZEluTWludXRlcy5cbiAgICpcbiAgICogQHBhcmFtIGtleVxuICAgKiBAcGFyYW0gZW5kcG9pbnRzXG4gICAqL1xuICBzZXQoa2V5OiBzdHJpbmcsIGVuZHBvaW50czogRW5kcG9pbnRbXSkge1xuICAgIGNvbnN0IG5vdyA9IERhdGUubm93KCk7XG4gICAgdGhpcy5jYWNoZS5zZXQoXG4gICAgICBrZXksXG4gICAgICBlbmRwb2ludHMubWFwKCh7IEFkZHJlc3MsIENhY2hlUGVyaW9kSW5NaW51dGVzIH0pID0+ICh7XG4gICAgICAgIEFkZHJlc3MsXG4gICAgICAgIEV4cGlyZXM6IG5vdyArIENhY2hlUGVyaW9kSW5NaW51dGVzICogNjAgKiAxMDAwLFxuICAgICAgfSkpXG4gICAgKTtcbiAgfVxuXG4gIC8qKlxuICAgKiBEZWxldGVzIHRoZSB2YWx1ZSBmb3IgdGhlIGdpdmVuIGtleSBpbiB0aGUgY2FjaGUuXG4gICAqXG4gICAqIEBwYXJhbSB7c3RyaW5nfSBrZXlcbiAgICovXG4gIGRlbGV0ZShrZXk6IHN0cmluZykge1xuICAgIC8vIFJlcGxhY2Ugd2l0aCByZW1vdmUvZGVsZXRlIGNhbGwgb25jZSBzdXBwb3J0IGlzIGFkZGVkIHVwc3RyZWFtXG4gICAgLy8gUmVmczogaHR0cHM6Ly9naXRodWIuY29tL1lvbWd1aXRoZXJlYWwvbW5lbW9uaXN0L2lzc3Vlcy8xNDNcbiAgICB0aGlzLmNhY2hlLnNldChrZXksIFtdKTtcbiAgfVxuXG4gIC8qKlxuICAgKiBDaGVja3Mgd2hldGhlciB0aGUga2V5IGV4aXN0cyBpbiBjYWNoZS5cbiAgICpcbiAgICogQHBhcmFtIHtzdHJpbmd9IGtleVxuICAgKiBAcmV0dXJucyB7Ym9vbGVhbn1cbiAgICovXG4gIGhhcyhrZXk6IHN0cmluZyk6IGJvb2xlYW4ge1xuICAgIGlmICghdGhpcy5jYWNoZS5oYXMoa2V5KSkge1xuICAgICAgcmV0dXJuIGZhbHNlO1xuICAgIH1cblxuICAgIC8vIFJlbW92ZSBjYWxsIGZvciBwZWVrLCBvbmNlIHJlbW92ZS9kZWxldGUgc3VwcG9ydCBpcyBhZGRlZCB1cHN0cmVhbVxuICAgIC8vIFJlZnM6IGh0dHBzOi8vZ2l0aHViLmNvbS9Zb21ndWl0aGVyZWFsL21uZW1vbmlzdC9pc3N1ZXMvMTQzXG4gICAgY29uc3QgZW5kcG9pbnRzID0gdGhpcy5jYWNoZS5wZWVrKGtleSk7XG4gICAgaWYgKCFlbmRwb2ludHMpIHtcbiAgICAgIHJldHVybiBmYWxzZTtcbiAgICB9XG4gICAgcmV0dXJuIGVuZHBvaW50cy5sZW5ndGggPiAwO1xuICB9XG5cbiAgLyoqXG4gICAqIENsZWFycyB0aGUgY2FjaGUuXG4gICAqL1xuICBjbGVhcigpIHtcbiAgICB0aGlzLmNhY2hlLmNsZWFyKCk7XG4gIH1cbn1cbiJdfQ==
+
+/***/ }),
+
+/***/ 1350:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(7588), exports);
+tslib_1.__exportStar(__nccwpck_require__(2369), exports);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEscURBQTJCO0FBQzNCLDBEQUFnQyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCAqIGZyb20gXCIuL0VuZHBvaW50XCI7XG5leHBvcnQgKiBmcm9tIFwiLi9FbmRwb2ludENhY2hlXCI7XG4iXX0=
 
 /***/ }),
 
@@ -24249,6 +26090,291 @@ exports.getContentLengthPlugin = getContentLengthPlugin;
 
 /***/ }),
 
+/***/ 3236:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.NODE_ENDPOINT_DISCOVERY_CONFIG_OPTIONS = void 0;
+const ENV_ENDPOINT_DISCOVERY = ["AWS_ENABLE_ENDPOINT_DISCOVERY", "AWS_ENDPOINT_DISCOVERY_ENABLED"];
+const CONFIG_ENDPOINT_DISCOVERY = "endpoint_discovery_enabled";
+const isFalsy = (value) => ["false", "0"].indexOf(value) >= 0;
+exports.NODE_ENDPOINT_DISCOVERY_CONFIG_OPTIONS = {
+    environmentVariableSelector: (env) => {
+        for (let i = 0; i < ENV_ENDPOINT_DISCOVERY.length; i++) {
+            const envKey = ENV_ENDPOINT_DISCOVERY[i];
+            if (envKey in env) {
+                const value = env[envKey];
+                if (value === "") {
+                    throw Error(`Environment variable ${envKey} can't be empty of undefined, got "${value}"`);
+                }
+                // @ts-ignore Argument of type 'string | undefined' is not assignable to parameter of type 'string'
+                return !isFalsy(value);
+            }
+        }
+    },
+    configFileSelector: (profile) => {
+        if (CONFIG_ENDPOINT_DISCOVERY in profile) {
+            const value = profile[CONFIG_ENDPOINT_DISCOVERY];
+            if (value === undefined) {
+                throw Error(`Shared config entry ${CONFIG_ENDPOINT_DISCOVERY} can't be undefined, got "${value}"`);
+            }
+            return !isFalsy(value);
+        }
+    },
+    default: undefined,
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlndXJhdGlvbnMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvY29uZmlndXJhdGlvbnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBRUEsTUFBTSxzQkFBc0IsR0FBRyxDQUFDLCtCQUErQixFQUFFLGdDQUFnQyxDQUFDLENBQUM7QUFDbkcsTUFBTSx5QkFBeUIsR0FBRyw0QkFBNEIsQ0FBQztBQUUvRCxNQUFNLE9BQU8sR0FBRyxDQUFDLEtBQWEsRUFBRSxFQUFFLENBQUMsQ0FBQyxPQUFPLEVBQUUsR0FBRyxDQUFDLENBQUMsT0FBTyxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQUMsQ0FBQztBQUV6RCxRQUFBLHNDQUFzQyxHQUErQztJQUNoRywyQkFBMkIsRUFBRSxDQUFDLEdBQUcsRUFBRSxFQUFFO1FBQ25DLEtBQUssSUFBSSxDQUFDLEdBQUcsQ0FBQyxFQUFFLENBQUMsR0FBRyxzQkFBc0IsQ0FBQyxNQUFNLEVBQUUsQ0FBQyxFQUFFLEVBQUU7WUFDdEQsTUFBTSxNQUFNLEdBQUcsc0JBQXNCLENBQUMsQ0FBQyxDQUFDLENBQUM7WUFDekMsSUFBSSxNQUFNLElBQUksR0FBRyxFQUFFO2dCQUNqQixNQUFNLEtBQUssR0FBRyxHQUFHLENBQUMsTUFBTSxDQUFDLENBQUM7Z0JBQzFCLElBQUksS0FBSyxLQUFLLEVBQUUsRUFBRTtvQkFDaEIsTUFBTSxLQUFLLENBQUMsd0JBQXdCLE1BQU0sc0NBQXNDLEtBQUssR0FBRyxDQUFDLENBQUM7aUJBQzNGO2dCQUNELG1HQUFtRztnQkFDbkcsT0FBTyxDQUFDLE9BQU8sQ0FBQyxLQUFLLENBQUMsQ0FBQzthQUN4QjtTQUNGO0lBQ0gsQ0FBQztJQUNELGtCQUFrQixFQUFFLENBQUMsT0FBTyxFQUFFLEVBQUU7UUFDOUIsSUFBSSx5QkFBeUIsSUFBSSxPQUFPLEVBQUU7WUFDeEMsTUFBTSxLQUFLLEdBQUcsT0FBTyxDQUFDLHlCQUF5QixDQUFDLENBQUM7WUFDakQsSUFBSSxLQUFLLEtBQUssU0FBUyxFQUFFO2dCQUN2QixNQUFNLEtBQUssQ0FBQyx1QkFBdUIseUJBQXlCLDZCQUE2QixLQUFLLEdBQUcsQ0FBQyxDQUFDO2FBQ3BHO1lBQ0QsT0FBTyxDQUFDLE9BQU8sQ0FBQyxLQUFLLENBQUMsQ0FBQztTQUN4QjtJQUNILENBQUM7SUFDRCxPQUFPLEVBQUUsU0FBUztDQUNuQixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTG9hZGVkQ29uZmlnU2VsZWN0b3JzIH0gZnJvbSBcIkBhd3Mtc2RrL25vZGUtY29uZmlnLXByb3ZpZGVyXCI7XG5cbmNvbnN0IEVOVl9FTkRQT0lOVF9ESVNDT1ZFUlkgPSBbXCJBV1NfRU5BQkxFX0VORFBPSU5UX0RJU0NPVkVSWVwiLCBcIkFXU19FTkRQT0lOVF9ESVNDT1ZFUllfRU5BQkxFRFwiXTtcbmNvbnN0IENPTkZJR19FTkRQT0lOVF9ESVNDT1ZFUlkgPSBcImVuZHBvaW50X2Rpc2NvdmVyeV9lbmFibGVkXCI7XG5cbmNvbnN0IGlzRmFsc3kgPSAodmFsdWU6IHN0cmluZykgPT4gW1wiZmFsc2VcIiwgXCIwXCJdLmluZGV4T2YodmFsdWUpID49IDA7XG5cbmV4cG9ydCBjb25zdCBOT0RFX0VORFBPSU5UX0RJU0NPVkVSWV9DT05GSUdfT1BUSU9OUzogTG9hZGVkQ29uZmlnU2VsZWN0b3JzPGJvb2xlYW4gfCB1bmRlZmluZWQ+ID0ge1xuICBlbnZpcm9ubWVudFZhcmlhYmxlU2VsZWN0b3I6IChlbnYpID0+IHtcbiAgICBmb3IgKGxldCBpID0gMDsgaSA8IEVOVl9FTkRQT0lOVF9ESVNDT1ZFUlkubGVuZ3RoOyBpKyspIHtcbiAgICAgIGNvbnN0IGVudktleSA9IEVOVl9FTkRQT0lOVF9ESVNDT1ZFUllbaV07XG4gICAgICBpZiAoZW52S2V5IGluIGVudikge1xuICAgICAgICBjb25zdCB2YWx1ZSA9IGVudltlbnZLZXldO1xuICAgICAgICBpZiAodmFsdWUgPT09IFwiXCIpIHtcbiAgICAgICAgICB0aHJvdyBFcnJvcihgRW52aXJvbm1lbnQgdmFyaWFibGUgJHtlbnZLZXl9IGNhbid0IGJlIGVtcHR5IG9mIHVuZGVmaW5lZCwgZ290IFwiJHt2YWx1ZX1cImApO1xuICAgICAgICB9XG4gICAgICAgIC8vIEB0cy1pZ25vcmUgQXJndW1lbnQgb2YgdHlwZSAnc3RyaW5nIHwgdW5kZWZpbmVkJyBpcyBub3QgYXNzaWduYWJsZSB0byBwYXJhbWV0ZXIgb2YgdHlwZSAnc3RyaW5nJ1xuICAgICAgICByZXR1cm4gIWlzRmFsc3kodmFsdWUpO1xuICAgICAgfVxuICAgIH1cbiAgfSxcbiAgY29uZmlnRmlsZVNlbGVjdG9yOiAocHJvZmlsZSkgPT4ge1xuICAgIGlmIChDT05GSUdfRU5EUE9JTlRfRElTQ09WRVJZIGluIHByb2ZpbGUpIHtcbiAgICAgIGNvbnN0IHZhbHVlID0gcHJvZmlsZVtDT05GSUdfRU5EUE9JTlRfRElTQ09WRVJZXTtcbiAgICAgIGlmICh2YWx1ZSA9PT0gdW5kZWZpbmVkKSB7XG4gICAgICAgIHRocm93IEVycm9yKGBTaGFyZWQgY29uZmlnIGVudHJ5ICR7Q09ORklHX0VORFBPSU5UX0RJU0NPVkVSWX0gY2FuJ3QgYmUgdW5kZWZpbmVkLCBnb3QgXCIke3ZhbHVlfVwiYCk7XG4gICAgICB9XG4gICAgICByZXR1cm4gIWlzRmFsc3kodmFsdWUpO1xuICAgIH1cbiAgfSxcbiAgZGVmYXVsdDogdW5kZWZpbmVkLFxufTtcbiJdfQ==
+
+/***/ }),
+
+/***/ 9251:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.endpointDiscoveryMiddleware = void 0;
+const protocol_http_1 = __nccwpck_require__(7498);
+const getCacheKey_1 = __nccwpck_require__(2329);
+const updateDiscoveredEndpointInCache_1 = __nccwpck_require__(2561);
+const endpointDiscoveryMiddleware = (config, middlewareConfig) => (next, context) => async (args) => {
+    if (config.isCustomEndpoint) {
+        if (config.isClientEndpointDiscoveryEnabled) {
+            throw new Error(`Custom endpoint is supplied; endpointDiscoveryEnabled must not be true.`);
+        }
+        return next(args);
+    }
+    const { endpointDiscoveryCommandCtor } = config;
+    const { isDiscoveredEndpointRequired, identifiers } = middlewareConfig;
+    const { clientName, commandName } = context;
+    const isEndpointDiscoveryEnabled = await config.endpointDiscoveryEnabled();
+    const cacheKey = await getCacheKey_1.getCacheKey(commandName, config, { identifiers });
+    if (isDiscoveredEndpointRequired) {
+        // throw error if endpoint discovery is required, and it's explicitly disabled.
+        if (isEndpointDiscoveryEnabled === false) {
+            throw new Error(`Endpoint Discovery is disabled but ${commandName} on ${clientName} requires it.` +
+                ` Please check your configurations.`);
+        }
+        // call await on Endpoint Discovery API utility so that function blocks
+        // till discovered endpoint is updated in cache
+        await updateDiscoveredEndpointInCache_1.updateDiscoveredEndpointInCache(config, {
+            ...middlewareConfig,
+            commandName,
+            cacheKey,
+            endpointDiscoveryCommandCtor,
+        });
+    }
+    else if (isEndpointDiscoveryEnabled) {
+        // Discover endpoints only if endpoint discovery is explicitly enabled.
+        // Do not call await await on Endpoint Discovery API utility so that function
+        // does not block, the command will use discovered endpoint, if available.
+        updateDiscoveredEndpointInCache_1.updateDiscoveredEndpointInCache(config, {
+            ...middlewareConfig,
+            commandName,
+            cacheKey,
+            endpointDiscoveryCommandCtor,
+        });
+    }
+    const { request } = args;
+    if (cacheKey && protocol_http_1.HttpRequest.isInstance(request)) {
+        const endpoint = config.endpointCache.getEndpoint(cacheKey);
+        if (endpoint) {
+            request.hostname = endpoint;
+        }
+    }
+    return next(args);
+};
+exports.endpointDiscoveryMiddleware = endpointDiscoveryMiddleware;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZW5kcG9pbnREaXNjb3ZlcnlNaWRkbGV3YXJlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2VuZHBvaW50RGlzY292ZXJ5TWlkZGxld2FyZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSwwREFBcUQ7QUFTckQsK0NBQTRDO0FBRzVDLHVGQUFvRjtBQUU3RSxNQUFNLDJCQUEyQixHQUFHLENBQ3pDLE1BQTRELEVBQzVELGdCQUFtRCxFQUNuRCxFQUFFLENBQUMsQ0FDSCxJQUErQixFQUMvQixPQUFnQyxFQUNMLEVBQUUsQ0FBQyxLQUFLLEVBQUUsSUFBZ0MsRUFBdUMsRUFBRTtJQUM5RyxJQUFJLE1BQU0sQ0FBQyxnQkFBZ0IsRUFBRTtRQUMzQixJQUFJLE1BQU0sQ0FBQyxnQ0FBZ0MsRUFBRTtZQUMzQyxNQUFNLElBQUksS0FBSyxDQUFDLHlFQUF5RSxDQUFDLENBQUM7U0FDNUY7UUFDRCxPQUFPLElBQUksQ0FBQyxJQUFJLENBQUMsQ0FBQztLQUNuQjtJQUVELE1BQU0sRUFBRSw0QkFBNEIsRUFBRSxHQUFHLE1BQU0sQ0FBQztJQUNoRCxNQUFNLEVBQUUsNEJBQTRCLEVBQUUsV0FBVyxFQUFFLEdBQUcsZ0JBQWdCLENBQUM7SUFDdkUsTUFBTSxFQUFFLFVBQVUsRUFBRSxXQUFXLEVBQUUsR0FBRyxPQUFPLENBQUM7SUFDNUMsTUFBTSwwQkFBMEIsR0FBRyxNQUFNLE1BQU0sQ0FBQyx3QkFBd0IsRUFBRSxDQUFDO0lBQzNFLE1BQU0sUUFBUSxHQUFHLE1BQU0seUJBQVcsQ0FBQyxXQUFXLEVBQUUsTUFBTSxFQUFFLEVBQUUsV0FBVyxFQUFFLENBQUMsQ0FBQztJQUV6RSxJQUFJLDRCQUE0QixFQUFFO1FBQ2hDLCtFQUErRTtRQUMvRSxJQUFJLDBCQUEwQixLQUFLLEtBQUssRUFBRTtZQUN4QyxNQUFNLElBQUksS0FBSyxDQUNiLHNDQUFzQyxXQUFXLE9BQU8sVUFBVSxlQUFlO2dCQUMvRSxvQ0FBb0MsQ0FDdkMsQ0FBQztTQUNIO1FBQ0QsdUVBQXVFO1FBQ3ZFLCtDQUErQztRQUMvQyxNQUFNLGlFQUErQixDQUFDLE1BQU0sRUFBRTtZQUM1QyxHQUFHLGdCQUFnQjtZQUNuQixXQUFXO1lBQ1gsUUFBUTtZQUNSLDRCQUE0QjtTQUM3QixDQUFDLENBQUM7S0FDSjtTQUFNLElBQUksMEJBQTBCLEVBQUU7UUFDckMsdUVBQXVFO1FBQ3ZFLDZFQUE2RTtRQUM3RSwwRUFBMEU7UUFDMUUsaUVBQStCLENBQUMsTUFBTSxFQUFFO1lBQ3RDLEdBQUcsZ0JBQWdCO1lBQ25CLFdBQVc7WUFDWCxRQUFRO1lBQ1IsNEJBQTRCO1NBQzdCLENBQUMsQ0FBQztLQUNKO0lBRUQsTUFBTSxFQUFFLE9BQU8sRUFBRSxHQUFHLElBQUksQ0FBQztJQUN6QixJQUFJLFFBQVEsSUFBSSwyQkFBVyxDQUFDLFVBQVUsQ0FBQyxPQUFPLENBQUMsRUFBRTtRQUMvQyxNQUFNLFFBQVEsR0FBRyxNQUFNLENBQUMsYUFBYSxDQUFDLFdBQVcsQ0FBQyxRQUFRLENBQUMsQ0FBQztRQUM1RCxJQUFJLFFBQVEsRUFBRTtZQUNaLE9BQU8sQ0FBQyxRQUFRLEdBQUcsUUFBUSxDQUFDO1NBQzdCO0tBQ0Y7SUFFRCxPQUFPLElBQUksQ0FBQyxJQUFJLENBQUMsQ0FBQztBQUNwQixDQUFDLENBQUM7QUF6RFcsUUFBQSwyQkFBMkIsK0JBeUR0QyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEh0dHBSZXF1ZXN0IH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3RvY29sLWh0dHBcIjtcbmltcG9ydCB7XG4gIEJ1aWxkSGFuZGxlcixcbiAgQnVpbGRIYW5kbGVyQXJndW1lbnRzLFxuICBCdWlsZEhhbmRsZXJPdXRwdXQsXG4gIEhhbmRsZXJFeGVjdXRpb25Db250ZXh0LFxuICBNZXRhZGF0YUJlYXJlcixcbn0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmltcG9ydCB7IGdldENhY2hlS2V5IH0gZnJvbSBcIi4vZ2V0Q2FjaGVLZXlcIjtcbmltcG9ydCB7IEVuZHBvaW50RGlzY292ZXJ5TWlkZGxld2FyZUNvbmZpZyB9IGZyb20gXCIuL2dldEVuZHBvaW50RGlzY292ZXJ5UGx1Z2luXCI7XG5pbXBvcnQgeyBFbmRwb2ludERpc2NvdmVyeVJlc29sdmVkQ29uZmlnLCBQcmV2aW91c2x5UmVzb2x2ZWQgfSBmcm9tIFwiLi9yZXNvbHZlRW5kcG9pbnREaXNjb3ZlcnlDb25maWdcIjtcbmltcG9ydCB7IHVwZGF0ZURpc2NvdmVyZWRFbmRwb2ludEluQ2FjaGUgfSBmcm9tIFwiLi91cGRhdGVEaXNjb3ZlcmVkRW5kcG9pbnRJbkNhY2hlXCI7XG5cbmV4cG9ydCBjb25zdCBlbmRwb2ludERpc2NvdmVyeU1pZGRsZXdhcmUgPSAoXG4gIGNvbmZpZzogRW5kcG9pbnREaXNjb3ZlcnlSZXNvbHZlZENvbmZpZyAmIFByZXZpb3VzbHlSZXNvbHZlZCxcbiAgbWlkZGxld2FyZUNvbmZpZzogRW5kcG9pbnREaXNjb3ZlcnlNaWRkbGV3YXJlQ29uZmlnXG4pID0+IDxPdXRwdXQgZXh0ZW5kcyBNZXRhZGF0YUJlYXJlciA9IE1ldGFkYXRhQmVhcmVyPihcbiAgbmV4dDogQnVpbGRIYW5kbGVyPGFueSwgT3V0cHV0PixcbiAgY29udGV4dDogSGFuZGxlckV4ZWN1dGlvbkNvbnRleHRcbik6IEJ1aWxkSGFuZGxlcjxhbnksIE91dHB1dD4gPT4gYXN5bmMgKGFyZ3M6IEJ1aWxkSGFuZGxlckFyZ3VtZW50czxhbnk+KTogUHJvbWlzZTxCdWlsZEhhbmRsZXJPdXRwdXQ8T3V0cHV0Pj4gPT4ge1xuICBpZiAoY29uZmlnLmlzQ3VzdG9tRW5kcG9pbnQpIHtcbiAgICBpZiAoY29uZmlnLmlzQ2xpZW50RW5kcG9pbnREaXNjb3ZlcnlFbmFibGVkKSB7XG4gICAgICB0aHJvdyBuZXcgRXJyb3IoYEN1c3RvbSBlbmRwb2ludCBpcyBzdXBwbGllZDsgZW5kcG9pbnREaXNjb3ZlcnlFbmFibGVkIG11c3Qgbm90IGJlIHRydWUuYCk7XG4gICAgfVxuICAgIHJldHVybiBuZXh0KGFyZ3MpO1xuICB9XG5cbiAgY29uc3QgeyBlbmRwb2ludERpc2NvdmVyeUNvbW1hbmRDdG9yIH0gPSBjb25maWc7XG4gIGNvbnN0IHsgaXNEaXNjb3ZlcmVkRW5kcG9pbnRSZXF1aXJlZCwgaWRlbnRpZmllcnMgfSA9IG1pZGRsZXdhcmVDb25maWc7XG4gIGNvbnN0IHsgY2xpZW50TmFtZSwgY29tbWFuZE5hbWUgfSA9IGNvbnRleHQ7XG4gIGNvbnN0IGlzRW5kcG9pbnREaXNjb3ZlcnlFbmFibGVkID0gYXdhaXQgY29uZmlnLmVuZHBvaW50RGlzY292ZXJ5RW5hYmxlZCgpO1xuICBjb25zdCBjYWNoZUtleSA9IGF3YWl0IGdldENhY2hlS2V5KGNvbW1hbmROYW1lLCBjb25maWcsIHsgaWRlbnRpZmllcnMgfSk7XG5cbiAgaWYgKGlzRGlzY292ZXJlZEVuZHBvaW50UmVxdWlyZWQpIHtcbiAgICAvLyB0aHJvdyBlcnJvciBpZiBlbmRwb2ludCBkaXNjb3ZlcnkgaXMgcmVxdWlyZWQsIGFuZCBpdCdzIGV4cGxpY2l0bHkgZGlzYWJsZWQuXG4gICAgaWYgKGlzRW5kcG9pbnREaXNjb3ZlcnlFbmFibGVkID09PSBmYWxzZSkge1xuICAgICAgdGhyb3cgbmV3IEVycm9yKFxuICAgICAgICBgRW5kcG9pbnQgRGlzY292ZXJ5IGlzIGRpc2FibGVkIGJ1dCAke2NvbW1hbmROYW1lfSBvbiAke2NsaWVudE5hbWV9IHJlcXVpcmVzIGl0LmAgK1xuICAgICAgICAgIGAgUGxlYXNlIGNoZWNrIHlvdXIgY29uZmlndXJhdGlvbnMuYFxuICAgICAgKTtcbiAgICB9XG4gICAgLy8gY2FsbCBhd2FpdCBvbiBFbmRwb2ludCBEaXNjb3ZlcnkgQVBJIHV0aWxpdHkgc28gdGhhdCBmdW5jdGlvbiBibG9ja3NcbiAgICAvLyB0aWxsIGRpc2NvdmVyZWQgZW5kcG9pbnQgaXMgdXBkYXRlZCBpbiBjYWNoZVxuICAgIGF3YWl0IHVwZGF0ZURpc2NvdmVyZWRFbmRwb2ludEluQ2FjaGUoY29uZmlnLCB7XG4gICAgICAuLi5taWRkbGV3YXJlQ29uZmlnLFxuICAgICAgY29tbWFuZE5hbWUsXG4gICAgICBjYWNoZUtleSxcbiAgICAgIGVuZHBvaW50RGlzY292ZXJ5Q29tbWFuZEN0b3IsXG4gICAgfSk7XG4gIH0gZWxzZSBpZiAoaXNFbmRwb2ludERpc2NvdmVyeUVuYWJsZWQpIHtcbiAgICAvLyBEaXNjb3ZlciBlbmRwb2ludHMgb25seSBpZiBlbmRwb2ludCBkaXNjb3ZlcnkgaXMgZXhwbGljaXRseSBlbmFibGVkLlxuICAgIC8vIERvIG5vdCBjYWxsIGF3YWl0IGF3YWl0IG9uIEVuZHBvaW50IERpc2NvdmVyeSBBUEkgdXRpbGl0eSBzbyB0aGF0IGZ1bmN0aW9uXG4gICAgLy8gZG9lcyBub3QgYmxvY2ssIHRoZSBjb21tYW5kIHdpbGwgdXNlIGRpc2NvdmVyZWQgZW5kcG9pbnQsIGlmIGF2YWlsYWJsZS5cbiAgICB1cGRhdGVEaXNjb3ZlcmVkRW5kcG9pbnRJbkNhY2hlKGNvbmZpZywge1xuICAgICAgLi4ubWlkZGxld2FyZUNvbmZpZyxcbiAgICAgIGNvbW1hbmROYW1lLFxuICAgICAgY2FjaGVLZXksXG4gICAgICBlbmRwb2ludERpc2NvdmVyeUNvbW1hbmRDdG9yLFxuICAgIH0pO1xuICB9XG5cbiAgY29uc3QgeyByZXF1ZXN0IH0gPSBhcmdzO1xuICBpZiAoY2FjaGVLZXkgJiYgSHR0cFJlcXVlc3QuaXNJbnN0YW5jZShyZXF1ZXN0KSkge1xuICAgIGNvbnN0IGVuZHBvaW50ID0gY29uZmlnLmVuZHBvaW50Q2FjaGUuZ2V0RW5kcG9pbnQoY2FjaGVLZXkpO1xuICAgIGlmIChlbmRwb2ludCkge1xuICAgICAgcmVxdWVzdC5ob3N0bmFtZSA9IGVuZHBvaW50O1xuICAgIH1cbiAgfVxuXG4gIHJldHVybiBuZXh0KGFyZ3MpO1xufTtcbiJdfQ==
+
+/***/ }),
+
+/***/ 2329:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getCacheKey = void 0;
+/**
+ * Generate key to index the endpoints in the cache
+ */
+const getCacheKey = async (commandName, config, options) => {
+    const { accessKeyId } = await config.credentials();
+    const { identifiers } = options;
+    return JSON.stringify({
+        ...(accessKeyId && { accessKeyId }),
+        ...(identifiers && {
+            commandName,
+            identifiers: Object.entries(identifiers)
+                .sort()
+                .reduce((acc, [key, value]) => ({ ...acc, [key]: value }), {}),
+        }),
+    });
+};
+exports.getCacheKey = getCacheKey;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZ2V0Q2FjaGVLZXkuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvZ2V0Q2FjaGVLZXkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBRUE7O0dBRUc7QUFDSSxNQUFNLFdBQVcsR0FBRyxLQUFLLEVBQzlCLFdBQW1CLEVBQ25CLE1BQThDLEVBQzlDLE9BRUMsRUFDRCxFQUFFO0lBQ0YsTUFBTSxFQUFFLFdBQVcsRUFBRSxHQUFHLE1BQU0sTUFBTSxDQUFDLFdBQVcsRUFBRSxDQUFDO0lBQ25ELE1BQU0sRUFBRSxXQUFXLEVBQUUsR0FBRyxPQUFPLENBQUM7SUFDaEMsT0FBTyxJQUFJLENBQUMsU0FBUyxDQUFDO1FBQ3BCLEdBQUcsQ0FBQyxXQUFXLElBQUksRUFBRSxXQUFXLEVBQUUsQ0FBQztRQUNuQyxHQUFHLENBQUMsV0FBVyxJQUFJO1lBQ2pCLFdBQVc7WUFDWCxXQUFXLEVBQUUsTUFBTSxDQUFDLE9BQU8sQ0FBQyxXQUFXLENBQUM7aUJBQ3JDLElBQUksRUFBRTtpQkFDTixNQUFNLENBQUMsQ0FBQyxHQUFHLEVBQUUsQ0FBQyxHQUFHLEVBQUUsS0FBSyxDQUFDLEVBQUUsRUFBRSxDQUFDLENBQUMsRUFBRSxHQUFHLEdBQUcsRUFBRSxDQUFDLEdBQUcsQ0FBQyxFQUFFLEtBQUssRUFBRSxDQUFDLEVBQUUsRUFBRSxDQUFDO1NBQ2pFLENBQUM7S0FDSCxDQUFDLENBQUM7QUFDTCxDQUFDLENBQUM7QUFsQlcsUUFBQSxXQUFXLGVBa0J0QiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IENyZWRlbnRpYWxzLCBQcm92aWRlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG4vKipcbiAqIEdlbmVyYXRlIGtleSB0byBpbmRleCB0aGUgZW5kcG9pbnRzIGluIHRoZSBjYWNoZVxuICovXG5leHBvcnQgY29uc3QgZ2V0Q2FjaGVLZXkgPSBhc3luYyAoXG4gIGNvbW1hbmROYW1lOiBzdHJpbmcsXG4gIGNvbmZpZzogeyBjcmVkZW50aWFsczogUHJvdmlkZXI8Q3JlZGVudGlhbHM+IH0sXG4gIG9wdGlvbnM6IHtcbiAgICBpZGVudGlmaWVycz86IHsgW2tleTogc3RyaW5nXTogc3RyaW5nIH07XG4gIH1cbikgPT4ge1xuICBjb25zdCB7IGFjY2Vzc0tleUlkIH0gPSBhd2FpdCBjb25maWcuY3JlZGVudGlhbHMoKTtcbiAgY29uc3QgeyBpZGVudGlmaWVycyB9ID0gb3B0aW9ucztcbiAgcmV0dXJuIEpTT04uc3RyaW5naWZ5KHtcbiAgICAuLi4oYWNjZXNzS2V5SWQgJiYgeyBhY2Nlc3NLZXlJZCB9KSxcbiAgICAuLi4oaWRlbnRpZmllcnMgJiYge1xuICAgICAgY29tbWFuZE5hbWUsXG4gICAgICBpZGVudGlmaWVyczogT2JqZWN0LmVudHJpZXMoaWRlbnRpZmllcnMpXG4gICAgICAgIC5zb3J0KClcbiAgICAgICAgLnJlZHVjZSgoYWNjLCBba2V5LCB2YWx1ZV0pID0+ICh7IC4uLmFjYywgW2tleV06IHZhbHVlIH0pLCB7fSksXG4gICAgfSksXG4gIH0pO1xufTtcbiJdfQ==
+
+/***/ }),
+
+/***/ 5086:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getEndpointDiscoveryOptionalPlugin = exports.getEndpointDiscoveryRequiredPlugin = exports.getEndpointDiscoveryPlugin = exports.endpointDiscoveryMiddlewareOptions = void 0;
+const endpointDiscoveryMiddleware_1 = __nccwpck_require__(9251);
+exports.endpointDiscoveryMiddlewareOptions = {
+    name: "endpointDiscoveryMiddleware",
+    step: "build",
+    tags: ["ENDPOINT_DISCOVERY"],
+    override: true,
+};
+const getEndpointDiscoveryPlugin = (pluginConfig, middlewareConfig) => ({
+    applyToStack: (commandStack) => {
+        commandStack.add(endpointDiscoveryMiddleware_1.endpointDiscoveryMiddleware(pluginConfig, middlewareConfig), exports.endpointDiscoveryMiddlewareOptions);
+    },
+});
+exports.getEndpointDiscoveryPlugin = getEndpointDiscoveryPlugin;
+const getEndpointDiscoveryRequiredPlugin = (pluginConfig, middlewareConfig) => ({
+    applyToStack: (commandStack) => {
+        commandStack.add(endpointDiscoveryMiddleware_1.endpointDiscoveryMiddleware(pluginConfig, { ...middlewareConfig, isDiscoveredEndpointRequired: true }), exports.endpointDiscoveryMiddlewareOptions);
+    },
+});
+exports.getEndpointDiscoveryRequiredPlugin = getEndpointDiscoveryRequiredPlugin;
+const getEndpointDiscoveryOptionalPlugin = (pluginConfig, middlewareConfig) => ({
+    applyToStack: (commandStack) => {
+        commandStack.add(endpointDiscoveryMiddleware_1.endpointDiscoveryMiddleware(pluginConfig, { ...middlewareConfig, isDiscoveredEndpointRequired: false }), exports.endpointDiscoveryMiddlewareOptions);
+    },
+});
+exports.getEndpointDiscoveryOptionalPlugin = getEndpointDiscoveryOptionalPlugin;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZ2V0RW5kcG9pbnREaXNjb3ZlcnlQbHVnaW4uanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvZ2V0RW5kcG9pbnREaXNjb3ZlcnlQbHVnaW4udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBRUEsK0VBQTRFO0FBRy9ELFFBQUEsa0NBQWtDLEdBQXdCO0lBQ3JFLElBQUksRUFBRSw2QkFBNkI7SUFDbkMsSUFBSSxFQUFFLE9BQU87SUFDYixJQUFJLEVBQUUsQ0FBQyxvQkFBb0IsQ0FBQztJQUM1QixRQUFRLEVBQUUsSUFBSTtDQUNmLENBQUM7QUFTSyxNQUFNLDBCQUEwQixHQUFHLENBQ3hDLFlBQWtFLEVBQ2xFLGdCQUFtRCxFQUM5QixFQUFFLENBQUMsQ0FBQztJQUN6QixZQUFZLEVBQUUsQ0FBQyxZQUFZLEVBQUUsRUFBRTtRQUM3QixZQUFZLENBQUMsR0FBRyxDQUFDLHlEQUEyQixDQUFDLFlBQVksRUFBRSxnQkFBZ0IsQ0FBQyxFQUFFLDBDQUFrQyxDQUFDLENBQUM7SUFDcEgsQ0FBQztDQUNGLENBQUMsQ0FBQztBQVBVLFFBQUEsMEJBQTBCLDhCQU9wQztBQUVJLE1BQU0sa0NBQWtDLEdBQUcsQ0FDaEQsWUFBa0UsRUFDbEUsZ0JBQXlGLEVBQ3BFLEVBQUUsQ0FBQyxDQUFDO0lBQ3pCLFlBQVksRUFBRSxDQUFDLFlBQVksRUFBRSxFQUFFO1FBQzdCLFlBQVksQ0FBQyxHQUFHLENBQ2QseURBQTJCLENBQUMsWUFBWSxFQUFFLEVBQUUsR0FBRyxnQkFBZ0IsRUFBRSw0QkFBNEIsRUFBRSxJQUFJLEVBQUUsQ0FBQyxFQUN0RywwQ0FBa0MsQ0FDbkMsQ0FBQztJQUNKLENBQUM7Q0FDRixDQUFDLENBQUM7QUFWVSxRQUFBLGtDQUFrQyxzQ0FVNUM7QUFFSSxNQUFNLGtDQUFrQyxHQUFHLENBQ2hELFlBQWtFLEVBQ2xFLGdCQUF5RixFQUNwRSxFQUFFLENBQUMsQ0FBQztJQUN6QixZQUFZLEVBQUUsQ0FBQyxZQUFZLEVBQUUsRUFBRTtRQUM3QixZQUFZLENBQUMsR0FBRyxDQUNkLHlEQUEyQixDQUFDLFlBQVksRUFBRSxFQUFFLEdBQUcsZ0JBQWdCLEVBQUUsNEJBQTRCLEVBQUUsS0FBSyxFQUFFLENBQUMsRUFDdkcsMENBQWtDLENBQ25DLENBQUM7SUFDSixDQUFDO0NBQ0YsQ0FBQyxDQUFDO0FBVlUsUUFBQSxrQ0FBa0Msc0NBVTVDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQnVpbGRIYW5kbGVyT3B0aW9ucywgSHR0cEhhbmRsZXJPcHRpb25zLCBNaWRkbGV3YXJlU3RhY2ssIFBsdWdnYWJsZSB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5pbXBvcnQgeyBlbmRwb2ludERpc2NvdmVyeU1pZGRsZXdhcmUgfSBmcm9tIFwiLi9lbmRwb2ludERpc2NvdmVyeU1pZGRsZXdhcmVcIjtcbmltcG9ydCB7IEVuZHBvaW50RGlzY292ZXJ5UmVzb2x2ZWRDb25maWcsIFByZXZpb3VzbHlSZXNvbHZlZCB9IGZyb20gXCIuL3Jlc29sdmVFbmRwb2ludERpc2NvdmVyeUNvbmZpZ1wiO1xuXG5leHBvcnQgY29uc3QgZW5kcG9pbnREaXNjb3ZlcnlNaWRkbGV3YXJlT3B0aW9uczogQnVpbGRIYW5kbGVyT3B0aW9ucyA9IHtcbiAgbmFtZTogXCJlbmRwb2ludERpc2NvdmVyeU1pZGRsZXdhcmVcIixcbiAgc3RlcDogXCJidWlsZFwiLFxuICB0YWdzOiBbXCJFTkRQT0lOVF9ESVNDT1ZFUllcIl0sXG4gIG92ZXJyaWRlOiB0cnVlLFxufTtcblxuZXhwb3J0IGludGVyZmFjZSBFbmRwb2ludERpc2NvdmVyeU1pZGRsZXdhcmVDb25maWcge1xuICBpc0Rpc2NvdmVyZWRFbmRwb2ludFJlcXVpcmVkOiBib29sZWFuO1xuICBjbGllbnRTdGFjazogTWlkZGxld2FyZVN0YWNrPGFueSwgYW55PjtcbiAgb3B0aW9ucz86IEh0dHBIYW5kbGVyT3B0aW9ucztcbiAgaWRlbnRpZmllcnM/OiB7IFtrZXk6IHN0cmluZ106IHN0cmluZyB9O1xufVxuXG5leHBvcnQgY29uc3QgZ2V0RW5kcG9pbnREaXNjb3ZlcnlQbHVnaW4gPSAoXG4gIHBsdWdpbkNvbmZpZzogRW5kcG9pbnREaXNjb3ZlcnlSZXNvbHZlZENvbmZpZyAmIFByZXZpb3VzbHlSZXNvbHZlZCxcbiAgbWlkZGxld2FyZUNvbmZpZzogRW5kcG9pbnREaXNjb3ZlcnlNaWRkbGV3YXJlQ29uZmlnXG4pOiBQbHVnZ2FibGU8YW55LCBhbnk+ID0+ICh7XG4gIGFwcGx5VG9TdGFjazogKGNvbW1hbmRTdGFjaykgPT4ge1xuICAgIGNvbW1hbmRTdGFjay5hZGQoZW5kcG9pbnREaXNjb3ZlcnlNaWRkbGV3YXJlKHBsdWdpbkNvbmZpZywgbWlkZGxld2FyZUNvbmZpZyksIGVuZHBvaW50RGlzY292ZXJ5TWlkZGxld2FyZU9wdGlvbnMpO1xuICB9LFxufSk7XG5cbmV4cG9ydCBjb25zdCBnZXRFbmRwb2ludERpc2NvdmVyeVJlcXVpcmVkUGx1Z2luID0gKFxuICBwbHVnaW5Db25maWc6IEVuZHBvaW50RGlzY292ZXJ5UmVzb2x2ZWRDb25maWcgJiBQcmV2aW91c2x5UmVzb2x2ZWQsXG4gIG1pZGRsZXdhcmVDb25maWc6IE9taXQ8RW5kcG9pbnREaXNjb3ZlcnlNaWRkbGV3YXJlQ29uZmlnLCBcImlzRGlzY292ZXJlZEVuZHBvaW50UmVxdWlyZWRcIj5cbik6IFBsdWdnYWJsZTxhbnksIGFueT4gPT4gKHtcbiAgYXBwbHlUb1N0YWNrOiAoY29tbWFuZFN0YWNrKSA9PiB7XG4gICAgY29tbWFuZFN0YWNrLmFkZChcbiAgICAgIGVuZHBvaW50RGlzY292ZXJ5TWlkZGxld2FyZShwbHVnaW5Db25maWcsIHsgLi4ubWlkZGxld2FyZUNvbmZpZywgaXNEaXNjb3ZlcmVkRW5kcG9pbnRSZXF1aXJlZDogdHJ1ZSB9KSxcbiAgICAgIGVuZHBvaW50RGlzY292ZXJ5TWlkZGxld2FyZU9wdGlvbnNcbiAgICApO1xuICB9LFxufSk7XG5cbmV4cG9ydCBjb25zdCBnZXRFbmRwb2ludERpc2NvdmVyeU9wdGlvbmFsUGx1Z2luID0gKFxuICBwbHVnaW5Db25maWc6IEVuZHBvaW50RGlzY292ZXJ5UmVzb2x2ZWRDb25maWcgJiBQcmV2aW91c2x5UmVzb2x2ZWQsXG4gIG1pZGRsZXdhcmVDb25maWc6IE9taXQ8RW5kcG9pbnREaXNjb3ZlcnlNaWRkbGV3YXJlQ29uZmlnLCBcImlzRGlzY292ZXJlZEVuZHBvaW50UmVxdWlyZWRcIj5cbik6IFBsdWdnYWJsZTxhbnksIGFueT4gPT4gKHtcbiAgYXBwbHlUb1N0YWNrOiAoY29tbWFuZFN0YWNrKSA9PiB7XG4gICAgY29tbWFuZFN0YWNrLmFkZChcbiAgICAgIGVuZHBvaW50RGlzY292ZXJ5TWlkZGxld2FyZShwbHVnaW5Db25maWcsIHsgLi4ubWlkZGxld2FyZUNvbmZpZywgaXNEaXNjb3ZlcmVkRW5kcG9pbnRSZXF1aXJlZDogZmFsc2UgfSksXG4gICAgICBlbmRwb2ludERpc2NvdmVyeU1pZGRsZXdhcmVPcHRpb25zXG4gICAgKTtcbiAgfSxcbn0pO1xuIl19
+
+/***/ }),
+
+/***/ 8472:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(9972), exports);
+tslib_1.__exportStar(__nccwpck_require__(5086), exports);
+tslib_1.__exportStar(__nccwpck_require__(3236), exports);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsMkVBQWlEO0FBQ2pELHVFQUE2QztBQUM3QywyREFBaUMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgKiBmcm9tIFwiLi9yZXNvbHZlRW5kcG9pbnREaXNjb3ZlcnlDb25maWdcIjtcbmV4cG9ydCAqIGZyb20gXCIuL2dldEVuZHBvaW50RGlzY292ZXJ5UGx1Z2luXCI7XG5leHBvcnQgKiBmcm9tIFwiLi9jb25maWd1cmF0aW9uc1wiO1xuIl19
+
+/***/ }),
+
+/***/ 9972:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.resolveEndpointDiscoveryConfig = void 0;
+const endpoint_cache_1 = __nccwpck_require__(1350);
+const resolveEndpointDiscoveryConfig = (input, endpointDiscoveryCommandCtor) => {
+    var _a;
+    return ({
+        ...input,
+        endpointDiscoveryCommandCtor,
+        endpointCache: new endpoint_cache_1.EndpointCache((_a = input.endpointCacheSize) !== null && _a !== void 0 ? _a : 1000),
+        endpointDiscoveryEnabled: input.endpointDiscoveryEnabled !== undefined
+            ? () => Promise.resolve(input.endpointDiscoveryEnabled)
+            : input.endpointDiscoveryEnabledProvider,
+        isClientEndpointDiscoveryEnabled: input.endpointDiscoveryEnabled !== undefined,
+    });
+};
+exports.resolveEndpointDiscoveryConfig = resolveEndpointDiscoveryConfig;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmVzb2x2ZUVuZHBvaW50RGlzY292ZXJ5Q29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3Jlc29sdmVFbmRwb2ludERpc2NvdmVyeUNvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSw0REFBd0Q7QUFxRGpELE1BQU0sOEJBQThCLEdBQUcsQ0FDNUMsS0FBNEQsRUFDNUQsNEJBQTRELEVBQ3ZCLEVBQUU7O0lBQUMsT0FBQSxDQUFDO1FBQ3pDLEdBQUcsS0FBSztRQUNSLDRCQUE0QjtRQUM1QixhQUFhLEVBQUUsSUFBSSw4QkFBYSxDQUFDLE1BQUEsS0FBSyxDQUFDLGlCQUFpQixtQ0FBSSxJQUFJLENBQUM7UUFDakUsd0JBQXdCLEVBQ3RCLEtBQUssQ0FBQyx3QkFBd0IsS0FBSyxTQUFTO1lBQzFDLENBQUMsQ0FBQyxHQUFHLEVBQUUsQ0FBQyxPQUFPLENBQUMsT0FBTyxDQUFDLEtBQUssQ0FBQyx3QkFBd0IsQ0FBQztZQUN2RCxDQUFDLENBQUMsS0FBSyxDQUFDLGdDQUFnQztRQUM1QyxnQ0FBZ0MsRUFBRSxLQUFLLENBQUMsd0JBQXdCLEtBQUssU0FBUztLQUMvRSxDQUFDLENBQUE7Q0FBQSxDQUFDO0FBWlUsUUFBQSw4QkFBOEIsa0NBWXhDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgRW5kcG9pbnRDYWNoZSB9IGZyb20gXCJAYXdzLXNkay9lbmRwb2ludC1jYWNoZVwiO1xuaW1wb3J0IHsgQ3JlZGVudGlhbHMsIFByb3ZpZGVyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmV4cG9ydCBpbnRlcmZhY2UgRW5kcG9pbnREaXNjb3ZlcnlJbnB1dENvbmZpZyB7fVxuXG5leHBvcnQgaW50ZXJmYWNlIFByZXZpb3VzbHlSZXNvbHZlZCB7XG4gIGlzQ3VzdG9tRW5kcG9pbnQ6IGJvb2xlYW47XG4gIGNyZWRlbnRpYWxzOiBQcm92aWRlcjxDcmVkZW50aWFscz47XG4gIGVuZHBvaW50RGlzY292ZXJ5RW5hYmxlZFByb3ZpZGVyOiBQcm92aWRlcjxib29sZWFuIHwgdW5kZWZpbmVkPjtcbn1cblxuZXhwb3J0IGludGVyZmFjZSBFbmRwb2ludERpc2NvdmVyeUlucHV0Q29uZmlnIHtcbiAgLyoqXG4gICAqIFRoZSBzaXplIG9mIHRoZSBjbGllbnQgY2FjaGUgc3RvcmluZyBlbmRwb2ludHMgZnJvbSBlbmRwb2ludCBkaXNjb3Zlcnkgb3BlcmF0aW9ucy5cbiAgICogRGVmYXVsdHMgdG8gMTAwMC5cbiAgICovXG4gIGVuZHBvaW50Q2FjaGVTaXplPzogbnVtYmVyO1xuXG4gIC8qKlxuICAgKiBXaGV0aGVyIHRvIGNhbGwgb3BlcmF0aW9ucyB3aXRoIGVuZHBvaW50cyBnaXZlbiBieSBzZXJ2aWNlIGR5bmFtaWNhbGx5LlxuICAgKiBTZXR0aW5nIHRoaXMgY29uZmlnIHRvIGB0cnVlYCB3aWxsIGVuYWJsZSBlbmRwb2ludCBkaXNjb3ZlcnkgZm9yIGFsbCBhcHBsaWNhYmxlIG9wZXJhdGlvbnMuXG4gICAqIFNldHRpbmcgaXQgdG8gYGZhbHNlYCB3aWxsIGV4cGxpY2l0bHkgZGlzYWJsZSBlbmRwb2ludCBkaXNjb3ZlcnkgZXZlbiB0aG91Z2ggb3BlcmF0aW9ucyB0aGF0XG4gICAqIHJlcXVpcmUgZW5kcG9pbnQgZGlzY292ZXJ5IHdpbGwgcHJlc3VtYWJseSBmYWlsLiBMZWF2aW5nIGl0IHRvIHVuZGVmaW5lZCBtZWFucyBTREsgb25seSBkb1xuICAgKiBlbmRwb2ludCBkaXNjb3Zlcnkgd2hlbiBpdCdzIHJlcXVpcmVkLiBEZWZhdWx0cyB0byBgdW5kZWZpbmVkYC5cbiAgICovXG4gIGVuZHBvaW50RGlzY292ZXJ5RW5hYmxlZD86IGJvb2xlYW4gfCB1bmRlZmluZWQ7XG59XG5leHBvcnQgaW50ZXJmYWNlIEVuZHBvaW50RGlzY292ZXJ5UmVzb2x2ZWRDb25maWcge1xuICAvKipcbiAgICogTFJVIENhY2hlIHdoaWNoIHN0b3JlcyBlbmRwb2ludHMgZnJvbSBlbmRwb2ludCBkaXNjb3Zlcnkgb3BlcmF0aW9ucy5cbiAgICogVGhlIHNpemUgaXMgZWl0aGVyIHByb3ZpZGVkIGJ5IHtAbGluayBFbmRwb2ludERpc2NvdmVyeUlucHV0Q29uZmlnLmVuZHBvaW50Q2FjaGVTaXplfS5cbiAgICovXG4gIGVuZHBvaW50Q2FjaGU6IEVuZHBvaW50Q2FjaGU7XG5cbiAgLyoqXG4gICAqIFRoZSBjb25zdHJ1Y3RvciBvZiB0aGUgQ29tbWFuZCB1c2VkIGZvciBkaXNjb3ZlcmluZyBlbmRwb2ludHMuXG4gICAqIEBpbnRlcm5hbFxuICAgKi9cbiAgZW5kcG9pbnREaXNjb3ZlcnlDb21tYW5kQ3RvcjogbmV3IChjb21hbmRDb25maWc6IGFueSkgPT4gYW55O1xuXG4gIC8qKlxuICAgKiBSZXNvbHZlZCB2YWx1ZSBmb3IgaW5wdXQgY29uZmlnIHtAbGluayBFbmRwb2ludERpc2NvdmVyeUlucHV0Q29uZmlnLmVuZHBvaW50RGlzY292ZXJ5RW5hYmxlZH0uXG4gICAqL1xuICBlbmRwb2ludERpc2NvdmVyeUVuYWJsZWQ6IFByb3ZpZGVyPGJvb2xlYW4gfCB1bmRlZmluZWQ+O1xuXG4gIC8qKlxuICAgKiBTdG9yZXMgd2hldGhlciBlbmRwb2ludCBkaXNjb3ZlcnkgY29uZmlndXJhdGlvbiBpcyBzZXQgbG9jYWxseSBieSBwYXNzaW5nXG4gICAqIHtAbGluayBFbmRwb2ludERpc2NvdmVyeUlucHV0Q29uZmlnLmVuZHBvaW50RGlzY292ZXJ5RW5hYmxlZH0gZHVyaW5nIGNsaWVudCBjcmVhdGlvbi5cbiAgICogQGludGVybmFsXG4gICAqL1xuICBpc0NsaWVudEVuZHBvaW50RGlzY292ZXJ5RW5hYmxlZDogYm9vbGVhbjtcbn1cblxuZXhwb3J0IGNvbnN0IHJlc29sdmVFbmRwb2ludERpc2NvdmVyeUNvbmZpZyA9IDxUPihcbiAgaW5wdXQ6IFQgJiBQcmV2aW91c2x5UmVzb2x2ZWQgJiBFbmRwb2ludERpc2NvdmVyeUlucHV0Q29uZmlnLFxuICBlbmRwb2ludERpc2NvdmVyeUNvbW1hbmRDdG9yOiBuZXcgKGNvbWFuZENvbmZpZzogYW55KSA9PiBhbnlcbik6IFQgJiBFbmRwb2ludERpc2NvdmVyeVJlc29sdmVkQ29uZmlnID0+ICh7XG4gIC4uLmlucHV0LFxuICBlbmRwb2ludERpc2NvdmVyeUNvbW1hbmRDdG9yLFxuICBlbmRwb2ludENhY2hlOiBuZXcgRW5kcG9pbnRDYWNoZShpbnB1dC5lbmRwb2ludENhY2hlU2l6ZSA/PyAxMDAwKSxcbiAgZW5kcG9pbnREaXNjb3ZlcnlFbmFibGVkOlxuICAgIGlucHV0LmVuZHBvaW50RGlzY292ZXJ5RW5hYmxlZCAhPT0gdW5kZWZpbmVkXG4gICAgICA/ICgpID0+IFByb21pc2UucmVzb2x2ZShpbnB1dC5lbmRwb2ludERpc2NvdmVyeUVuYWJsZWQpXG4gICAgICA6IGlucHV0LmVuZHBvaW50RGlzY292ZXJ5RW5hYmxlZFByb3ZpZGVyLFxuICBpc0NsaWVudEVuZHBvaW50RGlzY292ZXJ5RW5hYmxlZDogaW5wdXQuZW5kcG9pbnREaXNjb3ZlcnlFbmFibGVkICE9PSB1bmRlZmluZWQsXG59KTtcbiJdfQ==
+
+/***/ }),
+
+/***/ 2561:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.updateDiscoveredEndpointInCache = void 0;
+const requestQueue = {};
+const updateDiscoveredEndpointInCache = async (config, options) => new Promise((resolve, reject) => {
+    const { endpointCache } = config;
+    const { cacheKey, commandName, identifiers } = options;
+    const endpoints = endpointCache.get(cacheKey);
+    if (endpoints && endpoints.length === 1 && endpoints[0].Address === "") {
+        // Endpoint operation already in-flight.
+        // Add request to request queue only if discovered endpoint is required.
+        if (options.isDiscoveredEndpointRequired) {
+            if (!requestQueue[cacheKey])
+                requestQueue[cacheKey] = [];
+            requestQueue[cacheKey].push({ resolve, reject });
+        }
+        else {
+            resolve();
+        }
+    }
+    else if (endpoints && endpoints.length > 0) {
+        // Endpoint record is present in cache.
+        resolve();
+    }
+    else {
+        // put in a placeholder for endpoints already requested, prevent
+        // too much in-flight calls.
+        const placeholderEndpoints = [{ Address: "", CachePeriodInMinutes: 1 }];
+        endpointCache.set(cacheKey, placeholderEndpoints);
+        const command = new options.endpointDiscoveryCommandCtor({
+            Operation: commandName.substr(0, commandName.length - 7),
+            Identifiers: identifiers,
+        });
+        const handler = command.resolveMiddleware(options.clientStack, config, options.options);
+        handler(command)
+            .then((result) => {
+            endpointCache.set(cacheKey, result.output.Endpoints);
+            if (requestQueue[cacheKey]) {
+                requestQueue[cacheKey].forEach(({ resolve }) => {
+                    resolve();
+                });
+                delete requestQueue[cacheKey];
+            }
+            resolve();
+        })
+            .catch((error) => {
+            var _a;
+            if (error.name === "InvalidEndpointException" || ((_a = error.$metadata) === null || _a === void 0 ? void 0 : _a.httpStatusCode) === 421) {
+                // Endpoint is invalid, delete the cache entry.
+                endpointCache.delete(cacheKey);
+            }
+            const errorToThrow = Object.assign(new Error(`The operation to discover endpoint failed.` +
+                ` Please retry, or provide a custom endpoint and disable endpoint discovery to proceed.`), { reason: error });
+            //fail all the pending requests in batch
+            if (requestQueue[cacheKey]) {
+                requestQueue[cacheKey].forEach(({ reject }) => {
+                    reject(errorToThrow);
+                });
+                delete requestQueue[cacheKey];
+            }
+            if (options.isDiscoveredEndpointRequired) {
+                reject(errorToThrow);
+            }
+            else {
+                // Endpoint Discovery is optional. No error needs to be thrown.
+                // Set placeHolder endpoint to disable refresh for one minute.
+                endpointCache.set(cacheKey, placeholderEndpoints);
+                resolve();
+            }
+        });
+    }
+});
+exports.updateDiscoveredEndpointInCache = updateDiscoveredEndpointInCache;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidXBkYXRlRGlzY292ZXJlZEVuZHBvaW50SW5DYWNoZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy91cGRhdGVEaXNjb3ZlcmVkRW5kcG9pbnRJbkNhY2hlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQVNBLE1BQU0sWUFBWSxHQUFpRSxFQUFFLENBQUM7QUFFL0UsTUFBTSwrQkFBK0IsR0FBRyxLQUFLLEVBQ2xELE1BQTRELEVBQzVELE9BQStDLEVBQy9DLEVBQUUsQ0FDRixJQUFJLE9BQU8sQ0FBTyxDQUFDLE9BQU8sRUFBRSxNQUFNLEVBQUUsRUFBRTtJQUNwQyxNQUFNLEVBQUUsYUFBYSxFQUFFLEdBQUcsTUFBTSxDQUFDO0lBQ2pDLE1BQU0sRUFBRSxRQUFRLEVBQUUsV0FBVyxFQUFFLFdBQVcsRUFBRSxHQUFHLE9BQU8sQ0FBQztJQUV2RCxNQUFNLFNBQVMsR0FBRyxhQUFhLENBQUMsR0FBRyxDQUFDLFFBQVEsQ0FBQyxDQUFDO0lBRTlDLElBQUksU0FBUyxJQUFJLFNBQVMsQ0FBQyxNQUFNLEtBQUssQ0FBQyxJQUFJLFNBQVMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxPQUFPLEtBQUssRUFBRSxFQUFFO1FBQ3RFLHdDQUF3QztRQUN4Qyx3RUFBd0U7UUFDeEUsSUFBSSxPQUFPLENBQUMsNEJBQTRCLEVBQUU7WUFDeEMsSUFBSSxDQUFDLFlBQVksQ0FBQyxRQUFRLENBQUM7Z0JBQUUsWUFBWSxDQUFDLFFBQVEsQ0FBQyxHQUFHLEVBQUUsQ0FBQztZQUN6RCxZQUFZLENBQUMsUUFBUSxDQUFDLENBQUMsSUFBSSxDQUFDLEVBQUUsT0FBTyxFQUFFLE1BQU0sRUFBRSxDQUFDLENBQUM7U0FDbEQ7YUFBTTtZQUNMLE9BQU8sRUFBRSxDQUFDO1NBQ1g7S0FDRjtTQUFNLElBQUksU0FBUyxJQUFJLFNBQVMsQ0FBQyxNQUFNLEdBQUcsQ0FBQyxFQUFFO1FBQzVDLHVDQUF1QztRQUN2QyxPQUFPLEVBQUUsQ0FBQztLQUNYO1NBQU07UUFDTCxnRUFBZ0U7UUFDaEUsNEJBQTRCO1FBQzVCLE1BQU0sb0JBQW9CLEdBQUcsQ0FBQyxFQUFFLE9BQU8sRUFBRSxFQUFFLEVBQUUsb0JBQW9CLEVBQUUsQ0FBQyxFQUFFLENBQUMsQ0FBQztRQUN4RSxhQUFhLENBQUMsR0FBRyxDQUFDLFFBQVEsRUFBRSxvQkFBb0IsQ0FBQyxDQUFDO1FBRWxELE1BQU0sT0FBTyxHQUFHLElBQUksT0FBTyxDQUFDLDRCQUE0QixDQUFDO1lBQ3ZELFNBQVMsRUFBRSxXQUFXLENBQUMsTUFBTSxDQUFDLENBQUMsRUFBRSxXQUFXLENBQUMsTUFBTSxHQUFHLENBQUMsQ0FBQztZQUN4RCxXQUFXLEVBQUUsV0FBVztTQUN6QixDQUFDLENBQUM7UUFDSCxNQUFNLE9BQU8sR0FBRyxPQUFPLENBQUMsaUJBQWlCLENBQUMsT0FBTyxDQUFDLFdBQVcsRUFBRSxNQUFNLEVBQUUsT0FBTyxDQUFDLE9BQU8sQ0FBQyxDQUFDO1FBQ3hGLE9BQU8sQ0FBQyxPQUFPLENBQUM7YUFDYixJQUFJLENBQUMsQ0FBQyxNQUFXLEVBQUUsRUFBRTtZQUNwQixhQUFhLENBQUMsR0FBRyxDQUFDLFFBQVEsRUFBRSxNQUFNLENBQUMsTUFBTSxDQUFDLFNBQVMsQ0FBQyxDQUFDO1lBQ3JELElBQUksWUFBWSxDQUFDLFFBQVEsQ0FBQyxFQUFFO2dCQUMxQixZQUFZLENBQUMsUUFBUSxDQUFDLENBQUMsT0FBTyxDQUFDLENBQUMsRUFBRSxPQUFPLEVBQUUsRUFBRSxFQUFFO29CQUM3QyxPQUFPLEVBQUUsQ0FBQztnQkFDWixDQUFDLENBQUMsQ0FBQztnQkFDSCxPQUFPLFlBQVksQ0FBQyxRQUFRLENBQUMsQ0FBQzthQUMvQjtZQUNELE9BQU8sRUFBRSxDQUFDO1FBQ1osQ0FBQyxDQUFDO2FBQ0QsS0FBSyxDQUFDLENBQUMsS0FBVSxFQUFFLEVBQUU7O1lBQ3BCLElBQUksS0FBSyxDQUFDLElBQUksS0FBSywwQkFBMEIsSUFBSSxDQUFBLE1BQUEsS0FBSyxDQUFDLFNBQVMsMENBQUUsY0FBYyxNQUFLLEdBQUcsRUFBRTtnQkFDeEYsK0NBQStDO2dCQUMvQyxhQUFhLENBQUMsTUFBTSxDQUFDLFFBQVEsQ0FBQyxDQUFDO2FBQ2hDO1lBRUQsTUFBTSxZQUFZLEdBQUcsTUFBTSxDQUFDLE1BQU0sQ0FDaEMsSUFBSSxLQUFLLENBQ1AsNENBQTRDO2dCQUMxQyx3RkFBd0YsQ0FDM0YsRUFDRCxFQUFFLE1BQU0sRUFBRSxLQUFLLEVBQUUsQ0FDbEIsQ0FBQztZQUVGLHdDQUF3QztZQUN4QyxJQUFJLFlBQVksQ0FBQyxRQUFRLENBQUMsRUFBRTtnQkFDMUIsWUFBWSxDQUFDLFFBQVEsQ0FBQyxDQUFDLE9BQU8sQ0FBQyxDQUFDLEVBQUUsTUFBTSxFQUFFLEVBQUUsRUFBRTtvQkFDNUMsTUFBTSxDQUFDLFlBQVksQ0FBQyxDQUFDO2dCQUN2QixDQUFDLENBQUMsQ0FBQztnQkFDSCxPQUFPLFlBQVksQ0FBQyxRQUFRLENBQUMsQ0FBQzthQUMvQjtZQUVELElBQUksT0FBTyxDQUFDLDRCQUE0QixFQUFFO2dCQUN4QyxNQUFNLENBQUMsWUFBWSxDQUFDLENBQUM7YUFDdEI7aUJBQU07Z0JBQ0wsK0RBQStEO2dCQUMvRCw4REFBOEQ7Z0JBQzlELGFBQWEsQ0FBQyxHQUFHLENBQUMsUUFBUSxFQUFFLG9CQUFvQixDQUFDLENBQUM7Z0JBQ2xELE9BQU8sRUFBRSxDQUFDO2FBQ1g7UUFDSCxDQUFDLENBQUMsQ0FBQztLQUNOO0FBQ0gsQ0FBQyxDQUFDLENBQUM7QUE1RVEsUUFBQSwrQkFBK0IsbUNBNEV2QyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEVuZHBvaW50RGlzY292ZXJ5TWlkZGxld2FyZUNvbmZpZyB9IGZyb20gXCIuL2dldEVuZHBvaW50RGlzY292ZXJ5UGx1Z2luXCI7XG5pbXBvcnQgeyBFbmRwb2ludERpc2NvdmVyeVJlc29sdmVkQ29uZmlnLCBQcmV2aW91c2x5UmVzb2x2ZWQgfSBmcm9tIFwiLi9yZXNvbHZlRW5kcG9pbnREaXNjb3ZlcnlDb25maWdcIjtcblxuZXhwb3J0IGludGVyZmFjZSBVcGRhdGVEaXNjb3ZlcmVkRW5kcG9pbnRJbkNhY2hlT3B0aW9ucyBleHRlbmRzIEVuZHBvaW50RGlzY292ZXJ5TWlkZGxld2FyZUNvbmZpZyB7XG4gIGNhY2hlS2V5OiBzdHJpbmc7XG4gIGNvbW1hbmROYW1lOiBzdHJpbmc7XG4gIGVuZHBvaW50RGlzY292ZXJ5Q29tbWFuZEN0b3I6IG5ldyAoY29tYW5kQ29uZmlnOiBhbnkpID0+IGFueTtcbn1cblxuY29uc3QgcmVxdWVzdFF1ZXVlOiB7IFtrZXk6IHN0cmluZ106IHsgcmVzb2x2ZTogRnVuY3Rpb247IHJlamVjdDogRnVuY3Rpb24gfVtdIH0gPSB7fTtcblxuZXhwb3J0IGNvbnN0IHVwZGF0ZURpc2NvdmVyZWRFbmRwb2ludEluQ2FjaGUgPSBhc3luYyAoXG4gIGNvbmZpZzogRW5kcG9pbnREaXNjb3ZlcnlSZXNvbHZlZENvbmZpZyAmIFByZXZpb3VzbHlSZXNvbHZlZCxcbiAgb3B0aW9uczogVXBkYXRlRGlzY292ZXJlZEVuZHBvaW50SW5DYWNoZU9wdGlvbnNcbikgPT5cbiAgbmV3IFByb21pc2U8dm9pZD4oKHJlc29sdmUsIHJlamVjdCkgPT4ge1xuICAgIGNvbnN0IHsgZW5kcG9pbnRDYWNoZSB9ID0gY29uZmlnO1xuICAgIGNvbnN0IHsgY2FjaGVLZXksIGNvbW1hbmROYW1lLCBpZGVudGlmaWVycyB9ID0gb3B0aW9ucztcblxuICAgIGNvbnN0IGVuZHBvaW50cyA9IGVuZHBvaW50Q2FjaGUuZ2V0KGNhY2hlS2V5KTtcblxuICAgIGlmIChlbmRwb2ludHMgJiYgZW5kcG9pbnRzLmxlbmd0aCA9PT0gMSAmJiBlbmRwb2ludHNbMF0uQWRkcmVzcyA9PT0gXCJcIikge1xuICAgICAgLy8gRW5kcG9pbnQgb3BlcmF0aW9uIGFscmVhZHkgaW4tZmxpZ2h0LlxuICAgICAgLy8gQWRkIHJlcXVlc3QgdG8gcmVxdWVzdCBxdWV1ZSBvbmx5IGlmIGRpc2NvdmVyZWQgZW5kcG9pbnQgaXMgcmVxdWlyZWQuXG4gICAgICBpZiAob3B0aW9ucy5pc0Rpc2NvdmVyZWRFbmRwb2ludFJlcXVpcmVkKSB7XG4gICAgICAgIGlmICghcmVxdWVzdFF1ZXVlW2NhY2hlS2V5XSkgcmVxdWVzdFF1ZXVlW2NhY2hlS2V5XSA9IFtdO1xuICAgICAgICByZXF1ZXN0UXVldWVbY2FjaGVLZXldLnB1c2goeyByZXNvbHZlLCByZWplY3QgfSk7XG4gICAgICB9IGVsc2Uge1xuICAgICAgICByZXNvbHZlKCk7XG4gICAgICB9XG4gICAgfSBlbHNlIGlmIChlbmRwb2ludHMgJiYgZW5kcG9pbnRzLmxlbmd0aCA+IDApIHtcbiAgICAgIC8vIEVuZHBvaW50IHJlY29yZCBpcyBwcmVzZW50IGluIGNhY2hlLlxuICAgICAgcmVzb2x2ZSgpO1xuICAgIH0gZWxzZSB7XG4gICAgICAvLyBwdXQgaW4gYSBwbGFjZWhvbGRlciBmb3IgZW5kcG9pbnRzIGFscmVhZHkgcmVxdWVzdGVkLCBwcmV2ZW50XG4gICAgICAvLyB0b28gbXVjaCBpbi1mbGlnaHQgY2FsbHMuXG4gICAgICBjb25zdCBwbGFjZWhvbGRlckVuZHBvaW50cyA9IFt7IEFkZHJlc3M6IFwiXCIsIENhY2hlUGVyaW9kSW5NaW51dGVzOiAxIH1dO1xuICAgICAgZW5kcG9pbnRDYWNoZS5zZXQoY2FjaGVLZXksIHBsYWNlaG9sZGVyRW5kcG9pbnRzKTtcblxuICAgICAgY29uc3QgY29tbWFuZCA9IG5ldyBvcHRpb25zLmVuZHBvaW50RGlzY292ZXJ5Q29tbWFuZEN0b3Ioe1xuICAgICAgICBPcGVyYXRpb246IGNvbW1hbmROYW1lLnN1YnN0cigwLCBjb21tYW5kTmFtZS5sZW5ndGggLSA3KSwgLy8gc3RyaXAgXCJDb21tYW5kXCJcbiAgICAgICAgSWRlbnRpZmllcnM6IGlkZW50aWZpZXJzLFxuICAgICAgfSk7XG4gICAgICBjb25zdCBoYW5kbGVyID0gY29tbWFuZC5yZXNvbHZlTWlkZGxld2FyZShvcHRpb25zLmNsaWVudFN0YWNrLCBjb25maWcsIG9wdGlvbnMub3B0aW9ucyk7XG4gICAgICBoYW5kbGVyKGNvbW1hbmQpXG4gICAgICAgIC50aGVuKChyZXN1bHQ6IGFueSkgPT4ge1xuICAgICAgICAgIGVuZHBvaW50Q2FjaGUuc2V0KGNhY2hlS2V5LCByZXN1bHQub3V0cHV0LkVuZHBvaW50cyk7XG4gICAgICAgICAgaWYgKHJlcXVlc3RRdWV1ZVtjYWNoZUtleV0pIHtcbiAgICAgICAgICAgIHJlcXVlc3RRdWV1ZVtjYWNoZUtleV0uZm9yRWFjaCgoeyByZXNvbHZlIH0pID0+IHtcbiAgICAgICAgICAgICAgcmVzb2x2ZSgpO1xuICAgICAgICAgICAgfSk7XG4gICAgICAgICAgICBkZWxldGUgcmVxdWVzdFF1ZXVlW2NhY2hlS2V5XTtcbiAgICAgICAgICB9XG4gICAgICAgICAgcmVzb2x2ZSgpO1xuICAgICAgICB9KVxuICAgICAgICAuY2F0Y2goKGVycm9yOiBhbnkpID0+IHtcbiAgICAgICAgICBpZiAoZXJyb3IubmFtZSA9PT0gXCJJbnZhbGlkRW5kcG9pbnRFeGNlcHRpb25cIiB8fCBlcnJvci4kbWV0YWRhdGE/Lmh0dHBTdGF0dXNDb2RlID09PSA0MjEpIHtcbiAgICAgICAgICAgIC8vIEVuZHBvaW50IGlzIGludmFsaWQsIGRlbGV0ZSB0aGUgY2FjaGUgZW50cnkuXG4gICAgICAgICAgICBlbmRwb2ludENhY2hlLmRlbGV0ZShjYWNoZUtleSk7XG4gICAgICAgICAgfVxuXG4gICAgICAgICAgY29uc3QgZXJyb3JUb1Rocm93ID0gT2JqZWN0LmFzc2lnbihcbiAgICAgICAgICAgIG5ldyBFcnJvcihcbiAgICAgICAgICAgICAgYFRoZSBvcGVyYXRpb24gdG8gZGlzY292ZXIgZW5kcG9pbnQgZmFpbGVkLmAgK1xuICAgICAgICAgICAgICAgIGAgUGxlYXNlIHJldHJ5LCBvciBwcm92aWRlIGEgY3VzdG9tIGVuZHBvaW50IGFuZCBkaXNhYmxlIGVuZHBvaW50IGRpc2NvdmVyeSB0byBwcm9jZWVkLmBcbiAgICAgICAgICAgICksXG4gICAgICAgICAgICB7IHJlYXNvbjogZXJyb3IgfVxuICAgICAgICAgICk7XG5cbiAgICAgICAgICAvL2ZhaWwgYWxsIHRoZSBwZW5kaW5nIHJlcXVlc3RzIGluIGJhdGNoXG4gICAgICAgICAgaWYgKHJlcXVlc3RRdWV1ZVtjYWNoZUtleV0pIHtcbiAgICAgICAgICAgIHJlcXVlc3RRdWV1ZVtjYWNoZUtleV0uZm9yRWFjaCgoeyByZWplY3QgfSkgPT4ge1xuICAgICAgICAgICAgICByZWplY3QoZXJyb3JUb1Rocm93KTtcbiAgICAgICAgICAgIH0pO1xuICAgICAgICAgICAgZGVsZXRlIHJlcXVlc3RRdWV1ZVtjYWNoZUtleV07XG4gICAgICAgICAgfVxuXG4gICAgICAgICAgaWYgKG9wdGlvbnMuaXNEaXNjb3ZlcmVkRW5kcG9pbnRSZXF1aXJlZCkge1xuICAgICAgICAgICAgcmVqZWN0KGVycm9yVG9UaHJvdyk7XG4gICAgICAgICAgfSBlbHNlIHtcbiAgICAgICAgICAgIC8vIEVuZHBvaW50IERpc2NvdmVyeSBpcyBvcHRpb25hbC4gTm8gZXJyb3IgbmVlZHMgdG8gYmUgdGhyb3duLlxuICAgICAgICAgICAgLy8gU2V0IHBsYWNlSG9sZGVyIGVuZHBvaW50IHRvIGRpc2FibGUgcmVmcmVzaCBmb3Igb25lIG1pbnV0ZS5cbiAgICAgICAgICAgIGVuZHBvaW50Q2FjaGUuc2V0KGNhY2hlS2V5LCBwbGFjZWhvbGRlckVuZHBvaW50cyk7XG4gICAgICAgICAgICByZXNvbHZlKCk7XG4gICAgICAgICAgfVxuICAgICAgICB9KTtcbiAgICB9XG4gIH0pO1xuIl19
+
+/***/ }),
+
 /***/ 8645:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
@@ -24292,7 +26418,7 @@ const getHostHeaderPlugin = (options) => ({
     },
 });
 exports.getHostHeaderPlugin = getHostHeaderPlugin;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsMERBQXFEO0FBVXJELFNBQWdCLHVCQUF1QixDQUNyQyxLQUFxRDtJQUVyRCxPQUFPLEtBQUssQ0FBQztBQUNmLENBQUM7QUFKRCwwREFJQztBQUVNLE1BQU0sb0JBQW9CLEdBQUcsQ0FDbEMsT0FBaUMsRUFDRCxFQUFFLENBQUMsQ0FBQyxJQUFJLEVBQUUsRUFBRSxDQUFDLEtBQUssRUFBRSxJQUFJLEVBQUUsRUFBRTtJQUM1RCxJQUFJLENBQUMsMkJBQVcsQ0FBQyxVQUFVLENBQUMsSUFBSSxDQUFDLE9BQU8sQ0FBQztRQUFFLE9BQU8sSUFBSSxDQUFDLElBQUksQ0FBQyxDQUFDO0lBQzdELE1BQU0sRUFBRSxPQUFPLEVBQUUsR0FBRyxJQUFJLENBQUM7SUFDekIsTUFBTSxFQUFFLGVBQWUsR0FBRyxFQUFFLEVBQUUsR0FBRyxPQUFPLENBQUMsY0FBYyxDQUFDLFFBQVEsSUFBSSxFQUFFLENBQUM7SUFDdkUsMEVBQTBFO0lBQzFFLDJHQUEyRztJQUMzRyxJQUFJLGVBQWUsQ0FBQyxPQUFPLENBQUMsSUFBSSxDQUFDLElBQUksQ0FBQyxJQUFJLENBQUMsT0FBTyxDQUFDLE9BQU8sQ0FBQyxZQUFZLENBQUMsRUFBRTtRQUN4RSxPQUFPLE9BQU8sQ0FBQyxPQUFPLENBQUMsTUFBTSxDQUFDLENBQUM7UUFDL0IsT0FBTyxDQUFDLE9BQU8sQ0FBQyxZQUFZLENBQUMsR0FBRyxFQUFFLENBQUM7UUFDbkMsMkZBQTJGO0tBQzVGO1NBQU0sSUFBSSxDQUFDLE9BQU8sQ0FBQyxPQUFPLENBQUMsTUFBTSxDQUFDLEVBQUU7UUFDbkMsT0FBTyxDQUFDLE9BQU8sQ0FBQyxNQUFNLENBQUMsR0FBRyxPQUFPLENBQUMsUUFBUSxDQUFDO0tBQzVDO0lBQ0QsT0FBTyxJQUFJLENBQUMsSUFBSSxDQUFDLENBQUM7QUFDcEIsQ0FBQyxDQUFDO0FBaEJXLFFBQUEsb0JBQW9CLHdCQWdCL0I7QUFFVyxRQUFBLDJCQUEyQixHQUEyQztJQUNqRixJQUFJLEVBQUUsc0JBQXNCO0lBQzVCLElBQUksRUFBRSxPQUFPO0lBQ2IsUUFBUSxFQUFFLEtBQUs7SUFDZixJQUFJLEVBQUUsQ0FBQyxNQUFNLENBQUM7SUFDZCxRQUFRLEVBQUUsSUFBSTtDQUNmLENBQUM7QUFFSyxNQUFNLG1CQUFtQixHQUFHLENBQUMsT0FBaUMsRUFBdUIsRUFBRSxDQUFDLENBQUM7SUFDOUYsWUFBWSxFQUFFLENBQUMsV0FBVyxFQUFFLEVBQUU7UUFDNUIsV0FBVyxDQUFDLEdBQUcsQ0FBQyw0QkFBb0IsQ0FBQyxPQUFPLENBQUMsRUFBRSxtQ0FBMkIsQ0FBQyxDQUFDO0lBQzlFLENBQUM7Q0FDRixDQUFDLENBQUM7QUFKVSxRQUFBLG1CQUFtQix1QkFJN0IiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBIdHRwUmVxdWVzdCB9IGZyb20gXCJAYXdzLXNkay9wcm90b2NvbC1odHRwXCI7XG5pbXBvcnQgeyBBYnNvbHV0ZUxvY2F0aW9uLCBCdWlsZEhhbmRsZXJPcHRpb25zLCBCdWlsZE1pZGRsZXdhcmUsIFBsdWdnYWJsZSwgUmVxdWVzdEhhbmRsZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuZXhwb3J0IGludGVyZmFjZSBIb3N0SGVhZGVySW5wdXRDb25maWcge31cbmludGVyZmFjZSBQcmV2aW91c2x5UmVzb2x2ZWQge1xuICByZXF1ZXN0SGFuZGxlcjogUmVxdWVzdEhhbmRsZXI8YW55LCBhbnk+O1xufVxuZXhwb3J0IGludGVyZmFjZSBIb3N0SGVhZGVyUmVzb2x2ZWRDb25maWcge1xuICByZXF1ZXN0SGFuZGxlcjogUmVxdWVzdEhhbmRsZXI8YW55LCBhbnk+O1xufVxuZXhwb3J0IGZ1bmN0aW9uIHJlc29sdmVIb3N0SGVhZGVyQ29uZmlnPFQ+KFxuICBpbnB1dDogVCAmIFByZXZpb3VzbHlSZXNvbHZlZCAmIEhvc3RIZWFkZXJJbnB1dENvbmZpZ1xuKTogVCAmIEhvc3RIZWFkZXJSZXNvbHZlZENvbmZpZyB7XG4gIHJldHVybiBpbnB1dDtcbn1cblxuZXhwb3J0IGNvbnN0IGhvc3RIZWFkZXJNaWRkbGV3YXJlID0gPElucHV0IGV4dGVuZHMgb2JqZWN0LCBPdXRwdXQgZXh0ZW5kcyBvYmplY3Q+KFxuICBvcHRpb25zOiBIb3N0SGVhZGVyUmVzb2x2ZWRDb25maWdcbik6IEJ1aWxkTWlkZGxld2FyZTxJbnB1dCwgT3V0cHV0PiA9PiAobmV4dCkgPT4gYXN5bmMgKGFyZ3MpID0+IHtcbiAgaWYgKCFIdHRwUmVxdWVzdC5pc0luc3RhbmNlKGFyZ3MucmVxdWVzdCkpIHJldHVybiBuZXh0KGFyZ3MpO1xuICBjb25zdCB7IHJlcXVlc3QgfSA9IGFyZ3M7XG4gIGNvbnN0IHsgaGFuZGxlclByb3RvY29sID0gXCJcIiB9ID0gb3B0aW9ucy5yZXF1ZXN0SGFuZGxlci5tZXRhZGF0YSB8fCB7fTtcbiAgLy9Gb3IgSDIgcmVxdWVzdCwgcmVtb3ZlICdob3N0JyBoZWFkZXIgYW5kIHVzZSAnOmF1dGhvcml0eScgaGVhZGVyIGluc3RlYWRcbiAgLy9yZWZlcmVuY2U6IGh0dHBzOi8vbm9kZWpzLm9yZy9kaXN0L2xhdGVzdC12MTMueC9kb2NzL2FwaS9lcnJvcnMuaHRtbCNFUlJfSFRUUDJfSU5WQUxJRF9DT05ORUNUSU9OX0hFQURFUlNcbiAgaWYgKGhhbmRsZXJQcm90b2NvbC5pbmRleE9mKFwiaDJcIikgPj0gMCAmJiAhcmVxdWVzdC5oZWFkZXJzW1wiOmF1dGhvcml0eVwiXSkge1xuICAgIGRlbGV0ZSByZXF1ZXN0LmhlYWRlcnNbXCJob3N0XCJdO1xuICAgIHJlcXVlc3QuaGVhZGVyc1tcIjphdXRob3JpdHlcIl0gPSBcIlwiO1xuICAgIC8vbm9uLUgyIHJlcXVlc3QgYW5kICdob3N0JyBoZWFkZXIgaXMgbm90IHNldCwgc2V0IHRoZSAnaG9zdCcgaGVhZGVyIHRvIHJlcXVlc3QncyBob3N0bmFtZS5cbiAgfSBlbHNlIGlmICghcmVxdWVzdC5oZWFkZXJzW1wiaG9zdFwiXSkge1xuICAgIHJlcXVlc3QuaGVhZGVyc1tcImhvc3RcIl0gPSByZXF1ZXN0Lmhvc3RuYW1lO1xuICB9XG4gIHJldHVybiBuZXh0KGFyZ3MpO1xufTtcblxuZXhwb3J0IGNvbnN0IGhvc3RIZWFkZXJNaWRkbGV3YXJlT3B0aW9uczogQnVpbGRIYW5kbGVyT3B0aW9ucyAmIEFic29sdXRlTG9jYXRpb24gPSB7XG4gIG5hbWU6IFwiaG9zdEhlYWRlck1pZGRsZXdhcmVcIixcbiAgc3RlcDogXCJidWlsZFwiLFxuICBwcmlvcml0eTogXCJsb3dcIixcbiAgdGFnczogW1wiSE9TVFwiXSxcbiAgb3ZlcnJpZGU6IHRydWUsXG59O1xuXG5leHBvcnQgY29uc3QgZ2V0SG9zdEhlYWRlclBsdWdpbiA9IChvcHRpb25zOiBIb3N0SGVhZGVyUmVzb2x2ZWRDb25maWcpOiBQbHVnZ2FibGU8YW55LCBhbnk+ID0+ICh7XG4gIGFwcGx5VG9TdGFjazogKGNsaWVudFN0YWNrKSA9PiB7XG4gICAgY2xpZW50U3RhY2suYWRkKGhvc3RIZWFkZXJNaWRkbGV3YXJlKG9wdGlvbnMpLCBob3N0SGVhZGVyTWlkZGxld2FyZU9wdGlvbnMpO1xuICB9LFxufSk7XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsMERBQXFEO0FBYXJELFNBQWdCLHVCQUF1QixDQUNyQyxLQUFxRDtJQUVyRCxPQUFPLEtBQUssQ0FBQztBQUNmLENBQUM7QUFKRCwwREFJQztBQUVNLE1BQU0sb0JBQW9CLEdBQUcsQ0FDbEMsT0FBaUMsRUFDRCxFQUFFLENBQUMsQ0FBQyxJQUFJLEVBQUUsRUFBRSxDQUFDLEtBQUssRUFBRSxJQUFJLEVBQUUsRUFBRTtJQUM1RCxJQUFJLENBQUMsMkJBQVcsQ0FBQyxVQUFVLENBQUMsSUFBSSxDQUFDLE9BQU8sQ0FBQztRQUFFLE9BQU8sSUFBSSxDQUFDLElBQUksQ0FBQyxDQUFDO0lBQzdELE1BQU0sRUFBRSxPQUFPLEVBQUUsR0FBRyxJQUFJLENBQUM7SUFDekIsTUFBTSxFQUFFLGVBQWUsR0FBRyxFQUFFLEVBQUUsR0FBRyxPQUFPLENBQUMsY0FBYyxDQUFDLFFBQVEsSUFBSSxFQUFFLENBQUM7SUFDdkUsMEVBQTBFO0lBQzFFLDJHQUEyRztJQUMzRyxJQUFJLGVBQWUsQ0FBQyxPQUFPLENBQUMsSUFBSSxDQUFDLElBQUksQ0FBQyxJQUFJLENBQUMsT0FBTyxDQUFDLE9BQU8sQ0FBQyxZQUFZLENBQUMsRUFBRTtRQUN4RSxPQUFPLE9BQU8sQ0FBQyxPQUFPLENBQUMsTUFBTSxDQUFDLENBQUM7UUFDL0IsT0FBTyxDQUFDLE9BQU8sQ0FBQyxZQUFZLENBQUMsR0FBRyxFQUFFLENBQUM7UUFDbkMsMkZBQTJGO0tBQzVGO1NBQU0sSUFBSSxDQUFDLE9BQU8sQ0FBQyxPQUFPLENBQUMsTUFBTSxDQUFDLEVBQUU7UUFDbkMsT0FBTyxDQUFDLE9BQU8sQ0FBQyxNQUFNLENBQUMsR0FBRyxPQUFPLENBQUMsUUFBUSxDQUFDO0tBQzVDO0lBQ0QsT0FBTyxJQUFJLENBQUMsSUFBSSxDQUFDLENBQUM7QUFDcEIsQ0FBQyxDQUFDO0FBaEJXLFFBQUEsb0JBQW9CLHdCQWdCL0I7QUFFVyxRQUFBLDJCQUEyQixHQUEyQztJQUNqRixJQUFJLEVBQUUsc0JBQXNCO0lBQzVCLElBQUksRUFBRSxPQUFPO0lBQ2IsUUFBUSxFQUFFLEtBQUs7SUFDZixJQUFJLEVBQUUsQ0FBQyxNQUFNLENBQUM7SUFDZCxRQUFRLEVBQUUsSUFBSTtDQUNmLENBQUM7QUFFSyxNQUFNLG1CQUFtQixHQUFHLENBQUMsT0FBaUMsRUFBdUIsRUFBRSxDQUFDLENBQUM7SUFDOUYsWUFBWSxFQUFFLENBQUMsV0FBVyxFQUFFLEVBQUU7UUFDNUIsV0FBVyxDQUFDLEdBQUcsQ0FBQyw0QkFBb0IsQ0FBQyxPQUFPLENBQUMsRUFBRSxtQ0FBMkIsQ0FBQyxDQUFDO0lBQzlFLENBQUM7Q0FDRixDQUFDLENBQUM7QUFKVSxRQUFBLG1CQUFtQix1QkFJN0IiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBIdHRwUmVxdWVzdCB9IGZyb20gXCJAYXdzLXNkay9wcm90b2NvbC1odHRwXCI7XG5pbXBvcnQgeyBBYnNvbHV0ZUxvY2F0aW9uLCBCdWlsZEhhbmRsZXJPcHRpb25zLCBCdWlsZE1pZGRsZXdhcmUsIFBsdWdnYWJsZSwgUmVxdWVzdEhhbmRsZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuZXhwb3J0IGludGVyZmFjZSBIb3N0SGVhZGVySW5wdXRDb25maWcge31cbmludGVyZmFjZSBQcmV2aW91c2x5UmVzb2x2ZWQge1xuICByZXF1ZXN0SGFuZGxlcjogUmVxdWVzdEhhbmRsZXI8YW55LCBhbnk+O1xufVxuZXhwb3J0IGludGVyZmFjZSBIb3N0SGVhZGVyUmVzb2x2ZWRDb25maWcge1xuICAvKipcbiAgICogVGhlIEhUVFAgaGFuZGxlciB0byB1c2UuIEZldGNoIGluIGJyb3dzZXIgYW5kIEh0dHBzIGluIE5vZGVqcy5cbiAgICovXG4gIHJlcXVlc3RIYW5kbGVyOiBSZXF1ZXN0SGFuZGxlcjxhbnksIGFueT47XG59XG5leHBvcnQgZnVuY3Rpb24gcmVzb2x2ZUhvc3RIZWFkZXJDb25maWc8VD4oXG4gIGlucHV0OiBUICYgUHJldmlvdXNseVJlc29sdmVkICYgSG9zdEhlYWRlcklucHV0Q29uZmlnXG4pOiBUICYgSG9zdEhlYWRlclJlc29sdmVkQ29uZmlnIHtcbiAgcmV0dXJuIGlucHV0O1xufVxuXG5leHBvcnQgY29uc3QgaG9zdEhlYWRlck1pZGRsZXdhcmUgPSA8SW5wdXQgZXh0ZW5kcyBvYmplY3QsIE91dHB1dCBleHRlbmRzIG9iamVjdD4oXG4gIG9wdGlvbnM6IEhvc3RIZWFkZXJSZXNvbHZlZENvbmZpZ1xuKTogQnVpbGRNaWRkbGV3YXJlPElucHV0LCBPdXRwdXQ+ID0+IChuZXh0KSA9PiBhc3luYyAoYXJncykgPT4ge1xuICBpZiAoIUh0dHBSZXF1ZXN0LmlzSW5zdGFuY2UoYXJncy5yZXF1ZXN0KSkgcmV0dXJuIG5leHQoYXJncyk7XG4gIGNvbnN0IHsgcmVxdWVzdCB9ID0gYXJncztcbiAgY29uc3QgeyBoYW5kbGVyUHJvdG9jb2wgPSBcIlwiIH0gPSBvcHRpb25zLnJlcXVlc3RIYW5kbGVyLm1ldGFkYXRhIHx8IHt9O1xuICAvL0ZvciBIMiByZXF1ZXN0LCByZW1vdmUgJ2hvc3QnIGhlYWRlciBhbmQgdXNlICc6YXV0aG9yaXR5JyBoZWFkZXIgaW5zdGVhZFxuICAvL3JlZmVyZW5jZTogaHR0cHM6Ly9ub2RlanMub3JnL2Rpc3QvbGF0ZXN0LXYxMy54L2RvY3MvYXBpL2Vycm9ycy5odG1sI0VSUl9IVFRQMl9JTlZBTElEX0NPTk5FQ1RJT05fSEVBREVSU1xuICBpZiAoaGFuZGxlclByb3RvY29sLmluZGV4T2YoXCJoMlwiKSA+PSAwICYmICFyZXF1ZXN0LmhlYWRlcnNbXCI6YXV0aG9yaXR5XCJdKSB7XG4gICAgZGVsZXRlIHJlcXVlc3QuaGVhZGVyc1tcImhvc3RcIl07XG4gICAgcmVxdWVzdC5oZWFkZXJzW1wiOmF1dGhvcml0eVwiXSA9IFwiXCI7XG4gICAgLy9ub24tSDIgcmVxdWVzdCBhbmQgJ2hvc3QnIGhlYWRlciBpcyBub3Qgc2V0LCBzZXQgdGhlICdob3N0JyBoZWFkZXIgdG8gcmVxdWVzdCdzIGhvc3RuYW1lLlxuICB9IGVsc2UgaWYgKCFyZXF1ZXN0LmhlYWRlcnNbXCJob3N0XCJdKSB7XG4gICAgcmVxdWVzdC5oZWFkZXJzW1wiaG9zdFwiXSA9IHJlcXVlc3QuaG9zdG5hbWU7XG4gIH1cbiAgcmV0dXJuIG5leHQoYXJncyk7XG59O1xuXG5leHBvcnQgY29uc3QgaG9zdEhlYWRlck1pZGRsZXdhcmVPcHRpb25zOiBCdWlsZEhhbmRsZXJPcHRpb25zICYgQWJzb2x1dGVMb2NhdGlvbiA9IHtcbiAgbmFtZTogXCJob3N0SGVhZGVyTWlkZGxld2FyZVwiLFxuICBzdGVwOiBcImJ1aWxkXCIsXG4gIHByaW9yaXR5OiBcImxvd1wiLFxuICB0YWdzOiBbXCJIT1NUXCJdLFxuICBvdmVycmlkZTogdHJ1ZSxcbn07XG5cbmV4cG9ydCBjb25zdCBnZXRIb3N0SGVhZGVyUGx1Z2luID0gKG9wdGlvbnM6IEhvc3RIZWFkZXJSZXNvbHZlZENvbmZpZyk6IFBsdWdnYWJsZTxhbnksIGFueT4gPT4gKHtcbiAgYXBwbHlUb1N0YWNrOiAoY2xpZW50U3RhY2spID0+IHtcbiAgICBjbGllbnRTdGFjay5hZGQoaG9zdEhlYWRlck1pZGRsZXdhcmUob3B0aW9ucyksIGhvc3RIZWFkZXJNaWRkbGV3YXJlT3B0aW9ucyk7XG4gIH0sXG59KTtcbiJdfQ==
 
 /***/ }),
 
@@ -24407,7 +26533,7 @@ exports.NODE_RETRY_MODE_CONFIG_OPTIONS = {
     configFileSelector: (profile) => profile[exports.CONFIG_RETRY_MODE],
     default: defaultStrategy_1.DEFAULT_RETRY_MODE,
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlndXJhdGlvbnMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvY29uZmlndXJhdGlvbnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBR0EsdURBQW9HO0FBRXZGLFFBQUEsZ0JBQWdCLEdBQUcsa0JBQWtCLENBQUM7QUFDdEMsUUFBQSxtQkFBbUIsR0FBRyxjQUFjLENBQUM7QUFFckMsUUFBQSwrQkFBK0IsR0FBa0M7SUFDNUUsMkJBQTJCLEVBQUUsQ0FBQyxHQUFHLEVBQUUsRUFBRTtRQUNuQyxNQUFNLEtBQUssR0FBRyxHQUFHLENBQUMsd0JBQWdCLENBQUMsQ0FBQztRQUNwQyxJQUFJLENBQUMsS0FBSztZQUFFLE9BQU8sU0FBUyxDQUFDO1FBQzdCLE1BQU0sVUFBVSxHQUFHLFFBQVEsQ0FBQyxLQUFLLENBQUMsQ0FBQztRQUNuQyxJQUFJLE1BQU0sQ0FBQyxLQUFLLENBQUMsVUFBVSxDQUFDLEVBQUU7WUFDNUIsTUFBTSxJQUFJLEtBQUssQ0FBQyx3QkFBd0Isd0JBQWdCLDJCQUEyQixLQUFLLEdBQUcsQ0FBQyxDQUFDO1NBQzlGO1FBQ0QsT0FBTyxVQUFVLENBQUM7SUFDcEIsQ0FBQztJQUNELGtCQUFrQixFQUFFLENBQUMsT0FBTyxFQUFFLEVBQUU7UUFDOUIsTUFBTSxLQUFLLEdBQUcsT0FBTyxDQUFDLDJCQUFtQixDQUFDLENBQUM7UUFDM0MsSUFBSSxDQUFDLEtBQUs7WUFBRSxPQUFPLFNBQVMsQ0FBQztRQUM3QixNQUFNLFVBQVUsR0FBRyxRQUFRLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDbkMsSUFBSSxNQUFNLENBQUMsS0FBSyxDQUFDLFVBQVUsQ0FBQyxFQUFFO1lBQzVCLE1BQU0sSUFBSSxLQUFLLENBQUMsNEJBQTRCLDJCQUFtQiwyQkFBMkIsS0FBSyxHQUFHLENBQUMsQ0FBQztTQUNyRztRQUNELE9BQU8sVUFBVSxDQUFDO0lBQ3BCLENBQUM7SUFDRCxPQUFPLEVBQUUsc0NBQW9CO0NBQzlCLENBQUM7QUFtQkssTUFBTSxrQkFBa0IsR0FBRyxDQUFJLEtBQWdELEVBQTJCLEVBQUU7SUFDakgsTUFBTSxXQUFXLEdBQUcsb0JBQW9CLENBQUMsS0FBSyxDQUFDLFdBQVcsQ0FBQyxDQUFDO0lBQzVELE9BQU87UUFDTCxHQUFHLEtBQUs7UUFDUixXQUFXO1FBQ1gsYUFBYSxFQUFFLEtBQUssQ0FBQyxhQUFhLElBQUksSUFBSSx1Q0FBcUIsQ0FBQyxXQUFXLENBQUM7S0FDN0UsQ0FBQztBQUNKLENBQUMsQ0FBQztBQVBXLFFBQUEsa0JBQWtCLHNCQU83QjtBQUVGLE1BQU0sb0JBQW9CLEdBQUcsQ0FBQyxjQUF5QyxzQ0FBb0IsRUFBb0IsRUFBRTtJQUMvRyxJQUFJLE9BQU8sV0FBVyxLQUFLLFFBQVEsRUFBRTtRQUNuQyxNQUFNLFdBQVcsR0FBRyxPQUFPLENBQUMsT0FBTyxDQUFDLFdBQVcsQ0FBQyxDQUFDO1FBQ2pELE9BQU8sR0FBRyxFQUFFLENBQUMsV0FBVyxDQUFDO0tBQzFCO0lBQ0QsT0FBTyxXQUFXLENBQUM7QUFDckIsQ0FBQyxDQUFDO0FBRVcsUUFBQSxjQUFjLEdBQUcsZ0JBQWdCLENBQUM7QUFDbEMsUUFBQSxpQkFBaUIsR0FBRyxZQUFZLENBQUM7QUFFakMsUUFBQSw4QkFBOEIsR0FBa0M7SUFDM0UsMkJBQTJCLEVBQUUsQ0FBQyxHQUFHLEVBQUUsRUFBRSxDQUFDLEdBQUcsQ0FBQyxzQkFBYyxDQUFDO0lBQ3pELGtCQUFrQixFQUFFLENBQUMsT0FBTyxFQUFFLEVBQUUsQ0FBQyxPQUFPLENBQUMseUJBQWlCLENBQUM7SUFDM0QsT0FBTyxFQUFFLG9DQUFrQjtDQUM1QixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTG9hZGVkQ29uZmlnU2VsZWN0b3JzIH0gZnJvbSBcIkBhd3Mtc2RrL25vZGUtY29uZmlnLXByb3ZpZGVyXCI7XG5pbXBvcnQgeyBQcm92aWRlciwgUmV0cnlTdHJhdGVneSB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5pbXBvcnQgeyBERUZBVUxUX01BWF9BVFRFTVBUUywgREVGQVVMVF9SRVRSWV9NT0RFLCBTdGFuZGFyZFJldHJ5U3RyYXRlZ3kgfSBmcm9tIFwiLi9kZWZhdWx0U3RyYXRlZ3lcIjtcblxuZXhwb3J0IGNvbnN0IEVOVl9NQVhfQVRURU1QVFMgPSBcIkFXU19NQVhfQVRURU1QVFNcIjtcbmV4cG9ydCBjb25zdCBDT05GSUdfTUFYX0FUVEVNUFRTID0gXCJtYXhfYXR0ZW1wdHNcIjtcblxuZXhwb3J0IGNvbnN0IE5PREVfTUFYX0FUVEVNUFRfQ09ORklHX09QVElPTlM6IExvYWRlZENvbmZpZ1NlbGVjdG9yczxudW1iZXI+ID0ge1xuICBlbnZpcm9ubWVudFZhcmlhYmxlU2VsZWN0b3I6IChlbnYpID0+IHtcbiAgICBjb25zdCB2YWx1ZSA9IGVudltFTlZfTUFYX0FUVEVNUFRTXTtcbiAgICBpZiAoIXZhbHVlKSByZXR1cm4gdW5kZWZpbmVkO1xuICAgIGNvbnN0IG1heEF0dGVtcHQgPSBwYXJzZUludCh2YWx1ZSk7XG4gICAgaWYgKE51bWJlci5pc05hTihtYXhBdHRlbXB0KSkge1xuICAgICAgdGhyb3cgbmV3IEVycm9yKGBFbnZpcm9ubWVudCB2YXJpYWJsZSAke0VOVl9NQVhfQVRURU1QVFN9IG1hc3QgYmUgYSBudW1iZXIsIGdvdCBcIiR7dmFsdWV9XCJgKTtcbiAgICB9XG4gICAgcmV0dXJuIG1heEF0dGVtcHQ7XG4gIH0sXG4gIGNvbmZpZ0ZpbGVTZWxlY3RvcjogKHByb2ZpbGUpID0+IHtcbiAgICBjb25zdCB2YWx1ZSA9IHByb2ZpbGVbQ09ORklHX01BWF9BVFRFTVBUU107XG4gICAgaWYgKCF2YWx1ZSkgcmV0dXJuIHVuZGVmaW5lZDtcbiAgICBjb25zdCBtYXhBdHRlbXB0ID0gcGFyc2VJbnQodmFsdWUpO1xuICAgIGlmIChOdW1iZXIuaXNOYU4obWF4QXR0ZW1wdCkpIHtcbiAgICAgIHRocm93IG5ldyBFcnJvcihgU2hhcmVkIGNvbmZpZyBmaWxlIGVudHJ5ICR7Q09ORklHX01BWF9BVFRFTVBUU30gbWFzdCBiZSBhIG51bWJlciwgZ290IFwiJHt2YWx1ZX1cImApO1xuICAgIH1cbiAgICByZXR1cm4gbWF4QXR0ZW1wdDtcbiAgfSxcbiAgZGVmYXVsdDogREVGQVVMVF9NQVhfQVRURU1QVFMsXG59O1xuXG5leHBvcnQgaW50ZXJmYWNlIFJldHJ5SW5wdXRDb25maWcge1xuICAvKipcbiAgICogVGhlIG1heGltdW0gbnVtYmVyIG9mIHRpbWVzIHJlcXVlc3RzIHRoYXQgZW5jb3VudGVyIHJldHJ5YWJsZSBmYWlsdXJlcyBzaG91bGQgYmUgYXR0ZW1wdGVkLlxuICAgKi9cbiAgbWF4QXR0ZW1wdHM/OiBudW1iZXIgfCBQcm92aWRlcjxudW1iZXI+O1xuICAvKipcbiAgICogVGhlIHN0cmF0ZWd5IHRvIHJldHJ5IHRoZSByZXF1ZXN0LiBVc2luZyBidWlsdC1pbiBleHBvbmVudGlhbCBiYWNrb2ZmIHN0cmF0ZWd5IGJ5IGRlZmF1bHQuXG4gICAqL1xuICByZXRyeVN0cmF0ZWd5PzogUmV0cnlTdHJhdGVneTtcbn1cblxuaW50ZXJmYWNlIFByZXZpb3VzbHlSZXNvbHZlZCB7fVxuZXhwb3J0IGludGVyZmFjZSBSZXRyeVJlc29sdmVkQ29uZmlnIHtcbiAgbWF4QXR0ZW1wdHM6IFByb3ZpZGVyPG51bWJlcj47XG4gIHJldHJ5U3RyYXRlZ3k6IFJldHJ5U3RyYXRlZ3k7XG59XG5cbmV4cG9ydCBjb25zdCByZXNvbHZlUmV0cnlDb25maWcgPSA8VD4oaW5wdXQ6IFQgJiBQcmV2aW91c2x5UmVzb2x2ZWQgJiBSZXRyeUlucHV0Q29uZmlnKTogVCAmIFJldHJ5UmVzb2x2ZWRDb25maWcgPT4ge1xuICBjb25zdCBtYXhBdHRlbXB0cyA9IG5vcm1hbGl6ZU1heEF0dGVtcHRzKGlucHV0Lm1heEF0dGVtcHRzKTtcbiAgcmV0dXJuIHtcbiAgICAuLi5pbnB1dCxcbiAgICBtYXhBdHRlbXB0cyxcbiAgICByZXRyeVN0cmF0ZWd5OiBpbnB1dC5yZXRyeVN0cmF0ZWd5IHx8IG5ldyBTdGFuZGFyZFJldHJ5U3RyYXRlZ3kobWF4QXR0ZW1wdHMpLFxuICB9O1xufTtcblxuY29uc3Qgbm9ybWFsaXplTWF4QXR0ZW1wdHMgPSAobWF4QXR0ZW1wdHM6IG51bWJlciB8IFByb3ZpZGVyPG51bWJlcj4gPSBERUZBVUxUX01BWF9BVFRFTVBUUyk6IFByb3ZpZGVyPG51bWJlcj4gPT4ge1xuICBpZiAodHlwZW9mIG1heEF0dGVtcHRzID09PSBcIm51bWJlclwiKSB7XG4gICAgY29uc3QgcHJvbWlzaWZpZWQgPSBQcm9taXNlLnJlc29sdmUobWF4QXR0ZW1wdHMpO1xuICAgIHJldHVybiAoKSA9PiBwcm9taXNpZmllZDtcbiAgfVxuICByZXR1cm4gbWF4QXR0ZW1wdHM7XG59O1xuXG5leHBvcnQgY29uc3QgRU5WX1JFVFJZX01PREUgPSBcIkFXU19SRVRSWV9NT0RFXCI7XG5leHBvcnQgY29uc3QgQ09ORklHX1JFVFJZX01PREUgPSBcInJldHJ5X21vZGVcIjtcblxuZXhwb3J0IGNvbnN0IE5PREVfUkVUUllfTU9ERV9DT05GSUdfT1BUSU9OUzogTG9hZGVkQ29uZmlnU2VsZWN0b3JzPHN0cmluZz4gPSB7XG4gIGVudmlyb25tZW50VmFyaWFibGVTZWxlY3RvcjogKGVudikgPT4gZW52W0VOVl9SRVRSWV9NT0RFXSxcbiAgY29uZmlnRmlsZVNlbGVjdG9yOiAocHJvZmlsZSkgPT4gcHJvZmlsZVtDT05GSUdfUkVUUllfTU9ERV0sXG4gIGRlZmF1bHQ6IERFRkFVTFRfUkVUUllfTU9ERSxcbn07XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlndXJhdGlvbnMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvY29uZmlndXJhdGlvbnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBR0EsdURBQW9HO0FBRXZGLFFBQUEsZ0JBQWdCLEdBQUcsa0JBQWtCLENBQUM7QUFDdEMsUUFBQSxtQkFBbUIsR0FBRyxjQUFjLENBQUM7QUFFckMsUUFBQSwrQkFBK0IsR0FBa0M7SUFDNUUsMkJBQTJCLEVBQUUsQ0FBQyxHQUFHLEVBQUUsRUFBRTtRQUNuQyxNQUFNLEtBQUssR0FBRyxHQUFHLENBQUMsd0JBQWdCLENBQUMsQ0FBQztRQUNwQyxJQUFJLENBQUMsS0FBSztZQUFFLE9BQU8sU0FBUyxDQUFDO1FBQzdCLE1BQU0sVUFBVSxHQUFHLFFBQVEsQ0FBQyxLQUFLLENBQUMsQ0FBQztRQUNuQyxJQUFJLE1BQU0sQ0FBQyxLQUFLLENBQUMsVUFBVSxDQUFDLEVBQUU7WUFDNUIsTUFBTSxJQUFJLEtBQUssQ0FBQyx3QkFBd0Isd0JBQWdCLDJCQUEyQixLQUFLLEdBQUcsQ0FBQyxDQUFDO1NBQzlGO1FBQ0QsT0FBTyxVQUFVLENBQUM7SUFDcEIsQ0FBQztJQUNELGtCQUFrQixFQUFFLENBQUMsT0FBTyxFQUFFLEVBQUU7UUFDOUIsTUFBTSxLQUFLLEdBQUcsT0FBTyxDQUFDLDJCQUFtQixDQUFDLENBQUM7UUFDM0MsSUFBSSxDQUFDLEtBQUs7WUFBRSxPQUFPLFNBQVMsQ0FBQztRQUM3QixNQUFNLFVBQVUsR0FBRyxRQUFRLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDbkMsSUFBSSxNQUFNLENBQUMsS0FBSyxDQUFDLFVBQVUsQ0FBQyxFQUFFO1lBQzVCLE1BQU0sSUFBSSxLQUFLLENBQUMsNEJBQTRCLDJCQUFtQiwyQkFBMkIsS0FBSyxHQUFHLENBQUMsQ0FBQztTQUNyRztRQUNELE9BQU8sVUFBVSxDQUFDO0lBQ3BCLENBQUM7SUFDRCxPQUFPLEVBQUUsc0NBQW9CO0NBQzlCLENBQUM7QUF5QkssTUFBTSxrQkFBa0IsR0FBRyxDQUFJLEtBQWdELEVBQTJCLEVBQUU7SUFDakgsTUFBTSxXQUFXLEdBQUcsb0JBQW9CLENBQUMsS0FBSyxDQUFDLFdBQVcsQ0FBQyxDQUFDO0lBQzVELE9BQU87UUFDTCxHQUFHLEtBQUs7UUFDUixXQUFXO1FBQ1gsYUFBYSxFQUFFLEtBQUssQ0FBQyxhQUFhLElBQUksSUFBSSx1Q0FBcUIsQ0FBQyxXQUFXLENBQUM7S0FDN0UsQ0FBQztBQUNKLENBQUMsQ0FBQztBQVBXLFFBQUEsa0JBQWtCLHNCQU83QjtBQUVGLE1BQU0sb0JBQW9CLEdBQUcsQ0FBQyxjQUF5QyxzQ0FBb0IsRUFBb0IsRUFBRTtJQUMvRyxJQUFJLE9BQU8sV0FBVyxLQUFLLFFBQVEsRUFBRTtRQUNuQyxNQUFNLFdBQVcsR0FBRyxPQUFPLENBQUMsT0FBTyxDQUFDLFdBQVcsQ0FBQyxDQUFDO1FBQ2pELE9BQU8sR0FBRyxFQUFFLENBQUMsV0FBVyxDQUFDO0tBQzFCO0lBQ0QsT0FBTyxXQUFXLENBQUM7QUFDckIsQ0FBQyxDQUFDO0FBRVcsUUFBQSxjQUFjLEdBQUcsZ0JBQWdCLENBQUM7QUFDbEMsUUFBQSxpQkFBaUIsR0FBRyxZQUFZLENBQUM7QUFFakMsUUFBQSw4QkFBOEIsR0FBa0M7SUFDM0UsMkJBQTJCLEVBQUUsQ0FBQyxHQUFHLEVBQUUsRUFBRSxDQUFDLEdBQUcsQ0FBQyxzQkFBYyxDQUFDO0lBQ3pELGtCQUFrQixFQUFFLENBQUMsT0FBTyxFQUFFLEVBQUUsQ0FBQyxPQUFPLENBQUMseUJBQWlCLENBQUM7SUFDM0QsT0FBTyxFQUFFLG9DQUFrQjtDQUM1QixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTG9hZGVkQ29uZmlnU2VsZWN0b3JzIH0gZnJvbSBcIkBhd3Mtc2RrL25vZGUtY29uZmlnLXByb3ZpZGVyXCI7XG5pbXBvcnQgeyBQcm92aWRlciwgUmV0cnlTdHJhdGVneSB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5pbXBvcnQgeyBERUZBVUxUX01BWF9BVFRFTVBUUywgREVGQVVMVF9SRVRSWV9NT0RFLCBTdGFuZGFyZFJldHJ5U3RyYXRlZ3kgfSBmcm9tIFwiLi9kZWZhdWx0U3RyYXRlZ3lcIjtcblxuZXhwb3J0IGNvbnN0IEVOVl9NQVhfQVRURU1QVFMgPSBcIkFXU19NQVhfQVRURU1QVFNcIjtcbmV4cG9ydCBjb25zdCBDT05GSUdfTUFYX0FUVEVNUFRTID0gXCJtYXhfYXR0ZW1wdHNcIjtcblxuZXhwb3J0IGNvbnN0IE5PREVfTUFYX0FUVEVNUFRfQ09ORklHX09QVElPTlM6IExvYWRlZENvbmZpZ1NlbGVjdG9yczxudW1iZXI+ID0ge1xuICBlbnZpcm9ubWVudFZhcmlhYmxlU2VsZWN0b3I6IChlbnYpID0+IHtcbiAgICBjb25zdCB2YWx1ZSA9IGVudltFTlZfTUFYX0FUVEVNUFRTXTtcbiAgICBpZiAoIXZhbHVlKSByZXR1cm4gdW5kZWZpbmVkO1xuICAgIGNvbnN0IG1heEF0dGVtcHQgPSBwYXJzZUludCh2YWx1ZSk7XG4gICAgaWYgKE51bWJlci5pc05hTihtYXhBdHRlbXB0KSkge1xuICAgICAgdGhyb3cgbmV3IEVycm9yKGBFbnZpcm9ubWVudCB2YXJpYWJsZSAke0VOVl9NQVhfQVRURU1QVFN9IG1hc3QgYmUgYSBudW1iZXIsIGdvdCBcIiR7dmFsdWV9XCJgKTtcbiAgICB9XG4gICAgcmV0dXJuIG1heEF0dGVtcHQ7XG4gIH0sXG4gIGNvbmZpZ0ZpbGVTZWxlY3RvcjogKHByb2ZpbGUpID0+IHtcbiAgICBjb25zdCB2YWx1ZSA9IHByb2ZpbGVbQ09ORklHX01BWF9BVFRFTVBUU107XG4gICAgaWYgKCF2YWx1ZSkgcmV0dXJuIHVuZGVmaW5lZDtcbiAgICBjb25zdCBtYXhBdHRlbXB0ID0gcGFyc2VJbnQodmFsdWUpO1xuICAgIGlmIChOdW1iZXIuaXNOYU4obWF4QXR0ZW1wdCkpIHtcbiAgICAgIHRocm93IG5ldyBFcnJvcihgU2hhcmVkIGNvbmZpZyBmaWxlIGVudHJ5ICR7Q09ORklHX01BWF9BVFRFTVBUU30gbWFzdCBiZSBhIG51bWJlciwgZ290IFwiJHt2YWx1ZX1cImApO1xuICAgIH1cbiAgICByZXR1cm4gbWF4QXR0ZW1wdDtcbiAgfSxcbiAgZGVmYXVsdDogREVGQVVMVF9NQVhfQVRURU1QVFMsXG59O1xuXG5leHBvcnQgaW50ZXJmYWNlIFJldHJ5SW5wdXRDb25maWcge1xuICAvKipcbiAgICogVGhlIG1heGltdW0gbnVtYmVyIG9mIHRpbWVzIHJlcXVlc3RzIHRoYXQgZW5jb3VudGVyIHJldHJ5YWJsZSBmYWlsdXJlcyBzaG91bGQgYmUgYXR0ZW1wdGVkLlxuICAgKi9cbiAgbWF4QXR0ZW1wdHM/OiBudW1iZXIgfCBQcm92aWRlcjxudW1iZXI+O1xuICAvKipcbiAgICogVGhlIHN0cmF0ZWd5IHRvIHJldHJ5IHRoZSByZXF1ZXN0LiBVc2luZyBidWlsdC1pbiBleHBvbmVudGlhbCBiYWNrb2ZmIHN0cmF0ZWd5IGJ5IGRlZmF1bHQuXG4gICAqL1xuICByZXRyeVN0cmF0ZWd5PzogUmV0cnlTdHJhdGVneTtcbn1cblxuaW50ZXJmYWNlIFByZXZpb3VzbHlSZXNvbHZlZCB7fVxuZXhwb3J0IGludGVyZmFjZSBSZXRyeVJlc29sdmVkQ29uZmlnIHtcbiAgLyoqXG4gICAqIFJlc29sdmVkIHZhbHVlIGZvciBpbnB1dCBjb25maWcge0BsaW5rIFJldHJ5SW5wdXRDb25maWcubWF4QXR0ZW1wdHN9XG4gICAqL1xuICBtYXhBdHRlbXB0czogUHJvdmlkZXI8bnVtYmVyPjtcbiAgLyoqXG4gICAqIFJlc29sdmVkIHZhbHVlIGZvciBpbnB1dCBjb25maWcge0BsaW5rIFJldHJ5SW5wdXRDb25maWcucmV0cnlTdHJhdGVneX1cbiAgICovXG4gIHJldHJ5U3RyYXRlZ3k6IFJldHJ5U3RyYXRlZ3k7XG59XG5cbmV4cG9ydCBjb25zdCByZXNvbHZlUmV0cnlDb25maWcgPSA8VD4oaW5wdXQ6IFQgJiBQcmV2aW91c2x5UmVzb2x2ZWQgJiBSZXRyeUlucHV0Q29uZmlnKTogVCAmIFJldHJ5UmVzb2x2ZWRDb25maWcgPT4ge1xuICBjb25zdCBtYXhBdHRlbXB0cyA9IG5vcm1hbGl6ZU1heEF0dGVtcHRzKGlucHV0Lm1heEF0dGVtcHRzKTtcbiAgcmV0dXJuIHtcbiAgICAuLi5pbnB1dCxcbiAgICBtYXhBdHRlbXB0cyxcbiAgICByZXRyeVN0cmF0ZWd5OiBpbnB1dC5yZXRyeVN0cmF0ZWd5IHx8IG5ldyBTdGFuZGFyZFJldHJ5U3RyYXRlZ3kobWF4QXR0ZW1wdHMpLFxuICB9O1xufTtcblxuY29uc3Qgbm9ybWFsaXplTWF4QXR0ZW1wdHMgPSAobWF4QXR0ZW1wdHM6IG51bWJlciB8IFByb3ZpZGVyPG51bWJlcj4gPSBERUZBVUxUX01BWF9BVFRFTVBUUyk6IFByb3ZpZGVyPG51bWJlcj4gPT4ge1xuICBpZiAodHlwZW9mIG1heEF0dGVtcHRzID09PSBcIm51bWJlclwiKSB7XG4gICAgY29uc3QgcHJvbWlzaWZpZWQgPSBQcm9taXNlLnJlc29sdmUobWF4QXR0ZW1wdHMpO1xuICAgIHJldHVybiAoKSA9PiBwcm9taXNpZmllZDtcbiAgfVxuICByZXR1cm4gbWF4QXR0ZW1wdHM7XG59O1xuXG5leHBvcnQgY29uc3QgRU5WX1JFVFJZX01PREUgPSBcIkFXU19SRVRSWV9NT0RFXCI7XG5leHBvcnQgY29uc3QgQ09ORklHX1JFVFJZX01PREUgPSBcInJldHJ5X21vZGVcIjtcblxuZXhwb3J0IGNvbnN0IE5PREVfUkVUUllfTU9ERV9DT05GSUdfT1BUSU9OUzogTG9hZGVkQ29uZmlnU2VsZWN0b3JzPHN0cmluZz4gPSB7XG4gIGVudmlyb25tZW50VmFyaWFibGVTZWxlY3RvcjogKGVudikgPT4gZW52W0VOVl9SRVRSWV9NT0RFXSxcbiAgY29uZmlnRmlsZVNlbGVjdG9yOiAocHJvZmlsZSkgPT4gcHJvZmlsZVtDT05GSUdfUkVUUllfTU9ERV0sXG4gIGRlZmF1bHQ6IERFRkFVTFRfUkVUUllfTU9ERSxcbn07XG4iXX0=
 
 /***/ }),
 
@@ -24565,7 +26691,8 @@ class StandardRetryStrategy {
                 output.$metadata.totalRetryDelay = totalDelay;
                 return { response, output };
             }
-            catch (err) {
+            catch (e) {
+                const err = asSdkError(e);
                 attempts++;
                 if (this.shouldRetry(err, attempts, maxAttempts)) {
                     retryTokenAmount = this.retryQuota.retrieveRetryTokens(err);
@@ -24585,7 +26712,16 @@ class StandardRetryStrategy {
     }
 }
 exports.StandardRetryStrategy = StandardRetryStrategy;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZGVmYXVsdFN0cmF0ZWd5LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2RlZmF1bHRTdHJhdGVneS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSwwREFBcUQ7QUFDckQsd0ZBQTBFO0FBRzFFLCtCQUEwQjtBQUUxQiwyQ0FNcUI7QUFDckIsMkRBQTJEO0FBQzNELGlEQUFxRDtBQUNyRCxpREFBcUQ7QUFFckQ7OztHQUdHO0FBQ1UsUUFBQSxvQkFBb0IsR0FBRyxDQUFDLENBQUM7QUFFdEM7O0dBRUc7QUFDVSxRQUFBLGtCQUFrQixHQUFHLFVBQVUsQ0FBQztBQW9EN0MsTUFBYSxxQkFBcUI7SUFNaEMsWUFBNkIsbUJBQXFDLEVBQUUsT0FBc0M7O1FBQTdFLHdCQUFtQixHQUFuQixtQkFBbUIsQ0FBa0I7UUFGbEQsU0FBSSxHQUFHLDBCQUFrQixDQUFDO1FBR3hDLElBQUksQ0FBQyxZQUFZLEdBQUcsTUFBQSxPQUFPLGFBQVAsT0FBTyx1QkFBUCxPQUFPLENBQUUsWUFBWSxtQ0FBSSxrQ0FBbUIsQ0FBQztRQUNqRSxJQUFJLENBQUMsWUFBWSxHQUFHLE1BQUEsT0FBTyxhQUFQLE9BQU8sdUJBQVAsT0FBTyxDQUFFLFlBQVksbUNBQUksa0NBQW1CLENBQUM7UUFDakUsSUFBSSxDQUFDLFVBQVUsR0FBRyxNQUFBLE9BQU8sYUFBUCxPQUFPLHVCQUFQLE9BQU8sQ0FBRSxVQUFVLG1DQUFJLHdDQUFvQixDQUFDLGdDQUFvQixDQUFDLENBQUM7SUFDdEYsQ0FBQztJQUVPLFdBQVcsQ0FBQyxLQUFlLEVBQUUsUUFBZ0IsRUFBRSxXQUFtQjtRQUN4RSxPQUFPLFFBQVEsR0FBRyxXQUFXLElBQUksSUFBSSxDQUFDLFlBQVksQ0FBQyxLQUFLLENBQUMsSUFBSSxJQUFJLENBQUMsVUFBVSxDQUFDLGNBQWMsQ0FBQyxLQUFLLENBQUMsQ0FBQztJQUNyRyxDQUFDO0lBRU8sS0FBSyxDQUFDLGNBQWM7UUFDMUIsSUFBSSxXQUFtQixDQUFDO1FBQ3hCLElBQUk7WUFDRixXQUFXLEdBQUcsTUFBTSxJQUFJLENBQUMsbUJBQW1CLEVBQUUsQ0FBQztTQUNoRDtRQUFDLE9BQU8sS0FBSyxFQUFFO1lBQ2QsV0FBVyxHQUFHLDRCQUFvQixDQUFDO1NBQ3BDO1FBQ0QsT0FBTyxXQUFXLENBQUM7SUFDckIsQ0FBQztJQUVELEtBQUssQ0FBQyxLQUFLLENBQ1QsSUFBbUMsRUFDbkMsSUFBcUM7UUFFckMsSUFBSSxnQkFBZ0IsQ0FBQztRQUNyQixJQUFJLFFBQVEsR0FBRyxDQUFDLENBQUM7UUFDakIsSUFBSSxVQUFVLEdBQUcsQ0FBQyxDQUFDO1FBRW5CLE1BQU0sV0FBVyxHQUFHLE1BQU0sSUFBSSxDQUFDLGNBQWMsRUFBRSxDQUFDO1FBRWhELE1BQU0sRUFBRSxPQUFPLEVBQUUsR0FBRyxJQUFJLENBQUM7UUFDekIsSUFBSSwyQkFBVyxDQUFDLFVBQVUsQ0FBQyxPQUFPLENBQUMsRUFBRTtZQUNuQyxPQUFPLENBQUMsT0FBTyxDQUFDLGdDQUFvQixDQUFDLEdBQUcsU0FBRSxFQUFFLENBQUM7U0FDOUM7UUFFRCxPQUFPLElBQUksRUFBRTtZQUNYLElBQUk7Z0JBQ0YsSUFBSSwyQkFBVyxDQUFDLFVBQVUsQ0FBQyxPQUFPLENBQUMsRUFBRTtvQkFDbkMsT0FBTyxDQUFDLE9BQU8sQ0FBQywwQkFBYyxDQUFDLEdBQUcsV0FBVyxRQUFRLEdBQUcsQ0FBQyxTQUFTLFdBQVcsRUFBRSxDQUFDO2lCQUNqRjtnQkFDRCxNQUFNLEVBQUUsUUFBUSxFQUFFLE1BQU0sRUFBRSxHQUFHLE1BQU0sSUFBSSxDQUFDLElBQUksQ0FBQyxDQUFDO2dCQUU5QyxJQUFJLENBQUMsVUFBVSxDQUFDLGtCQUFrQixDQUFDLGdCQUFnQixDQUFDLENBQUM7Z0JBQ3JELE1BQU0sQ0FBQyxTQUFTLENBQUMsUUFBUSxHQUFHLFFBQVEsR0FBRyxDQUFDLENBQUM7Z0JBQ3pDLE1BQU0sQ0FBQyxTQUFTLENBQUMsZUFBZSxHQUFHLFVBQVUsQ0FBQztnQkFFOUMsT0FBTyxFQUFFLFFBQVEsRUFBRSxNQUFNLEVBQUUsQ0FBQzthQUM3QjtZQUFDLE9BQU8sR0FBRyxFQUFFO2dCQUNaLFFBQVEsRUFBRSxDQUFDO2dCQUNYLElBQUksSUFBSSxDQUFDLFdBQVcsQ0FBQyxHQUFlLEVBQUUsUUFBUSxFQUFFLFdBQVcsQ0FBQyxFQUFFO29CQUM1RCxnQkFBZ0IsR0FBRyxJQUFJLENBQUMsVUFBVSxDQUFDLG1CQUFtQixDQUFDLEdBQUcsQ0FBQyxDQUFDO29CQUM1RCxNQUFNLEtBQUssR0FBRyxJQUFJLENBQUMsWUFBWSxDQUM3QixnREFBaUIsQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUFDLENBQUMsdUNBQTJCLENBQUMsQ0FBQyxDQUFDLG9DQUF3QixFQUMvRSxRQUFRLENBQ1QsQ0FBQztvQkFDRixVQUFVLElBQUksS0FBSyxDQUFDO29CQUVwQixNQUFNLElBQUksT0FBTyxDQUFDLENBQUMsT0FBTyxFQUFFLEVBQUUsQ0FBQyxVQUFVLENBQUMsT0FBTyxFQUFFLEtBQUssQ0FBQyxDQUFDLENBQUM7b0JBQzNELFNBQVM7aUJBQ1Y7Z0JBRUQsSUFBSSxDQUFDLEdBQUcsQ0FBQyxTQUFTLEVBQUU7b0JBQ2xCLEdBQUcsQ0FBQyxTQUFTLEdBQUcsRUFBRSxDQUFDO2lCQUNwQjtnQkFFRCxHQUFHLENBQUMsU0FBUyxDQUFDLFFBQVEsR0FBRyxRQUFRLENBQUM7Z0JBQ2xDLEdBQUcsQ0FBQyxTQUFTLENBQUMsZUFBZSxHQUFHLFVBQVUsQ0FBQztnQkFDM0MsTUFBTSxHQUFHLENBQUM7YUFDWDtTQUNGO0lBQ0gsQ0FBQztDQUNGO0FBN0VELHNEQTZFQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEh0dHBSZXF1ZXN0IH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3RvY29sLWh0dHBcIjtcbmltcG9ydCB7IGlzVGhyb3R0bGluZ0Vycm9yIH0gZnJvbSBcIkBhd3Mtc2RrL3NlcnZpY2UtZXJyb3ItY2xhc3NpZmljYXRpb25cIjtcbmltcG9ydCB7IFNka0Vycm9yIH0gZnJvbSBcIkBhd3Mtc2RrL3NtaXRoeS1jbGllbnRcIjtcbmltcG9ydCB7IEZpbmFsaXplSGFuZGxlciwgRmluYWxpemVIYW5kbGVyQXJndW1lbnRzLCBNZXRhZGF0YUJlYXJlciwgUHJvdmlkZXIsIFJldHJ5U3RyYXRlZ3kgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcbmltcG9ydCB7IHY0IH0gZnJvbSBcInV1aWRcIjtcblxuaW1wb3J0IHtcbiAgREVGQVVMVF9SRVRSWV9ERUxBWV9CQVNFLFxuICBJTklUSUFMX1JFVFJZX1RPS0VOUyxcbiAgSU5WT0NBVElPTl9JRF9IRUFERVIsXG4gIFJFUVVFU1RfSEVBREVSLFxuICBUSFJPVFRMSU5HX1JFVFJZX0RFTEFZX0JBU0UsXG59IGZyb20gXCIuL2NvbnN0YW50c1wiO1xuaW1wb3J0IHsgZ2V0RGVmYXVsdFJldHJ5UXVvdGEgfSBmcm9tIFwiLi9kZWZhdWx0UmV0cnlRdW90YVwiO1xuaW1wb3J0IHsgZGVmYXVsdERlbGF5RGVjaWRlciB9IGZyb20gXCIuL2RlbGF5RGVjaWRlclwiO1xuaW1wb3J0IHsgZGVmYXVsdFJldHJ5RGVjaWRlciB9IGZyb20gXCIuL3JldHJ5RGVjaWRlclwiO1xuXG4vKipcbiAqIFRoZSBkZWZhdWx0IHZhbHVlIGZvciBob3cgbWFueSBIVFRQIHJlcXVlc3RzIGFuIFNESyBzaG91bGQgbWFrZSBmb3IgYVxuICogc2luZ2xlIFNESyBvcGVyYXRpb24gaW52b2NhdGlvbiBiZWZvcmUgZ2l2aW5nIHVwXG4gKi9cbmV4cG9ydCBjb25zdCBERUZBVUxUX01BWF9BVFRFTVBUUyA9IDM7XG5cbi8qKlxuICogVGhlIGRlZmF1bHQgcmV0cnkgYWxnb3JpdGhtIHRvIHVzZS5cbiAqL1xuZXhwb3J0IGNvbnN0IERFRkFVTFRfUkVUUllfTU9ERSA9IFwic3RhbmRhcmRcIjtcblxuLyoqXG4gKiBEZXRlcm1pbmVzIHdoZXRoZXIgYW4gZXJyb3IgaXMgcmV0cnlhYmxlIGJhc2VkIG9uIHRoZSBudW1iZXIgb2YgcmV0cmllc1xuICogYWxyZWFkeSBhdHRlbXB0ZWQsIHRoZSBIVFRQIHN0YXR1cyBjb2RlLCBhbmQgdGhlIGVycm9yIHJlY2VpdmVkIChpZiBhbnkpLlxuICpcbiAqIEBwYXJhbSBlcnJvciAgICAgICAgIFRoZSBlcnJvciBlbmNvdW50ZXJlZC5cbiAqL1xuZXhwb3J0IGludGVyZmFjZSBSZXRyeURlY2lkZXIge1xuICAoZXJyb3I6IFNka0Vycm9yKTogYm9vbGVhbjtcbn1cblxuLyoqXG4gKiBEZXRlcm1pbmVzIHRoZSBudW1iZXIgb2YgbWlsbGlzZWNvbmRzIHRvIHdhaXQgYmVmb3JlIHJldHJ5aW5nIGFuIGFjdGlvbi5cbiAqXG4gKiBAcGFyYW0gZGVsYXlCYXNlIFRoZSBiYXNlIGRlbGF5IChpbiBtaWxsaXNlY29uZHMpLlxuICogQHBhcmFtIGF0dGVtcHRzICBUaGUgbnVtYmVyIG9mIHRpbWVzIHRoZSBhY3Rpb24gaGFzIGFscmVhZHkgYmVlbiB0cmllZC5cbiAqL1xuZXhwb3J0IGludGVyZmFjZSBEZWxheURlY2lkZXIge1xuICAoZGVsYXlCYXNlOiBudW1iZXIsIGF0dGVtcHRzOiBudW1iZXIpOiBudW1iZXI7XG59XG5cbi8qKlxuICogSW50ZXJmYWNlIHRoYXQgc3BlY2lmaWVzIHRoZSByZXRyeSBxdW90YSBiZWhhdmlvci5cbiAqL1xuZXhwb3J0IGludGVyZmFjZSBSZXRyeVF1b3RhIHtcbiAgLyoqXG4gICAqIHJldHVybnMgdHJ1ZSBpZiByZXRyeSB0b2tlbnMgYXJlIGF2YWlsYWJsZSBmcm9tIHRoZSByZXRyeSBxdW90YSBidWNrZXQuXG4gICAqL1xuICBoYXNSZXRyeVRva2VuczogKGVycm9yOiBTZGtFcnJvcikgPT4gYm9vbGVhbjtcblxuICAvKipcbiAgICogcmV0dXJucyB0b2tlbiBhbW91bnQgZnJvbSB0aGUgcmV0cnkgcXVvdGEgYnVja2V0LlxuICAgKiB0aHJvd3MgZXJyb3IgaXMgcmV0cnkgdG9rZW5zIGFyZSBub3QgYXZhaWxhYmxlLlxuICAgKi9cbiAgcmV0cmlldmVSZXRyeVRva2VuczogKGVycm9yOiBTZGtFcnJvcikgPT4gbnVtYmVyO1xuXG4gIC8qKlxuICAgKiByZWxlYXNlcyB0b2tlbnMgYmFjayB0byB0aGUgcmV0cnkgcXVvdGEuXG4gICAqL1xuICByZWxlYXNlUmV0cnlUb2tlbnM6IChyZWxlYXNlQ2FwYWNpdHlBbW91bnQ/OiBudW1iZXIpID0+IHZvaWQ7XG59XG5cbi8qKlxuICogU3RyYXRlZ3kgb3B0aW9ucyB0byBiZSBwYXNzZWQgdG8gU3RhbmRhcmRSZXRyeVN0cmF0ZWd5XG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgU3RhbmRhcmRSZXRyeVN0cmF0ZWd5T3B0aW9ucyB7XG4gIHJldHJ5RGVjaWRlcj86IFJldHJ5RGVjaWRlcjtcbiAgZGVsYXlEZWNpZGVyPzogRGVsYXlEZWNpZGVyO1xuICByZXRyeVF1b3RhPzogUmV0cnlRdW90YTtcbn1cblxuZXhwb3J0IGNsYXNzIFN0YW5kYXJkUmV0cnlTdHJhdGVneSBpbXBsZW1lbnRzIFJldHJ5U3RyYXRlZ3kge1xuICBwcml2YXRlIHJldHJ5RGVjaWRlcjogUmV0cnlEZWNpZGVyO1xuICBwcml2YXRlIGRlbGF5RGVjaWRlcjogRGVsYXlEZWNpZGVyO1xuICBwcml2YXRlIHJldHJ5UXVvdGE6IFJldHJ5UXVvdGE7XG4gIHB1YmxpYyByZWFkb25seSBtb2RlID0gREVGQVVMVF9SRVRSWV9NT0RFO1xuXG4gIGNvbnN0cnVjdG9yKHByaXZhdGUgcmVhZG9ubHkgbWF4QXR0ZW1wdHNQcm92aWRlcjogUHJvdmlkZXI8bnVtYmVyPiwgb3B0aW9ucz86IFN0YW5kYXJkUmV0cnlTdHJhdGVneU9wdGlvbnMpIHtcbiAgICB0aGlzLnJldHJ5RGVjaWRlciA9IG9wdGlvbnM/LnJldHJ5RGVjaWRlciA/PyBkZWZhdWx0UmV0cnlEZWNpZGVyO1xuICAgIHRoaXMuZGVsYXlEZWNpZGVyID0gb3B0aW9ucz8uZGVsYXlEZWNpZGVyID8/IGRlZmF1bHREZWxheURlY2lkZXI7XG4gICAgdGhpcy5yZXRyeVF1b3RhID0gb3B0aW9ucz8ucmV0cnlRdW90YSA/PyBnZXREZWZhdWx0UmV0cnlRdW90YShJTklUSUFMX1JFVFJZX1RPS0VOUyk7XG4gIH1cblxuICBwcml2YXRlIHNob3VsZFJldHJ5KGVycm9yOiBTZGtFcnJvciwgYXR0ZW1wdHM6IG51bWJlciwgbWF4QXR0ZW1wdHM6IG51bWJlcikge1xuICAgIHJldHVybiBhdHRlbXB0cyA8IG1heEF0dGVtcHRzICYmIHRoaXMucmV0cnlEZWNpZGVyKGVycm9yKSAmJiB0aGlzLnJldHJ5UXVvdGEuaGFzUmV0cnlUb2tlbnMoZXJyb3IpO1xuICB9XG5cbiAgcHJpdmF0ZSBhc3luYyBnZXRNYXhBdHRlbXB0cygpIHtcbiAgICBsZXQgbWF4QXR0ZW1wdHM6IG51bWJlcjtcbiAgICB0cnkge1xuICAgICAgbWF4QXR0ZW1wdHMgPSBhd2FpdCB0aGlzLm1heEF0dGVtcHRzUHJvdmlkZXIoKTtcbiAgICB9IGNhdGNoIChlcnJvcikge1xuICAgICAgbWF4QXR0ZW1wdHMgPSBERUZBVUxUX01BWF9BVFRFTVBUUztcbiAgICB9XG4gICAgcmV0dXJuIG1heEF0dGVtcHRzO1xuICB9XG5cbiAgYXN5bmMgcmV0cnk8SW5wdXQgZXh0ZW5kcyBvYmplY3QsIE91cHV0IGV4dGVuZHMgTWV0YWRhdGFCZWFyZXI+KFxuICAgIG5leHQ6IEZpbmFsaXplSGFuZGxlcjxJbnB1dCwgT3VwdXQ+LFxuICAgIGFyZ3M6IEZpbmFsaXplSGFuZGxlckFyZ3VtZW50czxJbnB1dD5cbiAgKSB7XG4gICAgbGV0IHJldHJ5VG9rZW5BbW91bnQ7XG4gICAgbGV0IGF0dGVtcHRzID0gMDtcbiAgICBsZXQgdG90YWxEZWxheSA9IDA7XG5cbiAgICBjb25zdCBtYXhBdHRlbXB0cyA9IGF3YWl0IHRoaXMuZ2V0TWF4QXR0ZW1wdHMoKTtcblxuICAgIGNvbnN0IHsgcmVxdWVzdCB9ID0gYXJncztcbiAgICBpZiAoSHR0cFJlcXVlc3QuaXNJbnN0YW5jZShyZXF1ZXN0KSkge1xuICAgICAgcmVxdWVzdC5oZWFkZXJzW0lOVk9DQVRJT05fSURfSEVBREVSXSA9IHY0KCk7XG4gICAgfVxuXG4gICAgd2hpbGUgKHRydWUpIHtcbiAgICAgIHRyeSB7XG4gICAgICAgIGlmIChIdHRwUmVxdWVzdC5pc0luc3RhbmNlKHJlcXVlc3QpKSB7XG4gICAgICAgICAgcmVxdWVzdC5oZWFkZXJzW1JFUVVFU1RfSEVBREVSXSA9IGBhdHRlbXB0PSR7YXR0ZW1wdHMgKyAxfTsgbWF4PSR7bWF4QXR0ZW1wdHN9YDtcbiAgICAgICAgfVxuICAgICAgICBjb25zdCB7IHJlc3BvbnNlLCBvdXRwdXQgfSA9IGF3YWl0IG5leHQoYXJncyk7XG5cbiAgICAgICAgdGhpcy5yZXRyeVF1b3RhLnJlbGVhc2VSZXRyeVRva2VucyhyZXRyeVRva2VuQW1vdW50KTtcbiAgICAgICAgb3V0cHV0LiRtZXRhZGF0YS5hdHRlbXB0cyA9IGF0dGVtcHRzICsgMTtcbiAgICAgICAgb3V0cHV0LiRtZXRhZGF0YS50b3RhbFJldHJ5RGVsYXkgPSB0b3RhbERlbGF5O1xuXG4gICAgICAgIHJldHVybiB7IHJlc3BvbnNlLCBvdXRwdXQgfTtcbiAgICAgIH0gY2F0Y2ggKGVycikge1xuICAgICAgICBhdHRlbXB0cysrO1xuICAgICAgICBpZiAodGhpcy5zaG91bGRSZXRyeShlcnIgYXMgU2RrRXJyb3IsIGF0dGVtcHRzLCBtYXhBdHRlbXB0cykpIHtcbiAgICAgICAgICByZXRyeVRva2VuQW1vdW50ID0gdGhpcy5yZXRyeVF1b3RhLnJldHJpZXZlUmV0cnlUb2tlbnMoZXJyKTtcbiAgICAgICAgICBjb25zdCBkZWxheSA9IHRoaXMuZGVsYXlEZWNpZGVyKFxuICAgICAgICAgICAgaXNUaHJvdHRsaW5nRXJyb3IoZXJyKSA/IFRIUk9UVExJTkdfUkVUUllfREVMQVlfQkFTRSA6IERFRkFVTFRfUkVUUllfREVMQVlfQkFTRSxcbiAgICAgICAgICAgIGF0dGVtcHRzXG4gICAgICAgICAgKTtcbiAgICAgICAgICB0b3RhbERlbGF5ICs9IGRlbGF5O1xuXG4gICAgICAgICAgYXdhaXQgbmV3IFByb21pc2UoKHJlc29sdmUpID0+IHNldFRpbWVvdXQocmVzb2x2ZSwgZGVsYXkpKTtcbiAgICAgICAgICBjb250aW51ZTtcbiAgICAgICAgfVxuXG4gICAgICAgIGlmICghZXJyLiRtZXRhZGF0YSkge1xuICAgICAgICAgIGVyci4kbWV0YWRhdGEgPSB7fTtcbiAgICAgICAgfVxuXG4gICAgICAgIGVyci4kbWV0YWRhdGEuYXR0ZW1wdHMgPSBhdHRlbXB0cztcbiAgICAgICAgZXJyLiRtZXRhZGF0YS50b3RhbFJldHJ5RGVsYXkgPSB0b3RhbERlbGF5O1xuICAgICAgICB0aHJvdyBlcnI7XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0=
+const asSdkError = (error) => {
+    if (error instanceof Error)
+        return error;
+    if (error instanceof Object)
+        return Object.assign(new Error(), error);
+    if (typeof error === "string")
+        return new Error(error);
+    return new Error(`AWS SDK error wrapper for ${error}`);
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZGVmYXVsdFN0cmF0ZWd5LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2RlZmF1bHRTdHJhdGVneS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSwwREFBcUQ7QUFDckQsd0ZBQTBFO0FBRzFFLCtCQUEwQjtBQUUxQiwyQ0FNcUI7QUFDckIsMkRBQTJEO0FBQzNELGlEQUFxRDtBQUNyRCxpREFBcUQ7QUFFckQ7OztHQUdHO0FBQ1UsUUFBQSxvQkFBb0IsR0FBRyxDQUFDLENBQUM7QUFFdEM7O0dBRUc7QUFDVSxRQUFBLGtCQUFrQixHQUFHLFVBQVUsQ0FBQztBQW9EN0MsTUFBYSxxQkFBcUI7SUFNaEMsWUFBNkIsbUJBQXFDLEVBQUUsT0FBc0M7O1FBQTdFLHdCQUFtQixHQUFuQixtQkFBbUIsQ0FBa0I7UUFGbEQsU0FBSSxHQUFHLDBCQUFrQixDQUFDO1FBR3hDLElBQUksQ0FBQyxZQUFZLEdBQUcsTUFBQSxPQUFPLGFBQVAsT0FBTyx1QkFBUCxPQUFPLENBQUUsWUFBWSxtQ0FBSSxrQ0FBbUIsQ0FBQztRQUNqRSxJQUFJLENBQUMsWUFBWSxHQUFHLE1BQUEsT0FBTyxhQUFQLE9BQU8sdUJBQVAsT0FBTyxDQUFFLFlBQVksbUNBQUksa0NBQW1CLENBQUM7UUFDakUsSUFBSSxDQUFDLFVBQVUsR0FBRyxNQUFBLE9BQU8sYUFBUCxPQUFPLHVCQUFQLE9BQU8sQ0FBRSxVQUFVLG1DQUFJLHdDQUFvQixDQUFDLGdDQUFvQixDQUFDLENBQUM7SUFDdEYsQ0FBQztJQUVPLFdBQVcsQ0FBQyxLQUFlLEVBQUUsUUFBZ0IsRUFBRSxXQUFtQjtRQUN4RSxPQUFPLFFBQVEsR0FBRyxXQUFXLElBQUksSUFBSSxDQUFDLFlBQVksQ0FBQyxLQUFLLENBQUMsSUFBSSxJQUFJLENBQUMsVUFBVSxDQUFDLGNBQWMsQ0FBQyxLQUFLLENBQUMsQ0FBQztJQUNyRyxDQUFDO0lBRU8sS0FBSyxDQUFDLGNBQWM7UUFDMUIsSUFBSSxXQUFtQixDQUFDO1FBQ3hCLElBQUk7WUFDRixXQUFXLEdBQUcsTUFBTSxJQUFJLENBQUMsbUJBQW1CLEVBQUUsQ0FBQztTQUNoRDtRQUFDLE9BQU8sS0FBSyxFQUFFO1lBQ2QsV0FBVyxHQUFHLDRCQUFvQixDQUFDO1NBQ3BDO1FBQ0QsT0FBTyxXQUFXLENBQUM7SUFDckIsQ0FBQztJQUVELEtBQUssQ0FBQyxLQUFLLENBQ1QsSUFBbUMsRUFDbkMsSUFBcUM7UUFFckMsSUFBSSxnQkFBZ0IsQ0FBQztRQUNyQixJQUFJLFFBQVEsR0FBRyxDQUFDLENBQUM7UUFDakIsSUFBSSxVQUFVLEdBQUcsQ0FBQyxDQUFDO1FBRW5CLE1BQU0sV0FBVyxHQUFHLE1BQU0sSUFBSSxDQUFDLGNBQWMsRUFBRSxDQUFDO1FBRWhELE1BQU0sRUFBRSxPQUFPLEVBQUUsR0FBRyxJQUFJLENBQUM7UUFDekIsSUFBSSwyQkFBVyxDQUFDLFVBQVUsQ0FBQyxPQUFPLENBQUMsRUFBRTtZQUNuQyxPQUFPLENBQUMsT0FBTyxDQUFDLGdDQUFvQixDQUFDLEdBQUcsU0FBRSxFQUFFLENBQUM7U0FDOUM7UUFFRCxPQUFPLElBQUksRUFBRTtZQUNYLElBQUk7Z0JBQ0YsSUFBSSwyQkFBVyxDQUFDLFVBQVUsQ0FBQyxPQUFPLENBQUMsRUFBRTtvQkFDbkMsT0FBTyxDQUFDLE9BQU8sQ0FBQywwQkFBYyxDQUFDLEdBQUcsV0FBVyxRQUFRLEdBQUcsQ0FBQyxTQUFTLFdBQVcsRUFBRSxDQUFDO2lCQUNqRjtnQkFDRCxNQUFNLEVBQUUsUUFBUSxFQUFFLE1BQU0sRUFBRSxHQUFHLE1BQU0sSUFBSSxDQUFDLElBQUksQ0FBQyxDQUFDO2dCQUU5QyxJQUFJLENBQUMsVUFBVSxDQUFDLGtCQUFrQixDQUFDLGdCQUFnQixDQUFDLENBQUM7Z0JBQ3JELE1BQU0sQ0FBQyxTQUFTLENBQUMsUUFBUSxHQUFHLFFBQVEsR0FBRyxDQUFDLENBQUM7Z0JBQ3pDLE1BQU0sQ0FBQyxTQUFTLENBQUMsZUFBZSxHQUFHLFVBQVUsQ0FBQztnQkFFOUMsT0FBTyxFQUFFLFFBQVEsRUFBRSxNQUFNLEVBQUUsQ0FBQzthQUM3QjtZQUFDLE9BQU8sQ0FBQyxFQUFFO2dCQUNWLE1BQU0sR0FBRyxHQUFHLFVBQVUsQ0FBQyxDQUFDLENBQUMsQ0FBQztnQkFDMUIsUUFBUSxFQUFFLENBQUM7Z0JBQ1gsSUFBSSxJQUFJLENBQUMsV0FBVyxDQUFDLEdBQWUsRUFBRSxRQUFRLEVBQUUsV0FBVyxDQUFDLEVBQUU7b0JBQzVELGdCQUFnQixHQUFHLElBQUksQ0FBQyxVQUFVLENBQUMsbUJBQW1CLENBQUMsR0FBRyxDQUFDLENBQUM7b0JBQzVELE1BQU0sS0FBSyxHQUFHLElBQUksQ0FBQyxZQUFZLENBQzdCLGdEQUFpQixDQUFDLEdBQUcsQ0FBQyxDQUFDLENBQUMsQ0FBQyx1Q0FBMkIsQ0FBQyxDQUFDLENBQUMsb0NBQXdCLEVBQy9FLFFBQVEsQ0FDVCxDQUFDO29CQUNGLFVBQVUsSUFBSSxLQUFLLENBQUM7b0JBRXBCLE1BQU0sSUFBSSxPQUFPLENBQUMsQ0FBQyxPQUFPLEVBQUUsRUFBRSxDQUFDLFVBQVUsQ0FBQyxPQUFPLEVBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQztvQkFDM0QsU0FBUztpQkFDVjtnQkFFRCxJQUFJLENBQUMsR0FBRyxDQUFDLFNBQVMsRUFBRTtvQkFDbEIsR0FBRyxDQUFDLFNBQVMsR0FBRyxFQUFFLENBQUM7aUJBQ3BCO2dCQUVELEdBQUcsQ0FBQyxTQUFTLENBQUMsUUFBUSxHQUFHLFFBQVEsQ0FBQztnQkFDbEMsR0FBRyxDQUFDLFNBQVMsQ0FBQyxlQUFlLEdBQUcsVUFBVSxDQUFDO2dCQUMzQyxNQUFNLEdBQUcsQ0FBQzthQUNYO1NBQ0Y7SUFDSCxDQUFDO0NBQ0Y7QUE5RUQsc0RBOEVDO0FBRUQsTUFBTSxVQUFVLEdBQUcsQ0FBQyxLQUFjLEVBQVksRUFBRTtJQUM5QyxJQUFJLEtBQUssWUFBWSxLQUFLO1FBQUUsT0FBTyxLQUFLLENBQUM7SUFDekMsSUFBSSxLQUFLLFlBQVksTUFBTTtRQUFFLE9BQU8sTUFBTSxDQUFDLE1BQU0sQ0FBQyxJQUFJLEtBQUssRUFBRSxFQUFFLEtBQUssQ0FBQyxDQUFDO0lBQ3RFLElBQUksT0FBTyxLQUFLLEtBQUssUUFBUTtRQUFFLE9BQU8sSUFBSSxLQUFLLENBQUMsS0FBSyxDQUFDLENBQUM7SUFDdkQsT0FBTyxJQUFJLEtBQUssQ0FBQyw2QkFBNkIsS0FBSyxFQUFFLENBQUMsQ0FBQztBQUN6RCxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBIdHRwUmVxdWVzdCB9IGZyb20gXCJAYXdzLXNkay9wcm90b2NvbC1odHRwXCI7XG5pbXBvcnQgeyBpc1Rocm90dGxpbmdFcnJvciB9IGZyb20gXCJAYXdzLXNkay9zZXJ2aWNlLWVycm9yLWNsYXNzaWZpY2F0aW9uXCI7XG5pbXBvcnQgeyBTZGtFcnJvciB9IGZyb20gXCJAYXdzLXNkay9zbWl0aHktY2xpZW50XCI7XG5pbXBvcnQgeyBGaW5hbGl6ZUhhbmRsZXIsIEZpbmFsaXplSGFuZGxlckFyZ3VtZW50cywgTWV0YWRhdGFCZWFyZXIsIFByb3ZpZGVyLCBSZXRyeVN0cmF0ZWd5IH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5pbXBvcnQgeyB2NCB9IGZyb20gXCJ1dWlkXCI7XG5cbmltcG9ydCB7XG4gIERFRkFVTFRfUkVUUllfREVMQVlfQkFTRSxcbiAgSU5JVElBTF9SRVRSWV9UT0tFTlMsXG4gIElOVk9DQVRJT05fSURfSEVBREVSLFxuICBSRVFVRVNUX0hFQURFUixcbiAgVEhST1RUTElOR19SRVRSWV9ERUxBWV9CQVNFLFxufSBmcm9tIFwiLi9jb25zdGFudHNcIjtcbmltcG9ydCB7IGdldERlZmF1bHRSZXRyeVF1b3RhIH0gZnJvbSBcIi4vZGVmYXVsdFJldHJ5UXVvdGFcIjtcbmltcG9ydCB7IGRlZmF1bHREZWxheURlY2lkZXIgfSBmcm9tIFwiLi9kZWxheURlY2lkZXJcIjtcbmltcG9ydCB7IGRlZmF1bHRSZXRyeURlY2lkZXIgfSBmcm9tIFwiLi9yZXRyeURlY2lkZXJcIjtcblxuLyoqXG4gKiBUaGUgZGVmYXVsdCB2YWx1ZSBmb3IgaG93IG1hbnkgSFRUUCByZXF1ZXN0cyBhbiBTREsgc2hvdWxkIG1ha2UgZm9yIGFcbiAqIHNpbmdsZSBTREsgb3BlcmF0aW9uIGludm9jYXRpb24gYmVmb3JlIGdpdmluZyB1cFxuICovXG5leHBvcnQgY29uc3QgREVGQVVMVF9NQVhfQVRURU1QVFMgPSAzO1xuXG4vKipcbiAqIFRoZSBkZWZhdWx0IHJldHJ5IGFsZ29yaXRobSB0byB1c2UuXG4gKi9cbmV4cG9ydCBjb25zdCBERUZBVUxUX1JFVFJZX01PREUgPSBcInN0YW5kYXJkXCI7XG5cbi8qKlxuICogRGV0ZXJtaW5lcyB3aGV0aGVyIGFuIGVycm9yIGlzIHJldHJ5YWJsZSBiYXNlZCBvbiB0aGUgbnVtYmVyIG9mIHJldHJpZXNcbiAqIGFscmVhZHkgYXR0ZW1wdGVkLCB0aGUgSFRUUCBzdGF0dXMgY29kZSwgYW5kIHRoZSBlcnJvciByZWNlaXZlZCAoaWYgYW55KS5cbiAqXG4gKiBAcGFyYW0gZXJyb3IgICAgICAgICBUaGUgZXJyb3IgZW5jb3VudGVyZWQuXG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgUmV0cnlEZWNpZGVyIHtcbiAgKGVycm9yOiBTZGtFcnJvcik6IGJvb2xlYW47XG59XG5cbi8qKlxuICogRGV0ZXJtaW5lcyB0aGUgbnVtYmVyIG9mIG1pbGxpc2Vjb25kcyB0byB3YWl0IGJlZm9yZSByZXRyeWluZyBhbiBhY3Rpb24uXG4gKlxuICogQHBhcmFtIGRlbGF5QmFzZSBUaGUgYmFzZSBkZWxheSAoaW4gbWlsbGlzZWNvbmRzKS5cbiAqIEBwYXJhbSBhdHRlbXB0cyAgVGhlIG51bWJlciBvZiB0aW1lcyB0aGUgYWN0aW9uIGhhcyBhbHJlYWR5IGJlZW4gdHJpZWQuXG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgRGVsYXlEZWNpZGVyIHtcbiAgKGRlbGF5QmFzZTogbnVtYmVyLCBhdHRlbXB0czogbnVtYmVyKTogbnVtYmVyO1xufVxuXG4vKipcbiAqIEludGVyZmFjZSB0aGF0IHNwZWNpZmllcyB0aGUgcmV0cnkgcXVvdGEgYmVoYXZpb3IuXG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgUmV0cnlRdW90YSB7XG4gIC8qKlxuICAgKiByZXR1cm5zIHRydWUgaWYgcmV0cnkgdG9rZW5zIGFyZSBhdmFpbGFibGUgZnJvbSB0aGUgcmV0cnkgcXVvdGEgYnVja2V0LlxuICAgKi9cbiAgaGFzUmV0cnlUb2tlbnM6IChlcnJvcjogU2RrRXJyb3IpID0+IGJvb2xlYW47XG5cbiAgLyoqXG4gICAqIHJldHVybnMgdG9rZW4gYW1vdW50IGZyb20gdGhlIHJldHJ5IHF1b3RhIGJ1Y2tldC5cbiAgICogdGhyb3dzIGVycm9yIGlzIHJldHJ5IHRva2VucyBhcmUgbm90IGF2YWlsYWJsZS5cbiAgICovXG4gIHJldHJpZXZlUmV0cnlUb2tlbnM6IChlcnJvcjogU2RrRXJyb3IpID0+IG51bWJlcjtcblxuICAvKipcbiAgICogcmVsZWFzZXMgdG9rZW5zIGJhY2sgdG8gdGhlIHJldHJ5IHF1b3RhLlxuICAgKi9cbiAgcmVsZWFzZVJldHJ5VG9rZW5zOiAocmVsZWFzZUNhcGFjaXR5QW1vdW50PzogbnVtYmVyKSA9PiB2b2lkO1xufVxuXG4vKipcbiAqIFN0cmF0ZWd5IG9wdGlvbnMgdG8gYmUgcGFzc2VkIHRvIFN0YW5kYXJkUmV0cnlTdHJhdGVneVxuICovXG5leHBvcnQgaW50ZXJmYWNlIFN0YW5kYXJkUmV0cnlTdHJhdGVneU9wdGlvbnMge1xuICByZXRyeURlY2lkZXI/OiBSZXRyeURlY2lkZXI7XG4gIGRlbGF5RGVjaWRlcj86IERlbGF5RGVjaWRlcjtcbiAgcmV0cnlRdW90YT86IFJldHJ5UXVvdGE7XG59XG5cbmV4cG9ydCBjbGFzcyBTdGFuZGFyZFJldHJ5U3RyYXRlZ3kgaW1wbGVtZW50cyBSZXRyeVN0cmF0ZWd5IHtcbiAgcHJpdmF0ZSByZXRyeURlY2lkZXI6IFJldHJ5RGVjaWRlcjtcbiAgcHJpdmF0ZSBkZWxheURlY2lkZXI6IERlbGF5RGVjaWRlcjtcbiAgcHJpdmF0ZSByZXRyeVF1b3RhOiBSZXRyeVF1b3RhO1xuICBwdWJsaWMgcmVhZG9ubHkgbW9kZSA9IERFRkFVTFRfUkVUUllfTU9ERTtcblxuICBjb25zdHJ1Y3Rvcihwcml2YXRlIHJlYWRvbmx5IG1heEF0dGVtcHRzUHJvdmlkZXI6IFByb3ZpZGVyPG51bWJlcj4sIG9wdGlvbnM/OiBTdGFuZGFyZFJldHJ5U3RyYXRlZ3lPcHRpb25zKSB7XG4gICAgdGhpcy5yZXRyeURlY2lkZXIgPSBvcHRpb25zPy5yZXRyeURlY2lkZXIgPz8gZGVmYXVsdFJldHJ5RGVjaWRlcjtcbiAgICB0aGlzLmRlbGF5RGVjaWRlciA9IG9wdGlvbnM/LmRlbGF5RGVjaWRlciA/PyBkZWZhdWx0RGVsYXlEZWNpZGVyO1xuICAgIHRoaXMucmV0cnlRdW90YSA9IG9wdGlvbnM/LnJldHJ5UXVvdGEgPz8gZ2V0RGVmYXVsdFJldHJ5UXVvdGEoSU5JVElBTF9SRVRSWV9UT0tFTlMpO1xuICB9XG5cbiAgcHJpdmF0ZSBzaG91bGRSZXRyeShlcnJvcjogU2RrRXJyb3IsIGF0dGVtcHRzOiBudW1iZXIsIG1heEF0dGVtcHRzOiBudW1iZXIpIHtcbiAgICByZXR1cm4gYXR0ZW1wdHMgPCBtYXhBdHRlbXB0cyAmJiB0aGlzLnJldHJ5RGVjaWRlcihlcnJvcikgJiYgdGhpcy5yZXRyeVF1b3RhLmhhc1JldHJ5VG9rZW5zKGVycm9yKTtcbiAgfVxuXG4gIHByaXZhdGUgYXN5bmMgZ2V0TWF4QXR0ZW1wdHMoKSB7XG4gICAgbGV0IG1heEF0dGVtcHRzOiBudW1iZXI7XG4gICAgdHJ5IHtcbiAgICAgIG1heEF0dGVtcHRzID0gYXdhaXQgdGhpcy5tYXhBdHRlbXB0c1Byb3ZpZGVyKCk7XG4gICAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICAgIG1heEF0dGVtcHRzID0gREVGQVVMVF9NQVhfQVRURU1QVFM7XG4gICAgfVxuICAgIHJldHVybiBtYXhBdHRlbXB0cztcbiAgfVxuXG4gIGFzeW5jIHJldHJ5PElucHV0IGV4dGVuZHMgb2JqZWN0LCBPdXB1dCBleHRlbmRzIE1ldGFkYXRhQmVhcmVyPihcbiAgICBuZXh0OiBGaW5hbGl6ZUhhbmRsZXI8SW5wdXQsIE91cHV0PixcbiAgICBhcmdzOiBGaW5hbGl6ZUhhbmRsZXJBcmd1bWVudHM8SW5wdXQ+XG4gICkge1xuICAgIGxldCByZXRyeVRva2VuQW1vdW50O1xuICAgIGxldCBhdHRlbXB0cyA9IDA7XG4gICAgbGV0IHRvdGFsRGVsYXkgPSAwO1xuXG4gICAgY29uc3QgbWF4QXR0ZW1wdHMgPSBhd2FpdCB0aGlzLmdldE1heEF0dGVtcHRzKCk7XG5cbiAgICBjb25zdCB7IHJlcXVlc3QgfSA9IGFyZ3M7XG4gICAgaWYgKEh0dHBSZXF1ZXN0LmlzSW5zdGFuY2UocmVxdWVzdCkpIHtcbiAgICAgIHJlcXVlc3QuaGVhZGVyc1tJTlZPQ0FUSU9OX0lEX0hFQURFUl0gPSB2NCgpO1xuICAgIH1cblxuICAgIHdoaWxlICh0cnVlKSB7XG4gICAgICB0cnkge1xuICAgICAgICBpZiAoSHR0cFJlcXVlc3QuaXNJbnN0YW5jZShyZXF1ZXN0KSkge1xuICAgICAgICAgIHJlcXVlc3QuaGVhZGVyc1tSRVFVRVNUX0hFQURFUl0gPSBgYXR0ZW1wdD0ke2F0dGVtcHRzICsgMX07IG1heD0ke21heEF0dGVtcHRzfWA7XG4gICAgICAgIH1cbiAgICAgICAgY29uc3QgeyByZXNwb25zZSwgb3V0cHV0IH0gPSBhd2FpdCBuZXh0KGFyZ3MpO1xuXG4gICAgICAgIHRoaXMucmV0cnlRdW90YS5yZWxlYXNlUmV0cnlUb2tlbnMocmV0cnlUb2tlbkFtb3VudCk7XG4gICAgICAgIG91dHB1dC4kbWV0YWRhdGEuYXR0ZW1wdHMgPSBhdHRlbXB0cyArIDE7XG4gICAgICAgIG91dHB1dC4kbWV0YWRhdGEudG90YWxSZXRyeURlbGF5ID0gdG90YWxEZWxheTtcblxuICAgICAgICByZXR1cm4geyByZXNwb25zZSwgb3V0cHV0IH07XG4gICAgICB9IGNhdGNoIChlKSB7XG4gICAgICAgIGNvbnN0IGVyciA9IGFzU2RrRXJyb3IoZSk7XG4gICAgICAgIGF0dGVtcHRzKys7XG4gICAgICAgIGlmICh0aGlzLnNob3VsZFJldHJ5KGVyciBhcyBTZGtFcnJvciwgYXR0ZW1wdHMsIG1heEF0dGVtcHRzKSkge1xuICAgICAgICAgIHJldHJ5VG9rZW5BbW91bnQgPSB0aGlzLnJldHJ5UXVvdGEucmV0cmlldmVSZXRyeVRva2VucyhlcnIpO1xuICAgICAgICAgIGNvbnN0IGRlbGF5ID0gdGhpcy5kZWxheURlY2lkZXIoXG4gICAgICAgICAgICBpc1Rocm90dGxpbmdFcnJvcihlcnIpID8gVEhST1RUTElOR19SRVRSWV9ERUxBWV9CQVNFIDogREVGQVVMVF9SRVRSWV9ERUxBWV9CQVNFLFxuICAgICAgICAgICAgYXR0ZW1wdHNcbiAgICAgICAgICApO1xuICAgICAgICAgIHRvdGFsRGVsYXkgKz0gZGVsYXk7XG5cbiAgICAgICAgICBhd2FpdCBuZXcgUHJvbWlzZSgocmVzb2x2ZSkgPT4gc2V0VGltZW91dChyZXNvbHZlLCBkZWxheSkpO1xuICAgICAgICAgIGNvbnRpbnVlO1xuICAgICAgICB9XG5cbiAgICAgICAgaWYgKCFlcnIuJG1ldGFkYXRhKSB7XG4gICAgICAgICAgZXJyLiRtZXRhZGF0YSA9IHt9O1xuICAgICAgICB9XG5cbiAgICAgICAgZXJyLiRtZXRhZGF0YS5hdHRlbXB0cyA9IGF0dGVtcHRzO1xuICAgICAgICBlcnIuJG1ldGFkYXRhLnRvdGFsUmV0cnlEZWxheSA9IHRvdGFsRGVsYXk7XG4gICAgICAgIHRocm93IGVycjtcbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cblxuY29uc3QgYXNTZGtFcnJvciA9IChlcnJvcjogdW5rbm93bik6IFNka0Vycm9yID0+IHtcbiAgaWYgKGVycm9yIGluc3RhbmNlb2YgRXJyb3IpIHJldHVybiBlcnJvcjtcbiAgaWYgKGVycm9yIGluc3RhbmNlb2YgT2JqZWN0KSByZXR1cm4gT2JqZWN0LmFzc2lnbihuZXcgRXJyb3IoKSwgZXJyb3IpO1xuICBpZiAodHlwZW9mIGVycm9yID09PSBcInN0cmluZ1wiKSByZXR1cm4gbmV3IEVycm9yKGVycm9yKTtcbiAgcmV0dXJuIG5ldyBFcnJvcihgQVdTIFNESyBlcnJvciB3cmFwcGVyIGZvciAke2Vycm9yfWApO1xufTtcbiJdfQ==
 
 /***/ }),
 
@@ -24728,7 +26864,7 @@ const resolveStsAuthConfig = (input, stsClientCtor) => {
     });
 };
 exports.resolveStsAuthConfig = resolveStsAuthConfig;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsb0VBQThHO0FBZ0I5Rzs7OztHQUlHO0FBQ0ksTUFBTSxvQkFBb0IsR0FBRyxDQUNsQyxLQUFrRCxFQUNsRCxhQUErRCxFQUNwQyxFQUFFO0lBQzdCLE9BQU8seUNBQW9CLENBQUM7UUFDMUIsR0FBRyxLQUFLO1FBQ1IsYUFBYTtLQUNkLENBQUMsQ0FBQztBQUNMLENBQUMsQ0FBQztBQVJXLFFBQUEsb0JBQW9CLHdCQVEvQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEF3c0F1dGhJbnB1dENvbmZpZywgQXdzQXV0aFJlc29sdmVkQ29uZmlnLCByZXNvbHZlQXdzQXV0aENvbmZpZyB9IGZyb20gXCJAYXdzLXNkay9taWRkbGV3YXJlLXNpZ25pbmdcIjtcbmltcG9ydCB7IENsaWVudCwgQ3JlZGVudGlhbHMsIEhhc2hDb25zdHJ1Y3RvciwgUGx1Z2dhYmxlLCBQcm92aWRlciwgUmVnaW9uSW5mb1Byb3ZpZGVyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmV4cG9ydCBpbnRlcmZhY2UgU3RzQXV0aElucHV0Q29uZmlnIGV4dGVuZHMgQXdzQXV0aElucHV0Q29uZmlnIHt9XG5pbnRlcmZhY2UgUHJldmlvdXNseVJlc29sdmVkIHtcbiAgY3JlZGVudGlhbERlZmF1bHRQcm92aWRlcjogKGlucHV0OiBhbnkpID0+IFByb3ZpZGVyPENyZWRlbnRpYWxzPjtcbiAgcmVnaW9uOiBzdHJpbmcgfCBQcm92aWRlcjxzdHJpbmc+O1xuICByZWdpb25JbmZvUHJvdmlkZXI6IFJlZ2lvbkluZm9Qcm92aWRlcjtcbiAgc2lnbmluZ05hbWU/OiBzdHJpbmc7XG4gIHNlcnZpY2VJZDogc3RyaW5nO1xuICBzaGEyNTY6IEhhc2hDb25zdHJ1Y3Rvcjtcbn1cbmV4cG9ydCBpbnRlcmZhY2UgU3RzQXV0aFJlc29sdmVkQ29uZmlnIGV4dGVuZHMgQXdzQXV0aFJlc29sdmVkQ29uZmlnIHtcbiAgc3RzQ2xpZW50Q3RvcjogbmV3IChjbGllbnRDb25maWc6IGFueSkgPT4gQ2xpZW50PGFueSwgYW55LCBhbnk+O1xufVxuXG4vKipcbiAqIFNldCBTVFMgY2xpZW50IGNvbnN0cnVjdG9yIHRvIGBzdHNDbGllbnRDdG9yYCBjb25maWcgcGFyYW1ldGVyLiBJdCBpcyB1c2VkXG4gKiBmb3Igcm9sZSBhc3N1bWVycyBmb3IgU1RTIGNsaWVudCBpbnRlcm5hbGx5LiBTZWUgYGNsaWVudHMvY2xpZW50LXN0cy9kZWZhdWx0U3RzUm9sZUFzc3VtZXJzLnRzYFxuICogYW5kIGBjbGllbnRzL2NsaWVudC1zdHMvU1RTQ2xpZW50LnRzYC5cbiAqL1xuZXhwb3J0IGNvbnN0IHJlc29sdmVTdHNBdXRoQ29uZmlnID0gPFQ+KFxuICBpbnB1dDogVCAmIFByZXZpb3VzbHlSZXNvbHZlZCAmIFN0c0F1dGhJbnB1dENvbmZpZyxcbiAgc3RzQ2xpZW50Q3RvcjogbmV3IChjbGllbnRDb25maWc6IGFueSkgPT4gQ2xpZW50PGFueSwgYW55LCBhbnk+XG4pOiBUICYgU3RzQXV0aFJlc29sdmVkQ29uZmlnID0+IHtcbiAgcmV0dXJuIHJlc29sdmVBd3NBdXRoQ29uZmlnKHtcbiAgICAuLi5pbnB1dCxcbiAgICBzdHNDbGllbnRDdG9yLFxuICB9KTtcbn07XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsb0VBQThHO0FBb0I5Rzs7OztHQUlHO0FBQ0ksTUFBTSxvQkFBb0IsR0FBRyxDQUNsQyxLQUFrRCxFQUNsRCxhQUErRCxFQUNwQyxFQUFFO0lBQzdCLE9BQU8seUNBQW9CLENBQUM7UUFDMUIsR0FBRyxLQUFLO1FBQ1IsYUFBYTtLQUNkLENBQUMsQ0FBQztBQUNMLENBQUMsQ0FBQztBQVJXLFFBQUEsb0JBQW9CLHdCQVEvQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEF3c0F1dGhJbnB1dENvbmZpZywgQXdzQXV0aFJlc29sdmVkQ29uZmlnLCByZXNvbHZlQXdzQXV0aENvbmZpZyB9IGZyb20gXCJAYXdzLXNkay9taWRkbGV3YXJlLXNpZ25pbmdcIjtcbmltcG9ydCB7IENsaWVudCwgQ3JlZGVudGlhbHMsIEhhc2hDb25zdHJ1Y3RvciwgUGx1Z2dhYmxlLCBQcm92aWRlciwgUmVnaW9uSW5mb1Byb3ZpZGVyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmV4cG9ydCBpbnRlcmZhY2UgU3RzQXV0aElucHV0Q29uZmlnIGV4dGVuZHMgQXdzQXV0aElucHV0Q29uZmlnIHt9XG5pbnRlcmZhY2UgUHJldmlvdXNseVJlc29sdmVkIHtcbiAgY3JlZGVudGlhbERlZmF1bHRQcm92aWRlcjogKGlucHV0OiBhbnkpID0+IFByb3ZpZGVyPENyZWRlbnRpYWxzPjtcbiAgcmVnaW9uOiBzdHJpbmcgfCBQcm92aWRlcjxzdHJpbmc+O1xuICByZWdpb25JbmZvUHJvdmlkZXI6IFJlZ2lvbkluZm9Qcm92aWRlcjtcbiAgc2lnbmluZ05hbWU/OiBzdHJpbmc7XG4gIHNlcnZpY2VJZDogc3RyaW5nO1xuICBzaGEyNTY6IEhhc2hDb25zdHJ1Y3Rvcjtcbn1cbmV4cG9ydCBpbnRlcmZhY2UgU3RzQXV0aFJlc29sdmVkQ29uZmlnIGV4dGVuZHMgQXdzQXV0aFJlc29sdmVkQ29uZmlnIHtcbiAgLyoqXG4gICAqIFJlZmVyZW5jZSB0byBTVFNDbGllbnQgY2xhc3MgY29uc3RydWN0b3IuXG4gICAqIEBpbnRlcm5hbFxuICAgKi9cbiAgc3RzQ2xpZW50Q3RvcjogbmV3IChjbGllbnRDb25maWc6IGFueSkgPT4gQ2xpZW50PGFueSwgYW55LCBhbnk+O1xufVxuXG4vKipcbiAqIFNldCBTVFMgY2xpZW50IGNvbnN0cnVjdG9yIHRvIGBzdHNDbGllbnRDdG9yYCBjb25maWcgcGFyYW1ldGVyLiBJdCBpcyB1c2VkXG4gKiBmb3Igcm9sZSBhc3N1bWVycyBmb3IgU1RTIGNsaWVudCBpbnRlcm5hbGx5LiBTZWUgYGNsaWVudHMvY2xpZW50LXN0cy9kZWZhdWx0U3RzUm9sZUFzc3VtZXJzLnRzYFxuICogYW5kIGBjbGllbnRzL2NsaWVudC1zdHMvU1RTQ2xpZW50LnRzYC5cbiAqL1xuZXhwb3J0IGNvbnN0IHJlc29sdmVTdHNBdXRoQ29uZmlnID0gPFQ+KFxuICBpbnB1dDogVCAmIFByZXZpb3VzbHlSZXNvbHZlZCAmIFN0c0F1dGhJbnB1dENvbmZpZyxcbiAgc3RzQ2xpZW50Q3RvcjogbmV3IChjbGllbnRDb25maWc6IGFueSkgPT4gQ2xpZW50PGFueSwgYW55LCBhbnk+XG4pOiBUICYgU3RzQXV0aFJlc29sdmVkQ29uZmlnID0+IHtcbiAgcmV0dXJuIHJlc29sdmVBd3NBdXRoQ29uZmlnKHtcbiAgICAuLi5pbnB1dCxcbiAgICBzdHNDbGllbnRDdG9yLFxuICB9KTtcbn07XG4iXX0=
 
 /***/ }),
 
@@ -24884,7 +27020,7 @@ const normalizeCredentialProvider = (credentials) => {
     }
     return normalizeProvider(credentials);
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlndXJhdGlvbnMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvY29uZmlndXJhdGlvbnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsa0VBQXFEO0FBQ3JELHdEQUFvRDtBQUdwRCw0RUFBNEU7QUFDNUUsTUFBTSx3QkFBd0IsR0FBRyxNQUFNLENBQUM7QUE0Q2pDLE1BQU0sb0JBQW9CLEdBQUcsQ0FDbEMsS0FBa0QsRUFDdkIsRUFBRTtJQUM3QixNQUFNLGVBQWUsR0FBRyxLQUFLLENBQUMsV0FBVztRQUN2QyxDQUFDLENBQUMsMkJBQTJCLENBQUMsS0FBSyxDQUFDLFdBQVcsQ0FBQztRQUNoRCxDQUFDLENBQUMsS0FBSyxDQUFDLHlCQUF5QixDQUFDLEtBQVksQ0FBQyxDQUFDO0lBQ2xELE1BQU0sRUFBRSxpQkFBaUIsR0FBRyxJQUFJLEVBQUUsaUJBQWlCLEdBQUcsS0FBSyxDQUFDLGlCQUFpQixJQUFJLENBQUMsRUFBRSxNQUFNLEVBQUUsR0FBRyxLQUFLLENBQUM7SUFDckcsSUFBSSxNQUErQixDQUFDO0lBQ3BDLElBQUksS0FBSyxDQUFDLE1BQU0sRUFBRTtRQUNoQiwyRkFBMkY7UUFDM0YsTUFBTSxHQUFHLGlCQUFpQixDQUFDLEtBQUssQ0FBQyxNQUFNLENBQUMsQ0FBQztLQUMxQztTQUFNO1FBQ0wscURBQXFEO1FBQ3JELE1BQU0sR0FBRyxHQUFHLEVBQUUsQ0FDWixpQkFBaUIsQ0FBQyxLQUFLLENBQUMsTUFBTSxDQUFDLEVBQUU7YUFDOUIsSUFBSSxDQUFDLEtBQUssRUFBRSxNQUFNLEVBQUUsRUFBRSxDQUFDLENBQUMsQ0FBQyxNQUFNLEtBQUssQ0FBQyxrQkFBa0IsQ0FBQyxNQUFNLENBQUMsQ0FBQyxJQUFJLEVBQUUsRUFBRSxNQUFNLENBQXlCLENBQUM7YUFDeEcsSUFBSSxDQUFDLENBQUMsQ0FBQyxVQUFVLEVBQUUsTUFBTSxDQUFDLEVBQUUsRUFBRTtZQUM3QixNQUFNLEVBQUUsYUFBYSxFQUFFLGNBQWMsRUFBRSxHQUFHLFVBQVUsQ0FBQztZQUNyRCxpRkFBaUY7WUFDakYsZ0hBQWdIO1lBQ2hILEtBQUssQ0FBQyxhQUFhLEdBQUcsS0FBSyxDQUFDLGFBQWEsSUFBSSxhQUFhLElBQUksTUFBTSxDQUFDO1lBQ3JFLCtCQUErQjtZQUMvQixtSEFBbUg7WUFDbkgsS0FBSyxDQUFDLFdBQVcsR0FBRyxLQUFLLENBQUMsV0FBVyxJQUFJLGNBQWMsSUFBSSxLQUFLLENBQUMsU0FBUyxDQUFDO1lBRTNFLE9BQU8sSUFBSSwwQkFBVyxDQUFDO2dCQUNyQixXQUFXLEVBQUUsZUFBZTtnQkFDNUIsTUFBTSxFQUFFLEtBQUssQ0FBQyxhQUFhO2dCQUMzQixPQUFPLEVBQUUsS0FBSyxDQUFDLFdBQVc7Z0JBQzFCLE1BQU07Z0JBQ04sYUFBYSxFQUFFLGlCQUFpQjthQUNqQyxDQUFDLENBQUM7UUFDTCxDQUFDLENBQUMsQ0FBQztLQUNSO0lBRUQsT0FBTztRQUNMLEdBQUcsS0FBSztRQUNSLGlCQUFpQjtRQUNqQixpQkFBaUI7UUFDakIsV0FBVyxFQUFFLGVBQWU7UUFDNUIsTUFBTTtLQUNQLENBQUM7QUFDSixDQUFDLENBQUM7QUExQ1csUUFBQSxvQkFBb0Isd0JBMEMvQjtBQUVGLE1BQU0saUJBQWlCLEdBQUcsQ0FBSSxLQUFzQixFQUFlLEVBQUU7SUFDbkUsSUFBSSxPQUFPLEtBQUssS0FBSyxRQUFRLEVBQUU7UUFDN0IsTUFBTSxXQUFXLEdBQUcsT0FBTyxDQUFDLE9BQU8sQ0FBQyxLQUFLLENBQUMsQ0FBQztRQUMzQyxPQUFPLEdBQUcsRUFBRSxDQUFDLFdBQVcsQ0FBQztLQUMxQjtJQUNELE9BQU8sS0FBb0IsQ0FBQztBQUM5QixDQUFDLENBQUM7QUFFRixNQUFNLDJCQUEyQixHQUFHLENBQUMsV0FBZ0QsRUFBeUIsRUFBRTtJQUM5RyxJQUFJLE9BQU8sV0FBVyxLQUFLLFVBQVUsRUFBRTtRQUNyQyxPQUFPLDJCQUFPLENBQ1osV0FBVyxFQUNYLENBQUMsV0FBVyxFQUFFLEVBQUUsQ0FDZCxXQUFXLENBQUMsVUFBVSxLQUFLLFNBQVM7WUFDcEMsV0FBVyxDQUFDLFVBQVUsQ0FBQyxPQUFPLEVBQUUsR0FBRyxJQUFJLENBQUMsR0FBRyxFQUFFLEdBQUcsd0JBQXdCLEVBQzFFLENBQUMsV0FBVyxFQUFFLEVBQUUsQ0FBQyxXQUFXLENBQUMsVUFBVSxLQUFLLFNBQVMsQ0FDdEQsQ0FBQztLQUNIO0lBQ0QsT0FBTyxpQkFBaUIsQ0FBQyxXQUFXLENBQUMsQ0FBQztBQUN4QyxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBtZW1vaXplIH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3BlcnR5LXByb3ZpZGVyXCI7XG5pbXBvcnQgeyBTaWduYXR1cmVWNCB9IGZyb20gXCJAYXdzLXNkay9zaWduYXR1cmUtdjRcIjtcbmltcG9ydCB7IENyZWRlbnRpYWxzLCBIYXNoQ29uc3RydWN0b3IsIFByb3ZpZGVyLCBSZWdpb25JbmZvLCBSZWdpb25JbmZvUHJvdmlkZXIsIFJlcXVlc3RTaWduZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuLy8gNSBtaW51dGVzIGJ1ZmZlciB0aW1lIHRoZSByZWZyZXNoIHRoZSBjcmVkZW50aWFsIGJlZm9yZSBpdCByZWFsbHkgZXhwaXJlc1xuY29uc3QgQ1JFREVOVElBTF9FWFBJUkVfV0lORE9XID0gMzAwMDAwO1xuXG5leHBvcnQgaW50ZXJmYWNlIEF3c0F1dGhJbnB1dENvbmZpZyB7XG4gIC8qKlxuICAgKiBUaGUgY3JlZGVudGlhbHMgdXNlZCB0byBzaWduIHJlcXVlc3RzLlxuICAgKi9cbiAgY3JlZGVudGlhbHM/OiBDcmVkZW50aWFscyB8IFByb3ZpZGVyPENyZWRlbnRpYWxzPjtcblxuICAvKipcbiAgICogVGhlIHNpZ25lciB0byB1c2Ugd2hlbiBzaWduaW5nIHJlcXVlc3RzLlxuICAgKi9cbiAgc2lnbmVyPzogUmVxdWVzdFNpZ25lciB8IFByb3ZpZGVyPFJlcXVlc3RTaWduZXI+O1xuXG4gIC8qKlxuICAgKiBXaGV0aGVyIHRvIGVzY2FwZSByZXF1ZXN0IHBhdGggd2hlbiBzaWduaW5nIHRoZSByZXF1ZXN0LlxuICAgKi9cbiAgc2lnbmluZ0VzY2FwZVBhdGg/OiBib29sZWFuO1xuXG4gIC8qKlxuICAgKiBBbiBvZmZzZXQgdmFsdWUgaW4gbWlsbGlzZWNvbmRzIHRvIGFwcGx5IHRvIGFsbCBzaWduaW5nIHRpbWVzLlxuICAgKi9cbiAgc3lzdGVtQ2xvY2tPZmZzZXQ/OiBudW1iZXI7XG5cbiAgLyoqXG4gICAqIFRoZSByZWdpb24gd2hlcmUgeW91IHdhbnQgdG8gc2lnbiB5b3VyIHJlcXVlc3QgYWdhaW5zdC4gVGhpc1xuICAgKiBjYW4gYmUgZGlmZmVyZW50IHRvIHRoZSByZWdpb24gaW4gdGhlIGVuZHBvaW50LlxuICAgKi9cbiAgc2lnbmluZ1JlZ2lvbj86IHN0cmluZztcbn1cbmludGVyZmFjZSBQcmV2aW91c2x5UmVzb2x2ZWQge1xuICBjcmVkZW50aWFsRGVmYXVsdFByb3ZpZGVyOiAoaW5wdXQ6IGFueSkgPT4gUHJvdmlkZXI8Q3JlZGVudGlhbHM+O1xuICByZWdpb246IHN0cmluZyB8IFByb3ZpZGVyPHN0cmluZz47XG4gIHJlZ2lvbkluZm9Qcm92aWRlcjogUmVnaW9uSW5mb1Byb3ZpZGVyO1xuICBzaWduaW5nTmFtZT86IHN0cmluZztcbiAgc2VydmljZUlkOiBzdHJpbmc7XG4gIHNoYTI1NjogSGFzaENvbnN0cnVjdG9yO1xufVxuZXhwb3J0IGludGVyZmFjZSBBd3NBdXRoUmVzb2x2ZWRDb25maWcge1xuICBjcmVkZW50aWFsczogUHJvdmlkZXI8Q3JlZGVudGlhbHM+O1xuICBzaWduZXI6IFByb3ZpZGVyPFJlcXVlc3RTaWduZXI+O1xuICBzaWduaW5nRXNjYXBlUGF0aDogYm9vbGVhbjtcbiAgc3lzdGVtQ2xvY2tPZmZzZXQ6IG51bWJlcjtcbn1cblxuZXhwb3J0IGNvbnN0IHJlc29sdmVBd3NBdXRoQ29uZmlnID0gPFQ+KFxuICBpbnB1dDogVCAmIEF3c0F1dGhJbnB1dENvbmZpZyAmIFByZXZpb3VzbHlSZXNvbHZlZFxuKTogVCAmIEF3c0F1dGhSZXNvbHZlZENvbmZpZyA9PiB7XG4gIGNvbnN0IG5vcm1hbGl6ZWRDcmVkcyA9IGlucHV0LmNyZWRlbnRpYWxzXG4gICAgPyBub3JtYWxpemVDcmVkZW50aWFsUHJvdmlkZXIoaW5wdXQuY3JlZGVudGlhbHMpXG4gICAgOiBpbnB1dC5jcmVkZW50aWFsRGVmYXVsdFByb3ZpZGVyKGlucHV0IGFzIGFueSk7XG4gIGNvbnN0IHsgc2lnbmluZ0VzY2FwZVBhdGggPSB0cnVlLCBzeXN0ZW1DbG9ja09mZnNldCA9IGlucHV0LnN5c3RlbUNsb2NrT2Zmc2V0IHx8IDAsIHNoYTI1NiB9ID0gaW5wdXQ7XG4gIGxldCBzaWduZXI6IFByb3ZpZGVyPFJlcXVlc3RTaWduZXI+O1xuICBpZiAoaW5wdXQuc2lnbmVyKSB7XG4gICAgLy9pZiBzaWduZXIgaXMgc3VwcGxpZWQgYnkgdXNlciwgbm9ybWFsaXplIGl0IHRvIGEgZnVuY3Rpb24gcmV0dXJuaW5nIGEgcHJvbWlzZSBmb3Igc2lnbmVyLlxuICAgIHNpZ25lciA9IG5vcm1hbGl6ZVByb3ZpZGVyKGlucHV0LnNpZ25lcik7XG4gIH0gZWxzZSB7XG4gICAgLy9jb25zdHJ1Y3QgYSBwcm92aWRlciBpbmZlcnJpbmcgc2lnbmluZyBmcm9tIHJlZ2lvbi5cbiAgICBzaWduZXIgPSAoKSA9PlxuICAgICAgbm9ybWFsaXplUHJvdmlkZXIoaW5wdXQucmVnaW9uKSgpXG4gICAgICAgIC50aGVuKGFzeW5jIChyZWdpb24pID0+IFsoYXdhaXQgaW5wdXQucmVnaW9uSW5mb1Byb3ZpZGVyKHJlZ2lvbikpIHx8IHt9LCByZWdpb25dIGFzIFtSZWdpb25JbmZvLCBzdHJpbmddKVxuICAgICAgICAudGhlbigoW3JlZ2lvbkluZm8sIHJlZ2lvbl0pID0+IHtcbiAgICAgICAgICBjb25zdCB7IHNpZ25pbmdSZWdpb24sIHNpZ25pbmdTZXJ2aWNlIH0gPSByZWdpb25JbmZvO1xuICAgICAgICAgIC8vdXBkYXRlIGNsaWVudCdzIHNpbmdpbmcgcmVnaW9uIGFuZCBzaWduaW5nIHNlcnZpY2UgY29uZmlnIGlmIHRoZXkgYXJlIHJlc29sdmVkLlxuICAgICAgICAgIC8vc2lnbmluZyByZWdpb24gcmVzb2x2aW5nIG9yZGVyOiB1c2VyIHN1cHBsaWVkIHNpZ25pbmdSZWdpb24gLT4gZW5kcG9pbnRzLmpzb24gaW5mZXJyZWQgcmVnaW9uIC0+IGNsaWVudCByZWdpb25cbiAgICAgICAgICBpbnB1dC5zaWduaW5nUmVnaW9uID0gaW5wdXQuc2lnbmluZ1JlZ2lvbiB8fCBzaWduaW5nUmVnaW9uIHx8IHJlZ2lvbjtcbiAgICAgICAgICAvL3NpZ25pbmcgbmFtZSByZXNvbHZpbmcgb3JkZXI6XG4gICAgICAgICAgLy91c2VyIHN1cHBsaWVkIHNpZ25pbmdOYW1lIC0+IGVuZHBvaW50cy5qc29uIGluZmVycmVkIChjcmVkZW50aWFsIHNjb3BlIC0+IG1vZGVsIGFybk5hbWVzcGFjZSkgLT4gbW9kZWwgc2VydmljZSBpZFxuICAgICAgICAgIGlucHV0LnNpZ25pbmdOYW1lID0gaW5wdXQuc2lnbmluZ05hbWUgfHwgc2lnbmluZ1NlcnZpY2UgfHwgaW5wdXQuc2VydmljZUlkO1xuXG4gICAgICAgICAgcmV0dXJuIG5ldyBTaWduYXR1cmVWNCh7XG4gICAgICAgICAgICBjcmVkZW50aWFsczogbm9ybWFsaXplZENyZWRzLFxuICAgICAgICAgICAgcmVnaW9uOiBpbnB1dC5zaWduaW5nUmVnaW9uLFxuICAgICAgICAgICAgc2VydmljZTogaW5wdXQuc2lnbmluZ05hbWUsXG4gICAgICAgICAgICBzaGEyNTYsXG4gICAgICAgICAgICB1cmlFc2NhcGVQYXRoOiBzaWduaW5nRXNjYXBlUGF0aCxcbiAgICAgICAgICB9KTtcbiAgICAgICAgfSk7XG4gIH1cblxuICByZXR1cm4ge1xuICAgIC4uLmlucHV0LFxuICAgIHN5c3RlbUNsb2NrT2Zmc2V0LFxuICAgIHNpZ25pbmdFc2NhcGVQYXRoLFxuICAgIGNyZWRlbnRpYWxzOiBub3JtYWxpemVkQ3JlZHMsXG4gICAgc2lnbmVyLFxuICB9O1xufTtcblxuY29uc3Qgbm9ybWFsaXplUHJvdmlkZXIgPSA8VD4oaW5wdXQ6IFQgfCBQcm92aWRlcjxUPik6IFByb3ZpZGVyPFQ+ID0+IHtcbiAgaWYgKHR5cGVvZiBpbnB1dCA9PT0gXCJvYmplY3RcIikge1xuICAgIGNvbnN0IHByb21pc2lmaWVkID0gUHJvbWlzZS5yZXNvbHZlKGlucHV0KTtcbiAgICByZXR1cm4gKCkgPT4gcHJvbWlzaWZpZWQ7XG4gIH1cbiAgcmV0dXJuIGlucHV0IGFzIFByb3ZpZGVyPFQ+O1xufTtcblxuY29uc3Qgbm9ybWFsaXplQ3JlZGVudGlhbFByb3ZpZGVyID0gKGNyZWRlbnRpYWxzOiBDcmVkZW50aWFscyB8IFByb3ZpZGVyPENyZWRlbnRpYWxzPik6IFByb3ZpZGVyPENyZWRlbnRpYWxzPiA9PiB7XG4gIGlmICh0eXBlb2YgY3JlZGVudGlhbHMgPT09IFwiZnVuY3Rpb25cIikge1xuICAgIHJldHVybiBtZW1vaXplKFxuICAgICAgY3JlZGVudGlhbHMsXG4gICAgICAoY3JlZGVudGlhbHMpID0+XG4gICAgICAgIGNyZWRlbnRpYWxzLmV4cGlyYXRpb24gIT09IHVuZGVmaW5lZCAmJlxuICAgICAgICBjcmVkZW50aWFscy5leHBpcmF0aW9uLmdldFRpbWUoKSAtIERhdGUubm93KCkgPCBDUkVERU5USUFMX0VYUElSRV9XSU5ET1csXG4gICAgICAoY3JlZGVudGlhbHMpID0+IGNyZWRlbnRpYWxzLmV4cGlyYXRpb24gIT09IHVuZGVmaW5lZFxuICAgICk7XG4gIH1cbiAgcmV0dXJuIG5vcm1hbGl6ZVByb3ZpZGVyKGNyZWRlbnRpYWxzKTtcbn07XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlndXJhdGlvbnMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvY29uZmlndXJhdGlvbnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsa0VBQXFEO0FBQ3JELHdEQUFvRDtBQUdwRCw0RUFBNEU7QUFDNUUsTUFBTSx3QkFBd0IsR0FBRyxNQUFNLENBQUM7QUF3RGpDLE1BQU0sb0JBQW9CLEdBQUcsQ0FDbEMsS0FBa0QsRUFDdkIsRUFBRTtJQUM3QixNQUFNLGVBQWUsR0FBRyxLQUFLLENBQUMsV0FBVztRQUN2QyxDQUFDLENBQUMsMkJBQTJCLENBQUMsS0FBSyxDQUFDLFdBQVcsQ0FBQztRQUNoRCxDQUFDLENBQUMsS0FBSyxDQUFDLHlCQUF5QixDQUFDLEtBQVksQ0FBQyxDQUFDO0lBQ2xELE1BQU0sRUFBRSxpQkFBaUIsR0FBRyxJQUFJLEVBQUUsaUJBQWlCLEdBQUcsS0FBSyxDQUFDLGlCQUFpQixJQUFJLENBQUMsRUFBRSxNQUFNLEVBQUUsR0FBRyxLQUFLLENBQUM7SUFDckcsSUFBSSxNQUErQixDQUFDO0lBQ3BDLElBQUksS0FBSyxDQUFDLE1BQU0sRUFBRTtRQUNoQiwyRkFBMkY7UUFDM0YsTUFBTSxHQUFHLGlCQUFpQixDQUFDLEtBQUssQ0FBQyxNQUFNLENBQUMsQ0FBQztLQUMxQztTQUFNO1FBQ0wscURBQXFEO1FBQ3JELE1BQU0sR0FBRyxHQUFHLEVBQUUsQ0FDWixpQkFBaUIsQ0FBQyxLQUFLLENBQUMsTUFBTSxDQUFDLEVBQUU7YUFDOUIsSUFBSSxDQUFDLEtBQUssRUFBRSxNQUFNLEVBQUUsRUFBRSxDQUFDLENBQUMsQ0FBQyxNQUFNLEtBQUssQ0FBQyxrQkFBa0IsQ0FBQyxNQUFNLENBQUMsQ0FBQyxJQUFJLEVBQUUsRUFBRSxNQUFNLENBQXlCLENBQUM7YUFDeEcsSUFBSSxDQUFDLENBQUMsQ0FBQyxVQUFVLEVBQUUsTUFBTSxDQUFDLEVBQUUsRUFBRTtZQUM3QixNQUFNLEVBQUUsYUFBYSxFQUFFLGNBQWMsRUFBRSxHQUFHLFVBQVUsQ0FBQztZQUNyRCxpRkFBaUY7WUFDakYsZ0hBQWdIO1lBQ2hILEtBQUssQ0FBQyxhQUFhLEdBQUcsS0FBSyxDQUFDLGFBQWEsSUFBSSxhQUFhLElBQUksTUFBTSxDQUFDO1lBQ3JFLCtCQUErQjtZQUMvQixtSEFBbUg7WUFDbkgsS0FBSyxDQUFDLFdBQVcsR0FBRyxLQUFLLENBQUMsV0FBVyxJQUFJLGNBQWMsSUFBSSxLQUFLLENBQUMsU0FBUyxDQUFDO1lBRTNFLE9BQU8sSUFBSSwwQkFBVyxDQUFDO2dCQUNyQixXQUFXLEVBQUUsZUFBZTtnQkFDNUIsTUFBTSxFQUFFLEtBQUssQ0FBQyxhQUFhO2dCQUMzQixPQUFPLEVBQUUsS0FBSyxDQUFDLFdBQVc7Z0JBQzFCLE1BQU07Z0JBQ04sYUFBYSxFQUFFLGlCQUFpQjthQUNqQyxDQUFDLENBQUM7UUFDTCxDQUFDLENBQUMsQ0FBQztLQUNSO0lBRUQsT0FBTztRQUNMLEdBQUcsS0FBSztRQUNSLGlCQUFpQjtRQUNqQixpQkFBaUI7UUFDakIsV0FBVyxFQUFFLGVBQWU7UUFDNUIsTUFBTTtLQUNQLENBQUM7QUFDSixDQUFDLENBQUM7QUExQ1csUUFBQSxvQkFBb0Isd0JBMEMvQjtBQUVGLE1BQU0saUJBQWlCLEdBQUcsQ0FBSSxLQUFzQixFQUFlLEVBQUU7SUFDbkUsSUFBSSxPQUFPLEtBQUssS0FBSyxRQUFRLEVBQUU7UUFDN0IsTUFBTSxXQUFXLEdBQUcsT0FBTyxDQUFDLE9BQU8sQ0FBQyxLQUFLLENBQUMsQ0FBQztRQUMzQyxPQUFPLEdBQUcsRUFBRSxDQUFDLFdBQVcsQ0FBQztLQUMxQjtJQUNELE9BQU8sS0FBb0IsQ0FBQztBQUM5QixDQUFDLENBQUM7QUFFRixNQUFNLDJCQUEyQixHQUFHLENBQUMsV0FBZ0QsRUFBeUIsRUFBRTtJQUM5RyxJQUFJLE9BQU8sV0FBVyxLQUFLLFVBQVUsRUFBRTtRQUNyQyxPQUFPLDJCQUFPLENBQ1osV0FBVyxFQUNYLENBQUMsV0FBVyxFQUFFLEVBQUUsQ0FDZCxXQUFXLENBQUMsVUFBVSxLQUFLLFNBQVM7WUFDcEMsV0FBVyxDQUFDLFVBQVUsQ0FBQyxPQUFPLEVBQUUsR0FBRyxJQUFJLENBQUMsR0FBRyxFQUFFLEdBQUcsd0JBQXdCLEVBQzFFLENBQUMsV0FBVyxFQUFFLEVBQUUsQ0FBQyxXQUFXLENBQUMsVUFBVSxLQUFLLFNBQVMsQ0FDdEQsQ0FBQztLQUNIO0lBQ0QsT0FBTyxpQkFBaUIsQ0FBQyxXQUFXLENBQUMsQ0FBQztBQUN4QyxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBtZW1vaXplIH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3BlcnR5LXByb3ZpZGVyXCI7XG5pbXBvcnQgeyBTaWduYXR1cmVWNCB9IGZyb20gXCJAYXdzLXNkay9zaWduYXR1cmUtdjRcIjtcbmltcG9ydCB7IENyZWRlbnRpYWxzLCBIYXNoQ29uc3RydWN0b3IsIFByb3ZpZGVyLCBSZWdpb25JbmZvLCBSZWdpb25JbmZvUHJvdmlkZXIsIFJlcXVlc3RTaWduZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuLy8gNSBtaW51dGVzIGJ1ZmZlciB0aW1lIHRoZSByZWZyZXNoIHRoZSBjcmVkZW50aWFsIGJlZm9yZSBpdCByZWFsbHkgZXhwaXJlc1xuY29uc3QgQ1JFREVOVElBTF9FWFBJUkVfV0lORE9XID0gMzAwMDAwO1xuXG5leHBvcnQgaW50ZXJmYWNlIEF3c0F1dGhJbnB1dENvbmZpZyB7XG4gIC8qKlxuICAgKiBUaGUgY3JlZGVudGlhbHMgdXNlZCB0byBzaWduIHJlcXVlc3RzLlxuICAgKi9cbiAgY3JlZGVudGlhbHM/OiBDcmVkZW50aWFscyB8IFByb3ZpZGVyPENyZWRlbnRpYWxzPjtcblxuICAvKipcbiAgICogVGhlIHNpZ25lciB0byB1c2Ugd2hlbiBzaWduaW5nIHJlcXVlc3RzLlxuICAgKi9cbiAgc2lnbmVyPzogUmVxdWVzdFNpZ25lciB8IFByb3ZpZGVyPFJlcXVlc3RTaWduZXI+O1xuXG4gIC8qKlxuICAgKiBXaGV0aGVyIHRvIGVzY2FwZSByZXF1ZXN0IHBhdGggd2hlbiBzaWduaW5nIHRoZSByZXF1ZXN0LlxuICAgKi9cbiAgc2lnbmluZ0VzY2FwZVBhdGg/OiBib29sZWFuO1xuXG4gIC8qKlxuICAgKiBBbiBvZmZzZXQgdmFsdWUgaW4gbWlsbGlzZWNvbmRzIHRvIGFwcGx5IHRvIGFsbCBzaWduaW5nIHRpbWVzLlxuICAgKi9cbiAgc3lzdGVtQ2xvY2tPZmZzZXQ/OiBudW1iZXI7XG5cbiAgLyoqXG4gICAqIFRoZSByZWdpb24gd2hlcmUgeW91IHdhbnQgdG8gc2lnbiB5b3VyIHJlcXVlc3QgYWdhaW5zdC4gVGhpc1xuICAgKiBjYW4gYmUgZGlmZmVyZW50IHRvIHRoZSByZWdpb24gaW4gdGhlIGVuZHBvaW50LlxuICAgKi9cbiAgc2lnbmluZ1JlZ2lvbj86IHN0cmluZztcbn1cbmludGVyZmFjZSBQcmV2aW91c2x5UmVzb2x2ZWQge1xuICBjcmVkZW50aWFsRGVmYXVsdFByb3ZpZGVyOiAoaW5wdXQ6IGFueSkgPT4gUHJvdmlkZXI8Q3JlZGVudGlhbHM+O1xuICByZWdpb246IHN0cmluZyB8IFByb3ZpZGVyPHN0cmluZz47XG4gIHJlZ2lvbkluZm9Qcm92aWRlcjogUmVnaW9uSW5mb1Byb3ZpZGVyO1xuICBzaWduaW5nTmFtZT86IHN0cmluZztcbiAgc2VydmljZUlkOiBzdHJpbmc7XG4gIHNoYTI1NjogSGFzaENvbnN0cnVjdG9yO1xufVxuZXhwb3J0IGludGVyZmFjZSBBd3NBdXRoUmVzb2x2ZWRDb25maWcge1xuICAvKipcbiAgICogUmVzb2x2ZWQgdmFsdWUgZm9yIGlucHV0IGNvbmZpZyB7QGxpbmsgQXdzQXV0aElucHV0Q29uZmlnLmNyZWRlbnRpYWxzfVxuICAgKi9cbiAgY3JlZGVudGlhbHM6IFByb3ZpZGVyPENyZWRlbnRpYWxzPjtcbiAgLyoqXG4gICAqIFJlc29sdmVkIHZhbHVlIGZvciBpbnB1dCBjb25maWcge0BsaW5rIEF3c0F1dGhJbnB1dENvbmZpZy5zaWduZXJ9XG4gICAqL1xuICBzaWduZXI6IFByb3ZpZGVyPFJlcXVlc3RTaWduZXI+O1xuICAvKipcbiAgICogUmVzb2x2ZWQgdmFsdWUgZm9yIGlucHV0IGNvbmZpZyB7QGxpbmsgQXdzQXV0aElucHV0Q29uZmlnLnNpZ25pbmdFc2NhcGVQYXRofVxuICAgKi9cbiAgc2lnbmluZ0VzY2FwZVBhdGg6IGJvb2xlYW47XG4gIC8qKlxuICAgKiBSZXNvbHZlZCB2YWx1ZSBmb3IgaW5wdXQgY29uZmlnIHtAbGluayBBd3NBdXRoSW5wdXRDb25maWcuc3lzdGVtQ2xvY2tPZmZzZXR9XG4gICAqL1xuICBzeXN0ZW1DbG9ja09mZnNldDogbnVtYmVyO1xufVxuXG5leHBvcnQgY29uc3QgcmVzb2x2ZUF3c0F1dGhDb25maWcgPSA8VD4oXG4gIGlucHV0OiBUICYgQXdzQXV0aElucHV0Q29uZmlnICYgUHJldmlvdXNseVJlc29sdmVkXG4pOiBUICYgQXdzQXV0aFJlc29sdmVkQ29uZmlnID0+IHtcbiAgY29uc3Qgbm9ybWFsaXplZENyZWRzID0gaW5wdXQuY3JlZGVudGlhbHNcbiAgICA/IG5vcm1hbGl6ZUNyZWRlbnRpYWxQcm92aWRlcihpbnB1dC5jcmVkZW50aWFscylcbiAgICA6IGlucHV0LmNyZWRlbnRpYWxEZWZhdWx0UHJvdmlkZXIoaW5wdXQgYXMgYW55KTtcbiAgY29uc3QgeyBzaWduaW5nRXNjYXBlUGF0aCA9IHRydWUsIHN5c3RlbUNsb2NrT2Zmc2V0ID0gaW5wdXQuc3lzdGVtQ2xvY2tPZmZzZXQgfHwgMCwgc2hhMjU2IH0gPSBpbnB1dDtcbiAgbGV0IHNpZ25lcjogUHJvdmlkZXI8UmVxdWVzdFNpZ25lcj47XG4gIGlmIChpbnB1dC5zaWduZXIpIHtcbiAgICAvL2lmIHNpZ25lciBpcyBzdXBwbGllZCBieSB1c2VyLCBub3JtYWxpemUgaXQgdG8gYSBmdW5jdGlvbiByZXR1cm5pbmcgYSBwcm9taXNlIGZvciBzaWduZXIuXG4gICAgc2lnbmVyID0gbm9ybWFsaXplUHJvdmlkZXIoaW5wdXQuc2lnbmVyKTtcbiAgfSBlbHNlIHtcbiAgICAvL2NvbnN0cnVjdCBhIHByb3ZpZGVyIGluZmVycmluZyBzaWduaW5nIGZyb20gcmVnaW9uLlxuICAgIHNpZ25lciA9ICgpID0+XG4gICAgICBub3JtYWxpemVQcm92aWRlcihpbnB1dC5yZWdpb24pKClcbiAgICAgICAgLnRoZW4oYXN5bmMgKHJlZ2lvbikgPT4gWyhhd2FpdCBpbnB1dC5yZWdpb25JbmZvUHJvdmlkZXIocmVnaW9uKSkgfHwge30sIHJlZ2lvbl0gYXMgW1JlZ2lvbkluZm8sIHN0cmluZ10pXG4gICAgICAgIC50aGVuKChbcmVnaW9uSW5mbywgcmVnaW9uXSkgPT4ge1xuICAgICAgICAgIGNvbnN0IHsgc2lnbmluZ1JlZ2lvbiwgc2lnbmluZ1NlcnZpY2UgfSA9IHJlZ2lvbkluZm87XG4gICAgICAgICAgLy91cGRhdGUgY2xpZW50J3Mgc2luZ2luZyByZWdpb24gYW5kIHNpZ25pbmcgc2VydmljZSBjb25maWcgaWYgdGhleSBhcmUgcmVzb2x2ZWQuXG4gICAgICAgICAgLy9zaWduaW5nIHJlZ2lvbiByZXNvbHZpbmcgb3JkZXI6IHVzZXIgc3VwcGxpZWQgc2lnbmluZ1JlZ2lvbiAtPiBlbmRwb2ludHMuanNvbiBpbmZlcnJlZCByZWdpb24gLT4gY2xpZW50IHJlZ2lvblxuICAgICAgICAgIGlucHV0LnNpZ25pbmdSZWdpb24gPSBpbnB1dC5zaWduaW5nUmVnaW9uIHx8IHNpZ25pbmdSZWdpb24gfHwgcmVnaW9uO1xuICAgICAgICAgIC8vc2lnbmluZyBuYW1lIHJlc29sdmluZyBvcmRlcjpcbiAgICAgICAgICAvL3VzZXIgc3VwcGxpZWQgc2lnbmluZ05hbWUgLT4gZW5kcG9pbnRzLmpzb24gaW5mZXJyZWQgKGNyZWRlbnRpYWwgc2NvcGUgLT4gbW9kZWwgYXJuTmFtZXNwYWNlKSAtPiBtb2RlbCBzZXJ2aWNlIGlkXG4gICAgICAgICAgaW5wdXQuc2lnbmluZ05hbWUgPSBpbnB1dC5zaWduaW5nTmFtZSB8fCBzaWduaW5nU2VydmljZSB8fCBpbnB1dC5zZXJ2aWNlSWQ7XG5cbiAgICAgICAgICByZXR1cm4gbmV3IFNpZ25hdHVyZVY0KHtcbiAgICAgICAgICAgIGNyZWRlbnRpYWxzOiBub3JtYWxpemVkQ3JlZHMsXG4gICAgICAgICAgICByZWdpb246IGlucHV0LnNpZ25pbmdSZWdpb24sXG4gICAgICAgICAgICBzZXJ2aWNlOiBpbnB1dC5zaWduaW5nTmFtZSxcbiAgICAgICAgICAgIHNoYTI1NixcbiAgICAgICAgICAgIHVyaUVzY2FwZVBhdGg6IHNpZ25pbmdFc2NhcGVQYXRoLFxuICAgICAgICAgIH0pO1xuICAgICAgICB9KTtcbiAgfVxuXG4gIHJldHVybiB7XG4gICAgLi4uaW5wdXQsXG4gICAgc3lzdGVtQ2xvY2tPZmZzZXQsXG4gICAgc2lnbmluZ0VzY2FwZVBhdGgsXG4gICAgY3JlZGVudGlhbHM6IG5vcm1hbGl6ZWRDcmVkcyxcbiAgICBzaWduZXIsXG4gIH07XG59O1xuXG5jb25zdCBub3JtYWxpemVQcm92aWRlciA9IDxUPihpbnB1dDogVCB8IFByb3ZpZGVyPFQ+KTogUHJvdmlkZXI8VD4gPT4ge1xuICBpZiAodHlwZW9mIGlucHV0ID09PSBcIm9iamVjdFwiKSB7XG4gICAgY29uc3QgcHJvbWlzaWZpZWQgPSBQcm9taXNlLnJlc29sdmUoaW5wdXQpO1xuICAgIHJldHVybiAoKSA9PiBwcm9taXNpZmllZDtcbiAgfVxuICByZXR1cm4gaW5wdXQgYXMgUHJvdmlkZXI8VD47XG59O1xuXG5jb25zdCBub3JtYWxpemVDcmVkZW50aWFsUHJvdmlkZXIgPSAoY3JlZGVudGlhbHM6IENyZWRlbnRpYWxzIHwgUHJvdmlkZXI8Q3JlZGVudGlhbHM+KTogUHJvdmlkZXI8Q3JlZGVudGlhbHM+ID0+IHtcbiAgaWYgKHR5cGVvZiBjcmVkZW50aWFscyA9PT0gXCJmdW5jdGlvblwiKSB7XG4gICAgcmV0dXJuIG1lbW9pemUoXG4gICAgICBjcmVkZW50aWFscyxcbiAgICAgIChjcmVkZW50aWFscykgPT5cbiAgICAgICAgY3JlZGVudGlhbHMuZXhwaXJhdGlvbiAhPT0gdW5kZWZpbmVkICYmXG4gICAgICAgIGNyZWRlbnRpYWxzLmV4cGlyYXRpb24uZ2V0VGltZSgpIC0gRGF0ZS5ub3coKSA8IENSRURFTlRJQUxfRVhQSVJFX1dJTkRPVyxcbiAgICAgIChjcmVkZW50aWFscykgPT4gY3JlZGVudGlhbHMuZXhwaXJhdGlvbiAhPT0gdW5kZWZpbmVkXG4gICAgKTtcbiAgfVxuICByZXR1cm4gbm9ybWFsaXplUHJvdmlkZXIoY3JlZGVudGlhbHMpO1xufTtcbiJdfQ==
 
 /***/ }),
 
@@ -25208,7 +27344,7 @@ function resolveUserAgentConfig(input) {
     };
 }
 exports.resolveUserAgentConfig = resolveUserAgentConfig;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlndXJhdGlvbnMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvY29uZmlndXJhdGlvbnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBZ0JBLFNBQWdCLHNCQUFzQixDQUNwQyxLQUFvRDtJQUVwRCxPQUFPO1FBQ0wsR0FBRyxLQUFLO1FBQ1IsZUFBZSxFQUFFLE9BQU8sS0FBSyxDQUFDLGVBQWUsS0FBSyxRQUFRLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxLQUFLLENBQUMsZUFBZSxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsS0FBSyxDQUFDLGVBQWU7S0FDL0csQ0FBQztBQUNKLENBQUM7QUFQRCx3REFPQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFByb3ZpZGVyLCBVc2VyQWdlbnQgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcbmV4cG9ydCBpbnRlcmZhY2UgVXNlckFnZW50SW5wdXRDb25maWcge1xuICAvKipcbiAgICogVGhlIGN1c3RvbSB1c2VyIGFnZW50IGhlYWRlciB0aGF0IHdvdWxkIGJlIGFwcGVuZGVkIHRvIGRlZmF1bHQgb25lXG4gICAqL1xuICBjdXN0b21Vc2VyQWdlbnQ/OiBzdHJpbmcgfCBVc2VyQWdlbnQ7XG59XG5pbnRlcmZhY2UgUHJldmlvdXNseVJlc29sdmVkIHtcbiAgZGVmYXVsdFVzZXJBZ2VudFByb3ZpZGVyOiBQcm92aWRlcjxVc2VyQWdlbnQ+O1xuICBydW50aW1lOiBzdHJpbmc7XG59XG5leHBvcnQgaW50ZXJmYWNlIFVzZXJBZ2VudFJlc29sdmVkQ29uZmlnIHtcbiAgZGVmYXVsdFVzZXJBZ2VudFByb3ZpZGVyOiBQcm92aWRlcjxVc2VyQWdlbnQ+O1xuICBjdXN0b21Vc2VyQWdlbnQ/OiBVc2VyQWdlbnQ7XG4gIHJ1bnRpbWU6IHN0cmluZztcbn1cbmV4cG9ydCBmdW5jdGlvbiByZXNvbHZlVXNlckFnZW50Q29uZmlnPFQ+KFxuICBpbnB1dDogVCAmIFByZXZpb3VzbHlSZXNvbHZlZCAmIFVzZXJBZ2VudElucHV0Q29uZmlnXG4pOiBUICYgVXNlckFnZW50UmVzb2x2ZWRDb25maWcge1xuICByZXR1cm4ge1xuICAgIC4uLmlucHV0LFxuICAgIGN1c3RvbVVzZXJBZ2VudDogdHlwZW9mIGlucHV0LmN1c3RvbVVzZXJBZ2VudCA9PT0gXCJzdHJpbmdcIiA/IFtbaW5wdXQuY3VzdG9tVXNlckFnZW50XV0gOiBpbnB1dC5jdXN0b21Vc2VyQWdlbnQsXG4gIH07XG59XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlndXJhdGlvbnMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvY29uZmlndXJhdGlvbnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBMEJBLFNBQWdCLHNCQUFzQixDQUNwQyxLQUFvRDtJQUVwRCxPQUFPO1FBQ0wsR0FBRyxLQUFLO1FBQ1IsZUFBZSxFQUFFLE9BQU8sS0FBSyxDQUFDLGVBQWUsS0FBSyxRQUFRLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxLQUFLLENBQUMsZUFBZSxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsS0FBSyxDQUFDLGVBQWU7S0FDL0csQ0FBQztBQUNKLENBQUM7QUFQRCx3REFPQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFByb3ZpZGVyLCBVc2VyQWdlbnQgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcbmV4cG9ydCBpbnRlcmZhY2UgVXNlckFnZW50SW5wdXRDb25maWcge1xuICAvKipcbiAgICogVGhlIGN1c3RvbSB1c2VyIGFnZW50IGhlYWRlciB0aGF0IHdvdWxkIGJlIGFwcGVuZGVkIHRvIGRlZmF1bHQgb25lXG4gICAqL1xuICBjdXN0b21Vc2VyQWdlbnQ/OiBzdHJpbmcgfCBVc2VyQWdlbnQ7XG59XG5pbnRlcmZhY2UgUHJldmlvdXNseVJlc29sdmVkIHtcbiAgZGVmYXVsdFVzZXJBZ2VudFByb3ZpZGVyOiBQcm92aWRlcjxVc2VyQWdlbnQ+O1xuICBydW50aW1lOiBzdHJpbmc7XG59XG5leHBvcnQgaW50ZXJmYWNlIFVzZXJBZ2VudFJlc29sdmVkQ29uZmlnIHtcbiAgLyoqXG4gICAqIFRoZSBwcm92aWRlciBwb3B1bGF0aW5nIGRlZmF1bHQgdHJhY2tpbmcgaW5mb3JtYXRpb24gdG8gYmUgc2VudCB3aXRoIGB1c2VyLWFnZW50YCwgYHgtYW16LXVzZXItYWdlbnRgIGhlYWRlci5cbiAgICogQGludGVybmFsXG4gICAqL1xuICBkZWZhdWx0VXNlckFnZW50UHJvdmlkZXI6IFByb3ZpZGVyPFVzZXJBZ2VudD47XG4gIC8qKlxuICAgKiBUaGUgY3VzdG9tIHVzZXIgYWdlbnQgaGVhZGVyIHRoYXQgd291bGQgYmUgYXBwZW5kZWQgdG8gZGVmYXVsdCBvbmVcbiAgICovXG4gIGN1c3RvbVVzZXJBZ2VudD86IFVzZXJBZ2VudDtcbiAgLyoqXG4gICAqIFRoZSBydW50aW1lIGVudmlyb25tZW50XG4gICAqL1xuICBydW50aW1lOiBzdHJpbmc7XG59XG5leHBvcnQgZnVuY3Rpb24gcmVzb2x2ZVVzZXJBZ2VudENvbmZpZzxUPihcbiAgaW5wdXQ6IFQgJiBQcmV2aW91c2x5UmVzb2x2ZWQgJiBVc2VyQWdlbnRJbnB1dENvbmZpZ1xuKTogVCAmIFVzZXJBZ2VudFJlc29sdmVkQ29uZmlnIHtcbiAgcmV0dXJuIHtcbiAgICAuLi5pbnB1dCxcbiAgICBjdXN0b21Vc2VyQWdlbnQ6IHR5cGVvZiBpbnB1dC5jdXN0b21Vc2VyQWdlbnQgPT09IFwic3RyaW5nXCIgPyBbW2lucHV0LmN1c3RvbVVzZXJBZ2VudF1dIDogaW5wdXQuY3VzdG9tVXNlckFnZW50LFxuICB9O1xufVxuIl19
 
 /***/ }),
 
@@ -25604,7 +27740,14 @@ class NodeHttp2Handler {
         this.connectionPool.clear();
     }
     handle(request, { abortSignal } = {}) {
-        return new Promise((resolve, reject) => {
+        return new Promise((resolve, rejectOriginal) => {
+            // It's redundant to track fulfilled because promises use the first resolution/rejection
+            // but avoids generating unnecessary stack traces in the "close" event handler.
+            let fulfilled = false;
+            const reject = (err) => {
+                fulfilled = true;
+                rejectOriginal(err);
+            };
             // if the request was already aborted, prevent doing extra work
             if (abortSignal === null || abortSignal === void 0 ? void 0 : abortSignal.aborted) {
                 const abortError = new Error("Request aborted");
@@ -25626,11 +27769,9 @@ class NodeHttp2Handler {
                     headers: get_transformed_headers_1.getTransformedHeaders(headers),
                     body: req,
                 });
+                fulfilled = true;
                 resolve({ response: httpResponse });
             });
-            req.on("error", reject);
-            req.on("frameError", reject);
-            req.on("aborted", reject);
             const requestTimeout = this.requestTimeout;
             if (requestTimeout) {
                 req.setTimeout(requestTimeout, () => {
@@ -25648,6 +27789,19 @@ class NodeHttp2Handler {
                     reject(abortError);
                 };
             }
+            // Set up handlers for errors
+            req.on("frameError", reject);
+            req.on("error", reject);
+            req.on("goaway", reject);
+            req.on("aborted", reject);
+            // The HTTP/2 error code used when closing the stream can be retrieved using the
+            // http2stream.rstCode property. If the code is any value other than NGHTTP2_NO_ERROR (0),
+            // an 'error' event will have also been emitted.
+            req.on("close", () => {
+                if (!fulfilled) {
+                    reject(new Error("Unexpected error: http2 request did not get a response"));
+                }
+            });
             write_request_body_1.writeRequestBody(req, request);
         });
     }
@@ -25658,18 +27812,45 @@ class NodeHttp2Handler {
             return existingSession;
         const newSession = http2_1.connect(authority);
         connectionPool.set(authority, newSession);
+        const destroySessionCb = () => {
+            this.destroySession(authority, newSession);
+        };
+        newSession.on("goaway", destroySessionCb);
+        newSession.on("error", destroySessionCb);
+        newSession.on("frameError", destroySessionCb);
         const sessionTimeout = this.sessionTimeout;
         if (sessionTimeout) {
             newSession.setTimeout(sessionTimeout, () => {
-                newSession.close();
-                connectionPool.delete(authority);
+                if (connectionPool.get(authority) === newSession) {
+                    newSession.close();
+                    connectionPool.delete(authority);
+                }
             });
         }
         return newSession;
     }
+    /**
+     * Destroy a session immediately and remove it from the http2 pool.
+     *
+     * This check ensures that the session is only closed once
+     * and that an event on one session does not close a different session.
+     */
+    destroySession(authority, session) {
+        if (this.connectionPool.get(authority) !== session) {
+            // Already closed?
+            return;
+        }
+        this.connectionPool.delete(authority);
+        session.removeAllListeners("goaway");
+        session.removeAllListeners("error");
+        session.removeAllListeners("frameError");
+        if (!session.destroyed) {
+            session.destroy();
+        }
+    }
 }
 exports.NodeHttp2Handler = NodeHttp2Handler;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibm9kZS1odHRwMi1oYW5kbGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL25vZGUtaHR0cDItaGFuZGxlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSwwREFBZ0Y7QUFDaEYsc0VBQWdFO0FBRWhFLGlDQUErRDtBQUUvRCx1RUFBa0U7QUFDbEUsNkRBQXdEO0FBb0J4RCxNQUFhLGdCQUFnQjtJQU0zQixZQUFZLEVBQUUsY0FBYyxFQUFFLGNBQWMsS0FBOEIsRUFBRTtRQUY1RCxhQUFRLEdBQUcsRUFBRSxlQUFlLEVBQUUsSUFBSSxFQUFFLENBQUM7UUFHbkQsSUFBSSxDQUFDLGNBQWMsR0FBRyxjQUFjLENBQUM7UUFDckMsSUFBSSxDQUFDLGNBQWMsR0FBRyxjQUFjLENBQUM7UUFDckMsSUFBSSxDQUFDLGNBQWMsR0FBRyxJQUFJLEdBQUcsRUFBOEIsQ0FBQztJQUM5RCxDQUFDO0lBRUQsT0FBTztRQUNMLDZEQUE2RDtRQUM3RCxLQUFLLE1BQU0sQ0FBQyxDQUFDLEVBQUUsWUFBWSxDQUFDLElBQUksSUFBSSxDQUFDLGNBQWMsRUFBRTtZQUNuRCxZQUFZLENBQUMsT0FBTyxFQUFFLENBQUM7U0FDeEI7UUFDRCxJQUFJLENBQUMsY0FBYyxDQUFDLEtBQUssRUFBRSxDQUFDO0lBQzlCLENBQUM7SUFFRCxNQUFNLENBQUMsT0FBb0IsRUFBRSxFQUFFLFdBQVcsS0FBeUIsRUFBRTtRQUNuRSxPQUFPLElBQUksT0FBTyxDQUFDLENBQUMsT0FBTyxFQUFFLE1BQU0sRUFBRSxFQUFFO1lBQ3JDLCtEQUErRDtZQUMvRCxJQUFJLFdBQVcsYUFBWCxXQUFXLHVCQUFYLFdBQVcsQ0FBRSxPQUFPLEVBQUU7Z0JBQ3hCLE1BQU0sVUFBVSxHQUFHLElBQUksS0FBSyxDQUFDLGlCQUFpQixDQUFDLENBQUM7Z0JBQ2hELFVBQVUsQ0FBQyxJQUFJLEdBQUcsWUFBWSxDQUFDO2dCQUMvQixNQUFNLENBQUMsVUFBVSxDQUFDLENBQUM7Z0JBQ25CLE9BQU87YUFDUjtZQUVELE1BQU0sRUFBRSxRQUFRLEVBQUUsTUFBTSxFQUFFLElBQUksRUFBRSxRQUFRLEVBQUUsSUFBSSxFQUFFLEtBQUssRUFBRSxHQUFHLE9BQU8sQ0FBQztZQUNsRSxNQUFNLFdBQVcsR0FBRyxzQ0FBZ0IsQ0FBQyxLQUFLLElBQUksRUFBRSxDQUFDLENBQUM7WUFFbEQsMkJBQTJCO1lBQzNCLE1BQU0sR0FBRyxHQUFHLElBQUksQ0FBQyxVQUFVLENBQUMsR0FBRyxRQUFRLEtBQUssUUFBUSxHQUFHLElBQUksQ0FBQyxDQUFDLENBQUMsSUFBSSxJQUFJLEVBQUUsQ0FBQyxDQUFDLENBQUMsRUFBRSxFQUFFLENBQUMsQ0FBQyxPQUFPLENBQUM7Z0JBQ3ZGLEdBQUcsT0FBTyxDQUFDLE9BQU87Z0JBQ2xCLENBQUMsaUJBQVMsQ0FBQyxpQkFBaUIsQ0FBQyxFQUFFLFdBQVcsQ0FBQyxDQUFDLENBQUMsR0FBRyxJQUFJLElBQUksV0FBVyxFQUFFLENBQUMsQ0FBQyxDQUFDLElBQUk7Z0JBQzVFLENBQUMsaUJBQVMsQ0FBQyxtQkFBbUIsQ0FBQyxFQUFFLE1BQU07YUFDeEMsQ0FBQyxDQUFDO1lBRUgsR0FBRyxDQUFDLEVBQUUsQ0FBQyxVQUFVLEVBQUUsQ0FBQyxPQUFPLEVBQUUsRUFBRTtnQkFDN0IsTUFBTSxZQUFZLEdBQUcsSUFBSSw0QkFBWSxDQUFDO29CQUNwQyxVQUFVLEVBQUUsT0FBTyxDQUFDLFNBQVMsQ0FBQyxJQUFJLENBQUMsQ0FBQztvQkFDcEMsT0FBTyxFQUFFLCtDQUFxQixDQUFDLE9BQU8sQ0FBQztvQkFDdkMsSUFBSSxFQUFFLEdBQUc7aUJBQ1YsQ0FBQyxDQUFDO2dCQUNILE9BQU8sQ0FBQyxFQUFFLFFBQVEsRUFBRSxZQUFZLEVBQUUsQ0FBQyxDQUFDO1lBQ3RDLENBQUMsQ0FBQyxDQUFDO1lBRUgsR0FBRyxDQUFDLEVBQUUsQ0FBQyxPQUFPLEVBQUUsTUFBTSxDQUFDLENBQUM7WUFDeEIsR0FBRyxDQUFDLEVBQUUsQ0FBQyxZQUFZLEVBQUUsTUFBTSxDQUFDLENBQUM7WUFDN0IsR0FBRyxDQUFDLEVBQUUsQ0FBQyxTQUFTLEVBQUUsTUFBTSxDQUFDLENBQUM7WUFFMUIsTUFBTSxjQUFjLEdBQUcsSUFBSSxDQUFDLGNBQWMsQ0FBQztZQUMzQyxJQUFJLGNBQWMsRUFBRTtnQkFDbEIsR0FBRyxDQUFDLFVBQVUsQ0FBQyxjQUFjLEVBQUUsR0FBRyxFQUFFO29CQUNsQyxHQUFHLENBQUMsS0FBSyxFQUFFLENBQUM7b0JBQ1osTUFBTSxZQUFZLEdBQUcsSUFBSSxLQUFLLENBQUMsK0NBQStDLGNBQWMsS0FBSyxDQUFDLENBQUM7b0JBQ25HLFlBQVksQ0FBQyxJQUFJLEdBQUcsY0FBYyxDQUFDO29CQUNuQyxNQUFNLENBQUMsWUFBWSxDQUFDLENBQUM7Z0JBQ3ZCLENBQUMsQ0FBQyxDQUFDO2FBQ0o7WUFFRCxJQUFJLFdBQVcsRUFBRTtnQkFDZixXQUFXLENBQUMsT0FBTyxHQUFHLEdBQUcsRUFBRTtvQkFDekIsR0FBRyxDQUFDLEtBQUssRUFBRSxDQUFDO29CQUNaLE1BQU0sVUFBVSxHQUFHLElBQUksS0FBSyxDQUFDLGlCQUFpQixDQUFDLENBQUM7b0JBQ2hELFVBQVUsQ0FBQyxJQUFJLEdBQUcsWUFBWSxDQUFDO29CQUMvQixNQUFNLENBQUMsVUFBVSxDQUFDLENBQUM7Z0JBQ3JCLENBQUMsQ0FBQzthQUNIO1lBRUQscUNBQWdCLENBQUMsR0FBRyxFQUFFLE9BQU8sQ0FBQyxDQUFDO1FBQ2pDLENBQUMsQ0FBQyxDQUFDO0lBQ0wsQ0FBQztJQUVPLFVBQVUsQ0FBQyxTQUFpQjtRQUNsQyxNQUFNLGNBQWMsR0FBRyxJQUFJLENBQUMsY0FBYyxDQUFDO1FBQzNDLE1BQU0sZUFBZSxHQUFHLGNBQWMsQ0FBQyxHQUFHLENBQUMsU0FBUyxDQUFDLENBQUM7UUFDdEQsSUFBSSxlQUFlO1lBQUUsT0FBTyxlQUFlLENBQUM7UUFFNUMsTUFBTSxVQUFVLEdBQUcsZUFBTyxDQUFDLFNBQVMsQ0FBQyxDQUFDO1FBQ3RDLGNBQWMsQ0FBQyxHQUFHLENBQUMsU0FBUyxFQUFFLFVBQVUsQ0FBQyxDQUFDO1FBRTFDLE1BQU0sY0FBYyxHQUFHLElBQUksQ0FBQyxjQUFjLENBQUM7UUFDM0MsSUFBSSxjQUFjLEVBQUU7WUFDbEIsVUFBVSxDQUFDLFVBQVUsQ0FBQyxjQUFjLEVBQUUsR0FBRyxFQUFFO2dCQUN6QyxVQUFVLENBQUMsS0FBSyxFQUFFLENBQUM7Z0JBQ25CLGNBQWMsQ0FBQyxNQUFNLENBQUMsU0FBUyxDQUFDLENBQUM7WUFDbkMsQ0FBQyxDQUFDLENBQUM7U0FDSjtRQUNELE9BQU8sVUFBVSxDQUFDO0lBQ3BCLENBQUM7Q0FDRjtBQTdGRCw0Q0E2RkMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBIdHRwSGFuZGxlciwgSHR0cFJlcXVlc3QsIEh0dHBSZXNwb25zZSB9IGZyb20gXCJAYXdzLXNkay9wcm90b2NvbC1odHRwXCI7XG5pbXBvcnQgeyBidWlsZFF1ZXJ5U3RyaW5nIH0gZnJvbSBcIkBhd3Mtc2RrL3F1ZXJ5c3RyaW5nLWJ1aWxkZXJcIjtcbmltcG9ydCB7IEh0dHBIYW5kbGVyT3B0aW9ucyB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuaW1wb3J0IHsgQ2xpZW50SHR0cDJTZXNzaW9uLCBjb25uZWN0LCBjb25zdGFudHMgfSBmcm9tIFwiaHR0cDJcIjtcblxuaW1wb3J0IHsgZ2V0VHJhbnNmb3JtZWRIZWFkZXJzIH0gZnJvbSBcIi4vZ2V0LXRyYW5zZm9ybWVkLWhlYWRlcnNcIjtcbmltcG9ydCB7IHdyaXRlUmVxdWVzdEJvZHkgfSBmcm9tIFwiLi93cml0ZS1yZXF1ZXN0LWJvZHlcIjtcblxuLyoqXG4gKiBSZXByZXNlbnRzIHRoZSBodHRwMiBvcHRpb25zIHRoYXQgY2FuIGJlIHBhc3NlZCB0byBhIG5vZGUgaHR0cDIgY2xpZW50LlxuICovXG5leHBvcnQgaW50ZXJmYWNlIE5vZGVIdHRwMkhhbmRsZXJPcHRpb25zIHtcbiAgLyoqXG4gICAqIFRoZSBtYXhpbXVtIHRpbWUgaW4gbWlsbGlzZWNvbmRzIHRoYXQgYSBzdHJlYW0gbWF5IHJlbWFpbiBpZGxlIGJlZm9yZSBpdFxuICAgKiBpcyBjbG9zZWQuXG4gICAqL1xuICByZXF1ZXN0VGltZW91dD86IG51bWJlcjtcblxuICAvKipcbiAgICogVGhlIG1heGltdW0gdGltZSBpbiBtaWxsaXNlY29uZHMgdGhhdCBhIHNlc3Npb24gb3Igc29ja2V0IG1heSByZW1haW4gaWRsZVxuICAgKiBiZWZvcmUgaXQgaXMgY2xvc2VkLlxuICAgKiBodHRwczovL25vZGVqcy5vcmcvZG9jcy9sYXRlc3QtdjEyLngvYXBpL2h0dHAyLmh0bWwjaHR0cDJfaHR0cDJzZXNzaW9uX2FuZF9zb2NrZXRzXG4gICAqL1xuICBzZXNzaW9uVGltZW91dD86IG51bWJlcjtcbn1cblxuZXhwb3J0IGNsYXNzIE5vZGVIdHRwMkhhbmRsZXIgaW1wbGVtZW50cyBIdHRwSGFuZGxlciB7XG4gIHByaXZhdGUgcmVhZG9ubHkgcmVxdWVzdFRpbWVvdXQ/OiBudW1iZXI7XG4gIHByaXZhdGUgcmVhZG9ubHkgc2Vzc2lvblRpbWVvdXQ/OiBudW1iZXI7XG4gIHByaXZhdGUgcmVhZG9ubHkgY29ubmVjdGlvblBvb2w6IE1hcDxzdHJpbmcsIENsaWVudEh0dHAyU2Vzc2lvbj47XG4gIHB1YmxpYyByZWFkb25seSBtZXRhZGF0YSA9IHsgaGFuZGxlclByb3RvY29sOiBcImgyXCIgfTtcblxuICBjb25zdHJ1Y3Rvcih7IHJlcXVlc3RUaW1lb3V0LCBzZXNzaW9uVGltZW91dCB9OiBOb2RlSHR0cDJIYW5kbGVyT3B0aW9ucyA9IHt9KSB7XG4gICAgdGhpcy5yZXF1ZXN0VGltZW91dCA9IHJlcXVlc3RUaW1lb3V0O1xuICAgIHRoaXMuc2Vzc2lvblRpbWVvdXQgPSBzZXNzaW9uVGltZW91dDtcbiAgICB0aGlzLmNvbm5lY3Rpb25Qb29sID0gbmV3IE1hcDxzdHJpbmcsIENsaWVudEh0dHAyU2Vzc2lvbj4oKTtcbiAgfVxuXG4gIGRlc3Ryb3koKTogdm9pZCB7XG4gICAgLy8gZXNsaW50LWRpc2FibGUtbmV4dC1saW5lIEB0eXBlc2NyaXB0LWVzbGludC9uby11bnVzZWQtdmFyc1xuICAgIGZvciAoY29uc3QgW18sIGh0dHAyU2Vzc2lvbl0gb2YgdGhpcy5jb25uZWN0aW9uUG9vbCkge1xuICAgICAgaHR0cDJTZXNzaW9uLmRlc3Ryb3koKTtcbiAgICB9XG4gICAgdGhpcy5jb25uZWN0aW9uUG9vbC5jbGVhcigpO1xuICB9XG5cbiAgaGFuZGxlKHJlcXVlc3Q6IEh0dHBSZXF1ZXN0LCB7IGFib3J0U2lnbmFsIH06IEh0dHBIYW5kbGVyT3B0aW9ucyA9IHt9KTogUHJvbWlzZTx7IHJlc3BvbnNlOiBIdHRwUmVzcG9uc2UgfT4ge1xuICAgIHJldHVybiBuZXcgUHJvbWlzZSgocmVzb2x2ZSwgcmVqZWN0KSA9PiB7XG4gICAgICAvLyBpZiB0aGUgcmVxdWVzdCB3YXMgYWxyZWFkeSBhYm9ydGVkLCBwcmV2ZW50IGRvaW5nIGV4dHJhIHdvcmtcbiAgICAgIGlmIChhYm9ydFNpZ25hbD8uYWJvcnRlZCkge1xuICAgICAgICBjb25zdCBhYm9ydEVycm9yID0gbmV3IEVycm9yKFwiUmVxdWVzdCBhYm9ydGVkXCIpO1xuICAgICAgICBhYm9ydEVycm9yLm5hbWUgPSBcIkFib3J0RXJyb3JcIjtcbiAgICAgICAgcmVqZWN0KGFib3J0RXJyb3IpO1xuICAgICAgICByZXR1cm47XG4gICAgICB9XG5cbiAgICAgIGNvbnN0IHsgaG9zdG5hbWUsIG1ldGhvZCwgcG9ydCwgcHJvdG9jb2wsIHBhdGgsIHF1ZXJ5IH0gPSByZXF1ZXN0O1xuICAgICAgY29uc3QgcXVlcnlTdHJpbmcgPSBidWlsZFF1ZXJ5U3RyaW5nKHF1ZXJ5IHx8IHt9KTtcblxuICAgICAgLy8gY3JlYXRlIHRoZSBodHRwMiByZXF1ZXN0XG4gICAgICBjb25zdCByZXEgPSB0aGlzLmdldFNlc3Npb24oYCR7cHJvdG9jb2x9Ly8ke2hvc3RuYW1lfSR7cG9ydCA/IGA6JHtwb3J0fWAgOiBcIlwifWApLnJlcXVlc3Qoe1xuICAgICAgICAuLi5yZXF1ZXN0LmhlYWRlcnMsXG4gICAgICAgIFtjb25zdGFudHMuSFRUUDJfSEVBREVSX1BBVEhdOiBxdWVyeVN0cmluZyA/IGAke3BhdGh9PyR7cXVlcnlTdHJpbmd9YCA6IHBhdGgsXG4gICAgICAgIFtjb25zdGFudHMuSFRUUDJfSEVBREVSX01FVEhPRF06IG1ldGhvZCxcbiAgICAgIH0pO1xuXG4gICAgICByZXEub24oXCJyZXNwb25zZVwiLCAoaGVhZGVycykgPT4ge1xuICAgICAgICBjb25zdCBodHRwUmVzcG9uc2UgPSBuZXcgSHR0cFJlc3BvbnNlKHtcbiAgICAgICAgICBzdGF0dXNDb2RlOiBoZWFkZXJzW1wiOnN0YXR1c1wiXSB8fCAtMSxcbiAgICAgICAgICBoZWFkZXJzOiBnZXRUcmFuc2Zvcm1lZEhlYWRlcnMoaGVhZGVycyksXG4gICAgICAgICAgYm9keTogcmVxLFxuICAgICAgICB9KTtcbiAgICAgICAgcmVzb2x2ZSh7IHJlc3BvbnNlOiBodHRwUmVzcG9uc2UgfSk7XG4gICAgICB9KTtcblxuICAgICAgcmVxLm9uKFwiZXJyb3JcIiwgcmVqZWN0KTtcbiAgICAgIHJlcS5vbihcImZyYW1lRXJyb3JcIiwgcmVqZWN0KTtcbiAgICAgIHJlcS5vbihcImFib3J0ZWRcIiwgcmVqZWN0KTtcblxuICAgICAgY29uc3QgcmVxdWVzdFRpbWVvdXQgPSB0aGlzLnJlcXVlc3RUaW1lb3V0O1xuICAgICAgaWYgKHJlcXVlc3RUaW1lb3V0KSB7XG4gICAgICAgIHJlcS5zZXRUaW1lb3V0KHJlcXVlc3RUaW1lb3V0LCAoKSA9PiB7XG4gICAgICAgICAgcmVxLmNsb3NlKCk7XG4gICAgICAgICAgY29uc3QgdGltZW91dEVycm9yID0gbmV3IEVycm9yKGBTdHJlYW0gdGltZWQgb3V0IGJlY2F1c2Ugb2Ygbm8gYWN0aXZpdHkgZm9yICR7cmVxdWVzdFRpbWVvdXR9IG1zYCk7XG4gICAgICAgICAgdGltZW91dEVycm9yLm5hbWUgPSBcIlRpbWVvdXRFcnJvclwiO1xuICAgICAgICAgIHJlamVjdCh0aW1lb3V0RXJyb3IpO1xuICAgICAgICB9KTtcbiAgICAgIH1cblxuICAgICAgaWYgKGFib3J0U2lnbmFsKSB7XG4gICAgICAgIGFib3J0U2lnbmFsLm9uYWJvcnQgPSAoKSA9PiB7XG4gICAgICAgICAgcmVxLmNsb3NlKCk7XG4gICAgICAgICAgY29uc3QgYWJvcnRFcnJvciA9IG5ldyBFcnJvcihcIlJlcXVlc3QgYWJvcnRlZFwiKTtcbiAgICAgICAgICBhYm9ydEVycm9yLm5hbWUgPSBcIkFib3J0RXJyb3JcIjtcbiAgICAgICAgICByZWplY3QoYWJvcnRFcnJvcik7XG4gICAgICAgIH07XG4gICAgICB9XG5cbiAgICAgIHdyaXRlUmVxdWVzdEJvZHkocmVxLCByZXF1ZXN0KTtcbiAgICB9KTtcbiAgfVxuXG4gIHByaXZhdGUgZ2V0U2Vzc2lvbihhdXRob3JpdHk6IHN0cmluZyk6IENsaWVudEh0dHAyU2Vzc2lvbiB7XG4gICAgY29uc3QgY29ubmVjdGlvblBvb2wgPSB0aGlzLmNvbm5lY3Rpb25Qb29sO1xuICAgIGNvbnN0IGV4aXN0aW5nU2Vzc2lvbiA9IGNvbm5lY3Rpb25Qb29sLmdldChhdXRob3JpdHkpO1xuICAgIGlmIChleGlzdGluZ1Nlc3Npb24pIHJldHVybiBleGlzdGluZ1Nlc3Npb247XG5cbiAgICBjb25zdCBuZXdTZXNzaW9uID0gY29ubmVjdChhdXRob3JpdHkpO1xuICAgIGNvbm5lY3Rpb25Qb29sLnNldChhdXRob3JpdHksIG5ld1Nlc3Npb24pO1xuXG4gICAgY29uc3Qgc2Vzc2lvblRpbWVvdXQgPSB0aGlzLnNlc3Npb25UaW1lb3V0O1xuICAgIGlmIChzZXNzaW9uVGltZW91dCkge1xuICAgICAgbmV3U2Vzc2lvbi5zZXRUaW1lb3V0KHNlc3Npb25UaW1lb3V0LCAoKSA9PiB7XG4gICAgICAgIG5ld1Nlc3Npb24uY2xvc2UoKTtcbiAgICAgICAgY29ubmVjdGlvblBvb2wuZGVsZXRlKGF1dGhvcml0eSk7XG4gICAgICB9KTtcbiAgICB9XG4gICAgcmV0dXJuIG5ld1Nlc3Npb247XG4gIH1cbn1cbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibm9kZS1odHRwMi1oYW5kbGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL25vZGUtaHR0cDItaGFuZGxlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSwwREFBZ0Y7QUFDaEYsc0VBQWdFO0FBRWhFLGlDQUErRDtBQUUvRCx1RUFBa0U7QUFDbEUsNkRBQXdEO0FBb0J4RCxNQUFhLGdCQUFnQjtJQU0zQixZQUFZLEVBQUUsY0FBYyxFQUFFLGNBQWMsS0FBOEIsRUFBRTtRQUY1RCxhQUFRLEdBQUcsRUFBRSxlQUFlLEVBQUUsSUFBSSxFQUFFLENBQUM7UUFHbkQsSUFBSSxDQUFDLGNBQWMsR0FBRyxjQUFjLENBQUM7UUFDckMsSUFBSSxDQUFDLGNBQWMsR0FBRyxjQUFjLENBQUM7UUFDckMsSUFBSSxDQUFDLGNBQWMsR0FBRyxJQUFJLEdBQUcsRUFBOEIsQ0FBQztJQUM5RCxDQUFDO0lBRUQsT0FBTztRQUNMLDZEQUE2RDtRQUM3RCxLQUFLLE1BQU0sQ0FBQyxDQUFDLEVBQUUsWUFBWSxDQUFDLElBQUksSUFBSSxDQUFDLGNBQWMsRUFBRTtZQUNuRCxZQUFZLENBQUMsT0FBTyxFQUFFLENBQUM7U0FDeEI7UUFDRCxJQUFJLENBQUMsY0FBYyxDQUFDLEtBQUssRUFBRSxDQUFDO0lBQzlCLENBQUM7SUFFRCxNQUFNLENBQUMsT0FBb0IsRUFBRSxFQUFFLFdBQVcsS0FBeUIsRUFBRTtRQUNuRSxPQUFPLElBQUksT0FBTyxDQUFDLENBQUMsT0FBTyxFQUFFLGNBQWMsRUFBRSxFQUFFO1lBQzdDLHdGQUF3RjtZQUN4RiwrRUFBK0U7WUFDL0UsSUFBSSxTQUFTLEdBQUcsS0FBSyxDQUFDO1lBQ3RCLE1BQU0sTUFBTSxHQUFHLENBQUMsR0FBVSxFQUFFLEVBQUU7Z0JBQzVCLFNBQVMsR0FBRyxJQUFJLENBQUM7Z0JBQ2pCLGNBQWMsQ0FBQyxHQUFHLENBQUMsQ0FBQztZQUN0QixDQUFDLENBQUM7WUFDRiwrREFBK0Q7WUFDL0QsSUFBSSxXQUFXLGFBQVgsV0FBVyx1QkFBWCxXQUFXLENBQUUsT0FBTyxFQUFFO2dCQUN4QixNQUFNLFVBQVUsR0FBRyxJQUFJLEtBQUssQ0FBQyxpQkFBaUIsQ0FBQyxDQUFDO2dCQUNoRCxVQUFVLENBQUMsSUFBSSxHQUFHLFlBQVksQ0FBQztnQkFDL0IsTUFBTSxDQUFDLFVBQVUsQ0FBQyxDQUFDO2dCQUNuQixPQUFPO2FBQ1I7WUFFRCxNQUFNLEVBQUUsUUFBUSxFQUFFLE1BQU0sRUFBRSxJQUFJLEVBQUUsUUFBUSxFQUFFLElBQUksRUFBRSxLQUFLLEVBQUUsR0FBRyxPQUFPLENBQUM7WUFDbEUsTUFBTSxXQUFXLEdBQUcsc0NBQWdCLENBQUMsS0FBSyxJQUFJLEVBQUUsQ0FBQyxDQUFDO1lBRWxELDJCQUEyQjtZQUMzQixNQUFNLEdBQUcsR0FBRyxJQUFJLENBQUMsVUFBVSxDQUFDLEdBQUcsUUFBUSxLQUFLLFFBQVEsR0FBRyxJQUFJLENBQUMsQ0FBQyxDQUFDLElBQUksSUFBSSxFQUFFLENBQUMsQ0FBQyxDQUFDLEVBQUUsRUFBRSxDQUFDLENBQUMsT0FBTyxDQUFDO2dCQUN2RixHQUFHLE9BQU8sQ0FBQyxPQUFPO2dCQUNsQixDQUFDLGlCQUFTLENBQUMsaUJBQWlCLENBQUMsRUFBRSxXQUFXLENBQUMsQ0FBQyxDQUFDLEdBQUcsSUFBSSxJQUFJLFdBQVcsRUFBRSxDQUFDLENBQUMsQ0FBQyxJQUFJO2dCQUM1RSxDQUFDLGlCQUFTLENBQUMsbUJBQW1CLENBQUMsRUFBRSxNQUFNO2FBQ3hDLENBQUMsQ0FBQztZQUVILEdBQUcsQ0FBQyxFQUFFLENBQUMsVUFBVSxFQUFFLENBQUMsT0FBTyxFQUFFLEVBQUU7Z0JBQzdCLE1BQU0sWUFBWSxHQUFHLElBQUksNEJBQVksQ0FBQztvQkFDcEMsVUFBVSxFQUFFLE9BQU8sQ0FBQyxTQUFTLENBQUMsSUFBSSxDQUFDLENBQUM7b0JBQ3BDLE9BQU8sRUFBRSwrQ0FBcUIsQ0FBQyxPQUFPLENBQUM7b0JBQ3ZDLElBQUksRUFBRSxHQUFHO2lCQUNWLENBQUMsQ0FBQztnQkFDSCxTQUFTLEdBQUcsSUFBSSxDQUFDO2dCQUNqQixPQUFPLENBQUMsRUFBRSxRQUFRLEVBQUUsWUFBWSxFQUFFLENBQUMsQ0FBQztZQUN0QyxDQUFDLENBQUMsQ0FBQztZQUVILE1BQU0sY0FBYyxHQUFHLElBQUksQ0FBQyxjQUFjLENBQUM7WUFDM0MsSUFBSSxjQUFjLEVBQUU7Z0JBQ2xCLEdBQUcsQ0FBQyxVQUFVLENBQUMsY0FBYyxFQUFFLEdBQUcsRUFBRTtvQkFDbEMsR0FBRyxDQUFDLEtBQUssRUFBRSxDQUFDO29CQUNaLE1BQU0sWUFBWSxHQUFHLElBQUksS0FBSyxDQUFDLCtDQUErQyxjQUFjLEtBQUssQ0FBQyxDQUFDO29CQUNuRyxZQUFZLENBQUMsSUFBSSxHQUFHLGNBQWMsQ0FBQztvQkFDbkMsTUFBTSxDQUFDLFlBQVksQ0FBQyxDQUFDO2dCQUN2QixDQUFDLENBQUMsQ0FBQzthQUNKO1lBRUQsSUFBSSxXQUFXLEVBQUU7Z0JBQ2YsV0FBVyxDQUFDLE9BQU8sR0FBRyxHQUFHLEVBQUU7b0JBQ3pCLEdBQUcsQ0FBQyxLQUFLLEVBQUUsQ0FBQztvQkFDWixNQUFNLFVBQVUsR0FBRyxJQUFJLEtBQUssQ0FBQyxpQkFBaUIsQ0FBQyxDQUFDO29CQUNoRCxVQUFVLENBQUMsSUFBSSxHQUFHLFlBQVksQ0FBQztvQkFDL0IsTUFBTSxDQUFDLFVBQVUsQ0FBQyxDQUFDO2dCQUNyQixDQUFDLENBQUM7YUFDSDtZQUVELDZCQUE2QjtZQUM3QixHQUFHLENBQUMsRUFBRSxDQUFDLFlBQVksRUFBRSxNQUFNLENBQUMsQ0FBQztZQUM3QixHQUFHLENBQUMsRUFBRSxDQUFDLE9BQU8sRUFBRSxNQUFNLENBQUMsQ0FBQztZQUN4QixHQUFHLENBQUMsRUFBRSxDQUFDLFFBQVEsRUFBRSxNQUFNLENBQUMsQ0FBQztZQUN6QixHQUFHLENBQUMsRUFBRSxDQUFDLFNBQVMsRUFBRSxNQUFNLENBQUMsQ0FBQztZQUUxQixnRkFBZ0Y7WUFDaEYsMEZBQTBGO1lBQzFGLGdEQUFnRDtZQUNoRCxHQUFHLENBQUMsRUFBRSxDQUFDLE9BQU8sRUFBRSxHQUFHLEVBQUU7Z0JBQ25CLElBQUksQ0FBQyxTQUFTLEVBQUU7b0JBQ2QsTUFBTSxDQUFDLElBQUksS0FBSyxDQUFDLHdEQUF3RCxDQUFDLENBQUMsQ0FBQztpQkFDN0U7WUFDSCxDQUFDLENBQUMsQ0FBQztZQUNILHFDQUFnQixDQUFDLEdBQUcsRUFBRSxPQUFPLENBQUMsQ0FBQztRQUNqQyxDQUFDLENBQUMsQ0FBQztJQUNMLENBQUM7SUFFTyxVQUFVLENBQUMsU0FBaUI7UUFDbEMsTUFBTSxjQUFjLEdBQUcsSUFBSSxDQUFDLGNBQWMsQ0FBQztRQUMzQyxNQUFNLGVBQWUsR0FBRyxjQUFjLENBQUMsR0FBRyxDQUFDLFNBQVMsQ0FBQyxDQUFDO1FBQ3RELElBQUksZUFBZTtZQUFFLE9BQU8sZUFBZSxDQUFDO1FBRTVDLE1BQU0sVUFBVSxHQUFHLGVBQU8sQ0FBQyxTQUFTLENBQUMsQ0FBQztRQUN0QyxjQUFjLENBQUMsR0FBRyxDQUFDLFNBQVMsRUFBRSxVQUFVLENBQUMsQ0FBQztRQUMxQyxNQUFNLGdCQUFnQixHQUFHLEdBQUcsRUFBRTtZQUM1QixJQUFJLENBQUMsY0FBYyxDQUFDLFNBQVMsRUFBRSxVQUFVLENBQUMsQ0FBQztRQUM3QyxDQUFDLENBQUM7UUFDRixVQUFVLENBQUMsRUFBRSxDQUFDLFFBQVEsRUFBRSxnQkFBZ0IsQ0FBQyxDQUFDO1FBQzFDLFVBQVUsQ0FBQyxFQUFFLENBQUMsT0FBTyxFQUFFLGdCQUFnQixDQUFDLENBQUM7UUFDekMsVUFBVSxDQUFDLEVBQUUsQ0FBQyxZQUFZLEVBQUUsZ0JBQWdCLENBQUMsQ0FBQztRQUU5QyxNQUFNLGNBQWMsR0FBRyxJQUFJLENBQUMsY0FBYyxDQUFDO1FBQzNDLElBQUksY0FBYyxFQUFFO1lBQ2xCLFVBQVUsQ0FBQyxVQUFVLENBQUMsY0FBYyxFQUFFLEdBQUcsRUFBRTtnQkFDekMsSUFBSSxjQUFjLENBQUMsR0FBRyxDQUFDLFNBQVMsQ0FBQyxLQUFLLFVBQVUsRUFBRTtvQkFDaEQsVUFBVSxDQUFDLEtBQUssRUFBRSxDQUFDO29CQUNuQixjQUFjLENBQUMsTUFBTSxDQUFDLFNBQVMsQ0FBQyxDQUFDO2lCQUNsQztZQUNILENBQUMsQ0FBQyxDQUFDO1NBQ0o7UUFDRCxPQUFPLFVBQVUsQ0FBQztJQUNwQixDQUFDO0lBRUQ7Ozs7O09BS0c7SUFDSyxjQUFjLENBQUMsU0FBaUIsRUFBRSxPQUEyQjtRQUNuRSxJQUFJLElBQUksQ0FBQyxjQUFjLENBQUMsR0FBRyxDQUFDLFNBQVMsQ0FBQyxLQUFLLE9BQU8sRUFBRTtZQUNsRCxrQkFBa0I7WUFDbEIsT0FBTztTQUNSO1FBQ0QsSUFBSSxDQUFDLGNBQWMsQ0FBQyxNQUFNLENBQUMsU0FBUyxDQUFDLENBQUM7UUFDdEMsT0FBTyxDQUFDLGtCQUFrQixDQUFDLFFBQVEsQ0FBQyxDQUFDO1FBQ3JDLE9BQU8sQ0FBQyxrQkFBa0IsQ0FBQyxPQUFPLENBQUMsQ0FBQztRQUNwQyxPQUFPLENBQUMsa0JBQWtCLENBQUMsWUFBWSxDQUFDLENBQUM7UUFDekMsSUFBSSxDQUFDLE9BQU8sQ0FBQyxTQUFTLEVBQUU7WUFDdEIsT0FBTyxDQUFDLE9BQU8sRUFBRSxDQUFDO1NBQ25CO0lBQ0gsQ0FBQztDQUNGO0FBM0lELDRDQTJJQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEh0dHBIYW5kbGVyLCBIdHRwUmVxdWVzdCwgSHR0cFJlc3BvbnNlIH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3RvY29sLWh0dHBcIjtcbmltcG9ydCB7IGJ1aWxkUXVlcnlTdHJpbmcgfSBmcm9tIFwiQGF3cy1zZGsvcXVlcnlzdHJpbmctYnVpbGRlclwiO1xuaW1wb3J0IHsgSHR0cEhhbmRsZXJPcHRpb25zIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5pbXBvcnQgeyBDbGllbnRIdHRwMlNlc3Npb24sIGNvbm5lY3QsIGNvbnN0YW50cyB9IGZyb20gXCJodHRwMlwiO1xuXG5pbXBvcnQgeyBnZXRUcmFuc2Zvcm1lZEhlYWRlcnMgfSBmcm9tIFwiLi9nZXQtdHJhbnNmb3JtZWQtaGVhZGVyc1wiO1xuaW1wb3J0IHsgd3JpdGVSZXF1ZXN0Qm9keSB9IGZyb20gXCIuL3dyaXRlLXJlcXVlc3QtYm9keVwiO1xuXG4vKipcbiAqIFJlcHJlc2VudHMgdGhlIGh0dHAyIG9wdGlvbnMgdGhhdCBjYW4gYmUgcGFzc2VkIHRvIGEgbm9kZSBodHRwMiBjbGllbnQuXG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgTm9kZUh0dHAySGFuZGxlck9wdGlvbnMge1xuICAvKipcbiAgICogVGhlIG1heGltdW0gdGltZSBpbiBtaWxsaXNlY29uZHMgdGhhdCBhIHN0cmVhbSBtYXkgcmVtYWluIGlkbGUgYmVmb3JlIGl0XG4gICAqIGlzIGNsb3NlZC5cbiAgICovXG4gIHJlcXVlc3RUaW1lb3V0PzogbnVtYmVyO1xuXG4gIC8qKlxuICAgKiBUaGUgbWF4aW11bSB0aW1lIGluIG1pbGxpc2Vjb25kcyB0aGF0IGEgc2Vzc2lvbiBvciBzb2NrZXQgbWF5IHJlbWFpbiBpZGxlXG4gICAqIGJlZm9yZSBpdCBpcyBjbG9zZWQuXG4gICAqIGh0dHBzOi8vbm9kZWpzLm9yZy9kb2NzL2xhdGVzdC12MTIueC9hcGkvaHR0cDIuaHRtbCNodHRwMl9odHRwMnNlc3Npb25fYW5kX3NvY2tldHNcbiAgICovXG4gIHNlc3Npb25UaW1lb3V0PzogbnVtYmVyO1xufVxuXG5leHBvcnQgY2xhc3MgTm9kZUh0dHAySGFuZGxlciBpbXBsZW1lbnRzIEh0dHBIYW5kbGVyIHtcbiAgcHJpdmF0ZSByZWFkb25seSByZXF1ZXN0VGltZW91dD86IG51bWJlcjtcbiAgcHJpdmF0ZSByZWFkb25seSBzZXNzaW9uVGltZW91dD86IG51bWJlcjtcbiAgcHJpdmF0ZSByZWFkb25seSBjb25uZWN0aW9uUG9vbDogTWFwPHN0cmluZywgQ2xpZW50SHR0cDJTZXNzaW9uPjtcbiAgcHVibGljIHJlYWRvbmx5IG1ldGFkYXRhID0geyBoYW5kbGVyUHJvdG9jb2w6IFwiaDJcIiB9O1xuXG4gIGNvbnN0cnVjdG9yKHsgcmVxdWVzdFRpbWVvdXQsIHNlc3Npb25UaW1lb3V0IH06IE5vZGVIdHRwMkhhbmRsZXJPcHRpb25zID0ge30pIHtcbiAgICB0aGlzLnJlcXVlc3RUaW1lb3V0ID0gcmVxdWVzdFRpbWVvdXQ7XG4gICAgdGhpcy5zZXNzaW9uVGltZW91dCA9IHNlc3Npb25UaW1lb3V0O1xuICAgIHRoaXMuY29ubmVjdGlvblBvb2wgPSBuZXcgTWFwPHN0cmluZywgQ2xpZW50SHR0cDJTZXNzaW9uPigpO1xuICB9XG5cbiAgZGVzdHJveSgpOiB2b2lkIHtcbiAgICAvLyBlc2xpbnQtZGlzYWJsZS1uZXh0LWxpbmUgQHR5cGVzY3JpcHQtZXNsaW50L25vLXVudXNlZC12YXJzXG4gICAgZm9yIChjb25zdCBbXywgaHR0cDJTZXNzaW9uXSBvZiB0aGlzLmNvbm5lY3Rpb25Qb29sKSB7XG4gICAgICBodHRwMlNlc3Npb24uZGVzdHJveSgpO1xuICAgIH1cbiAgICB0aGlzLmNvbm5lY3Rpb25Qb29sLmNsZWFyKCk7XG4gIH1cblxuICBoYW5kbGUocmVxdWVzdDogSHR0cFJlcXVlc3QsIHsgYWJvcnRTaWduYWwgfTogSHR0cEhhbmRsZXJPcHRpb25zID0ge30pOiBQcm9taXNlPHsgcmVzcG9uc2U6IEh0dHBSZXNwb25zZSB9PiB7XG4gICAgcmV0dXJuIG5ldyBQcm9taXNlKChyZXNvbHZlLCByZWplY3RPcmlnaW5hbCkgPT4ge1xuICAgICAgLy8gSXQncyByZWR1bmRhbnQgdG8gdHJhY2sgZnVsZmlsbGVkIGJlY2F1c2UgcHJvbWlzZXMgdXNlIHRoZSBmaXJzdCByZXNvbHV0aW9uL3JlamVjdGlvblxuICAgICAgLy8gYnV0IGF2b2lkcyBnZW5lcmF0aW5nIHVubmVjZXNzYXJ5IHN0YWNrIHRyYWNlcyBpbiB0aGUgXCJjbG9zZVwiIGV2ZW50IGhhbmRsZXIuXG4gICAgICBsZXQgZnVsZmlsbGVkID0gZmFsc2U7XG4gICAgICBjb25zdCByZWplY3QgPSAoZXJyOiBFcnJvcikgPT4ge1xuICAgICAgICBmdWxmaWxsZWQgPSB0cnVlO1xuICAgICAgICByZWplY3RPcmlnaW5hbChlcnIpO1xuICAgICAgfTtcbiAgICAgIC8vIGlmIHRoZSByZXF1ZXN0IHdhcyBhbHJlYWR5IGFib3J0ZWQsIHByZXZlbnQgZG9pbmcgZXh0cmEgd29ya1xuICAgICAgaWYgKGFib3J0U2lnbmFsPy5hYm9ydGVkKSB7XG4gICAgICAgIGNvbnN0IGFib3J0RXJyb3IgPSBuZXcgRXJyb3IoXCJSZXF1ZXN0IGFib3J0ZWRcIik7XG4gICAgICAgIGFib3J0RXJyb3IubmFtZSA9IFwiQWJvcnRFcnJvclwiO1xuICAgICAgICByZWplY3QoYWJvcnRFcnJvcik7XG4gICAgICAgIHJldHVybjtcbiAgICAgIH1cblxuICAgICAgY29uc3QgeyBob3N0bmFtZSwgbWV0aG9kLCBwb3J0LCBwcm90b2NvbCwgcGF0aCwgcXVlcnkgfSA9IHJlcXVlc3Q7XG4gICAgICBjb25zdCBxdWVyeVN0cmluZyA9IGJ1aWxkUXVlcnlTdHJpbmcocXVlcnkgfHwge30pO1xuXG4gICAgICAvLyBjcmVhdGUgdGhlIGh0dHAyIHJlcXVlc3RcbiAgICAgIGNvbnN0IHJlcSA9IHRoaXMuZ2V0U2Vzc2lvbihgJHtwcm90b2NvbH0vLyR7aG9zdG5hbWV9JHtwb3J0ID8gYDoke3BvcnR9YCA6IFwiXCJ9YCkucmVxdWVzdCh7XG4gICAgICAgIC4uLnJlcXVlc3QuaGVhZGVycyxcbiAgICAgICAgW2NvbnN0YW50cy5IVFRQMl9IRUFERVJfUEFUSF06IHF1ZXJ5U3RyaW5nID8gYCR7cGF0aH0/JHtxdWVyeVN0cmluZ31gIDogcGF0aCxcbiAgICAgICAgW2NvbnN0YW50cy5IVFRQMl9IRUFERVJfTUVUSE9EXTogbWV0aG9kLFxuICAgICAgfSk7XG5cbiAgICAgIHJlcS5vbihcInJlc3BvbnNlXCIsIChoZWFkZXJzKSA9PiB7XG4gICAgICAgIGNvbnN0IGh0dHBSZXNwb25zZSA9IG5ldyBIdHRwUmVzcG9uc2Uoe1xuICAgICAgICAgIHN0YXR1c0NvZGU6IGhlYWRlcnNbXCI6c3RhdHVzXCJdIHx8IC0xLFxuICAgICAgICAgIGhlYWRlcnM6IGdldFRyYW5zZm9ybWVkSGVhZGVycyhoZWFkZXJzKSxcbiAgICAgICAgICBib2R5OiByZXEsXG4gICAgICAgIH0pO1xuICAgICAgICBmdWxmaWxsZWQgPSB0cnVlO1xuICAgICAgICByZXNvbHZlKHsgcmVzcG9uc2U6IGh0dHBSZXNwb25zZSB9KTtcbiAgICAgIH0pO1xuXG4gICAgICBjb25zdCByZXF1ZXN0VGltZW91dCA9IHRoaXMucmVxdWVzdFRpbWVvdXQ7XG4gICAgICBpZiAocmVxdWVzdFRpbWVvdXQpIHtcbiAgICAgICAgcmVxLnNldFRpbWVvdXQocmVxdWVzdFRpbWVvdXQsICgpID0+IHtcbiAgICAgICAgICByZXEuY2xvc2UoKTtcbiAgICAgICAgICBjb25zdCB0aW1lb3V0RXJyb3IgPSBuZXcgRXJyb3IoYFN0cmVhbSB0aW1lZCBvdXQgYmVjYXVzZSBvZiBubyBhY3Rpdml0eSBmb3IgJHtyZXF1ZXN0VGltZW91dH0gbXNgKTtcbiAgICAgICAgICB0aW1lb3V0RXJyb3IubmFtZSA9IFwiVGltZW91dEVycm9yXCI7XG4gICAgICAgICAgcmVqZWN0KHRpbWVvdXRFcnJvcik7XG4gICAgICAgIH0pO1xuICAgICAgfVxuXG4gICAgICBpZiAoYWJvcnRTaWduYWwpIHtcbiAgICAgICAgYWJvcnRTaWduYWwub25hYm9ydCA9ICgpID0+IHtcbiAgICAgICAgICByZXEuY2xvc2UoKTtcbiAgICAgICAgICBjb25zdCBhYm9ydEVycm9yID0gbmV3IEVycm9yKFwiUmVxdWVzdCBhYm9ydGVkXCIpO1xuICAgICAgICAgIGFib3J0RXJyb3IubmFtZSA9IFwiQWJvcnRFcnJvclwiO1xuICAgICAgICAgIHJlamVjdChhYm9ydEVycm9yKTtcbiAgICAgICAgfTtcbiAgICAgIH1cblxuICAgICAgLy8gU2V0IHVwIGhhbmRsZXJzIGZvciBlcnJvcnNcbiAgICAgIHJlcS5vbihcImZyYW1lRXJyb3JcIiwgcmVqZWN0KTtcbiAgICAgIHJlcS5vbihcImVycm9yXCIsIHJlamVjdCk7XG4gICAgICByZXEub24oXCJnb2F3YXlcIiwgcmVqZWN0KTtcbiAgICAgIHJlcS5vbihcImFib3J0ZWRcIiwgcmVqZWN0KTtcblxuICAgICAgLy8gVGhlIEhUVFAvMiBlcnJvciBjb2RlIHVzZWQgd2hlbiBjbG9zaW5nIHRoZSBzdHJlYW0gY2FuIGJlIHJldHJpZXZlZCB1c2luZyB0aGVcbiAgICAgIC8vIGh0dHAyc3RyZWFtLnJzdENvZGUgcHJvcGVydHkuIElmIHRoZSBjb2RlIGlzIGFueSB2YWx1ZSBvdGhlciB0aGFuIE5HSFRUUDJfTk9fRVJST1IgKDApLFxuICAgICAgLy8gYW4gJ2Vycm9yJyBldmVudCB3aWxsIGhhdmUgYWxzbyBiZWVuIGVtaXR0ZWQuXG4gICAgICByZXEub24oXCJjbG9zZVwiLCAoKSA9PiB7XG4gICAgICAgIGlmICghZnVsZmlsbGVkKSB7XG4gICAgICAgICAgcmVqZWN0KG5ldyBFcnJvcihcIlVuZXhwZWN0ZWQgZXJyb3I6IGh0dHAyIHJlcXVlc3QgZGlkIG5vdCBnZXQgYSByZXNwb25zZVwiKSk7XG4gICAgICAgIH1cbiAgICAgIH0pO1xuICAgICAgd3JpdGVSZXF1ZXN0Qm9keShyZXEsIHJlcXVlc3QpO1xuICAgIH0pO1xuICB9XG5cbiAgcHJpdmF0ZSBnZXRTZXNzaW9uKGF1dGhvcml0eTogc3RyaW5nKTogQ2xpZW50SHR0cDJTZXNzaW9uIHtcbiAgICBjb25zdCBjb25uZWN0aW9uUG9vbCA9IHRoaXMuY29ubmVjdGlvblBvb2w7XG4gICAgY29uc3QgZXhpc3RpbmdTZXNzaW9uID0gY29ubmVjdGlvblBvb2wuZ2V0KGF1dGhvcml0eSk7XG4gICAgaWYgKGV4aXN0aW5nU2Vzc2lvbikgcmV0dXJuIGV4aXN0aW5nU2Vzc2lvbjtcblxuICAgIGNvbnN0IG5ld1Nlc3Npb24gPSBjb25uZWN0KGF1dGhvcml0eSk7XG4gICAgY29ubmVjdGlvblBvb2wuc2V0KGF1dGhvcml0eSwgbmV3U2Vzc2lvbik7XG4gICAgY29uc3QgZGVzdHJveVNlc3Npb25DYiA9ICgpID0+IHtcbiAgICAgIHRoaXMuZGVzdHJveVNlc3Npb24oYXV0aG9yaXR5LCBuZXdTZXNzaW9uKTtcbiAgICB9O1xuICAgIG5ld1Nlc3Npb24ub24oXCJnb2F3YXlcIiwgZGVzdHJveVNlc3Npb25DYik7XG4gICAgbmV3U2Vzc2lvbi5vbihcImVycm9yXCIsIGRlc3Ryb3lTZXNzaW9uQ2IpO1xuICAgIG5ld1Nlc3Npb24ub24oXCJmcmFtZUVycm9yXCIsIGRlc3Ryb3lTZXNzaW9uQ2IpO1xuXG4gICAgY29uc3Qgc2Vzc2lvblRpbWVvdXQgPSB0aGlzLnNlc3Npb25UaW1lb3V0O1xuICAgIGlmIChzZXNzaW9uVGltZW91dCkge1xuICAgICAgbmV3U2Vzc2lvbi5zZXRUaW1lb3V0KHNlc3Npb25UaW1lb3V0LCAoKSA9PiB7XG4gICAgICAgIGlmIChjb25uZWN0aW9uUG9vbC5nZXQoYXV0aG9yaXR5KSA9PT0gbmV3U2Vzc2lvbikge1xuICAgICAgICAgIG5ld1Nlc3Npb24uY2xvc2UoKTtcbiAgICAgICAgICBjb25uZWN0aW9uUG9vbC5kZWxldGUoYXV0aG9yaXR5KTtcbiAgICAgICAgfVxuICAgICAgfSk7XG4gICAgfVxuICAgIHJldHVybiBuZXdTZXNzaW9uO1xuICB9XG5cbiAgLyoqXG4gICAqIERlc3Ryb3kgYSBzZXNzaW9uIGltbWVkaWF0ZWx5IGFuZCByZW1vdmUgaXQgZnJvbSB0aGUgaHR0cDIgcG9vbC5cbiAgICpcbiAgICogVGhpcyBjaGVjayBlbnN1cmVzIHRoYXQgdGhlIHNlc3Npb24gaXMgb25seSBjbG9zZWQgb25jZVxuICAgKiBhbmQgdGhhdCBhbiBldmVudCBvbiBvbmUgc2Vzc2lvbiBkb2VzIG5vdCBjbG9zZSBhIGRpZmZlcmVudCBzZXNzaW9uLlxuICAgKi9cbiAgcHJpdmF0ZSBkZXN0cm95U2Vzc2lvbihhdXRob3JpdHk6IHN0cmluZywgc2Vzc2lvbjogQ2xpZW50SHR0cDJTZXNzaW9uKTogdm9pZCB7XG4gICAgaWYgKHRoaXMuY29ubmVjdGlvblBvb2wuZ2V0KGF1dGhvcml0eSkgIT09IHNlc3Npb24pIHtcbiAgICAgIC8vIEFscmVhZHkgY2xvc2VkP1xuICAgICAgcmV0dXJuO1xuICAgIH1cbiAgICB0aGlzLmNvbm5lY3Rpb25Qb29sLmRlbGV0ZShhdXRob3JpdHkpO1xuICAgIHNlc3Npb24ucmVtb3ZlQWxsTGlzdGVuZXJzKFwiZ29hd2F5XCIpO1xuICAgIHNlc3Npb24ucmVtb3ZlQWxsTGlzdGVuZXJzKFwiZXJyb3JcIik7XG4gICAgc2Vzc2lvbi5yZW1vdmVBbGxMaXN0ZW5lcnMoXCJmcmFtZUVycm9yXCIpO1xuICAgIGlmICghc2Vzc2lvbi5kZXN0cm95ZWQpIHtcbiAgICAgIHNlc3Npb24uZGVzdHJveSgpO1xuICAgIH1cbiAgfVxufVxuIl19
 
 /***/ }),
 
@@ -27190,7 +29371,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2RrLWVycm9yLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3Nkay1lcnJvci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTWV0YWRhdGFCZWFyZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuaW1wb3J0IHsgU21pdGh5RXhjZXB0aW9uIH0gZnJvbSBcIi4vZXhjZXB0aW9uXCI7XG5cbmV4cG9ydCB0eXBlIFNka0Vycm9yID0gRXJyb3IgJiBTbWl0aHlFeGNlcHRpb24gJiBNZXRhZGF0YUJlYXJlcjtcbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2RrLWVycm9yLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3Nkay1lcnJvci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTWV0YWRhdGFCZWFyZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuaW1wb3J0IHsgU21pdGh5RXhjZXB0aW9uIH0gZnJvbSBcIi4vZXhjZXB0aW9uXCI7XG5cbmV4cG9ydCB0eXBlIFNka0Vycm9yID0gRXJyb3IgJiBQYXJ0aWFsPFNtaXRoeUV4Y2VwdGlvbj4gJiBQYXJ0aWFsPE1ldGFkYXRhQmVhcmVyPjtcbiJdfQ==
 
 /***/ }),
 
@@ -27905,10 +30086,13 @@ const createWaiter = async (options, input, acceptorChecks) => {
     if (options.abortController) {
         exitConditions.push(abortTimeout(options.abortController.signal));
     }
+    if (options.abortSignal) {
+        exitConditions.push(abortTimeout(options.abortSignal));
+    }
     return Promise.race(exitConditions);
 };
 exports.createWaiter = createWaiter;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY3JlYXRlV2FpdGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2NyZWF0ZVdhaXRlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFFQSxxQ0FBc0M7QUFDdEMsbUNBQWdEO0FBQ2hELHFDQUEyRjtBQUUzRixNQUFNLFlBQVksR0FBRyxLQUFLLEVBQUUsV0FBd0IsRUFBeUIsRUFBRTtJQUM3RSxPQUFPLElBQUksT0FBTyxDQUFDLENBQUMsT0FBTyxFQUFFLEVBQUU7UUFDN0IsV0FBVyxDQUFDLE9BQU8sR0FBRyxHQUFHLEVBQUUsQ0FBQyxPQUFPLENBQUMsRUFBRSxLQUFLLEVBQUUsb0JBQVcsQ0FBQyxPQUFPLEVBQUUsQ0FBQyxDQUFDO0lBQ3RFLENBQUMsQ0FBQyxDQUFDO0FBQ0wsQ0FBQyxDQUFDO0FBRUY7Ozs7Ozs7O0dBUUc7QUFDSSxNQUFNLFlBQVksR0FBRyxLQUFLLEVBQy9CLE9BQThCLEVBQzlCLEtBQVksRUFDWixjQUF1RSxFQUNoRCxFQUFFO0lBQ3pCLE1BQU0sTUFBTSxHQUFHO1FBQ2IsR0FBRyw4QkFBcUI7UUFDeEIsR0FBRyxPQUFPO0tBQ1gsQ0FBQztJQUNGLDZCQUFxQixDQUFDLE1BQU0sQ0FBQyxDQUFDO0lBRTlCLE1BQU0sY0FBYyxHQUFHLENBQUMsbUJBQVUsQ0FBZ0IsTUFBTSxFQUFFLEtBQUssRUFBRSxjQUFjLENBQUMsQ0FBQyxDQUFDO0lBQ2xGLElBQUksT0FBTyxDQUFDLGVBQWUsRUFBRTtRQUMzQixjQUFjLENBQUMsSUFBSSxDQUFDLFlBQVksQ0FBQyxPQUFPLENBQUMsZUFBZSxDQUFDLE1BQU0sQ0FBQyxDQUFDLENBQUM7S0FDbkU7SUFDRCxPQUFPLE9BQU8sQ0FBQyxJQUFJLENBQUMsY0FBYyxDQUFDLENBQUM7QUFDdEMsQ0FBQyxDQUFDO0FBaEJXLFFBQUEsWUFBWSxnQkFnQnZCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQWJvcnRTaWduYWwgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuaW1wb3J0IHsgcnVuUG9sbGluZyB9IGZyb20gXCIuL3BvbGxlclwiO1xuaW1wb3J0IHsgdmFsaWRhdGVXYWl0ZXJPcHRpb25zIH0gZnJvbSBcIi4vdXRpbHNcIjtcbmltcG9ydCB7IFdhaXRlck9wdGlvbnMsIFdhaXRlclJlc3VsdCwgd2FpdGVyU2VydmljZURlZmF1bHRzLCBXYWl0ZXJTdGF0ZSB9IGZyb20gXCIuL3dhaXRlclwiO1xuXG5jb25zdCBhYm9ydFRpbWVvdXQgPSBhc3luYyAoYWJvcnRTaWduYWw6IEFib3J0U2lnbmFsKTogUHJvbWlzZTxXYWl0ZXJSZXN1bHQ+ID0+IHtcbiAgcmV0dXJuIG5ldyBQcm9taXNlKChyZXNvbHZlKSA9PiB7XG4gICAgYWJvcnRTaWduYWwub25hYm9ydCA9ICgpID0+IHJlc29sdmUoeyBzdGF0ZTogV2FpdGVyU3RhdGUuQUJPUlRFRCB9KTtcbiAgfSk7XG59O1xuXG4vKipcbiAqIENyZWF0ZSBhIHdhaXRlciBwcm9taXNlIHRoYXQgb25seSByZXNvbHZlcyB3aGVuOlxuICogMS4gQWJvcnQgY29udHJvbGxlciBpcyBzaWduYWxlZFxuICogMi4gTWF4IHdhaXQgdGltZSBpcyByZWFjaGVkXG4gKiAzLiBgYWNjZXB0b3JDaGVja3NgIHN1Y2NlZWRzLCBvciBmYWlsc1xuICogT3RoZXJ3aXNlLCBpdCBpbnZva2VzIGBhY2NlcHRvckNoZWNrc2Agd2l0aCBleHBvbmVudGlhbC1iYWNrb2ZmIGRlbGF5LlxuICpcbiAqIEBpbnRlcm5hbFxuICovXG5leHBvcnQgY29uc3QgY3JlYXRlV2FpdGVyID0gYXN5bmMgPENsaWVudCwgSW5wdXQ+KFxuICBvcHRpb25zOiBXYWl0ZXJPcHRpb25zPENsaWVudD4sXG4gIGlucHV0OiBJbnB1dCxcbiAgYWNjZXB0b3JDaGVja3M6IChjbGllbnQ6IENsaWVudCwgaW5wdXQ6IElucHV0KSA9PiBQcm9taXNlPFdhaXRlclJlc3VsdD5cbik6IFByb21pc2U8V2FpdGVyUmVzdWx0PiA9PiB7XG4gIGNvbnN0IHBhcmFtcyA9IHtcbiAgICAuLi53YWl0ZXJTZXJ2aWNlRGVmYXVsdHMsXG4gICAgLi4ub3B0aW9ucyxcbiAgfTtcbiAgdmFsaWRhdGVXYWl0ZXJPcHRpb25zKHBhcmFtcyk7XG5cbiAgY29uc3QgZXhpdENvbmRpdGlvbnMgPSBbcnVuUG9sbGluZzxDbGllbnQsIElucHV0PihwYXJhbXMsIGlucHV0LCBhY2NlcHRvckNoZWNrcyldO1xuICBpZiAob3B0aW9ucy5hYm9ydENvbnRyb2xsZXIpIHtcbiAgICBleGl0Q29uZGl0aW9ucy5wdXNoKGFib3J0VGltZW91dChvcHRpb25zLmFib3J0Q29udHJvbGxlci5zaWduYWwpKTtcbiAgfVxuICByZXR1cm4gUHJvbWlzZS5yYWNlKGV4aXRDb25kaXRpb25zKTtcbn07XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY3JlYXRlV2FpdGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2NyZWF0ZVdhaXRlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFFQSxxQ0FBc0M7QUFDdEMsbUNBQWdEO0FBQ2hELHFDQUEyRjtBQUUzRixNQUFNLFlBQVksR0FBRyxLQUFLLEVBQUUsV0FBd0IsRUFBeUIsRUFBRTtJQUM3RSxPQUFPLElBQUksT0FBTyxDQUFDLENBQUMsT0FBTyxFQUFFLEVBQUU7UUFDN0IsV0FBVyxDQUFDLE9BQU8sR0FBRyxHQUFHLEVBQUUsQ0FBQyxPQUFPLENBQUMsRUFBRSxLQUFLLEVBQUUsb0JBQVcsQ0FBQyxPQUFPLEVBQUUsQ0FBQyxDQUFDO0lBQ3RFLENBQUMsQ0FBQyxDQUFDO0FBQ0wsQ0FBQyxDQUFDO0FBRUY7Ozs7Ozs7O0dBUUc7QUFDSSxNQUFNLFlBQVksR0FBRyxLQUFLLEVBQy9CLE9BQThCLEVBQzlCLEtBQVksRUFDWixjQUF1RSxFQUNoRCxFQUFFO0lBQ3pCLE1BQU0sTUFBTSxHQUFHO1FBQ2IsR0FBRyw4QkFBcUI7UUFDeEIsR0FBRyxPQUFPO0tBQ1gsQ0FBQztJQUNGLDZCQUFxQixDQUFDLE1BQU0sQ0FBQyxDQUFDO0lBRTlCLE1BQU0sY0FBYyxHQUFHLENBQUMsbUJBQVUsQ0FBZ0IsTUFBTSxFQUFFLEtBQUssRUFBRSxjQUFjLENBQUMsQ0FBQyxDQUFDO0lBQ2xGLElBQUksT0FBTyxDQUFDLGVBQWUsRUFBRTtRQUMzQixjQUFjLENBQUMsSUFBSSxDQUFDLFlBQVksQ0FBQyxPQUFPLENBQUMsZUFBZSxDQUFDLE1BQU0sQ0FBQyxDQUFDLENBQUM7S0FDbkU7SUFFRCxJQUFJLE9BQU8sQ0FBQyxXQUFXLEVBQUU7UUFDdkIsY0FBYyxDQUFDLElBQUksQ0FBQyxZQUFZLENBQUMsT0FBTyxDQUFDLFdBQVcsQ0FBQyxDQUFDLENBQUM7S0FDeEQ7SUFFRCxPQUFPLE9BQU8sQ0FBQyxJQUFJLENBQUMsY0FBYyxDQUFDLENBQUM7QUFDdEMsQ0FBQyxDQUFDO0FBckJXLFFBQUEsWUFBWSxnQkFxQnZCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQWJvcnRTaWduYWwgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuaW1wb3J0IHsgcnVuUG9sbGluZyB9IGZyb20gXCIuL3BvbGxlclwiO1xuaW1wb3J0IHsgdmFsaWRhdGVXYWl0ZXJPcHRpb25zIH0gZnJvbSBcIi4vdXRpbHNcIjtcbmltcG9ydCB7IFdhaXRlck9wdGlvbnMsIFdhaXRlclJlc3VsdCwgd2FpdGVyU2VydmljZURlZmF1bHRzLCBXYWl0ZXJTdGF0ZSB9IGZyb20gXCIuL3dhaXRlclwiO1xuXG5jb25zdCBhYm9ydFRpbWVvdXQgPSBhc3luYyAoYWJvcnRTaWduYWw6IEFib3J0U2lnbmFsKTogUHJvbWlzZTxXYWl0ZXJSZXN1bHQ+ID0+IHtcbiAgcmV0dXJuIG5ldyBQcm9taXNlKChyZXNvbHZlKSA9PiB7XG4gICAgYWJvcnRTaWduYWwub25hYm9ydCA9ICgpID0+IHJlc29sdmUoeyBzdGF0ZTogV2FpdGVyU3RhdGUuQUJPUlRFRCB9KTtcbiAgfSk7XG59O1xuXG4vKipcbiAqIENyZWF0ZSBhIHdhaXRlciBwcm9taXNlIHRoYXQgb25seSByZXNvbHZlcyB3aGVuOlxuICogMS4gQWJvcnQgY29udHJvbGxlciBpcyBzaWduYWxlZFxuICogMi4gTWF4IHdhaXQgdGltZSBpcyByZWFjaGVkXG4gKiAzLiBgYWNjZXB0b3JDaGVja3NgIHN1Y2NlZWRzLCBvciBmYWlsc1xuICogT3RoZXJ3aXNlLCBpdCBpbnZva2VzIGBhY2NlcHRvckNoZWNrc2Agd2l0aCBleHBvbmVudGlhbC1iYWNrb2ZmIGRlbGF5LlxuICpcbiAqIEBpbnRlcm5hbFxuICovXG5leHBvcnQgY29uc3QgY3JlYXRlV2FpdGVyID0gYXN5bmMgPENsaWVudCwgSW5wdXQ+KFxuICBvcHRpb25zOiBXYWl0ZXJPcHRpb25zPENsaWVudD4sXG4gIGlucHV0OiBJbnB1dCxcbiAgYWNjZXB0b3JDaGVja3M6IChjbGllbnQ6IENsaWVudCwgaW5wdXQ6IElucHV0KSA9PiBQcm9taXNlPFdhaXRlclJlc3VsdD5cbik6IFByb21pc2U8V2FpdGVyUmVzdWx0PiA9PiB7XG4gIGNvbnN0IHBhcmFtcyA9IHtcbiAgICAuLi53YWl0ZXJTZXJ2aWNlRGVmYXVsdHMsXG4gICAgLi4ub3B0aW9ucyxcbiAgfTtcbiAgdmFsaWRhdGVXYWl0ZXJPcHRpb25zKHBhcmFtcyk7XG5cbiAgY29uc3QgZXhpdENvbmRpdGlvbnMgPSBbcnVuUG9sbGluZzxDbGllbnQsIElucHV0PihwYXJhbXMsIGlucHV0LCBhY2NlcHRvckNoZWNrcyldO1xuICBpZiAob3B0aW9ucy5hYm9ydENvbnRyb2xsZXIpIHtcbiAgICBleGl0Q29uZGl0aW9ucy5wdXNoKGFib3J0VGltZW91dChvcHRpb25zLmFib3J0Q29udHJvbGxlci5zaWduYWwpKTtcbiAgfVxuXG4gIGlmIChvcHRpb25zLmFib3J0U2lnbmFsKSB7XG4gICAgZXhpdENvbmRpdGlvbnMucHVzaChhYm9ydFRpbWVvdXQob3B0aW9ucy5hYm9ydFNpZ25hbCkpO1xuICB9XG5cbiAgcmV0dXJuIFByb21pc2UucmFjZShleGl0Q29uZGl0aW9ucyk7XG59O1xuIl19
 
 /***/ }),
 
@@ -27952,7 +30136,7 @@ const randomInRange = (min, max) => min + Math.random() * (max - min);
  * @param input client input
  * @param stateChecker function that checks the acceptor states on each poll.
  */
-const runPolling = async ({ minDelay, maxDelay, maxWaitTime, abortController, client }, input, acceptorChecks) => {
+const runPolling = async ({ minDelay, maxDelay, maxWaitTime, abortController, client, abortSignal }, input, acceptorChecks) => {
     var _a;
     const { state } = await acceptorChecks(client, input);
     if (state !== waiter_1.WaiterState.RETRY) {
@@ -27964,7 +30148,7 @@ const runPolling = async ({ minDelay, maxDelay, maxWaitTime, abortController, cl
     // Pre-compute this number to avoid Number type overflow.
     const attemptCeiling = Math.log(maxDelay / minDelay) / Math.log(2) + 1;
     while (true) {
-        if ((_a = abortController === null || abortController === void 0 ? void 0 : abortController.signal) === null || _a === void 0 ? void 0 : _a.aborted) {
+        if (((_a = abortController === null || abortController === void 0 ? void 0 : abortController.signal) === null || _a === void 0 ? void 0 : _a.aborted) || (abortSignal === null || abortSignal === void 0 ? void 0 : abortSignal.aborted)) {
             return { state: waiter_1.WaiterState.ABORTED };
         }
         const delay = exponentialBackoffWithJitter(minDelay, maxDelay, attemptCeiling, currentAttempt);
@@ -27982,7 +30166,7 @@ const runPolling = async ({ minDelay, maxDelay, maxWaitTime, abortController, cl
     }
 };
 exports.runPolling = runPolling;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicG9sbGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3BvbGxlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSx5Q0FBc0M7QUFDdEMscUNBQW9FO0FBRXBFOztHQUVHO0FBQ0gsTUFBTSw0QkFBNEIsR0FBRyxDQUFDLFFBQWdCLEVBQUUsUUFBZ0IsRUFBRSxjQUFzQixFQUFFLE9BQWUsRUFBRSxFQUFFO0lBQ25ILElBQUksT0FBTyxHQUFHLGNBQWM7UUFBRSxPQUFPLFFBQVEsQ0FBQztJQUM5QyxNQUFNLEtBQUssR0FBRyxRQUFRLEdBQUcsQ0FBQyxJQUFJLENBQUMsT0FBTyxHQUFHLENBQUMsQ0FBQyxDQUFDO0lBQzVDLE9BQU8sYUFBYSxDQUFDLFFBQVEsRUFBRSxLQUFLLENBQUMsQ0FBQztBQUN4QyxDQUFDLENBQUM7QUFFRixNQUFNLGFBQWEsR0FBRyxDQUFDLEdBQVcsRUFBRSxHQUFXLEVBQUUsRUFBRSxDQUFDLEdBQUcsR0FBRyxJQUFJLENBQUMsTUFBTSxFQUFFLEdBQUcsQ0FBQyxHQUFHLEdBQUcsR0FBRyxDQUFDLENBQUM7QUFFdEY7Ozs7Ozs7R0FPRztBQUNJLE1BQU0sVUFBVSxHQUFHLEtBQUssRUFDN0IsRUFBRSxRQUFRLEVBQUUsUUFBUSxFQUFFLFdBQVcsRUFBRSxlQUFlLEVBQUUsTUFBTSxFQUF5QixFQUNuRixLQUFZLEVBQ1osY0FBdUUsRUFDaEQsRUFBRTs7SUFDekIsTUFBTSxFQUFFLEtBQUssRUFBRSxHQUFHLE1BQU0sY0FBYyxDQUFDLE1BQU0sRUFBRSxLQUFLLENBQUMsQ0FBQztJQUN0RCxJQUFJLEtBQUssS0FBSyxvQkFBVyxDQUFDLEtBQUssRUFBRTtRQUMvQixPQUFPLEVBQUUsS0FBSyxFQUFFLENBQUM7S0FDbEI7SUFFRCxJQUFJLGNBQWMsR0FBRyxDQUFDLENBQUM7SUFDdkIsTUFBTSxTQUFTLEdBQUcsSUFBSSxDQUFDLEdBQUcsRUFBRSxHQUFHLFdBQVcsR0FBRyxJQUFJLENBQUM7SUFDbEQsdUVBQXVFO0lBQ3ZFLHlEQUF5RDtJQUN6RCxNQUFNLGNBQWMsR0FBRyxJQUFJLENBQUMsR0FBRyxDQUFDLFFBQVEsR0FBRyxRQUFRLENBQUMsR0FBRyxJQUFJLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FBQztJQUN2RSxPQUFPLElBQUksRUFBRTtRQUNYLElBQUksTUFBQSxlQUFlLGFBQWYsZUFBZSx1QkFBZixlQUFlLENBQUUsTUFBTSwwQ0FBRSxPQUFPLEVBQUU7WUFDcEMsT0FBTyxFQUFFLEtBQUssRUFBRSxvQkFBVyxDQUFDLE9BQU8sRUFBRSxDQUFDO1NBQ3ZDO1FBQ0QsTUFBTSxLQUFLLEdBQUcsNEJBQTRCLENBQUMsUUFBUSxFQUFFLFFBQVEsRUFBRSxjQUFjLEVBQUUsY0FBYyxDQUFDLENBQUM7UUFDL0Ysa0hBQWtIO1FBQ2xILGtGQUFrRjtRQUNsRixJQUFJLElBQUksQ0FBQyxHQUFHLEVBQUUsR0FBRyxLQUFLLEdBQUcsSUFBSSxHQUFHLFNBQVMsRUFBRTtZQUN6QyxPQUFPLEVBQUUsS0FBSyxFQUFFLG9CQUFXLENBQUMsT0FBTyxFQUFFLENBQUM7U0FDdkM7UUFDRCxNQUFNLGFBQUssQ0FBQyxLQUFLLENBQUMsQ0FBQztRQUNuQixNQUFNLEVBQUUsS0FBSyxFQUFFLEdBQUcsTUFBTSxjQUFjLENBQUMsTUFBTSxFQUFFLEtBQUssQ0FBQyxDQUFDO1FBQ3RELElBQUksS0FBSyxLQUFLLG9CQUFXLENBQUMsS0FBSyxFQUFFO1lBQy9CLE9BQU8sRUFBRSxLQUFLLEVBQUUsQ0FBQztTQUNsQjtRQUVELGNBQWMsSUFBSSxDQUFDLENBQUM7S0FDckI7QUFDSCxDQUFDLENBQUM7QUFqQ1csUUFBQSxVQUFVLGNBaUNyQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IHNsZWVwIH0gZnJvbSBcIi4vdXRpbHMvc2xlZXBcIjtcbmltcG9ydCB7IFdhaXRlck9wdGlvbnMsIFdhaXRlclJlc3VsdCwgV2FpdGVyU3RhdGUgfSBmcm9tIFwiLi93YWl0ZXJcIjtcblxuLyoqXG4gKiBSZWZlcmVuY2U6IGh0dHBzOi8vYXdzbGFicy5naXRodWIuaW8vc21pdGh5LzEuMC9zcGVjL3dhaXRlcnMuaHRtbCN3YWl0ZXItcmV0cmllc1xuICovXG5jb25zdCBleHBvbmVudGlhbEJhY2tvZmZXaXRoSml0dGVyID0gKG1pbkRlbGF5OiBudW1iZXIsIG1heERlbGF5OiBudW1iZXIsIGF0dGVtcHRDZWlsaW5nOiBudW1iZXIsIGF0dGVtcHQ6IG51bWJlcikgPT4ge1xuICBpZiAoYXR0ZW1wdCA+IGF0dGVtcHRDZWlsaW5nKSByZXR1cm4gbWF4RGVsYXk7XG4gIGNvbnN0IGRlbGF5ID0gbWluRGVsYXkgKiAyICoqIChhdHRlbXB0IC0gMSk7XG4gIHJldHVybiByYW5kb21JblJhbmdlKG1pbkRlbGF5LCBkZWxheSk7XG59O1xuXG5jb25zdCByYW5kb21JblJhbmdlID0gKG1pbjogbnVtYmVyLCBtYXg6IG51bWJlcikgPT4gbWluICsgTWF0aC5yYW5kb20oKSAqIChtYXggLSBtaW4pO1xuXG4vKipcbiAqIEZ1bmN0aW9uIHRoYXQgcnVucyBwb2xsaW5nIGFzIHBhcnQgb2Ygd2FpdGVycy4gVGhpcyB3aWxsIG1ha2Ugb25lIGluaXRhbCBhdHRlbXB0IGFuZCB0aGVuXG4gKiBzdWJzZXF1ZW50IGF0dGVtcHRzIHdpdGggYW4gaW5jcmVhc2luZyBkZWxheS5cbiAqIEBwYXJhbSBwYXJhbXMgb3B0aW9ucyBwYXNzZWQgdG8gdGhlIHdhaXRlci5cbiAqIEBwYXJhbSBjbGllbnQgQVdTIFNESyBDbGllbnRcbiAqIEBwYXJhbSBpbnB1dCBjbGllbnQgaW5wdXRcbiAqIEBwYXJhbSBzdGF0ZUNoZWNrZXIgZnVuY3Rpb24gdGhhdCBjaGVja3MgdGhlIGFjY2VwdG9yIHN0YXRlcyBvbiBlYWNoIHBvbGwuXG4gKi9cbmV4cG9ydCBjb25zdCBydW5Qb2xsaW5nID0gYXN5bmMgPENsaWVudCwgSW5wdXQ+KFxuICB7IG1pbkRlbGF5LCBtYXhEZWxheSwgbWF4V2FpdFRpbWUsIGFib3J0Q29udHJvbGxlciwgY2xpZW50IH06IFdhaXRlck9wdGlvbnM8Q2xpZW50PixcbiAgaW5wdXQ6IElucHV0LFxuICBhY2NlcHRvckNoZWNrczogKGNsaWVudDogQ2xpZW50LCBpbnB1dDogSW5wdXQpID0+IFByb21pc2U8V2FpdGVyUmVzdWx0PlxuKTogUHJvbWlzZTxXYWl0ZXJSZXN1bHQ+ID0+IHtcbiAgY29uc3QgeyBzdGF0ZSB9ID0gYXdhaXQgYWNjZXB0b3JDaGVja3MoY2xpZW50LCBpbnB1dCk7XG4gIGlmIChzdGF0ZSAhPT0gV2FpdGVyU3RhdGUuUkVUUlkpIHtcbiAgICByZXR1cm4geyBzdGF0ZSB9O1xuICB9XG5cbiAgbGV0IGN1cnJlbnRBdHRlbXB0ID0gMTtcbiAgY29uc3Qgd2FpdFVudGlsID0gRGF0ZS5ub3coKSArIG1heFdhaXRUaW1lICogMTAwMDtcbiAgLy8gVGhlIG1heCBhdHRlbXB0IG51bWJlciB0aGF0IHRoZSBkZXJpdmVkIGRlbGF5IHRpbWUgdGVuZCB0byBpbmNyZWFzZS5cbiAgLy8gUHJlLWNvbXB1dGUgdGhpcyBudW1iZXIgdG8gYXZvaWQgTnVtYmVyIHR5cGUgb3ZlcmZsb3cuXG4gIGNvbnN0IGF0dGVtcHRDZWlsaW5nID0gTWF0aC5sb2cobWF4RGVsYXkgLyBtaW5EZWxheSkgLyBNYXRoLmxvZygyKSArIDE7XG4gIHdoaWxlICh0cnVlKSB7XG4gICAgaWYgKGFib3J0Q29udHJvbGxlcj8uc2lnbmFsPy5hYm9ydGVkKSB7XG4gICAgICByZXR1cm4geyBzdGF0ZTogV2FpdGVyU3RhdGUuQUJPUlRFRCB9O1xuICAgIH1cbiAgICBjb25zdCBkZWxheSA9IGV4cG9uZW50aWFsQmFja29mZldpdGhKaXR0ZXIobWluRGVsYXksIG1heERlbGF5LCBhdHRlbXB0Q2VpbGluZywgY3VycmVudEF0dGVtcHQpO1xuICAgIC8vIFJlc29sdmUgdGhlIHByb21pc2UgZXhwbGljaXRseSBhdCB0aW1lb3V0IG9yIGFib3J0ZWQuIE90aGVyd2lzZSB0aGlzIHdoaWxlIGxvb3Agd2lsbCBrZWVwIG1ha2luZyBBUEkgY2FsbCB1bnRpbFxuICAgIC8vIGBhY2NlcHRvckNoZWNrYCByZXR1cm5zIG5vbi1yZXRyeSBzdGF0dXMsIGV2ZW4gd2l0aCB0aGUgUHJvbWlzZS5yYWNlKCkgb3V0c2lkZS5cbiAgICBpZiAoRGF0ZS5ub3coKSArIGRlbGF5ICogMTAwMCA+IHdhaXRVbnRpbCkge1xuICAgICAgcmV0dXJuIHsgc3RhdGU6IFdhaXRlclN0YXRlLlRJTUVPVVQgfTtcbiAgICB9XG4gICAgYXdhaXQgc2xlZXAoZGVsYXkpO1xuICAgIGNvbnN0IHsgc3RhdGUgfSA9IGF3YWl0IGFjY2VwdG9yQ2hlY2tzKGNsaWVudCwgaW5wdXQpO1xuICAgIGlmIChzdGF0ZSAhPT0gV2FpdGVyU3RhdGUuUkVUUlkpIHtcbiAgICAgIHJldHVybiB7IHN0YXRlIH07XG4gICAgfVxuXG4gICAgY3VycmVudEF0dGVtcHQgKz0gMTtcbiAgfVxufTtcbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicG9sbGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3BvbGxlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSx5Q0FBc0M7QUFDdEMscUNBQW9FO0FBRXBFOztHQUVHO0FBQ0gsTUFBTSw0QkFBNEIsR0FBRyxDQUFDLFFBQWdCLEVBQUUsUUFBZ0IsRUFBRSxjQUFzQixFQUFFLE9BQWUsRUFBRSxFQUFFO0lBQ25ILElBQUksT0FBTyxHQUFHLGNBQWM7UUFBRSxPQUFPLFFBQVEsQ0FBQztJQUM5QyxNQUFNLEtBQUssR0FBRyxRQUFRLEdBQUcsQ0FBQyxJQUFJLENBQUMsT0FBTyxHQUFHLENBQUMsQ0FBQyxDQUFDO0lBQzVDLE9BQU8sYUFBYSxDQUFDLFFBQVEsRUFBRSxLQUFLLENBQUMsQ0FBQztBQUN4QyxDQUFDLENBQUM7QUFFRixNQUFNLGFBQWEsR0FBRyxDQUFDLEdBQVcsRUFBRSxHQUFXLEVBQUUsRUFBRSxDQUFDLEdBQUcsR0FBRyxJQUFJLENBQUMsTUFBTSxFQUFFLEdBQUcsQ0FBQyxHQUFHLEdBQUcsR0FBRyxDQUFDLENBQUM7QUFFdEY7Ozs7Ozs7R0FPRztBQUNJLE1BQU0sVUFBVSxHQUFHLEtBQUssRUFDN0IsRUFBRSxRQUFRLEVBQUUsUUFBUSxFQUFFLFdBQVcsRUFBRSxlQUFlLEVBQUUsTUFBTSxFQUFFLFdBQVcsRUFBeUIsRUFDaEcsS0FBWSxFQUNaLGNBQXVFLEVBQ2hELEVBQUU7O0lBQ3pCLE1BQU0sRUFBRSxLQUFLLEVBQUUsR0FBRyxNQUFNLGNBQWMsQ0FBQyxNQUFNLEVBQUUsS0FBSyxDQUFDLENBQUM7SUFDdEQsSUFBSSxLQUFLLEtBQUssb0JBQVcsQ0FBQyxLQUFLLEVBQUU7UUFDL0IsT0FBTyxFQUFFLEtBQUssRUFBRSxDQUFDO0tBQ2xCO0lBRUQsSUFBSSxjQUFjLEdBQUcsQ0FBQyxDQUFDO0lBQ3ZCLE1BQU0sU0FBUyxHQUFHLElBQUksQ0FBQyxHQUFHLEVBQUUsR0FBRyxXQUFXLEdBQUcsSUFBSSxDQUFDO0lBQ2xELHVFQUF1RTtJQUN2RSx5REFBeUQ7SUFDekQsTUFBTSxjQUFjLEdBQUcsSUFBSSxDQUFDLEdBQUcsQ0FBQyxRQUFRLEdBQUcsUUFBUSxDQUFDLEdBQUcsSUFBSSxDQUFDLEdBQUcsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQUM7SUFDdkUsT0FBTyxJQUFJLEVBQUU7UUFDWCxJQUFJLENBQUEsTUFBQSxlQUFlLGFBQWYsZUFBZSx1QkFBZixlQUFlLENBQUUsTUFBTSwwQ0FBRSxPQUFPLE1BQUksV0FBVyxhQUFYLFdBQVcsdUJBQVgsV0FBVyxDQUFFLE9BQU8sQ0FBQSxFQUFFO1lBQzVELE9BQU8sRUFBRSxLQUFLLEVBQUUsb0JBQVcsQ0FBQyxPQUFPLEVBQUUsQ0FBQztTQUN2QztRQUNELE1BQU0sS0FBSyxHQUFHLDRCQUE0QixDQUFDLFFBQVEsRUFBRSxRQUFRLEVBQUUsY0FBYyxFQUFFLGNBQWMsQ0FBQyxDQUFDO1FBQy9GLGtIQUFrSDtRQUNsSCxrRkFBa0Y7UUFDbEYsSUFBSSxJQUFJLENBQUMsR0FBRyxFQUFFLEdBQUcsS0FBSyxHQUFHLElBQUksR0FBRyxTQUFTLEVBQUU7WUFDekMsT0FBTyxFQUFFLEtBQUssRUFBRSxvQkFBVyxDQUFDLE9BQU8sRUFBRSxDQUFDO1NBQ3ZDO1FBQ0QsTUFBTSxhQUFLLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDbkIsTUFBTSxFQUFFLEtBQUssRUFBRSxHQUFHLE1BQU0sY0FBYyxDQUFDLE1BQU0sRUFBRSxLQUFLLENBQUMsQ0FBQztRQUN0RCxJQUFJLEtBQUssS0FBSyxvQkFBVyxDQUFDLEtBQUssRUFBRTtZQUMvQixPQUFPLEVBQUUsS0FBSyxFQUFFLENBQUM7U0FDbEI7UUFFRCxjQUFjLElBQUksQ0FBQyxDQUFDO0tBQ3JCO0FBQ0gsQ0FBQyxDQUFDO0FBakNXLFFBQUEsVUFBVSxjQWlDckIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBzbGVlcCB9IGZyb20gXCIuL3V0aWxzL3NsZWVwXCI7XG5pbXBvcnQgeyBXYWl0ZXJPcHRpb25zLCBXYWl0ZXJSZXN1bHQsIFdhaXRlclN0YXRlIH0gZnJvbSBcIi4vd2FpdGVyXCI7XG5cbi8qKlxuICogUmVmZXJlbmNlOiBodHRwczovL2F3c2xhYnMuZ2l0aHViLmlvL3NtaXRoeS8xLjAvc3BlYy93YWl0ZXJzLmh0bWwjd2FpdGVyLXJldHJpZXNcbiAqL1xuY29uc3QgZXhwb25lbnRpYWxCYWNrb2ZmV2l0aEppdHRlciA9IChtaW5EZWxheTogbnVtYmVyLCBtYXhEZWxheTogbnVtYmVyLCBhdHRlbXB0Q2VpbGluZzogbnVtYmVyLCBhdHRlbXB0OiBudW1iZXIpID0+IHtcbiAgaWYgKGF0dGVtcHQgPiBhdHRlbXB0Q2VpbGluZykgcmV0dXJuIG1heERlbGF5O1xuICBjb25zdCBkZWxheSA9IG1pbkRlbGF5ICogMiAqKiAoYXR0ZW1wdCAtIDEpO1xuICByZXR1cm4gcmFuZG9tSW5SYW5nZShtaW5EZWxheSwgZGVsYXkpO1xufTtcblxuY29uc3QgcmFuZG9tSW5SYW5nZSA9IChtaW46IG51bWJlciwgbWF4OiBudW1iZXIpID0+IG1pbiArIE1hdGgucmFuZG9tKCkgKiAobWF4IC0gbWluKTtcblxuLyoqXG4gKiBGdW5jdGlvbiB0aGF0IHJ1bnMgcG9sbGluZyBhcyBwYXJ0IG9mIHdhaXRlcnMuIFRoaXMgd2lsbCBtYWtlIG9uZSBpbml0YWwgYXR0ZW1wdCBhbmQgdGhlblxuICogc3Vic2VxdWVudCBhdHRlbXB0cyB3aXRoIGFuIGluY3JlYXNpbmcgZGVsYXkuXG4gKiBAcGFyYW0gcGFyYW1zIG9wdGlvbnMgcGFzc2VkIHRvIHRoZSB3YWl0ZXIuXG4gKiBAcGFyYW0gY2xpZW50IEFXUyBTREsgQ2xpZW50XG4gKiBAcGFyYW0gaW5wdXQgY2xpZW50IGlucHV0XG4gKiBAcGFyYW0gc3RhdGVDaGVja2VyIGZ1bmN0aW9uIHRoYXQgY2hlY2tzIHRoZSBhY2NlcHRvciBzdGF0ZXMgb24gZWFjaCBwb2xsLlxuICovXG5leHBvcnQgY29uc3QgcnVuUG9sbGluZyA9IGFzeW5jIDxDbGllbnQsIElucHV0PihcbiAgeyBtaW5EZWxheSwgbWF4RGVsYXksIG1heFdhaXRUaW1lLCBhYm9ydENvbnRyb2xsZXIsIGNsaWVudCwgYWJvcnRTaWduYWwgfTogV2FpdGVyT3B0aW9uczxDbGllbnQ+LFxuICBpbnB1dDogSW5wdXQsXG4gIGFjY2VwdG9yQ2hlY2tzOiAoY2xpZW50OiBDbGllbnQsIGlucHV0OiBJbnB1dCkgPT4gUHJvbWlzZTxXYWl0ZXJSZXN1bHQ+XG4pOiBQcm9taXNlPFdhaXRlclJlc3VsdD4gPT4ge1xuICBjb25zdCB7IHN0YXRlIH0gPSBhd2FpdCBhY2NlcHRvckNoZWNrcyhjbGllbnQsIGlucHV0KTtcbiAgaWYgKHN0YXRlICE9PSBXYWl0ZXJTdGF0ZS5SRVRSWSkge1xuICAgIHJldHVybiB7IHN0YXRlIH07XG4gIH1cblxuICBsZXQgY3VycmVudEF0dGVtcHQgPSAxO1xuICBjb25zdCB3YWl0VW50aWwgPSBEYXRlLm5vdygpICsgbWF4V2FpdFRpbWUgKiAxMDAwO1xuICAvLyBUaGUgbWF4IGF0dGVtcHQgbnVtYmVyIHRoYXQgdGhlIGRlcml2ZWQgZGVsYXkgdGltZSB0ZW5kIHRvIGluY3JlYXNlLlxuICAvLyBQcmUtY29tcHV0ZSB0aGlzIG51bWJlciB0byBhdm9pZCBOdW1iZXIgdHlwZSBvdmVyZmxvdy5cbiAgY29uc3QgYXR0ZW1wdENlaWxpbmcgPSBNYXRoLmxvZyhtYXhEZWxheSAvIG1pbkRlbGF5KSAvIE1hdGgubG9nKDIpICsgMTtcbiAgd2hpbGUgKHRydWUpIHtcbiAgICBpZiAoYWJvcnRDb250cm9sbGVyPy5zaWduYWw/LmFib3J0ZWQgfHwgYWJvcnRTaWduYWw/LmFib3J0ZWQpIHtcbiAgICAgIHJldHVybiB7IHN0YXRlOiBXYWl0ZXJTdGF0ZS5BQk9SVEVEIH07XG4gICAgfVxuICAgIGNvbnN0IGRlbGF5ID0gZXhwb25lbnRpYWxCYWNrb2ZmV2l0aEppdHRlcihtaW5EZWxheSwgbWF4RGVsYXksIGF0dGVtcHRDZWlsaW5nLCBjdXJyZW50QXR0ZW1wdCk7XG4gICAgLy8gUmVzb2x2ZSB0aGUgcHJvbWlzZSBleHBsaWNpdGx5IGF0IHRpbWVvdXQgb3IgYWJvcnRlZC4gT3RoZXJ3aXNlIHRoaXMgd2hpbGUgbG9vcCB3aWxsIGtlZXAgbWFraW5nIEFQSSBjYWxsIHVudGlsXG4gICAgLy8gYGFjY2VwdG9yQ2hlY2tgIHJldHVybnMgbm9uLXJldHJ5IHN0YXR1cywgZXZlbiB3aXRoIHRoZSBQcm9taXNlLnJhY2UoKSBvdXRzaWRlLlxuICAgIGlmIChEYXRlLm5vdygpICsgZGVsYXkgKiAxMDAwID4gd2FpdFVudGlsKSB7XG4gICAgICByZXR1cm4geyBzdGF0ZTogV2FpdGVyU3RhdGUuVElNRU9VVCB9O1xuICAgIH1cbiAgICBhd2FpdCBzbGVlcChkZWxheSk7XG4gICAgY29uc3QgeyBzdGF0ZSB9ID0gYXdhaXQgYWNjZXB0b3JDaGVja3MoY2xpZW50LCBpbnB1dCk7XG4gICAgaWYgKHN0YXRlICE9PSBXYWl0ZXJTdGF0ZS5SRVRSWSkge1xuICAgICAgcmV0dXJuIHsgc3RhdGUgfTtcbiAgICB9XG5cbiAgICBjdXJyZW50QXR0ZW1wdCArPSAxO1xuICB9XG59O1xuIl19
 
 /***/ }),
 
@@ -28053,7 +30237,7 @@ exports.validateWaiterOptions = validateWaiterOptions;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.WaiterState = exports.waiterServiceDefaults = void 0;
+exports.checkExceptions = exports.WaiterState = exports.waiterServiceDefaults = void 0;
 /**
  * @private
  */
@@ -28069,7 +30253,34 @@ var WaiterState;
     WaiterState["RETRY"] = "RETRY";
     WaiterState["TIMEOUT"] = "TIMEOUT";
 })(WaiterState = exports.WaiterState || (exports.WaiterState = {}));
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoid2FpdGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3dhaXRlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFpQ0E7O0dBRUc7QUFDVSxRQUFBLHFCQUFxQixHQUFHO0lBQ25DLFFBQVEsRUFBRSxDQUFDO0lBQ1gsUUFBUSxFQUFFLEdBQUc7Q0FDZCxDQUFDO0FBUUYsSUFBWSxXQU1YO0FBTkQsV0FBWSxXQUFXO0lBQ3JCLGtDQUFtQixDQUFBO0lBQ25CLGtDQUFtQixDQUFBO0lBQ25CLGtDQUFtQixDQUFBO0lBQ25CLDhCQUFlLENBQUE7SUFDZixrQ0FBbUIsQ0FBQTtBQUNyQixDQUFDLEVBTlcsV0FBVyxHQUFYLG1CQUFXLEtBQVgsbUJBQVcsUUFNdEIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBBYm9ydENvbnRyb2xsZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuZXhwb3J0IGludGVyZmFjZSBXYWl0ZXJDb25maWd1cmF0aW9uPENsaWVudD4ge1xuICAvKipcbiAgICogUmVxdWlyZWQgc2VydmljZSBjbGllbnRcbiAgICovXG4gIGNsaWVudDogQ2xpZW50O1xuXG4gIC8qKlxuICAgKiBUaGUgYW1vdW50IG9mIHRpbWUgaW4gc2Vjb25kcyBhIHVzZXIgaXMgd2lsbGluZyB0byB3YWl0IGZvciBhIHdhaXRlciB0byBjb21wbGV0ZS5cbiAgICovXG4gIG1heFdhaXRUaW1lOiBudW1iZXI7XG5cbiAgLyoqXG4gICAqIEFib3J0IGNvbnRyb2xsZXIuIFVzZWQgZm9yIGVuZGluZyB0aGUgd2FpdGVyIGVhcmx5LlxuICAgKi9cbiAgYWJvcnRDb250cm9sbGVyPzogQWJvcnRDb250cm9sbGVyO1xuXG4gIC8qKlxuICAgKiBUaGUgbWluaW11bSBhbW91bnQgb2YgdGltZSB0byBkZWxheSBiZXR3ZWVuIHJldHJpZXMgaW4gc2Vjb25kcy4gVGhpcyBpcyB0aGVcbiAgICogZmxvb3Igb2YgdGhlIGV4cG9uZW50aWFsIGJhY2tvZmYuIFRoaXMgdmFsdWUgZGVmYXVsdHMgdG8gc2VydmljZSBkZWZhdWx0XG4gICAqIGlmIG5vdCBzcGVjaWZpZWQuIFRoaXMgdmFsdWUgTVVTVCBiZSBsZXNzIHRoYW4gb3IgZXF1YWwgdG8gbWF4RGVsYXkgYW5kIGdyZWF0ZXIgdGhhbiAwLlxuICAgKi9cbiAgbWluRGVsYXk/OiBudW1iZXI7XG5cbiAgLyoqXG4gICAqIFRoZSBtYXhpbXVtIGFtb3VudCBvZiB0aW1lIHRvIGRlbGF5IGJldHdlZW4gcmV0cmllcyBpbiBzZWNvbmRzLiBUaGlzIGlzIHRoZVxuICAgKiBjZWlsaW5nIG9mIHRoZSBleHBvbmVudGlhbCBiYWNrb2ZmLiBUaGlzIHZhbHVlIGRlZmF1bHRzIHRvIHNlcnZpY2UgZGVmYXVsdFxuICAgKiBpZiBub3Qgc3BlY2lmaWVkLiBJZiBzcGVjaWZpZWQsIHRoaXMgdmFsdWUgTVVTVCBiZSBncmVhdGVyIHRoYW4gb3IgZXF1YWwgdG8gMS5cbiAgICovXG4gIG1heERlbGF5PzogbnVtYmVyO1xufVxuXG4vKipcbiAqIEBwcml2YXRlXG4gKi9cbmV4cG9ydCBjb25zdCB3YWl0ZXJTZXJ2aWNlRGVmYXVsdHMgPSB7XG4gIG1pbkRlbGF5OiAyLFxuICBtYXhEZWxheTogMTIwLFxufTtcblxuLyoqXG4gKiBAcHJpdmF0ZVxuICovXG5leHBvcnQgdHlwZSBXYWl0ZXJPcHRpb25zPENsaWVudD4gPSBXYWl0ZXJDb25maWd1cmF0aW9uPENsaWVudD4gJlxuICBSZXF1aXJlZDxQaWNrPFdhaXRlckNvbmZpZ3VyYXRpb248Q2xpZW50PiwgXCJtaW5EZWxheVwiIHwgXCJtYXhEZWxheVwiPj47XG5cbmV4cG9ydCBlbnVtIFdhaXRlclN0YXRlIHtcbiAgQUJPUlRFRCA9IFwiQUJPUlRFRFwiLFxuICBGQUlMVVJFID0gXCJGQUlMVVJFXCIsXG4gIFNVQ0NFU1MgPSBcIlNVQ0NFU1NcIixcbiAgUkVUUlkgPSBcIlJFVFJZXCIsXG4gIFRJTUVPVVQgPSBcIlRJTUVPVVRcIixcbn1cblxuZXhwb3J0IHR5cGUgV2FpdGVyUmVzdWx0ID0ge1xuICBzdGF0ZTogV2FpdGVyU3RhdGU7XG59O1xuIl19
+/**
+ * Handles and throws exceptions resulting from the waiterResult
+ * @param result WaiterResult
+ */
+const checkExceptions = (result) => {
+    if (result.state === WaiterState.ABORTED) {
+        const abortError = new Error(`${JSON.stringify({
+            ...result,
+            reason: "Request was aborted",
+        })}`);
+        abortError.name = "AbortError";
+        throw abortError;
+    }
+    else if (result.state === WaiterState.TIMEOUT) {
+        const timeoutError = new Error(`${JSON.stringify({
+            ...result,
+            reason: "Waiter has timed out",
+        })}`);
+        timeoutError.name = "TimeoutError";
+        throw timeoutError;
+    }
+    else if (result.state !== WaiterState.SUCCESS) {
+        throw new Error(`${JSON.stringify({ result })}`);
+    }
+    return result;
+};
+exports.checkExceptions = checkExceptions;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoid2FpdGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3dhaXRlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFJQTs7R0FFRztBQUNVLFFBQUEscUJBQXFCLEdBQUc7SUFDbkMsUUFBUSxFQUFFLENBQUM7SUFDWCxRQUFRLEVBQUUsR0FBRztDQUNkLENBQUM7QUFRRixJQUFZLFdBTVg7QUFORCxXQUFZLFdBQVc7SUFDckIsa0NBQW1CLENBQUE7SUFDbkIsa0NBQW1CLENBQUE7SUFDbkIsa0NBQW1CLENBQUE7SUFDbkIsOEJBQWUsQ0FBQTtJQUNmLGtDQUFtQixDQUFBO0FBQ3JCLENBQUMsRUFOVyxXQUFXLEdBQVgsbUJBQVcsS0FBWCxtQkFBVyxRQU10QjtBQVdEOzs7R0FHRztBQUNJLE1BQU0sZUFBZSxHQUFHLENBQUMsTUFBb0IsRUFBZ0IsRUFBRTtJQUNwRSxJQUFJLE1BQU0sQ0FBQyxLQUFLLEtBQUssV0FBVyxDQUFDLE9BQU8sRUFBRTtRQUN4QyxNQUFNLFVBQVUsR0FBRyxJQUFJLEtBQUssQ0FDMUIsR0FBRyxJQUFJLENBQUMsU0FBUyxDQUFDO1lBQ2hCLEdBQUcsTUFBTTtZQUNULE1BQU0sRUFBRSxxQkFBcUI7U0FDOUIsQ0FBQyxFQUFFLENBQ0wsQ0FBQztRQUNGLFVBQVUsQ0FBQyxJQUFJLEdBQUcsWUFBWSxDQUFDO1FBQy9CLE1BQU0sVUFBVSxDQUFDO0tBQ2xCO1NBQU0sSUFBSSxNQUFNLENBQUMsS0FBSyxLQUFLLFdBQVcsQ0FBQyxPQUFPLEVBQUU7UUFDL0MsTUFBTSxZQUFZLEdBQUcsSUFBSSxLQUFLLENBQzVCLEdBQUcsSUFBSSxDQUFDLFNBQVMsQ0FBQztZQUNoQixHQUFHLE1BQU07WUFDVCxNQUFNLEVBQUUsc0JBQXNCO1NBQy9CLENBQUMsRUFBRSxDQUNMLENBQUM7UUFDRixZQUFZLENBQUMsSUFBSSxHQUFHLGNBQWMsQ0FBQztRQUNuQyxNQUFNLFlBQVksQ0FBQztLQUNwQjtTQUFNLElBQUksTUFBTSxDQUFDLEtBQUssS0FBSyxXQUFXLENBQUMsT0FBTyxFQUFFO1FBQy9DLE1BQU0sSUFBSSxLQUFLLENBQUMsR0FBRyxJQUFJLENBQUMsU0FBUyxDQUFDLEVBQUUsTUFBTSxFQUFFLENBQUMsRUFBRSxDQUFDLENBQUM7S0FDbEQ7SUFDRCxPQUFPLE1BQU0sQ0FBQztBQUNoQixDQUFDLENBQUM7QUF2QlcsUUFBQSxlQUFlLG1CQXVCMUIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBXYWl0ZXJDb25maWd1cmF0aW9uIGFzIFdhaXRlckNvbmZpZ3VyYXRpb25fXyB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5leHBvcnQgaW50ZXJmYWNlIFdhaXRlckNvbmZpZ3VyYXRpb248VD4gZXh0ZW5kcyBXYWl0ZXJDb25maWd1cmF0aW9uX188VD4ge31cblxuLyoqXG4gKiBAcHJpdmF0ZVxuICovXG5leHBvcnQgY29uc3Qgd2FpdGVyU2VydmljZURlZmF1bHRzID0ge1xuICBtaW5EZWxheTogMixcbiAgbWF4RGVsYXk6IDEyMCxcbn07XG5cbi8qKlxuICogQHByaXZhdGVcbiAqL1xuZXhwb3J0IHR5cGUgV2FpdGVyT3B0aW9uczxDbGllbnQ+ID0gV2FpdGVyQ29uZmlndXJhdGlvbjxDbGllbnQ+ICZcbiAgUmVxdWlyZWQ8UGljazxXYWl0ZXJDb25maWd1cmF0aW9uPENsaWVudD4sIFwibWluRGVsYXlcIiB8IFwibWF4RGVsYXlcIj4+O1xuXG5leHBvcnQgZW51bSBXYWl0ZXJTdGF0ZSB7XG4gIEFCT1JURUQgPSBcIkFCT1JURURcIixcbiAgRkFJTFVSRSA9IFwiRkFJTFVSRVwiLFxuICBTVUNDRVNTID0gXCJTVUNDRVNTXCIsXG4gIFJFVFJZID0gXCJSRVRSWVwiLFxuICBUSU1FT1VUID0gXCJUSU1FT1VUXCIsXG59XG5cbmV4cG9ydCB0eXBlIFdhaXRlclJlc3VsdCA9IHtcbiAgc3RhdGU6IFdhaXRlclN0YXRlO1xuXG4gIC8qKlxuICAgKiAob3B0aW9uYWwpIEluZGljYXRlcyBhIHJlYXNvbiBmb3Igd2h5IGEgd2FpdGVyIGhhcyByZWFjaGVkIGl0cyBzdGF0ZS5cbiAgICovXG4gIHJlYXNvbj86IGFueTtcbn07XG5cbi8qKlxuICogSGFuZGxlcyBhbmQgdGhyb3dzIGV4Y2VwdGlvbnMgcmVzdWx0aW5nIGZyb20gdGhlIHdhaXRlclJlc3VsdFxuICogQHBhcmFtIHJlc3VsdCBXYWl0ZXJSZXN1bHRcbiAqL1xuZXhwb3J0IGNvbnN0IGNoZWNrRXhjZXB0aW9ucyA9IChyZXN1bHQ6IFdhaXRlclJlc3VsdCk6IFdhaXRlclJlc3VsdCA9PiB7XG4gIGlmIChyZXN1bHQuc3RhdGUgPT09IFdhaXRlclN0YXRlLkFCT1JURUQpIHtcbiAgICBjb25zdCBhYm9ydEVycm9yID0gbmV3IEVycm9yKFxuICAgICAgYCR7SlNPTi5zdHJpbmdpZnkoe1xuICAgICAgICAuLi5yZXN1bHQsXG4gICAgICAgIHJlYXNvbjogXCJSZXF1ZXN0IHdhcyBhYm9ydGVkXCIsXG4gICAgICB9KX1gXG4gICAgKTtcbiAgICBhYm9ydEVycm9yLm5hbWUgPSBcIkFib3J0RXJyb3JcIjtcbiAgICB0aHJvdyBhYm9ydEVycm9yO1xuICB9IGVsc2UgaWYgKHJlc3VsdC5zdGF0ZSA9PT0gV2FpdGVyU3RhdGUuVElNRU9VVCkge1xuICAgIGNvbnN0IHRpbWVvdXRFcnJvciA9IG5ldyBFcnJvcihcbiAgICAgIGAke0pTT04uc3RyaW5naWZ5KHtcbiAgICAgICAgLi4ucmVzdWx0LFxuICAgICAgICByZWFzb246IFwiV2FpdGVyIGhhcyB0aW1lZCBvdXRcIixcbiAgICAgIH0pfWBcbiAgICApO1xuICAgIHRpbWVvdXRFcnJvci5uYW1lID0gXCJUaW1lb3V0RXJyb3JcIjtcbiAgICB0aHJvdyB0aW1lb3V0RXJyb3I7XG4gIH0gZWxzZSBpZiAocmVzdWx0LnN0YXRlICE9PSBXYWl0ZXJTdGF0ZS5TVUNDRVNTKSB7XG4gICAgdGhyb3cgbmV3IEVycm9yKGAke0pTT04uc3RyaW5naWZ5KHsgcmVzdWx0IH0pfWApO1xuICB9XG4gIHJldHVybiByZXN1bHQ7XG59O1xuIl19
 
 /***/ }),
 
@@ -29919,6 +32130,7 @@ const Endpoints = {
     getLatestRelease: ["GET /repos/{owner}/{repo}/releases/latest"],
     getPages: ["GET /repos/{owner}/{repo}/pages"],
     getPagesBuild: ["GET /repos/{owner}/{repo}/pages/builds/{build_id}"],
+    getPagesHealthCheck: ["GET /repos/{owner}/{repo}/pages/health"],
     getParticipationStats: ["GET /repos/{owner}/{repo}/stats/participation"],
     getPullRequestReviewProtection: ["GET /repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews"],
     getPunchCardStats: ["GET /repos/{owner}/{repo}/stats/punch_card"],
@@ -30127,7 +32339,7 @@ const Endpoints = {
   }
 };
 
-const VERSION = "4.15.1";
+const VERSION = "5.1.1";
 
 function endpointsToMethods(octokit, endpointsMap) {
   const newMethods = {};
@@ -30212,12 +32424,20 @@ function decorate(octokit, scope, methodName, defaults, decorations) {
 
 function restEndpointMethods(octokit) {
   const api = endpointsToMethods(octokit, Endpoints);
+  return {
+    rest: api
+  };
+}
+restEndpointMethods.VERSION = VERSION;
+function legacyRestEndpointMethods(octokit) {
+  const api = endpointsToMethods(octokit, Endpoints);
   return _objectSpread2(_objectSpread2({}, api), {}, {
     rest: api
   });
 }
-restEndpointMethods.VERSION = VERSION;
+legacyRestEndpointMethods.VERSION = VERSION;
 
+exports.legacyRestEndpointMethods = legacyRestEndpointMethods;
 exports.restEndpointMethods = restEndpointMethods;
 //# sourceMappingURL=index.js.map
 
@@ -30646,6 +32866,314 @@ class Deprecation extends Error {
 }
 
 exports.Deprecation = Deprecation;
+
+
+/***/ }),
+
+/***/ 5107:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.decodeHTML = exports.decodeHTMLStrict = exports.decodeXML = void 0;
+var entities_json_1 = __importDefault(__nccwpck_require__(4007));
+var legacy_json_1 = __importDefault(__nccwpck_require__(7802));
+var xml_json_1 = __importDefault(__nccwpck_require__(2228));
+var decode_codepoint_1 = __importDefault(__nccwpck_require__(1227));
+var strictEntityRe = /&(?:[a-zA-Z0-9]+|#[xX][\da-fA-F]+|#\d+);/g;
+exports.decodeXML = getStrictDecoder(xml_json_1.default);
+exports.decodeHTMLStrict = getStrictDecoder(entities_json_1.default);
+function getStrictDecoder(map) {
+    var replace = getReplacer(map);
+    return function (str) { return String(str).replace(strictEntityRe, replace); };
+}
+var sorter = function (a, b) { return (a < b ? 1 : -1); };
+exports.decodeHTML = (function () {
+    var legacy = Object.keys(legacy_json_1.default).sort(sorter);
+    var keys = Object.keys(entities_json_1.default).sort(sorter);
+    for (var i = 0, j = 0; i < keys.length; i++) {
+        if (legacy[j] === keys[i]) {
+            keys[i] += ";?";
+            j++;
+        }
+        else {
+            keys[i] += ";";
+        }
+    }
+    var re = new RegExp("&(?:" + keys.join("|") + "|#[xX][\\da-fA-F]+;?|#\\d+;?)", "g");
+    var replace = getReplacer(entities_json_1.default);
+    function replacer(str) {
+        if (str.substr(-1) !== ";")
+            str += ";";
+        return replace(str);
+    }
+    // TODO consider creating a merged map
+    return function (str) { return String(str).replace(re, replacer); };
+})();
+function getReplacer(map) {
+    return function replace(str) {
+        if (str.charAt(1) === "#") {
+            var secondChar = str.charAt(2);
+            if (secondChar === "X" || secondChar === "x") {
+                return decode_codepoint_1.default(parseInt(str.substr(3), 16));
+            }
+            return decode_codepoint_1.default(parseInt(str.substr(2), 10));
+        }
+        // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
+        return map[str.slice(1, -1)] || str;
+    };
+}
+
+
+/***/ }),
+
+/***/ 1227:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var decode_json_1 = __importDefault(__nccwpck_require__(4589));
+// Adapted from https://github.com/mathiasbynens/he/blob/master/src/he.js#L94-L119
+var fromCodePoint = 
+// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
+String.fromCodePoint ||
+    function (codePoint) {
+        var output = "";
+        if (codePoint > 0xffff) {
+            codePoint -= 0x10000;
+            output += String.fromCharCode(((codePoint >>> 10) & 0x3ff) | 0xd800);
+            codePoint = 0xdc00 | (codePoint & 0x3ff);
+        }
+        output += String.fromCharCode(codePoint);
+        return output;
+    };
+function decodeCodePoint(codePoint) {
+    if ((codePoint >= 0xd800 && codePoint <= 0xdfff) || codePoint > 0x10ffff) {
+        return "\uFFFD";
+    }
+    if (codePoint in decode_json_1.default) {
+        codePoint = decode_json_1.default[codePoint];
+    }
+    return fromCodePoint(codePoint);
+}
+exports.default = decodeCodePoint;
+
+
+/***/ }),
+
+/***/ 2006:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.escapeUTF8 = exports.escape = exports.encodeNonAsciiHTML = exports.encodeHTML = exports.encodeXML = void 0;
+var xml_json_1 = __importDefault(__nccwpck_require__(2228));
+var inverseXML = getInverseObj(xml_json_1.default);
+var xmlReplacer = getInverseReplacer(inverseXML);
+/**
+ * Encodes all non-ASCII characters, as well as characters not valid in XML
+ * documents using XML entities.
+ *
+ * If a character has no equivalent entity, a
+ * numeric hexadecimal reference (eg. `&#xfc;`) will be used.
+ */
+exports.encodeXML = getASCIIEncoder(inverseXML);
+var entities_json_1 = __importDefault(__nccwpck_require__(4007));
+var inverseHTML = getInverseObj(entities_json_1.default);
+var htmlReplacer = getInverseReplacer(inverseHTML);
+/**
+ * Encodes all entities and non-ASCII characters in the input.
+ *
+ * This includes characters that are valid ASCII characters in HTML documents.
+ * For example `#` will be encoded as `&num;`. To get a more compact output,
+ * consider using the `encodeNonAsciiHTML` function.
+ *
+ * If a character has no equivalent entity, a
+ * numeric hexadecimal reference (eg. `&#xfc;`) will be used.
+ */
+exports.encodeHTML = getInverse(inverseHTML, htmlReplacer);
+/**
+ * Encodes all non-ASCII characters, as well as characters not valid in HTML
+ * documents using HTML entities.
+ *
+ * If a character has no equivalent entity, a
+ * numeric hexadecimal reference (eg. `&#xfc;`) will be used.
+ */
+exports.encodeNonAsciiHTML = getASCIIEncoder(inverseHTML);
+function getInverseObj(obj) {
+    return Object.keys(obj)
+        .sort()
+        .reduce(function (inverse, name) {
+        inverse[obj[name]] = "&" + name + ";";
+        return inverse;
+    }, {});
+}
+function getInverseReplacer(inverse) {
+    var single = [];
+    var multiple = [];
+    for (var _i = 0, _a = Object.keys(inverse); _i < _a.length; _i++) {
+        var k = _a[_i];
+        if (k.length === 1) {
+            // Add value to single array
+            single.push("\\" + k);
+        }
+        else {
+            // Add value to multiple array
+            multiple.push(k);
+        }
+    }
+    // Add ranges to single characters.
+    single.sort();
+    for (var start = 0; start < single.length - 1; start++) {
+        // Find the end of a run of characters
+        var end = start;
+        while (end < single.length - 1 &&
+            single[end].charCodeAt(1) + 1 === single[end + 1].charCodeAt(1)) {
+            end += 1;
+        }
+        var count = 1 + end - start;
+        // We want to replace at least three characters
+        if (count < 3)
+            continue;
+        single.splice(start, count, single[start] + "-" + single[end]);
+    }
+    multiple.unshift("[" + single.join("") + "]");
+    return new RegExp(multiple.join("|"), "g");
+}
+// /[^\0-\x7F]/gu
+var reNonASCII = /(?:[\x80-\uD7FF\uE000-\uFFFF]|[\uD800-\uDBFF][\uDC00-\uDFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF])/g;
+var getCodePoint = 
+// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
+String.prototype.codePointAt != null
+    ? // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+        function (str) { return str.codePointAt(0); }
+    : // http://mathiasbynens.be/notes/javascript-encoding#surrogate-formulae
+        function (c) {
+            return (c.charCodeAt(0) - 0xd800) * 0x400 +
+                c.charCodeAt(1) -
+                0xdc00 +
+                0x10000;
+        };
+function singleCharReplacer(c) {
+    return "&#x" + (c.length > 1 ? getCodePoint(c) : c.charCodeAt(0))
+        .toString(16)
+        .toUpperCase() + ";";
+}
+function getInverse(inverse, re) {
+    return function (data) {
+        return data
+            .replace(re, function (name) { return inverse[name]; })
+            .replace(reNonASCII, singleCharReplacer);
+    };
+}
+var reEscapeChars = new RegExp(xmlReplacer.source + "|" + reNonASCII.source, "g");
+/**
+ * Encodes all non-ASCII characters, as well as characters not valid in XML
+ * documents using numeric hexadecimal reference (eg. `&#xfc;`).
+ *
+ * Have a look at `escapeUTF8` if you want a more concise output at the expense
+ * of reduced transportability.
+ *
+ * @param data String to escape.
+ */
+function escape(data) {
+    return data.replace(reEscapeChars, singleCharReplacer);
+}
+exports.escape = escape;
+/**
+ * Encodes all characters not valid in XML documents using numeric hexadecimal
+ * reference (eg. `&#xfc;`).
+ *
+ * Note that the output will be character-set dependent.
+ *
+ * @param data String to escape.
+ */
+function escapeUTF8(data) {
+    return data.replace(xmlReplacer, singleCharReplacer);
+}
+exports.escapeUTF8 = escapeUTF8;
+function getASCIIEncoder(obj) {
+    return function (data) {
+        return data.replace(reEscapeChars, function (c) { return obj[c] || singleCharReplacer(c); });
+    };
+}
+
+
+/***/ }),
+
+/***/ 3000:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.decodeXMLStrict = exports.decodeHTML5Strict = exports.decodeHTML4Strict = exports.decodeHTML5 = exports.decodeHTML4 = exports.decodeHTMLStrict = exports.decodeHTML = exports.decodeXML = exports.encodeHTML5 = exports.encodeHTML4 = exports.escapeUTF8 = exports.escape = exports.encodeNonAsciiHTML = exports.encodeHTML = exports.encodeXML = exports.encode = exports.decodeStrict = exports.decode = void 0;
+var decode_1 = __nccwpck_require__(5107);
+var encode_1 = __nccwpck_require__(2006);
+/**
+ * Decodes a string with entities.
+ *
+ * @param data String to decode.
+ * @param level Optional level to decode at. 0 = XML, 1 = HTML. Default is 0.
+ * @deprecated Use `decodeXML` or `decodeHTML` directly.
+ */
+function decode(data, level) {
+    return (!level || level <= 0 ? decode_1.decodeXML : decode_1.decodeHTML)(data);
+}
+exports.decode = decode;
+/**
+ * Decodes a string with entities. Does not allow missing trailing semicolons for entities.
+ *
+ * @param data String to decode.
+ * @param level Optional level to decode at. 0 = XML, 1 = HTML. Default is 0.
+ * @deprecated Use `decodeHTMLStrict` or `decodeXML` directly.
+ */
+function decodeStrict(data, level) {
+    return (!level || level <= 0 ? decode_1.decodeXML : decode_1.decodeHTMLStrict)(data);
+}
+exports.decodeStrict = decodeStrict;
+/**
+ * Encodes a string with entities.
+ *
+ * @param data String to encode.
+ * @param level Optional level to encode at. 0 = XML, 1 = HTML. Default is 0.
+ * @deprecated Use `encodeHTML`, `encodeXML` or `encodeNonAsciiHTML` directly.
+ */
+function encode(data, level) {
+    return (!level || level <= 0 ? encode_1.encodeXML : encode_1.encodeHTML)(data);
+}
+exports.encode = encode;
+var encode_2 = __nccwpck_require__(2006);
+Object.defineProperty(exports, "encodeXML", ({ enumerable: true, get: function () { return encode_2.encodeXML; } }));
+Object.defineProperty(exports, "encodeHTML", ({ enumerable: true, get: function () { return encode_2.encodeHTML; } }));
+Object.defineProperty(exports, "encodeNonAsciiHTML", ({ enumerable: true, get: function () { return encode_2.encodeNonAsciiHTML; } }));
+Object.defineProperty(exports, "escape", ({ enumerable: true, get: function () { return encode_2.escape; } }));
+Object.defineProperty(exports, "escapeUTF8", ({ enumerable: true, get: function () { return encode_2.escapeUTF8; } }));
+// Legacy aliases (deprecated)
+Object.defineProperty(exports, "encodeHTML4", ({ enumerable: true, get: function () { return encode_2.encodeHTML; } }));
+Object.defineProperty(exports, "encodeHTML5", ({ enumerable: true, get: function () { return encode_2.encodeHTML; } }));
+var decode_2 = __nccwpck_require__(5107);
+Object.defineProperty(exports, "decodeXML", ({ enumerable: true, get: function () { return decode_2.decodeXML; } }));
+Object.defineProperty(exports, "decodeHTML", ({ enumerable: true, get: function () { return decode_2.decodeHTML; } }));
+Object.defineProperty(exports, "decodeHTMLStrict", ({ enumerable: true, get: function () { return decode_2.decodeHTMLStrict; } }));
+// Legacy aliases (deprecated)
+Object.defineProperty(exports, "decodeHTML4", ({ enumerable: true, get: function () { return decode_2.decodeHTML; } }));
+Object.defineProperty(exports, "decodeHTML5", ({ enumerable: true, get: function () { return decode_2.decodeHTML; } }));
+Object.defineProperty(exports, "decodeHTML4Strict", ({ enumerable: true, get: function () { return decode_2.decodeHTMLStrict; } }));
+Object.defineProperty(exports, "decodeHTML5Strict", ({ enumerable: true, get: function () { return decode_2.decodeHTMLStrict; } }));
+Object.defineProperty(exports, "decodeXMLStrict", ({ enumerable: true, get: function () { return decode_2.decodeXML; } }));
 
 
 /***/ }),
@@ -32215,6 +34743,13310 @@ function isPlainObject(o) {
 }
 
 exports.isPlainObject = isPlainObject;
+
+
+/***/ }),
+
+/***/ 4939:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist BiMap
+ * ================
+ *
+ * JavaScript implementation of a BiMap.
+ */
+var forEach = __nccwpck_require__(8968);
+
+/**
+ * Inverse Map.
+ *
+ * @constructor
+ */
+function InverseMap(original) {
+
+  this.size = 0;
+  this.items = new Map();
+  this.inverse = original;
+}
+
+/**
+ * BiMap.
+ *
+ * @constructor
+ */
+function BiMap() {
+
+  this.size = 0;
+  this.items = new Map();
+  this.inverse = new InverseMap(this);
+}
+
+/**
+ * Method used to clear the map.
+ *
+ * @return {undefined}
+ */
+function clear() {
+  this.size = 0;
+  this.items.clear();
+  this.inverse.items.clear();
+}
+
+BiMap.prototype.clear = clear;
+InverseMap.prototype.clear = clear;
+
+/**
+ * Method used to set a relation.
+ *
+ * @param  {any} key - Key.
+ * @param  {any} value - Value.
+ * @return {BiMap|InverseMap}
+ */
+function set(key, value) {
+
+  // First we need to attempt to see if the relation is not flawed
+  if (this.items.has(key)) {
+    var currentValue = this.items.get(key);
+
+    // The relation already exists, we do nothing
+    if (currentValue === value)
+      return this;
+    else
+      this.inverse.items.delete(currentValue);
+  }
+
+  if (this.inverse.items.has(value)) {
+    var currentKey = this.inverse.items.get(value);
+
+    if (currentKey === key)
+      return this;
+    else
+      this.items.delete(currentKey);
+  }
+
+  // Here we actually add the relation
+  this.items.set(key, value);
+  this.inverse.items.set(value, key);
+
+  // Size
+  this.size = this.items.size;
+  this.inverse.size = this.inverse.items.size;
+
+  return this;
+}
+
+BiMap.prototype.set = set;
+InverseMap.prototype.set = set;
+
+/**
+ * Method used to delete a relation.
+ *
+ * @param  {any} key - Key.
+ * @return {boolean}
+ */
+function del(key) {
+  if (this.items.has(key)) {
+    var currentValue = this.items.get(key);
+
+    this.items.delete(key);
+    this.inverse.items.delete(currentValue);
+
+    // Size
+    this.size = this.items.size;
+    this.inverse.size = this.inverse.items.size;
+
+    return true;
+  }
+
+  return false;
+}
+
+BiMap.prototype.delete = del;
+InverseMap.prototype.delete = del;
+
+/**
+ * Mapping some Map prototype function unto our two classes.
+ */
+var METHODS = ['has', 'get', 'forEach', 'keys', 'values', 'entries'];
+
+METHODS.forEach(function(name) {
+  BiMap.prototype[name] = InverseMap.prototype[name] = function() {
+    return Map.prototype[name].apply(this.items, arguments);
+  };
+});
+
+/**
+ * Attaching the #.values method to Symbol.iterator if possible.
+ */
+if (typeof Symbol !== 'undefined') {
+  BiMap.prototype[Symbol.iterator] = BiMap.prototype.entries;
+  InverseMap.prototype[Symbol.iterator] = InverseMap.prototype.entries;
+}
+
+/**
+ * Convenience known methods.
+ */
+BiMap.prototype.inspect = function() {
+  var dummy = {
+    left: this.items,
+    right: this.inverse.items
+  };
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(dummy, 'constructor', {
+    value: BiMap,
+    enumerable: false
+  });
+
+  return dummy;
+};
+
+if (typeof Symbol !== 'undefined')
+  BiMap.prototype[Symbol.for('nodejs.util.inspect.custom')] = BiMap.prototype.inspect;
+
+InverseMap.prototype.inspect = function() {
+  var dummy = {
+    left: this.inverse.items,
+    right: this.items
+  };
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(dummy, 'constructor', {
+    value: InverseMap,
+    enumerable: false
+  });
+
+  return dummy;
+};
+
+if (typeof Symbol !== 'undefined')
+  InverseMap.prototype[Symbol.for('nodejs.util.inspect.custom')] = InverseMap.prototype.inspect;
+
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a bimap.
+ *
+ * @param  {Iterable} iterable - Target iterable.
+ * @return {BiMap}
+ */
+BiMap.from = function(iterable) {
+  var bimap = new BiMap();
+
+  forEach(iterable, function(value, key) {
+    bimap.set(key, value);
+  });
+
+  return bimap;
+};
+
+/**
+ * Exporting.
+ */
+module.exports = BiMap;
+
+
+/***/ }),
+
+/***/ 2584:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist BitSet
+ * =================
+ *
+ * JavaScript implementation of a fixed-size BitSet based upon a Uint32Array.
+ *
+ * Notes:
+ *   - (i >> 5) is the same as ((i / 32) | 0)
+ *   - (i & 0x0000001f) is the same as (i % 32)
+ *   - I could use a Float64Array to store more in less blocks but I would lose
+ *     the benefits of byte comparison to keep track of size without popcounts.
+ */
+var Iterator = __nccwpck_require__(3062),
+    bitwise = __nccwpck_require__(3729);
+
+/**
+ * BitSet.
+ *
+ * @constructor
+ */
+function BitSet(length) {
+
+  // Properties
+  this.length = length;
+  this.clear();
+
+  // Methods
+
+  // Statics
+}
+
+/**
+ * Method used to clear the bit set.
+ *
+ * @return {undefined}
+ */
+BitSet.prototype.clear = function() {
+
+  // Properties
+  this.size = 0;
+  this.array = new Uint32Array(Math.ceil(this.length / 32));
+};
+
+/**
+ * Method used to set the given bit's value.
+ *
+ * @param  {number} index - Target bit index.
+ * @param  {number} value - Value to set.
+ * @return {BitSet}
+ */
+BitSet.prototype.set = function(index, value) {
+  var byteIndex = index >> 5,
+      pos = index & 0x0000001f,
+      oldBytes = this.array[byteIndex],
+      newBytes;
+
+  if (value === 0 || value === false)
+    newBytes = this.array[byteIndex] &= ~(1 << pos);
+  else
+    newBytes = this.array[byteIndex] |= (1 << pos);
+
+  // The operands of all bitwise operators are converted to *signed* 32-bit integers.
+  // Source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators#Signed_32-bit_integers
+  // Shifting by 31 changes the sign (i.e. 1 << 31 = -2147483648).
+  // Therefore, get unsigned representation by applying '>>> 0'.
+  newBytes = newBytes >>> 0;
+
+  // Updating size
+  if (newBytes > oldBytes)
+    this.size++;
+  else if (newBytes < oldBytes)
+    this.size--;
+
+  return this;
+};
+
+/**
+* Method used to reset the given bit's value.
+*
+* @param  {number} index - Target bit index.
+* @return {BitSet}
+*/
+BitSet.prototype.reset = function(index) {
+  var byteIndex = index >> 5,
+      pos = index & 0x0000001f,
+      oldBytes = this.array[byteIndex],
+      newBytes;
+
+  newBytes = this.array[byteIndex] &= ~(1 << pos);
+
+  // Updating size
+  if (newBytes < oldBytes)
+    this.size--;
+
+  return this;
+};
+
+/**
+ * Method used to flip the value of the given bit.
+ *
+ * @param  {number} index - Target bit index.
+ * @return {BitSet}
+ */
+BitSet.prototype.flip = function(index) {
+  var byteIndex = index >> 5,
+      pos = index & 0x0000001f,
+      oldBytes = this.array[byteIndex];
+
+  var newBytes = this.array[byteIndex] ^= (1 << pos);
+
+  // Get unsigned representation.
+  newBytes = newBytes >>> 0;
+
+  // Updating size
+  if (newBytes > oldBytes)
+    this.size++;
+  else if (newBytes < oldBytes)
+    this.size--;
+
+  return this;
+};
+
+/**
+ * Method used to get the given bit's value.
+ *
+ * @param  {number} index - Target bit index.
+ * @return {number}
+ */
+BitSet.prototype.get = function(index) {
+  var byteIndex = index >> 5,
+      pos = index & 0x0000001f;
+
+  return (this.array[byteIndex] >> pos) & 1;
+};
+
+/**
+ * Method used to test the given bit's value.
+ *
+ * @param  {number} index - Target bit index.
+ * @return {BitSet}
+ */
+BitSet.prototype.test = function(index) {
+  return Boolean(this.get(index));
+};
+
+/**
+ * Method used to return the number of 1 from the beginning of the set up to
+ * the ith index.
+ *
+ * @param  {number} i - Ith index (cannot be > length).
+ * @return {number}
+ */
+BitSet.prototype.rank = function(i) {
+  if (this.size === 0)
+    return 0;
+
+  var byteIndex = i >> 5,
+      pos = i & 0x0000001f,
+      r = 0;
+
+  // Accessing the bytes before the last one
+  for (var j = 0; j < byteIndex; j++)
+    r += bitwise.table8Popcount(this.array[j]);
+
+  // Handling masked last byte
+  var maskedByte = this.array[byteIndex] & ((1 << pos) - 1);
+
+  r += bitwise.table8Popcount(maskedByte);
+
+  return r;
+};
+
+/**
+ * Method used to return the position of the rth 1 in the set or -1 if the
+ * set is empty.
+ *
+ * Note: usually select is implemented using binary search over rank but I
+ * tend to think the following linear implementation is faster since here
+ * rank is O(n) anyway.
+ *
+ * @param  {number} r - Rth 1 to select (should be < length).
+ * @return {number}
+ */
+BitSet.prototype.select = function(r) {
+  if (this.size === 0)
+    return -1;
+
+  // TODO: throw?
+  if (r >= this.length)
+    return -1;
+
+  var byte,
+      b = 32,
+      p = 0,
+      c = 0;
+
+  for (var i = 0, l = this.array.length; i < l; i++) {
+    byte = this.array[i];
+
+    // The byte is empty, let's continue
+    if (byte === 0)
+      continue;
+
+    // TODO: This branching might not be useful here
+    if (i === l - 1)
+      b = this.length % 32 || 32;
+
+    // TODO: popcount should speed things up here
+
+    for (var j = 0; j < b; j++, p++) {
+      c += (byte >> j) & 1;
+
+      if (c === r)
+        return p;
+    }
+  }
+};
+
+/**
+ * Method used to iterate over the bit set's values.
+ *
+ * @param  {function}  callback - Function to call for each item.
+ * @param  {object}    scope    - Optional scope.
+ * @return {undefined}
+ */
+BitSet.prototype.forEach = function(callback, scope) {
+  scope = arguments.length > 1 ? scope : this;
+
+  var length = this.length,
+      byte,
+      bit,
+      b = 32;
+
+  for (var i = 0, l = this.array.length; i < l; i++) {
+    byte = this.array[i];
+
+    if (i === l - 1)
+      b = length % 32 || 32;
+
+    for (var j = 0; j < b; j++) {
+      bit = (byte >> j) & 1;
+
+      callback.call(scope, bit, i * 32 + j);
+    }
+  }
+};
+
+/**
+ * Method used to create an iterator over a set's values.
+ *
+ * @return {Iterator}
+ */
+BitSet.prototype.values = function() {
+  var length = this.length,
+      inner = false,
+      byte,
+      bit,
+      array = this.array,
+      l = array.length,
+      i = 0,
+      j = -1,
+      b = 32;
+
+  return new Iterator(function next() {
+    if (!inner) {
+
+      if (i >= l)
+        return {
+          done: true
+        };
+
+      if (i === l - 1)
+        b = length % 32 || 32;
+
+      byte = array[i++];
+      inner = true;
+      j = -1;
+    }
+
+    j++;
+
+    if (j >= b) {
+      inner = false;
+      return next();
+    }
+
+    bit = (byte >> j) & 1;
+
+    return {
+      value: bit
+    };
+  });
+};
+
+/**
+ * Method used to create an iterator over a set's entries.
+ *
+ * @return {Iterator}
+ */
+BitSet.prototype.entries = function() {
+  var length = this.length,
+      inner = false,
+      byte,
+      bit,
+      array = this.array,
+      index,
+      l = array.length,
+      i = 0,
+      j = -1,
+      b = 32;
+
+  return new Iterator(function next() {
+    if (!inner) {
+
+      if (i >= l)
+        return {
+          done: true
+        };
+
+      if (i === l - 1)
+        b = length % 32 || 32;
+
+      byte = array[i++];
+      inner = true;
+      j = -1;
+    }
+
+    j++;
+    index = (~-i) * 32 + j;
+
+    if (j >= b) {
+      inner = false;
+      return next();
+    }
+
+    bit = (byte >> j) & 1;
+
+    return {
+      value: [index, bit]
+    };
+  });
+};
+
+/**
+ * Attaching the #.values method to Symbol.iterator if possible.
+ */
+if (typeof Symbol !== 'undefined')
+  BitSet.prototype[Symbol.iterator] = BitSet.prototype.values;
+
+/**
+ * Convenience known methods.
+ */
+BitSet.prototype.inspect = function() {
+  var proxy = new Uint8Array(this.length);
+
+  this.forEach(function(bit, i) {
+    proxy[i] = bit;
+  });
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(proxy, 'constructor', {
+    value: BitSet,
+    enumerable: false
+  });
+
+  return proxy;
+};
+
+if (typeof Symbol !== 'undefined')
+  BitSet.prototype[Symbol.for('nodejs.util.inspect.custom')] = BitSet.prototype.inspect;
+
+BitSet.prototype.toJSON = function() {
+  return Array.from(this.array);
+};
+
+/**
+ * Exporting.
+ */
+module.exports = BitSet;
+
+
+/***/ }),
+
+/***/ 1253:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist BitVector
+ * ====================
+ *
+ * JavaScript implementation of a dynamic BitSet based upon a Uint32Array.
+ *
+ * Notes:
+ *   - (i >> 5) is the same as ((i / 32) | 0)
+ *   - (i & 0x0000001f) is the same as (i % 32)
+ *   - I could use a Float64Array to store more in less blocks but I would lose
+ *     the benefits of byte comparison to keep track of size without popcounts.
+ */
+var Iterator = __nccwpck_require__(3062),
+    bitwise = __nccwpck_require__(3729);
+
+/**
+ * Constants.
+ */
+var DEFAULT_GROWING_POLICY = function(capacity) {
+  return Math.max(1, Math.ceil(capacity * 1.5));
+};
+
+/**
+ * Helpers.
+ */
+function createByteArray(capacity) {
+  return new Uint32Array(Math.ceil(capacity / 32));
+}
+
+/**
+ * BitVector.
+ *
+ * @constructor
+ */
+function BitVector(initialLengthOrOptions) {
+  var initialLength = initialLengthOrOptions || 0,
+      policy = DEFAULT_GROWING_POLICY;
+
+  if (typeof initialLengthOrOptions === 'object') {
+    initialLength = (
+      initialLengthOrOptions.initialLength ||
+      initialLengthOrOptions.initialCapacity ||
+      0
+    );
+    policy = initialLengthOrOptions.policy || policy;
+  }
+
+  this.size = 0;
+  this.length = initialLength;
+  this.capacity = Math.ceil(this.length / 32) * 32;
+  this.policy = policy;
+  this.array = createByteArray(this.capacity);
+}
+
+/**
+ * Method used to set the given bit's value.
+ *
+ * @param  {number} index - Target bit index.
+ * @param  {number|boolean} value - Value to set.
+ * @return {BitVector}
+ */
+BitVector.prototype.set = function(index, value) {
+
+  // Out of bounds?
+  if (this.length < index)
+    throw new Error('BitVector.set: index out of bounds.');
+
+  var byteIndex = index >> 5,
+      pos = index & 0x0000001f,
+      oldBytes = this.array[byteIndex],
+      newBytes;
+
+  if (value === 0 || value === false)
+    newBytes = this.array[byteIndex] &= ~(1 << pos);
+  else
+    newBytes = this.array[byteIndex] |= (1 << pos);
+
+  // Get unsigned representation.
+  newBytes = newBytes >>> 0;
+
+  // Updating size
+  if (newBytes > oldBytes)
+    this.size++;
+  else if (newBytes < oldBytes)
+    this.size--;
+
+  return this;
+};
+
+/**
+* Method used to reset the given bit's value.
+*
+* @param  {number} index - Target bit index.
+* @return {BitVector}
+*/
+BitVector.prototype.reset = function(index) {
+  var byteIndex = index >> 5,
+      pos = index & 0x0000001f,
+      oldBytes = this.array[byteIndex],
+      newBytes;
+
+  newBytes = this.array[byteIndex] &= ~(1 << pos);
+
+  // Updating size
+  if (newBytes < oldBytes)
+    this.size--;
+
+  return this;
+};
+
+/**
+ * Method used to flip the value of the given bit.
+ *
+ * @param  {number} index - Target bit index.
+ * @return {BitVector}
+ */
+BitVector.prototype.flip = function(index) {
+  var byteIndex = index >> 5,
+      pos = index & 0x0000001f,
+      oldBytes = this.array[byteIndex];
+
+  var newBytes = this.array[byteIndex] ^= (1 << pos);
+
+  // Get unsigned representation.
+  newBytes = newBytes >>> 0;
+
+  // Updating size
+  if (newBytes > oldBytes)
+    this.size++;
+  else if (newBytes < oldBytes)
+    this.size--;
+
+  return this;
+};
+
+/**
+ * Method used to apply the growing policy.
+ *
+ * @param  {number} [override] - Override capacity.
+ * @return {number}
+ */
+BitVector.prototype.applyPolicy = function(override) {
+  var newCapacity = this.policy(override || this.capacity);
+
+  if (typeof newCapacity !== 'number' || newCapacity < 0)
+    throw new Error('mnemonist/bit-vector.applyPolicy: policy returned an invalid value (expecting a positive integer).');
+
+  if (newCapacity <= this.capacity)
+    throw new Error('mnemonist/bit-vector.applyPolicy: policy returned a less or equal capacity to allocate.');
+
+  // TODO: we should probably check that the returned number is an integer
+
+  // Ceil to nearest 32
+  return Math.ceil(newCapacity / 32) * 32;
+};
+
+/**
+ * Method used to reallocate the underlying array.
+ *
+ * @param  {number}       capacity - Target capacity.
+ * @return {BitVector}
+ */
+BitVector.prototype.reallocate = function(capacity) {
+  var virtualCapacity = capacity;
+
+  capacity = Math.ceil(capacity / 32) * 32;
+
+  if (virtualCapacity < this.length)
+    this.length = virtualCapacity;
+
+  if (capacity === this.capacity)
+    return this;
+
+  var oldArray = this.array;
+
+  var storageLength = capacity / 32;
+
+  if (storageLength === this.array.length)
+    return this;
+
+  if (storageLength > this.array.length) {
+    this.array = new Uint32Array(storageLength);
+    this.array.set(oldArray, 0);
+  }
+  else {
+    this.array = oldArray.slice(0, storageLength);
+  }
+
+  this.capacity = capacity;
+
+  return this;
+};
+
+/**
+ * Method used to grow the array.
+ *
+ * @param  {number}       [capacity] - Optional capacity to match.
+ * @return {BitVector}
+ */
+BitVector.prototype.grow = function(capacity) {
+  var newCapacity;
+
+  if (typeof capacity === 'number') {
+
+    if (this.capacity >= capacity)
+      return this;
+
+    // We need to match the given capacity
+    newCapacity = this.capacity;
+
+    while (newCapacity < capacity)
+      newCapacity = this.applyPolicy(newCapacity);
+
+    this.reallocate(newCapacity);
+
+    return this;
+  }
+
+  // We need to run the policy once
+  newCapacity = this.applyPolicy();
+  this.reallocate(newCapacity);
+
+  return this;
+};
+
+/**
+ * Method used to resize the array. Won't deallocate.
+ *
+ * @param  {number}       length - Target length.
+ * @return {BitVector}
+ */
+BitVector.prototype.resize = function(length) {
+  if (length === this.length)
+    return this;
+
+  if (length < this.length) {
+    this.length = length;
+    return this;
+  }
+
+  this.length = length;
+  this.reallocate(length);
+
+  return this;
+};
+
+/**
+ * Method used to push a value in the set.
+ *
+ * @param  {number|boolean} value
+ * @return {BitVector}
+ */
+BitVector.prototype.push = function(value) {
+  if (this.capacity === this.length)
+    this.grow();
+
+  if (value === 0 || value === false)
+    return ++this.length;
+
+  this.size++;
+
+  var index = this.length++,
+      byteIndex = index >> 5,
+      pos = index & 0x0000001f;
+
+  this.array[byteIndex] |= (1 << pos);
+
+  return this.length;
+};
+
+/**
+ * Method used to pop the last value of the set.
+ *
+ * @return {number} - The popped value.
+ */
+BitVector.prototype.pop = function() {
+  if (this.length === 0)
+    return;
+
+  var index = --this.length;
+
+  var byteIndex = index >> 5,
+      pos = index & 0x0000001f;
+
+  return (this.array[byteIndex] >> pos) & 1;
+};
+
+/**
+ * Method used to get the given bit's value.
+ *
+ * @param  {number} index - Target bit index.
+ * @return {number}
+ */
+BitVector.prototype.get = function(index) {
+  if (this.length < index)
+    return undefined;
+
+  var byteIndex = index >> 5,
+      pos = index & 0x0000001f;
+
+  return (this.array[byteIndex] >> pos) & 1;
+};
+
+/**
+ * Method used to test the given bit's value.
+ *
+ * @param  {number} index - Target bit index.
+ * @return {BitVector}
+ */
+BitVector.prototype.test = function(index) {
+  if (this.length < index)
+    return false;
+
+  return Boolean(this.get(index));
+};
+
+/**
+ * Method used to return the number of 1 from the beginning of the set up to
+ * the ith index.
+ *
+ * @param  {number} i - Ith index (cannot be > length).
+ * @return {number}
+ */
+BitVector.prototype.rank = function(i) {
+  if (this.size === 0)
+    return 0;
+
+  var byteIndex = i >> 5,
+      pos = i & 0x0000001f,
+      r = 0;
+
+  // Accessing the bytes before the last one
+  for (var j = 0; j < byteIndex; j++)
+    r += bitwise.table8Popcount(this.array[j]);
+
+  // Handling masked last byte
+  var maskedByte = this.array[byteIndex] & ((1 << pos) - 1);
+
+  r += bitwise.table8Popcount(maskedByte);
+
+  return r;
+};
+
+/**
+ * Method used to return the position of the rth 1 in the set or -1 if the
+ * set is empty.
+ *
+ * Note: usually select is implemented using binary search over rank but I
+ * tend to think the following linear implementation is faster since here
+ * rank is O(n) anyway.
+ *
+ * @param  {number} r - Rth 1 to select (should be < length).
+ * @return {number}
+ */
+BitVector.prototype.select = function(r) {
+  if (this.size === 0)
+    return -1;
+
+  // TODO: throw?
+  if (r >= this.length)
+    return -1;
+
+  var byte,
+      b = 32,
+      p = 0,
+      c = 0;
+
+  for (var i = 0, l = this.array.length; i < l; i++) {
+    byte = this.array[i];
+
+    // The byte is empty, let's continue
+    if (byte === 0)
+      continue;
+
+    // TODO: This branching might not be useful here
+    if (i === l - 1)
+      b = this.length % 32 || 32;
+
+    // TODO: popcount should speed things up here
+
+    for (var j = 0; j < b; j++, p++) {
+      c += (byte >> j) & 1;
+
+      if (c === r)
+        return p;
+    }
+  }
+};
+
+/**
+ * Method used to iterate over the bit set's values.
+ *
+ * @param  {function}  callback - Function to call for each item.
+ * @param  {object}    scope    - Optional scope.
+ * @return {undefined}
+ */
+BitVector.prototype.forEach = function(callback, scope) {
+  scope = arguments.length > 1 ? scope : this;
+
+  var length = this.length,
+      byte,
+      bit,
+      b = 32;
+
+  for (var i = 0, l = this.array.length; i < l; i++) {
+    byte = this.array[i];
+
+    if (i === l - 1)
+      b = length % 32 || 32;
+
+    for (var j = 0; j < b; j++) {
+      bit = (byte >> j) & 1;
+
+      callback.call(scope, bit, i * 32 + j);
+    }
+  }
+};
+
+/**
+ * Method used to create an iterator over a set's values.
+ *
+ * @return {Iterator}
+ */
+BitVector.prototype.values = function() {
+  var length = this.length,
+      inner = false,
+      byte,
+      bit,
+      array = this.array,
+      l = array.length,
+      i = 0,
+      j = -1,
+      b = 32;
+
+  return new Iterator(function next() {
+    if (!inner) {
+
+      if (i >= l)
+        return {
+          done: true
+        };
+
+      if (i === l - 1)
+        b = length % 32 || 32;
+
+      byte = array[i++];
+      inner = true;
+      j = -1;
+    }
+
+    j++;
+
+    if (j >= b) {
+      inner = false;
+      return next();
+    }
+
+    bit = (byte >> j) & 1;
+
+    return {
+      value: bit
+    };
+  });
+};
+
+/**
+ * Method used to create an iterator over a set's entries.
+ *
+ * @return {Iterator}
+ */
+BitVector.prototype.entries = function() {
+  var length = this.length,
+      inner = false,
+      byte,
+      bit,
+      array = this.array,
+      index,
+      l = array.length,
+      i = 0,
+      j = -1,
+      b = 32;
+
+  return new Iterator(function next() {
+    if (!inner) {
+
+      if (i >= l)
+        return {
+          done: true
+        };
+
+      if (i === l - 1)
+        b = length % 32 || 32;
+
+      byte = array[i++];
+      inner = true;
+      j = -1;
+    }
+
+    j++;
+    index = (~-i) * 32 + j;
+
+    if (j >= b) {
+      inner = false;
+      return next();
+    }
+
+    bit = (byte >> j) & 1;
+
+    return {
+      value: [index, bit]
+    };
+  });
+};
+
+/**
+ * Attaching the #.values method to Symbol.iterator if possible.
+ */
+if (typeof Symbol !== 'undefined')
+  BitVector.prototype[Symbol.iterator] = BitVector.prototype.values;
+
+/**
+ * Convenience known methods.
+ */
+BitVector.prototype.inspect = function() {
+  var proxy = new Uint8Array(this.length);
+
+  this.forEach(function(bit, i) {
+    proxy[i] = bit;
+  });
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(proxy, 'constructor', {
+    value: BitVector,
+    enumerable: false
+  });
+
+  return proxy;
+};
+
+if (typeof Symbol !== 'undefined')
+  BitVector.prototype[Symbol.for('nodejs.util.inspect.custom')] = BitVector.prototype.inspect;
+
+BitVector.prototype.toJSON = function() {
+  return Array.from(this.array.slice(0, (this.length >> 5) + 1));
+};
+
+/**
+ * Exporting.
+ */
+module.exports = BitVector;
+
+
+/***/ }),
+
+/***/ 4696:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/* eslint no-constant-condition: 0 */
+/**
+ * Mnemonist BK Tree
+ * ==================
+ *
+ * Implementation of a Burkhard-Keller tree, allowing fast lookups of words
+ * that lie within a specified distance of the query word.
+ *
+ * [Reference]:
+ * https://en.wikipedia.org/wiki/BK-tree
+ *
+ * [Article]:
+ * W. Burkhard and R. Keller. Some approaches to best-match file searching,
+ * CACM, 1973
+ */
+var forEach = __nccwpck_require__(8968);
+
+/**
+ * BK Tree.
+ *
+ * @constructor
+ * @param {function} distance - Distance function to use.
+ */
+function BKTree(distance) {
+
+  if (typeof distance !== 'function')
+    throw new Error('mnemonist/BKTree.constructor: given `distance` should be a function.');
+
+  this.distance = distance;
+  this.clear();
+}
+
+/**
+ * Method used to add an item to the tree.
+ *
+ * @param  {any} item - Item to add.
+ * @return {BKTree}
+ */
+BKTree.prototype.add = function(item) {
+
+  // Initializing the tree with the first given word
+  if (!this.root) {
+    this.root = {
+      item: item,
+      children: {}
+    };
+
+    this.size++;
+    return this;
+  }
+
+  var node = this.root,
+      d;
+
+  while (true) {
+    d = this.distance(item, node.item);
+
+    if (!node.children[d])
+      break;
+
+    node = node.children[d];
+  }
+
+  node.children[d] = {
+    item: item,
+    children: {}
+  };
+
+  this.size++;
+  return this;
+};
+
+/**
+ * Method used to query the tree.
+ *
+ * @param  {number} n     - Maximum distance between query & item.
+ * @param  {any}    query - Query
+ * @return {BKTree}
+ */
+BKTree.prototype.search = function(n, query) {
+  if (!this.root)
+    return [];
+
+  var found = [],
+      stack = [this.root],
+      node,
+      child,
+      d,
+      i,
+      l;
+
+  while (stack.length) {
+    node = stack.pop();
+    d = this.distance(query, node.item);
+
+    if (d <= n)
+      found.push({item: node.item, distance: d});
+
+    for (i = d - n, l = d + n + 1; i < l; i++) {
+      child = node.children[i];
+
+      if (child)
+        stack.push(child);
+    }
+  }
+
+  return found;
+};
+
+/**
+ * Method used to clear the tree.
+ *
+ * @return {undefined}
+ */
+BKTree.prototype.clear = function() {
+
+  // Properties
+  this.size = 0;
+  this.root = null;
+};
+
+/**
+ * Convenience known methods.
+ */
+BKTree.prototype.toJSON = function() {
+  return this.root;
+};
+
+BKTree.prototype.inspect = function() {
+  var array = [],
+      stack = [this.root],
+      node,
+      d;
+
+  while (stack.length) {
+    node = stack.pop();
+
+    if (!node)
+      continue;
+
+    array.push(node.item);
+
+    for (d in node.children)
+      stack.push(node.children[d]);
+  }
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(array, 'constructor', {
+    value: BKTree,
+    enumerable: false
+  });
+
+  return array;
+};
+
+if (typeof Symbol !== 'undefined')
+  BKTree.prototype[Symbol.for('nodejs.util.inspect.custom')] = BKTree.prototype.inspect;
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a tree.
+ *
+ * @param  {Iterable} iterable - Target iterable.
+ * @param  {function} distance - Distance function.
+ * @return {Heap}
+ */
+BKTree.from = function(iterable, distance) {
+  var tree = new BKTree(distance);
+
+  forEach(iterable, function(value) {
+    tree.add(value);
+  });
+
+  return tree;
+};
+
+/**
+ * Exporting.
+ */
+module.exports = BKTree;
+
+
+/***/ }),
+
+/***/ 1944:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist Bloom Filter
+ * =======================
+ *
+ * Bloom Filter implementation relying on MurmurHash3.
+ */
+var murmurhash3 = __nccwpck_require__(7801),
+    forEach = __nccwpck_require__(8968);
+
+/**
+ * Constants.
+ */
+var LN2_SQUARED = Math.LN2 * Math.LN2;
+
+/**
+ * Defaults.
+ */
+var DEFAULTS = {
+  errorRate: 0.005
+};
+
+/**
+ * Function used to convert a string into a Uint16 byte array.
+ *
+ * @param  {string}      string - Target string.
+ * @return {Uint16Array}
+ */
+function stringToByteArray(string) {
+  var array = new Uint16Array(string.length),
+      i,
+      l;
+
+  for (i = 0, l = string.length; i < l; i++)
+    array[i] = string.charCodeAt(i);
+
+  return array;
+}
+
+/**
+ * Function used to hash the given byte array.
+ *
+ * @param  {number}      length - Length of the filter's byte array.
+ * @param  {number}      seed   - Seed to use for the hash function.
+ * @param  {Uint16Array}        - Byte array representing the string.
+ * @return {number}             - The hash.
+ *
+ * @note length * 8 should probably already be computed as well as seeds.
+ */
+function hashArray(length, seed, array) {
+  var hash = murmurhash3((seed * 0xFBA4C795) & 0xFFFFFFFF, array);
+
+  return hash % (length * 8);
+}
+
+/**
+ * Bloom Filter.
+ *
+ * @constructor
+ * @param {number|object} capacityOrOptions - Capacity or options.
+ */
+function BloomFilter(capacityOrOptions) {
+  var options = {};
+
+  if (!capacityOrOptions)
+    throw new Error('mnemonist/BloomFilter.constructor: a BloomFilter must be created with a capacity.');
+
+  if (typeof capacityOrOptions === 'object')
+    options = capacityOrOptions;
+  else
+    options.capacity = capacityOrOptions;
+
+  // Handling capacity
+  if (typeof options.capacity !== 'number' || options.capacity <= 0)
+    throw new Error('mnemonist/BloomFilter.constructor: `capacity` option should be a positive integer.');
+
+  this.capacity = options.capacity;
+
+  // Handling error rate
+  this.errorRate = options.errorRate || DEFAULTS.errorRate;
+
+  if (typeof this.errorRate !== 'number' || options.errorRate <= 0)
+    throw new Error('mnemonist/BloomFilter.constructor: `errorRate` option should be a positive float.');
+
+  this.clear();
+}
+
+/**
+ * Method used to clear the filter.
+ *
+ * @return {undefined}
+ */
+BloomFilter.prototype.clear = function() {
+
+  // Optimizing number of bits & number of hash functions
+  var bits = -1 / LN2_SQUARED * this.capacity * Math.log(this.errorRate),
+      length = (bits / 8) | 0;
+
+  this.hashFunctions = (length * 8 / this.capacity * Math.LN2) | 0;
+
+  // Creating the data array
+  this.data = new Uint8Array(length);
+
+  return;
+};
+
+/**
+ * Method used to add an string to the filter.
+ *
+ * @param  {string} string - Item to add.
+ * @return {BloomFilter}
+ *
+ * @note Should probably create a hash function working directly on a string.
+ */
+BloomFilter.prototype.add = function(string) {
+
+  // Converting the string to a byte array
+  var array = stringToByteArray(string);
+
+  // Applying the n hash functions
+  for (var i = 0, l = this.hashFunctions; i < l; i++) {
+    var index = hashArray(this.data.length, i, array),
+        position = (1 << (7 & index));
+
+    this.data[index >> 3] |= position;
+  }
+
+  return this;
+};
+
+/**
+ * Method used to test the given string.
+ *
+ * @param  {string} string - Item to test.
+ * @return {boolean}
+ */
+BloomFilter.prototype.test = function(string) {
+
+  // Converting the string to a byte array
+  var array = stringToByteArray(string);
+
+  // Applying the n hash functions
+  for (var i = 0, l = this.hashFunctions; i < l; i++) {
+    var index = hashArray(this.data.length, i, array);
+
+    if (!(this.data[index >> 3] & (1 << (7 & index))))
+      return false;
+  }
+
+  return true;
+};
+
+/**
+ * Convenience known methods.
+ */
+BloomFilter.prototype.toJSON = function() {
+  return this.data;
+};
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a filter.
+ *
+ * @param  {Iterable}    iterable - Target iterable.
+ * @return {BloomFilter}
+ */
+BloomFilter.from = function(iterable, options) {
+  if (!options) {
+    options = iterable.length || iterable.size;
+
+    if (typeof options !== 'number')
+      throw new Error('BloomFilter.from: could not infer the filter\'s capacity. Try passing it as second argument.');
+  }
+
+  var filter = new BloomFilter(options);
+
+  forEach(iterable, function(value) {
+    filter.add(value);
+  });
+
+  return filter;
+};
+
+/**
+ * Exporting.
+ */
+module.exports = BloomFilter;
+
+
+/***/ }),
+
+/***/ 3897:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist CircularBuffer
+ * =========================
+ *
+ * Circular buffer implementation fit to use as a finite deque.
+ */
+var iterables = __nccwpck_require__(7304),
+    FixedDeque = __nccwpck_require__(8265);
+
+/**
+ * CircularBuffer.
+ *
+ * @constructor
+ */
+function CircularBuffer(ArrayClass, capacity) {
+
+  if (arguments.length < 2)
+    throw new Error('mnemonist/circular-buffer: expecting an Array class and a capacity.');
+
+  if (typeof capacity !== 'number' || capacity <= 0)
+    throw new Error('mnemonist/circular-buffer: `capacity` should be a positive number.');
+
+  this.ArrayClass = ArrayClass;
+  this.capacity = capacity;
+  this.items = new ArrayClass(this.capacity);
+  this.clear();
+}
+
+/**
+ * Pasting most of the prototype from FixedDeque.
+ */
+function paste(name) {
+  CircularBuffer.prototype[name] = FixedDeque.prototype[name];
+}
+
+Object.keys(FixedDeque.prototype).forEach(paste);
+
+if (typeof Symbol !== 'undefined')
+  Object.getOwnPropertySymbols(FixedDeque.prototype).forEach(paste);
+
+/**
+ * Method used to append a value to the buffer.
+ *
+ * @param  {any}    item - Item to append.
+ * @return {number}      - Returns the new size of the buffer.
+ */
+CircularBuffer.prototype.push = function(item) {
+  var index = (this.start + this.size) % this.capacity;
+
+  this.items[index] = item;
+
+  // Overwriting?
+  if (this.size === this.capacity) {
+
+    // If start is at the end, we wrap around the buffer
+    this.start = (index + 1) % this.capacity;
+
+    return this.size;
+  }
+
+  return ++this.size;
+};
+
+/**
+ * Method used to prepend a value to the buffer.
+ *
+ * @param  {any}    item - Item to prepend.
+ * @return {number}      - Returns the new size of the buffer.
+ */
+CircularBuffer.prototype.unshift = function(item) {
+  var index = this.start - 1;
+
+  if (this.start === 0)
+    index = this.capacity - 1;
+
+  this.items[index] = item;
+
+  // Overwriting
+  if (this.size === this.capacity) {
+
+    this.start = index;
+
+    return this.size;
+  }
+
+  this.start = index;
+
+  return ++this.size;
+};
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a circular buffer.
+ *
+ * @param  {Iterable} iterable   - Target iterable.
+ * @param  {function} ArrayClass - Array class to use.
+ * @param  {number}   capacity   - Desired capacity.
+ * @return {FiniteStack}
+ */
+CircularBuffer.from = function(iterable, ArrayClass, capacity) {
+  if (arguments.length < 3) {
+    capacity = iterables.guessLength(iterable);
+
+    if (typeof capacity !== 'number')
+      throw new Error('mnemonist/circular-buffer.from: could not guess iterable length. Please provide desired capacity as last argument.');
+  }
+
+  var buffer = new CircularBuffer(ArrayClass, capacity);
+
+  if (iterables.isArrayLike(iterable)) {
+    var i, l;
+
+    for (i = 0, l = iterable.length; i < l; i++)
+      buffer.items[i] = iterable[i];
+
+    buffer.size = l;
+
+    return buffer;
+  }
+
+  iterables.forEach(iterable, function(value) {
+    buffer.push(value);
+  });
+
+  return buffer;
+};
+
+/**
+ * Exporting.
+ */
+module.exports = CircularBuffer;
+
+
+/***/ }),
+
+/***/ 2812:
+/***/ ((module) => {
+
+/**
+ * Mnemonist DefaultMap
+ * =====================
+ *
+ * JavaScript implementation of a default map that will return a constructed
+ * value any time one tries to access an inexisting key. It's quite similar
+ * to python's defaultdict.
+ */
+
+/**
+ * DefaultMap.
+ *
+ * @constructor
+ */
+function DefaultMap(factory) {
+  if (typeof factory !== 'function')
+    throw new Error('mnemonist/DefaultMap.constructor: expecting a function.');
+
+  this.items = new Map();
+  this.factory = factory;
+  this.size = 0;
+}
+
+/**
+ * Method used to clear the structure.
+ *
+ * @return {undefined}
+ */
+DefaultMap.prototype.clear = function() {
+
+  // Properties
+  this.items.clear();
+  this.size = 0;
+};
+
+/**
+ * Method used to get the value set for given key. If the key does not exist,
+ * the value will be created using the provided factory.
+ *
+ * @param  {any} key - Target key.
+ * @return {any}
+ */
+DefaultMap.prototype.get = function(key) {
+  var value = this.items.get(key);
+
+  if (typeof value === 'undefined') {
+    value = this.factory(key, this.size);
+    this.items.set(key, value);
+    this.size++;
+  }
+
+  return value;
+};
+
+/**
+ * Method used to get the value set for given key. If the key does not exist,
+ * a value won't be created.
+ *
+ * @param  {any} key - Target key.
+ * @return {any}
+ */
+DefaultMap.prototype.peek = function(key) {
+  return this.items.get(key);
+};
+
+/**
+ * Method used to set a value for given key.
+ *
+ * @param  {any} key   - Target key.
+ * @param  {any} value - Value.
+ * @return {DefaultMap}
+ */
+DefaultMap.prototype.set = function(key, value) {
+  this.items.set(key, value);
+  this.size = this.items.size;
+
+  return this;
+};
+
+/**
+ * Method used to test the existence of a key in the map.
+ *
+ * @param  {any} key   - Target key.
+ * @return {boolean}
+ */
+DefaultMap.prototype.has = function(key) {
+  return this.items.has(key);
+};
+
+/**
+ * Method used to delete target key.
+ *
+ * @param  {any} key   - Target key.
+ * @return {boolean}
+ */
+DefaultMap.prototype.delete = function(key) {
+  var deleted = this.items.delete(key);
+
+  this.size = this.items.size;
+
+  return deleted;
+};
+
+/**
+ * Method used to iterate over each of the key/value pairs.
+ *
+ * @param  {function}  callback - Function to call for each item.
+ * @param  {object}    scope    - Optional scope.
+ * @return {undefined}
+ */
+DefaultMap.prototype.forEach = function(callback, scope) {
+  scope = arguments.length > 1 ? scope : this;
+
+  this.items.forEach(callback, scope);
+};
+
+/**
+ * Iterators.
+ */
+DefaultMap.prototype.entries = function() {
+  return this.items.entries();
+};
+
+DefaultMap.prototype.keys = function() {
+  return this.items.keys();
+};
+
+DefaultMap.prototype.values = function() {
+  return this.items.values();
+};
+
+/**
+ * Attaching the #.entries method to Symbol.iterator if possible.
+ */
+if (typeof Symbol !== 'undefined')
+  DefaultMap.prototype[Symbol.iterator] = DefaultMap.prototype.entries;
+
+/**
+ * Convenience known methods.
+ */
+DefaultMap.prototype.inspect = function() {
+  return this.items;
+};
+
+if (typeof Symbol !== 'undefined')
+  DefaultMap.prototype[Symbol.for('nodejs.util.inspect.custom')] = DefaultMap.prototype.inspect;
+
+/**
+ * Typical factories.
+ */
+DefaultMap.autoIncrement = function() {
+  var i = 0;
+
+  return function() {
+    return i++;
+  };
+};
+
+/**
+ * Exporting.
+ */
+module.exports = DefaultMap;
+
+
+/***/ }),
+
+/***/ 5669:
+/***/ ((module) => {
+
+/**
+ * Mnemonist DefaultWeakMap
+ * =========================
+ *
+ * JavaScript implementation of a default weak map that will return a constructed
+ * value any time one tries to access an non-existing key. It is similar to
+ * DefaultMap but uses ES6 WeakMap that only holds weak reference to keys.
+ */
+
+/**
+ * DefaultWeakMap.
+ *
+ * @constructor
+ */
+function DefaultWeakMap(factory) {
+  if (typeof factory !== 'function')
+    throw new Error('mnemonist/DefaultWeakMap.constructor: expecting a function.');
+
+  this.items = new WeakMap();
+  this.factory = factory;
+}
+
+/**
+ * Method used to clear the structure.
+ *
+ * @return {undefined}
+ */
+DefaultWeakMap.prototype.clear = function() {
+
+  // Properties
+  this.items = new WeakMap();
+};
+
+/**
+ * Method used to get the value set for given key. If the key does not exist,
+ * the value will be created using the provided factory.
+ *
+ * @param  {any} key - Target key.
+ * @return {any}
+ */
+DefaultWeakMap.prototype.get = function(key) {
+  var value = this.items.get(key);
+
+  if (typeof value === 'undefined') {
+    value = this.factory(key);
+    this.items.set(key, value);
+  }
+
+  return value;
+};
+
+/**
+ * Method used to get the value set for given key. If the key does not exist,
+ * a value won't be created.
+ *
+ * @param  {any} key - Target key.
+ * @return {any}
+ */
+DefaultWeakMap.prototype.peek = function(key) {
+  return this.items.get(key);
+};
+
+/**
+ * Method used to set a value for given key.
+ *
+ * @param  {any} key   - Target key.
+ * @param  {any} value - Value.
+ * @return {DefaultMap}
+ */
+DefaultWeakMap.prototype.set = function(key, value) {
+  this.items.set(key, value);
+  return this;
+};
+
+/**
+ * Method used to test the existence of a key in the map.
+ *
+ * @param  {any} key   - Target key.
+ * @return {boolean}
+ */
+DefaultWeakMap.prototype.has = function(key) {
+  return this.items.has(key);
+};
+
+/**
+ * Method used to delete target key.
+ *
+ * @param  {any} key   - Target key.
+ * @return {boolean}
+ */
+DefaultWeakMap.prototype.delete = function(key) {
+  return this.items.delete(key);
+};
+
+/**
+ * Convenience known methods.
+ */
+DefaultWeakMap.prototype.inspect = function() {
+  return this.items;
+};
+
+if (typeof Symbol !== 'undefined')
+  DefaultWeakMap.prototype[Symbol.for('nodejs.util.inspect.custom')] = DefaultWeakMap.prototype.inspect;
+
+/**
+ * Exporting.
+ */
+module.exports = DefaultWeakMap;
+
+
+/***/ }),
+
+/***/ 2929:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/* eslint no-constant-condition: 0 */
+/**
+ * Mnemonist Fibonacci Heap
+ * =========================
+ *
+ * Fibonacci heap implementation.
+ */
+var comparators = __nccwpck_require__(9815),
+    forEach = __nccwpck_require__(8968);
+
+var DEFAULT_COMPARATOR = comparators.DEFAULT_COMPARATOR,
+    reverseComparator = comparators.reverseComparator;
+
+/**
+ * Fibonacci Heap.
+ *
+ * @constructor
+ */
+function FibonacciHeap(comparator) {
+  this.clear();
+  this.comparator = comparator || DEFAULT_COMPARATOR;
+
+  if (typeof this.comparator !== 'function')
+    throw new Error('mnemonist/FibonacciHeap.constructor: given comparator should be a function.');
+}
+
+/**
+ * Method used to clear the heap.
+ *
+ * @return {undefined}
+ */
+FibonacciHeap.prototype.clear = function() {
+
+  // Properties
+  this.root = null;
+  this.min = null;
+  this.size = 0;
+};
+
+/**
+ * Function used to create a node.
+ *
+ * @param  {any}    item - Target item.
+ * @return {object}
+ */
+function createNode(item) {
+  return {
+    item: item,
+    degree: 0
+  };
+}
+
+/**
+ * Function used to merge the given node with the root list.
+ *
+ * @param {FibonacciHeap} heap - Target heap.
+ * @param {Node}          node - Target node.
+ */
+function mergeWithRoot(heap, node) {
+  if (!heap.root) {
+    heap.root = node;
+  }
+  else {
+    node.right = heap.root.right;
+    node.left = heap.root;
+    heap.root.right.left = node;
+    heap.root.right = node;
+  }
+}
+
+/**
+ * Method used to push an item into the heap.
+ *
+ * @param  {any}    item - Item to push.
+ * @return {number}
+ */
+FibonacciHeap.prototype.push = function(item) {
+  var node = createNode(item);
+  node.left = node;
+  node.right = node;
+  mergeWithRoot(this, node);
+
+  if (!this.min || this.comparator(node.item, this.min.item) <= 0)
+    this.min = node;
+
+  return ++this.size;
+};
+
+/**
+ * Method used to get the "first" item of the heap.
+ *
+ * @return {any}
+ */
+FibonacciHeap.prototype.peek = function() {
+  return this.min ? this.min.item : undefined;
+};
+
+/**
+ * Function used to consume the given linked list.
+ *
+ * @param {Node} head - Head node.
+ * @param {array}
+ */
+function consumeLinkedList(head) {
+  var nodes = [],
+      node = head,
+      flag = false;
+
+  while (true) {
+    if (node === head && flag)
+      break;
+    else if (node === head)
+      flag = true;
+
+    nodes.push(node);
+    node = node.right;
+  }
+
+  return nodes;
+}
+
+/**
+ * Function used to remove the target node from the root list.
+ *
+ * @param {FibonacciHeap} heap - Target heap.
+ * @param {Node}          node - Target node.
+ */
+function removeFromRoot(heap, node) {
+  if (heap.root === node)
+    heap.root = node.right;
+  node.left.right = node.right;
+  node.right.left = node.left;
+}
+
+/**
+ * Function used to merge the given node with the child list of a root node.
+ *
+ * @param {Node} parent - Parent node.
+ * @param {Node} node   - Target node.
+ */
+function mergeWithChild(parent, node) {
+  if (!parent.child) {
+    parent.child = node;
+  }
+  else {
+    node.right = parent.child.right;
+    node.left = parent.child;
+    parent.child.right.left = node;
+    parent.child.right = node;
+  }
+}
+
+/**
+ * Function used to link one node to another in the root list.
+ *
+ * @param {FibonacciHeap} heap - Target heap.
+ * @param {Node}          y - Y node.
+ * @param {Node}          x - X node.
+ */
+function link(heap, y, x) {
+  removeFromRoot(heap, y);
+  y.left = y;
+  y.right = y;
+  mergeWithChild(x, y);
+  x.degree++;
+  y.parent = x;
+}
+
+/**
+ * Function used to consolidate the heap.
+ *
+ * @param {FibonacciHeap} heap - Target heap.
+ */
+function consolidate(heap) {
+  var A = new Array(heap.size),
+      nodes = consumeLinkedList(heap.root),
+      i, l, x, y, d, t;
+
+  for (i = 0, l = nodes.length; i < l; i++) {
+    x = nodes[i];
+    d = x.degree;
+
+    while (A[d]) {
+      y = A[d];
+
+      if (heap.comparator(x.item, y.item) > 0) {
+        t = x;
+        x = y;
+        y = t;
+      }
+
+      link(heap, y, x);
+      A[d] = null;
+      d++;
+    }
+
+    A[d] = x;
+  }
+
+  for (i = 0; i < heap.size; i++) {
+    if (A[i] && heap.comparator(A[i].item, heap.min.item) <= 0)
+      heap.min = A[i];
+  }
+}
+
+/**
+ * Method used to retrieve & remove the "first" item of the heap.
+ *
+ * @return {any}
+ */
+FibonacciHeap.prototype.pop = function() {
+  if (!this.size)
+    return undefined;
+
+  var z = this.min;
+
+  if (z.child) {
+    var nodes = consumeLinkedList(z.child),
+        node,
+        i,
+        l;
+
+    for (i = 0, l = nodes.length; i < l; i++) {
+      node = nodes[i];
+
+      mergeWithRoot(this, node);
+      delete node.parent;
+    }
+  }
+
+  removeFromRoot(this, z);
+
+  if (z === z.right) {
+    this.min = null;
+    this.root = null;
+  }
+  else {
+    this.min = z.right;
+    consolidate(this);
+  }
+
+  this.size--;
+
+  return z.item;
+};
+
+/**
+ * Convenience known methods.
+ */
+FibonacciHeap.prototype.inspect = function() {
+  var proxy = {
+    size: this.size
+  };
+
+  if (this.min && 'item' in this.min)
+    proxy.top = this.min.item;
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(proxy, 'constructor', {
+    value: FibonacciHeap,
+    enumerable: false
+  });
+
+  return proxy;
+};
+
+if (typeof Symbol !== 'undefined')
+  FibonacciHeap.prototype[Symbol.for('nodejs.util.inspect.custom')] = FibonacciHeap.prototype.inspect;
+
+/**
+ * Fibonacci Maximum Heap.
+ *
+ * @constructor
+ */
+function MaxFibonacciHeap(comparator) {
+  this.clear();
+  this.comparator = comparator || DEFAULT_COMPARATOR;
+
+  if (typeof this.comparator !== 'function')
+    throw new Error('mnemonist/FibonacciHeap.constructor: given comparator should be a function.');
+
+  this.comparator = reverseComparator(this.comparator);
+}
+
+MaxFibonacciHeap.prototype = FibonacciHeap.prototype;
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a heap.
+ *
+ * @param  {Iterable} iterable   - Target iterable.
+ * @param  {function} comparator - Custom comparator function.
+ * @return {FibonacciHeap}
+ */
+FibonacciHeap.from = function(iterable, comparator) {
+  var heap = new FibonacciHeap(comparator);
+
+  forEach(iterable, function(value) {
+    heap.push(value);
+  });
+
+  return heap;
+};
+
+MaxFibonacciHeap.from = function(iterable, comparator) {
+  var heap = new MaxFibonacciHeap(comparator);
+
+  forEach(iterable, function(value) {
+    heap.push(value);
+  });
+
+  return heap;
+};
+
+/**
+ * Exporting.
+ */
+FibonacciHeap.MinFibonacciHeap = FibonacciHeap;
+FibonacciHeap.MaxFibonacciHeap = MaxFibonacciHeap;
+module.exports = FibonacciHeap;
+
+
+/***/ }),
+
+/***/ 8265:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist FixedDeque
+ * =====================
+ *
+ * Fixed capacity double-ended queue implemented as ring deque.
+ */
+var iterables = __nccwpck_require__(7304),
+    Iterator = __nccwpck_require__(3062);
+
+/**
+ * FixedDeque.
+ *
+ * @constructor
+ */
+function FixedDeque(ArrayClass, capacity) {
+
+  if (arguments.length < 2)
+    throw new Error('mnemonist/fixed-deque: expecting an Array class and a capacity.');
+
+  if (typeof capacity !== 'number' || capacity <= 0)
+    throw new Error('mnemonist/fixed-deque: `capacity` should be a positive number.');
+
+  this.ArrayClass = ArrayClass;
+  this.capacity = capacity;
+  this.items = new ArrayClass(this.capacity);
+  this.clear();
+}
+
+/**
+ * Method used to clear the structure.
+ *
+ * @return {undefined}
+ */
+FixedDeque.prototype.clear = function() {
+
+  // Properties
+  this.start = 0;
+  this.size = 0;
+};
+
+/**
+ * Method used to append a value to the deque.
+ *
+ * @param  {any}    item - Item to append.
+ * @return {number}      - Returns the new size of the deque.
+ */
+FixedDeque.prototype.push = function(item) {
+  if (this.size === this.capacity)
+    throw new Error('mnemonist/fixed-deque.push: deque capacity (' + this.capacity + ') exceeded!');
+
+  var index = (this.start + this.size) % this.capacity;
+
+  this.items[index] = item;
+
+  return ++this.size;
+};
+
+/**
+ * Method used to prepend a value to the deque.
+ *
+ * @param  {any}    item - Item to prepend.
+ * @return {number}      - Returns the new size of the deque.
+ */
+FixedDeque.prototype.unshift = function(item) {
+  if (this.size === this.capacity)
+    throw new Error('mnemonist/fixed-deque.unshift: deque capacity (' + this.capacity + ') exceeded!');
+
+  var index = this.start - 1;
+
+  if (this.start === 0)
+    index = this.capacity - 1;
+
+  this.items[index] = item;
+  this.start = index;
+
+  return ++this.size;
+};
+
+/**
+ * Method used to pop the deque.
+ *
+ * @return {any} - Returns the popped item.
+ */
+FixedDeque.prototype.pop = function() {
+  if (this.size === 0)
+    return;
+
+  const index = (this.start + this.size - 1) % this.capacity;
+
+  this.size--;
+
+  return this.items[index];
+};
+
+/**
+ * Method used to shift the deque.
+ *
+ * @return {any} - Returns the shifted item.
+ */
+FixedDeque.prototype.shift = function() {
+  if (this.size === 0)
+    return;
+
+  var index = this.start;
+
+  this.size--;
+  this.start++;
+
+  if (this.start === this.capacity)
+    this.start = 0;
+
+  return this.items[index];
+};
+
+/**
+ * Method used to peek the first value of the deque.
+ *
+ * @return {any}
+ */
+FixedDeque.prototype.peekFirst = function() {
+  if (this.size === 0)
+    return;
+
+  return this.items[this.start];
+};
+
+/**
+ * Method used to peek the last value of the deque.
+ *
+ * @return {any}
+ */
+FixedDeque.prototype.peekLast = function() {
+  if (this.size === 0)
+    return;
+
+  var index = this.start + this.size - 1;
+
+  if (index > this.capacity)
+    index -= this.capacity;
+
+  return this.items[index];
+};
+
+/**
+ * Method used to get the desired value of the deque.
+ *
+ * @param  {number} index
+ * @return {any}
+ */
+FixedDeque.prototype.get = function(index) {
+  if (this.size === 0)
+    return;
+
+  index = this.start + index;
+
+  if (index > this.capacity)
+    index -= this.capacity;
+
+  return this.items[index];
+};
+
+/**
+ * Method used to iterate over the deque.
+ *
+ * @param  {function}  callback - Function to call for each item.
+ * @param  {object}    scope    - Optional scope.
+ * @return {undefined}
+ */
+FixedDeque.prototype.forEach = function(callback, scope) {
+  scope = arguments.length > 1 ? scope : this;
+
+  var c = this.capacity,
+      l = this.size,
+      i = this.start,
+      j = 0;
+
+  while (j < l) {
+    callback.call(scope, this.items[i], j, this);
+    i++;
+    j++;
+
+    if (i === c)
+      i = 0;
+  }
+};
+
+/**
+ * Method used to convert the deque to a JavaScript array.
+ *
+ * @return {array}
+ */
+// TODO: optional array class as argument?
+FixedDeque.prototype.toArray = function() {
+
+  // Optimization
+  var offset = this.start + this.size;
+
+  if (offset < this.capacity)
+    return this.items.slice(this.start, offset);
+
+  var array = new this.ArrayClass(this.size),
+      c = this.capacity,
+      l = this.size,
+      i = this.start,
+      j = 0;
+
+  while (j < l) {
+    array[j] = this.items[i];
+    i++;
+    j++;
+
+    if (i === c)
+      i = 0;
+  }
+
+  return array;
+};
+
+/**
+ * Method used to create an iterator over the deque's values.
+ *
+ * @return {Iterator}
+ */
+FixedDeque.prototype.values = function() {
+  var items = this.items,
+      c = this.capacity,
+      l = this.size,
+      i = this.start,
+      j = 0;
+
+  return new Iterator(function() {
+    if (j >= l)
+      return {
+        done: true
+      };
+
+    var value = items[i];
+
+    i++;
+    j++;
+
+    if (i === c)
+      i = 0;
+
+    return {
+      value: value,
+      done: false
+    };
+  });
+};
+
+/**
+ * Method used to create an iterator over the deque's entries.
+ *
+ * @return {Iterator}
+ */
+FixedDeque.prototype.entries = function() {
+  var items = this.items,
+      c = this.capacity,
+      l = this.size,
+      i = this.start,
+      j = 0;
+
+  return new Iterator(function() {
+    if (j >= l)
+      return {
+        done: true
+      };
+
+    var value = items[i];
+
+    i++;
+
+    if (i === c)
+      i = 0;
+
+    return {
+      value: [j++, value],
+      done: false
+    };
+  });
+};
+
+/**
+ * Attaching the #.values method to Symbol.iterator if possible.
+ */
+if (typeof Symbol !== 'undefined')
+  FixedDeque.prototype[Symbol.iterator] = FixedDeque.prototype.values;
+
+/**
+ * Convenience known methods.
+ */
+FixedDeque.prototype.inspect = function() {
+  var array = this.toArray();
+
+  array.type = this.ArrayClass.name;
+  array.capacity = this.capacity;
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(array, 'constructor', {
+    value: FixedDeque,
+    enumerable: false
+  });
+
+  return array;
+};
+
+if (typeof Symbol !== 'undefined')
+  FixedDeque.prototype[Symbol.for('nodejs.util.inspect.custom')] = FixedDeque.prototype.inspect;
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a deque.
+ *
+ * @param  {Iterable} iterable   - Target iterable.
+ * @param  {function} ArrayClass - Array class to use.
+ * @param  {number}   capacity   - Desired capacity.
+ * @return {FiniteStack}
+ */
+FixedDeque.from = function(iterable, ArrayClass, capacity) {
+  if (arguments.length < 3) {
+    capacity = iterables.guessLength(iterable);
+
+    if (typeof capacity !== 'number')
+      throw new Error('mnemonist/fixed-deque.from: could not guess iterable length. Please provide desired capacity as last argument.');
+  }
+
+  var deque = new FixedDeque(ArrayClass, capacity);
+
+  if (iterables.isArrayLike(iterable)) {
+    var i, l;
+
+    for (i = 0, l = iterable.length; i < l; i++)
+      deque.items[i] = iterable[i];
+
+    deque.size = l;
+
+    return deque;
+  }
+
+  iterables.forEach(iterable, function(value) {
+    deque.push(value);
+  });
+
+  return deque;
+};
+
+/**
+ * Exporting.
+ */
+module.exports = FixedDeque;
+
+
+/***/ }),
+
+/***/ 4718:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist Fixed Reverse Heap
+ * =============================
+ *
+ * Static heap implementation with fixed capacity. It's a "reverse" heap
+ * because it stores the elements in reverse so we can replace the worst
+ * item in logarithmic time. As such, one cannot pop this heap but can only
+ * consume it at the end. This structure is very efficient when trying to
+ * find the n smallest/largest items from a larger query (k nearest neigbors
+ * for instance).
+ */
+var comparators = __nccwpck_require__(9815),
+    Heap = __nccwpck_require__(1965);
+
+var DEFAULT_COMPARATOR = comparators.DEFAULT_COMPARATOR,
+    reverseComparator = comparators.reverseComparator;
+
+/**
+ * Helper functions.
+ */
+
+/**
+ * Function used to sift up.
+ *
+ * @param {function} compare - Comparison function.
+ * @param {array}    heap    - Array storing the heap's data.
+ * @param {number}   size    - Heap's true size.
+ * @param {number}   i       - Index.
+ */
+function siftUp(compare, heap, size, i) {
+  var endIndex = size,
+      startIndex = i,
+      item = heap[i],
+      childIndex = 2 * i + 1,
+      rightIndex;
+
+  while (childIndex < endIndex) {
+    rightIndex = childIndex + 1;
+
+    if (
+      rightIndex < endIndex &&
+      compare(heap[childIndex], heap[rightIndex]) >= 0
+    ) {
+      childIndex = rightIndex;
+    }
+
+    heap[i] = heap[childIndex];
+    i = childIndex;
+    childIndex = 2 * i + 1;
+  }
+
+  heap[i] = item;
+  Heap.siftDown(compare, heap, startIndex, i);
+}
+
+/**
+ * Fully consumes the given heap.
+ *
+ * @param  {function} ArrayClass - Array class to use.
+ * @param  {function} compare    - Comparison function.
+ * @param  {array}    heap       - Array storing the heap's data.
+ * @param  {number}   size       - True size of the heap.
+ * @return {array}
+ */
+function consume(ArrayClass, compare, heap, size) {
+  var l = size,
+      i = l;
+
+  var array = new ArrayClass(size),
+      lastItem,
+      item;
+
+  while (i > 0) {
+    lastItem = heap[--i];
+
+    if (i !== 0) {
+      item = heap[0];
+      heap[0] = lastItem;
+      siftUp(compare, heap, --size, 0);
+      lastItem = item;
+    }
+
+    array[i] = lastItem;
+  }
+
+  return array;
+}
+
+/**
+ * Binary Minimum FixedReverseHeap.
+ *
+ * @constructor
+ * @param {function} ArrayClass - The class of array to use.
+ * @param {function} comparator - Comparator function.
+ * @param {number}   capacity   - Maximum number of items to keep.
+ */
+function FixedReverseHeap(ArrayClass, comparator, capacity) {
+
+  // Comparator can be omitted
+  if (arguments.length === 2) {
+    capacity = comparator;
+    comparator = null;
+  }
+
+  this.ArrayClass = ArrayClass;
+  this.capacity = capacity;
+
+  this.items = new ArrayClass(capacity);
+  this.clear();
+  this.comparator = comparator || DEFAULT_COMPARATOR;
+
+  if (typeof capacity !== 'number' && capacity <= 0)
+    throw new Error('mnemonist/FixedReverseHeap.constructor: capacity should be a number > 0.');
+
+  if (typeof this.comparator !== 'function')
+    throw new Error('mnemonist/FixedReverseHeap.constructor: given comparator should be a function.');
+
+  this.comparator = reverseComparator(this.comparator);
+}
+
+/**
+ * Method used to clear the heap.
+ *
+ * @return {undefined}
+ */
+FixedReverseHeap.prototype.clear = function() {
+
+  // Properties
+  this.size = 0;
+};
+
+/**
+ * Method used to push an item into the heap.
+ *
+ * @param  {any}    item - Item to push.
+ * @return {number}
+ */
+FixedReverseHeap.prototype.push = function(item) {
+
+  // Still some place
+  if (this.size < this.capacity) {
+    this.items[this.size] = item;
+    Heap.siftDown(this.comparator, this.items, 0, this.size);
+    this.size++;
+  }
+
+  // Heap is full, we need to replace worst item
+  else {
+
+    if (this.comparator(item, this.items[0]) > 0)
+      Heap.replace(this.comparator, this.items, item);
+  }
+
+  return this.size;
+};
+
+/**
+ * Method used to peek the worst item in the heap.
+ *
+ * @return {any}
+ */
+FixedReverseHeap.prototype.peek = function() {
+  return this.items[0];
+};
+
+/**
+ * Method used to consume the heap fully and return its items as a sorted array.
+ *
+ * @return {array}
+ */
+FixedReverseHeap.prototype.consume = function() {
+  var items = consume(this.ArrayClass, this.comparator, this.items, this.size);
+  this.size = 0;
+
+  return items;
+};
+
+/**
+ * Method used to convert the heap to an array. Note that it basically clone
+ * the heap and consumes it completely. This is hardly performant.
+ *
+ * @return {array}
+ */
+FixedReverseHeap.prototype.toArray = function() {
+  return consume(this.ArrayClass, this.comparator, this.items.slice(0, this.size), this.size);
+};
+
+/**
+ * Convenience known methods.
+ */
+FixedReverseHeap.prototype.inspect = function() {
+  var proxy = this.toArray();
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(proxy, 'constructor', {
+    value: FixedReverseHeap,
+    enumerable: false
+  });
+
+  return proxy;
+};
+
+if (typeof Symbol !== 'undefined')
+  FixedReverseHeap.prototype[Symbol.for('nodejs.util.inspect.custom')] = FixedReverseHeap.prototype.inspect;
+
+/**
+ * Exporting.
+ */
+module.exports = FixedReverseHeap;
+
+
+/***/ }),
+
+/***/ 1230:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist FixedStack
+ * =====================
+ *
+ * The fixed stack is a stack whose capacity is defined beforehand and that
+ * cannot be exceeded. This class is really useful when combined with
+ * byte arrays to save up some memory and avoid memory re-allocation, hence
+ * speeding up computations.
+ *
+ * This has however a downside: you need to know the maximum size you stack
+ * can have during your iteration (which is not too difficult to compute when
+ * performing, say, a DFS on a balanced binary tree).
+ */
+var Iterator = __nccwpck_require__(3062),
+    iterables = __nccwpck_require__(7304);
+
+/**
+ * FixedStack
+ *
+ * @constructor
+ * @param {function} ArrayClass - Array class to use.
+ * @param {number}   capacity   - Desired capacity.
+ */
+function FixedStack(ArrayClass, capacity) {
+
+  if (arguments.length < 2)
+    throw new Error('mnemonist/fixed-stack: expecting an Array class and a capacity.');
+
+  if (typeof capacity !== 'number' || capacity <= 0)
+    throw new Error('mnemonist/fixed-stack: `capacity` should be a positive number.');
+
+  this.capacity = capacity;
+  this.ArrayClass = ArrayClass;
+  this.items = new this.ArrayClass(this.capacity);
+  this.clear();
+}
+
+/**
+ * Method used to clear the stack.
+ *
+ * @return {undefined}
+ */
+FixedStack.prototype.clear = function() {
+
+  // Properties
+  this.size = 0;
+};
+
+/**
+ * Method used to add an item to the stack.
+ *
+ * @param  {any}    item - Item to add.
+ * @return {number}
+ */
+FixedStack.prototype.push = function(item) {
+  if (this.size === this.capacity)
+    throw new Error('mnemonist/fixed-stack.push: stack capacity (' + this.capacity + ') exceeded!');
+
+  this.items[this.size++] = item;
+  return this.size;
+};
+
+/**
+ * Method used to retrieve & remove the last item of the stack.
+ *
+ * @return {any}
+ */
+FixedStack.prototype.pop = function() {
+  if (this.size === 0)
+    return;
+
+  return this.items[--this.size];
+};
+
+/**
+ * Method used to get the last item of the stack.
+ *
+ * @return {any}
+ */
+FixedStack.prototype.peek = function() {
+  return this.items[this.size - 1];
+};
+
+/**
+ * Method used to iterate over the stack.
+ *
+ * @param  {function}  callback - Function to call for each item.
+ * @param  {object}    scope    - Optional scope.
+ * @return {undefined}
+ */
+FixedStack.prototype.forEach = function(callback, scope) {
+  scope = arguments.length > 1 ? scope : this;
+
+  for (var i = 0, l = this.items.length; i < l; i++)
+    callback.call(scope, this.items[l - i - 1], i, this);
+};
+
+/**
+ * Method used to convert the stack to a JavaScript array.
+ *
+ * @return {array}
+ */
+FixedStack.prototype.toArray = function() {
+  var array = new this.ArrayClass(this.size),
+      l = this.size - 1,
+      i = this.size;
+
+  while (i--)
+    array[i] = this.items[l - i];
+
+  return array;
+};
+
+/**
+ * Method used to create an iterator over a stack's values.
+ *
+ * @return {Iterator}
+ */
+FixedStack.prototype.values = function() {
+  var items = this.items,
+      l = this.size,
+      i = 0;
+
+  return new Iterator(function() {
+    if (i >= l)
+      return {
+        done: true
+      };
+
+    var value = items[l - i - 1];
+    i++;
+
+    return {
+      value: value,
+      done: false
+    };
+  });
+};
+
+/**
+ * Method used to create an iterator over a stack's entries.
+ *
+ * @return {Iterator}
+ */
+FixedStack.prototype.entries = function() {
+  var items = this.items,
+      l = this.size,
+      i = 0;
+
+  return new Iterator(function() {
+    if (i >= l)
+      return {
+        done: true
+      };
+
+    var value = items[l - i - 1];
+
+    return {
+      value: [i++, value],
+      done: false
+    };
+  });
+};
+
+/**
+ * Attaching the #.values method to Symbol.iterator if possible.
+ */
+if (typeof Symbol !== 'undefined')
+  FixedStack.prototype[Symbol.iterator] = FixedStack.prototype.values;
+
+
+/**
+ * Convenience known methods.
+ */
+FixedStack.prototype.toString = function() {
+  return this.toArray().join(',');
+};
+
+FixedStack.prototype.toJSON = function() {
+  return this.toArray();
+};
+
+FixedStack.prototype.inspect = function() {
+  var array = this.toArray();
+
+  array.type = this.ArrayClass.name;
+  array.capacity = this.capacity;
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(array, 'constructor', {
+    value: FixedStack,
+    enumerable: false
+  });
+
+  return array;
+};
+
+if (typeof Symbol !== 'undefined')
+  FixedStack.prototype[Symbol.for('nodejs.util.inspect.custom')] = FixedStack.prototype.inspect;
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a stack.
+ *
+ * @param  {Iterable} iterable   - Target iterable.
+ * @param  {function} ArrayClass - Array class to use.
+ * @param  {number}   capacity   - Desired capacity.
+ * @return {FixedStack}
+ */
+FixedStack.from = function(iterable, ArrayClass, capacity) {
+
+  if (arguments.length < 3) {
+    capacity = iterables.guessLength(iterable);
+
+    if (typeof capacity !== 'number')
+      throw new Error('mnemonist/fixed-stack.from: could not guess iterable length. Please provide desired capacity as last argument.');
+  }
+
+  var stack = new FixedStack(ArrayClass, capacity);
+
+  if (iterables.isArrayLike(iterable)) {
+    var i, l;
+
+    for (i = 0, l = iterable.length; i < l; i++)
+      stack.items[i] = iterable[i];
+
+    stack.size = l;
+
+    return stack;
+  }
+
+  iterables.forEach(iterable, function(value) {
+    stack.push(value);
+  });
+
+  return stack;
+};
+
+/**
+ * Exporting.
+ */
+module.exports = FixedStack;
+
+
+/***/ }),
+
+/***/ 9873:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist Fuzzy Map
+ * ====================
+ *
+ * The fuzzy map is a map whose keys are processed by a function before
+ * read/write operations. This can often result in multiple keys accessing
+ * the same resource (example: a map with lowercased keys).
+ */
+var forEach = __nccwpck_require__(8968);
+
+var identity = function(x) {
+  return x;
+};
+
+/**
+ * FuzzyMap.
+ *
+ * @constructor
+ * @param {array|function} descriptor - Hash functions descriptor.
+ */
+function FuzzyMap(descriptor) {
+  this.items = new Map();
+  this.clear();
+
+  if (Array.isArray(descriptor)) {
+    this.writeHashFunction = descriptor[0];
+    this.readHashFunction = descriptor[1];
+  }
+  else {
+    this.writeHashFunction = descriptor;
+    this.readHashFunction = descriptor;
+  }
+
+  if (!this.writeHashFunction)
+    this.writeHashFunction = identity;
+  if (!this.readHashFunction)
+    this.readHashFunction = identity;
+
+  if (typeof this.writeHashFunction !== 'function')
+    throw new Error('mnemonist/FuzzyMap.constructor: invalid hash function given.');
+
+  if (typeof this.readHashFunction !== 'function')
+    throw new Error('mnemonist/FuzzyMap.constructor: invalid hash function given.');
+}
+
+/**
+ * Method used to clear the structure.
+ *
+ * @return {undefined}
+ */
+FuzzyMap.prototype.clear = function() {
+  this.items.clear();
+
+  // Properties
+  this.size = 0;
+};
+
+/**
+ * Method used to add an item to the FuzzyMap.
+ *
+ * @param  {any} item - Item to add.
+ * @return {FuzzyMap}
+ */
+FuzzyMap.prototype.add = function(item) {
+  var key = this.writeHashFunction(item);
+
+  this.items.set(key, item);
+  this.size = this.items.size;
+
+  return this;
+};
+
+/**
+ * Method used to set an item in the FuzzyMap using the given key.
+ *
+ * @param  {any} key  - Key to use.
+ * @param  {any} item - Item to add.
+ * @return {FuzzyMap}
+ */
+FuzzyMap.prototype.set = function(key, item) {
+  key = this.writeHashFunction(key);
+
+  this.items.set(key, item);
+  this.size = this.items.size;
+
+  return this;
+};
+
+/**
+ * Method used to retrieve an item from the FuzzyMap.
+ *
+ * @param  {any} key - Key to use.
+ * @return {any}
+ */
+FuzzyMap.prototype.get = function(key) {
+  key = this.readHashFunction(key);
+
+  return this.items.get(key);
+};
+
+/**
+ * Method used to test the existence of an item in the map.
+ *
+ * @param  {any} key - Key to check.
+ * @return {boolean}
+ */
+FuzzyMap.prototype.has = function(key) {
+  key = this.readHashFunction(key);
+
+  return this.items.has(key);
+};
+
+/**
+ * Method used to iterate over each of the FuzzyMap's values.
+ *
+ * @param  {function}  callback - Function to call for each item.
+ * @param  {object}    scope    - Optional scope.
+ * @return {undefined}
+ */
+FuzzyMap.prototype.forEach = function(callback, scope) {
+  scope = arguments.length > 1 ? scope : this;
+
+  this.items.forEach(function(value) {
+    callback.call(scope, value, value);
+  });
+};
+
+/**
+ * Method returning an iterator over the FuzzyMap's values.
+ *
+ * @return {FuzzyMapIterator}
+ */
+FuzzyMap.prototype.values = function() {
+  return this.items.values();
+};
+
+/**
+ * Attaching the #.values method to Symbol.iterator if possible.
+ */
+if (typeof Symbol !== 'undefined')
+  FuzzyMap.prototype[Symbol.iterator] = FuzzyMap.prototype.values;
+
+/**
+ * Convenience known method.
+ */
+FuzzyMap.prototype.inspect = function() {
+  var array = Array.from(this.items.values());
+
+  Object.defineProperty(array, 'constructor', {
+    value: FuzzyMap,
+    enumerable: false
+  });
+
+  return array;
+};
+
+if (typeof Symbol !== 'undefined')
+  FuzzyMap.prototype[Symbol.for('nodejs.util.inspect.custom')] = FuzzyMap.prototype.inspect;
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a structure.
+ *
+ * @param  {Iterable}       iterable   - Target iterable.
+ * @param  {array|function} descriptor - Hash functions descriptor.
+ * @param  {boolean}        useSet     - Whether to use #.set or #.add
+ * @return {FuzzyMap}
+ */
+FuzzyMap.from = function(iterable, descriptor, useSet) {
+  var map = new FuzzyMap(descriptor);
+
+  forEach(iterable, function(value, key) {
+    if (useSet)
+      map.set(key, value);
+    else
+      map.add(value);
+  });
+
+  return map;
+};
+
+/**
+ * Exporting.
+ */
+module.exports = FuzzyMap;
+
+
+/***/ }),
+
+/***/ 9925:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist FuzzyMultiMap
+ * ========================
+ *
+ * Same as the fuzzy map but relying on a MultiMap rather than a Map.
+ */
+var MultiMap = __nccwpck_require__(423),
+    forEach = __nccwpck_require__(8968);
+
+var identity = function(x) {
+  return x;
+};
+
+/**
+ * FuzzyMultiMap.
+ *
+ * @constructor
+ * @param {array|function} descriptor - Hash functions descriptor.
+ * @param {function}       Container  - Container to use.
+ */
+function FuzzyMultiMap(descriptor, Container) {
+  this.items = new MultiMap(Container);
+  this.clear();
+
+  if (Array.isArray(descriptor)) {
+    this.writeHashFunction = descriptor[0];
+    this.readHashFunction = descriptor[1];
+  }
+  else {
+    this.writeHashFunction = descriptor;
+    this.readHashFunction = descriptor;
+  }
+
+  if (!this.writeHashFunction)
+    this.writeHashFunction = identity;
+  if (!this.readHashFunction)
+    this.readHashFunction = identity;
+
+  if (typeof this.writeHashFunction !== 'function')
+    throw new Error('mnemonist/FuzzyMultiMap.constructor: invalid hash function given.');
+
+  if (typeof this.readHashFunction !== 'function')
+    throw new Error('mnemonist/FuzzyMultiMap.constructor: invalid hash function given.');
+}
+
+/**
+ * Method used to clear the structure.
+ *
+ * @return {undefined}
+ */
+FuzzyMultiMap.prototype.clear = function() {
+  this.items.clear();
+
+  // Properties
+  this.size = 0;
+  this.dimension = 0;
+};
+
+/**
+ * Method used to add an item to the index.
+ *
+ * @param  {any} item - Item to add.
+ * @return {FuzzyMultiMap}
+ */
+FuzzyMultiMap.prototype.add = function(item) {
+  var key = this.writeHashFunction(item);
+
+  this.items.set(key, item);
+  this.size = this.items.size;
+  this.dimension = this.items.dimension;
+
+  return this;
+};
+
+/**
+ * Method used to set an item in the index using the given key.
+ *
+ * @param  {any} key  - Key to use.
+ * @param  {any} item - Item to add.
+ * @return {FuzzyMultiMap}
+ */
+FuzzyMultiMap.prototype.set = function(key, item) {
+  key = this.writeHashFunction(key);
+
+  this.items.set(key, item);
+  this.size = this.items.size;
+  this.dimension = this.items.dimension;
+
+  return this;
+};
+
+/**
+ * Method used to retrieve an item from the index.
+ *
+ * @param  {any} key - Key to use.
+ * @return {any}
+ */
+FuzzyMultiMap.prototype.get = function(key) {
+  key = this.readHashFunction(key);
+
+  return this.items.get(key);
+};
+
+/**
+ * Method used to test the existence of an item in the map.
+ *
+ * @param  {any} key - Key to check.
+ * @return {boolean}
+ */
+FuzzyMultiMap.prototype.has = function(key) {
+  key = this.readHashFunction(key);
+
+  return this.items.has(key);
+};
+
+/**
+ * Method used to iterate over each of the index's values.
+ *
+ * @param  {function}  callback - Function to call for each item.
+ * @param  {object}    scope    - Optional scope.
+ * @return {undefined}
+ */
+FuzzyMultiMap.prototype.forEach = function(callback, scope) {
+  scope = arguments.length > 1 ? scope : this;
+
+  this.items.forEach(function(value) {
+    callback.call(scope, value, value);
+  });
+};
+
+/**
+ * Method returning an iterator over the index's values.
+ *
+ * @return {FuzzyMultiMapIterator}
+ */
+FuzzyMultiMap.prototype.values = function() {
+  return this.items.values();
+};
+
+/**
+ * Attaching the #.values method to Symbol.iterator if possible.
+ */
+if (typeof Symbol !== 'undefined')
+  FuzzyMultiMap.prototype[Symbol.iterator] = FuzzyMultiMap.prototype.values;
+
+/**
+ * Convenience known method.
+ */
+FuzzyMultiMap.prototype.inspect = function() {
+  var array = Array.from(this);
+
+  Object.defineProperty(array, 'constructor', {
+    value: FuzzyMultiMap,
+    enumerable: false
+  });
+
+  return array;
+};
+
+if (typeof Symbol !== 'undefined')
+  FuzzyMultiMap.prototype[Symbol.for('nodejs.util.inspect.custom')] = FuzzyMultiMap.prototype.inspect;
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a structure.
+ *
+ * @param  {Iterable}       iterable   - Target iterable.
+ * @param  {array|function} descriptor - Hash functions descriptor.
+ * @param  {function}       Container  - Container to use.
+ * @param  {boolean}        useSet     - Whether to use #.set or #.add
+ * @return {FuzzyMultiMap}
+ */
+FuzzyMultiMap.from = function(iterable, descriptor, Container, useSet) {
+  if (arguments.length === 3) {
+    if (typeof Container === 'boolean') {
+      useSet = Container;
+      Container = Array;
+    }
+  }
+
+  var map = new FuzzyMultiMap(descriptor, Container);
+
+  forEach(iterable, function(value, key) {
+    if (useSet)
+      map.set(key, value);
+    else
+      map.add(value);
+  });
+
+  return map;
+};
+
+/**
+ * Exporting.
+ */
+module.exports = FuzzyMultiMap;
+
+
+/***/ }),
+
+/***/ 9513:
+/***/ ((module) => {
+
+/**
+ * Mnemonist HashedArrayTree
+ * ==========================
+ *
+ * Abstract implementation of a hashed array tree representing arrays growing
+ * dynamically.
+ */
+
+/**
+ * Defaults.
+ */
+var DEFAULT_BLOCK_SIZE = 1024;
+
+/**
+ * Helpers.
+ */
+function powerOfTwo(x) {
+  return (x & (x - 1)) === 0;
+}
+
+/**
+ * HashedArrayTree.
+ *
+ * @constructor
+ * @param {function}      ArrayClass           - An array constructor.
+ * @param {number|object} initialCapacityOrOptions - Self-explanatory.
+ */
+function HashedArrayTree(ArrayClass, initialCapacityOrOptions) {
+  if (arguments.length < 1)
+    throw new Error('mnemonist/hashed-array-tree: expecting at least a byte array constructor.');
+
+  var initialCapacity = initialCapacityOrOptions || 0,
+      blockSize = DEFAULT_BLOCK_SIZE,
+      initialLength = 0;
+
+  if (typeof initialCapacityOrOptions === 'object') {
+    initialCapacity = initialCapacityOrOptions.initialCapacity || 0;
+    initialLength = initialCapacityOrOptions.initialLength || 0;
+    blockSize = initialCapacityOrOptions.blockSize || DEFAULT_BLOCK_SIZE;
+  }
+
+  if (!blockSize || !powerOfTwo(blockSize))
+    throw new Error('mnemonist/hashed-array-tree: block size should be a power of two.');
+
+  var capacity = Math.max(initialLength, initialCapacity),
+      initialBlocks = Math.ceil(capacity / blockSize);
+
+  this.ArrayClass = ArrayClass;
+  this.length = initialLength;
+  this.capacity = initialBlocks * blockSize;
+  this.blockSize = blockSize;
+  this.offsetMask = blockSize - 1;
+  this.blockMask = Math.log2(blockSize);
+
+  // Allocating initial blocks
+  this.blocks = new Array(initialBlocks);
+
+  for (var i = 0; i < initialBlocks; i++)
+    this.blocks[i] = new this.ArrayClass(this.blockSize);
+}
+
+/**
+ * Method used to set a value.
+ *
+ * @param  {number} index - Index to edit.
+ * @param  {any}    value - Value.
+ * @return {HashedArrayTree}
+ */
+HashedArrayTree.prototype.set = function(index, value) {
+
+  // Out of bounds?
+  if (this.length < index)
+    throw new Error('HashedArrayTree(' + this.ArrayClass.name + ').set: index out of bounds.');
+
+  var block = index >> this.blockMask,
+      i = index & this.offsetMask;
+
+  this.blocks[block][i] = value;
+
+  return this;
+};
+
+/**
+ * Method used to get a value.
+ *
+ * @param  {number} index - Index to retrieve.
+ * @return {any}
+ */
+HashedArrayTree.prototype.get = function(index) {
+  if (this.length < index)
+    return;
+
+  var block = index >> this.blockMask,
+      i = index & this.offsetMask;
+
+  return this.blocks[block][i];
+};
+
+/**
+ * Method used to grow the array.
+ *
+ * @param  {number}          capacity - Optional capacity to accomodate.
+ * @return {HashedArrayTree}
+ */
+HashedArrayTree.prototype.grow = function(capacity) {
+  if (typeof capacity !== 'number')
+    capacity = this.capacity + this.blockSize;
+
+  if (this.capacity >= capacity)
+    return this;
+
+  while (this.capacity < capacity) {
+    this.blocks.push(new this.ArrayClass(this.blockSize));
+    this.capacity += this.blockSize;
+  }
+
+  return this;
+};
+
+/**
+ * Method used to resize the array. Won't deallocate.
+ *
+ * @param  {number}       length - Target length.
+ * @return {HashedArrayTree}
+ */
+HashedArrayTree.prototype.resize = function(length) {
+  if (length === this.length)
+    return this;
+
+  if (length < this.length) {
+    this.length = length;
+    return this;
+  }
+
+  this.length = length;
+  this.grow(length);
+
+  return this;
+};
+
+/**
+ * Method used to push a value into the array.
+ *
+ * @param  {any}    value - Value to push.
+ * @return {number}       - Length of the array.
+ */
+HashedArrayTree.prototype.push = function(value) {
+  if (this.capacity === this.length)
+    this.grow();
+
+  var index = this.length;
+
+  var block = index >> this.blockMask,
+      i = index & this.offsetMask;
+
+  this.blocks[block][i] = value;
+
+  return ++this.length;
+};
+
+/**
+ * Method used to pop the last value of the array.
+ *
+ * @return {number} - The popped value.
+ */
+HashedArrayTree.prototype.pop = function() {
+  if (this.length === 0)
+    return;
+
+  var lastBlock = this.blocks[this.blocks.length - 1];
+
+  var i = (--this.length) & this.offsetMask;
+
+  return lastBlock[i];
+};
+
+/**
+ * Convenience known methods.
+ */
+HashedArrayTree.prototype.inspect = function() {
+  var proxy = new this.ArrayClass(this.length),
+      block;
+
+  for (var i = 0, l = this.length; i < l; i++) {
+    block = i >> this.blockMask;
+    proxy[i] = this.blocks[block][i & this.offsetMask];
+  }
+
+  proxy.type = this.ArrayClass.name;
+  proxy.items = this.length;
+  proxy.capacity = this.capacity;
+  proxy.blockSize = this.blockSize;
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(proxy, 'constructor', {
+    value: HashedArrayTree,
+    enumerable: false
+  });
+
+  return proxy;
+};
+
+if (typeof Symbol !== 'undefined')
+  HashedArrayTree.prototype[Symbol.for('nodejs.util.inspect.custom')] = HashedArrayTree.prototype.inspect;
+
+/**
+ * Exporting.
+ */
+module.exports = HashedArrayTree;
+
+
+/***/ }),
+
+/***/ 1965:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist Binary Heap
+ * ======================
+ *
+ * Binary heap implementation.
+ */
+var forEach = __nccwpck_require__(8968),
+    comparators = __nccwpck_require__(9815),
+    iterables = __nccwpck_require__(7304);
+
+var DEFAULT_COMPARATOR = comparators.DEFAULT_COMPARATOR,
+    reverseComparator = comparators.reverseComparator;
+
+/**
+ * Heap helper functions.
+ */
+
+/**
+ * Function used to sift down.
+ *
+ * @param {function} compare    - Comparison function.
+ * @param {array}    heap       - Array storing the heap's data.
+ * @param {number}   startIndex - Starting index.
+ * @param {number}   i          - Index.
+ */
+function siftDown(compare, heap, startIndex, i) {
+  var item = heap[i],
+      parentIndex,
+      parent;
+
+  while (i > startIndex) {
+    parentIndex = (i - 1) >> 1;
+    parent = heap[parentIndex];
+
+    if (compare(item, parent) < 0) {
+      heap[i] = parent;
+      i = parentIndex;
+      continue;
+    }
+
+    break;
+  }
+
+  heap[i] = item;
+}
+
+/**
+ * Function used to sift up.
+ *
+ * @param {function} compare - Comparison function.
+ * @param {array}    heap    - Array storing the heap's data.
+ * @param {number}   i       - Index.
+ */
+function siftUp(compare, heap, i) {
+  var endIndex = heap.length,
+      startIndex = i,
+      item = heap[i],
+      childIndex = 2 * i + 1,
+      rightIndex;
+
+  while (childIndex < endIndex) {
+    rightIndex = childIndex + 1;
+
+    if (
+      rightIndex < endIndex &&
+      compare(heap[childIndex], heap[rightIndex]) >= 0
+    ) {
+      childIndex = rightIndex;
+    }
+
+    heap[i] = heap[childIndex];
+    i = childIndex;
+    childIndex = 2 * i + 1;
+  }
+
+  heap[i] = item;
+  siftDown(compare, heap, startIndex, i);
+}
+
+/**
+ * Function used to push an item into a heap represented by a raw array.
+ *
+ * @param {function} compare - Comparison function.
+ * @param {array}    heap    - Array storing the heap's data.
+ * @param {any}      item    - Item to push.
+ */
+function push(compare, heap, item) {
+  heap.push(item);
+  siftDown(compare, heap, 0, heap.length - 1);
+}
+
+/**
+ * Function used to pop an item from a heap represented by a raw array.
+ *
+ * @param  {function} compare - Comparison function.
+ * @param  {array}    heap    - Array storing the heap's data.
+ * @return {any}
+ */
+function pop(compare, heap) {
+  var lastItem = heap.pop();
+
+  if (heap.length !== 0) {
+    var item = heap[0];
+    heap[0] = lastItem;
+    siftUp(compare, heap, 0);
+
+    return item;
+  }
+
+  return lastItem;
+}
+
+/**
+ * Function used to pop the heap then push a new value into it, thus "replacing"
+ * it.
+ *
+ * @param  {function} compare - Comparison function.
+ * @param  {array}    heap    - Array storing the heap's data.
+ * @param  {any}      item    - The item to push.
+ * @return {any}
+ */
+function replace(compare, heap, item) {
+  if (heap.length === 0)
+    throw new Error('mnemonist/heap.replace: cannot pop an empty heap.');
+
+  var popped = heap[0];
+  heap[0] = item;
+  siftUp(compare, heap, 0);
+
+  return popped;
+}
+
+/**
+ * Function used to push an item in the heap then pop the heap and return the
+ * popped value.
+ *
+ * @param  {function} compare - Comparison function.
+ * @param  {array}    heap    - Array storing the heap's data.
+ * @param  {any}      item    - The item to push.
+ * @return {any}
+ */
+function pushpop(compare, heap, item) {
+  var tmp;
+
+  if (heap.length !== 0 && compare(heap[0], item) < 0) {
+    tmp = heap[0];
+    heap[0] = item;
+    item = tmp;
+    siftUp(compare, heap, 0);
+  }
+
+  return item;
+}
+
+/**
+ * Converts and array into an abstract heap in linear time.
+ *
+ * @param {function} compare - Comparison function.
+ * @param {array}    array   - Target array.
+ */
+function heapify(compare, array) {
+  var n = array.length,
+      l = n >> 1,
+      i = l;
+
+  while (--i >= 0)
+    siftUp(compare, array, i);
+}
+
+/**
+ * Fully consumes the given heap.
+ *
+ * @param  {function} compare - Comparison function.
+ * @param  {array}    heap    - Array storing the heap's data.
+ * @return {array}
+ */
+function consume(compare, heap) {
+  var l = heap.length,
+      i = 0;
+
+  var array = new Array(l);
+
+  while (i < l)
+    array[i++] = pop(compare, heap);
+
+  return array;
+}
+
+/**
+ * Function used to retrieve the n smallest items from the given iterable.
+ *
+ * @param {function} compare  - Comparison function.
+ * @param {number}   n        - Number of top items to retrieve.
+ * @param {any}      iterable - Arbitrary iterable.
+ * @param {array}
+ */
+function nsmallest(compare, n, iterable) {
+  if (arguments.length === 2) {
+    iterable = n;
+    n = compare;
+    compare = DEFAULT_COMPARATOR;
+  }
+
+  var reverseCompare = reverseComparator(compare);
+
+  var i, l, v;
+
+  var min = Infinity;
+
+  var result;
+
+  // If n is equal to 1, it's just a matter of finding the minimum
+  if (n === 1) {
+    if (iterables.isArrayLike(iterable)) {
+      for (i = 0, l = iterable.length; i < l; i++) {
+        v = iterable[i];
+
+        if (min === Infinity || compare(v, min) < 0)
+          min = v;
+      }
+
+      result = new iterable.constructor(1);
+      result[0] = min;
+
+      return result;
+    }
+
+    forEach(iterable, function(value) {
+      if (min === Infinity || compare(value, min) < 0)
+        min = value;
+    });
+
+    return [min];
+  }
+
+  if (iterables.isArrayLike(iterable)) {
+
+    // If n > iterable length, we just clone and sort
+    if (n >= iterable.length)
+      return iterable.slice().sort(compare);
+
+    result = iterable.slice(0, n);
+    heapify(reverseCompare, result);
+
+    for (i = n, l = iterable.length; i < l; i++)
+      if (reverseCompare(iterable[i], result[0]) > 0)
+        replace(reverseCompare, result, iterable[i]);
+
+    // NOTE: if n is over some number, it becomes faster to consume the heap
+    return result.sort(compare);
+  }
+
+  // Correct for size
+  var size = iterables.guessLength(iterable);
+
+  if (size !== null && size < n)
+    n = size;
+
+  result = new Array(n);
+  i = 0;
+
+  forEach(iterable, function(value) {
+    if (i < n) {
+      result[i] = value;
+    }
+    else {
+      if (i === n)
+        heapify(reverseCompare, result);
+
+      if (reverseCompare(value, result[0]) > 0)
+        replace(reverseCompare, result, value);
+    }
+
+    i++;
+  });
+
+  if (result.length > i)
+    result.length = i;
+
+  // NOTE: if n is over some number, it becomes faster to consume the heap
+  return result.sort(compare);
+}
+
+/**
+ * Function used to retrieve the n largest items from the given iterable.
+ *
+ * @param {function} compare  - Comparison function.
+ * @param {number}   n        - Number of top items to retrieve.
+ * @param {any}      iterable - Arbitrary iterable.
+ * @param {array}
+ */
+function nlargest(compare, n, iterable) {
+  if (arguments.length === 2) {
+    iterable = n;
+    n = compare;
+    compare = DEFAULT_COMPARATOR;
+  }
+
+  var reverseCompare = reverseComparator(compare);
+
+  var i, l, v;
+
+  var max = -Infinity;
+
+  var result;
+
+  // If n is equal to 1, it's just a matter of finding the maximum
+  if (n === 1) {
+    if (iterables.isArrayLike(iterable)) {
+      for (i = 0, l = iterable.length; i < l; i++) {
+        v = iterable[i];
+
+        if (max === -Infinity || compare(v, max) > 0)
+          max = v;
+      }
+
+      result = new iterable.constructor(1);
+      result[0] = max;
+
+      return result;
+    }
+
+    forEach(iterable, function(value) {
+      if (max === -Infinity || compare(value, max) > 0)
+        max = value;
+    });
+
+    return [max];
+  }
+
+  if (iterables.isArrayLike(iterable)) {
+
+    // If n > iterable length, we just clone and sort
+    if (n >= iterable.length)
+      return iterable.slice().sort(reverseCompare);
+
+    result = iterable.slice(0, n);
+    heapify(compare, result);
+
+    for (i = n, l = iterable.length; i < l; i++)
+      if (compare(iterable[i], result[0]) > 0)
+        replace(compare, result, iterable[i]);
+
+    // NOTE: if n is over some number, it becomes faster to consume the heap
+    return result.sort(reverseCompare);
+  }
+
+  // Correct for size
+  var size = iterables.guessLength(iterable);
+
+  if (size !== null && size < n)
+    n = size;
+
+  result = new Array(n);
+  i = 0;
+
+  forEach(iterable, function(value) {
+    if (i < n) {
+      result[i] = value;
+    }
+    else {
+      if (i === n)
+        heapify(compare, result);
+
+      if (compare(value, result[0]) > 0)
+        replace(compare, result, value);
+    }
+
+    i++;
+  });
+
+  if (result.length > i)
+    result.length = i;
+
+  // NOTE: if n is over some number, it becomes faster to consume the heap
+  return result.sort(reverseCompare);
+}
+
+/**
+ * Binary Minimum Heap.
+ *
+ * @constructor
+ * @param {function} comparator - Comparator function to use.
+ */
+function Heap(comparator) {
+  this.clear();
+  this.comparator = comparator || DEFAULT_COMPARATOR;
+
+  if (typeof this.comparator !== 'function')
+    throw new Error('mnemonist/Heap.constructor: given comparator should be a function.');
+}
+
+/**
+ * Method used to clear the heap.
+ *
+ * @return {undefined}
+ */
+Heap.prototype.clear = function() {
+
+  // Properties
+  this.items = [];
+  this.size = 0;
+};
+
+/**
+ * Method used to push an item into the heap.
+ *
+ * @param  {any}    item - Item to push.
+ * @return {number}
+ */
+Heap.prototype.push = function(item) {
+  push(this.comparator, this.items, item);
+  return ++this.size;
+};
+
+/**
+ * Method used to retrieve the "first" item of the heap.
+ *
+ * @return {any}
+ */
+Heap.prototype.peek = function() {
+  return this.items[0];
+};
+
+/**
+ * Method used to retrieve & remove the "first" item of the heap.
+ *
+ * @return {any}
+ */
+Heap.prototype.pop = function() {
+  if (this.size !== 0)
+    this.size--;
+
+  return pop(this.comparator, this.items);
+};
+
+/**
+ * Method used to pop the heap, then push an item and return the popped
+ * item.
+ *
+ * @param  {any} item - Item to push into the heap.
+ * @return {any}
+ */
+Heap.prototype.replace = function(item) {
+  return replace(this.comparator, this.items, item);
+};
+
+/**
+ * Method used to push the heap, the pop it and return the pooped item.
+ *
+ * @param  {any} item - Item to push into the heap.
+ * @return {any}
+ */
+Heap.prototype.pushpop = function(item) {
+  return pushpop(this.comparator, this.items, item);
+};
+
+/**
+ * Method used to consume the heap fully and return its items as a sorted array.
+ *
+ * @return {array}
+ */
+Heap.prototype.consume = function() {
+  this.size = 0;
+  return consume(this.comparator, this.items);
+};
+
+/**
+ * Method used to convert the heap to an array. Note that it basically clone
+ * the heap and consumes it completely. This is hardly performant.
+ *
+ * @return {array}
+ */
+Heap.prototype.toArray = function() {
+  return consume(this.comparator, this.items.slice());
+};
+
+/**
+ * Convenience known methods.
+ */
+Heap.prototype.inspect = function() {
+  var proxy = this.toArray();
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(proxy, 'constructor', {
+    value: Heap,
+    enumerable: false
+  });
+
+  return proxy;
+};
+
+if (typeof Symbol !== 'undefined')
+  Heap.prototype[Symbol.for('nodejs.util.inspect.custom')] = Heap.prototype.inspect;
+
+/**
+ * Binary Maximum Heap.
+ *
+ * @constructor
+ * @param {function} comparator - Comparator function to use.
+ */
+function MaxHeap(comparator) {
+  this.clear();
+  this.comparator = comparator || DEFAULT_COMPARATOR;
+
+  if (typeof this.comparator !== 'function')
+    throw new Error('mnemonist/MaxHeap.constructor: given comparator should be a function.');
+
+  this.comparator = reverseComparator(this.comparator);
+}
+
+MaxHeap.prototype = Heap.prototype;
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a heap.
+ *
+ * @param  {Iterable} iterable   - Target iterable.
+ * @param  {function} comparator - Custom comparator function.
+ * @return {Heap}
+ */
+Heap.from = function(iterable, comparator) {
+  var heap = new Heap(comparator);
+
+  var items;
+
+  // If iterable is an array, we can be clever about it
+  if (iterables.isArrayLike(iterable))
+    items = iterable.slice();
+  else
+    items = iterables.toArray(iterable);
+
+  heapify(heap.comparator, items);
+  heap.items = items;
+  heap.size = items.length;
+
+  return heap;
+};
+
+MaxHeap.from = function(iterable, comparator) {
+  var heap = new MaxHeap(comparator);
+
+  var items;
+
+  // If iterable is an array, we can be clever about it
+  if (iterables.isArrayLike(iterable))
+    items = iterable.slice();
+  else
+    items = iterables.toArray(iterable);
+
+  heapify(heap.comparator, items);
+  heap.items = items;
+  heap.size = items.length;
+
+  return heap;
+};
+
+/**
+ * Exporting.
+ */
+Heap.siftUp = siftUp;
+Heap.siftDown = siftDown;
+Heap.push = push;
+Heap.pop = pop;
+Heap.replace = replace;
+Heap.pushpop = pushpop;
+Heap.heapify = heapify;
+Heap.consume = consume;
+
+Heap.nsmallest = nsmallest;
+Heap.nlargest = nlargest;
+
+Heap.MinHeap = Heap;
+Heap.MaxHeap = MaxHeap;
+
+module.exports = Heap;
+
+
+/***/ }),
+
+/***/ 2868:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist Library Endpoint
+ * ===========================
+ *
+ * Exporting every data structure through a unified endpoint. Consumers
+ * of this library should prefer the modular access though.
+ */
+var Heap = __nccwpck_require__(1965),
+    FibonacciHeap = __nccwpck_require__(2929),
+    SuffixArray = __nccwpck_require__(8624);
+
+module.exports = {
+  BiMap: __nccwpck_require__(4939),
+  BitSet: __nccwpck_require__(2584),
+  BitVector: __nccwpck_require__(1253),
+  BloomFilter: __nccwpck_require__(1944),
+  BKTree: __nccwpck_require__(4696),
+  CircularBuffer: __nccwpck_require__(3897),
+  DefaultMap: __nccwpck_require__(2812),
+  DefaultWeakMap: __nccwpck_require__(5669),
+  FixedDeque: __nccwpck_require__(8265),
+  StaticDisjointSet: __nccwpck_require__(9538),
+  FibonacciHeap: FibonacciHeap,
+  MinFibonacciHeap: FibonacciHeap.MinFibonacciHeap,
+  MaxFibonacciHeap: FibonacciHeap.MaxFibonacciHeap,
+  FixedReverseHeap: __nccwpck_require__(4718),
+  FuzzyMap: __nccwpck_require__(9873),
+  FuzzyMultiMap: __nccwpck_require__(9925),
+  HashedArrayTree: __nccwpck_require__(9513),
+  Heap: Heap,
+  MinHeap: Heap.MinHeap,
+  MaxHeap: Heap.MaxHeap,
+  StaticIntervalTree: __nccwpck_require__(1336),
+  InvertedIndex: __nccwpck_require__(4170),
+  KDTree: __nccwpck_require__(8179),
+  LinkedList: __nccwpck_require__(5634),
+  LRUCache: __nccwpck_require__(4934),
+  LRUMap: __nccwpck_require__(7630),
+  MultiMap: __nccwpck_require__(423),
+  MultiSet: __nccwpck_require__(8601),
+  PassjoinIndex: __nccwpck_require__(7472),
+  Queue: __nccwpck_require__(1590),
+  FixedStack: __nccwpck_require__(1230),
+  Stack: __nccwpck_require__(4226),
+  SuffixArray: SuffixArray,
+  GeneralizedSuffixArray: SuffixArray.GeneralizedSuffixArray,
+  Set: __nccwpck_require__(5654),
+  SparseQueueSet: __nccwpck_require__(6231),
+  SparseMap: __nccwpck_require__(2695),
+  SparseSet: __nccwpck_require__(5082),
+  SymSpell: __nccwpck_require__(5729),
+  Trie: __nccwpck_require__(1397),
+  TrieMap: __nccwpck_require__(1125),
+  Vector: __nccwpck_require__(4360),
+  VPTree: __nccwpck_require__(7963)
+};
+
+
+/***/ }),
+
+/***/ 4170:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist Inverted Index
+ * =========================
+ *
+ * JavaScript implementation of an inverted index.
+ */
+var Iterator = __nccwpck_require__(3062),
+    forEach = __nccwpck_require__(8968),
+    helpers = __nccwpck_require__(7553);
+
+function identity(x) {
+  return x;
+}
+
+/**
+ * InvertedIndex.
+ *
+ * @constructor
+ * @param {function} tokenizer - Tokenizer function.
+ */
+function InvertedIndex(descriptor) {
+  this.clear();
+
+  if (Array.isArray(descriptor)) {
+    this.documentTokenizer = descriptor[0];
+    this.queryTokenizer = descriptor[1];
+  }
+  else {
+    this.documentTokenizer = descriptor;
+    this.queryTokenizer = descriptor;
+  }
+
+  if (!this.documentTokenizer)
+    this.documentTokenizer = identity;
+  if (!this.queryTokenizer)
+    this.queryTokenizer = identity;
+
+  if (typeof this.documentTokenizer !== 'function')
+    throw new Error('mnemonist/InvertedIndex.constructor: document tokenizer is not a function.');
+
+  if (typeof this.queryTokenizer !== 'function')
+    throw new Error('mnemonist/InvertedIndex.constructor: query tokenizer is not a function.');
+}
+
+/**
+ * Method used to clear the InvertedIndex.
+ *
+ * @return {undefined}
+ */
+InvertedIndex.prototype.clear = function() {
+
+  // Properties
+  this.items = [];
+  this.mapping = new Map();
+  this.size = 0;
+  this.dimension = 0;
+};
+
+/**
+ * Method used to add a document to the index.
+ *
+ * @param  {any} doc - Item to add.
+ * @return {InvertedIndex}
+ */
+InvertedIndex.prototype.add = function(doc) {
+
+  // Increasing size
+  this.size++;
+
+  // Storing document
+  var key = this.items.length;
+  this.items.push(doc);
+
+  // Tokenizing the document
+  var tokens = this.documentTokenizer(doc);
+
+  if (!Array.isArray(tokens))
+    throw new Error('mnemonist/InvertedIndex.add: tokenizer function should return an array of tokens.');
+
+  // Indexing
+  var done = new Set(),
+      token,
+      container;
+
+  for (var i = 0, l = tokens.length; i < l; i++) {
+    token = tokens[i];
+
+    if (done.has(token))
+      continue;
+
+    done.add(token);
+
+    container = this.mapping.get(token);
+
+    if (!container) {
+      container = [];
+      this.mapping.set(token, container);
+    }
+
+    container.push(key);
+  }
+
+  this.dimension = this.mapping.size;
+
+  return this;
+};
+
+/**
+ * Method used to query the index in a AND fashion.
+ *
+ * @param  {any} query - Query
+ * @return {Set}       - Intersection of documents matching the query.
+ */
+InvertedIndex.prototype.get = function(query) {
+
+  // Early termination
+  if (!this.size)
+    return [];
+
+  // First we need to tokenize the query
+  var tokens = this.queryTokenizer(query);
+
+  if (!Array.isArray(tokens))
+    throw new Error('mnemonist/InvertedIndex.query: tokenizer function should return an array of tokens.');
+
+  if (!tokens.length)
+    return [];
+
+  var results = this.mapping.get(tokens[0]),
+      c,
+      i,
+      l;
+
+  if (typeof results === 'undefined' || results.length === 0)
+    return [];
+
+  if (tokens.length > 1) {
+    for (i = 1, l = tokens.length; i < l; i++) {
+      c = this.mapping.get(tokens[i]);
+
+      if (typeof c === 'undefined' || c.length === 0)
+        return [];
+
+      results = helpers.intersectionUniqueArrays(results, c);
+    }
+  }
+
+  var docs = new Array(results.length);
+
+  for (i = 0, l = docs.length; i < l; i++)
+    docs[i] = this.items[results[i]];
+
+  return docs;
+};
+
+/**
+ * Method used to iterate over each of the documents.
+ *
+ * @param  {function}  callback - Function to call for each item.
+ * @param  {object}    scope    - Optional scope.
+ * @return {undefined}
+ */
+InvertedIndex.prototype.forEach = function(callback, scope) {
+  scope = arguments.length > 1 ? scope : this;
+
+  for (var i = 0, l = this.documents.length; i < l; i++)
+    callback.call(scope, this.documents[i], i, this);
+};
+
+/**
+ * Method returning an iterator over the index's documents.
+ *
+ * @return {Iterator}
+ */
+InvertedIndex.prototype.documents = function() {
+  var documents = this.items,
+      l = documents.length,
+      i = 0;
+
+  return new Iterator(function() {
+    if (i >= l)
+      return {
+        done: true
+      };
+
+      var value = documents[i++];
+
+      return {
+        value: value,
+        done: false
+      };
+  });
+};
+
+/**
+ * Method returning an iterator over the index's tokens.
+ *
+ * @return {Iterator}
+ */
+InvertedIndex.prototype.tokens = function() {
+  return this.mapping.keys();
+};
+
+/**
+ * Attaching the #.values method to Symbol.iterator if possible.
+ */
+if (typeof Symbol !== 'undefined')
+  InvertedIndex.prototype[Symbol.iterator] = InvertedIndex.prototype.documents;
+
+/**
+ * Convenience known methods.
+ */
+InvertedIndex.prototype.inspect = function() {
+  var array = this.items.slice();
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(array, 'constructor', {
+    value: InvertedIndex,
+    enumerable: false
+  });
+
+  return array;
+};
+
+if (typeof Symbol !== 'undefined')
+  InvertedIndex.prototype[Symbol.for('nodejs.util.inspect.custom')] = InvertedIndex.prototype.inspect;
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a InvertedIndex.
+ *
+ * @param  {Iterable} iterable - Target iterable.
+ * @param  {function} tokenizer - Tokenizer function.
+ * @return {InvertedIndex}
+ */
+InvertedIndex.from = function(iterable, descriptor) {
+  var index = new InvertedIndex(descriptor);
+
+  forEach(iterable, function(doc) {
+    index.add(doc);
+  });
+
+  return index;
+};
+
+/**
+ * Exporting.
+ */
+module.exports = InvertedIndex;
+
+
+/***/ }),
+
+/***/ 8179:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist KDTree
+ * =================
+ *
+ * Low-level JavaScript implementation of a k-dimensional tree.
+ */
+var iterables = __nccwpck_require__(7304);
+var typed = __nccwpck_require__(3125);
+var createTupleComparator = __nccwpck_require__(9815).createTupleComparator;
+var FixedReverseHeap = __nccwpck_require__(4718);
+var inplaceQuickSortIndices = __nccwpck_require__(4460)/* .inplaceQuickSortIndices */ .O;
+
+/**
+ * Helper function used to compute the squared distance between a query point
+ * and an indexed points whose values are stored in a tree's axes.
+ *
+ * Note that squared distance is used instead of euclidean to avoid
+ * costly sqrt computations.
+ *
+ * @param  {number} dimensions - Number of dimensions.
+ * @param  {array}  axes       - Axes data.
+ * @param  {number} pivot      - Pivot.
+ * @param  {array}  point      - Query point.
+ * @return {number}
+ */
+function squaredDistanceAxes(dimensions, axes, pivot, b) {
+  var d;
+
+  var dist = 0,
+      step;
+
+  for (d = 0; d < dimensions; d++) {
+    step = axes[d][pivot] - b[d];
+    dist += step * step;
+  }
+
+  return dist;
+}
+
+/**
+ * Helper function used to reshape input data into low-level axes data.
+ *
+ * @param  {number} dimensions - Number of dimensions.
+ * @param  {array}  data       - Data in the shape [label, [x, y, z...]]
+ * @return {object}
+ */
+function reshapeIntoAxes(dimensions, data) {
+  var l = data.length;
+
+  var axes = new Array(dimensions),
+      labels = new Array(l),
+      axis;
+
+  var PointerArray = typed.getPointerArray(l);
+
+  var ids = new PointerArray(l);
+
+  var d, i, row;
+
+  var f = true;
+
+  for (d = 0; d < dimensions; d++) {
+    axis = new Float64Array(l);
+
+    for (i = 0; i < l; i++) {
+      row = data[i];
+      axis[i] = row[1][d];
+
+      if (f) {
+        labels[i] = row[0];
+        ids[i] = i;
+      }
+    }
+
+    f = false;
+    axes[d] = axis;
+  }
+
+  return {axes: axes, ids: ids, labels: labels};
+}
+
+/**
+ * Helper function used to build a kd-tree from axes data.
+ *
+ * @param  {number} dimensions - Number of dimensions.
+ * @param  {array}  axes       - Axes.
+ * @param  {array}  ids        - Indices to sort.
+ * @param  {array}  labels     - Point labels.
+ * @return {object}
+ */
+function buildTree(dimensions, axes, ids, labels) {
+  var l = labels.length;
+
+  // NOTE: +1 because we need to keep 0 as null pointer
+  var PointerArray = typed.getPointerArray(l + 1);
+
+  // Building the tree
+  var pivots = new PointerArray(l),
+      lefts = new PointerArray(l),
+      rights = new PointerArray(l);
+
+  var stack = [[0, 0, ids.length, -1, 0]],
+      step,
+      parent,
+      direction,
+      median,
+      pivot,
+      lo,
+      hi;
+
+  var d, i = 0;
+
+  while (stack.length !== 0) {
+    step = stack.pop();
+
+    d = step[0];
+    lo = step[1];
+    hi = step[2];
+    parent = step[3];
+    direction = step[4];
+
+    inplaceQuickSortIndices(axes[d], ids, lo, hi);
+
+    l = hi - lo;
+    median = lo + (l >>> 1); // Fancy floor(l / 2)
+    pivot = ids[median];
+    pivots[i] = pivot;
+
+    if (parent > -1) {
+      if (direction === 0)
+        lefts[parent] = i + 1;
+      else
+        rights[parent] = i + 1;
+    }
+
+    d = (d + 1) % dimensions;
+
+    // Right
+    if (median !== lo && median !== hi - 1) {
+      stack.push([d, median + 1, hi, i, 1]);
+    }
+
+    // Left
+    if (median !== lo) {
+      stack.push([d, lo, median, i, 0]);
+    }
+
+    i++;
+  }
+
+  return {
+    axes: axes,
+    labels: labels,
+    pivots: pivots,
+    lefts: lefts,
+    rights: rights
+  };
+}
+
+/**
+ * KDTree.
+ *
+ * @constructor
+ */
+function KDTree(dimensions, build) {
+  this.dimensions = dimensions;
+  this.visited = 0;
+
+  this.axes = build.axes;
+  this.labels = build.labels;
+
+  this.pivots = build.pivots;
+  this.lefts = build.lefts;
+  this.rights = build.rights;
+
+  this.size = this.labels.length;
+}
+
+/**
+ * Method returning the query's nearest neighbor.
+ *
+ * @param  {array}  query - Query point.
+ * @return {any}
+ */
+KDTree.prototype.nearestNeighbor = function(query) {
+  var bestDistance = Infinity,
+      best = null;
+
+  var dimensions = this.dimensions,
+      axes = this.axes,
+      pivots = this.pivots,
+      lefts = this.lefts,
+      rights = this.rights;
+
+  var visited = 0;
+
+  function recurse(d, node) {
+    visited++;
+
+    var left = lefts[node],
+        right = rights[node],
+        pivot = pivots[node];
+
+    var dist = squaredDistanceAxes(
+      dimensions,
+      axes,
+      pivot,
+      query
+    );
+
+    if (dist < bestDistance) {
+      best = pivot;
+      bestDistance = dist;
+
+      if (dist === 0)
+        return;
+    }
+
+    var dx = axes[d][pivot] - query[d];
+
+    d = (d + 1) % dimensions;
+
+    // Going the correct way?
+    if (dx > 0) {
+      if (left !== 0)
+        recurse(d, left - 1);
+    }
+    else {
+      if (right !== 0)
+        recurse(d, right - 1);
+    }
+
+    // Going the other way?
+    if (dx * dx < bestDistance) {
+      if (dx > 0) {
+        if (right !== 0)
+          recurse(d, right - 1);
+      }
+      else {
+        if (left !== 0)
+          recurse(d, left - 1);
+      }
+    }
+  }
+
+  recurse(0, 0);
+
+  this.visited = visited;
+  return this.labels[best];
+};
+
+var KNN_HEAP_COMPARATOR_3 = createTupleComparator(3);
+var KNN_HEAP_COMPARATOR_2 = createTupleComparator(2);
+
+/**
+ * Method returning the query's k nearest neighbors.
+ *
+ * @param  {number} k     - Number of nearest neighbor to retrieve.
+ * @param  {array}  query - Query point.
+ * @return {array}
+ */
+
+// TODO: can do better by improving upon static-kdtree here
+KDTree.prototype.kNearestNeighbors = function(k, query) {
+  if (k <= 0)
+    throw new Error('mnemonist/kd-tree.kNearestNeighbors: k should be a positive number.');
+
+  k = Math.min(k, this.size);
+
+  if (k === 1)
+    return [this.nearestNeighbor(query)];
+
+  var heap = new FixedReverseHeap(Array, KNN_HEAP_COMPARATOR_3, k);
+
+  var dimensions = this.dimensions,
+      axes = this.axes,
+      pivots = this.pivots,
+      lefts = this.lefts,
+      rights = this.rights;
+
+  var visited = 0;
+
+  function recurse(d, node) {
+    var left = lefts[node],
+        right = rights[node],
+        pivot = pivots[node];
+
+    var dist = squaredDistanceAxes(
+      dimensions,
+      axes,
+      pivot,
+      query
+    );
+
+    heap.push([dist, visited++, pivot]);
+
+    var point = query[d],
+        split = axes[d][pivot],
+        dx = point - split;
+
+    d = (d + 1) % dimensions;
+
+    // Going the correct way?
+    if (point < split) {
+      if (left !== 0) {
+        recurse(d, left - 1);
+      }
+    }
+    else {
+      if (right !== 0) {
+        recurse(d, right - 1);
+      }
+    }
+
+    // Going the other way?
+    if (dx * dx < heap.peek()[0] || heap.size < k) {
+      if (point < split) {
+        if (right !== 0) {
+          recurse(d, right - 1);
+        }
+      }
+      else {
+        if (left !== 0) {
+          recurse(d, left - 1);
+        }
+      }
+    }
+  }
+
+  recurse(0, 0);
+
+  this.visited = visited;
+
+  var best = heap.consume();
+
+  for (var i = 0; i < best.length; i++)
+    best[i] = this.labels[best[i][2]];
+
+  return best;
+};
+
+/**
+ * Method returning the query's k nearest neighbors by linear search.
+ *
+ * @param  {number} k     - Number of nearest neighbor to retrieve.
+ * @param  {array}  query - Query point.
+ * @return {array}
+ */
+KDTree.prototype.linearKNearestNeighbors = function(k, query) {
+  if (k <= 0)
+    throw new Error('mnemonist/kd-tree.kNearestNeighbors: k should be a positive number.');
+
+  k = Math.min(k, this.size);
+
+  var heap = new FixedReverseHeap(Array, KNN_HEAP_COMPARATOR_2, k);
+
+  var i, l, dist;
+
+  for (i = 0, l = this.size; i < l; i++) {
+    dist = squaredDistanceAxes(
+      this.dimensions,
+      this.axes,
+      this.pivots[i],
+      query
+    );
+
+    heap.push([dist, i]);
+  }
+
+  var best = heap.consume();
+
+  for (i = 0; i < best.length; i++)
+    best[i] = this.labels[this.pivots[best[i][1]]];
+
+  return best;
+};
+
+/**
+ * Convenience known methods.
+ */
+KDTree.prototype.inspect = function() {
+  var dummy = new Map();
+
+  dummy.dimensions = this.dimensions;
+
+  Object.defineProperty(dummy, 'constructor', {
+    value: KDTree,
+    enumerable: false
+  });
+
+  var i, j, point;
+
+  for (i = 0; i < this.size; i++) {
+    point = new Array(this.dimensions);
+
+    for (j = 0; j < this.dimensions; j++)
+      point[j] = this.axes[j][i];
+
+    dummy.set(this.labels[i], point);
+  }
+
+  return dummy;
+};
+
+if (typeof Symbol !== 'undefined')
+  KDTree.prototype[Symbol.for('nodejs.util.inspect.custom')] = KDTree.prototype.inspect;
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a structure.
+ *
+ * @param  {Iterable} iterable   - Target iterable.
+ * @param  {number}   dimensions - Space dimensions.
+ * @return {KDTree}
+ */
+KDTree.from = function(iterable, dimensions) {
+  var data = iterables.toArray(iterable);
+
+  var reshaped = reshapeIntoAxes(dimensions, data);
+
+  var result = buildTree(dimensions, reshaped.axes, reshaped.ids, reshaped.labels);
+
+  return new KDTree(dimensions, result);
+};
+
+/**
+ * Static @.from function building a KDTree from given axes.
+ *
+ * @param  {Iterable} iterable   - Target iterable.
+ * @param  {number}   dimensions - Space dimensions.
+ * @return {KDTree}
+ */
+KDTree.fromAxes = function(axes, labels) {
+  if (!labels)
+    labels = typed.indices(axes[0].length);
+
+  var dimensions = axes.length;
+
+  var result = buildTree(axes.length, axes, typed.indices(labels.length), labels);
+
+  return new KDTree(dimensions, result);
+};
+
+/**
+ * Exporting.
+ */
+module.exports = KDTree;
+
+
+/***/ }),
+
+/***/ 5634:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist Linked List
+ * ======================
+ *
+ * Singly linked list implementation. Uses raw JavaScript objects as nodes
+ * as benchmarks proved it was the fastest thing to do.
+ */
+var Iterator = __nccwpck_require__(3062),
+    forEach = __nccwpck_require__(8968);
+
+/**
+ * Linked List.
+ *
+ * @constructor
+ */
+function LinkedList() {
+  this.clear();
+}
+
+/**
+ * Method used to clear the list.
+ *
+ * @return {undefined}
+ */
+LinkedList.prototype.clear = function() {
+
+  // Properties
+  this.head = null;
+  this.tail = null;
+  this.size = 0;
+};
+
+/**
+ * Method used to get the first item of the list.
+ *
+ * @return {any}
+ */
+LinkedList.prototype.first = function() {
+  return this.head ? this.head.item : undefined;
+};
+LinkedList.prototype.peek = LinkedList.prototype.first;
+
+/**
+ * Method used to get the last item of the list.
+ *
+ * @return {any}
+ */
+LinkedList.prototype.last = function() {
+  return this.tail ? this.tail.item : undefined;
+};
+
+/**
+ * Method used to add an item at the end of the list.
+ *
+ * @param  {any}    item - The item to add.
+ * @return {number}
+ */
+LinkedList.prototype.push = function(item) {
+  var node = {item: item, next: null};
+
+  if (!this.head) {
+    this.head = node;
+    this.tail = node;
+  }
+  else {
+    this.tail.next = node;
+    this.tail = node;
+  }
+
+  this.size++;
+
+  return this.size;
+};
+
+/**
+ * Method used to add an item at the beginning of the list.
+ *
+ * @param  {any}    item - The item to add.
+ * @return {number}
+ */
+LinkedList.prototype.unshift = function(item) {
+  var node = {item: item, next: null};
+
+  if (!this.head) {
+    this.head = node;
+    this.tail = node;
+  }
+  else {
+    if (!this.head.next)
+      this.tail = this.head;
+    node.next = this.head;
+    this.head = node;
+  }
+
+  this.size++;
+
+  return this.size;
+};
+
+/**
+ * Method used to retrieve & remove the first item of the list.
+ *
+ * @return {any}
+ */
+LinkedList.prototype.shift = function() {
+  if (!this.size)
+    return undefined;
+
+  var node = this.head;
+
+  this.head = node.next;
+  this.size--;
+
+  return node.item;
+};
+
+/**
+ * Method used to iterate over the list.
+ *
+ * @param  {function}  callback - Function to call for each item.
+ * @param  {object}    scope    - Optional scope.
+ * @return {undefined}
+ */
+LinkedList.prototype.forEach = function(callback, scope) {
+  if (!this.size)
+    return;
+
+  scope = arguments.length > 1 ? scope : this;
+
+  var n = this.head,
+      i = 0;
+
+  while (n) {
+    callback.call(scope, n.item, i, this);
+    n = n.next;
+    i++;
+  }
+};
+
+/**
+ * Method used to convert the list into an array.
+ *
+ * @return {array}
+ */
+LinkedList.prototype.toArray = function() {
+  if (!this.size)
+    return [];
+
+  var array = new Array(this.size);
+
+  for (var i = 0, l = this.size, n = this.head; i < l; i++) {
+    array[i] = n.item;
+    n = n.next;
+  }
+
+  return array;
+};
+
+/**
+ * Method used to create an iterator over a list's values.
+ *
+ * @return {Iterator}
+ */
+LinkedList.prototype.values = function() {
+  var n = this.head;
+
+  return new Iterator(function() {
+    if (!n)
+      return {
+        done: true
+      };
+
+    var value = n.item;
+    n = n.next;
+
+    return {
+      value: value,
+      done: false
+    };
+  });
+};
+
+/**
+ * Method used to create an iterator over a list's entries.
+ *
+ * @return {Iterator}
+ */
+LinkedList.prototype.entries = function() {
+  var n = this.head,
+      i = 0;
+
+  return new Iterator(function() {
+    if (!n)
+      return {
+        done: true
+      };
+
+    var value = n.item;
+    n = n.next;
+    i++;
+
+    return {
+      value: [i - 1, value],
+      done: false
+    };
+  });
+};
+
+/**
+ * Attaching the #.values method to Symbol.iterator if possible.
+ */
+if (typeof Symbol !== 'undefined')
+  LinkedList.prototype[Symbol.iterator] = LinkedList.prototype.values;
+
+/**
+ * Convenience known methods.
+ */
+LinkedList.prototype.toString = function() {
+  return this.toArray().join(',');
+};
+
+LinkedList.prototype.toJSON = function() {
+  return this.toArray();
+};
+
+LinkedList.prototype.inspect = function() {
+  var array = this.toArray();
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(array, 'constructor', {
+    value: LinkedList,
+    enumerable: false
+  });
+
+  return array;
+};
+
+if (typeof Symbol !== 'undefined')
+  LinkedList.prototype[Symbol.for('nodejs.util.inspect.custom')] = LinkedList.prototype.inspect;
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a list.
+ *
+ * @param  {Iterable} iterable   - Target iterable.
+ * @return {LinkedList}
+ */
+LinkedList.from = function(iterable) {
+  var list = new LinkedList();
+
+  forEach(iterable, function(value) {
+    list.push(value);
+  });
+
+  return list;
+};
+
+/**
+ * Exporting.
+ */
+module.exports = LinkedList;
+
+
+/***/ }),
+
+/***/ 4934:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist LRUCache
+ * ===================
+ *
+ * JavaScript implementation of the LRU Cache data structure. To save up
+ * memory and allocations this implementation represents its underlying
+ * doubly-linked list as static arrays and pointers. Thus, memory is allocated
+ * only once at instantiation and JS objects are never created to serve as
+ * pointers. This also means this implementation does not trigger too many
+ * garbage collections.
+ *
+ * Note that to save up memory, a LRU Cache can be implemented using a singly
+ * linked list by storing predecessors' pointers as hashmap values.
+ * However, this means more hashmap lookups and would probably slow the whole
+ * thing down. What's more, pointers are not the things taking most space in
+ * memory.
+ */
+var Iterator = __nccwpck_require__(3062),
+    forEach = __nccwpck_require__(8968),
+    typed = __nccwpck_require__(3125),
+    iterables = __nccwpck_require__(7304);
+
+/**
+ * LRUCache.
+ *
+ * @constructor
+ * @param {function} Keys     - Array class for storing keys.
+ * @param {function} Values   - Array class for storing values.
+ * @param {number}   capacity - Desired capacity.
+ */
+function LRUCache(Keys, Values, capacity) {
+  if (arguments.length < 2) {
+    capacity = Keys;
+    Keys = null;
+    Values = null;
+  }
+
+  this.capacity = capacity;
+
+  if (typeof this.capacity !== 'number' || this.capacity <= 0)
+    throw new Error('mnemonist/lru-cache: capacity should be positive number.');
+
+  var PointerArray = typed.getPointerArray(capacity);
+
+  this.forward = new PointerArray(capacity);
+  this.backward = new PointerArray(capacity);
+  this.K = typeof Keys === 'function' ? new Keys(capacity) : new Array(capacity);
+  this.V = typeof Values === 'function' ? new Values(capacity) : new Array(capacity);
+
+  // Properties
+  this.size = 0;
+  this.head = 0;
+  this.tail = 0;
+  this.items = {};
+}
+
+/**
+ * Method used to clear the structure.
+ *
+ * @return {undefined}
+ */
+LRUCache.prototype.clear = function() {
+  this.size = 0;
+  this.head = 0;
+  this.tail = 0;
+  this.items = {};
+};
+
+/**
+ * Method used to splay a value on top.
+ *
+ * @param  {number}   pointer - Pointer of the value to splay on top.
+ * @return {LRUCache}
+ */
+LRUCache.prototype.splayOnTop = function(pointer) {
+  var oldHead = this.head;
+
+  if (this.head === pointer)
+    return this;
+
+  var previous = this.backward[pointer],
+      next = this.forward[pointer];
+
+  if (this.tail === pointer) {
+    this.tail = previous;
+  }
+  else {
+    this.backward[next] = previous;
+  }
+
+  this.forward[previous] = next;
+
+  this.backward[oldHead] = pointer;
+  this.head = pointer;
+  this.forward[pointer] = oldHead;
+
+  return this;
+};
+
+/**
+ * Method used to set the value for the given key in the cache.
+ *
+ * @param  {any} key   - Key.
+ * @param  {any} value - Value.
+ * @return {undefined}
+ */
+LRUCache.prototype.set = function(key, value) {
+
+  // The key already exists, we just need to update the value and splay on top
+  var pointer = this.items[key];
+
+  if (typeof pointer !== 'undefined') {
+    this.splayOnTop(pointer);
+    this.V[pointer] = value;
+
+    return;
+  }
+
+  // The cache is not yet full
+  if (this.size < this.capacity) {
+    pointer = this.size++;
+  }
+
+  // Cache is full, we need to drop the last value
+  else {
+    pointer = this.tail;
+    this.tail = this.backward[pointer];
+    delete this.items[this.K[pointer]];
+  }
+
+  // Storing key & value
+  this.items[key] = pointer;
+  this.K[pointer] = key;
+  this.V[pointer] = value;
+
+  // Moving the item at the front of the list
+  this.forward[pointer] = this.head;
+  this.backward[this.head] = pointer;
+  this.head = pointer;
+};
+
+/**
+ * Method used to set the value for the given key in the cache
+ *
+ * @param  {any} key   - Key.
+ * @param  {any} value - Value.
+ * @return {{evicted: boolean, key: any, value: any}} An object containing the
+ * key and value of an item that was overwritten or evicted in the set
+ * operation, as well as a boolean indicating whether it was evicted due to
+ * limited capacity. Return value is null if nothing was evicted or overwritten
+ * during the set operation.
+ */
+LRUCache.prototype.setpop = function(key, value) {
+  var oldValue = null;
+  var oldKey = null;
+  // The key already exists, we just need to update the value and splay on top
+  var pointer = this.items[key];
+
+  if (typeof pointer !== 'undefined') {
+    this.splayOnTop(pointer);
+    oldValue = this.V[pointer];
+    this.V[pointer] = value;
+    return {evicted: false, key: key, value: oldValue};
+  }
+
+  // The cache is not yet full
+  if (this.size < this.capacity) {
+    pointer = this.size++;
+  }
+
+  // Cache is full, we need to drop the last value
+  else {
+    pointer = this.tail;
+    this.tail = this.backward[pointer];
+    oldValue = this.V[pointer];
+    oldKey = this.K[pointer];
+    delete this.items[this.K[pointer]];
+  }
+
+  // Storing key & value
+  this.items[key] = pointer;
+  this.K[pointer] = key;
+  this.V[pointer] = value;
+
+  // Moving the item at the front of the list
+  this.forward[pointer] = this.head;
+  this.backward[this.head] = pointer;
+  this.head = pointer;
+
+  // Return object if eviction took place, otherwise return null
+  if (oldKey) {
+    return {evicted: true, key: oldKey, value: oldValue};
+  }
+  else {
+    return null;
+  }
+};
+
+/**
+ * Method used to check whether the key exists in the cache.
+ *
+ * @param  {any} key   - Key.
+ * @return {boolean}
+ */
+LRUCache.prototype.has = function(key) {
+  return key in this.items;
+};
+
+/**
+ * Method used to get the value attached to the given key. Will move the
+ * related key to the front of the underlying linked list.
+ *
+ * @param  {any} key   - Key.
+ * @return {any}
+ */
+LRUCache.prototype.get = function(key) {
+  var pointer = this.items[key];
+
+  if (typeof pointer === 'undefined')
+    return;
+
+  this.splayOnTop(pointer);
+
+  return this.V[pointer];
+};
+
+/**
+ * Method used to get the value attached to the given key. Does not modify
+ * the ordering of the underlying linked list.
+ *
+ * @param  {any} key   - Key.
+ * @return {any}
+ */
+LRUCache.prototype.peek = function(key) {
+    var pointer = this.items[key];
+
+    if (typeof pointer === 'undefined')
+        return;
+
+    return this.V[pointer];
+};
+
+/**
+ * Method used to iterate over the cache's entries using a callback.
+ *
+ * @param  {function}  callback - Function to call for each item.
+ * @param  {object}    scope    - Optional scope.
+ * @return {undefined}
+ */
+LRUCache.prototype.forEach = function(callback, scope) {
+  scope = arguments.length > 1 ? scope : this;
+
+  var i = 0,
+      l = this.size;
+
+  var pointer = this.head,
+      keys = this.K,
+      values = this.V,
+      forward = this.forward;
+
+  while (i < l) {
+
+    callback.call(scope, values[pointer], keys[pointer], this);
+    pointer = forward[pointer];
+
+    i++;
+  }
+};
+
+/**
+ * Method used to create an iterator over the cache's keys from most
+ * recently used to least recently used.
+ *
+ * @return {Iterator}
+ */
+LRUCache.prototype.keys = function() {
+  var i = 0,
+      l = this.size;
+
+  var pointer = this.head,
+      keys = this.K,
+      forward = this.forward;
+
+  return new Iterator(function() {
+    if (i >= l)
+      return {done: true};
+
+    var key = keys[pointer];
+
+    i++;
+
+    if (i < l)
+      pointer = forward[pointer];
+
+    return {
+      done: false,
+      value: key
+    };
+  });
+};
+
+/**
+ * Method used to create an iterator over the cache's values from most
+ * recently used to least recently used.
+ *
+ * @return {Iterator}
+ */
+LRUCache.prototype.values = function() {
+  var i = 0,
+      l = this.size;
+
+  var pointer = this.head,
+      values = this.V,
+      forward = this.forward;
+
+  return new Iterator(function() {
+    if (i >= l)
+      return {done: true};
+
+    var value = values[pointer];
+
+    i++;
+
+    if (i < l)
+      pointer = forward[pointer];
+
+    return {
+      done: false,
+      value: value
+    };
+  });
+};
+
+/**
+ * Method used to create an iterator over the cache's entries from most
+ * recently used to least recently used.
+ *
+ * @return {Iterator}
+ */
+LRUCache.prototype.entries = function() {
+  var i = 0,
+      l = this.size;
+
+  var pointer = this.head,
+      keys = this.K,
+      values = this.V,
+      forward = this.forward;
+
+  return new Iterator(function() {
+    if (i >= l)
+      return {done: true};
+
+    var key = keys[pointer],
+        value = values[pointer];
+
+    i++;
+
+    if (i < l)
+      pointer = forward[pointer];
+
+    return {
+      done: false,
+      value: [key, value]
+    };
+  });
+};
+
+/**
+ * Attaching the #.entries method to Symbol.iterator if possible.
+ */
+if (typeof Symbol !== 'undefined')
+  LRUCache.prototype[Symbol.iterator] = LRUCache.prototype.entries;
+
+/**
+ * Convenience known methods.
+ */
+LRUCache.prototype.inspect = function() {
+  var proxy = new Map();
+
+  var iterator = this.entries(),
+      step;
+
+  while ((step = iterator.next(), !step.done))
+    proxy.set(step.value[0], step.value[1]);
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(proxy, 'constructor', {
+    value: LRUCache,
+    enumerable: false
+  });
+
+  return proxy;
+};
+
+if (typeof Symbol !== 'undefined')
+  LRUCache.prototype[Symbol.for('nodejs.util.inspect.custom')] = LRUCache.prototype.inspect;
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a structure.
+ *
+ * @param  {Iterable} iterable - Target iterable.
+ * @param  {function} Keys     - Array class for storing keys.
+ * @param  {function} Values   - Array class for storing values.
+ * @param  {number}   capacity - Cache's capacity.
+ * @return {LRUCache}
+ */
+LRUCache.from = function(iterable, Keys, Values, capacity) {
+  if (arguments.length < 2) {
+    capacity = iterables.guessLength(iterable);
+
+    if (typeof capacity !== 'number')
+      throw new Error('mnemonist/lru-cache.from: could not guess iterable length. Please provide desired capacity as last argument.');
+  }
+  else if (arguments.length === 2) {
+    capacity = Keys;
+    Keys = null;
+    Values = null;
+  }
+
+  var cache = new LRUCache(Keys, Values, capacity);
+
+  forEach(iterable, function(value, key) {
+    cache.set(key, value);
+  });
+
+  return cache;
+};
+
+/**
+ * Exporting.
+ */
+module.exports = LRUCache;
+
+
+/***/ }),
+
+/***/ 7630:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist LRUMap
+ * =================
+ *
+ * Variant of the LRUCache class that leverages an ES6 Map instead of an object.
+ * It might be faster for some use case but it is still hard to understand
+ * when a Map can outperform an object in v8.
+ */
+var LRUCache = __nccwpck_require__(4934),
+    forEach = __nccwpck_require__(8968),
+    typed = __nccwpck_require__(3125),
+    iterables = __nccwpck_require__(7304);
+
+/**
+ * LRUMap.
+ *
+ * @constructor
+ * @param {function} Keys     - Array class for storing keys.
+ * @param {function} Values   - Array class for storing values.
+ * @param {number}   capacity - Desired capacity.
+ */
+function LRUMap(Keys, Values, capacity) {
+  if (arguments.length < 2) {
+    capacity = Keys;
+    Keys = null;
+    Values = null;
+  }
+
+  this.capacity = capacity;
+
+  if (typeof this.capacity !== 'number' || this.capacity <= 0)
+    throw new Error('mnemonist/lru-map: capacity should be positive number.');
+
+  var PointerArray = typed.getPointerArray(capacity);
+
+  this.forward = new PointerArray(capacity);
+  this.backward = new PointerArray(capacity);
+  this.K = typeof Keys === 'function' ? new Keys(capacity) : new Array(capacity);
+  this.V = typeof Values === 'function' ? new Values(capacity) : new Array(capacity);
+
+  // Properties
+  this.size = 0;
+  this.head = 0;
+  this.tail = 0;
+  this.items = new Map();
+}
+
+/**
+ * Method used to clear the structure.
+ *
+ * @return {undefined}
+ */
+LRUMap.prototype.clear = function() {
+  this.size = 0;
+  this.head = 0;
+  this.tail = 0;
+  this.items.clear();
+};
+
+/**
+ * Method used to set the value for the given key in the cache.
+ *
+ * @param  {any} key   - Key.
+ * @param  {any} value - Value.
+ * @return {undefined}
+ */
+LRUMap.prototype.set = function(key, value) {
+
+  // The key already exists, we just need to update the value and splay on top
+  var pointer = this.items.get(key);
+
+  if (typeof pointer !== 'undefined') {
+    this.splayOnTop(pointer);
+    this.V[pointer] = value;
+
+    return;
+  }
+
+  // The cache is not yet full
+  if (this.size < this.capacity) {
+    pointer = this.size++;
+  }
+
+  // Cache is full, we need to drop the last value
+  else {
+    pointer = this.tail;
+    this.tail = this.backward[pointer];
+    this.items.delete(this.K[pointer]);
+  }
+
+  // Storing key & value
+  this.items.set(key, pointer);
+  this.K[pointer] = key;
+  this.V[pointer] = value;
+
+  // Moving the item at the front of the list
+  this.forward[pointer] = this.head;
+  this.backward[this.head] = pointer;
+  this.head = pointer;
+};
+
+/**
+ * Method used to set the value for the given key in the cache.
+ *
+ * @param  {any} key   - Key.
+ * @param  {any} value - Value.
+ * @return {{evicted: boolean, key: any, value: any}} An object containing the
+ * key and value of an item that was overwritten or evicted in the set
+ * operation, as well as a boolean indicating whether it was evicted due to
+ * limited capacity. Return value is null if nothing was evicted or overwritten
+ * during the set operation.
+ */
+LRUMap.prototype.setpop = function(key, value) {
+  var oldValue = null;
+  var oldKey = null;
+  // The key already exists, we just need to update the value and splay on top
+  var pointer = this.items.get(key);
+
+  if (typeof pointer !== 'undefined') {
+    this.splayOnTop(pointer);
+    oldValue = this.V[pointer];
+    this.V[pointer] = value;
+    return {evicted: false, key: key, value: oldValue};
+  }
+
+  // The cache is not yet full
+  if (this.size < this.capacity) {
+    pointer = this.size++;
+  }
+
+  // Cache is full, we need to drop the last value
+  else {
+    pointer = this.tail;
+    this.tail = this.backward[pointer];
+    oldValue = this.V[pointer];
+    oldKey = this.K[pointer];
+    this.items.delete(this.K[pointer]);
+  }
+
+  // Storing key & value
+  this.items.set(key, pointer);
+  this.K[pointer] = key;
+  this.V[pointer] = value;
+
+  // Moving the item at the front of the list
+  this.forward[pointer] = this.head;
+  this.backward[this.head] = pointer;
+  this.head = pointer;
+
+  // Return object if eviction took place, otherwise return null
+  if (oldKey) {
+    return {evicted: true, key: oldKey, value: oldValue};
+  }
+  else {
+    return null;
+  }
+};
+
+/**
+ * Method used to check whether the key exists in the cache.
+ *
+ * @param  {any} key   - Key.
+ * @return {boolean}
+ */
+LRUMap.prototype.has = function(key) {
+  return this.items.has(key);
+};
+
+/**
+ * Method used to get the value attached to the given key. Will move the
+ * related key to the front of the underlying linked list.
+ *
+ * @param  {any} key   - Key.
+ * @return {any}
+ */
+LRUMap.prototype.get = function(key) {
+  var pointer = this.items.get(key);
+
+  if (typeof pointer === 'undefined')
+    return;
+
+  this.splayOnTop(pointer);
+
+  return this.V[pointer];
+};
+
+/**
+ * Method used to get the value attached to the given key. Does not modify
+ * the ordering of the underlying linked list.
+ *
+ * @param  {any} key   - Key.
+ * @return {any}
+ */
+LRUMap.prototype.peek = function(key) {
+  var pointer = this.items.get(key);
+
+  if (typeof pointer === 'undefined')
+    return;
+
+  return this.V[pointer];
+};
+
+/**
+ * Methods that can be reused as-is from LRUCache.
+ */
+LRUMap.prototype.splayOnTop = LRUCache.prototype.splayOnTop;
+LRUMap.prototype.forEach = LRUCache.prototype.forEach;
+LRUMap.prototype.keys = LRUCache.prototype.keys;
+LRUMap.prototype.values = LRUCache.prototype.values;
+LRUMap.prototype.entries = LRUCache.prototype.entries;
+
+/**
+ * Attaching the #.entries method to Symbol.iterator if possible.
+ */
+if (typeof Symbol !== 'undefined')
+  LRUMap.prototype[Symbol.iterator] = LRUMap.prototype.entries;
+
+/**
+ * Convenience known methods.
+ */
+LRUMap.prototype.inspect = LRUCache.prototype.inspect;
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a structure.
+ *
+ * @param  {Iterable} iterable - Target iterable.
+ * @param  {function} Keys     - Array class for storing keys.
+ * @param  {function} Values   - Array class for storing values.
+ * @param  {number}   capacity - Cache's capacity.
+ * @return {LRUMap}
+ */
+LRUMap.from = function(iterable, Keys, Values, capacity) {
+  if (arguments.length < 2) {
+    capacity = iterables.guessLength(iterable);
+
+    if (typeof capacity !== 'number')
+      throw new Error('mnemonist/lru-cache.from: could not guess iterable length. Please provide desired capacity as last argument.');
+  }
+  else if (arguments.length === 2) {
+    capacity = Keys;
+    Keys = null;
+    Values = null;
+  }
+
+  var cache = new LRUMap(Keys, Values, capacity);
+
+  forEach(iterable, function(value, key) {
+    cache.set(key, value);
+  });
+
+  return cache;
+};
+
+/**
+ * Exporting.
+ */
+module.exports = LRUMap;
+
+
+/***/ }),
+
+/***/ 423:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist MultiMap
+ * ===================
+ *
+ * Implementation of a MultiMap with custom container.
+ */
+var Iterator = __nccwpck_require__(3062),
+    forEach = __nccwpck_require__(8968);
+
+/**
+ * MultiMap.
+ *
+ * @constructor
+ */
+function MultiMap(Container) {
+
+  this.Container = Container || Array;
+  this.items = new Map();
+  this.clear();
+
+  Object.defineProperty(this.items, 'constructor', {
+    value: MultiMap,
+    enumerable: false
+  });
+}
+
+/**
+ * Method used to clear the structure.
+ *
+ * @return {undefined}
+ */
+MultiMap.prototype.clear = function() {
+
+  // Properties
+  this.size = 0;
+  this.dimension = 0;
+  this.items.clear();
+};
+
+/**
+ * Method used to set a value.
+ *
+ * @param  {any}      key   - Key.
+ * @param  {any}      value - Value to add.
+ * @return {MultiMap}
+ */
+MultiMap.prototype.set = function(key, value) {
+  var container = this.items.get(key),
+      sizeBefore;
+
+  if (!container) {
+    this.dimension++;
+    container = new this.Container();
+    this.items.set(key, container);
+  }
+
+  if (this.Container === Set) {
+    sizeBefore = container.size;
+    container.add(value);
+
+    if (sizeBefore < container.size)
+      this.size++;
+  }
+  else {
+    container.push(value);
+    this.size++;
+  }
+
+  return this;
+};
+
+/**
+ * Method used to delete the given key.
+ *
+ * @param  {any}     key - Key to delete.
+ * @return {boolean}
+ */
+MultiMap.prototype.delete = function(key) {
+  var container = this.items.get(key);
+
+  if (!container)
+    return false;
+
+  this.size -= (this.Container === Set ? container.size : container.length);
+  this.dimension--;
+  this.items.delete(key);
+
+  return true;
+};
+
+/**
+ * Method used to delete the remove an item in the container stored at the
+ * given key.
+ *
+ * @param  {any}     key - Key to delete.
+ * @return {boolean}
+ */
+MultiMap.prototype.remove = function(key, value) {
+  var container = this.items.get(key),
+      wasDeleted,
+      index;
+
+  if (!container)
+    return false;
+
+  if (this.Container === Set) {
+    wasDeleted = container.delete(value);
+
+    if (wasDeleted)
+      this.size--;
+
+    if (container.size === 0) {
+      this.items.delete(key);
+      this.dimension--;
+    }
+
+    return wasDeleted;
+  }
+  else {
+    index = container.indexOf(value);
+
+    if (index === -1)
+      return false;
+
+    this.size--;
+
+    if (container.length === 1) {
+      this.items.delete(key);
+      this.dimension--;
+
+      return true;
+    }
+
+    container.splice(index, 1);
+
+    return true;
+  }
+};
+
+/**
+ * Method used to return whether the given keys exists in the map.
+ *
+ * @param  {any}     key - Key to check.
+ * @return {boolean}
+ */
+MultiMap.prototype.has = function(key) {
+  return this.items.has(key);
+};
+
+/**
+ * Method used to return the container stored at the given key or `undefined`.
+ *
+ * @param  {any}     key - Key to get.
+ * @return {boolean}
+ */
+MultiMap.prototype.get = function(key) {
+  return this.items.get(key);
+};
+
+/**
+ * Method used to return the multiplicity of the given key, meaning the number
+ * of times it is set, or, more trivially, the size of the attached container.
+ *
+ * @param  {any}     key - Key to check.
+ * @return {number}
+ */
+MultiMap.prototype.multiplicity = function(key) {
+  var container = this.items.get(key);
+
+  if (typeof container === 'undefined')
+    return 0;
+
+  return this.Container === Set ? container.size : container.length;
+};
+MultiMap.prototype.count = MultiMap.prototype.multiplicity;
+
+/**
+ * Method used to iterate over each of the key/value pairs.
+ *
+ * @param  {function}  callback - Function to call for each item.
+ * @param  {object}    scope    - Optional scope.
+ * @return {undefined}
+ */
+MultiMap.prototype.forEach = function(callback, scope) {
+  scope = arguments.length > 1 ? scope : this;
+
+  // Inner iteration function is created here to avoid creating it in the loop
+  var key;
+  function inner(value) {
+    callback.call(scope, value, key);
+  }
+
+  this.items.forEach(function(container, k) {
+    key = k;
+    container.forEach(inner);
+  });
+};
+
+/**
+ * Method used to iterate over each of the associations.
+ *
+ * @param  {function}  callback - Function to call for each item.
+ * @param  {object}    scope    - Optional scope.
+ * @return {undefined}
+ */
+MultiMap.prototype.forEachAssociation = function(callback, scope) {
+  scope = arguments.length > 1 ? scope : this;
+
+  this.items.forEach(callback, scope);
+};
+
+/**
+ * Method returning an iterator over the map's keys.
+ *
+ * @return {Iterator}
+ */
+MultiMap.prototype.keys = function() {
+  return this.items.keys();
+};
+
+/**
+ * Method returning an iterator over the map's keys.
+ *
+ * @return {Iterator}
+ */
+MultiMap.prototype.values = function() {
+  var iterator = this.items.values(),
+      inContainer = false,
+      countainer,
+      step,
+      i,
+      l;
+
+  if (this.Container === Set)
+    return new Iterator(function next() {
+      if (!inContainer) {
+        step = iterator.next();
+
+        if (step.done)
+          return {done: true};
+
+        inContainer = true;
+        countainer = step.value.values();
+      }
+
+      step = countainer.next();
+
+      if (step.done) {
+        inContainer = false;
+        return next();
+      }
+
+      return {
+        done: false,
+        value: step.value
+      };
+    });
+
+  return new Iterator(function next() {
+    if (!inContainer) {
+      step = iterator.next();
+
+      if (step.done)
+        return {done: true};
+
+      inContainer = true;
+      countainer = step.value;
+      i = 0;
+      l = countainer.length;
+    }
+
+    if (i >= l) {
+      inContainer = false;
+      return next();
+    }
+
+    return {
+      done: false,
+      value: countainer[i++]
+    };
+  });
+};
+
+/**
+ * Method returning an iterator over the map's entries.
+ *
+ * @return {Iterator}
+ */
+MultiMap.prototype.entries = function() {
+  var iterator = this.items.entries(),
+      inContainer = false,
+      countainer,
+      step,
+      key,
+      i,
+      l;
+
+  if (this.Container === Set)
+    return new Iterator(function next() {
+      if (!inContainer) {
+        step = iterator.next();
+
+        if (step.done)
+          return {done: true};
+
+        inContainer = true;
+        key = step.value[0];
+        countainer = step.value[1].values();
+      }
+
+      step = countainer.next();
+
+      if (step.done) {
+        inContainer = false;
+        return next();
+      }
+
+      return {
+        done: false,
+        value: [key, step.value]
+      };
+    });
+
+  return new Iterator(function next() {
+    if (!inContainer) {
+      step = iterator.next();
+
+      if (step.done)
+        return {done: true};
+
+      inContainer = true;
+      key = step.value[0];
+      countainer = step.value[1];
+      i = 0;
+      l = countainer.length;
+    }
+
+    if (i >= l) {
+      inContainer = false;
+      return next();
+    }
+
+    return {
+      done: false,
+      value: [key, countainer[i++]]
+    };
+  });
+};
+
+/**
+ * Method returning an iterator over the map's containers.
+ *
+ * @return {Iterator}
+ */
+MultiMap.prototype.containers = function() {
+  return this.items.values();
+};
+
+/**
+ * Method returning an iterator over the map's associations.
+ *
+ * @return {Iterator}
+ */
+MultiMap.prototype.associations = function() {
+  return this.items.entries();
+};
+
+/**
+ * Attaching the #.entries method to Symbol.iterator if possible.
+ */
+if (typeof Symbol !== 'undefined')
+  MultiMap.prototype[Symbol.iterator] = MultiMap.prototype.entries;
+
+/**
+ * Convenience known methods.
+ */
+MultiMap.prototype.inspect = function() {
+  return this.items;
+};
+
+if (typeof Symbol !== 'undefined')
+  MultiMap.prototype[Symbol.for('nodejs.util.inspect.custom')] = MultiMap.prototype.inspect;
+MultiMap.prototype.toJSON = function() {
+  return this.items;
+};
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a structure.
+ *
+ * @param  {Iterable} iterable  - Target iterable.
+ * @param  {Class}    Container - Container.
+ * @return {MultiMap}
+ */
+MultiMap.from = function(iterable, Container) {
+  var map = new MultiMap(Container);
+
+  forEach(iterable, function(value, key) {
+    map.set(key, value);
+  });
+
+  return map;
+};
+
+/**
+ * Exporting.
+ */
+module.exports = MultiMap;
+
+
+/***/ }),
+
+/***/ 8601:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist MultiSet
+ * ====================
+ *
+ * JavaScript implementation of a MultiSet.
+ */
+var Iterator = __nccwpck_require__(3062),
+    forEach = __nccwpck_require__(8968),
+    FixedReverseHeap = __nccwpck_require__(4718);
+
+/**
+ * Helpers.
+ */
+var MULTISET_ITEM_COMPARATOR = function(a, b) {
+  if (a[1] > b[1])
+    return -1;
+  if (a[1] < b[1])
+    return 1;
+
+  return 0;
+};
+
+// TODO: helper functions: union, intersection, sum, difference, subtract
+
+/**
+ * MultiSet.
+ *
+ * @constructor
+ */
+function MultiSet() {
+  this.items = new Map();
+
+  Object.defineProperty(this.items, 'constructor', {
+    value: MultiSet,
+    enumerable: false
+  });
+
+  this.clear();
+}
+
+/**
+ * Method used to clear the structure.
+ *
+ * @return {undefined}
+ */
+MultiSet.prototype.clear = function() {
+
+  // Properties
+  this.size = 0;
+  this.dimension = 0;
+  this.items.clear();
+};
+
+/**
+ * Method used to add an item to the set.
+ *
+ * @param  {any}    item  - Item to add.
+ * @param  {number} count - Optional count.
+ * @return {MultiSet}
+ */
+MultiSet.prototype.add = function(item, count) {
+  if (count === 0)
+    return this;
+
+  if (count < 0)
+    return this.remove(item, -count);
+
+  count = count || 1;
+
+  if (typeof count !== 'number')
+    throw new Error('mnemonist/multi-set.add: given count should be a number.');
+
+  this.size += count;
+
+  const currentCount = this.items.get(item);
+
+  if (currentCount === undefined)
+    this.dimension++;
+  else
+    count += currentCount;
+
+  this.items.set(item, count);
+
+  return this;
+};
+
+/**
+ * Method used to set the multiplicity of an item in the set.
+ *
+ * @param  {any}    item  - Target item.
+ * @param  {number} count - Desired multiplicity.
+ * @return {MultiSet}
+ */
+MultiSet.prototype.set = function(item, count) {
+  var currentCount;
+
+  if (typeof count !== 'number')
+    throw new Error('mnemonist/multi-set.set: given count should be a number.');
+
+  // Setting an item to 0 or to a negative number means deleting it from the set
+  if (count <= 0) {
+    currentCount = this.items.get(item);
+
+    if (typeof currentCount !== 'undefined') {
+      this.size -= currentCount;
+      this.dimension--;
+    }
+
+    this.items.delete(item);
+    return this;
+  }
+
+  count = count || 1;
+
+  currentCount = this.items.get(item);
+
+  if (typeof currentCount === 'number') {
+    this.items.set(item, currentCount + count);
+  }
+  else {
+    this.dimension++;
+    this.items.set(item, count);
+  }
+
+  this.size += count;
+
+  return this;
+};
+
+/**
+ * Method used to return whether the item exists in the set.
+ *
+ * @param  {any} item  - Item to check.
+ * @return {boolan}
+ */
+MultiSet.prototype.has = function(item) {
+  return this.items.has(item);
+};
+
+/**
+ * Method used to delete an item from the set.
+ *
+ * @param  {any} item  - Item to delete.
+ * @return {boolan}
+ */
+MultiSet.prototype.delete = function(item) {
+  var count = this.items.get(item);
+
+  if (count === 0)
+    return false;
+
+  this.size -= count;
+  this.dimension--;
+  this.items.delete(item);
+
+  return true;
+};
+
+/**
+ * Method used to remove an item from the set.
+ *
+ * @param  {any} item  - Item to delete.
+ * @param  {number} count - Optional count.
+ * @return {undefined}
+ */
+MultiSet.prototype.remove = function(item, count) {
+  if (count === 0)
+    return;
+
+  if (count < 0)
+    return this.add(item, -count);
+
+  count = count || 1;
+
+  if (typeof count !== 'number')
+    throw new Error('mnemonist/multi-set.remove: given count should be a number.');
+
+  var currentCount = this.multiplicity(item),
+      newCount = Math.max(0, currentCount - count);
+
+  if (newCount === 0) {
+    this.delete(item);
+  }
+  else {
+    this.items.set(item, newCount);
+    this.size -= (currentCount - newCount);
+  }
+
+  return;
+};
+
+/**
+ * Method used to change a key into another one, merging counts if the target
+ * key already exists.
+ *
+ * @param  {any} a - From key.
+ * @param  {any} b - To key.
+ * @return {MultiSet}
+ */
+MultiSet.prototype.edit = function(a, b) {
+  var am = this.multiplicity(a);
+
+  // If a does not exist in the set, we can stop right there
+  if (am === 0)
+    return;
+
+  var bm = this.multiplicity(b);
+
+  this.items.set(b, am + bm);
+  this.items.delete(a);
+
+  return this;
+};
+
+/**
+ * Method used to return the multiplicity of the given item.
+ *
+ * @param  {any} item  - Item to get.
+ * @return {number}
+ */
+MultiSet.prototype.multiplicity = function(item) {
+  var count = this.items.get(item);
+
+  if (typeof count === 'undefined')
+    return 0;
+
+  return count;
+};
+MultiSet.prototype.get = MultiSet.prototype.multiplicity;
+MultiSet.prototype.count = MultiSet.prototype.multiplicity;
+
+/**
+ * Method used to return the frequency of the given item in the set.
+ *
+ * @param  {any} item - Item to get.
+ * @return {number}
+ */
+MultiSet.prototype.frequency = function(item) {
+  if (this.size === 0)
+    return 0;
+
+  var count = this.multiplicity(item);
+
+  return count / this.size;
+};
+
+/**
+ * Method used to return the n most common items from the set.
+ *
+ * @param  {number} n - Number of items to retrieve.
+ * @return {array}
+ */
+MultiSet.prototype.top = function(n) {
+  if (typeof n !== 'number' || n <= 0)
+    throw new Error('mnemonist/multi-set.top: n must be a number > 0.');
+
+  var heap = new FixedReverseHeap(Array, MULTISET_ITEM_COMPARATOR, n);
+
+  var iterator = this.items.entries(),
+      step;
+
+  while ((step = iterator.next(), !step.done))
+    heap.push(step.value);
+
+  return heap.consume();
+};
+
+/**
+ * Method used to iterate over the set's values.
+ *
+ * @param  {function}  callback - Function to call for each item.
+ * @param  {object}    scope    - Optional scope.
+ * @return {undefined}
+ */
+MultiSet.prototype.forEach = function(callback, scope) {
+  scope = arguments.length > 1 ? scope : this;
+
+  var i;
+
+  this.items.forEach(function(multiplicity, value) {
+
+    for (i = 0; i < multiplicity; i++)
+      callback.call(scope, value, value);
+  });
+};
+
+/**
+ * Method used to iterate over the set's multiplicities.
+ *
+ * @param  {function}  callback - Function to call for each multiplicity.
+ * @param  {object}    scope    - Optional scope.
+ * @return {undefined}
+ */
+MultiSet.prototype.forEachMultiplicity = function(callback, scope) {
+  scope = arguments.length > 1 ? scope : this;
+
+  this.items.forEach(callback, scope);
+};
+
+/**
+ * Method returning an iterator over the set's keys. I.e. its unique values,
+ * in a sense.
+ *
+ * @return {Iterator}
+ */
+MultiSet.prototype.keys = function() {
+  return this.items.keys();
+};
+
+/**
+ * Method returning an iterator over the set's values.
+ *
+ * @return {Iterator}
+ */
+MultiSet.prototype.values = function() {
+  var iterator = this.items.entries(),
+      inContainer = false,
+      step,
+      value,
+      multiplicity,
+      i;
+
+  return new Iterator(function next() {
+    if (!inContainer) {
+      step = iterator.next();
+
+      if (step.done)
+        return {done: true};
+
+      inContainer = true;
+      value = step.value[0];
+      multiplicity = step.value[1];
+      i = 0;
+    }
+
+    if (i >= multiplicity) {
+      inContainer = false;
+      return next();
+    }
+
+    i++;
+
+    return {
+      done: false,
+      value: value
+    };
+  });
+};
+
+/**
+ * Method returning an iterator over the set's multiplicities.
+ *
+ * @return {Iterator}
+ */
+MultiSet.prototype.multiplicities = function() {
+  return this.items.entries();
+};
+
+/**
+ * Attaching the #.entries method to Symbol.iterator if possible.
+ */
+if (typeof Symbol !== 'undefined')
+  MultiSet.prototype[Symbol.iterator] = MultiSet.prototype.values;
+
+/**
+ * Convenience known methods.
+ */
+MultiSet.prototype.inspect = function() {
+  return this.items;
+};
+
+if (typeof Symbol !== 'undefined')
+  MultiSet.prototype[Symbol.for('nodejs.util.inspect.custom')] = MultiSet.prototype.inspect;
+MultiSet.prototype.toJSON = function() {
+  return this.items;
+};
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a structure.
+ *
+ * @param  {Iterable} iterable - Target iterable.
+ * @return {MultiSet}
+ */
+MultiSet.from = function(iterable) {
+  var set = new MultiSet();
+
+  forEach(iterable, function(value) {
+    set.add(value);
+  });
+
+  return set;
+};
+
+/**
+ * Function returning whether the multiset A is a subset of the multiset B.
+ *
+ * @param  {MultiSet} A - First set.
+ * @param  {MultiSet} B - Second set.
+ * @return {boolean}
+ */
+MultiSet.isSubset = function(A, B) {
+  var iterator = A.multiplicities(),
+      step,
+      key,
+      mA;
+
+  // Shortcuts
+  if (A === B)
+    return true;
+
+  if (A.dimension > B.dimension)
+    return false;
+
+  while ((step = iterator.next(), !step.done)) {
+    key = step.value[0];
+    mA = step.value[1];
+
+    if (B.multiplicity(key) < mA)
+      return false;
+  }
+
+  return true;
+};
+
+/**
+ * Function returning whether the multiset A is a superset of the multiset B.
+ *
+ * @param  {MultiSet} A - First set.
+ * @param  {MultiSet} B - Second set.
+ * @return {boolean}
+ */
+MultiSet.isSuperset = function(A, B) {
+  return MultiSet.isSubset(B, A);
+};
+
+/**
+ * Exporting.
+ */
+module.exports = MultiSet;
+
+
+/***/ }),
+
+/***/ 7472:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist PassjoinIndex
+ * ========================
+ *
+ * The PassjoinIndex is an index leveraging the "passjoin" algorithm as a mean
+ * to index strings for Levenshtein distance queries. It features a complexity
+ * related to the Levenshtein query threshold k rather than the number of
+ * strings to test (roughly O(k^3)).
+ *
+ * [References]:
+ * Jiang, Yu, Dong Deng, Jiannan Wang, Guoliang Li, et Jianhua Feng.
+ * « Efficient Parallel Partition-Based Algorithms for Similarity Search and Join
+ * with Edit Distance Constraints ». In Proceedings of the Joint EDBT/ICDT 2013
+ * Workshops on - EDBT ’13, 341. Genoa, Italy: ACM Press, 2013.
+ * https://doi.org/10.1145/2457317.2457382.
+ *
+ * Li, Guoliang, Dong Deng, et Jianhua Feng. « A Partition-Based Method for
+ * String Similarity Joins with Edit-Distance Constraints ». ACM Transactions on
+ * Database Systems 38, no 2 (1 juin 2013): 1‑33.
+ * https://doi.org/10.1145/2487259.2487261.
+ *
+ * [Urls]:
+ * http://people.csail.mit.edu/dongdeng/projects/passjoin/index.html
+ */
+var Iterator = __nccwpck_require__(3062),
+    forEach = __nccwpck_require__(8968);
+
+// TODO: leveraging BagDistance as an upper bound of Levenshtein
+// TODO: leverage n-grams recursive indexing
+// TODO: try the MultiArray as a memory backend
+// TODO: what about damerau levenshtein
+
+/**
+ * Helpers.
+ */
+
+/**
+ * Function returning the number of substrings that will be selected by the
+ * multi-match-aware selection scheme for theshold `k`, for a string of length
+ * `s` to match strings of length `l`.
+ *
+ * @param   {number} k - Levenshtein distance threshold.
+ * @param   {number} s - Length of target strings.
+ * @param   {number} l - Length of strings to match.
+ * @returns {number}   - The number of selected substrings.
+ */
+function countSubstringsL(k, s, l) {
+  return (((Math.pow(k, 2) - Math.pow(Math.abs(s - l), 2)) / 2) | 0) + k + 1;
+}
+
+/**
+ * Function returning the minimum number of substrings that will be selected by
+ * the multi-match-aware selection scheme for theshold `k`, for a string of
+ * length `s` to match any string of relevant length.
+ *
+ * @param   {number} k - Levenshtein distance threshold.
+ * @param   {number} s - Length of target strings.
+ * @returns {number}   - The number of selected substrings.
+ */
+function countKeys(k, s) {
+  var c = 0;
+
+  for (var l = 0, m = s + 1; l < m; l++)
+    c += countSubstringsL(k, s, l);
+
+  return c;
+}
+
+/**
+ * Function used to compare two keys in order to sort them first by decreasing
+ * length and then alphabetically as per the "4.2 Effective Indexing Strategy"
+ * point of the paper.
+ *
+ * @param   {number} k - Levenshtein distance threshold.
+ * @param   {number} s - Length of target strings.
+ * @returns {number}   - The number of selected substrings.
+ */
+function comparator(a, b) {
+  if (a.length > b.length)
+    return -1;
+  if (a.length < b.length)
+    return 1;
+
+  if (a < b)
+    return -1;
+  if (a > b)
+    return 1;
+
+  return 0;
+}
+
+/**
+ * Function partitioning a string into k + 1 uneven segments, the shorter
+ * ones, then the longer ones.
+ *
+ * @param   {number} k - Levenshtein distance threshold.
+ * @param   {number} l - Length of the string.
+ * @returns {Array}    - The partition tuples (start, length).
+ */
+function partition(k, l) {
+  var m = k + 1,
+      a = (l / m) | 0,
+      b = a + 1,
+      i,
+      j;
+
+  var largeSegments = l - a * m,
+      smallSegments = m - largeSegments;
+
+  var tuples = new Array(k + 1);
+
+  for (i = 0; i < smallSegments; i++)
+    tuples[i] = [i * a, a];
+
+  var offset = (i - 1) * a + a;
+
+  for (j = 0; j < largeSegments; j++)
+    tuples[i + j] = [offset + j * b, b];
+
+  return tuples;
+}
+
+/**
+ * Function yielding a string's k + 1 passjoin segments to index.
+ *
+ * @param   {number} k      - Levenshtein distance threshold.
+ * @param   {string} string - Target string.
+ * @returns {Array}         - The string's segments.
+ */
+function segments(k, string) {
+  var l = string.length,
+      m = k + 1,
+      a = (l / m) | 0,
+      b = a + 1,
+      o,
+      i,
+      j;
+
+  var largeSegments = l - a * m,
+      smallSegments = m - largeSegments;
+
+  var S = new Array(k + 1);
+
+  for (i = 0; i < smallSegments; i++) {
+    o = i * a;
+    S[i] = string.slice(o, o + a);
+  }
+
+  var offset = (i - 1) * a + a;
+
+  for (j = 0; j < largeSegments; j++) {
+    o = offset + j * b;
+    S[i + j] = string.slice(o, o + b);
+  }
+
+  return S;
+}
+
+// TODO: jsdocs
+function segmentPos(k, i, string) {
+  if (i === 0)
+    return 0;
+
+  var l = string.length;
+
+  var m = k + 1,
+      a = (l / m) | 0,
+      b = a + 1;
+
+  var largeSegments = l - a * m,
+      smallSegments = m - largeSegments;
+
+  if (i <= smallSegments - 1)
+    return i * a;
+
+  var offset = i - smallSegments;
+
+  return smallSegments * a + offset * b;
+}
+
+/**
+ * Function returning the interval of relevant substrings to lookup using the
+ * multi-match-aware substring selection scheme described in the paper.
+ *
+ * @param   {number} k      - Levenshtein distance threshold.
+ * @param   {number} delta  - Signed length difference between both considered strings.
+ * @param   {number} i      - k + 1 segment index.
+ * @param   {number} s      - String's length.
+ * @param   {number} pi     - k + 1 segment position in target string.
+ * @param   {number} li     - k + 1 segment length.
+ * @returns {Array}         - The interval (start, stop).
+ */
+function multiMatchAwareInterval(k, delta, i, s, pi, li) {
+  var start1 = pi - i,
+      end1 = pi + i;
+
+  var o = k - i;
+
+  var start2 = pi + delta - o,
+      end2 = pi + delta + o;
+
+  var end3 = s - li;
+
+  return [Math.max(0, start1, start2), Math.min(end1, end2, end3)];
+}
+
+/**
+ * Function yielding relevant substrings to lookup using the multi-match-aware
+ * substring selection scheme described in the paper.
+ *
+ * @param   {number} k      - Levenshtein distance threshold.
+ * @param   {string} string  - Target string.
+ * @param   {number} l      - Length of strings to match.
+ * @param   {number} i      - k + 1 segment index.
+ * @param   {number} pi     - k + 1 segment position in target string.
+ * @param   {number} li     - k + 1 segment length.
+ * @returns {Array}         - The contiguous substrings.
+ */
+function multiMatchAwareSubstrings(k, string, l, i, pi, li) {
+  var s = string.length;
+
+  // Note that we need to keep the non-absolute delta for this function
+  // to work in both directions, up & down
+  var delta = s - l;
+
+  var interval = multiMatchAwareInterval(k, delta, i, s, pi, li);
+
+  var start = interval[0],
+      stop = interval[1];
+
+  var currentSubstring = '';
+
+  var substrings = [];
+
+  var substring, j, m;
+
+  for (j = start, m = stop + 1; j < m; j++) {
+    substring = string.slice(j, j + li);
+
+    // We skip identical consecutive substrings (to avoid repetition in case
+    // of contiguous letter duplication)
+    if (substring === currentSubstring)
+      continue;
+
+    substrings.push(substring);
+
+    currentSubstring = substring;
+  }
+
+  return substrings;
+}
+
+/**
+ * PassjoinIndex.
+ *
+ * @note I tried to apply the paper's optimizations regarding Levenshtein
+ * distance computations but it did not provide a performance boost, quite
+ * the contrary. This is because since we are mostly using the index for small k
+ * here, most of the strings we work on are quite small and the bookkeeping
+ * induced by Ukkonen's method and the paper's one are slowing us down more than
+ * they actually help us go faster.
+ *
+ * @note This implementation does not try to ensure that you add the same string
+ * more than once.
+ *
+ * @constructor
+ * @param {function} levenshtein - Levenshtein distance function.
+ * @param {number}   k           - Levenshtein distance threshold.
+ */
+function PassjoinIndex(levenshtein, k) {
+  if (typeof levenshtein !== 'function')
+    throw new Error('mnemonist/passjoin-index: `levenshtein` should be a function returning edit distance between two strings.');
+
+  if (typeof k !== 'number' || k < 1)
+    throw new Error('mnemonist/passjoin-index: `k` should be a number > 0');
+
+  this.levenshtein = levenshtein;
+  this.k = k;
+  this.clear();
+}
+
+/**
+ * Method used to clear the structure.
+ *
+ * @return {undefined}
+ */
+PassjoinIndex.prototype.clear = function() {
+
+  // Properties
+  this.size = 0;
+  this.strings = [];
+  this.invertedIndices = {};
+};
+
+/**
+ * Method used to add a new value to the index.
+ *
+ * @param  {string|Array} value - Value to add.
+ * @return {PassjoinIndex}
+ */
+PassjoinIndex.prototype.add = function(value) {
+  var l = value.length;
+
+  var stringIndex = this.size;
+
+  this.strings.push(value);
+  this.size++;
+
+  var S = segments(this.k, value);
+
+  var Ll = this.invertedIndices[l];
+
+  if (typeof Ll === 'undefined') {
+    Ll = {};
+    this.invertedIndices[l] = Ll;
+  }
+
+  var segment,
+      matches,
+      key,
+      i,
+      m;
+
+  for (i = 0, m = S.length; i < m; i++) {
+    segment = S[i];
+    key = segment + i;
+    matches = Ll[key];
+
+    if (typeof matches === 'undefined') {
+      matches = [stringIndex];
+      Ll[key] = matches;
+    }
+    else {
+      matches.push(stringIndex);
+    }
+  }
+
+  return this;
+};
+
+/**
+ * Method used to search for string matching the given query.
+ *
+ * @param  {string|Array} query - Query string.
+ * @return {Array}
+ */
+PassjoinIndex.prototype.search = function(query) {
+  var s = query.length,
+      k = this.k;
+
+  var M = new Set();
+
+  var candidates,
+      candidate,
+      queryPos,
+      querySegmentLength,
+      key,
+      S,
+      P,
+      l,
+      m,
+      i,
+      n1,
+      j,
+      n2,
+      y,
+      n3;
+
+  for (l = Math.max(0, s - k), m = s + k + 1; l < m; l++) {
+    var Ll = this.invertedIndices[l];
+
+    if (typeof Ll === 'undefined')
+      continue;
+
+    P = partition(k, l);
+
+    for (i = 0, n1 = P.length; i < n1; i++) {
+      queryPos = P[i][0];
+      querySegmentLength = P[i][1];
+
+      S = multiMatchAwareSubstrings(
+        k,
+        query,
+        l,
+        i,
+        queryPos,
+        querySegmentLength
+      );
+
+      // Empty string edge case
+      if (!S.length)
+        S = [''];
+
+      for (j = 0, n2 = S.length; j < n2; j++) {
+        key = S[j] + i;
+        candidates = Ll[key];
+
+        if (typeof candidates === 'undefined')
+          continue;
+
+        for (y = 0, n3 = candidates.length; y < n3; y++) {
+          candidate = this.strings[candidates[y]];
+
+          // NOTE: first condition is here not to compute Levenshtein
+          // distance for tiny strings
+
+          // NOTE: maintaining a Set of rejected candidate is not really useful
+          // because it consumes more memory and because non-matches are
+          // less likely to be candidates agains
+          if (
+            s <= k && l <= k ||
+            (
+              !M.has(candidate) &&
+              this.levenshtein(query, candidate) <= k
+            )
+          )
+            M.add(candidate);
+        }
+      }
+    }
+  }
+
+  return M;
+};
+
+/**
+ * Method used to iterate over the index.
+ *
+ * @param  {function}  callback - Function to call for each item.
+ * @param  {object}    scope    - Optional scope.
+ * @return {undefined}
+ */
+PassjoinIndex.prototype.forEach = function(callback, scope) {
+  scope = arguments.length > 1 ? scope : this;
+
+  for (var i = 0, l = this.strings.length; i < l; i++)
+    callback.call(scope, this.strings[i], i, this);
+};
+
+/**
+ * Method used to create an iterator over a index's values.
+ *
+ * @return {Iterator}
+ */
+PassjoinIndex.prototype.values = function() {
+  var strings = this.strings,
+      l = strings.length,
+      i = 0;
+
+  return new Iterator(function() {
+    if (i >= l)
+      return {
+        done: true
+      };
+
+    var value = strings[i];
+    i++;
+
+    return {
+      value: value,
+      done: false
+    };
+  });
+};
+
+/**
+ * Attaching the #.values method to Symbol.iterator if possible.
+ */
+if (typeof Symbol !== 'undefined')
+  PassjoinIndex.prototype[Symbol.iterator] = PassjoinIndex.prototype.values;
+
+/**
+ * Convenience known methods.
+ */
+PassjoinIndex.prototype.inspect = function() {
+  var array = this.strings.slice();
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(array, 'constructor', {
+    value: PassjoinIndex,
+    enumerable: false
+  });
+
+  return array;
+};
+
+if (typeof Symbol !== 'undefined')
+  PassjoinIndex.prototype[Symbol.for('nodejs.util.inspect.custom')] = PassjoinIndex.prototype.inspect;
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a structure.
+ *
+ * @param  {Iterable} iterable - Target iterable.
+ * @return {PassjoinIndex}
+ */
+PassjoinIndex.from = function(iterable, levenshtein, k) {
+  var index = new PassjoinIndex(levenshtein, k);
+
+  forEach(iterable, function(string) {
+    index.add(string);
+  });
+
+  return index;
+};
+
+/**
+ * Exporting.
+ */
+PassjoinIndex.countKeys = countKeys;
+PassjoinIndex.comparator = comparator;
+PassjoinIndex.partition = partition;
+PassjoinIndex.segments = segments;
+PassjoinIndex.segmentPos = segmentPos;
+PassjoinIndex.multiMatchAwareInterval = multiMatchAwareInterval;
+PassjoinIndex.multiMatchAwareSubstrings = multiMatchAwareSubstrings;
+
+module.exports = PassjoinIndex;
+
+
+/***/ }),
+
+/***/ 1590:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist Queue
+ * ================
+ *
+ * Queue implementation based on the ideas of Queue.js that seems to beat
+ * a LinkedList one in performance.
+ */
+var Iterator = __nccwpck_require__(3062),
+    forEach = __nccwpck_require__(8968);
+
+/**
+ * Queue
+ *
+ * @constructor
+ */
+function Queue() {
+  this.clear();
+}
+
+/**
+ * Method used to clear the queue.
+ *
+ * @return {undefined}
+ */
+Queue.prototype.clear = function() {
+
+  // Properties
+  this.items = [];
+  this.offset = 0;
+  this.size = 0;
+};
+
+/**
+ * Method used to add an item to the queue.
+ *
+ * @param  {any}    item - Item to enqueue.
+ * @return {number}
+ */
+Queue.prototype.enqueue = function(item) {
+
+  this.items.push(item);
+  return ++this.size;
+};
+
+/**
+ * Method used to retrieve & remove the first item of the queue.
+ *
+ * @return {any}
+ */
+Queue.prototype.dequeue = function() {
+  if (!this.size)
+    return;
+
+  var item = this.items[this.offset];
+
+  if (++this.offset * 2 >= this.items.length) {
+    this.items = this.items.slice(this.offset);
+    this.offset = 0;
+  }
+
+  this.size--;
+
+  return item;
+};
+
+/**
+ * Method used to retrieve the first item of the queue.
+ *
+ * @return {any}
+ */
+Queue.prototype.peek = function() {
+  if (!this.size)
+    return;
+
+  return this.items[this.offset];
+};
+
+/**
+ * Method used to iterate over the queue.
+ *
+ * @param  {function}  callback - Function to call for each item.
+ * @param  {object}    scope    - Optional scope.
+ * @return {undefined}
+ */
+Queue.prototype.forEach = function(callback, scope) {
+  scope = arguments.length > 1 ? scope : this;
+
+  for (var i = this.offset, j = 0, l = this.items.length; i < l; i++, j++)
+    callback.call(scope, this.items[i], j, this);
+};
+
+/*
+ * Method used to convert the queue to a JavaScript array.
+ *
+ * @return {array}
+ */
+Queue.prototype.toArray = function() {
+  return this.items.slice(this.offset);
+};
+
+/**
+ * Method used to create an iterator over a queue's values.
+ *
+ * @return {Iterator}
+ */
+Queue.prototype.values = function() {
+  var items = this.items,
+      i = this.offset;
+
+  return new Iterator(function() {
+    if (i >= items.length)
+      return {
+        done: true
+      };
+
+    var value = items[i];
+    i++;
+
+    return {
+      value: value,
+      done: false
+    };
+  });
+};
+
+/**
+ * Method used to create an iterator over a queue's entries.
+ *
+ * @return {Iterator}
+ */
+Queue.prototype.entries = function() {
+  var items = this.items,
+      i = this.offset,
+      j = 0;
+
+  return new Iterator(function() {
+    if (i >= items.length)
+      return {
+        done: true
+      };
+
+    var value = items[i];
+    i++;
+
+    return {
+      value: [j++, value],
+      done: false
+    };
+  });
+};
+
+/**
+ * Attaching the #.values method to Symbol.iterator if possible.
+ */
+if (typeof Symbol !== 'undefined')
+  Queue.prototype[Symbol.iterator] = Queue.prototype.values;
+
+/**
+ * Convenience known methods.
+ */
+Queue.prototype.toString = function() {
+  return this.toArray().join(',');
+};
+
+Queue.prototype.toJSON = function() {
+  return this.toArray();
+};
+
+Queue.prototype.inspect = function() {
+  var array = this.toArray();
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(array, 'constructor', {
+    value: Queue,
+    enumerable: false
+  });
+
+  return array;
+};
+
+if (typeof Symbol !== 'undefined')
+  Queue.prototype[Symbol.for('nodejs.util.inspect.custom')] = Queue.prototype.inspect;
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a queue.
+ *
+ * @param  {Iterable} iterable   - Target iterable.
+ * @return {Queue}
+ */
+Queue.from = function(iterable) {
+  var queue = new Queue();
+
+  forEach(iterable, function(value) {
+    queue.enqueue(value);
+  });
+
+  return queue;
+};
+
+/**
+ * Static @.of function taking an arbitrary number of arguments & converting it
+ * into a queue.
+ *
+ * @param  {...any} args
+ * @return {Queue}
+ */
+Queue.of = function() {
+  return Queue.from(arguments);
+};
+
+/**
+ * Exporting.
+ */
+module.exports = Queue;
+
+
+/***/ }),
+
+/***/ 5654:
+/***/ ((__unused_webpack_module, exports) => {
+
+/**
+ * Mnemonist Set
+ * ==============
+ *
+ * Useful function related to sets such as union, intersection and so on...
+ */
+
+// TODO: optimize versions for less variadicities
+
+/**
+ * Variadic function computing the intersection of multiple sets.
+ *
+ * @param  {...Set} sets - Sets to intersect.
+ * @return {Set}         - The intesection.
+ */
+exports.intersection = function() {
+  if (arguments.length < 2)
+    throw new Error('mnemonist/Set.intersection: needs at least two arguments.');
+
+  var I = new Set();
+
+  // First we need to find the smallest set
+  var smallestSize = Infinity,
+      smallestSet = null;
+
+  var s, i, l = arguments.length;
+
+  for (i = 0; i < l; i++) {
+    s = arguments[i];
+
+    // If one of the set has no items, we can stop right there
+    if (s.size === 0)
+      return I;
+
+    if (s.size < smallestSize) {
+      smallestSize = s.size;
+      smallestSet = s;
+    }
+  }
+
+  // Now we need to intersect this set with the others
+  var iterator = smallestSet.values(),
+      step,
+      item,
+      add,
+      set;
+
+  // TODO: we can optimize by iterating each next time over the current intersection
+  // but this probably means more RAM to consume since we'll create n-1 sets rather than
+  // only the one.
+  while ((step = iterator.next(), !step.done)) {
+    item = step.value;
+    add = true;
+
+    for (i = 0; i < l; i++) {
+      set = arguments[i];
+
+      if (set === smallestSet)
+        continue;
+
+      if (!set.has(item)) {
+        add = false;
+        break;
+      }
+    }
+
+    if (add)
+      I.add(item);
+  }
+
+  return I;
+};
+
+/**
+ * Variadic function computing the union of multiple sets.
+ *
+ * @param  {...Set} sets - Sets to unite.
+ * @return {Set}         - The union.
+ */
+exports.union = function() {
+  if (arguments.length < 2)
+    throw new Error('mnemonist/Set.union: needs at least two arguments.');
+
+  var U = new Set();
+
+  var i, l = arguments.length;
+
+  var iterator,
+      step;
+
+  for (i = 0; i < l; i++) {
+    iterator = arguments[i].values();
+
+    while ((step = iterator.next(), !step.done))
+      U.add(step.value);
+  }
+
+  return U;
+};
+
+/**
+ * Function computing the difference between two sets.
+ *
+ * @param  {Set} A - First set.
+ * @param  {Set} B - Second set.
+ * @return {Set}   - The difference.
+ */
+exports.difference = function(A, B) {
+
+  // If first set is empty
+  if (!A.size)
+    return new Set();
+
+  if (!B.size)
+    return new Set(A);
+
+  var D = new Set();
+
+  var iterator = A.values(),
+      step;
+
+  while ((step = iterator.next(), !step.done)) {
+    if (!B.has(step.value))
+      D.add(step.value);
+  }
+
+  return D;
+};
+
+/**
+ * Function computing the symmetric difference between two sets.
+ *
+ * @param  {Set} A - First set.
+ * @param  {Set} B - Second set.
+ * @return {Set}   - The symmetric difference.
+ */
+exports.symmetricDifference = function(A, B) {
+  var S = new Set();
+
+  var iterator = A.values(),
+      step;
+
+  while ((step = iterator.next(), !step.done)) {
+    if (!B.has(step.value))
+      S.add(step.value);
+  }
+
+  iterator = B.values();
+
+  while ((step = iterator.next(), !step.done)) {
+    if (!A.has(step.value))
+      S.add(step.value);
+  }
+
+  return S;
+};
+
+/**
+ * Function returning whether A is a subset of B.
+ *
+ * @param  {Set} A - First set.
+ * @param  {Set} B - Second set.
+ * @return {boolean}
+ */
+exports.isSubset = function(A, B) {
+  var iterator = A.values(),
+      step;
+
+  // Shortcuts
+  if (A === B)
+    return true;
+
+  if (A.size > B.size)
+    return false;
+
+  while ((step = iterator.next(), !step.done)) {
+    if (!B.has(step.value))
+      return false;
+  }
+
+  return true;
+};
+
+/**
+ * Function returning whether A is a superset of B.
+ *
+ * @param  {Set} A - First set.
+ * @param  {Set} B - Second set.
+ * @return {boolean}
+ */
+exports.isSuperset = function(A, B) {
+  return exports.isSubset(B, A);
+};
+
+/**
+ * Function adding the items of set B to the set A.
+ *
+ * @param  {Set} A - First set.
+ * @param  {Set} B - Second set.
+ */
+exports.add = function(A, B) {
+  var iterator = B.values(),
+      step;
+
+  while ((step = iterator.next(), !step.done))
+    A.add(step.value);
+
+  return;
+};
+
+/**
+ * Function subtracting the items of set B from the set A.
+ *
+ * @param  {Set} A - First set.
+ * @param  {Set} B - Second set.
+ */
+exports.subtract = function(A, B) {
+  var iterator = B.values(),
+      step;
+
+  while ((step = iterator.next(), !step.done))
+    A.delete(step.value);
+
+  return;
+};
+
+/**
+ * Function intersecting the items of A & B.
+ *
+ * @param  {Set} A - First set.
+ * @param  {Set} B - Second set.
+ */
+exports.intersect = function(A, B) {
+  var iterator = A.values(),
+      step;
+
+  while ((step = iterator.next(), !step.done)) {
+    if (!B.has(step.value))
+      A.delete(step.value);
+  }
+
+  return;
+};
+
+/**
+ * Function disjuncting the items of A & B.
+ *
+ * @param  {Set} A - First set.
+ * @param  {Set} B - Second set.
+ */
+exports.disjunct = function(A, B) {
+  var iterator = A.values(),
+      step;
+
+  var toRemove = [];
+
+  while ((step = iterator.next(), !step.done)) {
+    if (B.has(step.value))
+      toRemove.push(step.value);
+  }
+
+  iterator = B.values();
+
+  while ((step = iterator.next(), !step.done)) {
+    if (!A.has(step.value))
+      A.add(step.value);
+  }
+
+  for (var i = 0, l = toRemove.length; i < l; i++)
+    A.delete(toRemove[i]);
+
+  return;
+};
+
+/**
+ * Function returning the size of the intersection of A & B.
+ *
+ * @param  {Set} A - First set.
+ * @param  {Set} B - Second set.
+ * @return {number}
+ */
+exports.intersectionSize = function(A, B) {
+  var tmp;
+
+  // We need to know the smallest set
+  if (A.size > B.size) {
+    tmp = A;
+    A = B;
+    B = tmp;
+  }
+
+  if (A.size === 0)
+    return 0;
+
+  if (A === B)
+    return A.size;
+
+  var iterator = A.values(),
+      step;
+
+  var I = 0;
+
+  while ((step = iterator.next(), !step.done)) {
+    if (B.has(step.value))
+      I++;
+  }
+
+  return I;
+};
+
+/**
+ * Function returning the size of the union of A & B.
+ *
+ * @param  {Set} A - First set.
+ * @param  {Set} B - Second set.
+ * @return {number}
+ */
+exports.unionSize = function(A, B) {
+  var I = exports.intersectionSize(A, B);
+
+  return A.size + B.size - I;
+};
+
+/**
+ * Function returning the Jaccard similarity between A & B.
+ *
+ * @param  {Set} A - First set.
+ * @param  {Set} B - Second set.
+ * @return {number}
+ */
+exports.jaccard = function(A, B) {
+  var I = exports.intersectionSize(A, B);
+
+  if (I === 0)
+    return 0;
+
+  var U = A.size + B.size - I;
+
+  return I / U;
+};
+
+/**
+ * Function returning the overlap coefficient between A & B.
+ *
+ * @param  {Set} A - First set.
+ * @param  {Set} B - Second set.
+ * @return {number}
+ */
+exports.overlap = function(A, B) {
+  var I = exports.intersectionSize(A, B);
+
+  if (I === 0)
+    return 0;
+
+  return I / Math.min(A.size, B.size);
+};
+
+
+/***/ }),
+
+/***/ 4460:
+/***/ ((__unused_webpack_module, exports) => {
+
+var __webpack_unused_export__;
+/**
+ * Mnemonist Quick Sort
+ * =====================
+ *
+ * Quick sort related functions.
+ * Adapted from: https://alienryderflex.com/quicksort/
+ */
+var LOS = new Float64Array(64),
+    HIS = new Float64Array(64);
+
+function inplaceQuickSort(array, lo, hi) {
+  var p, i, l, r, swap;
+
+  LOS[0] = lo;
+  HIS[0] = hi;
+  i = 0;
+
+  while (i >= 0) {
+    l = LOS[i];
+    r = HIS[i] - 1;
+
+    if (l < r) {
+      p = array[l];
+
+      while (l < r) {
+        while (array[r] >= p && l < r)
+          r--;
+
+        if (l < r)
+          array[l++] = array[r];
+
+        while (array[l] <= p && l < r)
+          l++;
+
+        if (l < r)
+          array[r--] = array[l];
+      }
+
+      array[l] = p;
+      LOS[i + 1] = l + 1;
+      HIS[i + 1] = HIS[i];
+      HIS[i++] = l;
+
+      if (HIS[i] - LOS[i] > HIS[i - 1] - LOS[i - 1]) {
+        swap = LOS[i];
+        LOS[i] = LOS[i - 1];
+        LOS[i - 1] = swap;
+
+        swap = HIS[i];
+        HIS[i] = HIS[i - 1];
+        HIS[i - 1] = swap;
+      }
+    }
+    else {
+      i--;
+    }
+  }
+
+  return array;
+}
+
+__webpack_unused_export__ = inplaceQuickSort;
+
+function inplaceQuickSortIndices(array, indices, lo, hi) {
+  var p, i, l, r, t, swap;
+
+  LOS[0] = lo;
+  HIS[0] = hi;
+  i = 0;
+
+  while (i >= 0) {
+    l = LOS[i];
+    r = HIS[i] - 1;
+
+    if (l < r) {
+      t = indices[l];
+      p = array[t];
+
+      while (l < r) {
+        while (array[indices[r]] >= p && l < r)
+          r--;
+
+        if (l < r)
+          indices[l++] = indices[r];
+
+        while (array[indices[l]] <= p && l < r)
+          l++;
+
+        if (l < r)
+          indices[r--] = indices[l];
+      }
+
+      indices[l] = t;
+      LOS[i + 1] = l + 1;
+      HIS[i + 1] = HIS[i];
+      HIS[i++] = l;
+
+      if (HIS[i] - LOS[i] > HIS[i - 1] - LOS[i - 1]) {
+        swap = LOS[i];
+        LOS[i] = LOS[i - 1];
+        LOS[i - 1] = swap;
+
+        swap = HIS[i];
+        HIS[i] = HIS[i - 1];
+        HIS[i - 1] = swap;
+      }
+    }
+    else {
+      i--;
+    }
+  }
+
+  return indices;
+}
+
+exports.O = inplaceQuickSortIndices;
+
+
+/***/ }),
+
+/***/ 2695:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist SparseMap
+ * ====================
+ *
+ * JavaScript sparse map implemented on top of byte arrays.
+ *
+ * [Reference]: https://research.swtch.com/sparse
+ */
+var Iterator = __nccwpck_require__(3062),
+    getPointerArray = __nccwpck_require__(3125).getPointerArray;
+
+/**
+ * SparseMap.
+ *
+ * @constructor
+ */
+function SparseMap(Values, length) {
+  if (arguments.length < 2) {
+    length = Values;
+    Values = Array;
+  }
+
+  var ByteArray = getPointerArray(length);
+
+  // Properties
+  this.size = 0;
+  this.length = length;
+  this.dense = new ByteArray(length);
+  this.sparse = new ByteArray(length);
+  this.vals = new Values(length);
+}
+
+/**
+ * Method used to clear the structure.
+ *
+ * @return {undefined}
+ */
+SparseMap.prototype.clear = function() {
+  this.size = 0;
+};
+
+/**
+ * Method used to check the existence of a member in the set.
+ *
+ * @param  {number} member - Member to test.
+ * @return {SparseMap}
+ */
+SparseMap.prototype.has = function(member) {
+  var index = this.sparse[member];
+
+  return (
+    index < this.size &&
+    this.dense[index] === member
+  );
+};
+
+/**
+ * Method used to get the value associated to a member in the set.
+ *
+ * @param  {number} member - Member to test.
+ * @return {any}
+ */
+SparseMap.prototype.get = function(member) {
+  var index = this.sparse[member];
+
+  if (index < this.size && this.dense[index] === member)
+    return this.vals[index];
+
+  return;
+};
+
+/**
+ * Method used to set a value into the map.
+ *
+ * @param  {number} member - Member to set.
+ * @param  {any}    value  - Associated value.
+ * @return {SparseMap}
+ */
+SparseMap.prototype.set = function(member, value) {
+  var index = this.sparse[member];
+
+  if (index < this.size && this.dense[index] === member) {
+    this.vals[index] = value;
+    return this;
+  }
+
+  this.dense[this.size] = member;
+  this.sparse[member] = this.size;
+  this.vals[this.size] = value;
+  this.size++;
+
+  return this;
+};
+
+/**
+ * Method used to remove a member from the set.
+ *
+ * @param  {number} member - Member to delete.
+ * @return {boolean}
+ */
+SparseMap.prototype.delete = function(member) {
+  var index = this.sparse[member];
+
+  if (index >= this.size || this.dense[index] !== member)
+    return false;
+
+  index = this.dense[this.size - 1];
+  this.dense[this.sparse[member]] = index;
+  this.sparse[index] = this.sparse[member];
+  this.size--;
+
+  return true;
+};
+
+/**
+ * Method used to iterate over the set's values.
+ *
+ * @param  {function}  callback - Function to call for each item.
+ * @param  {object}    scope    - Optional scope.
+ * @return {undefined}
+ */
+SparseMap.prototype.forEach = function(callback, scope) {
+  scope = arguments.length > 1 ? scope : this;
+
+  for (var i = 0; i < this.size; i++)
+    callback.call(scope, this.vals[i], this.dense[i]);
+};
+
+/**
+ * Method used to create an iterator over a set's members.
+ *
+ * @return {Iterator}
+ */
+SparseMap.prototype.keys = function() {
+  var size = this.size,
+      dense = this.dense,
+      i = 0;
+
+  return new Iterator(function() {
+    if (i < size) {
+      var item = dense[i];
+      i++;
+
+      return {
+        value: item
+      };
+    }
+
+    return {
+      done: true
+    };
+  });
+};
+
+/**
+ * Method used to create an iterator over a set's values.
+ *
+ * @return {Iterator}
+ */
+SparseMap.prototype.values = function() {
+  var size = this.size,
+      values = this.vals,
+      i = 0;
+
+  return new Iterator(function() {
+    if (i < size) {
+      var item = values[i];
+      i++;
+
+      return {
+        value: item
+      };
+    }
+
+    return {
+      done: true
+    };
+  });
+};
+
+/**
+ * Method used to create an iterator over a set's entries.
+ *
+ * @return {Iterator}
+ */
+SparseMap.prototype.entries = function() {
+  var size = this.size,
+      dense = this.dense,
+      values = this.vals,
+      i = 0;
+
+  return new Iterator(function() {
+    if (i < size) {
+      var item = [dense[i], values[i]];
+      i++;
+
+      return {
+        value: item
+      };
+    }
+
+    return {
+      done: true
+    };
+  });
+};
+
+/**
+ * Attaching the #.entries method to Symbol.iterator if possible.
+ */
+if (typeof Symbol !== 'undefined')
+  SparseMap.prototype[Symbol.iterator] = SparseMap.prototype.entries;
+
+/**
+ * Convenience known methods.
+ */
+SparseMap.prototype.inspect = function() {
+  var proxy = new Map();
+
+  for (var i = 0; i < this.size; i++)
+    proxy.set(this.dense[i], this.vals[i]);
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(proxy, 'constructor', {
+    value: SparseMap,
+    enumerable: false
+  });
+
+  proxy.length = this.length;
+
+  if (this.vals.constructor !== Array)
+    proxy.type = this.vals.constructor.name;
+
+  return proxy;
+};
+
+if (typeof Symbol !== 'undefined')
+  SparseMap.prototype[Symbol.for('nodejs.util.inspect.custom')] = SparseMap.prototype.inspect;
+
+/**
+ * Exporting.
+ */
+module.exports = SparseMap;
+
+
+/***/ }),
+
+/***/ 6231:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist SparseQueueSet
+ * =========================
+ *
+ * JavaScript sparse queue set implemented on top of byte arrays.
+ *
+ * [Reference]: https://research.swtch.com/sparse
+ */
+var Iterator = __nccwpck_require__(3062),
+    getPointerArray = __nccwpck_require__(3125).getPointerArray;
+
+/**
+ * SparseQueueSet.
+ *
+ * @constructor
+ */
+function SparseQueueSet(capacity) {
+
+  var ByteArray = getPointerArray(capacity);
+
+  // Properties
+  this.start = 0;
+  this.size = 0;
+  this.capacity = capacity;
+  this.dense = new ByteArray(capacity);
+  this.sparse = new ByteArray(capacity);
+}
+
+/**
+ * Method used to clear the structure.
+ *
+ * @return {undefined}
+ */
+SparseQueueSet.prototype.clear = function() {
+  this.start = 0;
+  this.size = 0;
+};
+
+/**
+ * Method used to check the existence of a member in the queue.
+ *
+ * @param  {number} member - Member to test.
+ * @return {SparseQueueSet}
+ */
+SparseQueueSet.prototype.has = function(member) {
+  if (this.size === 0)
+    return false;
+
+  var index = this.sparse[member];
+
+  var inBounds = (
+    index < this.capacity &&
+    (
+      index >= this.start &&
+      index < this.start + this.size
+    ) ||
+    (
+      index < ((this.start + this.size) % this.capacity)
+    )
+  );
+
+  return (
+    inBounds &&
+    this.dense[index] === member
+  );
+};
+
+/**
+ * Method used to add a member to the queue.
+ *
+ * @param  {number} member - Member to add.
+ * @return {SparseQueueSet}
+ */
+SparseQueueSet.prototype.enqueue = function(member) {
+  var index = this.sparse[member];
+
+  if (this.size !== 0) {
+    var inBounds = (
+      index < this.capacity &&
+      (
+        index >= this.start &&
+        index < this.start + this.size
+      ) ||
+      (
+        index < ((this.start + this.size) % this.capacity)
+      )
+    );
+
+    if (inBounds && this.dense[index] === member)
+      return this;
+  }
+
+  index = (this.start + this.size) % this.capacity;
+
+  this.dense[index] = member;
+  this.sparse[member] = index;
+  this.size++;
+
+  return this;
+};
+
+/**
+ * Method used to remove the next member from the queue.
+ *
+ * @param  {number} member - Member to delete.
+ * @return {boolean}
+ */
+SparseQueueSet.prototype.dequeue = function() {
+  if (this.size === 0)
+    return;
+
+  var index = this.start;
+
+  this.size--;
+  this.start++;
+
+  if (this.start === this.capacity)
+    this.start = 0;
+
+  var member = this.dense[index];
+
+  this.sparse[member] = this.capacity;
+
+  return member;
+};
+
+/**
+ * Method used to iterate over the queue's values.
+ *
+ * @param  {function}  callback - Function to call for each item.
+ * @param  {object}    scope    - Optional scope.
+ * @return {undefined}
+ */
+SparseQueueSet.prototype.forEach = function(callback, scope) {
+  scope = arguments.length > 1 ? scope : this;
+
+  var c = this.capacity,
+      l = this.size,
+      i = this.start,
+      j = 0;
+
+  while (j < l) {
+    callback.call(scope, this.dense[i], j, this);
+    i++;
+    j++;
+
+    if (i === c)
+      i = 0;
+  }
+};
+
+/**
+ * Method used to create an iterator over a set's values.
+ *
+ * @return {Iterator}
+ */
+SparseQueueSet.prototype.values = function() {
+  var dense = this.dense,
+      c = this.capacity,
+      l = this.size,
+      i = this.start,
+      j = 0;
+
+  return new Iterator(function() {
+    if (j >= l)
+      return {
+        done: true
+      };
+
+    var value = dense[i];
+
+    i++;
+    j++;
+
+    if (i === c)
+      i = 0;
+
+    return {
+      value: value,
+      done: false
+    };
+  });
+};
+
+/**
+ * Attaching the #.values method to Symbol.iterator if possible.
+ */
+if (typeof Symbol !== 'undefined')
+  SparseQueueSet.prototype[Symbol.iterator] = SparseQueueSet.prototype.values;
+
+/**
+ * Convenience known methods.
+ */
+SparseQueueSet.prototype.inspect = function() {
+  var proxy = [];
+
+  this.forEach(function(member) {
+    proxy.push(member);
+  });
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(proxy, 'constructor', {
+    value: SparseQueueSet,
+    enumerable: false
+  });
+
+  proxy.capacity = this.capacity;
+
+  return proxy;
+};
+
+if (typeof Symbol !== 'undefined')
+  SparseQueueSet.prototype[Symbol.for('nodejs.util.inspect.custom')] = SparseQueueSet.prototype.inspect;
+
+/**
+ * Exporting.
+ */
+module.exports = SparseQueueSet;
+
+
+/***/ }),
+
+/***/ 5082:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist SparseSet
+ * ====================
+ *
+ * JavaScript sparse set implemented on top of byte arrays.
+ *
+ * [Reference]: https://research.swtch.com/sparse
+ */
+var Iterator = __nccwpck_require__(3062),
+    getPointerArray = __nccwpck_require__(3125).getPointerArray;
+
+/**
+ * SparseSet.
+ *
+ * @constructor
+ */
+function SparseSet(length) {
+
+  var ByteArray = getPointerArray(length);
+
+  // Properties
+  this.size = 0;
+  this.length = length;
+  this.dense = new ByteArray(length);
+  this.sparse = new ByteArray(length);
+}
+
+/**
+ * Method used to clear the structure.
+ *
+ * @return {undefined}
+ */
+SparseSet.prototype.clear = function() {
+  this.size = 0;
+};
+
+/**
+ * Method used to check the existence of a member in the set.
+ *
+ * @param  {number} member - Member to test.
+ * @return {SparseSet}
+ */
+SparseSet.prototype.has = function(member) {
+  var index = this.sparse[member];
+
+  return (
+    index < this.size &&
+    this.dense[index] === member
+  );
+};
+
+/**
+ * Method used to add a member to the set.
+ *
+ * @param  {number} member - Member to add.
+ * @return {SparseSet}
+ */
+SparseSet.prototype.add = function(member) {
+  var index = this.sparse[member];
+
+  if (index < this.size && this.dense[index] === member)
+    return this;
+
+  this.dense[this.size] = member;
+  this.sparse[member] = this.size;
+  this.size++;
+
+  return this;
+};
+
+/**
+ * Method used to remove a member from the set.
+ *
+ * @param  {number} member - Member to delete.
+ * @return {boolean}
+ */
+SparseSet.prototype.delete = function(member) {
+  var index = this.sparse[member];
+
+  if (index >= this.size || this.dense[index] !== member)
+    return false;
+
+  index = this.dense[this.size - 1];
+  this.dense[this.sparse[member]] = index;
+  this.sparse[index] = this.sparse[member];
+  this.size--;
+
+  return true;
+};
+
+/**
+ * Method used to iterate over the set's values.
+ *
+ * @param  {function}  callback - Function to call for each item.
+ * @param  {object}    scope    - Optional scope.
+ * @return {undefined}
+ */
+SparseSet.prototype.forEach = function(callback, scope) {
+  scope = arguments.length > 1 ? scope : this;
+
+  var item;
+
+  for (var i = 0; i < this.size; i++) {
+    item = this.dense[i];
+
+    callback.call(scope, item, item);
+  }
+};
+
+/**
+ * Method used to create an iterator over a set's values.
+ *
+ * @return {Iterator}
+ */
+SparseSet.prototype.values = function() {
+  var size = this.size,
+      dense = this.dense,
+      i = 0;
+
+  return new Iterator(function() {
+    if (i < size) {
+      var item = dense[i];
+      i++;
+
+      return {
+        value: item
+      };
+    }
+
+    return {
+      done: true
+    };
+  });
+};
+
+/**
+ * Attaching the #.values method to Symbol.iterator if possible.
+ */
+if (typeof Symbol !== 'undefined')
+  SparseSet.prototype[Symbol.iterator] = SparseSet.prototype.values;
+
+/**
+ * Convenience known methods.
+ */
+SparseSet.prototype.inspect = function() {
+  var proxy = new Set();
+
+  for (var i = 0; i < this.size; i++)
+    proxy.add(this.dense[i]);
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(proxy, 'constructor', {
+    value: SparseSet,
+    enumerable: false
+  });
+
+  proxy.length = this.length;
+
+  return proxy;
+};
+
+if (typeof Symbol !== 'undefined')
+  SparseSet.prototype[Symbol.for('nodejs.util.inspect.custom')] = SparseSet.prototype.inspect;
+
+/**
+ * Exporting.
+ */
+module.exports = SparseSet;
+
+
+/***/ }),
+
+/***/ 4226:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist Stack
+ * ================
+ *
+ * Stack implementation relying on JavaScript arrays, which are fast enough &
+ * correctly optimized for this kind of work.
+ */
+var Iterator = __nccwpck_require__(3062),
+    forEach = __nccwpck_require__(8968);
+
+/**
+ * Stack
+ *
+ * @constructor
+ */
+function Stack() {
+  this.clear();
+}
+
+/**
+ * Method used to clear the stack.
+ *
+ * @return {undefined}
+ */
+Stack.prototype.clear = function() {
+
+  // Properties
+  this.items = [];
+  this.size = 0;
+};
+
+/**
+ * Method used to add an item to the stack.
+ *
+ * @param  {any}    item - Item to add.
+ * @return {number}
+ */
+Stack.prototype.push = function(item) {
+  this.items.push(item);
+  return ++this.size;
+};
+
+/**
+ * Method used to retrieve & remove the last item of the stack.
+ *
+ * @return {any}
+ */
+Stack.prototype.pop = function() {
+  if (this.size === 0)
+    return;
+
+  this.size--;
+  return this.items.pop();
+};
+
+/**
+ * Method used to get the last item of the stack.
+ *
+ * @return {any}
+ */
+Stack.prototype.peek = function() {
+  return this.items[this.size - 1];
+};
+
+/**
+ * Method used to iterate over the stack.
+ *
+ * @param  {function}  callback - Function to call for each item.
+ * @param  {object}    scope    - Optional scope.
+ * @return {undefined}
+ */
+Stack.prototype.forEach = function(callback, scope) {
+  scope = arguments.length > 1 ? scope : this;
+
+  for (var i = 0, l = this.items.length; i < l; i++)
+    callback.call(scope, this.items[l - i - 1], i, this);
+};
+
+/**
+ * Method used to convert the stack to a JavaScript array.
+ *
+ * @return {array}
+ */
+Stack.prototype.toArray = function() {
+  var array = new Array(this.size),
+      l = this.size - 1,
+      i = this.size;
+
+  while (i--)
+    array[i] = this.items[l - i];
+
+  return array;
+};
+
+/**
+ * Method used to create an iterator over a stack's values.
+ *
+ * @return {Iterator}
+ */
+Stack.prototype.values = function() {
+  var items = this.items,
+      l = items.length,
+      i = 0;
+
+  return new Iterator(function() {
+    if (i >= l)
+      return {
+        done: true
+      };
+
+    var value = items[l - i - 1];
+    i++;
+
+    return {
+      value: value,
+      done: false
+    };
+  });
+};
+
+/**
+ * Method used to create an iterator over a stack's entries.
+ *
+ * @return {Iterator}
+ */
+Stack.prototype.entries = function() {
+  var items = this.items,
+      l = items.length,
+      i = 0;
+
+  return new Iterator(function() {
+    if (i >= l)
+      return {
+        done: true
+      };
+
+    var value = items[l - i - 1];
+
+    return {
+      value: [i++, value],
+      done: false
+    };
+  });
+};
+
+/**
+ * Attaching the #.values method to Symbol.iterator if possible.
+ */
+if (typeof Symbol !== 'undefined')
+  Stack.prototype[Symbol.iterator] = Stack.prototype.values;
+
+
+/**
+ * Convenience known methods.
+ */
+Stack.prototype.toString = function() {
+  return this.toArray().join(',');
+};
+
+Stack.prototype.toJSON = function() {
+  return this.toArray();
+};
+
+Stack.prototype.inspect = function() {
+  var array = this.toArray();
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(array, 'constructor', {
+    value: Stack,
+    enumerable: false
+  });
+
+  return array;
+};
+
+if (typeof Symbol !== 'undefined')
+  Stack.prototype[Symbol.for('nodejs.util.inspect.custom')] = Stack.prototype.inspect;
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a stack.
+ *
+ * @param  {Iterable} iterable   - Target iterable.
+ * @return {Stack}
+ */
+Stack.from = function(iterable) {
+  var stack = new Stack();
+
+  forEach(iterable, function(value) {
+    stack.push(value);
+  });
+
+  return stack;
+};
+
+/**
+ * Static @.of function taking an arbitrary number of arguments & converting it
+ * into a stack.
+ *
+ * @param  {...any} args
+ * @return {Stack}
+ */
+Stack.of = function() {
+  return Stack.from(arguments);
+};
+
+/**
+ * Exporting.
+ */
+module.exports = Stack;
+
+
+/***/ }),
+
+/***/ 9538:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/* eslint no-constant-condition: 0 */
+/**
+ * Mnemonist StaticDisjointSet
+ * ============================
+ *
+ * JavaScript implementation of a static disjoint set (union-find).
+ *
+ * Note that to remain performant, this implementation needs to know a size
+ * beforehand.
+ */
+var helpers = __nccwpck_require__(3125);
+
+/**
+ * StaticDisjointSet.
+ *
+ * @constructor
+ */
+function StaticDisjointSet(size) {
+
+  // Optimizing the typed array types
+  var ParentsTypedArray = helpers.getPointerArray(size),
+      RanksTypedArray = helpers.getPointerArray(Math.log2(size));
+
+  // Properties
+  this.size = size;
+  this.dimension = size;
+  this.parents = new ParentsTypedArray(size);
+  this.ranks = new RanksTypedArray(size);
+
+  // Initializing parents
+  for (var i = 0; i < size; i++)
+    this.parents[i] = i;
+}
+
+/**
+ * Method used to find the root of the given item.
+ *
+ * @param  {number} x - Target item.
+ * @return {number}
+ */
+StaticDisjointSet.prototype.find = function(x) {
+  var y = x;
+
+  var c, p;
+
+  while (true) {
+    c = this.parents[y];
+
+    if (y === c)
+      break;
+
+    y = c;
+  }
+
+  // Path compression
+  while (true) {
+    p = this.parents[x];
+
+    if (p === y)
+      break;
+
+    this.parents[x] = y;
+    x = p;
+  }
+
+  return y;
+};
+
+/**
+ * Method used to perform the union of two items.
+ *
+ * @param  {number} x - First item.
+ * @param  {number} y - Second item.
+ * @return {StaticDisjointSet}
+ */
+StaticDisjointSet.prototype.union = function(x, y) {
+  var xRoot = this.find(x),
+      yRoot = this.find(y);
+
+  // x and y are already in the same set
+  if (xRoot === yRoot)
+    return this;
+
+  this.dimension--;
+
+  // x and y are not in the same set, we merge them
+  var xRank = this.ranks[x],
+      yRank = this.ranks[y];
+
+  if (xRank < yRank) {
+    this.parents[xRoot] = yRoot;
+  }
+  else if (xRank > yRank) {
+    this.parents[yRoot] = xRoot;
+  }
+  else {
+    this.parents[yRoot] = xRoot;
+    this.ranks[xRoot]++;
+  }
+
+  return this;
+};
+
+/**
+ * Method returning whether two items are connected.
+ *
+ * @param  {number} x - First item.
+ * @param  {number} y - Second item.
+ * @return {boolean}
+ */
+StaticDisjointSet.prototype.connected = function(x, y) {
+  var xRoot = this.find(x);
+
+  return xRoot === this.find(y);
+};
+
+/**
+ * Method returning the set mapping.
+ *
+ * @return {TypedArray}
+ */
+StaticDisjointSet.prototype.mapping = function() {
+  var MappingClass = helpers.getPointerArray(this.dimension);
+
+  var ids = {},
+      mapping = new MappingClass(this.size),
+      c = 0;
+
+  var r;
+
+  for (var i = 0, l = this.parents.length; i < l; i++) {
+    r = this.find(i);
+
+    if (typeof ids[r] === 'undefined') {
+      mapping[i] = c;
+      ids[r] = c++;
+    }
+    else {
+      mapping[i] = ids[r];
+    }
+  }
+
+  return mapping;
+};
+
+/**
+ * Method used to compile the disjoint set into an array of arrays.
+ *
+ * @return {array}
+ */
+StaticDisjointSet.prototype.compile = function() {
+  var ids = {},
+      result = new Array(this.dimension),
+      c = 0;
+
+  var r;
+
+  for (var i = 0, l = this.parents.length; i < l; i++) {
+    r = this.find(i);
+
+    if (typeof ids[r] === 'undefined') {
+      result[c] = [i];
+      ids[r] = c++;
+    }
+    else {
+      result[ids[r]].push(i);
+    }
+  }
+
+  return result;
+};
+
+/**
+ * Convenience known methods.
+ */
+StaticDisjointSet.prototype.inspect = function() {
+  var array = this.compile();
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(array, 'constructor', {
+    value: StaticDisjointSet,
+    enumerable: false
+  });
+
+  return array;
+};
+
+if (typeof Symbol !== 'undefined')
+  StaticDisjointSet.prototype[Symbol.for('nodejs.util.inspect.custom')] = StaticDisjointSet.prototype.inspect;
+
+
+/**
+ * Exporting.
+ */
+module.exports = StaticDisjointSet;
+
+
+/***/ }),
+
+/***/ 1336:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/*
+ * Mnemonist StaticIntervalTree
+ * =============================
+ *
+ * JavaScript implementation of a static interval tree. This tree is static in
+ * that you are required to know all its items beforehand and to built it
+ * from an iterable.
+ *
+ * This implementation represents the interval tree as an augmented balanced
+ * binary search tree. It works by sorting the intervals by startpoint first
+ * then proceeds building the augmented balanced BST bottom-up from the
+ * sorted list.
+ *
+ * Note that this implementation considers every given intervals as closed for
+ * simplicity's sake.
+ *
+ * For more information: https://en.wikipedia.org/wiki/Interval_tree
+ */
+var iterables = __nccwpck_require__(7304),
+    typed = __nccwpck_require__(3125);
+
+var FixedStack = __nccwpck_require__(1230);
+
+
+// TODO: pass index to getters
+// TODO: custom comparison
+// TODO: possibility to pass offset buffer
+
+// TODO: intervals() => Symbol.iterator
+// TODO: dfs()
+
+/**
+ * Helpers.
+ */
+
+/**
+ * Recursive function building the BST from the sorted list of interval
+ * indices.
+ *
+ * @param  {array}    intervals     - Array of intervals to index.
+ * @param  {function} endGetter     - Getter function for end of intervals.
+ * @param  {array}    sortedIndices - Sorted indices of the intervals.
+ * @param  {array}    tree          - BST memory.
+ * @param  {array}    augmentations - Array of node augmentations.
+ * @param  {number}   i             - BST index of current node.
+ * @param  {number}   low           - Dichotomy low index.
+ * @param  {number}   high          - Dichotomy high index.
+ * @return {number}                 - Created node augmentation value.
+ */
+function buildBST(
+  intervals,
+  endGetter,
+  sortedIndices,
+  tree,
+  augmentations,
+  i,
+  low,
+  high
+) {
+  var mid = (low + (high - low) / 2) | 0,
+      midMinusOne = ~-mid,
+      midPlusOne = -~mid;
+
+  var current = sortedIndices[mid];
+  tree[i] = current + 1;
+
+  var end = endGetter ? endGetter(intervals[current]) : intervals[current][1];
+
+  var left = i * 2 + 1,
+      right = i * 2 + 2;
+
+  var leftEnd = -Infinity,
+      rightEnd = -Infinity;
+
+  if (low <= midMinusOne) {
+    leftEnd = buildBST(
+      intervals,
+      endGetter,
+      sortedIndices,
+      tree,
+      augmentations,
+      left,
+      low,
+      midMinusOne
+    );
+  }
+
+  if (midPlusOne <= high) {
+    rightEnd = buildBST(
+      intervals,
+      endGetter,
+      sortedIndices,
+      tree,
+      augmentations,
+      right,
+      midPlusOne,
+      high
+    );
+  }
+
+  var augmentation = Math.max(end, leftEnd, rightEnd);
+
+  var augmentationPointer = current;
+
+  if (augmentation === leftEnd)
+    augmentationPointer = augmentations[tree[left] - 1];
+  else if (augmentation === rightEnd)
+    augmentationPointer = augmentations[tree[right] - 1];
+
+  augmentations[current] = augmentationPointer;
+
+  return augmentation;
+}
+
+/**
+ * StaticIntervalTree.
+ *
+ * @constructor
+ * @param {array}           intervals - Array of intervals to index.
+ * @param {array<function>} getters   - Optional getters.
+ */
+function StaticIntervalTree(intervals, getters) {
+
+  // Properties
+  this.size = intervals.length;
+  this.intervals = intervals;
+
+  var startGetter = null,
+      endGetter = null;
+
+  if (Array.isArray(getters)) {
+    startGetter = getters[0];
+    endGetter = getters[1];
+  }
+
+  // Building the indices array
+  var length = intervals.length;
+
+  var IndicesArray = typed.getPointerArray(length + 1);
+
+  var indices = new IndicesArray(length);
+
+  var i;
+
+  for (i = 1; i < length; i++)
+    indices[i] = i;
+
+  // Sorting indices array
+  // TODO: check if some version of radix sort can outperform this part
+  indices.sort(function(a, b) {
+    a = intervals[a];
+    b = intervals[b];
+
+    if (startGetter) {
+      a = startGetter(a);
+      b = startGetter(b);
+    }
+    else {
+      a = a[0];
+      b = b[0];
+    }
+
+    if (a < b)
+      return -1;
+
+    if (a > b)
+      return 1;
+
+    // TODO: use getters
+    // TODO: this ordering has the following invariant: if query interval
+    // contains [nodeStart, max], then whole right subtree can be collected
+    // a = a[1];
+    // b = b[1];
+
+    // if (a < b)
+    //   return 1;
+
+    // if (a > b)
+    //   return -1;
+
+    return 0;
+  });
+
+  // Building the binary tree
+  var height = Math.ceil(Math.log2(length + 1)),
+      treeSize = Math.pow(2, height) - 1;
+
+  var tree = new IndicesArray(treeSize);
+
+  var augmentations = new IndicesArray(length);
+
+  buildBST(
+    intervals,
+    endGetter,
+    indices,
+    tree,
+    augmentations,
+    0,
+    0,
+    length - 1
+  );
+
+  // Dropping indices
+  indices = null;
+
+  // Storing necessary information
+  this.height = height;
+  this.tree = tree;
+  this.augmentations = augmentations;
+  this.startGetter = startGetter;
+  this.endGetter = endGetter;
+
+  // Initializing DFS stack
+  this.stack = new FixedStack(IndicesArray, this.height);
+}
+
+/**
+ * Method returning a list of intervals containing the given point.
+ *
+ * @param  {any}   point - Target point.
+ * @return {array}
+ */
+StaticIntervalTree.prototype.intervalsContainingPoint = function(point) {
+  var matches = [];
+
+  var stack = this.stack;
+
+  stack.clear();
+  stack.push(0);
+
+  var l = this.tree.length;
+
+  var bstIndex,
+      intervalIndex,
+      interval,
+      maxInterval,
+      start,
+      end,
+      max,
+      left,
+      right;
+
+  while (stack.size) {
+    bstIndex = stack.pop();
+    intervalIndex = this.tree[bstIndex] - 1;
+    interval = this.intervals[intervalIndex];
+    maxInterval = this.intervals[this.augmentations[intervalIndex]];
+
+    max = this.endGetter ? this.endGetter(maxInterval) : maxInterval[1];
+
+    // No possible match, point is farther right than the max end value
+    if (point > max)
+      continue;
+
+    // Searching left
+    left = bstIndex * 2 + 1;
+
+    if (left < l && this.tree[left] !== 0)
+      stack.push(left);
+
+    start = this.startGetter ? this.startGetter(interval) : interval[0];
+    end = this.endGetter ? this.endGetter(interval) : interval[1];
+
+    // Checking current node
+    if (point >= start && point <= end)
+      matches.push(interval);
+
+    // If the point is to the left of the start of the current interval,
+    // then it cannot be in the right child
+    if (point < start)
+      continue;
+
+    // Searching right
+    right = bstIndex * 2 + 2;
+
+    if (right < l && this.tree[right] !== 0)
+      stack.push(right);
+  }
+
+  return matches;
+};
+
+/**
+ * Method returning a list of intervals overlapping the given interval.
+ *
+ * @param  {any}   interval - Target interval.
+ * @return {array}
+ */
+StaticIntervalTree.prototype.intervalsOverlappingInterval = function(interval) {
+  var intervalStart = this.startGetter ? this.startGetter(interval) : interval[0],
+      intervalEnd = this.endGetter ? this.endGetter(interval) : interval[1];
+
+  var matches = [];
+
+  var stack = this.stack;
+
+  stack.clear();
+  stack.push(0);
+
+  var l = this.tree.length;
+
+  var bstIndex,
+      intervalIndex,
+      currentInterval,
+      maxInterval,
+      start,
+      end,
+      max,
+      left,
+      right;
+
+  while (stack.size) {
+    bstIndex = stack.pop();
+    intervalIndex = this.tree[bstIndex] - 1;
+    currentInterval = this.intervals[intervalIndex];
+    maxInterval = this.intervals[this.augmentations[intervalIndex]];
+
+    max = this.endGetter ? this.endGetter(maxInterval) : maxInterval[1];
+
+    // No possible match, start is farther right than the max end value
+    if (intervalStart > max)
+      continue;
+
+    // Searching left
+    left = bstIndex * 2 + 1;
+
+    if (left < l && this.tree[left] !== 0)
+      stack.push(left);
+
+    start = this.startGetter ? this.startGetter(currentInterval) : currentInterval[0];
+    end = this.endGetter ? this.endGetter(currentInterval) : currentInterval[1];
+
+    // Checking current node
+    if (intervalEnd >= start && intervalStart <= end)
+      matches.push(currentInterval);
+
+    // If the end is to the left of the start of the current interval,
+    // then it cannot be in the right child
+    if (intervalEnd < start)
+      continue;
+
+    // Searching right
+    right = bstIndex * 2 + 2;
+
+    if (right < l && this.tree[right] !== 0)
+      stack.push(right);
+  }
+
+  return matches;
+};
+
+/**
+ * Convenience known methods.
+ */
+StaticIntervalTree.prototype.inspect = function() {
+  var proxy = this.intervals.slice();
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(proxy, 'constructor', {
+    value: StaticIntervalTree,
+    enumerable: false
+  });
+
+  return proxy;
+};
+
+if (typeof Symbol !== 'undefined')
+  StaticIntervalTree.prototype[Symbol.for('nodejs.util.inspect.custom')] = StaticIntervalTree.prototype.inspect;
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a structure.
+ *
+ * @param  {Iterable} iterable - Target iterable.
+ * @return {StaticIntervalTree}
+ */
+StaticIntervalTree.from = function(iterable, getters) {
+  if (iterables.isArrayLike(iterable))
+    return new StaticIntervalTree(iterable, getters);
+
+  return new StaticIntervalTree(Array.from(iterable), getters);
+};
+
+/**
+ * Exporting.
+ */
+module.exports = StaticIntervalTree;
+
+
+/***/ }),
+
+/***/ 8624:
+/***/ ((module) => {
+
+/**
+ * Mnemonist Suffix Array
+ * =======================
+ *
+ * Linear time implementation of a suffix array using the recursive
+ * method by Karkkainen and Sanders.
+ *
+ * [References]:
+ * https://www.cs.helsinki.fi/u/tpkarkka/publications/jacm05-revised.pdf
+ * http://people.mpi-inf.mpg.de/~sanders/programs/suffix/
+ * http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.184.442&rep=rep1&type=pdf
+ *
+ * [Article]:
+ * "Simple Linear Work Suffix Array Construction", Karkkainen and Sanders.
+ *
+ * [Note]:
+ * A paper by Simon J. Puglisi, William F. Smyth & Andrew Turpin named
+ * "The Performance of Linear Time Suffix Sorting Algorithms" seems to
+ * prove that supralinear algorithm are in fact better faring for
+ * "real" world use cases. It would be nice to check this out in JavaScript
+ * because the high level of the language could change a lot to the fact.
+ *
+ * The current code is largely inspired by the following:
+ * https://github.com/tixxit/suffixarray/blob/master/suffixarray.js
+ */
+
+/**
+ * Constants.
+ */
+var SEPARATOR = '\u0001';
+
+/**
+ * Function used to sort the triples.
+ *
+ * @param {string|array} string - Padded sequence.
+ * @param {array}        array  - Array to sort (will be mutated).
+ * @param {number}       offset - Index offset.
+ */
+function sort(string, array, offset) {
+  var l = array.length,
+      buckets = [],
+      i = l,
+      j = -1,
+      b,
+      d = 0,
+      bits;
+
+  while (i--)
+    j = Math.max(string[array[i] + offset], j);
+
+  bits = j >> 24 && 32 || j >> 16 && 24 || j >> 8 && 16 || 8;
+
+  for (; d < bits; d += 4) {
+    for (i = 16; i--;)
+      buckets[i] = [];
+    for (i = l; i--;)
+      buckets[((string[array[i] + offset]) >> d) & 15].push(array[i]);
+    for (b = 0; b < 16; b++) {
+      for (j = buckets[b].length; j--;)
+        array[++i] = buckets[b][j];
+    }
+  }
+}
+
+/**
+ * Comparison helper.
+ */
+function compare(string, lookup, m, n) {
+  return (
+    (string[m] - string[n]) ||
+    (m % 3 === 2 ?
+      (string[m + 1] - string[n + 1]) || (lookup[m + 2] - lookup[n + 2]) :
+      (lookup[m + 1] - lookup[n + 1]))
+  );
+}
+
+/**
+ * Recursive function used to build the suffix tree in linear time.
+ *
+ * @param  {string|array} string - Padded sequence.
+ * @param  {number}       l      - True length of sequence (unpadded).
+ * @return {array}
+ */
+function build(string, l) {
+  var a = [],
+      b = [],
+      al = (2 * l / 3) | 0,
+      bl = l - al,
+      r = (al + 1) >> 1,
+      i = al,
+      j = 0,
+      k,
+      lookup = [],
+      result = [];
+
+  if (l === 1)
+    return [0];
+
+  while (i--)
+    a[i] = ((i * 3) >> 1) + 1;
+
+  for (i = 3; i--;)
+    sort(string, a, i);
+
+  j = b[((a[0] / 3) | 0) + (a[0] % 3 === 1 ? 0 : r)] = 1;
+
+  for (i = 1; i < al; i++) {
+    if (string[a[i]] !== string[a[i - 1]] ||
+        string[a[i] + 1] !== string[a[i - 1] + 1] ||
+        string[a[i] + 2] !== string[a[i - 1] + 2])
+      j++;
+
+    b[((a[i] / 3) | 0) + (a[i] % 3 === 1 ? 0 : r)] = j;
+  }
+
+  if (j < al) {
+    b = build(b, al);
+
+    for (i = al; i--;)
+      a[i] = b[i] < r ? b[i] * 3 + 1 : ((b[i] - r) * 3 + 2);
+  }
+
+  for (i = al; i--;)
+    lookup[a[i]] = i;
+  lookup[l] = -1;
+  lookup[l + 1] = -2;
+
+  b = l % 3 === 1 ? [l - 1] : [];
+
+  for (i = 0; i < al; i++) {
+    if (a[i] % 3 === 1)
+      b.push(a[i] - 1);
+  }
+
+  sort(string, b, 0);
+
+  for (i = 0, j = 0, k = 0; i < al && j < bl;)
+    result[k++] = (
+      compare(string, lookup, a[i], b[j]) < 0 ?
+        a[i++] :
+        b[j++]
+    );
+
+  while (i < al)
+    result[k++] = a[i++];
+
+  while (j < bl)
+    result[k++] = b[j++];
+
+  return result;
+}
+
+/**
+ * Function used to create the array we are going to work on.
+ *
+ * @param  {string|array} target - Target sequence.
+ * @return {array}
+ */
+function convert(target) {
+
+  // Creating the alphabet array
+  var length = target.length,
+      paddingOffset = length % 3,
+      array = new Array(length + paddingOffset),
+      l,
+      i;
+
+  // If we have an arbitrary sequence, we need to transform it
+  if (typeof target !== 'string') {
+    var uniqueTokens = Object.create(null);
+
+    for (i = 0; i < length; i++) {
+      if (!uniqueTokens[target[i]])
+        uniqueTokens[target[i]] = true;
+    }
+
+    var alphabet = Object.create(null),
+        sortedUniqueTokens = Object.keys(uniqueTokens).sort();
+
+    for (i = 0, l = sortedUniqueTokens.length; i < l; i++)
+      alphabet[sortedUniqueTokens[i]] = i + 1;
+
+    for (i = 0; i < length; i++) {
+      array[i] = alphabet[target[i]];
+    }
+  }
+  else {
+    for (i = 0; i < length; i++)
+      array[i] = target.charCodeAt(i);
+  }
+
+  // Padding the array
+  for (; i < paddingOffset; i++)
+    array[i] = 0;
+
+  return array;
+}
+
+/**
+ * Suffix Array.
+ *
+ * @constructor
+ * @param {string|array} string - Sequence for which to build the suffix array.
+ */
+function SuffixArray(string) {
+
+  // Properties
+  this.hasArbitrarySequence = typeof string !== 'string';
+  this.string = string;
+  this.length = string.length;
+
+  // Building the array
+  this.array = build(convert(string), this.length);
+}
+
+/**
+ * Convenience known methods.
+ */
+SuffixArray.prototype.toString = function() {
+  return this.array.join(',');
+};
+
+SuffixArray.prototype.toJSON = function() {
+  return this.array;
+};
+
+SuffixArray.prototype.inspect = function() {
+  var array = new Array(this.length);
+
+  for (var i = 0; i < this.length; i++)
+    array[i] = this.string.slice(this.array[i]);
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(array, 'constructor', {
+    value: SuffixArray,
+    enumerable: false
+  });
+
+  return array;
+};
+
+if (typeof Symbol !== 'undefined')
+  SuffixArray.prototype[Symbol.for('nodejs.util.inspect.custom')] = SuffixArray.prototype.inspect;
+
+/**
+ * Generalized Suffix Array.
+ *
+ * @constructor
+ */
+function GeneralizedSuffixArray(strings) {
+
+  // Properties
+  this.hasArbitrarySequence = typeof strings[0] !== 'string';
+  this.size = strings.length;
+
+  if (this.hasArbitrarySequence) {
+    this.text = [];
+
+    for (var i = 0, l = this.size; i < l; i++) {
+      this.text.push.apply(this.text, strings[i]);
+
+      if (i < l - 1)
+        this.text.push(SEPARATOR);
+    }
+  }
+  else {
+    this.text = strings.join(SEPARATOR);
+  }
+
+  this.firstLength = strings[0].length;
+  this.length = this.text.length;
+
+  // Building the array
+  this.array = build(convert(this.text), this.length);
+}
+
+/**
+ * Method used to retrieve the longest common subsequence of the generalized
+ * suffix array.
+ *
+ * @return {string|array}
+ */
+GeneralizedSuffixArray.prototype.longestCommonSubsequence = function() {
+  var lcs = this.hasArbitrarySequence ? [] : '',
+      lcp,
+      i,
+      j,
+      s,
+      t;
+
+  for (i = 1; i < this.length; i++) {
+    s = this.array[i];
+    t = this.array[i - 1];
+
+    if (s < this.firstLength &&
+        t < this.firstLength)
+      continue;
+
+    if (s > this.firstLength &&
+        t > this.firstLength)
+      continue;
+
+    lcp = Math.min(this.length - s, this.length - t);
+
+    for (j = 0; j < lcp; j++) {
+      if (this.text[s + j] !== this.text[t + j]) {
+        lcp = j;
+        break;
+      }
+    }
+
+    if (lcp > lcs.length)
+      lcs = this.text.slice(s, s + lcp);
+  }
+
+  return lcs;
+};
+
+/**
+ * Convenience known methods.
+ */
+GeneralizedSuffixArray.prototype.toString = function() {
+  return this.array.join(',');
+};
+
+GeneralizedSuffixArray.prototype.toJSON = function() {
+  return this.array;
+};
+
+GeneralizedSuffixArray.prototype.inspect = function() {
+  var array = new Array(this.length);
+
+  for (var i = 0; i < this.length; i++)
+    array[i] = this.text.slice(this.array[i]);
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(array, 'constructor', {
+    value: GeneralizedSuffixArray,
+    enumerable: false
+  });
+
+  return array;
+};
+
+if (typeof Symbol !== 'undefined')
+  GeneralizedSuffixArray.prototype[Symbol.for('nodejs.util.inspect.custom')] = GeneralizedSuffixArray.prototype.inspect;
+
+/**
+ * Exporting.
+ */
+SuffixArray.GeneralizedSuffixArray = GeneralizedSuffixArray;
+module.exports = SuffixArray;
+
+
+/***/ }),
+
+/***/ 5729:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/* eslint no-loop-func: 0 */
+/**
+ * Mnemonist SymSpell
+ * ===================
+ *
+ * JavaScript implementation of the Symmetric Delete Spelling dictionary to
+ * efficiently index & query expression based on edit distance.
+ * Note that the current implementation target the v3.0 of the algorithm.
+ *
+ * [Reference]:
+ * http://blog.faroo.com/2012/06/07/improved-edit-distance-based-spelling-correction/
+ * https://github.com/wolfgarbe/symspell
+ *
+ * [Author]:
+ * Wolf Garbe
+ */
+var forEach = __nccwpck_require__(8968);
+
+/**
+ * Constants.
+ */
+var DEFAULT_MAX_DISTANCE = 2,
+    DEFAULT_VERBOSITY = 2;
+
+var VERBOSITY = new Set([
+  // Returns only the top suggestion
+  0,
+  // Returns suggestions with the smallest edit distance
+  1,
+  // Returns every suggestion (no early termination)
+  2
+]);
+
+var VERBOSITY_EXPLANATIONS = {
+  0: 'Returns only the top suggestion',
+  1: 'Returns suggestions with the smallest edit distance',
+  2: 'Returns every suggestion (no early termination)'
+};
+
+/**
+ * Functions.
+ */
+
+/**
+ * Function creating a dictionary item.
+ *
+ * @param  {number} [value] - An optional suggestion.
+ * @return {object}         - The created item.
+ */
+function createDictionaryItem(value) {
+  var suggestions = new Set();
+
+  if (typeof value === 'number')
+    suggestions.add(value);
+
+  return {
+    suggestions,
+    count: 0
+  };
+}
+
+/**
+ * Function creating a suggestion item.
+ *
+ * @return {object} - The created item.
+ */
+function createSuggestionItem(term, distance, count) {
+  return {
+    term: term || '',
+    distance: distance || 0,
+    count: count || 0
+  };
+}
+
+/**
+ * Simplified edit function.
+ *
+ * @param {string} word      - Target word.
+ * @param {number} distance  - Distance.
+ * @param {number} max       - Max distance.
+ * @param {Set}    [deletes] - Set mutated to store deletes.
+ */
+function edits(word, distance, max, deletes) {
+  deletes = deletes || new Set();
+  distance++;
+
+  var deletedItem,
+      l = word.length,
+      i;
+
+  if (l > 1) {
+    for (i = 0; i < l; i++) {
+      deletedItem = word.substring(0, i) + word.substring(i + 1);
+
+      if (!deletes.has(deletedItem)) {
+        deletes.add(deletedItem);
+
+        if (distance < max)
+          edits(deletedItem, distance, max, deletes);
+      }
+    }
+  }
+
+  return deletes;
+}
+
+/**
+ * Function used to conditionally add suggestions.
+ *
+ * @param {array}  words       - Words list.
+ * @param {number} verbosity   - Verbosity level.
+ * @param {object} item        - The target item.
+ * @param {string} suggestion  - The target suggestion.
+ * @param {number} int         - Integer key of the word.
+ * @param {object} deletedItem - Considered deleted item.
+ * @param {SymSpell}
+ */
+function addLowestDistance(words, verbosity, item, suggestion, int, deletedItem) {
+  var first = item.suggestions.values().next().value;
+
+  if (verbosity < 2 &&
+      item.suggestions.size > 0 &&
+      words[first].length - deletedItem.length > suggestion.length - deletedItem.length) {
+    item.suggestions = new Set();
+    item.count = 0;
+  }
+
+  if (verbosity === 2 ||
+      !item.suggestions.size ||
+      words[first].length - deletedItem.length >= suggestion.length - deletedItem.length) {
+    item.suggestions.add(int);
+  }
+}
+
+/**
+ * Custom Damerau-Levenshtein used by the algorithm.
+ *
+ * @param  {string} source - First string.
+ * @param  {string} target - Second string.
+ * @return {number}        - The distance.
+ */
+function damerauLevenshtein(source, target) {
+  var m = source.length,
+      n = target.length,
+      H = [[]],
+      INF = m + n,
+      sd = new Map(),
+      i,
+      l,
+      j;
+
+  H[0][0] = INF;
+
+  for (i = 0; i <= m; i++) {
+    if (!H[i + 1])
+      H[i + 1] = [];
+    H[i + 1][1] = i;
+    H[i + 1][0] = INF;
+  }
+
+  for (j = 0; j <= n; j++) {
+    H[1][j + 1] = j;
+    H[0][j + 1] = INF;
+  }
+
+  var st = source + target,
+      letter;
+
+  for (i = 0, l = st.length; i < l; i++) {
+    letter = st[i];
+
+    if (!sd.has(letter))
+      sd.set(letter, 0);
+  }
+
+  // Iterating
+  for (i = 1; i <= m; i++) {
+    var DB = 0;
+
+    for (j = 1; j <= n; j++) {
+      var i1 = sd.get(target[j - 1]),
+          j1 = DB;
+
+      if (source[i - 1] === target[j - 1]) {
+        H[i + 1][j + 1] = H[i][j];
+        DB = j;
+      }
+      else {
+        H[i + 1][j + 1] = Math.min(
+          H[i][j],
+          H[i + 1][j],
+          H[i][j + 1]
+        ) + 1;
+      }
+
+      H[i + 1][j + 1] = Math.min(
+        H[i + 1][j + 1],
+        H[i1][j1] + (i - i1 - 1) + 1 + (j - j1 - 1)
+      );
+    }
+
+    sd.set(source[i - 1], i);
+  }
+
+  return H[m + 1][n + 1];
+}
+
+/**
+ * Lookup function.
+ *
+ * @param  {object} dictionary  - A SymSpell dictionary.
+ * @param  {array}  words       - Unique words list.
+ * @param  {number} verbosity   - Verbosity level.
+ * @param  {number} maxDistance - Maximum distance.
+ * @param  {number} maxLength   - Maximum word length in the dictionary.
+ * @param  {string} input       - Input string.
+ * @return {array}              - The list of suggestions.
+ */
+function lookup(dictionary, words, verbosity, maxDistance, maxLength, input) {
+  var length = input.length;
+
+  if (length - maxDistance > maxLength)
+    return [];
+
+  var candidates = [input],
+      candidateSet = new Set(),
+      suggestionSet = new Set();
+
+  var suggestions = [],
+      candidate,
+      item;
+
+  // Exhausting every candidates
+  while (candidates.length > 0) {
+    candidate = candidates.shift();
+
+    // Early termination
+    if (
+      verbosity < 2 &&
+      suggestions.length > 0 &&
+      length - candidate.length > suggestions[0].distance
+    )
+      break;
+
+    item = dictionary[candidate];
+
+    if (item !== undefined) {
+      if (typeof item === 'number')
+        item = createDictionaryItem(item);
+
+      if (item.count > 0 && !suggestionSet.has(candidate)) {
+        suggestionSet.add(candidate);
+
+        var suggestItem = createSuggestionItem(
+          candidate,
+          length - candidate.length,
+          item.count
+        );
+
+        suggestions.push(suggestItem);
+
+        // Another early termination
+        if (verbosity < 2 && length - candidate.length === 0)
+          break;
+      }
+
+      // Iterating over the item's suggestions
+      item.suggestions.forEach(index => {
+        var suggestion = words[index];
+
+        // Do we already have this suggestion?
+        if (suggestionSet.has(suggestion))
+          return;
+
+        suggestionSet.add(suggestion);
+
+        // Computing distance between candidate & suggestion
+        var distance = 0;
+
+        if (input !== suggestion) {
+          if (suggestion.length === candidate.length) {
+            distance = length - candidate.length;
+          }
+          else if (length === candidate.length) {
+            distance = suggestion.length - candidate.length;
+          }
+          else {
+            var ii = 0,
+                jj = 0;
+
+            var l = suggestion.length;
+
+            while (
+              ii < l &&
+              ii < length &&
+              suggestion[ii] === input[ii]
+            ) {
+              ii++;
+            }
+
+            while (
+              jj < l - ii &&
+              jj < length &&
+              suggestion[l - jj - 1] === input[length - jj - 1]
+            ) {
+              jj++;
+            }
+
+            if (ii > 0 || jj > 0) {
+              distance = damerauLevenshtein(
+                suggestion.substr(ii, l - ii - jj),
+                input.substr(ii, length - ii - jj)
+              );
+            }
+            else {
+              distance = damerauLevenshtein(suggestion, input);
+            }
+          }
+        }
+
+        // Removing suggestions of higher distance
+        if (verbosity < 2 &&
+            suggestions.length > 0 &&
+            suggestions[0].distance > distance) {
+          suggestions = [];
+        }
+
+        if (verbosity < 2 &&
+            suggestions.length > 0 &&
+            distance > suggestions[0].distance) {
+          return;
+        }
+
+        if (distance <= maxDistance) {
+          var target = dictionary[suggestion];
+
+          if (target !== undefined) {
+            suggestions.push(createSuggestionItem(
+              suggestion,
+              distance,
+              target.count
+            ));
+          }
+        }
+      });
+    }
+
+    // Adding edits
+    if (length - candidate.length < maxDistance) {
+
+      if (verbosity < 2 &&
+          suggestions.length > 0 &&
+          length - candidate.length >= suggestions[0].distance)
+        continue;
+
+      for (var i = 0, l = candidate.length; i < l; i++) {
+        var deletedItem = (
+          candidate.substring(0, i) +
+          candidate.substring(i + 1)
+        );
+
+        if (!candidateSet.has(deletedItem)) {
+          candidateSet.add(deletedItem);
+          candidates.push(deletedItem);
+        }
+      }
+    }
+  }
+
+  if (verbosity === 0)
+    return suggestions.slice(0, 1);
+
+  return suggestions;
+}
+
+/**
+ * SymSpell.
+ *
+ * @constructor
+ */
+function SymSpell(options) {
+  options = options || {};
+
+  this.clear();
+
+  // Properties
+  this.maxDistance = typeof options.maxDistance === 'number' ?
+    options.maxDistance :
+    DEFAULT_MAX_DISTANCE;
+  this.verbosity = typeof options.verbosity === 'number' ?
+    options.verbosity :
+    DEFAULT_VERBOSITY;
+
+  // Sanity checks
+  if (typeof this.maxDistance !== 'number' || this.maxDistance <= 0)
+    throw Error('mnemonist/SymSpell.constructor: invalid `maxDistance` option. Should be a integer greater than 0.');
+
+  if (!VERBOSITY.has(this.verbosity))
+    throw Error('mnemonist/SymSpell.constructor: invalid `verbosity` option. Should be either 0, 1 or 2.');
+}
+
+/**
+ * Method used to clear the structure.
+ *
+ * @return {undefined}
+ */
+SymSpell.prototype.clear = function() {
+
+  // Properties
+  this.size = 0;
+  this.dictionary = Object.create(null);
+  this.maxLength = 0;
+  this.words = [];
+};
+
+/**
+ * Method used to add a word to the index.
+ *
+ * @param {string} word - Word to add.
+ * @param {SymSpell}
+ */
+SymSpell.prototype.add = function(word) {
+  var item = this.dictionary[word];
+
+  if (item !== undefined) {
+    if (typeof item === 'number') {
+      item = createDictionaryItem(item);
+      this.dictionary[word] = item;
+    }
+
+    item.count++;
+  }
+
+  else {
+    item = createDictionaryItem();
+    item.count++;
+
+    this.dictionary[word] = item;
+
+    if (word.length > this.maxLength)
+      this.maxLength = word.length;
+  }
+
+  if (item.count === 1) {
+    var number = this.words.length;
+    this.words.push(word);
+
+    var deletes = edits(word, 0, this.maxDistance);
+
+    deletes.forEach(deletedItem => {
+      var target = this.dictionary[deletedItem];
+
+      if (target !== undefined) {
+        if (typeof target === 'number') {
+          target = createDictionaryItem(target);
+
+          this.dictionary[deletedItem] = target;
+        }
+
+        if (!target.suggestions.has(number)) {
+          addLowestDistance(
+            this.words,
+            this.verbosity,
+            target,
+            word,
+            number,
+            deletedItem
+          );
+        }
+      }
+      else {
+        this.dictionary[deletedItem] = number;
+      }
+    });
+  }
+
+  this.size++;
+
+  return this;
+};
+
+/**
+ * Method used to search the index.
+ *
+ * @param  {string} input - Input query.
+ * @return {array}        - The found suggestions.
+ */
+SymSpell.prototype.search = function(input) {
+  return lookup(
+    this.dictionary,
+    this.words,
+    this.verbosity,
+    this.maxDistance,
+    this.maxLength,
+    input
+  );
+};
+
+/**
+ * Convenience known methods.
+ */
+SymSpell.prototype.inspect = function() {
+  var array = [];
+
+  array.size = this.size;
+  array.maxDistance = this.maxDistance;
+  array.verbosity = this.verbosity;
+  array.behavior = VERBOSITY_EXPLANATIONS[this.verbosity];
+
+  for (var k in this.dictionary) {
+    if (typeof this.dictionary[k] === 'object' && this.dictionary[k].count)
+      array.push([k, this.dictionary[k].count]);
+  }
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(array, 'constructor', {
+    value: SymSpell,
+    enumerable: false
+  });
+
+  return array;
+};
+
+if (typeof Symbol !== 'undefined')
+  SymSpell.prototype[Symbol.for('nodejs.util.inspect.custom')] = SymSpell.prototype.inspect;
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a structure.
+ *
+ * @param  {Iterable} iterable - Target iterable.
+ * @return {SymSpell}
+ */
+SymSpell.from = function(iterable, options) {
+  var index = new SymSpell(options);
+
+  forEach(iterable, function(value) {
+    index.add(value);
+  });
+
+  return index;
+};
+
+/**
+ * Exporting.
+ */
+module.exports = SymSpell;
+
+
+/***/ }),
+
+/***/ 1125:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist TrieMap
+ * ==================
+ *
+ * JavaScript TrieMap implementation based upon plain objects. As such this
+ * structure is more a convenience building upon the trie's advantages than
+ * a real performant alternative to already existing structures.
+ *
+ * Note that the Trie is based upon the TrieMap since the underlying machine
+ * is the very same. The Trie just does not let you set values and only
+ * considers the existence of the given prefixes.
+ */
+var forEach = __nccwpck_require__(8968),
+    Iterator = __nccwpck_require__(3062);
+
+/**
+ * Constants.
+ */
+var SENTINEL = String.fromCharCode(0);
+
+/**
+ * TrieMap.
+ *
+ * @constructor
+ */
+function TrieMap(Token) {
+  this.mode = Token === Array ? 'array' : 'string';
+  this.clear();
+}
+
+/**
+ * Method used to clear the trie.
+ *
+ * @return {undefined}
+ */
+TrieMap.prototype.clear = function() {
+
+  // Properties
+  this.root = {};
+  this.size = 0;
+};
+
+/**
+ * Method used to set the value of the given prefix in the trie.
+ *
+ * @param  {string|array} prefix - Prefix to follow.
+ * @param  {any}          value  - Value for the prefix.
+ * @return {TrieMap}
+ */
+TrieMap.prototype.set = function(prefix, value) {
+  var node = this.root,
+      token;
+
+  for (var i = 0, l = prefix.length; i < l; i++) {
+    token = prefix[i];
+
+    node = node[token] || (node[token] = {});
+  }
+
+  // Do we need to increase size?
+  if (!(SENTINEL in node))
+    this.size++;
+
+  node[SENTINEL] = value;
+
+  return this;
+};
+
+/**
+ * Method used to update the value of the given prefix in the trie.
+ *
+ * @param  {string|array} prefix - Prefix to follow.
+ * @param  {(oldValue: any | undefined) => any} updateFunction - Update value visitor callback.
+ * @return {TrieMap}
+ */
+TrieMap.prototype.update = function(prefix, updateFunction) {
+  var node = this.root,
+      token;
+
+  for (var i = 0, l = prefix.length; i < l; i++) {
+    token = prefix[i];
+
+    node = node[token] || (node[token] = {});
+  }
+
+  // Do we need to increase size?
+  if (!(SENTINEL in node))
+    this.size++;
+
+  node[SENTINEL] = updateFunction(node[SENTINEL]);
+
+  return this;
+};
+
+/**
+ * Method used to return the value sitting at the end of the given prefix or
+ * undefined if none exist.
+ *
+ * @param  {string|array} prefix - Prefix to follow.
+ * @return {any|undefined}
+ */
+TrieMap.prototype.get = function(prefix) {
+  var node = this.root,
+      token,
+      i,
+      l;
+
+  for (i = 0, l = prefix.length; i < l; i++) {
+    token = prefix[i];
+    node = node[token];
+
+    // Prefix does not exist
+    if (typeof node === 'undefined')
+      return;
+  }
+
+  if (!(SENTINEL in node))
+    return;
+
+  return node[SENTINEL];
+};
+
+/**
+ * Method used to delete a prefix from the trie.
+ *
+ * @param  {string|array} prefix - Prefix to delete.
+ * @return {boolean}
+ */
+TrieMap.prototype.delete = function(prefix) {
+  var node = this.root,
+      toPrune = null,
+      tokenToPrune = null,
+      parent,
+      token,
+      i,
+      l;
+
+  for (i = 0, l = prefix.length; i < l; i++) {
+    token = prefix[i];
+    parent = node;
+    node = node[token];
+
+    // Prefix does not exist
+    if (typeof node === 'undefined')
+      return false;
+
+    // Keeping track of a potential branch to prune
+    if (toPrune !== null) {
+      if (Object.keys(node).length > 1) {
+        toPrune = null;
+        tokenToPrune = null;
+      }
+    }
+    else {
+      if (Object.keys(node).length < 2) {
+        toPrune = parent;
+        tokenToPrune = token;
+      }
+    }
+  }
+
+  if (!(SENTINEL in node))
+    return false;
+
+  this.size--;
+
+  if (toPrune)
+    delete toPrune[tokenToPrune];
+  else
+    delete node[SENTINEL];
+
+  return true;
+};
+
+// TODO: add #.prune?
+
+/**
+ * Method used to assert whether the given prefix exists in the TrieMap.
+ *
+ * @param  {string|array} prefix - Prefix to check.
+ * @return {boolean}
+ */
+TrieMap.prototype.has = function(prefix) {
+  var node = this.root,
+      token;
+
+  for (var i = 0, l = prefix.length; i < l; i++) {
+    token = prefix[i];
+    node = node[token];
+
+    if (typeof node === 'undefined')
+      return false;
+  }
+
+  return SENTINEL in node;
+};
+
+/**
+ * Method used to retrieve every item in the trie with the given prefix.
+ *
+ * @param  {string|array} prefix - Prefix to query.
+ * @return {array}
+ */
+TrieMap.prototype.find = function(prefix) {
+  var isString = typeof prefix === 'string';
+
+  var node = this.root,
+      matches = [],
+      token,
+      i,
+      l;
+
+  for (i = 0, l = prefix.length; i < l; i++) {
+    token = prefix[i];
+    node = node[token];
+
+    if (typeof node === 'undefined')
+      return matches;
+  }
+
+  // Performing DFS from prefix
+  var nodeStack = [node],
+      prefixStack = [prefix],
+      k;
+
+  while (nodeStack.length) {
+    prefix = prefixStack.pop();
+    node = nodeStack.pop();
+
+    for (k in node) {
+      if (k === SENTINEL) {
+        matches.push([prefix, node[SENTINEL]]);
+        continue;
+      }
+
+      nodeStack.push(node[k]);
+      prefixStack.push(isString ? prefix + k : prefix.concat(k));
+    }
+  }
+
+  return matches;
+};
+
+/**
+ * Method returning an iterator over the trie's values.
+ *
+ * @param  {string|array} [prefix] - Optional starting prefix.
+ * @return {Iterator}
+ */
+TrieMap.prototype.values = function(prefix) {
+  var node = this.root,
+      nodeStack = [],
+      token,
+      i,
+      l;
+
+  // Resolving initial prefix
+  if (prefix) {
+    for (i = 0, l = prefix.length; i < l; i++) {
+      token = prefix[i];
+      node = node[token];
+
+      // If the prefix does not exist, we return an empty iterator
+      if (typeof node === 'undefined')
+        return Iterator.empty();
+    }
+  }
+
+  nodeStack.push(node);
+
+  return new Iterator(function() {
+    var currentNode,
+        hasValue = false,
+        k;
+
+    while (nodeStack.length) {
+      currentNode = nodeStack.pop();
+
+      for (k in currentNode) {
+        if (k === SENTINEL) {
+          hasValue = true;
+          continue;
+        }
+
+        nodeStack.push(currentNode[k]);
+      }
+
+      if (hasValue)
+        return {done: false, value: currentNode[SENTINEL]};
+    }
+
+    return {done: true};
+  });
+};
+
+/**
+ * Method returning an iterator over the trie's prefixes.
+ *
+ * @param  {string|array} [prefix] - Optional starting prefix.
+ * @return {Iterator}
+ */
+TrieMap.prototype.prefixes = function(prefix) {
+  var node = this.root,
+      nodeStack = [],
+      prefixStack = [],
+      token,
+      i,
+      l;
+
+  var isString = this.mode === 'string';
+
+  // Resolving initial prefix
+  if (prefix) {
+    for (i = 0, l = prefix.length; i < l; i++) {
+      token = prefix[i];
+      node = node[token];
+
+      // If the prefix does not exist, we return an empty iterator
+      if (typeof node === 'undefined')
+        return Iterator.empty();
+    }
+  }
+  else {
+    prefix = isString ? '' : [];
+  }
+
+  nodeStack.push(node);
+  prefixStack.push(prefix);
+
+  return new Iterator(function() {
+    var currentNode,
+        currentPrefix,
+        hasValue = false,
+        k;
+
+    while (nodeStack.length) {
+      currentNode = nodeStack.pop();
+      currentPrefix = prefixStack.pop();
+
+      for (k in currentNode) {
+        if (k === SENTINEL) {
+          hasValue = true;
+          continue;
+        }
+
+        nodeStack.push(currentNode[k]);
+        prefixStack.push(isString ? currentPrefix + k : currentPrefix.concat(k));
+      }
+
+      if (hasValue)
+        return {done: false, value: currentPrefix};
+    }
+
+    return {done: true};
+  });
+};
+TrieMap.prototype.keys = TrieMap.prototype.prefixes;
+
+/**
+ * Method returning an iterator over the trie's entries.
+ *
+ * @param  {string|array} [prefix] - Optional starting prefix.
+ * @return {Iterator}
+ */
+TrieMap.prototype.entries = function(prefix) {
+  var node = this.root,
+      nodeStack = [],
+      prefixStack = [],
+      token,
+      i,
+      l;
+
+  var isString = this.mode === 'string';
+
+  // Resolving initial prefix
+  if (prefix) {
+    for (i = 0, l = prefix.length; i < l; i++) {
+      token = prefix[i];
+      node = node[token];
+
+      // If the prefix does not exist, we return an empty iterator
+      if (typeof node === 'undefined')
+        return Iterator.empty();
+    }
+  }
+  else {
+    prefix = isString ? '' : [];
+  }
+
+  nodeStack.push(node);
+  prefixStack.push(prefix);
+
+  return new Iterator(function() {
+    var currentNode,
+        currentPrefix,
+        hasValue = false,
+        k;
+
+    while (nodeStack.length) {
+      currentNode = nodeStack.pop();
+      currentPrefix = prefixStack.pop();
+
+      for (k in currentNode) {
+        if (k === SENTINEL) {
+          hasValue = true;
+          continue;
+        }
+
+        nodeStack.push(currentNode[k]);
+        prefixStack.push(isString ? currentPrefix + k : currentPrefix.concat(k));
+      }
+
+      if (hasValue)
+        return {done: false, value: [currentPrefix, currentNode[SENTINEL]]};
+    }
+
+    return {done: true};
+  });
+};
+
+/**
+ * Attaching the #.entries method to Symbol.iterator if possible.
+ */
+if (typeof Symbol !== 'undefined')
+  TrieMap.prototype[Symbol.iterator] = TrieMap.prototype.entries;
+
+/**
+ * Convenience known methods.
+ */
+TrieMap.prototype.inspect = function() {
+  var proxy = new Array(this.size);
+
+  var iterator = this.entries(),
+      step,
+      i = 0;
+
+  while ((step = iterator.next(), !step.done))
+    proxy[i++] = step.value;
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(proxy, 'constructor', {
+    value: TrieMap,
+    enumerable: false
+  });
+
+  return proxy;
+};
+
+if (typeof Symbol !== 'undefined')
+  TrieMap.prototype[Symbol.for('nodejs.util.inspect.custom')] = TrieMap.prototype.inspect;
+
+TrieMap.prototype.toJSON = function() {
+  return this.root;
+};
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a trie.
+ *
+ * @param  {Iterable} iterable   - Target iterable.
+ * @return {TrieMap}
+ */
+TrieMap.from = function(iterable) {
+  var trie = new TrieMap();
+
+  forEach(iterable, function(value, key) {
+    trie.set(key, value);
+  });
+
+  return trie;
+};
+
+/**
+ * Exporting.
+ */
+TrieMap.SENTINEL = SENTINEL;
+module.exports = TrieMap;
+
+
+/***/ }),
+
+/***/ 1397:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist Trie
+ * ===============
+ *
+ * JavaScript Trie implementation based upon plain objects. As such this
+ * structure is more a convenience building upon the trie's advantages than
+ * a real performant alternative to already existing structures.
+ *
+ * Note that the Trie is based upon the TrieMap since the underlying machine
+ * is the very same. The Trie just does not let you set values and only
+ * considers the existence of the given prefixes.
+ */
+var forEach = __nccwpck_require__(8968),
+    TrieMap = __nccwpck_require__(1125);
+
+/**
+ * Constants.
+ */
+var SENTINEL = String.fromCharCode(0);
+
+/**
+ * Trie.
+ *
+ * @constructor
+ */
+function Trie(Token) {
+  this.mode = Token === Array ? 'array' : 'string';
+  this.clear();
+}
+
+// Re-using TrieMap's prototype
+for (var methodName in TrieMap.prototype)
+  Trie.prototype[methodName] = TrieMap.prototype[methodName];
+
+// Dropping irrelevant methods
+delete Trie.prototype.set;
+delete Trie.prototype.get;
+delete Trie.prototype.values;
+delete Trie.prototype.entries;
+
+/**
+ * Method used to add the given prefix to the trie.
+ *
+ * @param  {string|array} prefix - Prefix to follow.
+ * @return {TrieMap}
+ */
+Trie.prototype.add = function(prefix) {
+  var node = this.root,
+      token;
+
+  for (var i = 0, l = prefix.length; i < l; i++) {
+    token = prefix[i];
+
+    node = node[token] || (node[token] = {});
+  }
+
+  // Do we need to increase size?
+  if (!(SENTINEL in node))
+    this.size++;
+
+  node[SENTINEL] = true;
+
+  return this;
+};
+
+/**
+ * Method used to retrieve every item in the trie with the given prefix.
+ *
+ * @param  {string|array} prefix - Prefix to query.
+ * @return {array}
+ */
+Trie.prototype.find = function(prefix) {
+  var isString = typeof prefix === 'string';
+
+  var node = this.root,
+      matches = [],
+      token,
+      i,
+      l;
+
+  for (i = 0, l = prefix.length; i < l; i++) {
+    token = prefix[i];
+    node = node[token];
+
+    if (typeof node === 'undefined')
+      return matches;
+  }
+
+  // Performing DFS from prefix
+  var nodeStack = [node],
+      prefixStack = [prefix],
+      k;
+
+  while (nodeStack.length) {
+    prefix = prefixStack.pop();
+    node = nodeStack.pop();
+
+    for (k in node) {
+      if (k === SENTINEL) {
+        matches.push(prefix);
+        continue;
+      }
+
+      nodeStack.push(node[k]);
+      prefixStack.push(isString ? prefix + k : prefix.concat(k));
+    }
+  }
+
+  return matches;
+};
+
+/**
+ * Attaching the #.keys method to Symbol.iterator if possible.
+ */
+if (typeof Symbol !== 'undefined')
+  Trie.prototype[Symbol.iterator] = Trie.prototype.keys;
+
+/**
+ * Convenience known methods.
+ */
+Trie.prototype.inspect = function() {
+  var proxy = new Set();
+
+  var iterator = this.keys(),
+      step;
+
+  while ((step = iterator.next(), !step.done))
+    proxy.add(step.value);
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(proxy, 'constructor', {
+    value: Trie,
+    enumerable: false
+  });
+
+  return proxy;
+};
+
+if (typeof Symbol !== 'undefined')
+  Trie.prototype[Symbol.for('nodejs.util.inspect.custom')] = Trie.prototype.inspect;
+
+Trie.prototype.toJSON = function() {
+  return this.root;
+};
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a trie.
+ *
+ * @param  {Iterable} iterable   - Target iterable.
+ * @return {Trie}
+ */
+Trie.from = function(iterable) {
+  var trie = new Trie();
+
+  forEach(iterable, function(value) {
+    trie.add(value);
+  });
+
+  return trie;
+};
+
+/**
+ * Exporting.
+ */
+Trie.SENTINEL = SENTINEL;
+module.exports = Trie;
+
+
+/***/ }),
+
+/***/ 1558:
+/***/ ((__unused_webpack_module, exports) => {
+
+/**
+ * Mnemonist Binary Search Helpers
+ * ================================
+ *
+ * Typical binary search functions.
+ */
+
+/**
+ * Function returning the index of the search value in the array or `-1` if
+ * not found.
+ *
+ * @param  {array} array - Haystack.
+ * @param  {any}   value - Needle.
+ * @return {number}
+ */
+exports.search = function(array, value, lo, hi) {
+  var mid = 0;
+
+  lo = typeof lo !== 'undefined' ? lo : 0;
+  hi = typeof hi !== 'undefined' ? hi : array.length;
+
+  hi--;
+
+  var current;
+
+  while (lo <= hi) {
+    mid = (lo + hi) >>> 1;
+
+    current = array[mid];
+
+    if (current > value) {
+      hi = ~-mid;
+    }
+    else if (current < value) {
+      lo = -~mid;
+    }
+    else {
+      return mid;
+    }
+  }
+
+  return -1;
+};
+
+/**
+ * Same as above, but can use a custom comparator function.
+ *
+ * @param  {function} comparator - Custom comparator function.
+ * @param  {array}    array      - Haystack.
+ * @param  {any}      value      - Needle.
+ * @return {number}
+ */
+exports.searchWithComparator = function(comparator, array, value) {
+  var mid = 0,
+      lo = 0,
+      hi = ~-array.length,
+      comparison;
+
+  while (lo <= hi) {
+    mid = (lo + hi) >>> 1;
+
+    comparison = comparator(array[mid], value);
+
+    if (comparison > 0) {
+      hi = ~-mid;
+    }
+    else if (comparison < 0) {
+      lo = -~mid;
+    }
+    else {
+      return mid;
+    }
+  }
+
+  return -1;
+};
+
+/**
+ * Function returning the lower bound of the given value in the array.
+ *
+ * @param  {array}  array - Haystack.
+ * @param  {any}    value - Needle.
+ * @param  {number} [lo] - Start index.
+ * @param  {numner} [hi] - End index.
+ * @return {number}
+ */
+exports.lowerBound = function(array, value, lo, hi) {
+  var mid = 0;
+
+  lo = typeof lo !== 'undefined' ? lo : 0;
+  hi = typeof hi !== 'undefined' ? hi : array.length;
+
+  while (lo < hi) {
+    mid = (lo + hi) >>> 1;
+
+    if (value <= array[mid]) {
+      hi = mid;
+    }
+    else {
+      lo = -~mid;
+    }
+  }
+
+  return lo;
+};
+
+/**
+ * Same as above, but can use a custom comparator function.
+ *
+ * @param  {function} comparator - Custom comparator function.
+ * @param  {array}    array      - Haystack.
+ * @param  {any}      value      - Needle.
+ * @return {number}
+ */
+exports.lowerBoundWithComparator = function(comparator, array, value) {
+  var mid = 0,
+      lo = 0,
+      hi = array.length;
+
+  while (lo < hi) {
+    mid = (lo + hi) >>> 1;
+
+    if (comparator(value, array[mid]) <= 0) {
+      hi = mid;
+    }
+    else {
+      lo = -~mid;
+    }
+  }
+
+  return lo;
+};
+
+/**
+ * Same as above, but can work on sorted indices.
+ *
+ * @param  {array}    array - Haystack.
+ * @param  {array}    array - Indices.
+ * @param  {any}      value - Needle.
+ * @return {number}
+ */
+exports.lowerBoundIndices = function(array, indices, value, lo, hi) {
+  var mid = 0;
+
+  lo = typeof lo !== 'undefined' ? lo : 0;
+  hi = typeof hi !== 'undefined' ? hi : array.length;
+
+  while (lo < hi) {
+    mid = (lo + hi) >>> 1;
+
+    if (value <= array[indices[mid]]) {
+      hi = mid;
+    }
+    else {
+      lo = -~mid;
+    }
+  }
+
+  return lo;
+};
+
+/**
+ * Function returning the upper bound of the given value in the array.
+ *
+ * @param  {array}  array - Haystack.
+ * @param  {any}    value - Needle.
+ * @param  {number} [lo] - Start index.
+ * @param  {numner} [hi] - End index.
+ * @return {number}
+ */
+exports.upperBound = function(array, value, lo, hi) {
+  var mid = 0;
+
+  lo = typeof lo !== 'undefined' ? lo : 0;
+  hi = typeof hi !== 'undefined' ? hi : array.length;
+
+  while (lo < hi) {
+    mid = (lo + hi) >>> 1;
+
+    if (value >= array[mid]) {
+      lo = -~mid;
+    }
+    else {
+      hi = mid;
+    }
+  }
+
+  return lo;
+};
+
+/**
+ * Same as above, but can use a custom comparator function.
+ *
+ * @param  {function} comparator - Custom comparator function.
+ * @param  {array}    array      - Haystack.
+ * @param  {any}      value      - Needle.
+ * @return {number}
+ */
+exports.upperBoundWithComparator = function(comparator, array, value) {
+  var mid = 0,
+      lo = 0,
+      hi = array.length;
+
+  while (lo < hi) {
+    mid = (lo + hi) >>> 1;
+
+    if (comparator(value, array[mid]) >= 0) {
+      lo = -~mid;
+    }
+    else {
+      hi = mid;
+    }
+  }
+
+  return lo;
+};
+
+
+/***/ }),
+
+/***/ 3729:
+/***/ ((__unused_webpack_module, exports) => {
+
+/**
+ * Mnemonist Bitwise Helpers
+ * ==========================
+ *
+ * Miscellaneous helpers helping with bitwise operations.
+ */
+
+/**
+ * Takes a 32 bits integer and returns its MSB using SWAR strategy.
+ *
+ * @param  {number} x - Target number.
+ * @return {number}
+ */
+function msb32(x) {
+  x |= (x >> 1);
+  x |= (x >> 2);
+  x |= (x >> 4);
+  x |= (x >> 8);
+  x |= (x >> 16);
+
+  return (x & ~(x >> 1));
+}
+exports.msb32 = msb32;
+
+/**
+ * Takes a byte and returns its MSB using SWAR strategy.
+ *
+ * @param  {number} x - Target number.
+ * @return {number}
+ */
+function msb8(x) {
+  x |= (x >> 1);
+  x |= (x >> 2);
+  x |= (x >> 4);
+
+  return (x & ~(x >> 1));
+}
+exports.msb8 = msb8;
+
+/**
+ * Takes a number and return bit at position.
+ *
+ * @param  {number} x   - Target number.
+ * @param  {number} pos - Position.
+ * @return {number}
+ */
+exports.test = function(x, pos) {
+  return (x >> pos) & 1;
+};
+
+/**
+ * Compare two bytes and return their critical bit.
+ *
+ * @param  {number} a - First byte.
+ * @param  {number} b - Second byte.
+ * @return {number}
+ */
+exports.criticalBit8 = function(a, b) {
+  return msb8(a ^ b);
+};
+
+exports.criticalBit8Mask = function(a, b) {
+  return (~msb8(a ^ b) >>> 0) & 0xff;
+};
+
+exports.testCriticalBit8 = function(x, mask) {
+  return (1 + (x | mask)) >> 8;
+};
+
+exports.criticalBit32Mask = function(a, b) {
+  return (~msb32(a ^ b) >>> 0) & 0xffffffff;
+};
+
+/**
+ * Takes a 32 bits integer and returns its population count (number of 1 of
+ * the binary representation).
+ *
+ * @param  {number} x - Target number.
+ * @return {number}
+ */
+exports.popcount = function(x) {
+  x -= x >> 1 & 0x55555555;
+  x = (x & 0x33333333) + (x >> 2 & 0x33333333);
+  x = x + (x >> 4) & 0x0f0f0f0f;
+  x += x >> 8;
+  x += x >> 16;
+  return x & 0x7f;
+};
+
+/**
+ * Slightly faster popcount function based on a precomputed table of 8bits
+ * words.
+ *
+ * @param  {number} x - Target number.
+ * @return {number}
+ */
+var TABLE8 = new Uint8Array(Math.pow(2, 8));
+
+for (var i = 0, l = TABLE8.length; i < l; i++)
+  TABLE8[i] = exports.popcount(i);
+
+exports.table8Popcount = function(x) {
+  return (
+    TABLE8[x & 0xff] +
+    TABLE8[(x >> 8) & 0xff] +
+    TABLE8[(x >> 16) & 0xff] +
+    TABLE8[(x >> 24) & 0xff]
+  );
+};
+
+
+/***/ }),
+
+/***/ 9815:
+/***/ ((__unused_webpack_module, exports) => {
+
+/**
+ * Mnemonist Heap Comparators
+ * ===========================
+ *
+ * Default comparators & functions dealing with comparators reversing etc.
+ */
+var DEFAULT_COMPARATOR = function(a, b) {
+  if (a < b)
+    return -1;
+  if (a > b)
+    return 1;
+
+  return 0;
+};
+
+var DEFAULT_REVERSE_COMPARATOR = function(a, b) {
+  if (a < b)
+    return 1;
+  if (a > b)
+    return -1;
+
+  return 0;
+};
+
+/**
+ * Function used to reverse a comparator.
+ */
+function reverseComparator(comparator) {
+  return function(a, b) {
+    return comparator(b, a);
+  };
+}
+
+/**
+ * Function returning a tuple comparator.
+ */
+function createTupleComparator(size) {
+  if (size === 2) {
+    return function(a, b) {
+      if (a[0] < b[0])
+        return -1;
+
+      if (a[0] > b[0])
+        return 1;
+
+      if (a[1] < b[1])
+        return -1;
+
+      if (a[1] > b[1])
+        return 1;
+
+      return 0;
+    };
+  }
+
+  return function(a, b) {
+    var i = 0;
+
+    while (i < size) {
+      if (a[i] < b[i])
+        return -1;
+
+      if (a[i] > b[i])
+        return 1;
+
+      i++;
+    }
+
+    return 0;
+  };
+}
+
+/**
+ * Exporting.
+ */
+exports.DEFAULT_COMPARATOR = DEFAULT_COMPARATOR;
+exports.DEFAULT_REVERSE_COMPARATOR = DEFAULT_REVERSE_COMPARATOR;
+exports.reverseComparator = reverseComparator;
+exports.createTupleComparator = createTupleComparator;
+
+
+/***/ }),
+
+/***/ 7304:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist Iterable Function
+ * ============================
+ *
+ * Harmonized iteration helpers over mixed iterable targets.
+ */
+var forEach = __nccwpck_require__(8968);
+
+var typed = __nccwpck_require__(3125);
+
+/**
+ * Function used to determine whether the given object supports array-like
+ * random access.
+ *
+ * @param  {any} target - Target object.
+ * @return {boolean}
+ */
+function isArrayLike(target) {
+  return Array.isArray(target) || typed.isTypedArray(target);
+}
+
+/**
+ * Function used to guess the length of the structure over which we are going
+ * to iterate.
+ *
+ * @param  {any} target - Target object.
+ * @return {number|undefined}
+ */
+function guessLength(target) {
+  if (typeof target.length === 'number')
+    return target.length;
+
+  if (typeof target.size === 'number')
+    return target.size;
+
+  return;
+}
+
+/**
+ * Function used to convert an iterable to an array.
+ *
+ * @param  {any}   target - Iteration target.
+ * @return {array}
+ */
+function toArray(target) {
+  var l = guessLength(target);
+
+  var array = typeof l === 'number' ? new Array(l) : [];
+
+  var i = 0;
+
+  // TODO: we could optimize when given target is array like
+  forEach(target, function(value) {
+    array[i++] = value;
+  });
+
+  return array;
+}
+
+/**
+ * Same as above but returns a supplementary indices array.
+ *
+ * @param  {any}   target - Iteration target.
+ * @return {array}
+ */
+function toArrayWithIndices(target) {
+  var l = guessLength(target);
+
+  var IndexArray = typeof l === 'number' ?
+    typed.getPointerArray(l) :
+    Array;
+
+  var array = typeof l === 'number' ? new Array(l) : [];
+  var indices = typeof l === 'number' ? new IndexArray(l) : [];
+
+  var i = 0;
+
+  // TODO: we could optimize when given target is array like
+  forEach(target, function(value) {
+    array[i] = value;
+    indices[i] = i++;
+  });
+
+  return [array, indices];
+}
+
+/**
+ * Exporting.
+ */
+exports.isArrayLike = isArrayLike;
+exports.guessLength = guessLength;
+exports.toArray = toArray;
+exports.toArrayWithIndices = toArrayWithIndices;
+
+
+/***/ }),
+
+/***/ 7553:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+/* eslint no-constant-condition: 0 */
+/**
+ * Mnemonist Merge Helpers
+ * ========================
+ *
+ * Various merge algorithms used to handle sorted lists. Note that the given
+ * functions are optimized and won't accept mixed arguments.
+ *
+ * Note: maybe this piece of code belong to sortilege, along with binary-search.
+ */
+var typed = __nccwpck_require__(3125),
+    isArrayLike = __nccwpck_require__(7304).isArrayLike,
+    binarySearch = __nccwpck_require__(1558),
+    FibonacciHeap = __nccwpck_require__(2929);
+
+// TODO: update to use exponential search
+// TODO: when not knowing final length => should use plain arrays rather than
+// same type as input
+
+/**
+ * Merge two sorted array-like structures into one.
+ *
+ * @param  {array} a - First array.
+ * @param  {array} b - Second array.
+ * @return {array}
+ */
+function mergeArrays(a, b) {
+
+  // One of the arrays is empty
+  if (a.length === 0)
+    return b.slice();
+  if (b.length === 0)
+    return a.slice();
+
+  // Finding min array
+  var tmp;
+
+  if (a[0] > b[0]) {
+    tmp = a;
+    a = b;
+    b = tmp;
+  }
+
+  // If array have non overlapping ranges, we can just concatenate them
+  var aEnd = a[a.length - 1],
+      bStart = b[0];
+
+  if (aEnd <= bStart) {
+    if (typed.isTypedArray(a))
+      return typed.concat(a, b);
+    return a.concat(b);
+  }
+
+  // Initializing target
+  var array = new a.constructor(a.length + b.length);
+
+  // Iterating until we overlap
+  var i, l, v;
+
+  for (i = 0, l = a.length; i < l; i++) {
+    v = a[i];
+
+    if (v <= bStart)
+      array[i] = v;
+    else
+      break;
+  }
+
+  // Handling overlap
+  var aPointer = i,
+      aLength = a.length,
+      bPointer = 0,
+      bLength = b.length,
+      aHead,
+      bHead;
+
+  while (aPointer < aLength && bPointer < bLength) {
+    aHead = a[aPointer];
+    bHead = b[bPointer];
+
+    if (aHead <= bHead) {
+      array[i++] = aHead;
+      aPointer++;
+    }
+    else {
+      array[i++] = bHead;
+      bPointer++;
+    }
+  }
+
+  // Filling
+  while (aPointer < aLength)
+    array[i++] = a[aPointer++];
+  while (bPointer < bLength)
+    array[i++] = b[bPointer++];
+
+  return array;
+}
+
+/**
+ * Perform the union of two already unique sorted array-like structures into one.
+ *
+ * @param  {array} a - First array.
+ * @param  {array} b - Second array.
+ * @return {array}
+ */
+function unionUniqueArrays(a, b) {
+
+  // One of the arrays is empty
+  if (a.length === 0)
+    return b.slice();
+  if (b.length === 0)
+    return a.slice();
+
+  // Finding min array
+  var tmp;
+
+  if (a[0] > b[0]) {
+    tmp = a;
+    a = b;
+    b = tmp;
+  }
+
+  // If array have non overlapping ranges, we can just concatenate them
+  var aEnd = a[a.length - 1],
+      bStart = b[0];
+
+  if (aEnd < bStart) {
+    if (typed.isTypedArray(a))
+      return typed.concat(a, b);
+    return a.concat(b);
+  }
+
+  // Initializing target
+  var array = new a.constructor();
+
+  // Iterating until we overlap
+  var i, l, v;
+
+  for (i = 0, l = a.length; i < l; i++) {
+    v = a[i];
+
+    if (v < bStart)
+      array.push(v);
+    else
+      break;
+  }
+
+  // Handling overlap
+  var aPointer = i,
+      aLength = a.length,
+      bPointer = 0,
+      bLength = b.length,
+      aHead,
+      bHead;
+
+  while (aPointer < aLength && bPointer < bLength) {
+    aHead = a[aPointer];
+    bHead = b[bPointer];
+
+    if (aHead <= bHead) {
+
+      if (array.length === 0 || array[array.length - 1] !== aHead)
+        array.push(aHead);
+
+      aPointer++;
+    }
+    else {
+      if (array.length === 0 || array[array.length - 1] !== bHead)
+        array.push(bHead);
+
+      bPointer++;
+    }
+  }
+
+  // Filling
+  // TODO: it's possible to optimize a bit here, since the condition is only
+  // relevant the first time
+  while (aPointer < aLength) {
+    aHead = a[aPointer++];
+
+    if (array.length === 0 || array[array.length - 1] !== aHead)
+      array.push(aHead);
+  }
+  while (bPointer < bLength) {
+    bHead = b[bPointer++];
+
+    if (array.length === 0 || array[array.length - 1] !== bHead)
+      array.push(bHead);
+  }
+
+  return array;
+}
+
+/**
+ * Perform the intersection of two already unique sorted array-like structures into one.
+ *
+ * @param  {array} a - First array.
+ * @param  {array} b - Second array.
+ * @return {array}
+ */
+exports.intersectionUniqueArrays = function(a, b) {
+
+  // One of the arrays is empty
+  if (a.length === 0 || b.length === 0)
+    return new a.constructor(0);
+
+  // Finding min array
+  var tmp;
+
+  if (a[0] > b[0]) {
+    tmp = a;
+    a = b;
+    b = tmp;
+  }
+
+  // If array have non overlapping ranges, there is no intersection
+  var aEnd = a[a.length - 1],
+      bStart = b[0];
+
+  if (aEnd < bStart)
+    return new a.constructor(0);
+
+  // Initializing target
+  var array = new a.constructor();
+
+  // Handling overlap
+  var aPointer = binarySearch.lowerBound(a, bStart),
+      aLength = a.length,
+      bPointer = 0,
+      bLength = binarySearch.upperBound(b, aEnd),
+      aHead,
+      bHead;
+
+  while (aPointer < aLength && bPointer < bLength) {
+    aHead = a[aPointer];
+    bHead = b[bPointer];
+
+    if (aHead < bHead) {
+      aPointer = binarySearch.lowerBound(a, bHead, aPointer + 1);
+    }
+    else if (aHead > bHead) {
+      bPointer = binarySearch.lowerBound(b, aHead, bPointer + 1);
+    }
+    else {
+      array.push(aHead);
+      aPointer++;
+      bPointer++;
+    }
+  }
+
+  return array;
+};
+
+/**
+ * Merge k sorted array-like structures into one.
+ *
+ * @param  {array<array>} arrays - Arrays to merge.
+ * @return {array}
+ */
+function kWayMergeArrays(arrays) {
+  var length = 0,
+      max = -Infinity,
+      al,
+      i,
+      l;
+
+  var filtered = [];
+
+  for (i = 0, l = arrays.length; i < l; i++) {
+    al = arrays[i].length;
+
+    if (al === 0)
+      continue;
+
+    filtered.push(arrays[i]);
+
+    length += al;
+
+    if (al > max)
+      max = al;
+  }
+
+  if (filtered.length === 0)
+    return new arrays[0].constructor(0);
+
+  if (filtered.length === 1)
+    return filtered[0].slice();
+
+  if (filtered.length === 2)
+    return mergeArrays(filtered[0], filtered[1]);
+
+  arrays = filtered;
+
+  var array = new arrays[0].constructor(length);
+
+  var PointerArray = typed.getPointerArray(max);
+
+  var pointers = new PointerArray(arrays.length);
+
+  // TODO: benchmark vs. a binomial heap
+  var heap = new FibonacciHeap(function(a, b) {
+    a = arrays[a][pointers[a]];
+    b = arrays[b][pointers[b]];
+
+    if (a < b)
+      return -1;
+
+    if (a > b)
+      return 1;
+
+    return 0;
+  });
+
+  for (i = 0; i < l; i++)
+    heap.push(i);
+
+  i = 0;
+
+  var p,
+      v;
+
+  while (heap.size) {
+    p = heap.pop();
+    v = arrays[p][pointers[p]++];
+    array[i++] = v;
+
+    if (pointers[p] < arrays[p].length)
+      heap.push(p);
+  }
+
+  return array;
+}
+
+/**
+ * Perform the union of k sorted unique array-like structures into one.
+ *
+ * @param  {array<array>} arrays - Arrays to merge.
+ * @return {array}
+ */
+function kWayUnionUniqueArrays(arrays) {
+  var max = -Infinity,
+      al,
+      i,
+      l;
+
+  var filtered = [];
+
+  for (i = 0, l = arrays.length; i < l; i++) {
+    al = arrays[i].length;
+
+    if (al === 0)
+      continue;
+
+    filtered.push(arrays[i]);
+
+    if (al > max)
+      max = al;
+  }
+
+  if (filtered.length === 0)
+    return new arrays[0].constructor(0);
+
+  if (filtered.length === 1)
+    return filtered[0].slice();
+
+  if (filtered.length === 2)
+    return unionUniqueArrays(filtered[0], filtered[1]);
+
+  arrays = filtered;
+
+  var array = new arrays[0].constructor();
+
+  var PointerArray = typed.getPointerArray(max);
+
+  var pointers = new PointerArray(arrays.length);
+
+  // TODO: benchmark vs. a binomial heap
+  var heap = new FibonacciHeap(function(a, b) {
+    a = arrays[a][pointers[a]];
+    b = arrays[b][pointers[b]];
+
+    if (a < b)
+      return -1;
+
+    if (a > b)
+      return 1;
+
+    return 0;
+  });
+
+  for (i = 0; i < l; i++)
+    heap.push(i);
+
+  var p,
+      v;
+
+  while (heap.size) {
+    p = heap.pop();
+    v = arrays[p][pointers[p]++];
+
+    if (array.length === 0 || array[array.length - 1] !== v)
+      array.push(v);
+
+    if (pointers[p] < arrays[p].length)
+      heap.push(p);
+  }
+
+  return array;
+}
+
+/**
+ * Perform the intersection of k sorted array-like structures into one.
+ *
+ * @param  {array<array>} arrays - Arrays to merge.
+ * @return {array}
+ */
+exports.kWayIntersectionUniqueArrays = function(arrays) {
+  var max = -Infinity,
+      maxStart = -Infinity,
+      minEnd = Infinity,
+      first,
+      last,
+      al,
+      i,
+      l;
+
+  for (i = 0, l = arrays.length; i < l; i++) {
+    al = arrays[i].length;
+
+    // If one of the arrays is empty, so is the intersection
+    if (al === 0)
+      return [];
+
+    if (al > max)
+      max = al;
+
+    first = arrays[i][0];
+    last = arrays[i][al - 1];
+
+    if (first > maxStart)
+      maxStart = first;
+
+    if (last < minEnd)
+      minEnd = last;
+  }
+
+  // Full overlap is impossible
+  if (maxStart > minEnd)
+    return [];
+
+  // Only one value
+  if (maxStart === minEnd)
+    return [maxStart];
+
+  // NOTE: trying to outsmart I(D,I(C,I(A,B))) is pointless unfortunately...
+  // NOTE: I tried to be very clever about bounds but it does not seem
+  // to improve the performance of the algorithm.
+  var a, b,
+      array = arrays[0],
+      aPointer,
+      bPointer,
+      aLimit,
+      bLimit,
+      aHead,
+      bHead,
+      start = maxStart;
+
+  for (i = 1; i < l; i++) {
+    a = array;
+    b = arrays[i];
+
+    // Change that to `[]` and observe some perf drops on V8...
+    array = new Array();
+
+    aPointer = 0;
+    bPointer = binarySearch.lowerBound(b, start);
+
+    aLimit = a.length;
+    bLimit = b.length;
+
+    while (aPointer < aLimit && bPointer < bLimit) {
+      aHead = a[aPointer];
+      bHead = b[bPointer];
+
+      if (aHead < bHead) {
+        aPointer = binarySearch.lowerBound(a, bHead, aPointer + 1);
+      }
+      else if (aHead > bHead) {
+        bPointer = binarySearch.lowerBound(b, aHead, bPointer + 1);
+      }
+      else {
+        array.push(aHead);
+        aPointer++;
+        bPointer++;
+      }
+    }
+
+    if (array.length === 0)
+      return array;
+
+    start = array[0];
+  }
+
+  return array;
+};
+
+/**
+ * Variadic merging all of the given arrays.
+ *
+ * @param  {...array}
+ * @return {array}
+ */
+exports.merge = function() {
+  if (arguments.length === 2) {
+    if (isArrayLike(arguments[0]))
+      return mergeArrays(arguments[0], arguments[1]);
+  }
+  else {
+    if (isArrayLike(arguments[0]))
+      return kWayMergeArrays(arguments);
+  }
+
+  return null;
+};
+
+/**
+ * Variadic function performing the union of all the given unique arrays.
+ *
+ * @param  {...array}
+ * @return {array}
+ */
+exports.unionUnique = function() {
+  if (arguments.length === 2) {
+    if (isArrayLike(arguments[0]))
+      return unionUniqueArrays(arguments[0], arguments[1]);
+  }
+  else {
+    if (isArrayLike(arguments[0]))
+      return kWayUnionUniqueArrays(arguments);
+  }
+
+  return null;
+};
+
+/**
+ * Variadic function performing the intersection of all the given unique arrays.
+ *
+ * @param  {...array}
+ * @return {array}
+ */
+exports.intersectionUnique = function() {
+  if (arguments.length === 2) {
+    if (isArrayLike(arguments[0]))
+      return exports.intersectionUniqueArrays(arguments[0], arguments[1]);
+  }
+  else {
+    if (isArrayLike(arguments[0]))
+      return exports.kWayIntersectionUniqueArrays(arguments);
+  }
+
+  return null;
+};
+
+
+/***/ }),
+
+/***/ 7801:
+/***/ ((module) => {
+
+/* eslint no-fallthrough: 0 */
+/**
+ * Mnemonist MurmurHash 3
+ * =======================
+ *
+ * Straightforward implementation of the third version of MurmurHash.
+ *
+ * Note: this piece of code belong to haschisch.
+ */
+
+/**
+ * Various helpers.
+ */
+function mul32(a, b) {
+  return (a & 0xffff) * b + (((a >>> 16) * b & 0xffff) << 16) & 0xffffffff;
+}
+
+function sum32(a, b) {
+  return (a & 0xffff) + (b >>> 16) + (((a >>> 16) + b & 0xffff) << 16) & 0xffffffff;
+}
+
+function rotl32(a, b) {
+  return (a << b) | (a >>> (32 - b));
+}
+
+/**
+ * MumurHash3 function.
+ *
+ * @param  {number}    seed - Seed.
+ * @param  {ByteArray} data - Data.
+ */
+module.exports = function murmurhash3(seed, data) {
+  var c1 = 0xcc9e2d51,
+      c2 = 0x1b873593,
+      r1 = 15,
+      r2 = 13,
+      m = 5,
+      n = 0x6b64e654;
+
+  var hash = seed,
+      k1,
+      i,
+      l;
+
+  for (i = 0, l = data.length - 4; i <= l; i += 4) {
+    k1 = (
+      data[i] |
+      (data[i + 1] << 8) |
+      (data[i + 2] << 16) |
+      (data[i + 3] << 24)
+    );
+
+    k1 = mul32(k1, c1);
+    k1 = rotl32(k1, r1);
+    k1 = mul32(k1, c2);
+
+    hash ^= k1;
+    hash = rotl32(hash, r2);
+    hash = mul32(hash, m);
+    hash = sum32(hash, n);
+  }
+
+  k1 = 0;
+
+  switch (data.length & 3) {
+    case 3:
+      k1 ^= data[i + 2] << 16;
+    case 2:
+      k1 ^= data[i + 1] << 8;
+    case 1:
+      k1 ^= data[i];
+      k1 = mul32(k1, c1);
+      k1 = rotl32(k1, r1);
+      k1 = mul32(k1, c2);
+      hash ^= k1;
+    default:
+  }
+
+  hash ^= data.length;
+  hash ^= hash >>> 16;
+  hash = mul32(hash, 0x85ebca6b);
+  hash ^= hash >>> 13;
+  hash = mul32(hash, 0xc2b2ae35);
+  hash ^= hash >>> 16;
+
+  return hash >>> 0;
+};
+
+
+/***/ }),
+
+/***/ 3125:
+/***/ ((__unused_webpack_module, exports) => {
+
+/**
+ * Mnemonist Typed Array Helpers
+ * ==============================
+ *
+ * Miscellaneous helpers related to typed arrays.
+ */
+
+/**
+ * When using an unsigned integer array to store pointers, one might want to
+ * choose the optimal word size in regards to the actual numbers of pointers
+ * to store.
+ *
+ * This helpers does just that.
+ *
+ * @param  {number} size - Expected size of the array to map.
+ * @return {TypedArray}
+ */
+var MAX_8BIT_INTEGER = Math.pow(2, 8) - 1,
+    MAX_16BIT_INTEGER = Math.pow(2, 16) - 1,
+    MAX_32BIT_INTEGER = Math.pow(2, 32) - 1;
+
+var MAX_SIGNED_8BIT_INTEGER = Math.pow(2, 7) - 1,
+    MAX_SIGNED_16BIT_INTEGER = Math.pow(2, 15) - 1,
+    MAX_SIGNED_32BIT_INTEGER = Math.pow(2, 31) - 1;
+
+exports.getPointerArray = function(size) {
+  var maxIndex = size - 1;
+
+  if (maxIndex <= MAX_8BIT_INTEGER)
+    return Uint8Array;
+
+  if (maxIndex <= MAX_16BIT_INTEGER)
+    return Uint16Array;
+
+  if (maxIndex <= MAX_32BIT_INTEGER)
+    return Uint32Array;
+
+  return Float64Array;
+};
+
+exports.getSignedPointerArray = function(size) {
+  var maxIndex = size - 1;
+
+  if (maxIndex <= MAX_SIGNED_8BIT_INTEGER)
+    return Int8Array;
+
+  if (maxIndex <= MAX_SIGNED_16BIT_INTEGER)
+    return Int16Array;
+
+  if (maxIndex <= MAX_SIGNED_32BIT_INTEGER)
+    return Int32Array;
+
+  return Float64Array;
+};
+
+/**
+ * Function returning the minimal type able to represent the given number.
+ *
+ * @param  {number} value - Value to test.
+ * @return {TypedArrayClass}
+ */
+exports.getNumberType = function(value) {
+
+  // <= 32 bits itnteger?
+  if (value === (value | 0)) {
+
+    // Negative
+    if (Math.sign(value) === -1) {
+      if (value <= 127 && value >= -128)
+        return Int8Array;
+
+      if (value <= 32767 && value >= -32768)
+        return Int16Array;
+
+      return Int32Array;
+    }
+    else {
+
+      if (value <= 255)
+        return Uint8Array;
+
+      if (value <= 65535)
+        return Uint16Array;
+
+      return Uint32Array;
+    }
+  }
+
+  // 53 bits integer & floats
+  // NOTE: it's kinda hard to tell whether we could use 32bits or not...
+  return Float64Array;
+};
+
+/**
+ * Function returning the minimal type able to represent the given array
+ * of JavaScript numbers.
+ *
+ * @param  {array}    array  - Array to represent.
+ * @param  {function} getter - Optional getter.
+ * @return {TypedArrayClass}
+ */
+var TYPE_PRIORITY = {
+  Uint8Array: 1,
+  Int8Array: 2,
+  Uint16Array: 3,
+  Int16Array: 4,
+  Uint32Array: 5,
+  Int32Array: 6,
+  Float32Array: 7,
+  Float64Array: 8
+};
+
+// TODO: make this a one-shot for one value
+exports.getMinimalRepresentation = function(array, getter) {
+  var maxType = null,
+      maxPriority = 0,
+      p,
+      t,
+      v,
+      i,
+      l;
+
+  for (i = 0, l = array.length; i < l; i++) {
+    v = getter ? getter(array[i]) : array[i];
+    t = exports.getNumberType(v);
+    p = TYPE_PRIORITY[t.name];
+
+    if (p > maxPriority) {
+      maxPriority = p;
+      maxType = t;
+    }
+  }
+
+  return maxType;
+};
+
+/**
+ * Function returning whether the given value is a typed array.
+ *
+ * @param  {any} value - Value to test.
+ * @return {boolean}
+ */
+exports.isTypedArray = function(value) {
+  return typeof ArrayBuffer !== 'undefined' && ArrayBuffer.isView(value);
+};
+
+/**
+ * Function used to concat byte arrays.
+ *
+ * @param  {...ByteArray}
+ * @return {ByteArray}
+ */
+exports.concat = function() {
+  var length = 0,
+      i,
+      o,
+      l;
+
+  for (i = 0, l = arguments.length; i < l; i++)
+    length += arguments[i].length;
+
+  var array = new (arguments[0].constructor)(length);
+
+  for (i = 0, o = 0; i < l; i++) {
+    array.set(arguments[i], o);
+    o += arguments[i].length;
+  }
+
+  return array;
+};
+
+/**
+ * Function used to initialize a byte array of indices.
+ *
+ * @param  {number}    length - Length of target.
+ * @return {ByteArray}
+ */
+exports.indices = function(length) {
+  var PointerArray = exports.getPointerArray(length);
+
+  var array = new PointerArray(length);
+
+  for (var i = 0; i < length; i++)
+    array[i] = i;
+
+  return array;
+};
+
+
+/***/ }),
+
+/***/ 4360:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist Vector
+ * =================
+ *
+ * Abstract implementation of a growing array that can be used with JavaScript
+ * typed arrays and other array-like structures.
+ *
+ * Note: should try and use ArrayBuffer.transfer when it will be available.
+ */
+var Iterator = __nccwpck_require__(3062),
+    forEach = __nccwpck_require__(8968),
+    iterables = __nccwpck_require__(7304),
+    typed = __nccwpck_require__(3125);
+
+/**
+ * Defaults.
+ */
+var DEFAULT_GROWING_POLICY = function(currentCapacity) {
+  return Math.max(1, Math.ceil(currentCapacity * 1.5));
+};
+
+var pointerArrayFactory = function(capacity) {
+  var PointerArray = typed.getPointerArray(capacity);
+
+  return new PointerArray(capacity);
+};
+
+/**
+ * Vector.
+ *
+ * @constructor
+ * @param {function}      ArrayClass             - An array constructor.
+ * @param {number|object} initialCapacityOrOptions - Self-explanatory:
+ * @param {number}        initialCapacity          - Initial capacity.
+ * @param {number}        initialLength            - Initial length.
+ * @param {function}      policy                   - Allocation policy.
+ */
+function Vector(ArrayClass, initialCapacityOrOptions) {
+  if (arguments.length < 1)
+    throw new Error('mnemonist/vector: expecting at least a byte array constructor.');
+
+  var initialCapacity = initialCapacityOrOptions || 0,
+      policy = DEFAULT_GROWING_POLICY,
+      initialLength = 0,
+      factory = false;
+
+  if (typeof initialCapacityOrOptions === 'object') {
+    initialCapacity = initialCapacityOrOptions.initialCapacity || 0;
+    initialLength = initialCapacityOrOptions.initialLength || 0;
+    policy = initialCapacityOrOptions.policy || policy;
+    factory = initialCapacityOrOptions.factory === true;
+  }
+
+  this.factory = factory ? ArrayClass : null;
+  this.ArrayClass = ArrayClass;
+  this.length = initialLength;
+  this.capacity = Math.max(initialLength, initialCapacity);
+  this.policy = policy;
+  this.array = new ArrayClass(this.capacity);
+}
+
+/**
+ * Method used to set a value.
+ *
+ * @param  {number} index - Index to edit.
+ * @param  {any}    value - Value.
+ * @return {Vector}
+ */
+Vector.prototype.set = function(index, value) {
+
+  // Out of bounds?
+  if (this.length < index)
+    throw new Error('Vector(' + this.ArrayClass.name + ').set: index out of bounds.');
+
+  // Updating value
+  this.array[index] = value;
+
+  return this;
+};
+
+/**
+ * Method used to get a value.
+ *
+ * @param  {number} index - Index to retrieve.
+ * @return {any}
+ */
+Vector.prototype.get = function(index) {
+  if (this.length < index)
+    return undefined;
+
+  return this.array[index];
+};
+
+/**
+ * Method used to apply the growing policy.
+ *
+ * @param  {number} [override] - Override capacity.
+ * @return {number}
+ */
+Vector.prototype.applyPolicy = function(override) {
+  var newCapacity = this.policy(override || this.capacity);
+
+  if (typeof newCapacity !== 'number' || newCapacity < 0)
+    throw new Error('mnemonist/vector.applyPolicy: policy returned an invalid value (expecting a positive integer).');
+
+  if (newCapacity <= this.capacity)
+    throw new Error('mnemonist/vector.applyPolicy: policy returned a less or equal capacity to allocate.');
+
+  // TODO: we should probably check that the returned number is an integer
+  return newCapacity;
+};
+
+/**
+ * Method used to reallocate the underlying array.
+ *
+ * @param  {number}       capacity - Target capacity.
+ * @return {Vector}
+ */
+Vector.prototype.reallocate = function(capacity) {
+  if (capacity === this.capacity)
+    return this;
+
+  var oldArray = this.array;
+
+  if (capacity < this.length)
+    this.length = capacity;
+
+  if (capacity > this.capacity) {
+    if (this.factory === null)
+      this.array = new this.ArrayClass(capacity);
+    else
+      this.array = this.factory(capacity);
+
+    if (typed.isTypedArray(this.array)) {
+      this.array.set(oldArray, 0);
+    }
+    else {
+      for (var i = 0, l = this.length; i < l; i++)
+        this.array[i] = oldArray[i];
+    }
+  }
+  else {
+    this.array = oldArray.slice(0, capacity);
+  }
+
+  this.capacity = capacity;
+
+  return this;
+};
+
+/**
+ * Method used to grow the array.
+ *
+ * @param  {number}       [capacity] - Optional capacity to match.
+ * @return {Vector}
+ */
+Vector.prototype.grow = function(capacity) {
+  var newCapacity;
+
+  if (typeof capacity === 'number') {
+
+    if (this.capacity >= capacity)
+      return this;
+
+    // We need to match the given capacity
+    newCapacity = this.capacity;
+
+    while (newCapacity < capacity)
+      newCapacity = this.applyPolicy(newCapacity);
+
+    this.reallocate(newCapacity);
+
+    return this;
+  }
+
+  // We need to run the policy once
+  newCapacity = this.applyPolicy();
+  this.reallocate(newCapacity);
+
+  return this;
+};
+
+/**
+ * Method used to resize the array. Won't deallocate.
+ *
+ * @param  {number}       length - Target length.
+ * @return {Vector}
+ */
+Vector.prototype.resize = function(length) {
+  if (length === this.length)
+    return this;
+
+  if (length < this.length) {
+    this.length = length;
+    return this;
+  }
+
+  this.length = length;
+  this.reallocate(length);
+
+  return this;
+};
+
+/**
+ * Method used to push a value into the array.
+ *
+ * @param  {any}    value - Value to push.
+ * @return {number}       - Length of the array.
+ */
+Vector.prototype.push = function(value) {
+  if (this.capacity === this.length)
+    this.grow();
+
+  this.array[this.length++] = value;
+
+  return this.length;
+};
+
+/**
+ * Method used to pop the last value of the array.
+ *
+ * @return {number} - The popped value.
+ */
+Vector.prototype.pop = function() {
+  if (this.length === 0)
+    return;
+
+  return this.array[--this.length];
+};
+
+/**
+ * Method used to create an iterator over a vector's values.
+ *
+ * @return {Iterator}
+ */
+Vector.prototype.values = function() {
+  var items = this.array,
+      l = this.length,
+      i = 0;
+
+  return new Iterator(function() {
+    if (i >= l)
+      return {
+        done: true
+      };
+
+    var value = items[i];
+    i++;
+
+    return {
+      value: value,
+      done: false
+    };
+  });
+};
+
+/**
+ * Method used to create an iterator over a vector's entries.
+ *
+ * @return {Iterator}
+ */
+Vector.prototype.entries = function() {
+  var items = this.array,
+      l = this.length,
+      i = 0;
+
+  return new Iterator(function() {
+    if (i >= l)
+      return {
+        done: true
+      };
+
+    var value = items[i];
+
+    return {
+      value: [i++, value],
+      done: false
+    };
+  });
+};
+
+/**
+ * Attaching the #.values method to Symbol.iterator if possible.
+ */
+if (typeof Symbol !== 'undefined')
+  Vector.prototype[Symbol.iterator] = Vector.prototype.values;
+
+/**
+ * Convenience known methods.
+ */
+Vector.prototype.inspect = function() {
+  var proxy = this.array.slice(0, this.length);
+
+  proxy.type = this.array.constructor.name;
+  proxy.items = this.length;
+  proxy.capacity = this.capacity;
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(proxy, 'constructor', {
+    value: Vector,
+    enumerable: false
+  });
+
+  return proxy;
+};
+
+if (typeof Symbol !== 'undefined')
+  Vector.prototype[Symbol.for('nodejs.util.inspect.custom')] = Vector.prototype.inspect;
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a vector.
+ *
+ * @param  {Iterable} iterable   - Target iterable.
+ * @param  {function} ArrayClass - Byte array class.
+ * @param  {number}   capacity   - Desired capacity.
+ * @return {Vector}
+ */
+Vector.from = function(iterable, ArrayClass, capacity) {
+
+  if (arguments.length < 3) {
+
+    // Attempting to guess the needed capacity
+    capacity = iterables.guessLength(iterable);
+
+    if (typeof capacity !== 'number')
+      throw new Error('mnemonist/vector.from: could not guess iterable length. Please provide desired capacity as last argument.');
+  }
+
+  var vector = new Vector(ArrayClass, capacity);
+
+  forEach(iterable, function(value) {
+    vector.push(value);
+  });
+
+  return vector;
+};
+
+/**
+ * Exporting.
+ */
+function subClass(ArrayClass) {
+  var SubClass = function(initialCapacityOrOptions) {
+    Vector.call(this, ArrayClass, initialCapacityOrOptions);
+  };
+
+  for (var k in Vector.prototype) {
+    if (Vector.prototype.hasOwnProperty(k))
+      SubClass.prototype[k] = Vector.prototype[k];
+  }
+
+  SubClass.from = function(iterable, capacity) {
+    return Vector.from(iterable, ArrayClass, capacity);
+  };
+
+  if (typeof Symbol !== 'undefined')
+    SubClass.prototype[Symbol.iterator] = SubClass.prototype.values;
+
+  return SubClass;
+}
+
+Vector.Int8Vector = subClass(Int8Array);
+Vector.Uint8Vector = subClass(Uint8Array);
+Vector.Uint8ClampedVector = subClass(Uint8ClampedArray);
+Vector.Int16Vector = subClass(Int16Array);
+Vector.Uint16Vector = subClass(Uint16Array);
+Vector.Int32Vector = subClass(Int32Array);
+Vector.Uint32Vector = subClass(Uint32Array);
+Vector.Float32Vector = subClass(Float32Array);
+Vector.Float64Vector = subClass(Float64Array);
+Vector.PointerVector = subClass(pointerArrayFactory);
+
+module.exports = Vector;
+
+
+/***/ }),
+
+/***/ 7963:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/**
+ * Mnemonist Vantage Point Tree
+ * =============================
+ *
+ * JavaScript implementation of the Vantage Point Tree storing the binary
+ * tree as a flat byte array.
+ *
+ * Note that a VPTree has worst cases and is likely not to be perfectly
+ * balanced because of median ambiguity. It is therefore not suitable
+ * for hairballs and tiny datasets.
+ *
+ * [Reference]:
+ * https://en.wikipedia.org/wiki/Vantage-point_tree
+ */
+var iterables = __nccwpck_require__(7304),
+    typed = __nccwpck_require__(3125),
+    inplaceQuickSortIndices = __nccwpck_require__(4460)/* .inplaceQuickSortIndices */ .O,
+    lowerBoundIndices = __nccwpck_require__(1558).lowerBoundIndices,
+    Heap = __nccwpck_require__(1965);
+
+var getPointerArray = typed.getPointerArray;
+
+// TODO: implement vantage point selection techniques (by swapping with last)
+// TODO: is this required to implement early termination for k <= size?
+
+/**
+ * Heap comparator used by the #.nearestNeighbors method.
+ */
+function comparator(a, b) {
+  if (a.distance < b.distance)
+    return 1;
+
+  if (a.distance > b.distance)
+    return -1;
+
+  return 0;
+}
+
+/**
+ * Function used to create the binary tree.
+ *
+ * @param  {function}     distance - Distance function to use.
+ * @param  {array}        items    - Items to index (will be mutated).
+ * @param  {array}        indices  - Indexes of the items.
+ * @return {Float64Array}          - The flat binary tree.
+ */
+function createBinaryTree(distance, items, indices) {
+  var N = indices.length;
+
+  var PointerArray = getPointerArray(N);
+
+  var C = 0,
+      nodes = new PointerArray(N),
+      lefts = new PointerArray(N),
+      rights = new PointerArray(N),
+      mus = new Float64Array(N),
+      stack = [0, 0, N],
+      distances = new Float64Array(N),
+      nodeIndex,
+      vantagePoint,
+      medianIndex,
+      lo,
+      hi,
+      mid,
+      mu,
+      i,
+      l;
+
+  while (stack.length) {
+    hi = stack.pop();
+    lo = stack.pop();
+    nodeIndex = stack.pop();
+
+    // Getting our vantage point
+    vantagePoint = indices[hi - 1];
+    hi--;
+
+    l = hi - lo;
+
+    // Storing vantage point
+    nodes[nodeIndex] = vantagePoint;
+
+    // We are in a leaf
+    if (l === 0)
+      continue;
+
+    // We only have two elements, the second one has to go right
+    if (l === 1) {
+
+      // We put remaining item to the right
+      mu = distance(items[vantagePoint], items[indices[lo]]);
+
+      mus[nodeIndex] = mu;
+
+      // Right
+      C++;
+      rights[nodeIndex] = C;
+      nodes[C] = indices[lo];
+
+      continue;
+    }
+
+    // Computing distance from vantage point to other points
+    for (i = lo; i < hi; i++)
+      distances[indices[i]] = distance(items[vantagePoint], items[indices[i]]);
+
+    inplaceQuickSortIndices(distances, indices, lo, hi);
+
+    // Finding median of distances
+    medianIndex = lo + (l / 2) - 1;
+
+    // Need to interpolate?
+    if (medianIndex === (medianIndex | 0)) {
+      mu = (
+        distances[indices[medianIndex]] +
+        distances[indices[medianIndex + 1]]
+      ) / 2;
+    }
+    else {
+      mu = distances[indices[Math.ceil(medianIndex)]];
+    }
+
+    // Storing mu
+    mus[nodeIndex] = mu;
+
+    mid = lowerBoundIndices(distances, indices, mu, lo, hi);
+
+    // console.log('Vantage point', items[vantagePoint], vantagePoint);
+    // console.log('mu =', mu);
+    // console.log('lo =', lo);
+    // console.log('hi =', hi);
+    // console.log('mid =', mid);
+
+    // console.log('need to split', Array.from(indices).slice(lo, hi).map(i => {
+    //   return [distances[i], distance(items[vantagePoint], items[i]), items[i]];
+    // }));
+
+    // Right
+    if (hi - mid > 0) {
+      C++;
+      rights[nodeIndex] = C;
+      stack.push(C, mid, hi);
+      // console.log('Went right with ', Array.from(indices).slice(mid, hi).map(i => {
+      //   return [distances[i], distance(items[vantagePoint], items[i]), items[i]];
+      // }));
+    }
+
+    // Left
+    if (mid - lo > 0) {
+      C++;
+      lefts[nodeIndex] = C;
+      stack.push(C, lo, mid);
+      // console.log('Went left with', Array.from(indices).slice(lo, mid).map(i => {
+      //   return [distances[i], distance(items[vantagePoint], items[i]), items[i]];
+      // }));
+    }
+
+    // console.log();
+  }
+
+  return {
+    nodes: nodes,
+    lefts: lefts,
+    rights: rights,
+    mus: mus
+  };
+}
+
+/**
+ * VPTree.
+ *
+ * @constructor
+ * @param {function} distance - Distance function to use.
+ * @param {Iterable} items    - Items to store.
+ */
+function VPTree(distance, items) {
+  if (typeof distance !== 'function')
+    throw new Error('mnemonist/VPTree.constructor: given `distance` must be a function.');
+
+  if (!items)
+    throw new Error('mnemonist/VPTree.constructor: you must provide items to the tree. A VPTree cannot be updated after its creation.');
+
+  // Properties
+  this.distance = distance;
+  this.heap = new Heap(comparator);
+  this.D = 0;
+
+  var arrays = iterables.toArrayWithIndices(items);
+  this.items = arrays[0];
+  var indices = arrays[1];
+
+  // Creating the binary tree
+  this.size = indices.length;
+
+  var result = createBinaryTree(distance, this.items, indices);
+
+  this.nodes = result.nodes;
+  this.lefts = result.lefts;
+  this.rights = result.rights;
+  this.mus = result.mus;
+}
+
+/**
+ * Function used to retrieve the k nearest neighbors of the query.
+ *
+ * @param  {number} k     - Number of neighbors to retrieve.
+ * @param  {any}    query - The query.
+ * @return {array}
+ */
+VPTree.prototype.nearestNeighbors = function(k, query) {
+  var neighbors = this.heap,
+      stack = [0],
+      tau = Infinity,
+      nodeIndex,
+      itemIndex,
+      vantagePoint,
+      leftIndex,
+      rightIndex,
+      mu,
+      d;
+
+  this.D = 0;
+
+  while (stack.length) {
+    nodeIndex = stack.pop();
+    itemIndex = this.nodes[nodeIndex];
+    vantagePoint = this.items[itemIndex];
+
+    // Distance between query & the current vantage point
+    d = this.distance(vantagePoint, query);
+    this.D++;
+
+    if (d < tau) {
+      neighbors.push({distance: d, item: vantagePoint});
+
+      // Trimming
+      if (neighbors.size > k)
+        neighbors.pop();
+
+      // Adjusting tau (only if we already have k items, else it stays Infinity)
+      if (neighbors.size >= k)
+       tau = neighbors.peek().distance;
+    }
+
+    leftIndex = this.lefts[nodeIndex];
+    rightIndex = this.rights[nodeIndex];
+
+    // We are a leaf
+    if (!leftIndex && !rightIndex)
+      continue;
+
+    mu = this.mus[nodeIndex];
+
+    if (d < mu) {
+      if (leftIndex && d < mu + tau)
+        stack.push(leftIndex);
+      if (rightIndex && d >= mu - tau) // Might not be necessary to test d
+        stack.push(rightIndex);
+    }
+    else {
+      if (rightIndex && d >= mu - tau)
+        stack.push(rightIndex);
+      if (leftIndex && d < mu + tau) // Might not be necessary to test d
+        stack.push(leftIndex);
+    }
+  }
+
+  var array = new Array(neighbors.size);
+
+  for (var i = neighbors.size - 1; i >= 0; i--)
+    array[i] = neighbors.pop();
+
+  return array;
+};
+
+/**
+ * Function used to retrieve every neighbors of query in the given radius.
+ *
+ * @param  {number} radius - Radius.
+ * @param  {any}    query  - The query.
+ * @return {array}
+ */
+VPTree.prototype.neighbors = function(radius, query) {
+  var neighbors = [],
+      stack = [0],
+      nodeIndex,
+      itemIndex,
+      vantagePoint,
+      leftIndex,
+      rightIndex,
+      mu,
+      d;
+
+  this.D = 0;
+
+  while (stack.length) {
+    nodeIndex = stack.pop();
+    itemIndex = this.nodes[nodeIndex];
+    vantagePoint = this.items[itemIndex];
+
+    // Distance between query & the current vantage point
+    d = this.distance(vantagePoint, query);
+    this.D++;
+
+    if (d <= radius)
+      neighbors.push({distance: d, item: vantagePoint});
+
+    leftIndex = this.lefts[nodeIndex];
+    rightIndex = this.rights[nodeIndex];
+
+    // We are a leaf
+    if (!leftIndex && !rightIndex)
+      continue;
+
+    mu = this.mus[nodeIndex];
+
+    if (d < mu) {
+      if (leftIndex && d < mu + radius)
+        stack.push(leftIndex);
+      if (rightIndex && d >= mu - radius) // Might not be necessary to test d
+        stack.push(rightIndex);
+    }
+    else {
+      if (rightIndex && d >= mu - radius)
+        stack.push(rightIndex);
+      if (leftIndex && d < mu + radius) // Might not be necessary to test d
+        stack.push(leftIndex);
+    }
+  }
+
+  return neighbors;
+};
+
+/**
+ * Convenience known methods.
+ */
+VPTree.prototype.inspect = function() {
+  var array = this.items.slice();
+
+  // Trick so that node displays the name of the constructor
+  Object.defineProperty(array, 'constructor', {
+    value: VPTree,
+    enumerable: false
+  });
+
+  return array;
+};
+
+if (typeof Symbol !== 'undefined')
+  VPTree.prototype[Symbol.for('nodejs.util.inspect.custom')] = VPTree.prototype.inspect;
+
+/**
+ * Static @.from function taking an arbitrary iterable & converting it into
+ * a tree.
+ *
+ * @param  {Iterable} iterable - Target iterable.
+ * @param  {function} distance - Distance function to use.
+ * @return {VPTree}
+ */
+VPTree.from = function(iterable, distance) {
+  return new VPTree(distance, iterable);
+};
+
+/**
+ * Exporting.
+ */
+module.exports = VPTree;
 
 
 /***/ }),
@@ -33876,6 +49708,280 @@ exports.FetchError = FetchError;
 
 /***/ }),
 
+/***/ 8968:
+/***/ ((module) => {
+
+/**
+ * Obliterator ForEach Function
+ * =============================
+ *
+ * Helper function used to easily iterate over mixed values.
+ */
+
+/**
+ * Constants.
+ */
+var ARRAY_BUFFER_SUPPORT = typeof ArrayBuffer !== 'undefined',
+    SYMBOL_SUPPORT = typeof Symbol !== 'undefined';
+
+/**
+ * Function able to iterate over almost any iterable JS value.
+ *
+ * @param  {any}      iterable - Iterable value.
+ * @param  {function} callback - Callback function.
+ */
+function forEach(iterable, callback) {
+  var iterator, k, i, l, s;
+
+  if (!iterable)
+    throw new Error('obliterator/forEach: invalid iterable.');
+
+  if (typeof callback !== 'function')
+    throw new Error('obliterator/forEach: expecting a callback.');
+
+  // The target is an array or a string or function arguments
+  if (
+    Array.isArray(iterable) ||
+    (ARRAY_BUFFER_SUPPORT && ArrayBuffer.isView(iterable)) ||
+    typeof iterable === 'string' ||
+    iterable.toString() === '[object Arguments]'
+  ) {
+    for (i = 0, l = iterable.length; i < l; i++)
+      callback(iterable[i], i);
+    return;
+  }
+
+  // The target has a #.forEach method
+  if (typeof iterable.forEach === 'function') {
+    iterable.forEach(callback);
+    return;
+  }
+
+  // The target is iterable
+  if (
+    SYMBOL_SUPPORT &&
+    Symbol.iterator in iterable &&
+    typeof iterable.next !== 'function'
+  ) {
+    iterable = iterable[Symbol.iterator]();
+  }
+
+  // The target is an iterator
+  if (typeof iterable.next === 'function') {
+    iterator = iterable;
+    i = 0;
+
+    while ((s = iterator.next(), s.done !== true)) {
+      callback(s.value, i);
+      i++;
+    }
+
+    return;
+  }
+
+  // The target is a plain object
+  for (k in iterable) {
+    if (iterable.hasOwnProperty(k)) {
+      callback(iterable[k], k);
+    }
+  }
+
+  return;
+}
+
+/**
+ * Same function as the above `forEach` but will yield `null` when the target
+ * does not have keys.
+ *
+ * @param  {any}      iterable - Iterable value.
+ * @param  {function} callback - Callback function.
+ */
+forEach.forEachWithNullKeys = function(iterable, callback) {
+  var iterator, k, i, l, s;
+
+  if (!iterable)
+    throw new Error('obliterator/forEachWithNullKeys: invalid iterable.');
+
+  if (typeof callback !== 'function')
+    throw new Error('obliterator/forEachWithNullKeys: expecting a callback.');
+
+  // The target is an array or a string or function arguments
+  if (
+    Array.isArray(iterable) ||
+    (ARRAY_BUFFER_SUPPORT && ArrayBuffer.isView(iterable)) ||
+    typeof iterable === 'string' ||
+    iterable.toString() === '[object Arguments]'
+  ) {
+    for (i = 0, l = iterable.length; i < l; i++)
+      callback(iterable[i], null);
+    return;
+  }
+
+  // The target is a Set
+  if (iterable instanceof Set) {
+    iterable.forEach(function(value) {
+      callback(value, null);
+    });
+    return;
+  }
+
+  // The target has a #.forEach method
+  if (typeof iterable.forEach === 'function') {
+    iterable.forEach(callback);
+    return;
+  }
+
+  // The target is iterable
+  if (
+    SYMBOL_SUPPORT &&
+    Symbol.iterator in iterable &&
+    typeof iterable.next !== 'function'
+  ) {
+    iterable = iterable[Symbol.iterator]();
+  }
+
+  // The target is an iterator
+  if (typeof iterable.next === 'function') {
+    iterator = iterable;
+    i = 0;
+
+    while ((s = iterator.next(), s.done !== true)) {
+      callback(s.value, null);
+      i++;
+    }
+
+    return;
+  }
+
+  // The target is a plain object
+  for (k in iterable) {
+    if (iterable.hasOwnProperty(k)) {
+      callback(iterable[k], k);
+    }
+  }
+
+  return;
+};
+
+/**
+ * Exporting.
+ */
+module.exports = forEach;
+
+
+/***/ }),
+
+/***/ 3062:
+/***/ ((module) => {
+
+/**
+ * Obliterator Iterator Class
+ * ===========================
+ *
+ * Simple class representing the library's iterators.
+ */
+
+/**
+ * Iterator class.
+ *
+ * @constructor
+ * @param {function} next - Next function.
+ */
+function Iterator(next) {
+
+  // Hiding the given function
+  Object.defineProperty(this, '_next', {
+    writable: false,
+    enumerable: false,
+    value: next
+  });
+
+  // Is the iterator complete?
+  this.done = false;
+}
+
+/**
+ * Next function.
+ *
+ * @return {object}
+ */
+// NOTE: maybe this should dropped for performance?
+Iterator.prototype.next = function() {
+  if (this.done)
+    return {done: true};
+
+  var step = this._next();
+
+  if (step.done)
+    this.done = true;
+
+  return step;
+};
+
+/**
+ * If symbols are supported, we add `next` to `Symbol.iterator`.
+ */
+if (typeof Symbol !== 'undefined')
+  Iterator.prototype[Symbol.iterator] = function() {
+    return this;
+  };
+
+/**
+ * Returning an iterator of the given values.
+ *
+ * @param  {any...} values - Values.
+ * @return {Iterator}
+ */
+Iterator.of = function() {
+  var args = arguments,
+      l = args.length,
+      i = 0;
+
+  return new Iterator(function() {
+    if (i >= l)
+      return {done: true};
+
+    return {done: false, value: args[i++]};
+  });
+};
+
+/**
+ * Returning an empty iterator.
+ *
+ * @return {Iterator}
+ */
+Iterator.empty = function() {
+  var iterator = new Iterator(null);
+  iterator.done = true;
+
+  return iterator;
+};
+
+/**
+ * Returning whether the given value is an iterator.
+ *
+ * @param  {any} value - Value.
+ * @return {boolean}
+ */
+Iterator.is = function(value) {
+  if (value instanceof Iterator)
+    return true;
+
+  return (
+    typeof value === 'object' &&
+    value !== null &&
+    typeof value.next === 'function'
+  );
+};
+
+/**
+ * Exporting.
+ */
+module.exports = Iterator;
+
+
+/***/ }),
+
 /***/ 1223:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
@@ -35257,10 +51363,10 @@ async function generatePayload(rawSlices) {
 
   return {
     repository: `${owner}/${repo}`,
-    commitSha: commitSha,
-    commitBranch: branch,
-    commitDatetime: await commitDatetime(commitSha),
-    commitMessage: await commitMessage(commitSha),
+    commit_sha: commitSha,
+    commit_branch: branch,
+    commit_datetime: await commitDatetime(commitSha),
+    commit_message: await commitMessage(commitSha),
     slices: normalizeSlices(rawSlices),
     ttl: generateTTL(),
   };
@@ -35276,6 +51382,38 @@ module.exports = generatePayload;
 
 module.exports = eval("require")("encoding");
 
+
+/***/ }),
+
+/***/ 4589:
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"0":65533,"128":8364,"130":8218,"131":402,"132":8222,"133":8230,"134":8224,"135":8225,"136":710,"137":8240,"138":352,"139":8249,"140":338,"142":381,"145":8216,"146":8217,"147":8220,"148":8221,"149":8226,"150":8211,"151":8212,"152":732,"153":8482,"154":353,"155":8250,"156":339,"158":382,"159":376}');
+
+/***/ }),
+
+/***/ 4007:
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"Aacute":"Á","aacute":"á","Abreve":"Ă","abreve":"ă","ac":"∾","acd":"∿","acE":"∾̳","Acirc":"Â","acirc":"â","acute":"´","Acy":"А","acy":"а","AElig":"Æ","aelig":"æ","af":"⁡","Afr":"𝔄","afr":"𝔞","Agrave":"À","agrave":"à","alefsym":"ℵ","aleph":"ℵ","Alpha":"Α","alpha":"α","Amacr":"Ā","amacr":"ā","amalg":"⨿","amp":"&","AMP":"&","andand":"⩕","And":"⩓","and":"∧","andd":"⩜","andslope":"⩘","andv":"⩚","ang":"∠","ange":"⦤","angle":"∠","angmsdaa":"⦨","angmsdab":"⦩","angmsdac":"⦪","angmsdad":"⦫","angmsdae":"⦬","angmsdaf":"⦭","angmsdag":"⦮","angmsdah":"⦯","angmsd":"∡","angrt":"∟","angrtvb":"⊾","angrtvbd":"⦝","angsph":"∢","angst":"Å","angzarr":"⍼","Aogon":"Ą","aogon":"ą","Aopf":"𝔸","aopf":"𝕒","apacir":"⩯","ap":"≈","apE":"⩰","ape":"≊","apid":"≋","apos":"\'","ApplyFunction":"⁡","approx":"≈","approxeq":"≊","Aring":"Å","aring":"å","Ascr":"𝒜","ascr":"𝒶","Assign":"≔","ast":"*","asymp":"≈","asympeq":"≍","Atilde":"Ã","atilde":"ã","Auml":"Ä","auml":"ä","awconint":"∳","awint":"⨑","backcong":"≌","backepsilon":"϶","backprime":"‵","backsim":"∽","backsimeq":"⋍","Backslash":"∖","Barv":"⫧","barvee":"⊽","barwed":"⌅","Barwed":"⌆","barwedge":"⌅","bbrk":"⎵","bbrktbrk":"⎶","bcong":"≌","Bcy":"Б","bcy":"б","bdquo":"„","becaus":"∵","because":"∵","Because":"∵","bemptyv":"⦰","bepsi":"϶","bernou":"ℬ","Bernoullis":"ℬ","Beta":"Β","beta":"β","beth":"ℶ","between":"≬","Bfr":"𝔅","bfr":"𝔟","bigcap":"⋂","bigcirc":"◯","bigcup":"⋃","bigodot":"⨀","bigoplus":"⨁","bigotimes":"⨂","bigsqcup":"⨆","bigstar":"★","bigtriangledown":"▽","bigtriangleup":"△","biguplus":"⨄","bigvee":"⋁","bigwedge":"⋀","bkarow":"⤍","blacklozenge":"⧫","blacksquare":"▪","blacktriangle":"▴","blacktriangledown":"▾","blacktriangleleft":"◂","blacktriangleright":"▸","blank":"␣","blk12":"▒","blk14":"░","blk34":"▓","block":"█","bne":"=⃥","bnequiv":"≡⃥","bNot":"⫭","bnot":"⌐","Bopf":"𝔹","bopf":"𝕓","bot":"⊥","bottom":"⊥","bowtie":"⋈","boxbox":"⧉","boxdl":"┐","boxdL":"╕","boxDl":"╖","boxDL":"╗","boxdr":"┌","boxdR":"╒","boxDr":"╓","boxDR":"╔","boxh":"─","boxH":"═","boxhd":"┬","boxHd":"╤","boxhD":"╥","boxHD":"╦","boxhu":"┴","boxHu":"╧","boxhU":"╨","boxHU":"╩","boxminus":"⊟","boxplus":"⊞","boxtimes":"⊠","boxul":"┘","boxuL":"╛","boxUl":"╜","boxUL":"╝","boxur":"└","boxuR":"╘","boxUr":"╙","boxUR":"╚","boxv":"│","boxV":"║","boxvh":"┼","boxvH":"╪","boxVh":"╫","boxVH":"╬","boxvl":"┤","boxvL":"╡","boxVl":"╢","boxVL":"╣","boxvr":"├","boxvR":"╞","boxVr":"╟","boxVR":"╠","bprime":"‵","breve":"˘","Breve":"˘","brvbar":"¦","bscr":"𝒷","Bscr":"ℬ","bsemi":"⁏","bsim":"∽","bsime":"⋍","bsolb":"⧅","bsol":"\\\\","bsolhsub":"⟈","bull":"•","bullet":"•","bump":"≎","bumpE":"⪮","bumpe":"≏","Bumpeq":"≎","bumpeq":"≏","Cacute":"Ć","cacute":"ć","capand":"⩄","capbrcup":"⩉","capcap":"⩋","cap":"∩","Cap":"⋒","capcup":"⩇","capdot":"⩀","CapitalDifferentialD":"ⅅ","caps":"∩︀","caret":"⁁","caron":"ˇ","Cayleys":"ℭ","ccaps":"⩍","Ccaron":"Č","ccaron":"č","Ccedil":"Ç","ccedil":"ç","Ccirc":"Ĉ","ccirc":"ĉ","Cconint":"∰","ccups":"⩌","ccupssm":"⩐","Cdot":"Ċ","cdot":"ċ","cedil":"¸","Cedilla":"¸","cemptyv":"⦲","cent":"¢","centerdot":"·","CenterDot":"·","cfr":"𝔠","Cfr":"ℭ","CHcy":"Ч","chcy":"ч","check":"✓","checkmark":"✓","Chi":"Χ","chi":"χ","circ":"ˆ","circeq":"≗","circlearrowleft":"↺","circlearrowright":"↻","circledast":"⊛","circledcirc":"⊚","circleddash":"⊝","CircleDot":"⊙","circledR":"®","circledS":"Ⓢ","CircleMinus":"⊖","CirclePlus":"⊕","CircleTimes":"⊗","cir":"○","cirE":"⧃","cire":"≗","cirfnint":"⨐","cirmid":"⫯","cirscir":"⧂","ClockwiseContourIntegral":"∲","CloseCurlyDoubleQuote":"”","CloseCurlyQuote":"’","clubs":"♣","clubsuit":"♣","colon":":","Colon":"∷","Colone":"⩴","colone":"≔","coloneq":"≔","comma":",","commat":"@","comp":"∁","compfn":"∘","complement":"∁","complexes":"ℂ","cong":"≅","congdot":"⩭","Congruent":"≡","conint":"∮","Conint":"∯","ContourIntegral":"∮","copf":"𝕔","Copf":"ℂ","coprod":"∐","Coproduct":"∐","copy":"©","COPY":"©","copysr":"℗","CounterClockwiseContourIntegral":"∳","crarr":"↵","cross":"✗","Cross":"⨯","Cscr":"𝒞","cscr":"𝒸","csub":"⫏","csube":"⫑","csup":"⫐","csupe":"⫒","ctdot":"⋯","cudarrl":"⤸","cudarrr":"⤵","cuepr":"⋞","cuesc":"⋟","cularr":"↶","cularrp":"⤽","cupbrcap":"⩈","cupcap":"⩆","CupCap":"≍","cup":"∪","Cup":"⋓","cupcup":"⩊","cupdot":"⊍","cupor":"⩅","cups":"∪︀","curarr":"↷","curarrm":"⤼","curlyeqprec":"⋞","curlyeqsucc":"⋟","curlyvee":"⋎","curlywedge":"⋏","curren":"¤","curvearrowleft":"↶","curvearrowright":"↷","cuvee":"⋎","cuwed":"⋏","cwconint":"∲","cwint":"∱","cylcty":"⌭","dagger":"†","Dagger":"‡","daleth":"ℸ","darr":"↓","Darr":"↡","dArr":"⇓","dash":"‐","Dashv":"⫤","dashv":"⊣","dbkarow":"⤏","dblac":"˝","Dcaron":"Ď","dcaron":"ď","Dcy":"Д","dcy":"д","ddagger":"‡","ddarr":"⇊","DD":"ⅅ","dd":"ⅆ","DDotrahd":"⤑","ddotseq":"⩷","deg":"°","Del":"∇","Delta":"Δ","delta":"δ","demptyv":"⦱","dfisht":"⥿","Dfr":"𝔇","dfr":"𝔡","dHar":"⥥","dharl":"⇃","dharr":"⇂","DiacriticalAcute":"´","DiacriticalDot":"˙","DiacriticalDoubleAcute":"˝","DiacriticalGrave":"`","DiacriticalTilde":"˜","diam":"⋄","diamond":"⋄","Diamond":"⋄","diamondsuit":"♦","diams":"♦","die":"¨","DifferentialD":"ⅆ","digamma":"ϝ","disin":"⋲","div":"÷","divide":"÷","divideontimes":"⋇","divonx":"⋇","DJcy":"Ђ","djcy":"ђ","dlcorn":"⌞","dlcrop":"⌍","dollar":"$","Dopf":"𝔻","dopf":"𝕕","Dot":"¨","dot":"˙","DotDot":"⃜","doteq":"≐","doteqdot":"≑","DotEqual":"≐","dotminus":"∸","dotplus":"∔","dotsquare":"⊡","doublebarwedge":"⌆","DoubleContourIntegral":"∯","DoubleDot":"¨","DoubleDownArrow":"⇓","DoubleLeftArrow":"⇐","DoubleLeftRightArrow":"⇔","DoubleLeftTee":"⫤","DoubleLongLeftArrow":"⟸","DoubleLongLeftRightArrow":"⟺","DoubleLongRightArrow":"⟹","DoubleRightArrow":"⇒","DoubleRightTee":"⊨","DoubleUpArrow":"⇑","DoubleUpDownArrow":"⇕","DoubleVerticalBar":"∥","DownArrowBar":"⤓","downarrow":"↓","DownArrow":"↓","Downarrow":"⇓","DownArrowUpArrow":"⇵","DownBreve":"̑","downdownarrows":"⇊","downharpoonleft":"⇃","downharpoonright":"⇂","DownLeftRightVector":"⥐","DownLeftTeeVector":"⥞","DownLeftVectorBar":"⥖","DownLeftVector":"↽","DownRightTeeVector":"⥟","DownRightVectorBar":"⥗","DownRightVector":"⇁","DownTeeArrow":"↧","DownTee":"⊤","drbkarow":"⤐","drcorn":"⌟","drcrop":"⌌","Dscr":"𝒟","dscr":"𝒹","DScy":"Ѕ","dscy":"ѕ","dsol":"⧶","Dstrok":"Đ","dstrok":"đ","dtdot":"⋱","dtri":"▿","dtrif":"▾","duarr":"⇵","duhar":"⥯","dwangle":"⦦","DZcy":"Џ","dzcy":"џ","dzigrarr":"⟿","Eacute":"É","eacute":"é","easter":"⩮","Ecaron":"Ě","ecaron":"ě","Ecirc":"Ê","ecirc":"ê","ecir":"≖","ecolon":"≕","Ecy":"Э","ecy":"э","eDDot":"⩷","Edot":"Ė","edot":"ė","eDot":"≑","ee":"ⅇ","efDot":"≒","Efr":"𝔈","efr":"𝔢","eg":"⪚","Egrave":"È","egrave":"è","egs":"⪖","egsdot":"⪘","el":"⪙","Element":"∈","elinters":"⏧","ell":"ℓ","els":"⪕","elsdot":"⪗","Emacr":"Ē","emacr":"ē","empty":"∅","emptyset":"∅","EmptySmallSquare":"◻","emptyv":"∅","EmptyVerySmallSquare":"▫","emsp13":" ","emsp14":" ","emsp":" ","ENG":"Ŋ","eng":"ŋ","ensp":" ","Eogon":"Ę","eogon":"ę","Eopf":"𝔼","eopf":"𝕖","epar":"⋕","eparsl":"⧣","eplus":"⩱","epsi":"ε","Epsilon":"Ε","epsilon":"ε","epsiv":"ϵ","eqcirc":"≖","eqcolon":"≕","eqsim":"≂","eqslantgtr":"⪖","eqslantless":"⪕","Equal":"⩵","equals":"=","EqualTilde":"≂","equest":"≟","Equilibrium":"⇌","equiv":"≡","equivDD":"⩸","eqvparsl":"⧥","erarr":"⥱","erDot":"≓","escr":"ℯ","Escr":"ℰ","esdot":"≐","Esim":"⩳","esim":"≂","Eta":"Η","eta":"η","ETH":"Ð","eth":"ð","Euml":"Ë","euml":"ë","euro":"€","excl":"!","exist":"∃","Exists":"∃","expectation":"ℰ","exponentiale":"ⅇ","ExponentialE":"ⅇ","fallingdotseq":"≒","Fcy":"Ф","fcy":"ф","female":"♀","ffilig":"ﬃ","fflig":"ﬀ","ffllig":"ﬄ","Ffr":"𝔉","ffr":"𝔣","filig":"ﬁ","FilledSmallSquare":"◼","FilledVerySmallSquare":"▪","fjlig":"fj","flat":"♭","fllig":"ﬂ","fltns":"▱","fnof":"ƒ","Fopf":"𝔽","fopf":"𝕗","forall":"∀","ForAll":"∀","fork":"⋔","forkv":"⫙","Fouriertrf":"ℱ","fpartint":"⨍","frac12":"½","frac13":"⅓","frac14":"¼","frac15":"⅕","frac16":"⅙","frac18":"⅛","frac23":"⅔","frac25":"⅖","frac34":"¾","frac35":"⅗","frac38":"⅜","frac45":"⅘","frac56":"⅚","frac58":"⅝","frac78":"⅞","frasl":"⁄","frown":"⌢","fscr":"𝒻","Fscr":"ℱ","gacute":"ǵ","Gamma":"Γ","gamma":"γ","Gammad":"Ϝ","gammad":"ϝ","gap":"⪆","Gbreve":"Ğ","gbreve":"ğ","Gcedil":"Ģ","Gcirc":"Ĝ","gcirc":"ĝ","Gcy":"Г","gcy":"г","Gdot":"Ġ","gdot":"ġ","ge":"≥","gE":"≧","gEl":"⪌","gel":"⋛","geq":"≥","geqq":"≧","geqslant":"⩾","gescc":"⪩","ges":"⩾","gesdot":"⪀","gesdoto":"⪂","gesdotol":"⪄","gesl":"⋛︀","gesles":"⪔","Gfr":"𝔊","gfr":"𝔤","gg":"≫","Gg":"⋙","ggg":"⋙","gimel":"ℷ","GJcy":"Ѓ","gjcy":"ѓ","gla":"⪥","gl":"≷","glE":"⪒","glj":"⪤","gnap":"⪊","gnapprox":"⪊","gne":"⪈","gnE":"≩","gneq":"⪈","gneqq":"≩","gnsim":"⋧","Gopf":"𝔾","gopf":"𝕘","grave":"`","GreaterEqual":"≥","GreaterEqualLess":"⋛","GreaterFullEqual":"≧","GreaterGreater":"⪢","GreaterLess":"≷","GreaterSlantEqual":"⩾","GreaterTilde":"≳","Gscr":"𝒢","gscr":"ℊ","gsim":"≳","gsime":"⪎","gsiml":"⪐","gtcc":"⪧","gtcir":"⩺","gt":">","GT":">","Gt":"≫","gtdot":"⋗","gtlPar":"⦕","gtquest":"⩼","gtrapprox":"⪆","gtrarr":"⥸","gtrdot":"⋗","gtreqless":"⋛","gtreqqless":"⪌","gtrless":"≷","gtrsim":"≳","gvertneqq":"≩︀","gvnE":"≩︀","Hacek":"ˇ","hairsp":" ","half":"½","hamilt":"ℋ","HARDcy":"Ъ","hardcy":"ъ","harrcir":"⥈","harr":"↔","hArr":"⇔","harrw":"↭","Hat":"^","hbar":"ℏ","Hcirc":"Ĥ","hcirc":"ĥ","hearts":"♥","heartsuit":"♥","hellip":"…","hercon":"⊹","hfr":"𝔥","Hfr":"ℌ","HilbertSpace":"ℋ","hksearow":"⤥","hkswarow":"⤦","hoarr":"⇿","homtht":"∻","hookleftarrow":"↩","hookrightarrow":"↪","hopf":"𝕙","Hopf":"ℍ","horbar":"―","HorizontalLine":"─","hscr":"𝒽","Hscr":"ℋ","hslash":"ℏ","Hstrok":"Ħ","hstrok":"ħ","HumpDownHump":"≎","HumpEqual":"≏","hybull":"⁃","hyphen":"‐","Iacute":"Í","iacute":"í","ic":"⁣","Icirc":"Î","icirc":"î","Icy":"И","icy":"и","Idot":"İ","IEcy":"Е","iecy":"е","iexcl":"¡","iff":"⇔","ifr":"𝔦","Ifr":"ℑ","Igrave":"Ì","igrave":"ì","ii":"ⅈ","iiiint":"⨌","iiint":"∭","iinfin":"⧜","iiota":"℩","IJlig":"Ĳ","ijlig":"ĳ","Imacr":"Ī","imacr":"ī","image":"ℑ","ImaginaryI":"ⅈ","imagline":"ℐ","imagpart":"ℑ","imath":"ı","Im":"ℑ","imof":"⊷","imped":"Ƶ","Implies":"⇒","incare":"℅","in":"∈","infin":"∞","infintie":"⧝","inodot":"ı","intcal":"⊺","int":"∫","Int":"∬","integers":"ℤ","Integral":"∫","intercal":"⊺","Intersection":"⋂","intlarhk":"⨗","intprod":"⨼","InvisibleComma":"⁣","InvisibleTimes":"⁢","IOcy":"Ё","iocy":"ё","Iogon":"Į","iogon":"į","Iopf":"𝕀","iopf":"𝕚","Iota":"Ι","iota":"ι","iprod":"⨼","iquest":"¿","iscr":"𝒾","Iscr":"ℐ","isin":"∈","isindot":"⋵","isinE":"⋹","isins":"⋴","isinsv":"⋳","isinv":"∈","it":"⁢","Itilde":"Ĩ","itilde":"ĩ","Iukcy":"І","iukcy":"і","Iuml":"Ï","iuml":"ï","Jcirc":"Ĵ","jcirc":"ĵ","Jcy":"Й","jcy":"й","Jfr":"𝔍","jfr":"𝔧","jmath":"ȷ","Jopf":"𝕁","jopf":"𝕛","Jscr":"𝒥","jscr":"𝒿","Jsercy":"Ј","jsercy":"ј","Jukcy":"Є","jukcy":"є","Kappa":"Κ","kappa":"κ","kappav":"ϰ","Kcedil":"Ķ","kcedil":"ķ","Kcy":"К","kcy":"к","Kfr":"𝔎","kfr":"𝔨","kgreen":"ĸ","KHcy":"Х","khcy":"х","KJcy":"Ќ","kjcy":"ќ","Kopf":"𝕂","kopf":"𝕜","Kscr":"𝒦","kscr":"𝓀","lAarr":"⇚","Lacute":"Ĺ","lacute":"ĺ","laemptyv":"⦴","lagran":"ℒ","Lambda":"Λ","lambda":"λ","lang":"⟨","Lang":"⟪","langd":"⦑","langle":"⟨","lap":"⪅","Laplacetrf":"ℒ","laquo":"«","larrb":"⇤","larrbfs":"⤟","larr":"←","Larr":"↞","lArr":"⇐","larrfs":"⤝","larrhk":"↩","larrlp":"↫","larrpl":"⤹","larrsim":"⥳","larrtl":"↢","latail":"⤙","lAtail":"⤛","lat":"⪫","late":"⪭","lates":"⪭︀","lbarr":"⤌","lBarr":"⤎","lbbrk":"❲","lbrace":"{","lbrack":"[","lbrke":"⦋","lbrksld":"⦏","lbrkslu":"⦍","Lcaron":"Ľ","lcaron":"ľ","Lcedil":"Ļ","lcedil":"ļ","lceil":"⌈","lcub":"{","Lcy":"Л","lcy":"л","ldca":"⤶","ldquo":"“","ldquor":"„","ldrdhar":"⥧","ldrushar":"⥋","ldsh":"↲","le":"≤","lE":"≦","LeftAngleBracket":"⟨","LeftArrowBar":"⇤","leftarrow":"←","LeftArrow":"←","Leftarrow":"⇐","LeftArrowRightArrow":"⇆","leftarrowtail":"↢","LeftCeiling":"⌈","LeftDoubleBracket":"⟦","LeftDownTeeVector":"⥡","LeftDownVectorBar":"⥙","LeftDownVector":"⇃","LeftFloor":"⌊","leftharpoondown":"↽","leftharpoonup":"↼","leftleftarrows":"⇇","leftrightarrow":"↔","LeftRightArrow":"↔","Leftrightarrow":"⇔","leftrightarrows":"⇆","leftrightharpoons":"⇋","leftrightsquigarrow":"↭","LeftRightVector":"⥎","LeftTeeArrow":"↤","LeftTee":"⊣","LeftTeeVector":"⥚","leftthreetimes":"⋋","LeftTriangleBar":"⧏","LeftTriangle":"⊲","LeftTriangleEqual":"⊴","LeftUpDownVector":"⥑","LeftUpTeeVector":"⥠","LeftUpVectorBar":"⥘","LeftUpVector":"↿","LeftVectorBar":"⥒","LeftVector":"↼","lEg":"⪋","leg":"⋚","leq":"≤","leqq":"≦","leqslant":"⩽","lescc":"⪨","les":"⩽","lesdot":"⩿","lesdoto":"⪁","lesdotor":"⪃","lesg":"⋚︀","lesges":"⪓","lessapprox":"⪅","lessdot":"⋖","lesseqgtr":"⋚","lesseqqgtr":"⪋","LessEqualGreater":"⋚","LessFullEqual":"≦","LessGreater":"≶","lessgtr":"≶","LessLess":"⪡","lesssim":"≲","LessSlantEqual":"⩽","LessTilde":"≲","lfisht":"⥼","lfloor":"⌊","Lfr":"𝔏","lfr":"𝔩","lg":"≶","lgE":"⪑","lHar":"⥢","lhard":"↽","lharu":"↼","lharul":"⥪","lhblk":"▄","LJcy":"Љ","ljcy":"љ","llarr":"⇇","ll":"≪","Ll":"⋘","llcorner":"⌞","Lleftarrow":"⇚","llhard":"⥫","lltri":"◺","Lmidot":"Ŀ","lmidot":"ŀ","lmoustache":"⎰","lmoust":"⎰","lnap":"⪉","lnapprox":"⪉","lne":"⪇","lnE":"≨","lneq":"⪇","lneqq":"≨","lnsim":"⋦","loang":"⟬","loarr":"⇽","lobrk":"⟦","longleftarrow":"⟵","LongLeftArrow":"⟵","Longleftarrow":"⟸","longleftrightarrow":"⟷","LongLeftRightArrow":"⟷","Longleftrightarrow":"⟺","longmapsto":"⟼","longrightarrow":"⟶","LongRightArrow":"⟶","Longrightarrow":"⟹","looparrowleft":"↫","looparrowright":"↬","lopar":"⦅","Lopf":"𝕃","lopf":"𝕝","loplus":"⨭","lotimes":"⨴","lowast":"∗","lowbar":"_","LowerLeftArrow":"↙","LowerRightArrow":"↘","loz":"◊","lozenge":"◊","lozf":"⧫","lpar":"(","lparlt":"⦓","lrarr":"⇆","lrcorner":"⌟","lrhar":"⇋","lrhard":"⥭","lrm":"‎","lrtri":"⊿","lsaquo":"‹","lscr":"𝓁","Lscr":"ℒ","lsh":"↰","Lsh":"↰","lsim":"≲","lsime":"⪍","lsimg":"⪏","lsqb":"[","lsquo":"‘","lsquor":"‚","Lstrok":"Ł","lstrok":"ł","ltcc":"⪦","ltcir":"⩹","lt":"<","LT":"<","Lt":"≪","ltdot":"⋖","lthree":"⋋","ltimes":"⋉","ltlarr":"⥶","ltquest":"⩻","ltri":"◃","ltrie":"⊴","ltrif":"◂","ltrPar":"⦖","lurdshar":"⥊","luruhar":"⥦","lvertneqq":"≨︀","lvnE":"≨︀","macr":"¯","male":"♂","malt":"✠","maltese":"✠","Map":"⤅","map":"↦","mapsto":"↦","mapstodown":"↧","mapstoleft":"↤","mapstoup":"↥","marker":"▮","mcomma":"⨩","Mcy":"М","mcy":"м","mdash":"—","mDDot":"∺","measuredangle":"∡","MediumSpace":" ","Mellintrf":"ℳ","Mfr":"𝔐","mfr":"𝔪","mho":"℧","micro":"µ","midast":"*","midcir":"⫰","mid":"∣","middot":"·","minusb":"⊟","minus":"−","minusd":"∸","minusdu":"⨪","MinusPlus":"∓","mlcp":"⫛","mldr":"…","mnplus":"∓","models":"⊧","Mopf":"𝕄","mopf":"𝕞","mp":"∓","mscr":"𝓂","Mscr":"ℳ","mstpos":"∾","Mu":"Μ","mu":"μ","multimap":"⊸","mumap":"⊸","nabla":"∇","Nacute":"Ń","nacute":"ń","nang":"∠⃒","nap":"≉","napE":"⩰̸","napid":"≋̸","napos":"ŉ","napprox":"≉","natural":"♮","naturals":"ℕ","natur":"♮","nbsp":" ","nbump":"≎̸","nbumpe":"≏̸","ncap":"⩃","Ncaron":"Ň","ncaron":"ň","Ncedil":"Ņ","ncedil":"ņ","ncong":"≇","ncongdot":"⩭̸","ncup":"⩂","Ncy":"Н","ncy":"н","ndash":"–","nearhk":"⤤","nearr":"↗","neArr":"⇗","nearrow":"↗","ne":"≠","nedot":"≐̸","NegativeMediumSpace":"​","NegativeThickSpace":"​","NegativeThinSpace":"​","NegativeVeryThinSpace":"​","nequiv":"≢","nesear":"⤨","nesim":"≂̸","NestedGreaterGreater":"≫","NestedLessLess":"≪","NewLine":"\\n","nexist":"∄","nexists":"∄","Nfr":"𝔑","nfr":"𝔫","ngE":"≧̸","nge":"≱","ngeq":"≱","ngeqq":"≧̸","ngeqslant":"⩾̸","nges":"⩾̸","nGg":"⋙̸","ngsim":"≵","nGt":"≫⃒","ngt":"≯","ngtr":"≯","nGtv":"≫̸","nharr":"↮","nhArr":"⇎","nhpar":"⫲","ni":"∋","nis":"⋼","nisd":"⋺","niv":"∋","NJcy":"Њ","njcy":"њ","nlarr":"↚","nlArr":"⇍","nldr":"‥","nlE":"≦̸","nle":"≰","nleftarrow":"↚","nLeftarrow":"⇍","nleftrightarrow":"↮","nLeftrightarrow":"⇎","nleq":"≰","nleqq":"≦̸","nleqslant":"⩽̸","nles":"⩽̸","nless":"≮","nLl":"⋘̸","nlsim":"≴","nLt":"≪⃒","nlt":"≮","nltri":"⋪","nltrie":"⋬","nLtv":"≪̸","nmid":"∤","NoBreak":"⁠","NonBreakingSpace":" ","nopf":"𝕟","Nopf":"ℕ","Not":"⫬","not":"¬","NotCongruent":"≢","NotCupCap":"≭","NotDoubleVerticalBar":"∦","NotElement":"∉","NotEqual":"≠","NotEqualTilde":"≂̸","NotExists":"∄","NotGreater":"≯","NotGreaterEqual":"≱","NotGreaterFullEqual":"≧̸","NotGreaterGreater":"≫̸","NotGreaterLess":"≹","NotGreaterSlantEqual":"⩾̸","NotGreaterTilde":"≵","NotHumpDownHump":"≎̸","NotHumpEqual":"≏̸","notin":"∉","notindot":"⋵̸","notinE":"⋹̸","notinva":"∉","notinvb":"⋷","notinvc":"⋶","NotLeftTriangleBar":"⧏̸","NotLeftTriangle":"⋪","NotLeftTriangleEqual":"⋬","NotLess":"≮","NotLessEqual":"≰","NotLessGreater":"≸","NotLessLess":"≪̸","NotLessSlantEqual":"⩽̸","NotLessTilde":"≴","NotNestedGreaterGreater":"⪢̸","NotNestedLessLess":"⪡̸","notni":"∌","notniva":"∌","notnivb":"⋾","notnivc":"⋽","NotPrecedes":"⊀","NotPrecedesEqual":"⪯̸","NotPrecedesSlantEqual":"⋠","NotReverseElement":"∌","NotRightTriangleBar":"⧐̸","NotRightTriangle":"⋫","NotRightTriangleEqual":"⋭","NotSquareSubset":"⊏̸","NotSquareSubsetEqual":"⋢","NotSquareSuperset":"⊐̸","NotSquareSupersetEqual":"⋣","NotSubset":"⊂⃒","NotSubsetEqual":"⊈","NotSucceeds":"⊁","NotSucceedsEqual":"⪰̸","NotSucceedsSlantEqual":"⋡","NotSucceedsTilde":"≿̸","NotSuperset":"⊃⃒","NotSupersetEqual":"⊉","NotTilde":"≁","NotTildeEqual":"≄","NotTildeFullEqual":"≇","NotTildeTilde":"≉","NotVerticalBar":"∤","nparallel":"∦","npar":"∦","nparsl":"⫽⃥","npart":"∂̸","npolint":"⨔","npr":"⊀","nprcue":"⋠","nprec":"⊀","npreceq":"⪯̸","npre":"⪯̸","nrarrc":"⤳̸","nrarr":"↛","nrArr":"⇏","nrarrw":"↝̸","nrightarrow":"↛","nRightarrow":"⇏","nrtri":"⋫","nrtrie":"⋭","nsc":"⊁","nsccue":"⋡","nsce":"⪰̸","Nscr":"𝒩","nscr":"𝓃","nshortmid":"∤","nshortparallel":"∦","nsim":"≁","nsime":"≄","nsimeq":"≄","nsmid":"∤","nspar":"∦","nsqsube":"⋢","nsqsupe":"⋣","nsub":"⊄","nsubE":"⫅̸","nsube":"⊈","nsubset":"⊂⃒","nsubseteq":"⊈","nsubseteqq":"⫅̸","nsucc":"⊁","nsucceq":"⪰̸","nsup":"⊅","nsupE":"⫆̸","nsupe":"⊉","nsupset":"⊃⃒","nsupseteq":"⊉","nsupseteqq":"⫆̸","ntgl":"≹","Ntilde":"Ñ","ntilde":"ñ","ntlg":"≸","ntriangleleft":"⋪","ntrianglelefteq":"⋬","ntriangleright":"⋫","ntrianglerighteq":"⋭","Nu":"Ν","nu":"ν","num":"#","numero":"№","numsp":" ","nvap":"≍⃒","nvdash":"⊬","nvDash":"⊭","nVdash":"⊮","nVDash":"⊯","nvge":"≥⃒","nvgt":">⃒","nvHarr":"⤄","nvinfin":"⧞","nvlArr":"⤂","nvle":"≤⃒","nvlt":"<⃒","nvltrie":"⊴⃒","nvrArr":"⤃","nvrtrie":"⊵⃒","nvsim":"∼⃒","nwarhk":"⤣","nwarr":"↖","nwArr":"⇖","nwarrow":"↖","nwnear":"⤧","Oacute":"Ó","oacute":"ó","oast":"⊛","Ocirc":"Ô","ocirc":"ô","ocir":"⊚","Ocy":"О","ocy":"о","odash":"⊝","Odblac":"Ő","odblac":"ő","odiv":"⨸","odot":"⊙","odsold":"⦼","OElig":"Œ","oelig":"œ","ofcir":"⦿","Ofr":"𝔒","ofr":"𝔬","ogon":"˛","Ograve":"Ò","ograve":"ò","ogt":"⧁","ohbar":"⦵","ohm":"Ω","oint":"∮","olarr":"↺","olcir":"⦾","olcross":"⦻","oline":"‾","olt":"⧀","Omacr":"Ō","omacr":"ō","Omega":"Ω","omega":"ω","Omicron":"Ο","omicron":"ο","omid":"⦶","ominus":"⊖","Oopf":"𝕆","oopf":"𝕠","opar":"⦷","OpenCurlyDoubleQuote":"“","OpenCurlyQuote":"‘","operp":"⦹","oplus":"⊕","orarr":"↻","Or":"⩔","or":"∨","ord":"⩝","order":"ℴ","orderof":"ℴ","ordf":"ª","ordm":"º","origof":"⊶","oror":"⩖","orslope":"⩗","orv":"⩛","oS":"Ⓢ","Oscr":"𝒪","oscr":"ℴ","Oslash":"Ø","oslash":"ø","osol":"⊘","Otilde":"Õ","otilde":"õ","otimesas":"⨶","Otimes":"⨷","otimes":"⊗","Ouml":"Ö","ouml":"ö","ovbar":"⌽","OverBar":"‾","OverBrace":"⏞","OverBracket":"⎴","OverParenthesis":"⏜","para":"¶","parallel":"∥","par":"∥","parsim":"⫳","parsl":"⫽","part":"∂","PartialD":"∂","Pcy":"П","pcy":"п","percnt":"%","period":".","permil":"‰","perp":"⊥","pertenk":"‱","Pfr":"𝔓","pfr":"𝔭","Phi":"Φ","phi":"φ","phiv":"ϕ","phmmat":"ℳ","phone":"☎","Pi":"Π","pi":"π","pitchfork":"⋔","piv":"ϖ","planck":"ℏ","planckh":"ℎ","plankv":"ℏ","plusacir":"⨣","plusb":"⊞","pluscir":"⨢","plus":"+","plusdo":"∔","plusdu":"⨥","pluse":"⩲","PlusMinus":"±","plusmn":"±","plussim":"⨦","plustwo":"⨧","pm":"±","Poincareplane":"ℌ","pointint":"⨕","popf":"𝕡","Popf":"ℙ","pound":"£","prap":"⪷","Pr":"⪻","pr":"≺","prcue":"≼","precapprox":"⪷","prec":"≺","preccurlyeq":"≼","Precedes":"≺","PrecedesEqual":"⪯","PrecedesSlantEqual":"≼","PrecedesTilde":"≾","preceq":"⪯","precnapprox":"⪹","precneqq":"⪵","precnsim":"⋨","pre":"⪯","prE":"⪳","precsim":"≾","prime":"′","Prime":"″","primes":"ℙ","prnap":"⪹","prnE":"⪵","prnsim":"⋨","prod":"∏","Product":"∏","profalar":"⌮","profline":"⌒","profsurf":"⌓","prop":"∝","Proportional":"∝","Proportion":"∷","propto":"∝","prsim":"≾","prurel":"⊰","Pscr":"𝒫","pscr":"𝓅","Psi":"Ψ","psi":"ψ","puncsp":" ","Qfr":"𝔔","qfr":"𝔮","qint":"⨌","qopf":"𝕢","Qopf":"ℚ","qprime":"⁗","Qscr":"𝒬","qscr":"𝓆","quaternions":"ℍ","quatint":"⨖","quest":"?","questeq":"≟","quot":"\\"","QUOT":"\\"","rAarr":"⇛","race":"∽̱","Racute":"Ŕ","racute":"ŕ","radic":"√","raemptyv":"⦳","rang":"⟩","Rang":"⟫","rangd":"⦒","range":"⦥","rangle":"⟩","raquo":"»","rarrap":"⥵","rarrb":"⇥","rarrbfs":"⤠","rarrc":"⤳","rarr":"→","Rarr":"↠","rArr":"⇒","rarrfs":"⤞","rarrhk":"↪","rarrlp":"↬","rarrpl":"⥅","rarrsim":"⥴","Rarrtl":"⤖","rarrtl":"↣","rarrw":"↝","ratail":"⤚","rAtail":"⤜","ratio":"∶","rationals":"ℚ","rbarr":"⤍","rBarr":"⤏","RBarr":"⤐","rbbrk":"❳","rbrace":"}","rbrack":"]","rbrke":"⦌","rbrksld":"⦎","rbrkslu":"⦐","Rcaron":"Ř","rcaron":"ř","Rcedil":"Ŗ","rcedil":"ŗ","rceil":"⌉","rcub":"}","Rcy":"Р","rcy":"р","rdca":"⤷","rdldhar":"⥩","rdquo":"”","rdquor":"”","rdsh":"↳","real":"ℜ","realine":"ℛ","realpart":"ℜ","reals":"ℝ","Re":"ℜ","rect":"▭","reg":"®","REG":"®","ReverseElement":"∋","ReverseEquilibrium":"⇋","ReverseUpEquilibrium":"⥯","rfisht":"⥽","rfloor":"⌋","rfr":"𝔯","Rfr":"ℜ","rHar":"⥤","rhard":"⇁","rharu":"⇀","rharul":"⥬","Rho":"Ρ","rho":"ρ","rhov":"ϱ","RightAngleBracket":"⟩","RightArrowBar":"⇥","rightarrow":"→","RightArrow":"→","Rightarrow":"⇒","RightArrowLeftArrow":"⇄","rightarrowtail":"↣","RightCeiling":"⌉","RightDoubleBracket":"⟧","RightDownTeeVector":"⥝","RightDownVectorBar":"⥕","RightDownVector":"⇂","RightFloor":"⌋","rightharpoondown":"⇁","rightharpoonup":"⇀","rightleftarrows":"⇄","rightleftharpoons":"⇌","rightrightarrows":"⇉","rightsquigarrow":"↝","RightTeeArrow":"↦","RightTee":"⊢","RightTeeVector":"⥛","rightthreetimes":"⋌","RightTriangleBar":"⧐","RightTriangle":"⊳","RightTriangleEqual":"⊵","RightUpDownVector":"⥏","RightUpTeeVector":"⥜","RightUpVectorBar":"⥔","RightUpVector":"↾","RightVectorBar":"⥓","RightVector":"⇀","ring":"˚","risingdotseq":"≓","rlarr":"⇄","rlhar":"⇌","rlm":"‏","rmoustache":"⎱","rmoust":"⎱","rnmid":"⫮","roang":"⟭","roarr":"⇾","robrk":"⟧","ropar":"⦆","ropf":"𝕣","Ropf":"ℝ","roplus":"⨮","rotimes":"⨵","RoundImplies":"⥰","rpar":")","rpargt":"⦔","rppolint":"⨒","rrarr":"⇉","Rrightarrow":"⇛","rsaquo":"›","rscr":"𝓇","Rscr":"ℛ","rsh":"↱","Rsh":"↱","rsqb":"]","rsquo":"’","rsquor":"’","rthree":"⋌","rtimes":"⋊","rtri":"▹","rtrie":"⊵","rtrif":"▸","rtriltri":"⧎","RuleDelayed":"⧴","ruluhar":"⥨","rx":"℞","Sacute":"Ś","sacute":"ś","sbquo":"‚","scap":"⪸","Scaron":"Š","scaron":"š","Sc":"⪼","sc":"≻","sccue":"≽","sce":"⪰","scE":"⪴","Scedil":"Ş","scedil":"ş","Scirc":"Ŝ","scirc":"ŝ","scnap":"⪺","scnE":"⪶","scnsim":"⋩","scpolint":"⨓","scsim":"≿","Scy":"С","scy":"с","sdotb":"⊡","sdot":"⋅","sdote":"⩦","searhk":"⤥","searr":"↘","seArr":"⇘","searrow":"↘","sect":"§","semi":";","seswar":"⤩","setminus":"∖","setmn":"∖","sext":"✶","Sfr":"𝔖","sfr":"𝔰","sfrown":"⌢","sharp":"♯","SHCHcy":"Щ","shchcy":"щ","SHcy":"Ш","shcy":"ш","ShortDownArrow":"↓","ShortLeftArrow":"←","shortmid":"∣","shortparallel":"∥","ShortRightArrow":"→","ShortUpArrow":"↑","shy":"­","Sigma":"Σ","sigma":"σ","sigmaf":"ς","sigmav":"ς","sim":"∼","simdot":"⩪","sime":"≃","simeq":"≃","simg":"⪞","simgE":"⪠","siml":"⪝","simlE":"⪟","simne":"≆","simplus":"⨤","simrarr":"⥲","slarr":"←","SmallCircle":"∘","smallsetminus":"∖","smashp":"⨳","smeparsl":"⧤","smid":"∣","smile":"⌣","smt":"⪪","smte":"⪬","smtes":"⪬︀","SOFTcy":"Ь","softcy":"ь","solbar":"⌿","solb":"⧄","sol":"/","Sopf":"𝕊","sopf":"𝕤","spades":"♠","spadesuit":"♠","spar":"∥","sqcap":"⊓","sqcaps":"⊓︀","sqcup":"⊔","sqcups":"⊔︀","Sqrt":"√","sqsub":"⊏","sqsube":"⊑","sqsubset":"⊏","sqsubseteq":"⊑","sqsup":"⊐","sqsupe":"⊒","sqsupset":"⊐","sqsupseteq":"⊒","square":"□","Square":"□","SquareIntersection":"⊓","SquareSubset":"⊏","SquareSubsetEqual":"⊑","SquareSuperset":"⊐","SquareSupersetEqual":"⊒","SquareUnion":"⊔","squarf":"▪","squ":"□","squf":"▪","srarr":"→","Sscr":"𝒮","sscr":"𝓈","ssetmn":"∖","ssmile":"⌣","sstarf":"⋆","Star":"⋆","star":"☆","starf":"★","straightepsilon":"ϵ","straightphi":"ϕ","strns":"¯","sub":"⊂","Sub":"⋐","subdot":"⪽","subE":"⫅","sube":"⊆","subedot":"⫃","submult":"⫁","subnE":"⫋","subne":"⊊","subplus":"⪿","subrarr":"⥹","subset":"⊂","Subset":"⋐","subseteq":"⊆","subseteqq":"⫅","SubsetEqual":"⊆","subsetneq":"⊊","subsetneqq":"⫋","subsim":"⫇","subsub":"⫕","subsup":"⫓","succapprox":"⪸","succ":"≻","succcurlyeq":"≽","Succeeds":"≻","SucceedsEqual":"⪰","SucceedsSlantEqual":"≽","SucceedsTilde":"≿","succeq":"⪰","succnapprox":"⪺","succneqq":"⪶","succnsim":"⋩","succsim":"≿","SuchThat":"∋","sum":"∑","Sum":"∑","sung":"♪","sup1":"¹","sup2":"²","sup3":"³","sup":"⊃","Sup":"⋑","supdot":"⪾","supdsub":"⫘","supE":"⫆","supe":"⊇","supedot":"⫄","Superset":"⊃","SupersetEqual":"⊇","suphsol":"⟉","suphsub":"⫗","suplarr":"⥻","supmult":"⫂","supnE":"⫌","supne":"⊋","supplus":"⫀","supset":"⊃","Supset":"⋑","supseteq":"⊇","supseteqq":"⫆","supsetneq":"⊋","supsetneqq":"⫌","supsim":"⫈","supsub":"⫔","supsup":"⫖","swarhk":"⤦","swarr":"↙","swArr":"⇙","swarrow":"↙","swnwar":"⤪","szlig":"ß","Tab":"\\t","target":"⌖","Tau":"Τ","tau":"τ","tbrk":"⎴","Tcaron":"Ť","tcaron":"ť","Tcedil":"Ţ","tcedil":"ţ","Tcy":"Т","tcy":"т","tdot":"⃛","telrec":"⌕","Tfr":"𝔗","tfr":"𝔱","there4":"∴","therefore":"∴","Therefore":"∴","Theta":"Θ","theta":"θ","thetasym":"ϑ","thetav":"ϑ","thickapprox":"≈","thicksim":"∼","ThickSpace":"  ","ThinSpace":" ","thinsp":" ","thkap":"≈","thksim":"∼","THORN":"Þ","thorn":"þ","tilde":"˜","Tilde":"∼","TildeEqual":"≃","TildeFullEqual":"≅","TildeTilde":"≈","timesbar":"⨱","timesb":"⊠","times":"×","timesd":"⨰","tint":"∭","toea":"⤨","topbot":"⌶","topcir":"⫱","top":"⊤","Topf":"𝕋","topf":"𝕥","topfork":"⫚","tosa":"⤩","tprime":"‴","trade":"™","TRADE":"™","triangle":"▵","triangledown":"▿","triangleleft":"◃","trianglelefteq":"⊴","triangleq":"≜","triangleright":"▹","trianglerighteq":"⊵","tridot":"◬","trie":"≜","triminus":"⨺","TripleDot":"⃛","triplus":"⨹","trisb":"⧍","tritime":"⨻","trpezium":"⏢","Tscr":"𝒯","tscr":"𝓉","TScy":"Ц","tscy":"ц","TSHcy":"Ћ","tshcy":"ћ","Tstrok":"Ŧ","tstrok":"ŧ","twixt":"≬","twoheadleftarrow":"↞","twoheadrightarrow":"↠","Uacute":"Ú","uacute":"ú","uarr":"↑","Uarr":"↟","uArr":"⇑","Uarrocir":"⥉","Ubrcy":"Ў","ubrcy":"ў","Ubreve":"Ŭ","ubreve":"ŭ","Ucirc":"Û","ucirc":"û","Ucy":"У","ucy":"у","udarr":"⇅","Udblac":"Ű","udblac":"ű","udhar":"⥮","ufisht":"⥾","Ufr":"𝔘","ufr":"𝔲","Ugrave":"Ù","ugrave":"ù","uHar":"⥣","uharl":"↿","uharr":"↾","uhblk":"▀","ulcorn":"⌜","ulcorner":"⌜","ulcrop":"⌏","ultri":"◸","Umacr":"Ū","umacr":"ū","uml":"¨","UnderBar":"_","UnderBrace":"⏟","UnderBracket":"⎵","UnderParenthesis":"⏝","Union":"⋃","UnionPlus":"⊎","Uogon":"Ų","uogon":"ų","Uopf":"𝕌","uopf":"𝕦","UpArrowBar":"⤒","uparrow":"↑","UpArrow":"↑","Uparrow":"⇑","UpArrowDownArrow":"⇅","updownarrow":"↕","UpDownArrow":"↕","Updownarrow":"⇕","UpEquilibrium":"⥮","upharpoonleft":"↿","upharpoonright":"↾","uplus":"⊎","UpperLeftArrow":"↖","UpperRightArrow":"↗","upsi":"υ","Upsi":"ϒ","upsih":"ϒ","Upsilon":"Υ","upsilon":"υ","UpTeeArrow":"↥","UpTee":"⊥","upuparrows":"⇈","urcorn":"⌝","urcorner":"⌝","urcrop":"⌎","Uring":"Ů","uring":"ů","urtri":"◹","Uscr":"𝒰","uscr":"𝓊","utdot":"⋰","Utilde":"Ũ","utilde":"ũ","utri":"▵","utrif":"▴","uuarr":"⇈","Uuml":"Ü","uuml":"ü","uwangle":"⦧","vangrt":"⦜","varepsilon":"ϵ","varkappa":"ϰ","varnothing":"∅","varphi":"ϕ","varpi":"ϖ","varpropto":"∝","varr":"↕","vArr":"⇕","varrho":"ϱ","varsigma":"ς","varsubsetneq":"⊊︀","varsubsetneqq":"⫋︀","varsupsetneq":"⊋︀","varsupsetneqq":"⫌︀","vartheta":"ϑ","vartriangleleft":"⊲","vartriangleright":"⊳","vBar":"⫨","Vbar":"⫫","vBarv":"⫩","Vcy":"В","vcy":"в","vdash":"⊢","vDash":"⊨","Vdash":"⊩","VDash":"⊫","Vdashl":"⫦","veebar":"⊻","vee":"∨","Vee":"⋁","veeeq":"≚","vellip":"⋮","verbar":"|","Verbar":"‖","vert":"|","Vert":"‖","VerticalBar":"∣","VerticalLine":"|","VerticalSeparator":"❘","VerticalTilde":"≀","VeryThinSpace":" ","Vfr":"𝔙","vfr":"𝔳","vltri":"⊲","vnsub":"⊂⃒","vnsup":"⊃⃒","Vopf":"𝕍","vopf":"𝕧","vprop":"∝","vrtri":"⊳","Vscr":"𝒱","vscr":"𝓋","vsubnE":"⫋︀","vsubne":"⊊︀","vsupnE":"⫌︀","vsupne":"⊋︀","Vvdash":"⊪","vzigzag":"⦚","Wcirc":"Ŵ","wcirc":"ŵ","wedbar":"⩟","wedge":"∧","Wedge":"⋀","wedgeq":"≙","weierp":"℘","Wfr":"𝔚","wfr":"𝔴","Wopf":"𝕎","wopf":"𝕨","wp":"℘","wr":"≀","wreath":"≀","Wscr":"𝒲","wscr":"𝓌","xcap":"⋂","xcirc":"◯","xcup":"⋃","xdtri":"▽","Xfr":"𝔛","xfr":"𝔵","xharr":"⟷","xhArr":"⟺","Xi":"Ξ","xi":"ξ","xlarr":"⟵","xlArr":"⟸","xmap":"⟼","xnis":"⋻","xodot":"⨀","Xopf":"𝕏","xopf":"𝕩","xoplus":"⨁","xotime":"⨂","xrarr":"⟶","xrArr":"⟹","Xscr":"𝒳","xscr":"𝓍","xsqcup":"⨆","xuplus":"⨄","xutri":"△","xvee":"⋁","xwedge":"⋀","Yacute":"Ý","yacute":"ý","YAcy":"Я","yacy":"я","Ycirc":"Ŷ","ycirc":"ŷ","Ycy":"Ы","ycy":"ы","yen":"¥","Yfr":"𝔜","yfr":"𝔶","YIcy":"Ї","yicy":"ї","Yopf":"𝕐","yopf":"𝕪","Yscr":"𝒴","yscr":"𝓎","YUcy":"Ю","yucy":"ю","yuml":"ÿ","Yuml":"Ÿ","Zacute":"Ź","zacute":"ź","Zcaron":"Ž","zcaron":"ž","Zcy":"З","zcy":"з","Zdot":"Ż","zdot":"ż","zeetrf":"ℨ","ZeroWidthSpace":"​","Zeta":"Ζ","zeta":"ζ","zfr":"𝔷","Zfr":"ℨ","ZHcy":"Ж","zhcy":"ж","zigrarr":"⇝","zopf":"𝕫","Zopf":"ℤ","Zscr":"𝒵","zscr":"𝓏","zwj":"‍","zwnj":"‌"}');
+
+/***/ }),
+
+/***/ 7802:
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"Aacute":"Á","aacute":"á","Acirc":"Â","acirc":"â","acute":"´","AElig":"Æ","aelig":"æ","Agrave":"À","agrave":"à","amp":"&","AMP":"&","Aring":"Å","aring":"å","Atilde":"Ã","atilde":"ã","Auml":"Ä","auml":"ä","brvbar":"¦","Ccedil":"Ç","ccedil":"ç","cedil":"¸","cent":"¢","copy":"©","COPY":"©","curren":"¤","deg":"°","divide":"÷","Eacute":"É","eacute":"é","Ecirc":"Ê","ecirc":"ê","Egrave":"È","egrave":"è","ETH":"Ð","eth":"ð","Euml":"Ë","euml":"ë","frac12":"½","frac14":"¼","frac34":"¾","gt":">","GT":">","Iacute":"Í","iacute":"í","Icirc":"Î","icirc":"î","iexcl":"¡","Igrave":"Ì","igrave":"ì","iquest":"¿","Iuml":"Ï","iuml":"ï","laquo":"«","lt":"<","LT":"<","macr":"¯","micro":"µ","middot":"·","nbsp":" ","not":"¬","Ntilde":"Ñ","ntilde":"ñ","Oacute":"Ó","oacute":"ó","Ocirc":"Ô","ocirc":"ô","Ograve":"Ò","ograve":"ò","ordf":"ª","ordm":"º","Oslash":"Ø","oslash":"ø","Otilde":"Õ","otilde":"õ","Ouml":"Ö","ouml":"ö","para":"¶","plusmn":"±","pound":"£","quot":"\\"","QUOT":"\\"","raquo":"»","reg":"®","REG":"®","sect":"§","shy":"­","sup1":"¹","sup2":"²","sup3":"³","szlig":"ß","THORN":"Þ","thorn":"þ","times":"×","Uacute":"Ú","uacute":"ú","Ucirc":"Û","ucirc":"û","Ugrave":"Ù","ugrave":"ù","uml":"¨","Uuml":"Ü","uuml":"ü","Yacute":"Ý","yacute":"ý","yen":"¥","yuml":"ÿ"}');
+
+/***/ }),
+
+/***/ 2228:
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"amp":"&","apos":"\'","gt":">","lt":"<","quot":"\\""}');
 
 /***/ }),
 
@@ -35488,15 +51626,7 @@ async function publishPayload(){
   const meta_table_arn = core.getInput('meta_table_arn');
   const region = meta_table_arn.split(':')[2];
   const table = meta_table_arn.split('/')[-1];
-  const endpoint = process.env.AWS_ENDPOINT_URL;
-
-  let clientOptions = { region: region, credentials: credentials };
-
-  if (typeof endpoint == 'string' && endpoint !== '') {
-    clientOptions.endpoint = endpoint
-  }
-
-  const client = new DynamoDBClient(clientOptions);
+  const client = new DynamoDBClient({ region: region, credentials: credentials });
   const docClient = DynamoDBDocument.from(client);
   const payload = await generatePayload(core.getInput('slices'));
 
