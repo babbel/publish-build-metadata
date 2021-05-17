@@ -18,10 +18,10 @@ test('default payload', async () => {
   const generatePayload = require('./payload');
   const payload = await generatePayload('publish.lambda');
 
-  expect(payload.commitBranch).toEqual('main');
-  expect(payload.commitDatetime).toEqual('2021-05-07 17:27:30 +0200');
-  expect(payload.commitMessage).toEqual('Bootstrap the action (0bfd789)');
-  expect(payload.commitSha).toEqual('0bfd7892d984410861327506b001edb360665d39');
+  expect(payload.commit_branch).toEqual('main');
+  expect(payload.commit_datetime).toEqual('2021-05-07 17:27:30 +0200');
+  expect(payload.commit_message).toEqual('Bootstrap the action (0bfd789)');
+  expect(payload.commit_sha).toEqual('0bfd7892d984410861327506b001edb360665d39');
   expect(payload.repository).toEqual('babbel/publish-build-metadata');
   expect(payload.slices).toEqual(['publish.lambda']);
 });

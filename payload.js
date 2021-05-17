@@ -26,10 +26,10 @@ async function generatePayload(rawSlices) {
 
   return {
     repository: `${owner}/${repo}`,
-    commitSha: commitSha,
-    commitBranch: branch,
-    commitDatetime: await commitDatetime(commitSha),
-    commitMessage: await commitMessage(commitSha),
+    commit_sha: commitSha,
+    commit_branch: branch,
+    commit_datetime: await commitDatetime(commitSha),
+    commit_message: await commitMessage(commitSha),
     slices: normalizeSlices(rawSlices),
     ttl: generateTTL(),
   };
