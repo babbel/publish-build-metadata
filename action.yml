@@ -14,7 +14,7 @@ inputs:
   slices:
     description: 'Microverse slice names'
     required: false
-    default: []
+    default: null
 
 runs:
   using: 'node12'
