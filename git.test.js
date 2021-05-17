@@ -1,15 +1,18 @@
 const {commitDatetime, commitMessage} = require('./git');
+const { setupEnv, testSha, testDatetime, testMessage } = require('./testdata/env');
 
-const COMMIT_SHA = '0bfd7892d984410861327506b001edb360665d39';
+beforeEach(() => {
+  setupEnv();
+})
 
 test("fetch correct datetime", async () => {
-  const datetime = await commitDatetime(COMMIT_SHA);
+  const datetime = await commitDatetime(testSha);
 
-  expect(datetime).toEqual('2021-05-07 17:27:30 +0200');
+  expect(datetime).toEqual(testDatetime);
 });
 
 test("fetch correct message", async () => {
-  const message = await commitMessage(COMMIT_SHA);
+  const message = await commitMessage(testSha);
 
-  expect(message).toEqual('Bootstrap the action (0bfd789)');
+  expect(message).toEqual(testMessage);
 });

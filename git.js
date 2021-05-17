@@ -20,6 +20,12 @@ async function commitLog(commitSha, format) {
     },
   };
 
+  const path = process.env.REPOSITORY_PATH;
+
+  if (typeof path == 'string' && path !== '') {
+    options.cwd = path
+  }
+
   await exec.exec('git', ['show', `--format=${format}`, '--no-patch', commitSha], options);
 
   return log.trim();
