@@ -32,13 +32,13 @@ afterEach(async () => {
 });
 
 
-test('wat', async () => {
+test('content should be published', async () => {
   const publishResult = await publishPayload(ACCESS_KEY_ID, SECRET_ACCESS_KEY, TABLE_ARN, PAYLOAD);
 
   expect(publishResult['$metadata'].httpStatusCode).toEqual(200);
 
-  const client = DynamoDBDocumentClient.from(ddbClient(ACCESS_KEY_ID, SECRET_ACCESS_KEY, REGION));
-  const result = await client.send(new GetCommand(
+  const docClient = DynamoDBDocumentClient.from(client());
+  const result = await docClient.send(new GetCommand(
     {
       TableName: TABLE_NAME,
       Key: {
@@ -55,6 +55,10 @@ test('wat', async () => {
 //
 // Test Helpers
 //
+function client() {
+  return ddbClient(ACCESS_KEY_ID, SECRET_ACCESS_KEY, REGION);
+}
+
 async function createDynamoDBTable() {
   const params = {
     TableName: TABLE_NAME,
@@ -87,14 +91,12 @@ async function createDynamoDBTable() {
     },
   };
 
-  const client = ddbClient(ACCESS_KEY_ID, SECRET_ACCESS_KEY, REGION);
-
   try {
-    await client.send(new CreateTableCommand(params));
+    await client().send(new CreateTableCommand(params));
   } catch(err) {
     if (err == "ResourceInUseException") {
-      await deleteDynamoDBTable(client);
-      await createDynamoDBTable(client);
+      await deleteDynamoDBTable();
+      await createDynamoDBTable();
     }
   }
 
@@ -102,7 +104,7 @@ async function createDynamoDBTable() {
     TableName: TABLE_NAME
   };
 
-  return await client.send(new DescribeTableCommand(describeParams));
+  return await client().send(new DescribeTableCommand(describeParams));
 }
 
 async function deleteDynamoDBTable() {
@@ -110,7 +112,5 @@ async function deleteDynamoDBTable() {
     TableName: TABLE_NAME
   };
 
-  const client = ddbClient(ACCESS_KEY_ID, SECRET_ACCESS_KEY, REGION);
-
-  return await client.send(new DeleteTableCommand(params));
+  return await client().send(new DeleteTableCommand(params));
 }

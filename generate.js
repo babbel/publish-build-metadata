@@ -8,15 +8,14 @@ function generateTTL() {
 }
 
 function normalizeSlices(rawSlices) {
-  if (typeof rawSlices == 'string') {
-    return [rawSlices.trim()];
+  if (typeof rawSlices !== 'string' || rawSlices.trim() === '') {
+    return [];
   }
 
-  if (rawSlices instanceof Array) {
-    return rawSlices.map((slice) => slice.trim());
-  }
-
-  return [];
+  return rawSlices
+    .split(",")
+    .map(x => x.trim())
+    .filter(x => x !== '');
 }
 
 async function generatePayload(rawSlices) {

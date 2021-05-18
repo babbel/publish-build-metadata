@@ -20,14 +20,21 @@ test('default payload', async () => {
 
 test('when missing slice', async () => {
   const generatePayload = require('./generate');
-  const payload = await generatePayload();
+  const payload = await generatePayload(undefined);
+
+  expect(payload.slices).toEqual([]);
+});
+
+test('when empty slices', async () => {
+  const generatePayload = require('./generate');
+  const payload = await generatePayload(' ,');
 
   expect(payload.slices).toEqual([]);
 });
 
 test('when multiple slices', async () => {
   const generatePayload = require('./generate');
-  const payload = await generatePayload(['publish.lambda', 'consumer.firehose', 'api']);
+  const payload = await generatePayload('publish.lambda,consumer.firehose,api');
 
   expect(payload.slices).toEqual(['publish.lambda', 'consumer.firehose', 'api']);
 });

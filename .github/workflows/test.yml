@@ -24,6 +24,12 @@ jobs:
   # test action works running from the graph
   test:
     runs-on: ubuntu-latest
+
+    env:
+      AWS_ENDPOINT_URL: 'http://localhost:8000'
+      ACTIONS_RUNNER_DEBUG: true
+      DEBUG: 'true'
+
     steps:
       - uses: actions/checkout@v2
 
@@ -31,9 +37,12 @@ jobs:
         run: docker-compose up -d
 
       - name: Prep metadata table
+        env:
+          AWS_ACCESS_KEY_ID: 'aws-access-key-id'
+          AWS_SECRET_ACCESS_KEY: 'aws-secret-access-key'
         run: |
           aws dynamodb create-table \
-                       --endpoint-url http://localhost:8000 \
+                       --endpoint-url $AWS_ENDPOINT_URL \
                        --region local \
                        --table-name metadata \
                        --attribute-definitions \
@@ -45,13 +54,29 @@ jobs:
                        --provisioned-throughput \
                          ReadCapacityUnits=1,WriteCapacityUnits=1
 
-      - uses: ./
-        env:
-          AWS_ENDPOINT_URL: 'http://localhost:8000'
-          DEBUG: 'true'
+      - name: Test with given slices
+        uses: ./
         with:
           access_key_id: 'aws-access-key-id'
           secret_access_key: 'aws-secret-access-key'
           meta_table_arn: 'arn:aws:dynamodb:local:000000000000:table/metadata'
-          slices: ['api', 'consumer']
+          slices: 'api,consumer'
 
+      - name: Check if everything is there
+        env:
+          AWS_ACCESS_KEY_ID: 'aws-access-key-id'
+          AWS_SECRET_ACCESS_KEY: 'aws-secret-access-key'
+        run: ./.github/scripts/verify api consumer
+
+      - name: Test without slices
+        uses: ./
+        with:
+          access_key_id: 'aws-access-key-id'
+          secret_access_key: 'aws-secret-access-key'
+          meta_table_arn: 'arn:aws:dynamodb:local:000000000000:table/metadata'
+
+      - name: Check if everything is there
+        env:
+          AWS_ACCESS_KEY_ID: 'aws-access-key-id'
+          AWS_SECRET_ACCESS_KEY: 'aws-secret-access-key'
+        run: ./.github/scripts/verify

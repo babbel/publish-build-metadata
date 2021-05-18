@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+
+require "json"
+
+cmd = <<-CMD
+aws dynamodb get-item --endpoint-url #{ENV["AWS_ENDPOINT_URL"]} \
+                      --table-name metadata \
+                      --region local \
+                      --key '{"repository":{"S":"#{ENV["GITHUB_REPOSITORY"]}"},"commit_sha":{"S":"#{ENV["GITHUB_SHA"]}"}}'
+CMD
+
+result = `#{cmd.strip}`.strip
+
+raise "Missing entry in DynamoDB" if result.empty?
+
+item = JSON.parse(result)
+
+puts "Found item:", JSON.pretty_generate(item)
+
+unless ARGV.empty?
+  slices = item.dig("Item", "slices", "L").map { |s| s["S"] }
+
+  raise "Missing slices in DynamoDB, expected: #{ARGV.inspect}, got: #{slices.inspect}" if slices.sort != ARGV.sort
+end
+
+puts "All good!"

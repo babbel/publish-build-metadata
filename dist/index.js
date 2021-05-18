@@ -25,6 +25,50 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SD
 
 /***/ }),
 
+/***/ 5825:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+const github = __nccwpck_require__(5438);
+const {commitDatetime, commitMessage} = __nccwpck_require__(5913);
+
+const ONE_WEEK = 60 * 60 * 24 * 7;
+
+function generateTTL() {
+  return Math.floor(Date.now() / 1000) + ONE_WEEK;
+}
+
+function normalizeSlices(rawSlices) {
+  if (typeof rawSlices !== 'string' || rawSlices.trim() === '') {
+    return [];
+  }
+
+  return rawSlices
+    .split(",")
+    .map(x => x.trim())
+    .filter(x => x !== '');
+}
+
+async function generatePayload(rawSlices) {
+  const {owner, repo} = github.context.repo;
+  const branch = github.context.ref.trim().replace('refs/heads/', '');
+  const commitSha = github.context.sha;
+
+  return {
+    repository: `${owner}/${repo}`,
+    commit_sha: commitSha,
+    commit_branch: branch,
+    commit_datetime: await commitDatetime(commitSha),
+    commit_message: await commitMessage(commitSha),
+    slices: normalizeSlices(rawSlices),
+    ttl: generateTTL(),
+  };
+}
+
+module.exports = generatePayload;
+
+
+/***/ }),
+
 /***/ 5913:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
@@ -49,6 +93,12 @@ async function commitLog(commitSha, format) {
       },
     },
   };
+
+  const path = process.env.REPOSITORY_PATH;
+
+  if (typeof path == 'string' && path !== '') {
+    options.cwd = path
+  }
 
   await exec.exec('git', ['show', `--format=${format}`, '--no-patch', commitSha], options);
 
@@ -1245,7 +1295,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getApiBaseUrl = exports.getProxyAgent = exports.getAuthString = void 0;
-const httpClient = __importStar(__nccwpck_require__(6936));
+const httpClient = __importStar(__nccwpck_require__(9925));
 function getAuthString(token, options) {
     if (!token && !options.auth) {
         throw new Error('Parameter token or opts.auth is required');
@@ -1330,7 +1380,7 @@ exports.getOctokitOptions = getOctokitOptions;
 
 /***/ }),
 
-/***/ 6936:
+/***/ 9925:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
@@ -38036,7 +38086,7 @@ module.exports = FuzzyMap;
 
 /***/ }),
 
-/***/ 9925:
+/***/ 9592:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 /**
@@ -39068,7 +39118,7 @@ module.exports = {
   MaxFibonacciHeap: FibonacciHeap.MaxFibonacciHeap,
   FixedReverseHeap: __nccwpck_require__(4718),
   FuzzyMap: __nccwpck_require__(9873),
-  FuzzyMultiMap: __nccwpck_require__(9925),
+  FuzzyMultiMap: __nccwpck_require__(9592),
   HashedArrayTree: __nccwpck_require__(9513),
   Heap: Heap,
   MinHeap: Heap.MinHeap,
@@ -51332,47 +51382,46 @@ function wrappy (fn, cb) {
 
 /***/ }),
 
-/***/ 5828:
+/***/ 958:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
-const github = __nccwpck_require__(5438);
-const {commitDatetime, commitMessage} = __nccwpck_require__(5913);
+const { DynamoDBClient } = __nccwpck_require__(1014);
+const { DynamoDBDocumentClient, PutCommand } = __nccwpck_require__(5341);
 
-const ONE_WEEK = 60 * 60 * 24 * 7;
+async function publishPayload(accessKeyId, secretAccessKey, tableArn, payload){
+  const region = tableArn.split(':')[3];
+  const table = tableArn.split('/')[1];
+  const client = ddbClient(accessKeyId, secretAccessKey, region);
+  const docClient = DynamoDBDocumentClient.from(client);
 
-function generateTTL() {
-  return Math.floor(Date.now() / 1000) + ONE_WEEK;
+  return docClient.send(new PutCommand({
+    TableName: table,
+    Item: payload,
+  }));
 }
 
-function normalizeSlices(rawSlices) {
-  if (typeof rawSlices == 'string') {
-    return [rawSlices.trim()];
-  }
-
-  if (rawSlices instanceof Array) {
-    return rawSlices.map((slice) => slice.trim());
-  }
-
-  return [];
-}
-
-async function generatePayload(rawSlices) {
-  const {owner, repo} = github.context.repo;
-  const branch = github.context.ref.trim().replace('refs/heads/', '');
-  const commitSha = github.context.sha;
-
-  return {
-    repository: `${owner}/${repo}`,
-    commit_sha: commitSha,
-    commit_branch: branch,
-    commit_datetime: await commitDatetime(commitSha),
-    commit_message: await commitMessage(commitSha),
-    slices: normalizeSlices(rawSlices),
-    ttl: generateTTL(),
+function ddbClient(accessKeyId, secretAccessKey, region) {
+  let options = {
+    region,
+    credentials: {
+      accessKeyId,
+      secretAccessKey,
+    }
   };
+
+  const endpoint = process.env.AWS_ENDPOINT_URL;
+
+  if (typeof endpoint == 'string' && endpoint !== '') {
+    options.endpoint = endpoint
+  }
+
+  return new DynamoDBClient(options);
 }
 
-module.exports = generatePayload;
+module.exports = {
+  publishPayload,
+  ddbClient,
+};
 
 
 /***/ }),
@@ -51601,40 +51650,36 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 const core = __nccwpck_require__(2186);
-const DynamoDBClient = __nccwpck_require__(1014);
-const DynamoDBDocument = __nccwpck_require__(5341);
-const generatePayload = __nccwpck_require__(5828);
+const generatePayload = __nccwpck_require__(5825);
+const { publishPayload } = __nccwpck_require__(958);
 
 async function run() {
   try {
     core.info('Publishing build metadata ...');
 
-    await publishPayload();
+    const payload = await generatePayload(core.getInput('slices'));
+    const result = await publishPayload(
+      core.getInput('access_key_id', { required: true }),
+      core.getInput('secret_access_key', { required: true }),
+      core.getInput('meta_table_arn', { required: true }),
+      payload,
+    );
+
+    if (result['$metadata'].httpStatusCode !== 200) {
+      return core.setFailed(result);
+    }
+
+    if (process.env.DEBUG !== 'true') {
+      return;
+    }
+
+    core.debug(result.Attributes);
   } catch (error) {
     core.setFailed(error.message);
   }
 }
 
 run();
-
-async function publishPayload(){
-  const credentials = {
-    AccessKeyId: core.getInput('access_key_id'),
-    SecretAccessKey: core.getInput('secret_access_key'),
-  };
-
-  const meta_table_arn = core.getInput('meta_table_arn');
-  const region = meta_table_arn.split(':')[2];
-  const table = meta_table_arn.split('/')[-1];
-  const client = new DynamoDBClient({ region: region, credentials: credentials });
-  const docClient = DynamoDBDocument.from(client);
-  const payload = await generatePayload(core.getInput('slices'));
-
-  await docClient.put({
-    TableName: table,
-    Item: payload,
-  });
-}
 
 })();
 
