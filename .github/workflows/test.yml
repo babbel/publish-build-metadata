@@ -11,16 +11,47 @@ jobs:
   units:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - run: npm ci
-    - run: docker-compose up -d
-    - run: make test
-      env:
-        DEBUG: 'true'
+      - uses: actions/checkout@v2
+      - run: npm ci
+
+      - name: Boot up DynamoDB
+        run: docker-compose up -d
+
+      - run: make test
+        env:
+          DEBUG: 'true'
 
   # test action works running from the graph
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: ./
+      - uses: actions/checkout@v2
+
+      - name: Boot up DynamoDB
+        run: docker-compose up -d
+
+      - name: Prep metadata table
+        run: |
+          aws dynamodb create-table \
+                       --endpoint-url http://localhost:8000 \
+                       --region local \
+                       --table-name metadata \
+                       --attribute-definitions \
+                         AttributeName=repository,AttributeType=S \
+                         AttributeName=commit_sha,AttributeType=S \
+                       --key-schema \
+                         AttributeName=repository,KeyType=HASH \
+                         AttributeName=commit_sha,KeyType=RANGE \
+                       --provisioned-throughput \
+                         ReadCapacityUnits=1,WriteCapacityUnits=1
+
+      - uses: ./
+        env:
+          AWS_ENDPOINT_URL: 'http://localhost:8000'
+          DEBUG: 'true'
+        with:
+          access_key_id: 'aws-access-key-id'
+          secret_access_key: 'aws-secret-access-key'
+          meta_table_arn: 'arn:aws:dynamodb:local:000000000000:table/metadata'
+          slices: ['api', 'consumer']
+
