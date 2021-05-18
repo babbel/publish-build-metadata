@@ -7,7 +7,7 @@ beforeEach(() => {
 });
 
 test('default payload', async () => {
-  const generatePayload = require('./payload');
+  const generatePayload = require('./generate');
   const payload = await generatePayload('publish.lambda');
 
   expect(payload.commit_branch).toEqual('main');
@@ -19,14 +19,14 @@ test('default payload', async () => {
 });
 
 test('when missing slice', async () => {
-  const generatePayload = require('./payload');
+  const generatePayload = require('./generate');
   const payload = await generatePayload();
 
   expect(payload.slices).toEqual([]);
 });
 
 test('when multiple slices', async () => {
-  const generatePayload = require('./payload');
+  const generatePayload = require('./generate');
   const payload = await generatePayload(['publish.lambda', 'consumer.firehose', 'api']);
 
   expect(payload.slices).toEqual(['publish.lambda', 'consumer.firehose', 'api']);
