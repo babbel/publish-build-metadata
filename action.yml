@@ -1,6 +1,21 @@
 name: 'Publish build metadata'
 description: 'Collects build artifacts metadata and publishes them to DynamoDB'
 
+inputs:
+  access_key_id:
+    description: 'AWS_ACCESS_KEY_ID'
+    required: true
+  secret_access_key:
+    description: 'AWS_SECRET_ACCESS_KEY'
+    required: true
+  meta_table_arn:
+    description: 'DynamoDB metadata table ARN'
+    required: true
+  slices:
+    description: 'Microverse slice names'
+    required: false
+    default: null
+
 runs:
   using: 'node12'
   main: 'dist/index.js'
