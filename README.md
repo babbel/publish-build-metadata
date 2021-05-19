@@ -1,6 +1,6 @@
 # publish-build-metadata
 
-Internal Babbel tool to collects build artifacts metadata.
+Internal Babbel tool to collect build artifacts metadata.
 
 ## Usage
 
