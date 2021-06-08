@@ -46,7 +46,7 @@ jobs:
           access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           meta_table_arn: ${{ secrets.AWS_META_TABLE_ARN }}
-          with: 'api, consumer.kinesis, consumer.firehose'
+          slices: 'api, consumer.kinesis, consumer.firehose'
 ```
 
 ### Microverse example, one slice at a time
@@ -69,7 +69,7 @@ jobs:
           access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           meta_table_arn: ${{ secrets.AWS_META_TABLE_ARN }}
-          with: 'api' # or ${{ matrix.function_name }}
+          slices: 'api' # or ${{ matrix.function_name }}
 ```
 
 ## Contribute
