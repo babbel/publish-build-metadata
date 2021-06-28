@@ -38,3 +38,14 @@ test('when multiple slices', async () => {
 
   expect(payload.slices).toEqual(['publish.lambda', 'consumer.firehose', 'api']);
 });
+
+test('when custom sha', async () => {
+  const generatePayload = require('./generate');
+  const customSha = '5455d7267182f9585017d9f9e6c59a7798fb3c7e';
+
+  expect(customSha).not.toEqual(testSha);
+
+  const payload = await generatePayload(null, customSha);
+
+  expect(payload.commit_sha).toEqual(customSha);
+});
