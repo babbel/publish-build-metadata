@@ -49,3 +49,11 @@ test('when custom sha', async () => {
 
   expect(payload.commit_sha).toEqual(customSha);
 });
+
+test('when custom branch', async () => {
+  const generatePayload = require('./generate');
+  const customBranch = 'feature/add-examples';
+  const payload = await generatePayload(null, null, customBranch);
+
+  expect(payload.commit_branch).toEqual(customBranch);
+});

@@ -48,9 +48,9 @@ function normalizeSlices(rawSlices) {
     .filter(x => x !== '');
 }
 
-async function generatePayload(rawSlices, customSha = null) {
+async function generatePayload(rawSlices, customSha = null, customBranch = null) {
   const {owner, repo} = github.context.repo;
-  const branch = github.context.ref.trim().replace('refs/heads/', '');
+  const branch = customBranch || github.context.ref.trim().replace('refs/heads/', '');
   const commitSha = customSha || github.context.sha;
 
   return {
@@ -39700,7 +39700,12 @@ async function run() {
   try {
     core.info('Publishing build metadata ...');
 
-    const payload = await generatePayload(core.getInput('slices'), core.getInput('sha'));
+    const payload = await generatePayload(
+      core.getInput('slices'),
+      core.getInput('sha'),
+      core.getInput('branch'),
+    );
+
     const result = await publishPayload(
       core.getInput('access_key_id', { required: true }),
       core.getInput('secret_access_key', { required: true }),

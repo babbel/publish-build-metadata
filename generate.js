@@ -18,9 +18,9 @@ function normalizeSlices(rawSlices) {
     .filter(x => x !== '');
 }
 
-async function generatePayload(rawSlices, customSha = null) {
+async function generatePayload(rawSlices, customSha = null, customBranch = null) {
   const {owner, repo} = github.context.repo;
-  const branch = github.context.ref.trim().replace('refs/heads/', '');
+  const branch = customBranch || github.context.ref.trim().replace('refs/heads/', '');
   const commitSha = customSha || github.context.sha;
 
   return {

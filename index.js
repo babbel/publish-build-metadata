@@ -6,7 +6,12 @@ async function run() {
   try {
     core.info('Publishing build metadata ...');
 
-    const payload = await generatePayload(core.getInput('slices'), core.getInput('sha'));
+    const payload = await generatePayload(
+      core.getInput('slices'),
+      core.getInput('sha'),
+      core.getInput('branch'),
+    );
+
     const result = await publishPayload(
       core.getInput('access_key_id', { required: true }),
       core.getInput('secret_access_key', { required: true }),
