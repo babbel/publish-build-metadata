@@ -70,7 +70,7 @@ jobs:
         env:
           AWS_ACCESS_KEY_ID: 'aws-access-key-id'
           AWS_SECRET_ACCESS_KEY: 'aws-secret-access-key'
-        run: ./.github/scripts/verify api consumer
+        run: ./.github/scripts/verify --slices api,consumer
 
       - name: Test without slices
         uses: ./
@@ -84,3 +84,31 @@ jobs:
           AWS_ACCESS_KEY_ID: 'aws-access-key-id'
           AWS_SECRET_ACCESS_KEY: 'aws-secret-access-key'
         run: ./.github/scripts/verify
+
+      - name: Test with custom commit sha
+        uses: ./
+        with:
+          access_key_id: 'aws-access-key-id'
+          secret_access_key: 'aws-secret-access-key'
+          meta_table_arn: 'arn:aws:dynamodb:local:000000000000:table/metadata'
+          sha: '26404f9cd017b6a94a93ad3d01fc8761893101af'
+
+      - name: Check if everything is there
+        env:
+          AWS_ACCESS_KEY_ID: 'aws-access-key-id'
+          AWS_SECRET_ACCESS_KEY: 'aws-secret-access-key'
+        run: ./.github/scripts/verify --commit-sha 26404f9cd017b6a94a93ad3d01fc8761893101af
+
+      - name: Test with custom branch name
+        uses: ./
+        with:
+          access_key_id: 'aws-access-key-id'
+          secret_access_key: 'aws-secret-access-key'
+          meta_table_arn: 'arn:aws:dynamodb:local:000000000000:table/metadata'
+          branch: 'feature/add-examples'
+
+      - name: Check if everything is there
+        env:
+          AWS_ACCESS_KEY_ID: 'aws-access-key-id'
+          AWS_SECRET_ACCESS_KEY: 'aws-secret-access-key'
+        run: ./.github/scripts/verify --branch-name feature/add-examples
