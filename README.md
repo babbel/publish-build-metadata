@@ -22,9 +22,9 @@ jobs:
       #
       - uses: babbel/publish-build-metadata@v1
         with:
-          access_key_id:     ${{ secrets.AWS_ACCESS_KEY_ID }}
+          access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          meta_table_arn:    ${{ secrets.AWS_META_TABLE_ARN }}
+          meta_table_arn: ${{ secrets.AWS_META_TABLE_ARN }}
 ```
 
 ### Microverse example, all slices at once
@@ -41,10 +41,10 @@ jobs:
       #
       - uses: babbel/publish-build-metadata@v1
         with:
-          access_key_id:     ${{ secrets.AWS_ACCESS_KEY_ID }}
+          access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          meta_table_arn:    ${{ secrets.AWS_META_TABLE_ARN }}
-          slices:            'api, consumer.kinesis, consumer.firehose'
+          meta_table_arn: ${{ secrets.AWS_META_TABLE_ARN }}
+          slices: 'api, consumer.kinesis, consumer.firehose'
 ```
 
 ### Microverse example, one slice at a time
@@ -63,10 +63,10 @@ jobs:
       #
       - uses: babbel/publish-build-metadata@v1
         with:
-          access_key_id:     ${{ secrets.AWS_ACCESS_KEY_ID }}
+          access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          meta_table_arn:    ${{ secrets.AWS_META_TABLE_ARN }}
-          slices:            'api' # or ${{ matrix.function_name }}
+          meta_table_arn: ${{ secrets.AWS_META_TABLE_ARN }}
+          slices: 'api' # or ${{ matrix.function_name }}
 ```
 
 ### When custom Commit SHA
@@ -87,11 +87,10 @@ jobs:
       #
       - uses: babbel/publish-build-metadata@v1
         with:
-          access_key_id:     ${{ secrets.AWS_ACCESS_KEY_ID }}
+          access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          meta_table_arn:    ${{ secrets.AWS_META_TABLE_ARN }}
-          sha:               ${{ env.MY_CUSTOM_COMMIT_SHA }}
-
+          meta_table_arn: ${{ secrets.AWS_META_TABLE_ARN }}
+          sha: ${{ env.MY_CUSTOM_COMMIT_SHA }}
 ```
 
 ## Contribute
