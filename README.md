@@ -2,6 +2,8 @@
 
 Internal Babbel tool to collect build artifacts metadata.
 
+TEST
+
 ## Usage
 
 In your project workflow, after build artifact was published.
