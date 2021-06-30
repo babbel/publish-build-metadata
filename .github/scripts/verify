@@ -1,12 +1,35 @@
 #!/usr/bin/env ruby
 
+require "optparse"
 require "json"
+
+options = {
+  slices: [],
+  sha: ENV["GITHUB_SHA"],
+  branch: ENV["GITHUB_REF"].sub("refs/heads/", "")
+}
+
+OptionParser.new do |opts|
+  opts.banner = "Usage: verify [options]"
+
+  opts.on("-s", "--slices [SLICES]", Array) do |v|
+    options[:slices] = v.sort
+  end
+
+  opts.on("-c", "--commit-sha [SHA]", String) do |v|
+    options[:sha] = v
+  end
+
+  opts.on("-b", "--branch-name [BRANCH]", String) do |v|
+    options[:branch] = v
+  end
+end.parse!
 
 cmd = <<-CMD
 aws dynamodb get-item --endpoint-url #{ENV["AWS_ENDPOINT_URL"]} \
                       --table-name metadata \
                       --region local \
-                      --key '{"repository":{"S":"#{ENV["GITHUB_REPOSITORY"]}"},"commit_sha":{"S":"#{ENV["GITHUB_SHA"]}"}}'
+                      --key '{"repository":{"S":"#{ENV["GITHUB_REPOSITORY"]}"},"commit_sha":{"S":"#{options[:sha]}"}}'
 CMD
 
 result = `#{cmd.strip}`.strip
@@ -17,10 +40,14 @@ item = JSON.parse(result)
 
 puts "Found item:", JSON.pretty_generate(item)
 
-unless ARGV.empty?
-  slices = item.dig("Item", "slices", "L").map { |s| s["S"] }
+slices = item.dig("Item", "slices", "L")&.map { |s| s["S"] } || []
 
-  raise "Missing slices in DynamoDB, expected: #{ARGV.inspect}, got: #{slices.inspect}" if slices.sort != ARGV.sort
+raise "Wrong slices in DynamoDB, expected: #{options[:slices].inspect}, got: #{slices.inspect}" if slices.sort != options[:slices]
+
+unless options[:branch].empty?
+  branch = item.dig("Item", "commit_branch", "S")
+
+  raise "Wrong branch in DynamoDB, expected: #{options[:branch].inspect}, got: #{branch.inspect}" if branch != options[:branch]
 end
 
 puts "All good!"

@@ -20,8 +20,7 @@ jobs:
       #
       # ... build & publish the artifact
       #
-      - name: Publish build artifact metadata
-        uses: babbel/publish-build-metadata@v1
+      - uses: babbel/publish-build-metadata@v1
         with:
           access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -40,8 +39,7 @@ jobs:
       #
       # ... build & publish the artifact
       #
-      - name: Publish build artifact metadata
-        uses: babbel/publish-build-metadata@v1
+      - uses: babbel/publish-build-metadata@v1
         with:
           access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -63,13 +61,57 @@ jobs:
       #
       # ... build & publish the artifact
       #
-      - name: Publish build artifact metadata
-        uses: babbel/publish-build-metadata@v1
+      - uses: babbel/publish-build-metadata@v1
         with:
           access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           meta_table_arn: ${{ secrets.AWS_META_TABLE_ARN }}
           slices: 'api' # or ${{ matrix.function_name }}
+```
+
+### When custom Commit SHA
+
+Sometimes you might trigger an automatic build which fetches a different branch. In such case `GITHUB_SHA` differs from actual Commit SHA that the build is working on.
+
+In such case you can override `GITHUB_SHA` by passing extra parameter:
+
+```yaml
+jobs:
+  name_of_the_job:
+    #
+    # ...
+    #
+    steps:
+      #
+      # ... build & publish the artifact
+      #
+      - uses: babbel/publish-build-metadata@v1
+        with:
+          access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          meta_table_arn: ${{ secrets.AWS_META_TABLE_ARN }}
+          sha: ${{ env.MY_CUSTOM_COMMIT_SHA }}
+```
+
+Usually with above it will be handy to be able to specify the branch name as well, so the full example would look like:
+
+```yaml
+jobs:
+  name_of_the_job:
+    #
+    # ...
+    #
+    steps:
+      #
+      # ... build & publish the artifact
+      #
+      - uses: babbel/publish-build-metadata@v1
+        with:
+          access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          meta_table_arn: ${{ secrets.AWS_META_TABLE_ARN }}
+          sha: ${{ env.MY_CUSTOM_COMMIT_SHA }}
+          branch: ${{ env.MY_CUSTOM_BRANCH }}
 ```
 
 ## Contribute

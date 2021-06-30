@@ -15,6 +15,14 @@ inputs:
     description: 'Microverse slice names'
     required: false
     default: null
+  sha:
+    description: 'Optional custom commit SHA that should override `GITHUB_SHA` environment variable'
+    required: false
+    default: null
+  branch:
+    description: 'Optional custom branch name that should override `GITHUB_REF` environment variable'
+    required: false
+    default: null
 
 runs:
   using: 'node12'

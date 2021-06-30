@@ -12,10 +12,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm ci
-
       - name: Boot up DynamoDB
         run: docker-compose up -d
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '12'
+
+      - run: npm ci
 
       - run: make test
         env:
@@ -66,7 +70,7 @@ jobs:
         env:
           AWS_ACCESS_KEY_ID: 'aws-access-key-id'
           AWS_SECRET_ACCESS_KEY: 'aws-secret-access-key'
-        run: ./.github/scripts/verify api consumer
+        run: ./.github/scripts/verify --slices api,consumer
 
       - name: Test without slices
         uses: ./
@@ -80,3 +84,17 @@ jobs:
           AWS_ACCESS_KEY_ID: 'aws-access-key-id'
           AWS_SECRET_ACCESS_KEY: 'aws-secret-access-key'
         run: ./.github/scripts/verify
+
+      - name: Test with custom branch name
+        uses: ./
+        with:
+          access_key_id: 'aws-access-key-id'
+          secret_access_key: 'aws-secret-access-key'
+          meta_table_arn: 'arn:aws:dynamodb:local:000000000000:table/metadata'
+          branch: 'feature/add-examples'
+
+      - name: Check if everything is there
+        env:
+          AWS_ACCESS_KEY_ID: 'aws-access-key-id'
+          AWS_SECRET_ACCESS_KEY: 'aws-secret-access-key'
+        run: ./.github/scripts/verify --branch-name feature/add-examples
