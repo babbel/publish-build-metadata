@@ -24,7 +24,7 @@
     "@actions/core": "^1.2.7",
     "@actions/exec": "^1.0.4",
     "@actions/github": "^5.0.0",
-    "@aws-sdk/client-dynamodb": "^3.16.0",
+    "@aws-sdk/client-dynamodb": "^3.54.1",
     "@aws-sdk/lib-dynamodb": "^3.16.0",
     "@aws-sdk/util-dynamodb": "^3.19.0"
   },
