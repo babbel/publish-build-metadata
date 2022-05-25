@@ -4,7 +4,7 @@ const { DynamoDBDocumentClient, PutCommand } = require('@aws-sdk/lib-dynamodb');
 async function publishPayload(accessKeyId, secretAccessKey, tableArn, payload){
   const region = tableArn.split(':')[3];
   const table = tableArn.split('/')[1];
-  const client = ddbClient(accessKeyId, secretAccessKey, region);
+  const client = ddbClient(region, { accessKeyId, secretAccessKey });
   const docClient = DynamoDBDocumentClient.from(client);
 
   return docClient.send(new PutCommand({
@@ -13,14 +13,14 @@ async function publishPayload(accessKeyId, secretAccessKey, tableArn, payload){
   }));
 }
 
-function ddbClient(accessKeyId, secretAccessKey, region) {
+function ddbClient(region, credentials = null) {
   let options = {
-    region,
-    credentials: {
-      accessKeyId,
-      secretAccessKey,
-    }
+    region
   };
+
+  if (credentials != null) {
+    options.credentials = credentials;
+  }
 
   const endpoint = process.env.AWS_ENDPOINT_URL;
 

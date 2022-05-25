@@ -56,7 +56,7 @@ test('content should be published', async () => {
 // Test Helpers
 //
 function client() {
-  return ddbClient(ACCESS_KEY_ID, SECRET_ACCESS_KEY, REGION);
+  return ddbClient(REGION);
 }
 
 async function createDynamoDBTable() {
