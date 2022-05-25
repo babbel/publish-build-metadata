@@ -1,10 +1,10 @@
 const { DynamoDBClient } = require('@aws-sdk/client-dynamodb');
 const { DynamoDBDocumentClient, PutCommand } = require('@aws-sdk/lib-dynamodb');
 
-async function publishPayload(accessKeyId, secretAccessKey, tableArn, payload){
+async function publishPayload(tableArn, payload, credentials = null) {
   const region = tableArn.split(':')[3];
   const table = tableArn.split('/')[1];
-  const client = ddbClient(region, { accessKeyId, secretAccessKey });
+  const client = ddbClient(region, credentials);
   const docClient = DynamoDBDocumentClient.from(client);
 
   return docClient.send(new PutCommand({

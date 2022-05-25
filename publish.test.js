@@ -5,8 +5,6 @@ const { publishPayload, ddbClient } = require('./publish');
 
 const TABLE_NAME = 'metadata';
 const TABLE_ARN = `arn:aws:dynamodb:local:000000000000:table/${TABLE_NAME}`;
-const ACCESS_KEY_ID = 'aws-access-key-id';
-const SECRET_ACCESS_KEY = 'aws-secret-access-key';
 const REGION = 'local';
 const PAYLOAD = {
   commit_branch: 'main',
@@ -33,7 +31,7 @@ afterEach(async () => {
 
 
 test('content should be published', async () => {
-  const publishResult = await publishPayload(ACCESS_KEY_ID, SECRET_ACCESS_KEY, TABLE_ARN, PAYLOAD);
+  const publishResult = await publishPayload(TABLE_ARN, PAYLOAD);
 
   expect(publishResult['$metadata'].httpStatusCode).toEqual(200);
 
