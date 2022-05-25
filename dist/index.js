@@ -39415,10 +39415,10 @@ function wrappy (fn, cb) {
 const { DynamoDBClient } = __nccwpck_require__(1014);
 const { DynamoDBDocumentClient, PutCommand } = __nccwpck_require__(5341);
 
-async function publishPayload(accessKeyId, secretAccessKey, tableArn, payload){
+async function publishPayload(tableArn, payload, credentials = null) {
   const region = tableArn.split(':')[3];
   const table = tableArn.split('/')[1];
-  const client = ddbClient(accessKeyId, secretAccessKey, region);
+  const client = ddbClient(region, credentials);
   const docClient = DynamoDBDocumentClient.from(client);
 
   return docClient.send(new PutCommand({
@@ -39427,14 +39427,14 @@ async function publishPayload(accessKeyId, secretAccessKey, tableArn, payload){
   }));
 }
 
-function ddbClient(accessKeyId, secretAccessKey, region) {
+function ddbClient(region, credentials = null) {
   let options = {
-    region,
-    credentials: {
-      accessKeyId,
-      secretAccessKey,
-    }
+    region
   };
+
+  if (credentials != null) {
+    options.credentials = credentials;
+  }
 
   const endpoint = process.env.AWS_ENDPOINT_URL;
 
@@ -39706,11 +39706,16 @@ async function run() {
       core.getInput('branch'),
     );
 
+    const accessKeyId = core.getInput('access_key_id');
+    const secretAccessKey = core.getInput('secret_access_key');
+    const credentials = accessKeyId != null && secretAccessKey != null
+      ? { accessKeyId, secretAccessKey }
+      : null;
+
     const result = await publishPayload(
-      core.getInput('access_key_id', { required: true }),
-      core.getInput('secret_access_key', { required: true }),
       core.getInput('meta_table_arn', { required: true }),
       payload,
+      credentials,
     );
 
     if (result['$metadata'].httpStatusCode !== 200) {
