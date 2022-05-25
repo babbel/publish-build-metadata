@@ -14,7 +14,7 @@ async function run() {
 
     const accessKeyId = core.getInput('access_key_id');
     const secretAccessKey = core.getInput('secret_access_key');
-    const credentials = accessKeyId != null && secretAccessKey != null
+    const credentials = accessKeyId && secretAccessKey
       ? { accessKeyId, secretAccessKey }
       : null;
 
