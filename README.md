@@ -11,38 +11,52 @@ All `AWS_` secrets should be already set and ready to use.
 ### Standalone project example
 
 ```yaml
+permissions:
+  contents: read
+  id-token: write
+
 jobs:
   name_of_the_job:
     #
     # ...
     #
     steps:
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: ${{ secrets.AWS_IAM_ROLE_ARN }}
+          aws-region: ${{ secrets.AWS_REGION }}      
       #
       # ... build & publish the artifact
       #
       - uses: babbel/publish-build-metadata@v1
         with:
-          access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           meta_table_arn: ${{ secrets.AWS_META_TABLE_ARN }}
 ```
 
 ### Microverse example, all slices at once
 
 ```yaml
+permissions:
+  contents: read
+  id-token: write
+
 jobs:
   name_of_the_job:
     #
     # ...
     #
     steps:
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: ${{ secrets.AWS_IAM_ROLE_ARN }}
+          aws-region: ${{ secrets.AWS_REGION }}      
       #
       # ... build & publish the artifact
       #
       - uses: babbel/publish-build-metadata@v1
         with:
-          access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           meta_table_arn: ${{ secrets.AWS_META_TABLE_ARN }}
           slices: 'api, consumer.kinesis, consumer.firehose'
 ```
@@ -52,19 +66,26 @@ jobs:
 For example in case you have jobs matrix.
 
 ```yaml
+permissions:
+  contents: read
+  id-token: write
+
 jobs:
   name_of_the_job:
     #
     # ...
     #
     steps:
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: ${{ secrets.AWS_IAM_ROLE_ARN }}
+          aws-region: ${{ secrets.AWS_REGION }}      
       #
       # ... build & publish the artifact
       #
       - uses: babbel/publish-build-metadata@v1
         with:
-          access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           meta_table_arn: ${{ secrets.AWS_META_TABLE_ARN }}
           slices: 'api' # or ${{ matrix.function_name }}
 ```
@@ -76,19 +97,26 @@ Sometimes you might trigger an automatic build which fetches a different branch.
 In such case you can override `GITHUB_SHA` by passing extra parameter:
 
 ```yaml
+permissions:
+  contents: read
+  id-token: write
+
 jobs:
   name_of_the_job:
     #
     # ...
     #
     steps:
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: ${{ secrets.AWS_IAM_ROLE_ARN }}
+          aws-region: ${{ secrets.AWS_REGION }}      
       #
       # ... build & publish the artifact
       #
       - uses: babbel/publish-build-metadata@v1
         with:
-          access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           meta_table_arn: ${{ secrets.AWS_META_TABLE_ARN }}
           sha: ${{ env.MY_CUSTOM_COMMIT_SHA }}
 ```
@@ -96,19 +124,26 @@ jobs:
 Usually with above it will be handy to be able to specify the branch name as well, so the full example would look like:
 
 ```yaml
+permissions:
+  contents: read
+  id-token: write
+
 jobs:
   name_of_the_job:
     #
     # ...
     #
     steps:
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: ${{ secrets.AWS_IAM_ROLE_ARN }}
+          aws-region: ${{ secrets.AWS_REGION }}      
       #
       # ... build & publish the artifact
       #
       - uses: babbel/publish-build-metadata@v1
         with:
-          access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           meta_table_arn: ${{ secrets.AWS_META_TABLE_ARN }}
           sha: ${{ env.MY_CUSTOM_COMMIT_SHA }}
           branch: ${{ env.MY_CUSTOM_BRANCH }}

@@ -12,11 +12,16 @@ async function run() {
       core.getInput('branch'),
     );
 
+    const accessKeyId = core.getInput('access_key_id');
+    const secretAccessKey = core.getInput('secret_access_key');
+    const credentials = accessKeyId && secretAccessKey
+      ? { accessKeyId, secretAccessKey }
+      : null;
+
     const result = await publishPayload(
-      core.getInput('access_key_id', { required: true }),
-      core.getInput('secret_access_key', { required: true }),
       core.getInput('meta_table_arn', { required: true }),
       payload,
+      credentials,
     );
 
     if (result['$metadata'].httpStatusCode !== 200) {

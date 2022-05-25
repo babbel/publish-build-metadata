@@ -4,10 +4,12 @@ description: 'Collects build artifacts metadata and publishes them to DynamoDB'
 inputs:
   access_key_id:
     description: 'AWS_ACCESS_KEY_ID'
-    required: true
+    required: false
+    default: null
   secret_access_key:
     description: 'AWS_SECRET_ACCESS_KEY'
-    required: true
+    required: false
+    default: null
   meta_table_arn:
     description: 'DynamoDB metadata table ARN'
     required: true

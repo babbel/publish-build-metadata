@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2022-05-26
+
+### Changed
+- Make inputs for AWS credentials optional, allowing the AWS SDK to find the credentials via its built-in auto-discovery.
+
 ## [1.1.0] - 2021-06-28
 ### Added
 - Ability to provide custom commit sha. Useful when build is based on different commit sha that triggered the build.
