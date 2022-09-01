@@ -26,7 +26,7 @@
     "@actions/github": "^5.0.0",
     "@aws-sdk/client-dynamodb": "^3.16.0",
     "@aws-sdk/lib-dynamodb": "^3.16.0",
-    "@aws-sdk/util-dynamodb": "^3.19.0"
+    "@aws-sdk/util-dynamodb": "^3.162.0"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.28.5",
