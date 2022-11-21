@@ -151,7 +151,7 @@ jobs:
 
 ## Contribute
 
-Prep the project, it runs against nodejs v12, when using `asdf-vm` just hit `asdf install`. Then install the packages
+Prep the project, it runs against nodejs v16, when using `asdf-vm` just hit `asdf install`. Then install the packages
 
 ```
 npm ci
