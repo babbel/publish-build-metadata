@@ -24,14 +24,14 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: ${{ secrets.AWS_IAM_ROLE_ARN }}
-          aws-region: ${{ secrets.AWS_REGION }}      
+          role-to-assume: ${{ vars.AWS_IAM_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
       #
       # ... build & publish the artifact
       #
       - uses: babbel/publish-build-metadata@v1
         with:
-          meta_table_arn: ${{ secrets.AWS_META_TABLE_ARN }}
+          meta_table_arn: ${{ vars.AWS_META_TABLE_ARN }}
 ```
 
 ### Microverse example, all slices at once
@@ -50,14 +50,14 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: ${{ secrets.AWS_IAM_ROLE_ARN }}
-          aws-region: ${{ secrets.AWS_REGION }}      
+          role-to-assume: ${{ vars.AWS_IAM_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
       #
       # ... build & publish the artifact
       #
       - uses: babbel/publish-build-metadata@v1
         with:
-          meta_table_arn: ${{ secrets.AWS_META_TABLE_ARN }}
+          meta_table_arn: ${{ vars.AWS_META_TABLE_ARN }}
           slices: 'api, consumer.kinesis, consumer.firehose'
 ```
 
@@ -79,14 +79,14 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: ${{ secrets.AWS_IAM_ROLE_ARN }}
-          aws-region: ${{ secrets.AWS_REGION }}      
+          role-to-assume: ${{ vars.AWS_IAM_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
       #
       # ... build & publish the artifact
       #
       - uses: babbel/publish-build-metadata@v1
         with:
-          meta_table_arn: ${{ secrets.AWS_META_TABLE_ARN }}
+          meta_table_arn: ${{ vars.AWS_META_TABLE_ARN }}
           slices: 'api' # or ${{ matrix.function_name }}
 ```
 
@@ -110,14 +110,14 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: ${{ secrets.AWS_IAM_ROLE_ARN }}
-          aws-region: ${{ secrets.AWS_REGION }}      
+          role-to-assume: ${{ vars.AWS_IAM_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
       #
       # ... build & publish the artifact
       #
       - uses: babbel/publish-build-metadata@v1
         with:
-          meta_table_arn: ${{ secrets.AWS_META_TABLE_ARN }}
+          meta_table_arn: ${{ vars.AWS_META_TABLE_ARN }}
           sha: ${{ env.MY_CUSTOM_COMMIT_SHA }}
 ```
 
@@ -137,14 +137,14 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: ${{ secrets.AWS_IAM_ROLE_ARN }}
-          aws-region: ${{ secrets.AWS_REGION }}      
+          role-to-assume: ${{ vars.AWS_IAM_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
       #
       # ... build & publish the artifact
       #
       - uses: babbel/publish-build-metadata@v1
         with:
-          meta_table_arn: ${{ secrets.AWS_META_TABLE_ARN }}
+          meta_table_arn: ${{ vars.AWS_META_TABLE_ARN }}
           sha: ${{ env.MY_CUSTOM_COMMIT_SHA }}
           branch: ${{ env.MY_CUSTOM_BRANCH }}
 ```
