@@ -7,8 +7,8 @@ on:
       - 'releases/*'
 
 env:
-  AWS_ACCESS_KEY_ID: aws-access-key-id
-  AWS_SECRET_ACCESS_KEY: aws-secret-access-key
+  AWS_ACCESS_KEY_ID: TestAccessKeyID
+  AWS_SECRET_ACCESS_KEY: TestSecretAccessKey
 
 jobs:
   # unit tests
@@ -46,8 +46,8 @@ jobs:
 
       - name: Prep metadata table
         env:
-          AWS_ACCESS_KEY_ID: 'aws-access-key-id'
-          AWS_SECRET_ACCESS_KEY: 'aws-secret-access-key'
+          AWS_ACCESS_KEY_ID: TestAccessKeyID
+          AWS_SECRET_ACCESS_KEY: TestSecretAccessKey
         run: |
           aws dynamodb create-table \
                        --endpoint-url $AWS_ENDPOINT_URL \
@@ -65,40 +65,40 @@ jobs:
       - name: Test with given slices
         uses: ./
         with:
-          access_key_id: 'aws-access-key-id'
-          secret_access_key: 'aws-secret-access-key'
+          access_key_id: TestAccessKeyID
+          secret_access_key: TestSecretAccessKey
           meta_table_arn: 'arn:aws:dynamodb:local:000000000000:table/metadata'
           slices: 'api,consumer'
 
       - name: Check if everything is there
         env:
-          AWS_ACCESS_KEY_ID: 'aws-access-key-id'
-          AWS_SECRET_ACCESS_KEY: 'aws-secret-access-key'
+          AWS_ACCESS_KEY_ID: TestAccessKeyID
+          AWS_SECRET_ACCESS_KEY: TestSecretAccessKey
         run: ./.github/scripts/verify --slices api,consumer
 
       - name: Test without slices
         uses: ./
         with:
-          access_key_id: 'aws-access-key-id'
-          secret_access_key: 'aws-secret-access-key'
+          access_key_id: TestAccessKeyID
+          secret_access_key: TestSecretAccessKey
           meta_table_arn: 'arn:aws:dynamodb:local:000000000000:table/metadata'
 
       - name: Check if everything is there
         env:
-          AWS_ACCESS_KEY_ID: 'aws-access-key-id'
-          AWS_SECRET_ACCESS_KEY: 'aws-secret-access-key'
+          AWS_ACCESS_KEY_ID: TestAccessKeyID
+          AWS_SECRET_ACCESS_KEY: TestSecretAccessKey
         run: ./.github/scripts/verify
 
       - name: Test with custom branch name
         uses: ./
         with:
-          access_key_id: 'aws-access-key-id'
-          secret_access_key: 'aws-secret-access-key'
+          access_key_id: TestAccessKeyID
+          secret_access_key: TestSecretAccessKey
           meta_table_arn: 'arn:aws:dynamodb:local:000000000000:table/metadata'
           branch: 'feature/add-examples'
 
       - name: Check if everything is there
         env:
-          AWS_ACCESS_KEY_ID: 'aws-access-key-id'
-          AWS_SECRET_ACCESS_KEY: 'aws-secret-access-key'
+          AWS_ACCESS_KEY_ID: TestAccessKeyID
+          AWS_SECRET_ACCESS_KEY: TestSecretAccessKey
         run: ./.github/scripts/verify --branch-name feature/add-examples
