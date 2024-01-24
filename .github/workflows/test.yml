@@ -102,3 +102,10 @@ jobs:
           AWS_ACCESS_KEY_ID: TestAccessKeyID
           AWS_SECRET_ACCESS_KEY: TestSecretAccessKey
         run: ./.github/scripts/verify --branch-name feature/add-examples
+
+      - name: Publish under "beta" tag
+        uses: babbel/publish-npm@v1.1
+        with:
+          tag: beta
+        env:
+          NODE_AUTH_TOKEN: ${{ github.token }}
