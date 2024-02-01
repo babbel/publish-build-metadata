@@ -115,8 +115,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 16
-
       - name: Publish to npm
         run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ github.token }}
+          NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_TOKEN }}
