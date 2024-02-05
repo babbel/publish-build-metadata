@@ -117,9 +117,7 @@ jobs:
           node-version: 16
       - name: Install dependencies
         run: npm ci
-      - name: Publish to github packeges
-        uses: babbel/publish-npm@v1.1
+      - name: Publish action
+        uses: ncipollo/release-action@v1
         with:
           tag: beta
-        env:
-          NODE_AUTH_TOKEN: ${{ github.token }}
