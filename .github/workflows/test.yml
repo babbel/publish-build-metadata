@@ -117,5 +117,10 @@ jobs:
           node-version: 16
       - name: Install dependencies
         run: npm ci
+      - name: Bump version and push tag
+        uses: anothrNick/github-tag-action@1.64.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WITH_V: true
       - name: Publish action
         uses: ncipollo/release-action@v1
