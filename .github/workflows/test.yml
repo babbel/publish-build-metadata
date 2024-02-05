@@ -119,5 +119,3 @@ jobs:
         run: npm ci
       - name: Publish action
         uses: ncipollo/release-action@v1
-        with:
-          tag: beta
