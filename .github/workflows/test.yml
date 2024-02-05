@@ -122,5 +122,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WITH_V: true
+        id: bump
       - name: Publish action
         uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ steps.bump.outputs.tag }}
