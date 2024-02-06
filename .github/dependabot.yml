@@ -4,8 +4,16 @@ updates:
     directory: /
     schedule:
       interval: weekly
+    labels:
+      - dependency
+      - github_actions
+      - automerge
 
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
+    labels:
+      - automerge
+      - dependency
+      - javascript
