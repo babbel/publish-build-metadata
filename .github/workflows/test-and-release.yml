@@ -102,3 +102,28 @@ jobs:
           AWS_ACCESS_KEY_ID: TestAccessKeyID
           AWS_SECRET_ACCESS_KEY: TestSecretAccessKey
         run: ./.github/scripts/verify --branch-name feature/add-examples
+
+  release:
+    if: github.ref == 'refs/heads/master'
+    needs: [units, test]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 16
+      - name: Install dependencies
+        run: npm ci
+      - name: Bump version and push tag
+        uses: anothrNick/github-tag-action@1.64.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WITH_V: true
+        id: bump
+      - name: Release action
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ steps.bump.outputs.tag }}
