@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.6.0] - 2024-03-22
+
+### Changed
+- Bumps node from 16 to 20
+
 ## [1.2.0] - 2022-05-26
 
 ### Changed
