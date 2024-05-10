@@ -104,7 +104,7 @@ jobs:
         run: ./.github/scripts/verify --branch-name feature/add-examples
 
   release:
-    if: github.ref == 'refs/heads/main'
+    # if: github.ref == 'refs/heads/main'
     needs: [units, test]
     runs-on: ubuntu-latest
     steps:
@@ -127,3 +127,5 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           tag: ${{ steps.bump.outputs.tag }}
+      - name: Update major version
+        uses: cloudposse/github-action-major-release-tagger@v1
