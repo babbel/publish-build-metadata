@@ -90,11 +90,20 @@ jobs:
           slices: 'api' # or ${{ matrix.function_name }}
 ```
 
-### When custom Commit SHA
+### Pull Request Events
 
-Sometimes you might trigger an automatic build which fetches a different branch. In such case `GITHUB_SHA` differs from actual Commit SHA that the build is working on.
+When triggered by a pull request event, the action automatically uses:
+- The PR's head commit SHA instead of the merge commit SHA
+- The PR's source branch name instead of the target branch
 
-In such case you can override `GITHUB_SHA` by passing extra parameter:
+This ensures consistent and accurate metadata for pull request builds.
+
+### Custom Commit SHA and Branch
+
+You can override both the commit SHA and branch name if needed. This is useful when:
+- Triggering builds that fetch from a different branch
+- Working with custom CI/CD workflows
+- Needing to override the automatic pull request handling
 
 ```yaml
 permissions:

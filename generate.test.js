@@ -57,3 +57,76 @@ test('when custom branch', async () => {
 
   expect(payload.commit_branch).toEqual(customBranch);
 });
+
+test('when pull request event', async () => {
+  // Mock GitHub context for pull request event
+  jest.resetModules();
+  
+  // Mock the git module to avoid actual git commands
+  jest.mock('./git', () => ({
+    commitDatetime: jest.fn().mockResolvedValue('2023-04-02 10:00:00 +0000'),
+    commitMessage: jest.fn().mockResolvedValue('PR commit message (pr123)')
+  }));
+  
+  jest.mock('@actions/github', () => ({
+    context: {
+      eventName: 'pull_request',
+      payload: {
+        pull_request: {
+          head: {
+            sha: 'pr-head-sha-123',
+            ref: 'feature/new-feature'
+          }
+        }
+      },
+      repo: {
+        owner: 'babbel',
+        repo: 'publish-build-metadata'
+      }
+    }
+  }));
+
+  const generatePayload = require('./generate');
+  const payload = await generatePayload();
+
+  expect(payload.commit_sha).toEqual('pr-head-sha-123');
+  expect(payload.commit_branch).toEqual('feature/new-feature');
+});
+
+test('when pull request event with custom values', async () => {
+  // Mock GitHub context for pull request event
+  jest.resetModules();
+  
+  // Mock the git module to avoid actual git commands
+  jest.mock('./git', () => ({
+    commitDatetime: jest.fn().mockResolvedValue('2023-04-02 10:00:00 +0000'),
+    commitMessage: jest.fn().mockResolvedValue('Custom commit message (custom456)')
+  }));
+  
+  jest.mock('@actions/github', () => ({
+    context: {
+      eventName: 'pull_request',
+      payload: {
+        pull_request: {
+          head: {
+            sha: 'pr-head-sha-123',
+            ref: 'feature/new-feature'
+          }
+        }
+      },
+      repo: {
+        owner: 'babbel',
+        repo: 'publish-build-metadata'
+      }
+    }
+  }));
+
+  const generatePayload = require('./generate');
+  const customSha = 'custom-sha-456';
+  const customBranch = 'custom/branch';
+  const payload = await generatePayload(null, customSha, customBranch);
+
+  // Custom values should take precedence over pull request values
+  expect(payload.commit_sha).toEqual('custom-sha-456');
+  expect(payload.commit_branch).toEqual('custom/branch');
+});
