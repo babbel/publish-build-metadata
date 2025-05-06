@@ -4,6 +4,12 @@ beforeEach(() => {
   jest.resetModules();
 
   setupEnv();
+
+  // Mock the git module to avoid actual git commands
+  jest.mock('./git', () => ({
+    commitDatetime: jest.fn().mockResolvedValue('2019-12-17 15:29:36 +0100'),
+    commitMessage: jest.fn().mockResolvedValue('Use header in README (890befe)')
+  }));
 });
 
 test('default payload', async () => {
@@ -76,6 +82,7 @@ describe('when pull_request event', () => {
       const generatePayload = require('./generate');
       const payload = await generatePayload(null);
 
+      // defined in the testdata/payloads/event.json
       expect(payload.commit_branch).toEqual("feature-branch");
     });
 
@@ -83,6 +90,7 @@ describe('when pull_request event', () => {
       const generatePayload = require('./generate');
       const payload = await generatePayload(null);
 
+      // defined in the testdata/payloads/event.json
       expect(payload.commit_sha).toEqual("feature-branch-sha123");
     });
   })

@@ -1,6 +1,7 @@
 const commitSha = '890befeef37b52a4d97c6f6d29fc836ec85308c4';
 
 function setupEnv() {
+  process.env.GITHUB_EVENT_NAME = 'push';
   process.env.GITHUB_REPOSITORY = 'babbel/publish-build-metadata';
   process.env.GITHUB_REF = 'refs/heads/main';
   process.env.GITHUB_SHA = commitSha;
@@ -11,8 +12,12 @@ function setupEnv() {
 function setupPullRequestEnv() {
   process.env.GITHUB_EVENT_NAME = 'pull_request';
   process.env.GITHUB_EVENT_PATH = `${process.cwd()}/testdata/payloads/event.json`;
-  process.env.GITHUB_REF = 'refs/pull/1/merge'; // this is the merge commit branch, not the source branch
-  process.env.GITHUB_SHA = commitSha; // this is the merge commit sha, not the source branch's head commit sha
+
+  // For PRs, this refers to the merge commit branch, which is different from the source branch.
+  process.env.GITHUB_REF = 'refs/pull/1/merge';
+
+  // For PRs, the merge commit sha is also different from the source branch's head commit sha.
+  process.env.GITHUB_SHA = "merge-commit-sha-123";
 }
 
 module.exports = {

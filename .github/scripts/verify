@@ -3,10 +3,35 @@
 require "optparse"
 require "json"
 
+# For pull_request triggers, the GITHUB_SHA and GITHUB_REF environment variables
+# point to a temporary merge commit SHA and branch name, instead of
+# the source branch and its head commit SHA.
+# For more details, see: https://github.com/orgs/community/discussions/26325
+
+# Here, we are fetching the pull request env vars differently, so that
+# the behavior of the action stays consistent across all event types.
+event_path = File.read(ENV["GITHUB_EVENT_PATH"])
+event_payload = JSON.parse(event_path)
+
+github_sha = if ENV["GITHUB_EVENT_NAME"] == "pull_request"
+  event_payload.dig("pull_request", "head", "sha")
+else
+  ENV["GITHUB_SHA"]
+end
+
+github_ref = if ENV["GITHUB_EVENT_NAME"] == "pull_request"
+  event_payload.dig("pull_request", "head", "ref")
+else
+  ENV["GITHUB_REF"].sub("refs/heads/", "")
+end
+
+puts "Current SHA: #{github_sha}"
+puts "Current Ref: #{github_ref}"
+
 options = {
   slices: [],
-  sha: ENV["GITHUB_SHA"],
-  branch: ENV["GITHUB_REF"].sub("refs/heads/", "")
+  sha: github_sha,
+  branch: github_ref,
 }
 
 OptionParser.new do |opts|
