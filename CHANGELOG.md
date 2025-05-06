@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0] - 2025-05-06
+
+### Added
+- Automatic handling of pull request events to use correct commit SHA and branch name
+  - Uses the PR's head commit SHA instead of the merge commit SHA
+  - Uses the PR's source branch name instead of merge branch
+
 ## [1.6.0] - 2024-03-22
 
 ### Changed

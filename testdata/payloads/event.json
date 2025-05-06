@@ -1,0 +1,10 @@
+{
+
+  "action": "opened",
+  "pull_request": {
+    "head": {
+      "ref": "feature-branch",
+      "sha": "feature-branch-sha123"
+    }
+  }
+}

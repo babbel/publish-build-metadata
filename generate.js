@@ -20,8 +20,27 @@ function normalizeSlices(rawSlices) {
 
 async function generatePayload(rawSlices, customSha = null, customBranch = null) {
   const {owner, repo} = github.context.repo;
-  const branch = (customBranch || github.context.ref).trim().replace('refs/heads/', '');
-  const commitSha = customSha || github.context.sha;
+
+  // If custom values are provided, use them.
+  // Otherwise, handle pull_request events differently than other events.
+  // For more details, see: https://github.com/orgs/community/discussions/26325
+  let commitSha, branch;
+
+  if (customSha) {
+    commitSha = customSha;
+  } else if (github.context.eventName === 'pull_request') {
+    commitSha = github.context.payload.pull_request.head.sha;
+  } else {
+    commitSha = github.context.sha;
+  }
+
+  if (customBranch) {
+    branch = customBranch;
+  } else if (github.context.eventName === 'pull_request') {
+    branch = github.context.payload.pull_request.head.ref;
+  } else {
+    branch = github.context.ref.trim().replace('refs/heads/', '');
+  }
 
   return {
     repository: `${owner}/${repo}`,
