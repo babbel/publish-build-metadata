@@ -57,3 +57,20 @@ test('when custom branch', async () => {
 
   expect(payload.commit_branch).toEqual(customBranch);
 });
+
+test('when custom commit_message sha is provided', async () => {
+  const generatePayload = require('./generate');
+
+  // this sha is gotten from the commits in testdata/dummy_project.tar.gz.
+  // it corresponds to the "Add description" commit message.
+  const commitMessageSha = '6b5520fefdc66ee8c55f1429090306cbc82f6fb2';
+  const payload = await generatePayload(null, null, null, commitMessageSha);
+
+  // these are from the `github.context` defined in testdata/env.js
+  expect(payload.commit_sha).toEqual('890befeef37b52a4d97c6f6d29fc836ec85308c4');
+  expect(payload.commit_branch).toEqual('main');
+
+  // while the commit_message and commit_datetime are from the provided `commitMessageSha` above.
+  expect(payload.commit_message).toEqual('Add description (6b5520f)');
+  expect(payload.commit_datetime).toEqual('2019-12-17 15:30:26 +0100');
+});

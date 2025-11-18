@@ -10,6 +10,7 @@ async function run() {
       core.getInput('slices'),
       core.getInput('sha'),
       core.getInput('branch'),
+      core.getInput('commit_message_sha'),
     );
 
     const accessKeyId = core.getInput('access_key_id');
