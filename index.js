@@ -13,6 +13,8 @@ async function run() {
       core.getInput('commit_message_sha'),
     );
 
+    core.info(`Published build metadata: ${JSON.stringify(payload)}`);
+
     const accessKeyId = core.getInput('access_key_id');
     const secretAccessKey = core.getInput('secret_access_key');
     const credentials = accessKeyId && secretAccessKey
