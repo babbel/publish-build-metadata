@@ -25,6 +25,10 @@ inputs:
     description: 'Optional custom branch name that should override `GITHUB_REF` environment variable'
     required: false
     default: null
+  commit_message_sha:
+    description: 'Optional custom commit SHA of the commit message that should be displayed in the Deploy App UI'
+    required: false
+    default: null
 
 runs:
   using: 'node20'

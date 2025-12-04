@@ -6,8 +6,11 @@ require "json"
 options = {
   slices: [],
   sha: ENV["GITHUB_SHA"],
-  branch: ENV["GITHUB_REF"].sub("refs/heads/", "")
+  branch: ENV["GITHUB_REF"].sub("refs/heads/", ""),
+  commit_message_sha: ''
 }
+
+puts "Verifying default options:", JSON.pretty_generate(options)
 
 OptionParser.new do |opts|
   opts.banner = "Usage: verify [options]"
@@ -23,7 +26,13 @@ OptionParser.new do |opts|
   opts.on("-b", "--branch-name [BRANCH]", String) do |v|
     options[:branch] = v
   end
+
+  opts.on("-m", "--commit-message-sha [COMMIT_MESSAGE_SHA]", String) do |v|
+    options[:commit_message_sha] = v
+  end
 end.parse!
+
+puts "Verifying provided options:", JSON.pretty_generate(options)
 
 cmd = <<-CMD
 aws dynamodb get-item --endpoint-url #{ENV["AWS_ENDPOINT_URL"]} \
@@ -48,6 +57,22 @@ unless options[:branch].empty?
   branch = item.dig("Item", "commit_branch", "S")
 
   raise "Wrong branch in DynamoDB, expected: #{options[:branch].inspect}, got: #{branch.inspect}" if branch != options[:branch]
+end
+
+unless options[:commit_message_sha].empty?
+  expected_commit_message_sha = `git show --format='%s (%h)%n%b' --no-patch #{options[:commit_message_sha]}`.strip
+  stored_commit_message_sha = item.dig("Item", "commit_message", "S")
+
+  if stored_commit_message_sha != expected_commit_message_sha
+    raise "Wrong commit_message_sha in DynamoDB, expected: #{expected_commit_message_sha}, got: #{stored_commit_message_sha}"
+  end
+
+  expected_commit_datetime = `git show -s --format='%ci' --no-patch #{options[:commit_message_sha]}`.strip
+  stored_commit_datetime = item.dig("Item", "commit_datetime", "S")
+
+  if stored_commit_datetime != expected_commit_datetime
+    raise "Wrong commit_datetime in DynamoDB, expected: #{expected_commit_datetime}, got: #{stored_commit_datetime}"
+  end
 end
 
 puts "All good!"

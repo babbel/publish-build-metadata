@@ -13,11 +13,14 @@ env:
 jobs:
   # unit tests
   units:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
       - name: Boot up DynamoDB
-        run: docker-compose up -d
+        run: docker compose up -d
 
       - uses: actions/setup-node@v4
         with:
@@ -40,9 +43,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
       - name: Boot up DynamoDB
-        run: docker-compose up -d
+        run: docker compose up -d
 
       - name: Prep metadata table
         env:
@@ -103,6 +108,20 @@ jobs:
           AWS_SECRET_ACCESS_KEY: TestSecretAccessKey
         run: ./.github/scripts/verify --branch-name feature/add-examples
 
+      - name: Test with custom commit-message SHA
+        uses: ./
+        with:
+          access_key_id: TestAccessKeyID
+          secret_access_key: TestSecretAccessKey
+          meta_table_arn: 'arn:aws:dynamodb:local:000000000000:table/metadata'
+          commit_message_sha: ${{ github.event.pull_request.head.sha || github.sha }}
+
+      - name: Check if everything is there
+        env:
+          AWS_ACCESS_KEY_ID: TestAccessKeyID
+          AWS_SECRET_ACCESS_KEY: TestSecretAccessKey
+        run: ./.github/scripts/verify --commit-message-sha ${{ github.event.pull_request.head.sha || github.sha }}
+
   release:
     if: github.ref == 'refs/heads/main'
     needs: [units, test]
@@ -110,6 +129,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4

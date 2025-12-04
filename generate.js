@@ -18,17 +18,18 @@ function normalizeSlices(rawSlices) {
     .filter(x => x !== '');
 }
 
-async function generatePayload(rawSlices, customSha = null, customBranch = null) {
+async function generatePayload(rawSlices, customSha = null, customBranch = null, customCommitMessageSha = null) {
   const {owner, repo} = github.context.repo;
   const branch = (customBranch || github.context.ref).trim().replace('refs/heads/', '');
   const commitSha = customSha || github.context.sha;
+  const commitMessageSha = customCommitMessageSha || commitSha;
 
   return {
     repository: `${owner}/${repo}`,
     commit_sha: commitSha,
     commit_branch: branch,
-    commit_datetime: await commitDatetime(commitSha),
-    commit_message: await commitMessage(commitSha),
+    commit_datetime: await commitDatetime(commitMessageSha),
+    commit_message: await commitMessage(commitMessageSha),
     slices: normalizeSlices(rawSlices),
     ttl: generateTTL(),
   };
