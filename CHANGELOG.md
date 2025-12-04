@@ -6,11 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.7.0] - 2025-11-18
+## [1.8.0] - 2025-12-04
 
 ### Added
 - Ability to provide custom commit_message sha. This is useful for PR-triggered workflows where Github generates an adhoc PR merge branch (e.g refs/pull/123/merge) and merge commit.
 
+## [1.7.0] - 2024-05-10
+
+### Added
+- Introduced cloudposse/github-action-major-release-tagger Github action to generate or update v<major-release> tags every time a new release is published.
 
 ## [1.6.0] - 2024-03-22
 
