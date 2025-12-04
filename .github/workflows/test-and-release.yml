@@ -144,9 +144,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WITH_V: false
         id: bump
-      - name: Release action
+      - name: Create release
         uses: ncipollo/release-action@v1
         with:
           tag: ${{ steps.bump.outputs.tag }}
-      - name: Update major version
+      - name: Update major release version
+      # Point the latest release commit to the major action version
         uses: cloudposse/github-action-major-release-tagger@v1

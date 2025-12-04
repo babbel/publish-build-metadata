@@ -229,3 +229,13 @@ Or better run the whole build all the time, this way you won't forget to run it 
 ```
 make build
 ```
+### Versioning
+
+This repository uses automated releases, managed by the `release` job in the [test-and-release workflow](https://github.com/babbel/publish-build-metadata/blob/main/.github/workflows/test-and-release.yml#L106).
+This job uses three GitHub Actions to handle the release process:
+
+*   **Tag Creation:** [`anothrNick/github-tag-action@1.64.0`](https://github.com/anothrNick/github-tag-action) is used to automatically increment the version number and create a Git tag for each release.
+
+*   **Release Creation:** [`ncipollo/release-action@v1`](https://github.com/ncipollo/release-action) is used to create a new release in GitHub based on the created tag. This action packages the code and makes it available for users.
+
+*   **Major Version Tagging:** [`cloudposse/github-action-major-release-tagger`](https://github.com/cloudposse/github-action-major-release-tagger) is used to update the major version tag (e.g., `v1`, `v2`) to point to the latest release commit.  Because GitHub Actions doesn't directly support semantic versioning for action versions, this ensures that users referencing the action by its major version always get the latest compatible release. For example, if the latest release is `1.2.3`, the `v1` tag will be updated to point to that commit.
