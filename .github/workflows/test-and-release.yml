@@ -151,4 +151,4 @@ jobs:
           tag: ${{ steps.bump.outputs.tag }}
 
       - name: Update major version
-        uses: cloudposse/github-action-major-release-tagger@v1
+        uses: cloudposse/github-action-major-release-tagger@v2
