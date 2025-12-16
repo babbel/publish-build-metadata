@@ -6,6 +6,41 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.15.0] - 2025-12-16
+
+### Changed
+- Bump @octokit/request from 8.1.6 to 8.4.1
+
+## [1.14.0] - 2025-12-16
+
+### Changed
+- Bump @octokit/request-error from 5.0.1 to 5.1.1
+
+## [1.13.0] - 2025-12-16
+
+### Changed
+- Bump @octokit/plugin-paginate-rest from 9.1.5 to 9.2.2
+
+## [1.12.0] - 2025-12-16
+
+### Changed
+- Bump undici from 5.28.2 to 5.29.0
+
+## [1.11.0] - 2025-12-16
+
+### Changed
+- Bump js-yaml from 3.14.1 to 3.14.2
+
+## [1.10.0] - 2025-12-16
+
+### Changed
+- Bump braces from 3.0.2 to 3.0.3
+
+## [1.9.0] - 2025-12-16
+
+### Changed
+- Bump actions/checkout to v5
+
 ## [1.8.0] - 2025-12-04
 
 ### Added

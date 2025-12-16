@@ -186,14 +186,15 @@ jobs:
         uses: actions/checkout@v6
         with:
           fetch-depth: 2
-    # ...
-    #
-    steps:
+
+      # ...
+
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
           role-to-assume: ${{ vars.AWS_IAM_ROLE_ARN }}
           aws-region: ${{ vars.AWS_REGION }}
+
       #
       # ... build & publish the artifact
       #
