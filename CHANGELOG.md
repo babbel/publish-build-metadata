@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Run the action on Node 24 (`runs.using: node24`) and test it on Node 24. GitHub is retiring Node 20 for actions and shows a deprecation notice on every run that uses this action.
+
 ## [1.15.0] - 2025-12-16
 
 ### Changed
